@@ -247,7 +247,11 @@ dos_stor3dos:
         sta     $03F4
         lda     dos_imgdosvt+1
         sta     $03F2
-        lda     #$14
+        .ifdef SIDE_B
+        lda     #$06 ; retained unbooted side-B DOS copy selects RUN, not EXEC
+        .else
+        lda     #$14 ; side-A EXEC startup text
+        .endif
         bne     dos_dopendng
 dos_oldboot:
         lda     dos_nextcmd

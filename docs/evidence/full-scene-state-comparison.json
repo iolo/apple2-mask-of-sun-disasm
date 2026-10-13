@@ -1,0 +1,318 @@
+{
+  "pass": true,
+  "checks": {
+    "same_command_sequence": true,
+    "same_output_text": true
+  },
+  "checkpoints": [
+    {
+      "prompt": 1,
+      "room": [
+        1,
+        1
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "bd022083b799e61ae26301b196172d8e7aad943b695b1789860f482b61e483c3",
+        "bd022083b799e61ae26301b196172d8e7aad943b695b1789860f482b61e483c3"
+      ],
+      "world_sha256": [
+        "d40eff6d7800bff7e135ea72ad2760368c9de1361026e79233053756fe5fb987",
+        "d40eff6d7800bff7e135ea72ad2760368c9de1361026e79233053756fe5fb987"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 2,
+      "room": [
+        1,
+        1
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "bd022083b799e61ae26301b196172d8e7aad943b695b1789860f482b61e483c3",
+        "bd022083b799e61ae26301b196172d8e7aad943b695b1789860f482b61e483c3"
+      ],
+      "world_sha256": [
+        "9a78be04d5fcabeb156853adff9d6b3eafb4363a2776a4cc8b57c034bc1375c5",
+        "9a78be04d5fcabeb156853adff9d6b3eafb4363a2776a4cc8b57c034bc1375c5"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 9,
+      "room": [
+        2,
+        2
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "184043441e96a428dcc3de95f94ea76caa629a2a914bf7b244e98b885fcd12e6",
+        "184043441e96a428dcc3de95f94ea76caa629a2a914bf7b244e98b885fcd12e6"
+      ],
+      "world_sha256": [
+        "8d09950437d783e836f1a9dbf92ec114aea86d7fd804bd95e99b08204a2e2003",
+        "8d09950437d783e836f1a9dbf92ec114aea86d7fd804bd95e99b08204a2e2003"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 26,
+      "room": [
+        6,
+        6
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "a1096b20c7887c498580f4897ef24593fbf7e86d4f6ed84974105d4dae9cbb14",
+        "a1096b20c7887c498580f4897ef24593fbf7e86d4f6ed84974105d4dae9cbb14"
+      ],
+      "world_sha256": [
+        "770579d05a1b8eb4242f426a91e677ee860988299e630599736a333cc099171d",
+        "770579d05a1b8eb4242f426a91e677ee860988299e630599736a333cc099171d"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 35,
+      "room": [
+        9,
+        9
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "66b126b98ab388706c26544c02b574b7017fac099c03e7f7a0453592a313e93e",
+        "66b126b98ab388706c26544c02b574b7017fac099c03e7f7a0453592a313e93e"
+      ],
+      "world_sha256": [
+        "79c2224239bac54e920cfb6f92dd30279c91de2c0e760e41f2ebfee1ce9d4af9",
+        "79c2224239bac54e920cfb6f92dd30279c91de2c0e760e41f2ebfee1ce9d4af9"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 38,
+      "room": [
+        11,
+        11
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "ce410780512c77ce028432fba00c80ac067091da3a1c093479f0c9f6f6bffca3",
+        "ce410780512c77ce028432fba00c80ac067091da3a1c093479f0c9f6f6bffca3"
+      ],
+      "world_sha256": [
+        "6c9bdb1a80b4d12575ba4dc744687f75ac9d20b5dd21063fd41e5cd7f3476b32",
+        "6c9bdb1a80b4d12575ba4dc744687f75ac9d20b5dd21063fd41e5cd7f3476b32"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 42,
+      "room": [
+        15,
+        15
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "fc2c510d836dbb7f731d5b5f649f79cc1f003942c9241c5eb4b027829c558a9f",
+        "fc2c510d836dbb7f731d5b5f649f79cc1f003942c9241c5eb4b027829c558a9f"
+      ],
+      "world_sha256": [
+        "09172f976253ed919ad0c3014f3d95c2355a0722e35f9bb438ca5d1f766d4db2",
+        "09172f976253ed919ad0c3014f3d95c2355a0722e35f9bb438ca5d1f766d4db2"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 47,
+      "room": [
+        17,
+        17
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "7d7dd89fdbb328c0e96481d929ab62f18ae1e8f1fd0d38f9f4bceedaa0b4a07a",
+        "7d7dd89fdbb328c0e96481d929ab62f18ae1e8f1fd0d38f9f4bceedaa0b4a07a"
+      ],
+      "world_sha256": [
+        "1fa47318e4e14acde2906a408d1fdad23c2ffacba8c30289395384c9d604af7d",
+        "1fa47318e4e14acde2906a408d1fdad23c2ffacba8c30289395384c9d604af7d"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 50,
+      "room": [
+        16,
+        16
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "e161cc34ade2ea454042cee7e688036d77638213cd09c15b44a3c9e57dee9310",
+        "e161cc34ade2ea454042cee7e688036d77638213cd09c15b44a3c9e57dee9310"
+      ],
+      "world_sha256": [
+        "02988125237418b14fe21d5842cbc34cf018492b148d2411bd9cb8733dd1a165",
+        "02988125237418b14fe21d5842cbc34cf018492b148d2411bd9cb8733dd1a165"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 59,
+      "room": [
+        33,
+        33
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "d7e60fa235c4be98851897239bbd445f1ed9f808c830f94ec9ce740de753d5f5",
+        "d7e60fa235c4be98851897239bbd445f1ed9f808c830f94ec9ce740de753d5f5"
+      ],
+      "world_sha256": [
+        "88edff63a55153496092a4e9e433428ca7326d632451636a8e0f993926b4e45b",
+        "88edff63a55153496092a4e9e433428ca7326d632451636a8e0f993926b4e45b"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 60,
+      "room": [
+        34,
+        34
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "91f1d6658905b19f3400b56bd51a53949a3c542cedbf28188141ddc92e4a36ce",
+        "91f1d6658905b19f3400b56bd51a53949a3c542cedbf28188141ddc92e4a36ce"
+      ],
+      "world_sha256": [
+        "cc18367246482f91796b7fb04a81b6d7432fc7964dd7e3c28829f8f2058088b2",
+        "cc18367246482f91796b7fb04a81b6d7432fc7964dd7e3c28829f8f2058088b2"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 65,
+      "room": [
+        39,
+        39
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "3dfe5cbd4d45a33d61a80e7d24dbd0ff7b5fc47e1e1597959d42ca4ba064a3ff",
+        "3dfe5cbd4d45a33d61a80e7d24dbd0ff7b5fc47e1e1597959d42ca4ba064a3ff"
+      ],
+      "world_sha256": [
+        "abcb57d318a20f0d715011b49b9d96239b0e2a4885e828cd519e8255f09f2df5",
+        "abcb57d318a20f0d715011b49b9d96239b0e2a4885e828cd519e8255f09f2df5"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 73,
+      "room": [
+        41,
+        41
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "5c1f3fb24a1c6a0d12832fb89f1e3c335b3fa271a65294919d5412e0654db617",
+        "5c1f3fb24a1c6a0d12832fb89f1e3c335b3fa271a65294919d5412e0654db617"
+      ],
+      "world_sha256": [
+        "b0e6769b39191d9ef177231eae34e05132c8b44b83c15cce2b4b6126956dc36d",
+        "b0e6769b39191d9ef177231eae34e05132c8b44b83c15cce2b4b6126956dc36d"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 80,
+      "room": [
+        105,
+        105
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "3b0d91a538b6c1d4d5c06b1d1ee81cf8997786fee8de7f37ecdcfcc8451630bc",
+        "3b0d91a538b6c1d4d5c06b1d1ee81cf8997786fee8de7f37ecdcfcc8451630bc"
+      ],
+      "world_sha256": [
+        "5f5431f2657dca75039c4ad21a5cd5f08091ff108b645caf93a06272d25138fa",
+        "5f5431f2657dca75039c4ad21a5cd5f08091ff108b645caf93a06272d25138fa"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 110,
+      "room": [
+        175,
+        175
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "5f97fbe047cc481f8ce6ba308dadeb9f3172a46aa191dd85fc7db00348bef5db",
+        "5f97fbe047cc481f8ce6ba308dadeb9f3172a46aa191dd85fc7db00348bef5db"
+      ],
+      "world_sha256": [
+        "975189a01a10fd17a3ccfd916e17bceffd7f4c05f958419950140c33e5aa56ad",
+        "975189a01a10fd17a3ccfd916e17bceffd7f4c05f958419950140c33e5aa56ad"
+      ],
+      "pass": true
+    },
+    {
+      "prompt": 122,
+      "room": [
+        49,
+        49
+      ],
+      "same_draw_page": true,
+      "same_rendered_scene": true,
+      "same_world_state": true,
+      "scene_sha256": [
+        "707d8472bb6de3491f8f8ee3baba450eb720b1d7a0e103b861a1ec0bd81e0854",
+        "707d8472bb6de3491f8f8ee3baba450eb720b1d7a0e103b861a1ec0bd81e0854"
+      ],
+      "world_sha256": [
+        "22184465a6959efb5ed354ccaec3b999815a768c96dcfa0709901718f0268eea",
+        "22184465a6959efb5ed354ccaec3b999815a768c96dcfa0709901718f0268eea"
+      ],
+      "pass": true
+    }
+  ],
+  "sessions": [
+    "build/audio-full-original-01",
+    "build/pictures-full-01"
+  ],
+  "scope": "Commands, high-bit-normalized emitted text, scalar/object/room state and displayed native scenes; encoded disk/code identity is not checked"
+}

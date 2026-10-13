@@ -2,6 +2,7 @@
 """Check build/analysis prerequisites, optionally audit locally supplied ROMs."""
 import argparse
 import json
+import importlib.metadata
 from pathlib import Path
 import shutil
 import subprocess
@@ -16,9 +17,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--rompath', type=Path)
     parser.add_argument('--output', type=Path)
+    parser.add_argument('--build-only', action='store_true', help='check only Python, Pillow and ca65/ld65')
     args = parser.parse_args()
     report = {'tools': {}, 'missing': []}
     for name, option in TOOLS.items():
+        if args.build_only and name not in ('python3','ca65','ld65'):continue
         path = shutil.which(name)
         if not path:
             report['missing'].append(name)
@@ -28,6 +31,10 @@ def main():
                                  'exit_code': result.returncode}
         if result.returncode:
             report['missing'].append(name)
+    try:
+        report['pillow_version']=importlib.metadata.version('Pillow')
+    except importlib.metadata.PackageNotFoundError:
+        report['missing'].append('Pillow')
     if args.rompath:
         if not shutil.which('mame'):
             parser.error('MAME is required for ROM audit')

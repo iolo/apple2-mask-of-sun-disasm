@@ -496,3 +496,44 @@ the plan. Side-B saves, inactive DOS fragments/free-sector residue, standalone
 read dependencies, separate manual baseline and final validation remain open.
 Next: assemble the retained side-B DOS copies, generate unused reserved zeros,
 finish per-region classification and audit source-only build reads.
+
+## Steps 3c/7c/8 — Complete disk authority and standalone source build
+
+Completed substep on2026-10-13; manual baseline and clean-checkout final audit remain.
+
+- Assembled retained side-B lower/last DOS fragments with their native RUN
+  startup selector. Side B's bootstrap still halts before them; normal swaps
+  preserve side-A resident RWTS. Unplaced variant output never overwrites B files.
+- Added source header/allocation tail for the complete interpreter file. Generated
+ 2816 unused reserved zero bytes on each side. All constructed code-region bytes
+  now have explicit source/data/zero authority and overlap/coverage checks.
+- Removed reads of native code/picture/TS-list exports from normal builds. The
+  repacker directly consumes constructed replacements, retaining provenance hash
+  checks only for authoritative native data. Every picture still comes from SVGs
+  and glyphs from PNGs; no executable binary include is introduced.
+- Generated139 TS-list streams, catalog live entries/links and the VTOC bitmap
+  from manifest references. Four catalog/VTOC seeds retain inactive structured
+  fields and native count anomalies. All289 regions are classified with sources,
+  disk slices and retention reasons. Only three free sectors contain inactive
+  historical DEATH/TS/BASIC data, outside current boot/files/save ranges.
+- Added source/data/output hashes, generated/retained authority and metadata seeds
+  to build.json; default output is now build/disks. Documented prerequisites,
+  clean generated-output behavior, build command, editing and original I/O.
+
+Validation: two fresh builds agree; strace finds no successful reads of the two
+original disks or195 native code/image/TS reference exports. No raw-code dependency
+or unknown region remains. Fresh standalone boot passes seven placement/loading
+gates and224 entry/request agreement. Sixteen full-route checkpoints match emitted
+text, displayed HGR pages and scalar/object/room state; full PCM had already passed.
+Native encoding/hash agreement remains diagnostic, not a source/disk acceptance gate.
+
+Added side-B save/restore coverage after both-disk travel: both versions pass
+nineteen checks, restore room34/jeep/side and five full object arrays, and change
+exactly144 expected save sectors. Parser/carrying, death/restart, sound and original
+full-ending evidence remain accepted. Python compilation, unchanged input hashes
+and whitespace checks pass. No significant unexplained timing discrepancy requires
+a second emulator; unformatted media errors and exhaustive branches remain untested.
+
+Next: complete the separate operator-stepped original playthrough, build/boot from
+a clean tracked-file checkout without supplied/reference inputs, finish README/
+validation navigation and perform the final PRD/plan audit before declaring complete.

@@ -1,11 +1,12 @@
 # Boot and load phases
 
-The unmodified side-A trace and six-module rebuilt trace agree on all 224
-observed entries and sector-read requests. [boot-loading.json](evidence/boot-loading.json)
+The unmodified side-A trace and eleven-module standalone rebuilt trace agree on
+all224 observed entries and sector-read requests. [standalone-boot.json](evidence/standalone-boot.json)
 passes seven checks for each version and a trace agreement check. The native
 slot-ROM bytes are external ROM prerequisites, not redistributed game source.
 The four assembled disk bootstrap modules preserve original I/O and source
-encodings. The remainder of DOS is still temporary native input.
+encodings. All loaded DOS pages and retained side-B copies now have source;
+reserved zeros are generated and [remaining data](disk-layout.md) is classified.
 
 ## Native startup
 

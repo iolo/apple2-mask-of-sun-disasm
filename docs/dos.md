@@ -99,7 +99,8 @@ Offsets such as `dos_adinptcp+1` identify a high byte rather than inventing a
 separate numeric label. Vector tables use source symbols; encoded text and
 native saved variables retain explicit bytes.
 
-The native sector streams are the code/data authority. Routine identities and
+The assembly is code/data authority; native sector streams are provenance
+references. Routine identities and
 table/workspace boundaries were checked against the independently maintained
 [Apple II DOS transcription](https://github.com/cmosher01/Apple-II-Source/tree/master/src/dos/system/common).
 That reference was assembled only as a local analysis aid to locate symbols;
@@ -113,11 +114,15 @@ differences directly.
 The build splits the assembled 6912 bytes into T0/S10–15 ($9B00–$A0FF),
 T1/S0–15 ($A100–$B0FF) and T2/S0–4 ($B100–$B5FF). It checks source size,
 entry addresses, complete source mapping, asset bounds and overlapping writes.
+The unbooted side-B wrapper differs at startup index6/RUN and places only the
+retained T0/S10–15 and T2/S3–4 fragments. The rest of its emitted source is unused;
+it never replaces side-B live file data or runs during a normal media swap.
 Symbols are emitted with debug information for source navigation.
 
 Boot and opening replays exercise EXEC START, BLOAD, native DOS sector reads and
 the transition to the game. Current native encoding equality is diagnostic.
 Formatting, the entire DOS command set, RAM Applesoft and optional language-card
-paths are not covered by these gameplay checks. Unloaded disk residue and the
-remaining intrinsic/graphics reconstruction still require classification; this
-DOS source does not close the overall plan.
+paths are not covered by these gameplay checks. Unloaded disk residue is
+classified in [disk-layout.md](disk-layout.md). Intrinsics/CHAR GEN are complete
+source, and fonts/pictures are editable inputs. This does not claim exhaustive
+DOS command testing or close the remaining overall validation audit.

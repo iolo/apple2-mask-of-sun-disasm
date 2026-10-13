@@ -3,8 +3,8 @@
 `src/rwts.inc` assembles $B800–$BFFF, the eight resident pages loaded by
 side A's first bootstrap. `src/rwts-a.s` and `src/rwts-b.s` preserve each
 side's copy. Disk construction replaces T0/S2–9 from these sources; no
-original disk image is a build input. The remaining DOS pages at $9B00–$B5FF
-still require source reconstruction.
+original disk image is a build input. [dos-low.s](../src/dos-low.s) reconstructs
+the remaining DOS pages at $9B00–$B5FF.
 
 ## Entries and ownership
 
@@ -89,5 +89,5 @@ Eight-page source size is asserted; current assembly equals the native bytes
 on each side as an encoding diagnostic. Boot entry/request traces, opening
 checkpoints and a save/restore replay exercise native read and write behavior.
 Formatting, optional language-card reload and all DOS error branches remain
-untested. This module does not finish the intrinsic engine, remaining DOS,
-editable graphics or the full plan.
+untested. The intrinsic/DOS/CHAR GEN sources and editable graphics are documented
+separately; this module does not claim exhaustive path coverage or full-plan closure.

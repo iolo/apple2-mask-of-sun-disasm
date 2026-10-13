@@ -4,6 +4,8 @@
 ; detailed intrinsic condition conventions are still being traced.
 ; See docs/engine.md for pointer ownership and current uncertainty limits.
         .setcpu "6502"
+        .segment "INTERPRETER_HEADER"
+        .word $0800,$0500 ; DOS BLOAD header, not loaded into interpreter RAM
         .segment "INTERPRETER"
         .export engine_entry, dispatch_script_line, load_named_file, read_command, read_keyboard_wait
 ; Entry from START CALL2048. Resets hardware stack, initializes engine
@@ -713,3 +715,5 @@ clear_input_cell:  lda     #$A0
 
         .byte $00,$00,$00,$00 ; allocation padding after clear_input_field
 .assert * - engine_entry = $500, error, "interpreter must occupy $0800-$0CFF"
+        .segment "INTERPRETER_TAIL"
+        .res $FC,$00 ; unused final-sector allocation padding, outside BLOAD length

@@ -1,0 +1,27 @@
+{
+  "pass": true,
+  "checks": {
+    "repeatable_disks": true,
+    "no_original_or_native_code_picture_reads": true,
+    "all_regions_classified": true,
+    "no_raw_code_dependency": true
+  },
+  "disks": [
+    {
+      "side": "a",
+      "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab",
+      "size": 143360,
+      "repeatable": true
+    },
+    {
+      "side": "b",
+      "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46",
+      "size": 143360,
+      "repeatable": true
+    }
+  ],
+  "violations": [],
+  "forbidden_reference_count": 197,
+  "method": "strace openat successful O_RDONLY opens plus two clean generated-output builds",
+  "scope": "source/data build audit; gameplay and clean-checkout validation are separate"
+}

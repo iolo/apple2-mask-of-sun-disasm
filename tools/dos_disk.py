@@ -152,6 +152,51 @@ def export(destination):
     return manifest
 
 
+def build_metadata(manifest):
+    """Generate allocation references, retaining native catalog/VTOC data fields.
+
+    TS lists are entirely generated. Catalog chains/live entries and VTOC bitmap
+    derive from the manifest; unused catalog entries/VTOC fields retain data
+    provenance. Native anomalous catalog sector counts are intentionally retained.
+    """
+    replacements={}
+    for disk in manifest['disks']:
+        side=disk['side'];used={(t,s) for t in range(3) for s in range(16)}
+        used.add((17,0));used.update(map(tuple,disk['catalog_sectors']))
+        catalog=bytearray((ROOT/f'assets/raw/{side}/metadata/catalog.bin').read_bytes())
+        catalog_positions={tuple(pair):i for i,pair in enumerate(disk['catalog_sectors'])}
+        for i,pair in enumerate(disk['catalog_sectors']):
+            nxt=disk['catalog_sectors'][i+1] if i+1<len(disk['catalog_sectors']) else (0,0)
+            catalog[i*256+1:i*256+3]=bytes(nxt)
+        for file in disk['files']:
+            used.update(map(tuple,file['ts_lists']));used.update(map(tuple,file['sectors']))
+            ts=bytearray(len(file['ts_lists'])*256)
+            for i,pair in enumerate(file['ts_lists']):
+                nxt=file['ts_lists'][i+1] if i+1<len(file['ts_lists']) else (0,0)
+                base=i*256;ts[base+1:base+3]=bytes(nxt)
+                ts[base+5:base+7]=(i*122).to_bytes(2,'little')
+                chunk=file['sectors'][i*122:(i+1)*122]
+                for j,pair in enumerate(chunk):ts[base+12+2*j:base+14+2*j]=bytes(pair)
+            if len(file['sectors'])>len(file['ts_lists'])*122:raise ValueError('TS-list capacity exceeded')
+            path=f'assets/raw/{side}/metadata/{Path(file["path"]).stem}-ts.bin'
+            replacements[path]=bytes(ts)
+            cat=file['catalog'];base=256*catalog_positions[(cat['track'],cat['sector'])]+cat['offset']
+            if not 11<=cat['offset']<=221 or (cat['offset']-11)%35:raise ValueError('invalid catalog slot')
+            name=file['name'].ljust(30)
+            if len(name)!=30:raise ValueError('catalog filename exceeds30 characters')
+            entry=bytes(file['ts_lists'][0])+bytes([file['type']|(128 if file['locked'] else 0)])
+            entry+=bytes(ord(c)|128 for c in name)+file['catalog_sector_count'].to_bytes(2,'little')
+            catalog[base:base+35]=entry
+        replacements[f'assets/raw/{side}/metadata/catalog.bin']=bytes(catalog)
+        path=f'assets/raw/{side}/metadata/vtoc.bin';vtoc=bytearray((ROOT/path).read_bytes())
+        vtoc[1:3]=bytes(disk['catalog_sectors'][0]);vtoc[0x34:0x38]=bytes([35,16,0,1])
+        for track in range(35):
+            bitmap=sum(1<<sector for sector in range(16) if (track,sector) not in used)
+            vtoc[0x38+4*track:0x3c+4*track]=bitmap.to_bytes(2,'big')+b'\0\0'
+        replacements[path]=bytes(vtoc)
+    return replacements
+
+
 def repack(manifest_path, output, replacements=None):
     manifest = json.loads(manifest_path.read_text())
     known = {region['path'] for disk in manifest['disks'] for region in disk['regions']}
@@ -163,15 +208,16 @@ def repack(manifest_path, output, replacements=None):
     for disk in manifest['disks']:
         data, covered, cache = bytearray(DISK_SIZE), set(), {}
         for region in disk['regions']:
-            content = (ROOT / region['path']).read_bytes()
-            if len(content) != region['length'] or sha(content) != region['sha256']:
-                raise ValueError(f"export changed: {region['path']}")
-            cache[region['path']] = content
-        for path, content in (replacements or {}).items():
-            if path in cache:
-                if len(content) != len(cache[path]):
+            path = region['path']
+            if replacements is not None and path in replacements:
+                content = replacements[path]
+                if len(content) != region['length']:
                     raise ValueError(f'replacement allocation size changed: {path}')
-                cache[path] = content
+            else:
+                content = (ROOT / path).read_bytes()
+                if len(content) != region['length'] or sha(content) != region['sha256']:
+                    raise ValueError(f'export changed: {path}')
+            cache[path] = content
         used = {path: set() for path in cache}
         for entry in disk['sectors']:
             start = offset(entry['track'], entry['sector'])
@@ -191,7 +237,7 @@ def repack(manifest_path, output, replacements=None):
         path = output / f"mask-of-sun-{disk['side']}.dsk"
         path.write_bytes(data)
         reports.append({'path': str(path.relative_to(ROOT)), 'size': len(data), 'sha256': digest})
-    (output / 'repack.json').write_text(json.dumps({'purpose': 'early partial source rebuild' if replacements else 'raw extraction integrity, not final rebuild',
+    (output / 'repack.json').write_text(json.dumps({'purpose': 'source and asset rebuild' if replacements is not None else 'raw extraction integrity, not final rebuild',
                                                   'disks': reports}, indent=2) + '\n')
     print(json.dumps(reports, indent=2))
 

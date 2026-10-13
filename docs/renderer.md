@@ -36,15 +36,16 @@ python3 tools/build.py
 python3 tools/decode_screen.py build/session-01/checkpoint-ram.bin
 ```
 
-The early builder assembles the page with ca65/ld65 and replaces only its
-allocated stream span. It validates length and fixed-address layout. The output
+The builder assembles this page inside complete CHAR GEN source with ca65/ld65.
+It validates length and fixed-address layout. The output
 currently retains its original encoding (a diagnostic, not a final identity
 requirement). [Opening replay evidence](evidence/opening-rebuilt.json) passes
 the same 13 original opening checks on these disks.
 [Early build verification](evidence/early-build-check.json) records a second
 fresh-output build with identical hashes and an `openat` trace showing that the
-builder reads no original disk images. The rest of the disks still include
-temporary raw code; this does not establish the final standalone-build criteria.
+builder reads no original disk images for that earlier substep. The current
+[standalone audit](build.md) additionally excludes native code/image/TS-list
+reference reads and constructs all code, fonts, pictures and allocation links.
 
 MAME's natural keyboard exposes `empty` and `is_posting` separately; a timed
 replay must check both before posting another command. The current documentation

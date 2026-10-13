@@ -110,7 +110,7 @@ isolated renderer on the rebuilt disks using the documented MAME/ROM setup:
 ```sh
 python3 tools/picture_preview_jobs.py --output build/picture-jobs.json
 python3 tools/mame_session.py --rompath /path/to/roms --output build/picture-session \
-  --disk-a build/early/mask-of-sun-a.dsk --disk-b build/early/mask-of-sun-b.dsk \
+  --disk-a build/disks/mask-of-sun-a.dsk --disk-b build/disks/mask-of-sun-b.dsk \
   --headless --fast --script tools/picture_preview.lua --route build/picture-jobs.json
 ```
 

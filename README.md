@@ -22,19 +22,21 @@ python3 tools/mame_session.py --rompath /path/to/locally-supplied/roms \
 and build commands, `docs/` for evidence and explanations, and ignored `build/`
 for generated output. Original inputs remain unchanged at the repository root.
 
-An **early partial rebuild** is now available:
+A standalone source/asset rebuild is available:
 
 ```sh
 python3 tools/build.py
 ```
 
-It produces `build/early/mask-of-sun-{a,b}.dsk`, assembles all loaded engine,
+It produces `build/disks/mask-of-sun-{a,b}.dsk`, assembles all loaded engine,
 character generator, DOS/RWTS and bootstrap code, encodes editable
 [font PNGs](docs/chargen.md) and [picture SVGs](docs/pictures.md), and packages
-tracked data without reading original disk templates. Final classification of
-unused system residue and the remaining world/documentation audit are pending.
+tracked data without reading original disk templates or native code/image
+references. All disk regions and world scripts are classified/documented.
+The separate manual baseline and final clean-checkout audit remain pending.
 See the emitted `build.json` for dependencies and [baseline evidence](docs/baseline.md)
-for the verified opening route. The [disk map](docs/disk-layout.md) documents
+for the verified opening route. [Build instructions](docs/build.md) describe
+source authority and the read audit. The [disk map](docs/disk-layout.md) documents
 all extracted regions and the raw extraction round-trip checks.
 The [boot trace](docs/boot-loading.md) explains load phases, and the
 [behavior matrix](docs/behavior-matrix.md) links full-ending, sound and

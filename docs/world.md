@@ -99,7 +99,8 @@ GE includes shared state:0 jeep animation,1–4 travel-view choices,5 travel/swa
 mode,6 tunnel topology,7 disease/pill interval,10 alternating rejected-direction
 text,12 expected disk side,13 cached graphics region,14 travel animation and15
 saved condition across nested library calls. Other GE entries are indexed where
-used without assigning an unsupported global meaning. GE12=1/2 selects A/B;
+used without assigning an unsupported global meaning. GE12=2 selects B; other
+values select A in the generic reinsertion prompt (initial state is0).
 normal play swaps media in the same drive. [Memory ownership](memory.md) separates
 these tables from transient graphics/OS workspace.
 

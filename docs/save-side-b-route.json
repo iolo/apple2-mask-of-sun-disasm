@@ -1,0 +1,197 @@
+{
+  "scope": "Save and restore on side B after full first pyramid route",
+  "timeout": 1600,
+  "commands": [
+    "LOOK",
+    "INVENTORY",
+    "FERNAP",
+    "GET",
+    "GET LAMP",
+    "FERNAP GUN",
+    "EXIT PLANE",
+    "GET MAP",
+    "ENTER JEEP",
+    "W",
+    "TAKE ALL",
+    "EXIT JEEP",
+    "GO HUT",
+    "GIVE FOOD",
+    "EXIT HUT",
+    "ENTER JEEP",
+    "W",
+    "NW",
+    "DROP ALL",
+    "GET BOTTLE",
+    "EXIT JEEP",
+    "LOOK BEHIND STATUE",
+    "GET HEAD",
+    "PLACE HEAD ON STATUE",
+    "ENTER JEEP",
+    "NW",
+    "GET ALL",
+    "EXIT JEEP",
+    "FORWARD",
+    "GO TOP",
+    "LIGHT MATCH",
+    "LIGHT LANTERN",
+    "ENTER",
+    {
+      "command": "SHOOT",
+      "urgent": true,
+      "no_return": true
+    },
+    "SEARCH PLATFORM",
+    "OPEN DOOR",
+    "FORWARD",
+    "GET BOWL",
+    "R",
+    "MOVE STONE",
+    {
+      "command": "GET BOWL",
+      "wait_for": "The apparition fades"
+    },
+    "EXIT",
+    "L",
+    "R",
+    "GET BOWL",
+    {
+      "command": "HIT SKELETON WITH AMULET",
+      "urgent": true
+    },
+    "GET BOWL",
+    "GET URN",
+    "PLACE URN RIGHT PEDESTAL",
+    "FORWARD",
+    "GO JEEP",
+    "ENTER JEEP",
+    "SE",
+    "S",
+    "W",
+    "W",
+    "NW",
+    "FORWARD",
+    "FORWARD",
+    "SAVE GAME",
+    "Y",
+    "EXIT JEEP",
+    "RESTORE GAME",
+    "Y",
+    "LOOK",
+    "INVENTORY"
+  ],
+  "required_sides": [
+    "a",
+    "b"
+  ],
+  "media_events": [
+    {
+      "when": "side A, turn it over to side B,",
+      "side": "b"
+    },
+    {
+      "when": "Place an initialized disk into Drive #1",
+      "side": "save"
+    },
+    {
+      "when": "Place THE MASK OF THE SUN disk, side",
+      "side": "b"
+    },
+    {
+      "when": "Place SAVE GAME disk into Drive #1",
+      "side": "save"
+    },
+    {
+      "when": "Place THE MASK OF THE SUN disk, side",
+      "side": "b"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "saving",
+      "text": "Saving, please wait."
+    },
+    {
+      "id": "restoring",
+      "text": "Restoring, please wait."
+    },
+    {
+      "id": "expected-side-b",
+      "text": "Place THE MASK OF THE SUN disk, side B"
+    }
+  ],
+  "ram_checks": [
+    {
+      "id": "saved-side-b",
+      "before_command": 60,
+      "address": 24604,
+      "equals": 2
+    },
+    {
+      "id": "saved-room34",
+      "before_command": 60,
+      "address": 24589,
+      "equals": 34
+    },
+    {
+      "id": "outside-jeep-before-restore",
+      "before_command": 63,
+      "address": 25114,
+      "equals": 255
+    },
+    {
+      "id": "inside-jeep-after-restore",
+      "before_command": 65,
+      "address": 25114,
+      "equals": 0
+    },
+    {
+      "id": "restored-room34",
+      "before_command": 65,
+      "address": 24589,
+      "equals": 34
+    },
+    {
+      "id": "restored-side-b",
+      "before_command": 65,
+      "address": 24604,
+      "equals": 2
+    }
+  ],
+  "ram_ranges_equal": [
+    {
+      "id": "restore-6020",
+      "before_command": 60,
+      "after_command": 65,
+      "address": 24608,
+      "length": 252
+    },
+    {
+      "id": "restore-611c",
+      "before_command": 60,
+      "after_command": 65,
+      "address": 24860,
+      "length": 252
+    },
+    {
+      "id": "restore-6218",
+      "before_command": 60,
+      "after_command": 65,
+      "address": 25112,
+      "length": 252
+    },
+    {
+      "id": "restore-6314",
+      "before_command": 60,
+      "after_command": 65,
+      "address": 25364,
+      "length": 252
+    },
+    {
+      "id": "restore-6410",
+      "before_command": 60,
+      "after_command": 65,
+      "address": 25616,
+      "length": 252
+    }
+  ]
+}

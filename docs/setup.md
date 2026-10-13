@@ -1,13 +1,17 @@
 # Setup and emulator profile
 
-Use Python 3, cc65 (`ca65`, `ld65`, `da65`, `cl65`), a2kit, MAME with Lua
-console/json plugins, and Poppler for reference inspection. Versions used in
+Building needs Python3, Pillow and cc65's `ca65`/`ld65`. For the recorded analysis
+and validation, also use `da65`/`cl65`, a2kit, MAME with Lua console/json plugins,
+strace and Poppler. Versions used in
 the initial investigation are recorded in [toolchain.json](toolchain.json).
-Python tools currently use only the standard library. Run:
+Font conversion uses Pillow; screen-analysis helpers also use NumPy. Disk,
+script and vector codecs otherwise use the standard library. Run:
 
 ```sh
 python3 tools/check_inputs.py
+python3 tools/check_tools.py --build-only
 python3 tools/check_tools.py --rompath /path/to/locally-supplied/roms
+python3 tools/build.py
 ```
 
 ROMs are external prerequisites and are not distributed in this repository.
@@ -42,7 +46,9 @@ even with headless dummy host audio; compare that recording for sound evidence.
 The launcher disables
 configuration reads and isolates configuration, NVRAM, snapshots, states, and
 disk copies inside the session directory. `session.json` records the exact
-command and hashes of the media copies. Original disks are never mounted writable.
+command and hashes of the media copies. The launcher copies chosen disks before
+mounting them. Pass `--disk-a build/disks/mask-of-sun-a.dsk` and the corresponding
+`--disk-b` to play rebuilt disks instead of the default reference disks.
 
 Enter the printed `dofile(...)` command into the owned Lua console. With
 `--debug`, the CPU starts stopped at reset; `mask.go()` runs it. Without the
@@ -60,10 +66,10 @@ mask.exit()            -- stop only this owned session
 `mask.capture` records CPU-visible low RAM, text page 1, and both high-resolution
 pages without touching the soft-switch range. Its text decoder shows the native
 40-column page and may include stale rows hidden by mixed graphics mode. It
-does not yet decode the game's custom character rendering. Debugger run/stop
+also decodes the game's custom HGR font into `graphics_text`. Debugger run/stop
 and ordinary pause are different: use `mask.go()` after a debugger stop, and
 `mask.resume()` after a capture. Save states are not portable across emulator
 versions or machine profiles.
 
-The final source/asset disk build is still pending. Generated work belongs in
+The source/asset build is documented in [build.md](build.md). Generated work belongs in
 ignored `build/`; deleting a disposable session there cannot alter the inputs.

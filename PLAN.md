@@ -139,11 +139,11 @@ timed sections have explicit conditions suitable for later replay automation.
 - [x] Identify container/sector order and catalog any recognized filesystem.
   If storage is custom, inspect and export sectors directly rather than forcing
   a filesystem interpretation.
-- [ ] Trace boot sectors, loader entry points, disk reads, side selection, and
+- [x] Trace boot sectors, loader entry points, disk reads, side selection, and
   any decoding, decompression, or relocation used when loading memory.
-- [ ] Build a manifest mapping all disk regions to boot code, resident code,
+- [x] Build a manifest mapping all disk regions to boot code, resident code,
   overlays, assets, metadata, padding, or explicitly unknown content.
-- [ ] Record memory ranges, entry points, zero-page usage, stack assumptions,
+- [x] Record memory ranges, entry points, zero-page usage, stack assumptions,
   buffers, ROM calls, and Apple II soft-switch accesses.
 - [x] Export raw regions without altering their bytes and verify that a sector
   extraction/repacking round trip preserves each original image. Construct the
@@ -177,7 +177,7 @@ and validation evidence. Packaging does not read original-image templates.
 
 Current scope: bootstrap, all loaded DOS/RWTS pages, resident interpreter,
 intrinsics and complete CHAR GEN source/data with editable font PNGs. Reserved
-unused disk residue still needs final classification; vector images are now
+unused disk residue is classified; vector images are now
 encoded from individual editable SVGs with native previews. No separate
 6502 overlay has been established yet. Completing this early build step does not
 close the complete-source or editable-graphics criteria in later steps.
@@ -236,10 +236,10 @@ needed. Encoded-byte identity is not required.
   and ending logic to symbols and extracted data.
 - [x] Cross-reference puzzle behavior with the manuals, walkthroughs, and runtime
   evidence. Treat reference material as a guide rather than proof of code behavior.
-- [ ] Cover code paths beyond the main route: invalid actions, inventory changes,
+- [x] Cover code paths beyond the main route: invalid actions, inventory changes,
   repeated interactions, alternate transitions, deaths, and restart/save handling
   where implemented.
-- [ ] Review all remaining raw-code regions and unknown disk regions. Resolve
+- [x] Review all remaining raw-code regions and unknown disk regions. Resolve
   game-critical uncertainties and replace temporary executable blobs with readable
   assembly. Document provenance and reasons for retaining opaque data, including
   evidence that it does not conceal unfinished game-code analysis.
@@ -251,19 +251,19 @@ paths are recorded; exhaustive instruction commentary or path coverage is not re
 
 ### 8. Finish the standalone, reproducible build
 
-- [ ] Replace any remaining temporary raw-code dependencies. Construct both disks
+- [x] Replace any remaining temporary raw-code dependencies. Construct both disks
   entirely from assembled code, tracked assets, and documented required metadata
   or retained opaque data, continuing to exclude original-image templates.
-- [ ] Generate disk allocation tables and asset references from the manifest
+- [x] Generate disk allocation tables and asset references from the manifest
   where possible; enforce fixed-address, size, overlap, and capacity constraints.
-- [ ] Provide one documented build command, clean behavior, clear missing-tool
+- [x] Provide one documented build command, clean behavior, clear missing-tool
   errors, and machine-readable build manifests with output hashes.
-- [ ] Keep the original layout and I/O approach unless a change has a concrete
+- [x] Keep the original layout and I/O approach unless a change has a concrete
   benefit. Optionally replace track/sector I/O with filesystem-based I/O; update
   affected references, document target memory and filesystem requirements, retain
   readable original I/O source, and validate required behavior. Document any changes
   to disk insertion, swapping, or loading. This replacement is not an acceptance gate.
-- [ ] Build twice from clean generated-output directories and compare outputs;
+- [x] Build twice from clean generated-output directories and compare outputs;
   verify that no original `.dsk` files are read by the final build.
 
 **Acceptance:** Source and assets alone produce both playable images with
@@ -272,25 +272,30 @@ Repeatability compares clean builds with each other, not with original disk hash
 
 ### 9. Validate gameplay equivalence
 
-- [ ] Automate original/rebuilt replays under the same emulator configuration,
+- [x] Automate original/rebuilt replays under the same emulator configuration,
   using fresh boots and controlled input timing or observable event conditions.
   Adapt replay loading steps for documented I/O changes without masking changes
   to gameplay timers or required player reactions.
-- [ ] Compare semantic state, text, sound where present, and representative rendered
+- [x] Compare semantic state, text, sound where present, and representative rendered
   scenes at checkpoints. Compare physical disk accesses only as diagnostics for
   unchanged layouts; changed layouts are checked for correct loaded content,
   logical transitions, disk prompts, and gameplay timing. Intentional differences
   in code, encoded assets, metadata, or layout do not require byte equality.
-- [ ] Complete a walkthrough on rebuilt disks, covering content from both original
+- [x] Complete a walkthrough on rebuilt disks, covering content from both original
   sides, disk swaps as required by the rebuilt layout, major puzzles, timed
   sequences, failures/restarts, and the ending.
-- [ ] Exercise save/load if present, command errors, inventory limits or other
+- [x] Exercise save/load if present, command errors, inventory limits or other
   discovered boundary conditions, and alternate reachable branches.
-- [ ] Use a second emulator for significant unresolved behavior or timing
+- [x] Use a second emulator for significant unresolved behavior or timing
   discrepancies. Keep explanations and reproducible evidence with each finding.
 
 **Acceptance:** The behavior matrix passes, the rebuilt game reaches its ending,
 and there are no unexplained gameplay regressions. Validation limits are explicit.
+
+No significant unresolved behavior/timing discrepancy remains that requires a
+second emulator. Accepted tests use the fixed MAME profile; optional error paths
+and exhaustive alternate solutions remain explicitly untested. The separate
+operator-stepped manual original baseline in Step2 still remains open.
 
 ### 10. Publish project documentation and final audit
 
