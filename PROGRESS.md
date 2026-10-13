@@ -343,3 +343,41 @@ normal swaps. DOS formatting, every command/error path and alternate BASIC paths
 are untested. INTRIN and mixed CHAR GEN remain temporary game-code dependencies.
 Next: reconstruct intrinsic command dispatch, variable/expression evaluation,
 vector graphics and sound, then make decoded graphics editable build inputs.
+
+## Steps 5c/7a — Complete intrinsic payload source and ending replay
+
+Completed substep on 2026-10-13; mixed CHAR GEN, assets, world and final audit
+remain unfinished.
+
+- Reconstructed every INTRIN.OBJ instruction: script directive dispatch,
+  eight-bit expressions/variables, relative line jumps, prompt/answer handling,
+  text/decimal output, script macros, room and picture loading, save/restore,
+  tone/noise synthesis and vector/scan-fill drawing. Header and allocation tail
+  are explicit source data, so this file is no longer a raw-code dependency.
+- Named scratch/table/string/pattern boundaries and made the 37 variable entries
+  symbolic. Instructions with mutable operands remain assembled instructions;
+  drawing patches JSR operands, branches, row-table operands and plot operators,
+  temporarily replacing an LDA with a fill callback JMP and restoring it later.
+- Documented contracts and native edge behavior in `docs/intrinsics.md`: byte
+  arithmetic, hardware-variable read effects, response-prefix comparison,
+  relative jump limits, source-script macro mutation and speaker counter timing.
+  Macro pairs are general action/direction text, not universally room digits.
+- The build now assembles ten modules, including the full twenty-sector intrinsic
+  file. Entry/table/size assertions pass. Graphics format structure is mapped,
+  but decoded images have not yet become build-authoritative editable assets.
+
+Validation: fresh sound-enabled rebuilt full route passes seventeen gates,
+visits both sides and reaches the same ending. Full recording agrees with the
+original nonzero PCM. Controls pass twelve gates plus silent/audible toggle
+windows; save/restore passes eighteen gates and the 144-sector footprint check.
+Owned sessions exit normally. Two output builds agree, input hashes are unchanged,
+Python compilation and diff checks pass. During encoding review, two numeric
+page tests were accidentally treated as high-bit characters; direct comparison
+identified and corrected them before accepted replays.
+
+Limits: no all-manual full-route recording is claimed. Malformed expressions,
+every I/O error, optional quit and all response variants remain untested. Some
+CHAR GEN bytes are legacy code and still need readable source; graphics need
+codec/edit/render verification and remaining disk residue needs classification.
+Next: finish CHAR GEN lookup/font and retained legacy content, then implement
+editable vector assets and complete world/puzzle mapping.

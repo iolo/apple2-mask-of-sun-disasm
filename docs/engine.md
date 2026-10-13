@@ -22,8 +22,8 @@ return scanning restores it. A stack-depth guard prints an error before crossing
 its allowed range. The general script line scanner recognizes $8D CR; the
 `@@@@@` terminator transfers matching into the resident library pointer.
 
-These roles are supported by source and runtime room/script content. Detailed
-intrinsic opcode, condition/carry and timed-poll conventions remain under analysis.
+These roles are supported by source and runtime room/script content. Intrinsic opcodes, byte-valued conditions and timed polling are described in
+[intrinsics.md](intrinsics.md).
 The disassembly explicitly distinguishes saved prefix bytes, the input prompt
 length and the RWTS parameter block from code.
 
@@ -51,8 +51,8 @@ length and the RWTS parameter block from code.
 | $F0/$F1 | Prompt/parameter base ($0300) |
 
 This is a provisional resident map, not a complete zero-page ownership map.
-Intrinsic/graphics routines share additional workspace and still need their
-interfaces documented. Assembly comments state known register clobbers for
+Intrinsic/graphics routines share additional workspace; their interfaces are
+documented in [intrinsics.md](intrinsics.md). Assembly comments state known register clobbers for
 the reconstructed routines rather than asserting registers are preserved.
 
 The intrinsic variable lookup table at $13CC uses four-byte entries: two
@@ -107,8 +107,8 @@ RWTS at $BD00. The IOB requests read command 1, slot $60 (slot 6), drive 1.
 The device-characteristics table at $0BA7 and the IOB are data. Carry indicates
 an I/O error; the engine prints parameter-block strings for missing files, disk
 errors, unterminated input and stack overflow. Original I/O is retained.
-Boot-time relocation and the full DOS/RWTS source still require tracing and
-reconstruction; the high entry address alone does not prove every memory owner.
+All loaded boot/DOS/RWTS pages now have assembly source; [boot-loading.md](boot-loading.md)
+records the observed loading phases and memory ownership.
 
 Static intrinsic code at $122C/$129D implements save/restore with RWTS commands
 2/1. Its shared transfer at $123B starts at track31/sector15 and buffer $AF00,
@@ -117,11 +117,11 @@ track23/sector0 and $2000. It calls native entries $BA72/$BA69 around RWTS. This
 raw RAM snapshot of $2000–$AFFF, not a DOS catalog file. Runtime isolated-media
 comparisons observe exactly those 144 changed sectors, and restored object/room
 state passes both same-session and fresh-boot checks. The complete intrinsic
-source still needs reconstruction. Further native instruction inspection shows
+source is reconstructed in `src/intrinsics.s`. Further native instruction inspection shows
 $BA69/$BA72 are short register-return stubs, not workspace-preservation routines:
 $BA69 returns X=$6E,Y=$36 and $BA72 returns X=$6F,Y=$00. Their purpose in the
 supplied cracked version remains unconfirmed; no memory preservation is inferred.
 
-The early build now assembles interpreter and renderer. Their original encodings
-match as a diagnostic. It still needs intrinsics, boot/DOS, the remaining CHAR
-GEN content and decoded editable graphics before satisfying PLAN.md.
+The early build now assembles bootstrap, DOS/RWTS, interpreter, character renderer
+and the full intrinsic allocated stream. Remaining CHAR GEN content, decoded
+editable graphics, world mapping and final validation still need completion.

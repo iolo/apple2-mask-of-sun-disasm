@@ -35,6 +35,7 @@ def main():
         ('boot-stage2-b', 0xb700, 0x100, [('assets/raw/b/system/track-00.bin', 0x100, 0, 0x100)]),
         ('rwts-a', 0xb800, 0x800, [('assets/raw/a/system/track-00.bin', 0x200, 0, 0x800)]),
         ('rwts-b', 0xb800, 0x800, [('assets/raw/b/system/track-00.bin', 0x200, 0, 0x800)]),
+        ('intrinsics', 0x0cfc, 0x1400, [('assets/raw/a/files/intrin-obj.bin', 0, 0, 0x1400)]),
         ('dos-low', 0x9b00, 0x1b00, [
             ('assets/raw/a/system/track-00.bin', 0xa00, 0, 0x600),
             ('assets/raw/a/system/track-01.bin', 0, 0x600, 0x1000),
