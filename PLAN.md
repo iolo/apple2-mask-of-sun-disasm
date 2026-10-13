@@ -96,16 +96,16 @@ complete each implementation step.
 
 ### 1. Establish input provenance and tooling
 
-- [ ] Record hashes, sizes, roles, and provenance of every supplied input in an
+- [x] Record hashes, sizes, roles, and provenance of every supplied input in an
   input manifest. Resolve any discrepancies between the PRD and actual filenames.
-- [ ] Record tool versions and choose a reproducible emulator configuration:
+- [x] Record tool versions and choose a reproducible emulator configuration:
   Apple II model, CPU, memory, ROM requirements, disk controller, and drive setup.
-- [ ] Inspect the manuals and booklet for controls, disk changes, timing rules,
+- [x] Inspect the manuals and booklet for controls, disk changes, timing rules,
   and save/load features if present; turn walkthroughs into a candidate route.
-- [ ] Consult the earlier disassembly repositories linked in the PRD when a
+- [x] Consult the earlier disassembly repositories linked in the PRD when a
   specific convention would help; a comprehensive survey is optional. Do not
   assume their engines or disk layouts apply here.
-- [ ] Establish `src/`, `assets/`, `tools/`, `docs/`, and ignored `build/` outputs,
+- [x] Establish `src/`, `assets/`, `tools/`, `docs/`, and ignored `build/` outputs,
   plus an initial setup guide and tool checks.
 
 **Acceptance:** Inputs are identifiable and unchanged, required tools are usable,

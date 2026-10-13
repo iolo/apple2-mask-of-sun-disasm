@@ -1,0 +1,12 @@
+ROMs required for driver "apple2p" (including devices "a2diskiing", "d2fdc", "votrsc01a").
+Name                                   Size Checksum
+341-0036.chr                           2048 CRC(64f415c6) SHA1(f9d312f128c9557d9d6ac03bfad6c3ddf83e5659)
+341-0011.d0                            2048 CRC(6f05f949) SHA1(0287ebcef2c1ce11dc71be15a99d2d7e0e128b1e)
+341-0012.d8                            2048 CRC(1f08087c) SHA1(a75ce5aab6401355bf1ab01b04e4946a424879b5)
+341-0013.e0                            2048 CRC(2b8d9a89) SHA1(8d82a1da63224859bd619005fab62c4714b25dd7)
+341-0014.e8                            2048 CRC(5719871a) SHA1(37501be96d36d041667c15d63e0c1eff2f7dd4e9)
+341-0015.f0                            2048 CRC(9a04eecf) SHA1(e6bf91ed28464f42b807f798fc6422e5948bf581)
+341-0020-00.f8                         2048 CRC(079589c4) SHA1(a28852ff997b4790e53d8d0352112c4b1a395098)
+sc01a.bin                               512 CRC(fc416227) SHA1(1d6da90b1807a01b5e186ef08476119a862b5e6d)
+341-0027-a.p5                           256 CRC(ce7144f6) SHA1(d4181c9f046aafc3fb326b381baac809d9e38d16)
+341-0028-a.rom                          256 CRC(b72a2c70) SHA1(bc39fbd5b9a8d2287ac5d0a42e639fc4d3c2f9d4)

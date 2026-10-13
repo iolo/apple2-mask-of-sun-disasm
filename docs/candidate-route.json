@@ -1,0 +1,654 @@
+{
+  "source": "mask-of-sun-walkthrough.txt",
+  "status": "guide only, not runtime proof",
+  "steps": [
+    {
+      "id": "route-001",
+      "candidate": "Exit Plane",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-002",
+      "candidate": "Get Map",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-003",
+      "candidate": "Enter Jeep",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-004",
+      "candidate": "W",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-005",
+      "candidate": "Take All",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-006",
+      "candidate": "Exit Jeep  Go Hut",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-007",
+      "candidate": "Give Food",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-008",
+      "candidate": "Exit Hut",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-009",
+      "candidate": "Enter Jeep  W",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-010",
+      "candidate": "NW",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-011",
+      "candidate": "Drop All",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-012",
+      "candidate": "Get Bottle",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-013",
+      "candidate": "Exit Jeep  Look Behind Statue",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-014",
+      "candidate": "Get Head",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-015",
+      "candidate": "Place Head On Statue",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-016",
+      "candidate": "Enter Jeep  NW",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-017",
+      "candidate": "Get All",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-018",
+      "candidate": "Exit Jeep  Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-019",
+      "candidate": "Go Top",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-020",
+      "candidate": "Light Match",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-021",
+      "candidate": "Light Lantern",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-022",
+      "candidate": "Enter",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-023",
+      "candidate": "Shoot (do it quick)",
+      "status": "unverified",
+      "timing_note": "Requires observable timing condition; do not send literally."
+    },
+    {
+      "id": "route-024",
+      "candidate": "Search Platform",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-025",
+      "candidate": "Open Door",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-026",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-027",
+      "candidate": "Get Bowl",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-028",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-029",
+      "candidate": "Move Stone",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-030",
+      "candidate": "Wait For The Ghost To Disappear",
+      "status": "unverified",
+      "timing_note": "Requires observable timing condition; do not send literally."
+    },
+    {
+      "id": "route-031",
+      "candidate": "Get Bowl",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-032",
+      "candidate": "Exit",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-033",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-034",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-035",
+      "candidate": "Get Bowl",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-036",
+      "candidate": "Hit Skeleton With Amulet",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-037",
+      "candidate": "Get Bowl",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-038",
+      "candidate": "Get Urn",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-039",
+      "candidate": "Place Urn Right Pedestal",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-040",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-041",
+      "candidate": "Go Jeep",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-042",
+      "candidate": "Enter Jeep  SE",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-043",
+      "candidate": "S",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-044",
+      "candidate": "W",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-045",
+      "candidate": "W  NW",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-046",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-047",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-048",
+      "candidate": "Exit Jeep  D",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-049",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-050",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-051",
+      "candidate": "Sw (quickly)",
+      "status": "unverified",
+      "timing_note": "Requires observable timing condition; do not send literally."
+    },
+    {
+      "id": "route-052",
+      "candidate": "Jump At The Right Moment",
+      "status": "unverified",
+      "timing_note": "Requires observable timing condition; do not send literally."
+    },
+    {
+      "id": "route-053",
+      "candidate": "Xotzil",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-054",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-055",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-056",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-057",
+      "candidate": "Place Amulet In Opening",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-058",
+      "candidate": "Get Mask",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-059",
+      "candidate": "Search Altar",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-060",
+      "candidate": "Get Mask",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-061",
+      "candidate": "Back",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-062",
+      "candidate": "Wear Mask",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-063",
+      "candidate": "Exit",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-064",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-065",
+      "candidate": "Coffin",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-066",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-067",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-068",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-069",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-070",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-071",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-072",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-073",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-074",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-075",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-076",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-077",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-078",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-079",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-080",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-081",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-082",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-083",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-084",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-085",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-086",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-087",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-088",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-089",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-090",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-091",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-092",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-093",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-094",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-095",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-096",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-097",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-098",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-099",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-100",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-101",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-102",
+      "candidate": "Forward",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-103",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-104",
+      "candidate": "R",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-105",
+      "candidate": "Forward  Wear Mask",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-106",
+      "candidate": "L",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-107",
+      "candidate": "Give Mask",
+      "status": "unverified",
+      "timing_note": null
+    },
+    {
+      "id": "route-108",
+      "candidate": "Play Flute",
+      "status": "unverified",
+      "timing_note": null
+    }
+  ]
+}

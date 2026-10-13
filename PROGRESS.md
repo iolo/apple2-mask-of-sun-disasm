@@ -36,3 +36,37 @@ Completed on 2026-10-13 following review and user clarification.
 Validation: reviewed the revised plan against `PRD.md` and the user's clarified
 requirements, and checked the documentation diff for formatting errors. No game
 implementation or runtime validation was performed. Next remains Step 1.
+
+## Step 1 — Input provenance and tooling
+
+Completed on 2026-10-13.
+
+- Recorded sizes, SHA-256, roles and provenance limits for all eleven supplied
+  inputs in `docs/inputs.json`; documented the PRD's Korean-PDF filename mismatch
+  and omitted diskette filename. Inputs remain unchanged.
+- Recorded usable tool versions and successful Apple II+ ROM audit. Selected
+  48K Apple II+, 6502, Applesoft ROM, slot 6 Disk II NG, no language card or
+  Mockingboard. ROMs remain externally supplied. `START` invokes HGR/HGR2 and
+  loads the interpreter at $0800, establishing the Applesoft requirement.
+- Visually inspected manual scans and booklet controls/save/load pages; recorded
+  reference claims separately from runtime findings and generated an unverified
+  candidate route. Consulted the earlier local Stellar 7 MAME-check conventions.
+- Established source/asset/tool/documentation directories, ignored generated
+  output, input/tool checks, isolated media-copy MAME launcher and Lua capture
+  helpers. Wrote setup and reference notes; expanded README entry points.
+
+Validation: `python3 tools/check_inputs.py` verifies all eleven inputs;
+`python3 tools/check_tools.py --rompath /home/iolo/workspace/retro/a2x/mame/roms
+--output docs/toolchain.json` passes; `python3 -m py_compile tools/*.py` and
+`git diff --check` pass. Launched the documented II+ profile with debug/headless
+flags in `build/baseline-02`, loaded console helpers, ran from reset and captured
+CPU, RAM, text and PNG. MAME successfully read the copied side A and entered
+DOS during the initial capture. Opening gameplay is not yet verified.
+
+Findings: default `apple2` Integer BASIC does not automatically boot this
+Applesoft startup. MAME's autoboot script has a separate Lua environment from
+the console, so helpers must be loaded explicitly there. Headless audio is
+disabled and does not count as sound validation.
+
+Next: Step 2 — wait for game loading, record startup/opening controls and
+command checks, then establish the complete original route with timed events.

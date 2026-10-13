@@ -1,0 +1,62 @@
+-- Project-specific baseline recording. CPU-visible memory only; never read I/O.
+-- Commands execute through the owned MAME Lua console, not a network service.
+local json = require('json')
+mask = {}
+local function machine() return manager.machine end
+local function cpu() return machine().devices[':maincpu'] end
+local function bytes(address, length)
+    assert(address >= 0 and address + length <= 0xc000, 'RAM range required')
+    local result = {}
+    for offset = 0, length - 1 do
+        result[#result + 1] = string.char(cpu().spaces.program:read_u8(address + offset))
+    end
+    return table.concat(result)
+end
+function mask.text()
+    local rows = {}
+    for row = 0, 23 do
+        local address = 0x400 + (row % 8) * 128 + math.floor(row / 8) * 40
+        local text = {}
+        for c in bytes(address, 40):gmatch('.') do
+            local value = c:byte() % 128
+            if value < 32 then value = value + 64 end
+            text[#text + 1] = string.char(value)
+        end
+        rows[#rows + 1] = table.concat(text)
+    end
+    return rows
+end
+function mask.capture(name)
+    assert(name:match('^[%w_-]+$'), 'checkpoint name must be a simple filename')
+    emu.pause()
+    local record = {name=name, version=emu.app_version(), driver=machine().system.name,
+                    time=machine().time:as_double(), text=mask.text(), registers={}, media={}}
+    for key, state in pairs(cpu().state) do record.registers[key] = state.value end
+    for tag, image in pairs(machine().images) do
+        record.media[#record.media + 1] = {tag=tag, filename=image.filename}
+    end
+    for _, range in ipairs({{0,0x400,'low'}, {0x400,0x400,'text'},
+                             {0x2000,0x2000,'hgr1'}, {0x4000,0x2000,'hgr2'}}) do
+        local f = assert(io.open(name .. '-' .. range[3] .. '.bin', 'wb'))
+        f:write(bytes(range[1], range[2])); f:close()
+    end
+    local f = assert(io.open(name .. '.json', 'w'))
+    f:write(json.stringify(record)); f:close()
+    machine().screens[':screen']:snapshot(name .. '.png')
+    print('MASK ' .. json.stringify(record))
+    return record
+end
+function mask.keys(text)
+    machine().natkeyboard:post(text)
+    print('MASK keys ' .. json.stringify({time=machine().time:as_double(), text=text}))
+end
+function mask.swap(side)
+    assert(side == 'a' or side == 'b', 'side must be a or b')
+    local drive = assert(machine().images[':sl6:diskiing:0:525'])
+    local result = drive:load('side-' .. side .. '.dsk')
+    print('MASK mount ' .. json.stringify({side=side, result=result, filename=drive.filename}))
+end
+function mask.resume() emu.unpause() end
+function mask.go() cpu().debug:go() end
+function mask.exit() machine():exit() end
+print('MASK console helpers loaded')

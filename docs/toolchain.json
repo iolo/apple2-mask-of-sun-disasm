@@ -1,0 +1,55 @@
+{
+  "tools": {
+    "python3": {
+      "path": "/usr/bin/python3",
+      "version": "Python 3.14.4",
+      "exit_code": 0
+    },
+    "a2kit": {
+      "path": "/home/iolo/.cargo/bin/a2kit",
+      "version": "a2kit 4.4.2",
+      "exit_code": 0
+    },
+    "ca65": {
+      "path": "/home/iolo/.local/bin/ca65",
+      "version": "ca65 V2.19 - Git e47ac5060",
+      "exit_code": 0
+    },
+    "ld65": {
+      "path": "/home/iolo/.local/bin/ld65",
+      "version": "ld65 V2.19 - Git e47ac5060",
+      "exit_code": 0
+    },
+    "cl65": {
+      "path": "/home/iolo/.local/bin/cl65",
+      "version": "cl65 V2.19 - Git e47ac5060",
+      "exit_code": 0
+    },
+    "da65": {
+      "path": "/home/iolo/.local/bin/da65",
+      "version": "da65 V2.19 - Git e47ac5060",
+      "exit_code": 0
+    },
+    "mame": {
+      "path": "/usr/games/mame",
+      "version": "0.285 (unknown)",
+      "exit_code": 0
+    },
+    "pdftotext": {
+      "path": "/usr/bin/pdftotext",
+      "version": "pdftotext version 26.01.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+      "exit_code": 0
+    },
+    "pdftoppm": {
+      "path": "/usr/bin/pdftoppm",
+      "version": "pdftoppm version 26.01.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+      "exit_code": 0
+    }
+  },
+  "missing": [],
+  "rom_audit": {
+    "driver": "apple2p",
+    "exit_code": 0,
+    "output": "romset apple2p [apple2] is good\n1 romsets found, 1 were OK.\n"
+  }
+}

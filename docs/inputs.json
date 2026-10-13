@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "recorded": "2026-10-13",
+  "filename_discrepancies": [
+    {
+      "prd": "mask-of-the-sun-walkthrough-korean.pdf",
+      "actual": "mask-of-sun-walkthrough-korean.pdf"
+    },
+    {
+      "prd": "diskette scan mentioned in description but omitted from filename list",
+      "actual": "mask-of-sun-diskette.jpg"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "mask-of-sun-a.dsk",
+      "size": 143360,
+      "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab",
+      "role": "cracked game disk",
+      "provenance": "Supplied in repository; upstream source and crack author not independently established."
+    },
+    {
+      "path": "mask-of-sun-b.dsk",
+      "size": 143360,
+      "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46",
+      "role": "cracked game disk",
+      "provenance": "Supplied in repository; upstream source and crack author not independently established."
+    },
+    {
+      "path": "mask-of-sun-booklet.pdf",
+      "size": 2940092,
+      "sha256": "77c8d9357979823f45afccdedb65aaae4938db29d356de42b8bb7ce804e6f8c7",
+      "role": "supplied reference PDF",
+      "provenance": "Supplied in repository; upstream source and crack author not independently established."
+    },
+    {
+      "path": "mask-of-sun-diskette.jpg",
+      "size": 61810,
+      "sha256": "d3aa244d3f21001725cb05ace2501e296250ff76bb9724eccfc65fc256709e9a",
+      "role": "supplied scan",
+      "provenance": "Supplied in repository; upstream source and crack author not independently established."
+    },
+    {
+      "path": "mask-of-sun-gamebox-back.jpg",
+      "size": 6203977,
+      "sha256": "6e7c691c5a6b3c22bea5a6abdc40f13b72e062235a2026cd7ff6f8e349188c4d",
+      "role": "supplied scan",
+      "provenance": "Supplied in repository; upstream source and crack author not independently established."
+    },
+    {
+      "path": "mask-of-sun-gamebox-cover.jpg",
+      "size": 8937377,
+      "sha256": "3f19a8edb6d2215180045ffdf6c59a9c99efe7f90e2b454b4a2723a629431ed7",
+      "role": "supplied scan",
+      "provenance": "Supplied in repository; upstream source and crack author not independently established."
+    },
+    {
+      "path": "mask-of-sun-manual-1.jpg",
+      "size": 12709135,
+      "sha256": "e477c91ad6f9192b7aebf6ce71eec1ec30c4ce5c6c870017b0544b6f1b2cc50b",
+      "role": "supplied scan",
+      "provenance": "Supplied in repository; upstream source and crack author not independently established."
+    },
+    {
+      "path": "mask-of-sun-manual-2.jpg",
+      "size": 12506948,
+      "sha256": "1d4bf5b6ef4f2f0164e66be9107570567da2986501e1116a51c009825d418448",
+      "role": "supplied scan",
+      "provenance": "Supplied in repository; upstream source and crack author not independently established."
+    },
+    {
+      "path": "mask-of-sun-walkthrough-korean.pdf",
+      "size": 10561018,
+      "sha256": "6ae6a54e19d823a847f7c36f0164dab321dcb90835b89b55fe484c8a4e0ef12d",
+      "role": "supplied reference PDF",
+      "provenance": "Supplied in repository; upstream source and crack author not independently established."
+    },
+    {
+      "path": "mask-of-sun-walkthrough.pdf",
+      "size": 5797814,
+      "sha256": "7c4c92545c4f0068ffac378cedfc6109e6a2f3f824fe8eb6aab1cac513bb458b",
+      "role": "supplied reference PDF",
+      "provenance": "Supplied in repository; upstream source and crack author not independently established."
+    },
+    {
+      "path": "mask-of-sun-walkthrough.txt",
+      "size": 2477,
+      "sha256": "c30ab69ee412964bdba34721ccedb47750084f3cb3662f2a3bc1f7216cf6a00e",
+      "role": "unofficial candidate walkthrough",
+      "provenance": "Supplied in repository; upstream source and crack author not independently established."
+    }
+  ]
+}
