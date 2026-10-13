@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Early template-free rebuild: assembled renderer plus tracked raw regions.
+"""Early template-free rebuild: assembled modules plus tracked raw regions.
 
 This is intentionally incomplete. All other code remains tracked temporary raw
 dependencies in assets/raw/manifest.json; completing PLAN.md requires replacing
@@ -24,27 +24,31 @@ def main():
             p.error(f'missing {name}; install cc65 and run tools/check_tools.py')
     out = args.output.resolve()
     out.mkdir(parents=True, exist_ok=True)
-    subprocess.run(['ca65', str(ROOT / 'src/renderer.s'), '-o', str(out / 'renderer.o'),
-                    '-l', str(out / 'renderer.lst')], check=True)
-    subprocess.run(['ld65', '-C', str(ROOT / 'src/renderer.cfg'), str(out / 'renderer.o'),
-                    '-o', str(out / 'renderer.bin'), '-m', str(out / 'renderer.map'),
-                    '-Ln', str(out / 'renderer.lbl')], check=True)
-    renderer = (out / 'renderer.bin').read_bytes()
-    if len(renderer) != 0x100:
-        raise ValueError('renderer output must fit its original 256-byte page')
-    asset = 'assets/raw/a/files/char-gen.bin'
-    native = (ROOT / asset).read_bytes()
-    converted = native[:0x504] + renderer + native[0x604:]
-    repack(ROOT / 'assets/raw/manifest.json', out, {asset: converted})
+    replacements, assembled = {}, []
+    modules = [('renderer', 0xb300, 0x100, 'assets/raw/a/files/char-gen.bin', 0x504),
+               ('interpreter', 0x0800, 0x500, 'assets/raw/a/files/adven-interp-obj.bin', 4)]
+    for name, address, length, asset, offset in modules:
+        subprocess.run(['ca65', str(ROOT / f'src/{name}.s'), '-o', str(out / f'{name}.o'),
+                        '-l', str(out / f'{name}.lst')], check=True)
+        subprocess.run(['ld65', '-C', str(ROOT / f'src/{name}.cfg'), str(out / f'{name}.o'),
+                        '-o', str(out / f'{name}.bin'), '-m', str(out / f'{name}.map'),
+                        '-Ln', str(out / f'{name}.lbl')], check=True)
+        code = (out / f'{name}.bin').read_bytes()
+        if len(code) != length:
+            raise ValueError(f'{name}: output must occupy its original {length}-byte region')
+        native = (ROOT / asset).read_bytes()
+        replacements[asset] = native[:offset] + code + native[offset + length:]
+        assembled.append({'source': f'src/{name}.s', 'load_address': address, 'size': len(code),
+                          'sha256': hashlib.sha256(code).hexdigest(), 'asset': asset, 'offset': offset,
+                          'original_encoding_equal': code == native[offset:offset + length]})
+    repack(ROOT / 'assets/raw/manifest.json', out, replacements)
     manifest = json.loads((ROOT / 'assets/raw/manifest.json').read_text())
     dependencies = [{'side': disk['side'], 'path': region['path'], 'role': region['role']}
                     for disk in manifest['disks'] for region in disk['regions']
-                    if region['role'].startswith('temporary')]
+                    if region['role'].startswith('temporary') and region['path'] != 'assets/raw/a/files/adven-interp-obj.bin']
     (out / 'build.json').write_text(json.dumps({'status': 'early partial source build',
-        'assembled': [{'source': 'src/renderer.s', 'load_address': 0xb300, 'size': len(renderer),
-                       'sha256': hashlib.sha256(renderer).hexdigest(), 'asset': asset, 'offset': 0x504}],
-        'temporary_raw_code_dependencies': dependencies,
-        'renderer_original_encoding_equal': renderer == native[0x504:0x604]}, indent=2) + '\n')
+        'assembled': assembled,
+        'temporary_raw_code_dependencies': dependencies}, indent=2) + '\n')
 
 
 if __name__ == '__main__':

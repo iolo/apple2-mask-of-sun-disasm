@@ -28,8 +28,8 @@ An **early partial rebuild** is now available:
 python3 tools/build.py
 ```
 
-It produces `build/early/mask-of-sun-{a,b}.dsk`, assembles the documented text
-renderer and packages tracked exports without reading original disk templates.
+It produces `build/early/mask-of-sun-{a,b}.dsk`, assembles the documented resident
+interpreter and text renderer, and packages tracked exports without reading original disk templates.
 Other code and graphics still use temporary native exports. See the emitted
 `build.json` for those dependencies and [baseline evidence](docs/baseline.md)
 for the verified opening route. The [disk map](docs/disk-layout.md) documents

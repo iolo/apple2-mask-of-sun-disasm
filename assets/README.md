@@ -11,3 +11,6 @@ file offsets $0504–$0603. The builder overwrites that provenance span with the
 assembled page. The surrounding bytes remain native temporary inputs. Editable
 graphics will become authoritative build inputs after their format and rendering
 are understood. Supplied disks at the repository root are never build templates.
+
+`src/interpreter.s` is authoritative for ADVEN INTERP.OBJ file offsets
+$0004–$0503; its four-byte header and allocation tail remain native metadata.

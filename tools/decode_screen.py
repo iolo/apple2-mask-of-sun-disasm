@@ -12,12 +12,13 @@ def decode(ram):
     base = 0x2000 if ram[0x346] == 0 else 0x4000
     rows = []
     for row in range(16):
-        cells = []
+        cells, inverted = [], []
         for col in range(40):
             glyph = bytes(ram[base + ((y & 7) << 10) + ((y >> 3 & 7) << 7) +
                               (y >> 6)*40 + col] & 127 for y in range(row*12, row*12+8))
             cells.append(font.get(glyph, '?'))
-        rows.append(''.join(cells))
+            inverted.append(font.get(bytes(v ^ 127 for v in glyph), '?'))
+        rows.append(''.join(inverted if inverted.count('?') < cells.count('?') else cells))
     return rows
 
 

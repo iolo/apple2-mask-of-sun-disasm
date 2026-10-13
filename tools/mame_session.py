@@ -23,6 +23,8 @@ def main():
     p.add_argument('--script', type=Path, help='optional owned replay startup Lua script')
     p.add_argument('--fast', action='store_true', help='unthrottled; compare emulated time, not wall time')
     p.add_argument('--route', type=Path, help='JSON exploration route for opening_replay.lua')
+    p.add_argument('--record-audio', action='store_true', help='record emulated mixer output to session audio.wav')
+    p.add_argument('--trace-keyboard', action='store_true', help='observe late-game keyboard bus reads without additional I/O reads')
     args = p.parse_args()
     if not args.rompath or not args.rompath.is_dir():
         p.error('supply --rompath or MAME_ROMPATH with locally supplied ROMs')
@@ -53,11 +55,17 @@ def main():
         cmd.extend(['-' + option, str(directory)])
     env = os.environ.copy()
     env['MASK_PROJECT_ROOT'] = str(ROOT)
+    if args.trace_keyboard:
+        env['MASK_KEYBOARD_TRACE'] = '1'
     if args.route:
         env['MASK_ROUTE'] = str(args.route.resolve())
     if args.headless:
         env.update(SDL_VIDEODRIVER='dummy', SDL_AUDIODRIVER='dummy', QT_QPA_PLATFORM='offscreen')
-        cmd.extend(['-video', 'none', '-sound', 'none'])
+        cmd.extend(['-video', 'none'])
+        if not args.record_audio:
+            cmd.extend(['-sound', 'none'])
+    if args.record_audio:
+        cmd.extend(['-wavwrite', str(out / 'audio.wav'), '-samplerate', '22050'])
     if args.debug:
         cmd.extend(['-debug', '-debugger', 'qt'])
     if args.script:

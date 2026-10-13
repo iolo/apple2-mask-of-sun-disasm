@@ -1,0 +1,6273 @@
+{
+  "scope": "Verified original full route through both disks and the ending",
+  "session": {
+    "command": [
+      "/usr/games/mame",
+      "apple2p",
+      "-noreadconfig",
+      "-rompath",
+      "/home/iolo/workspace/retro/a2x/mame/roms",
+      "-ramsize",
+      "48K",
+      "-sl0",
+      "",
+      "-sl4",
+      "",
+      "-sl6",
+      "diskiing",
+      "-flop1",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/full-core-rebuilt-01/side-a.dsk",
+      "-console",
+      "-pluginspath",
+      "/usr/share/games/mame/plugins",
+      "-skip_gameinfo",
+      "-natural",
+      "-window",
+      "-nomouse",
+      "-homepath",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/full-core-rebuilt-01",
+      "-cfg_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/full-core-rebuilt-01/cfg_directory",
+      "-nvram_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/full-core-rebuilt-01/nvram_directory",
+      "-snapshot_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/full-core-rebuilt-01/snapshot_directory",
+      "-state_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/full-core-rebuilt-01/state_directory",
+      "-diff_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/full-core-rebuilt-01/diff_directory",
+      "-video",
+      "none",
+      "-sound",
+      "none",
+      "-autoboot_script",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/opening_replay.lua",
+      "-autoboot_delay",
+      "0",
+      "-nothrottle"
+    ],
+    "media": {
+      "a": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/core-check-02/mask-of-sun-a.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/full-core-rebuilt-01/side-a.dsk",
+        "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+      },
+      "b": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/core-check-02/mask-of-sun-b.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/full-core-rebuilt-01/side-b.dsk",
+        "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+      }
+    },
+    "headless": true,
+    "debug": false
+  },
+  "checks": [
+    {
+      "id": "ordered-command-sequence",
+      "pass": true
+    },
+    {
+      "id": "ending-observed",
+      "pass": true
+    },
+    {
+      "id": "no-death",
+      "pass": true
+    },
+    {
+      "id": "required-disk-sides",
+      "pass": true,
+      "observed": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "id": "snake-survival",
+      "pass": true,
+      "expected": "You are in a room with exits to the",
+      "checkpoints": [
+        "053-prompt-35"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "jade-bowl",
+      "pass": true,
+      "expected": "magnificent jade bowl.",
+      "checkpoints": [
+        "056-prompt-38"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "ghost-fades",
+      "pass": true,
+      "expected": "The apparition fades.",
+      "checkpoints": [
+        "063-waiting-41"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "gold-bowl",
+      "pass": true,
+      "expected": "You pick up a precious gold bowl.",
+      "checkpoints": [
+        "065-prompt-42"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "skeletons-defeated",
+      "pass": true,
+      "expected": "The skeletons disintegrate!",
+      "checkpoints": [
+        "077-prompt-47"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "urn-door",
+      "pass": true,
+      "expected": "With startling swiftness the middle",
+      "checkpoints": [
+        "082-prompt-50"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "pyramid-exit",
+      "pass": true,
+      "expected": "You're at the temple's base. The path",
+      "checkpoints": [
+        "084-prompt-51"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "side-b-pyramid",
+      "pass": true,
+      "expected": "Ahead you see a massive stone pyramid.",
+      "checkpoints": [
+        "100-prompt-59"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "gas-escape",
+      "pass": true,
+      "expected": "Raoul did not make it.",
+      "checkpoints": [],
+      "output_stream": true
+    },
+    {
+      "id": "stepping-stone",
+      "pass": true,
+      "expected": "You made it!",
+      "checkpoints": [],
+      "output_stream": true
+    },
+    {
+      "id": "true-mask",
+      "pass": true,
+      "expected": "This must be the true mask.",
+      "checkpoints": [
+        "137-prompt-73"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "win",
+      "pass": true,
+      "expected": "YOU HAVE WON THE GAME!!",
+      "checkpoints": [
+        "221-waiting-123"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "jaguar-soothed",
+      "pass": true,
+      "expected": "The music seems to soothe the jaguar.",
+      "checkpoints": [
+        "217-waiting-123"
+      ],
+      "output_stream": true
+    }
+  ],
+  "pass": true,
+  "inputs": [
+    {
+      "time": 29.799999999863,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 1
+    },
+    {
+      "time": 32.899999999849,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 1
+    },
+    {
+      "time": 35.999999999834,
+      "text": "LOOK\r",
+      "reason": "LOOK",
+      "command_index": 1
+    },
+    {
+      "time": 39.09999999982,
+      "text": "INVENTORY\r",
+      "reason": "INVENTORY",
+      "command_index": 2
+    },
+    {
+      "time": 42.999999999802,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 3
+    },
+    {
+      "time": 46.099999999788,
+      "text": "FERNAP\r",
+      "reason": "FERNAP",
+      "command_index": 3
+    },
+    {
+      "time": 49.199999999774,
+      "text": "GET\r",
+      "reason": "GET",
+      "command_index": 4
+    },
+    {
+      "time": 52.299999999759,
+      "text": "GET LAMP\r",
+      "reason": "GET LAMP",
+      "command_index": 5
+    },
+    {
+      "time": 55.399999999745,
+      "text": "FERNAP GUN\r",
+      "reason": "FERNAP GUN",
+      "command_index": 6
+    },
+    {
+      "time": 58.69999999973,
+      "text": "EXIT PLANE\r",
+      "reason": "EXIT PLANE",
+      "command_index": 7
+    },
+    {
+      "time": 71.999999999669,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 8
+    },
+    {
+      "time": 75.099999999654,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 8
+    },
+    {
+      "time": 78.19999999964,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 8
+    },
+    {
+      "time": 81.299999999626,
+      "text": "GET MAP\r",
+      "reason": "GET MAP",
+      "command_index": 8
+    },
+    {
+      "time": 84.399999999611,
+      "text": "ENTER JEEP\r",
+      "reason": "ENTER JEEP",
+      "command_index": 9
+    },
+    {
+      "time": 92.699999999573,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 10
+    },
+    {
+      "time": 95.799999999559,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 10
+    },
+    {
+      "time": 116.99999999946,
+      "text": "W\r",
+      "reason": "W",
+      "command_index": 10
+    },
+    {
+      "time": 143.79999999934,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 11
+    },
+    {
+      "time": 146.89999999932,
+      "text": "TAKE ALL\r",
+      "reason": "TAKE ALL",
+      "command_index": 11
+    },
+    {
+      "time": 150.79999999931,
+      "text": "EXIT JEEP\r",
+      "reason": "EXIT JEEP",
+      "command_index": 12
+    },
+    {
+      "time": 153.89999999929,
+      "text": "GO HUT\r",
+      "reason": "GO HUT",
+      "command_index": 13
+    },
+    {
+      "time": 162.49999999925,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 14
+    },
+    {
+      "time": 165.59999999924,
+      "text": "GIVE FOOD\r",
+      "reason": "GIVE FOOD",
+      "command_index": 14
+    },
+    {
+      "time": 168.69999999922,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 15
+    },
+    {
+      "time": 175.39999999919,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 15
+    },
+    {
+      "time": 178.49999999918,
+      "text": "EXIT HUT\r",
+      "reason": "EXIT HUT",
+      "command_index": 15
+    },
+    {
+      "time": 186.29999999914,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 16
+    },
+    {
+      "time": 189.39999999913,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 16
+    },
+    {
+      "time": 192.49999999911,
+      "text": "ENTER JEEP\r",
+      "reason": "ENTER JEEP",
+      "command_index": 16
+    },
+    {
+      "time": 195.5999999991,
+      "text": "W\r",
+      "reason": "W",
+      "command_index": 17
+    },
+    {
+      "time": 220.69999999898,
+      "text": "NW\r",
+      "reason": "NW",
+      "command_index": 18
+    },
+    {
+      "time": 244.49999999887,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 19
+    },
+    {
+      "time": 247.59999999886,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 19
+    },
+    {
+      "time": 250.69999999885,
+      "text": "DROP ALL\r",
+      "reason": "DROP ALL",
+      "command_index": 19
+    },
+    {
+      "time": 258.59999999881,
+      "text": "GET BOTTLE\r",
+      "reason": "GET BOTTLE",
+      "command_index": 20
+    },
+    {
+      "time": 261.79999999879,
+      "text": "EXIT JEEP\r",
+      "reason": "EXIT JEEP",
+      "command_index": 21
+    },
+    {
+      "time": 264.89999999878,
+      "text": "LOOK BEHIND STATUE\r",
+      "reason": "LOOK BEHIND STATUE",
+      "command_index": 22
+    },
+    {
+      "time": 268.29999999876,
+      "text": "GET HEAD\r",
+      "reason": "GET HEAD",
+      "command_index": 23
+    },
+    {
+      "time": 272.09999999875,
+      "text": "PLACE HEAD ON STATUE\r",
+      "reason": "PLACE HEAD ON STATUE",
+      "command_index": 24
+    },
+    {
+      "time": 277.19999999872,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 25
+    },
+    {
+      "time": 307.99999999858,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 25
+    },
+    {
+      "time": 311.09999999857,
+      "text": "ENTER JEEP\r",
+      "reason": "ENTER JEEP",
+      "command_index": 25
+    },
+    {
+      "time": 314.19999999855,
+      "text": "NW\r",
+      "reason": "NW",
+      "command_index": 26
+    },
+    {
+      "time": 340.59999999843,
+      "text": "GET ALL\r",
+      "reason": "GET ALL",
+      "command_index": 27
+    },
+    {
+      "time": 345.79999999841,
+      "text": "EXIT JEEP\r",
+      "reason": "EXIT JEEP",
+      "command_index": 28
+    },
+    {
+      "time": 348.89999999839,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 29
+    },
+    {
+      "time": 355.99999999836,
+      "text": "GO TOP\r",
+      "reason": "GO TOP",
+      "command_index": 30
+    },
+    {
+      "time": 363.49999999833,
+      "text": "LIGHT MATCH\r",
+      "reason": "LIGHT MATCH",
+      "command_index": 31
+    },
+    {
+      "time": 366.59999999831,
+      "text": "LIGHT LANTERN\r",
+      "reason": "LIGHT LANTERN",
+      "command_index": 32
+    },
+    {
+      "time": 369.6999999983,
+      "text": "ENTER\r",
+      "reason": "ENTER",
+      "command_index": 33
+    },
+    {
+      "time": 382.44999999824,
+      "text": "SHOOT",
+      "reason": "SHOOT",
+      "command_index": 34
+    },
+    {
+      "time": 392.39999999819,
+      "text": "SEARCH PLATFORM\r",
+      "reason": "SEARCH PLATFORM",
+      "command_index": 35
+    },
+    {
+      "time": 395.49999999818,
+      "text": "OPEN DOOR\r",
+      "reason": "OPEN DOOR",
+      "command_index": 36
+    },
+    {
+      "time": 399.09999999816,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 37
+    },
+    {
+      "time": 404.79999999814,
+      "text": "GET BOWL\r",
+      "reason": "GET BOWL",
+      "command_index": 38
+    },
+    {
+      "time": 410.29999999811,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 39
+    },
+    {
+      "time": 413.3999999981,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 39
+    },
+    {
+      "time": 416.69999999808,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 39
+    },
+    {
+      "time": 433.899999998,
+      "text": "MOVE STONE\r",
+      "reason": "MOVE STONE",
+      "command_index": 40
+    },
+    {
+      "time": 436.99999999799,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 41
+    },
+    {
+      "time": 440.09999999797,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 41
+    },
+    {
+      "time": 480.89999999779,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 41
+    },
+    {
+      "time": 483.99999999777,
+      "text": "GET BOWL\r",
+      "reason": "GET BOWL",
+      "command_index": 41
+    },
+    {
+      "time": 487.09999999776,
+      "text": "EXIT\r",
+      "reason": "EXIT",
+      "command_index": 42
+    },
+    {
+      "time": 501.89999999769,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 43
+    },
+    {
+      "time": 513.89999999763,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 44
+    },
+    {
+      "time": 527.09999999757,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 44
+    },
+    {
+      "time": 530.19999999756,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 44
+    },
+    {
+      "time": 548.49999999747,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 45
+    },
+    {
+      "time": 551.59999999746,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 45
+    },
+    {
+      "time": 554.69999999745,
+      "text": "GET BOWL\r",
+      "reason": "GET BOWL",
+      "command_index": 45
+    },
+    {
+      "time": 557.94999999743,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 46
+    },
+    {
+      "time": 560.96666666408,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 46
+    },
+    {
+      "time": 563.78333333074,
+      "text": "HIT SKELETON WITH AMULET\r",
+      "reason": "HIT SKELETON WITH AMULET",
+      "command_index": 46
+    },
+    {
+      "time": 569.19999999738,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 47
+    },
+    {
+      "time": 572.29999999737,
+      "text": "GET BOWL\r",
+      "reason": "GET BOWL",
+      "command_index": 47
+    },
+    {
+      "time": 590.59999999728,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 48
+    },
+    {
+      "time": 593.69999999727,
+      "text": "GET URN\r",
+      "reason": "GET URN",
+      "command_index": 48
+    },
+    {
+      "time": 597.09999999725,
+      "text": "PLACE URN RIGHT PEDESTAL\r",
+      "reason": "PLACE URN RIGHT PEDESTAL",
+      "command_index": 49
+    },
+    {
+      "time": 601.99999999723,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 50
+    },
+    {
+      "time": 605.09999999721,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 50
+    },
+    {
+      "time": 611.49999999718,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 51
+    },
+    {
+      "time": 614.59999999717,
+      "text": "GO JEEP\r",
+      "reason": "GO JEEP",
+      "command_index": 51
+    },
+    {
+      "time": 620.39999999714,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 52
+    },
+    {
+      "time": 623.49999999713,
+      "text": "ENTER JEEP\r",
+      "reason": "ENTER JEEP",
+      "command_index": 52
+    },
+    {
+      "time": 626.59999999712,
+      "text": "SE\r",
+      "reason": "SE",
+      "command_index": 53
+    },
+    {
+      "time": 652.89999999699,
+      "text": "S\r",
+      "reason": "S",
+      "command_index": 54
+    },
+    {
+      "time": 677.89999999688,
+      "text": "W\r",
+      "reason": "W",
+      "command_index": 55
+    },
+    {
+      "time": 703.59999999676,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 56
+    },
+    {
+      "time": 706.69999999675,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 56
+    },
+    {
+      "time": 709.79999999673,
+      "text": "W\r",
+      "reason": "W",
+      "command_index": 56
+    },
+    {
+      "time": 733.99999999662,
+      "text": "NW\r",
+      "reason": "NW",
+      "command_index": 57
+    },
+    {
+      "time": 755.39999999652,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 58
+    },
+    {
+      "side": "b",
+      "time": 773.69999999644,
+      "kind": "mount"
+    },
+    {
+      "time": 774.49999999643,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 59
+    },
+    {
+      "time": 777.59999999642,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 59
+    },
+    {
+      "time": 783.19999999639,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 59
+    },
+    {
+      "time": 786.29999999638,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 59
+    },
+    {
+      "time": 789.39999999637,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 59
+    },
+    {
+      "time": 797.89999999633,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 59
+    },
+    {
+      "time": 805.69999999629,
+      "text": "EXIT JEEP\r",
+      "reason": "EXIT JEEP",
+      "command_index": 60
+    },
+    {
+      "time": 808.79999999628,
+      "text": "D\r",
+      "reason": "D",
+      "command_index": 61
+    },
+    {
+      "time": 815.19999999625,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 62
+    },
+    {
+      "time": 832.19999999617,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 63
+    },
+    {
+      "time": 835.29999999615,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 63
+    },
+    {
+      "time": 838.39999999614,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 63
+    },
+    {
+      "time": 841.49999999613,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 63
+    },
+    {
+      "time": 844.59999999611,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 63
+    },
+    {
+      "time": 857.79999999605,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 63
+    },
+    {
+      "time": 860.89999999604,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 63
+    },
+    {
+      "time": 877.43333332929,
+      "text": "SW\r",
+      "reason": "SW",
+      "command_index": 64
+    },
+    {
+      "time": 894.64999999588,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 65
+    },
+    {
+      "time": 897.66666666253,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 65
+    },
+    {
+      "time": 900.68333332919,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 65
+    },
+    {
+      "time": 907.19999999582,
+      "text": "\r",
+      "physical_key": "Return",
+      "reason": "",
+      "command_index": 65
+    },
+    {
+      "time": 925.89999999574,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 66
+    },
+    {
+      "time": 928.99999999572,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 66
+    },
+    {
+      "time": 932.09999999571,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 66
+    },
+    {
+      "time": 935.19999999569,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 66
+    },
+    {
+      "time": 938.29999999568,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 66
+    },
+    {
+      "time": 941.39999999567,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 66
+    },
+    {
+      "time": 944.49999999565,
+      "text": "XOTZIL\r",
+      "reason": "XOTZIL",
+      "command_index": 66
+    },
+    {
+      "time": 949.39999999563,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 67
+    },
+    {
+      "time": 952.49999999562,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 67
+    },
+    {
+      "time": 958.89999999559,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 68
+    },
+    {
+      "time": 961.99999999557,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 68
+    },
+    {
+      "time": 969.19999999554,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 69
+    },
+    {
+      "time": 972.29999999552,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 69
+    },
+    {
+      "time": 975.39999999551,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 69
+    },
+    {
+      "time": 982.09999999548,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 70
+    },
+    {
+      "time": 985.19999999546,
+      "text": "PLACE AMULET IN OPENING\r",
+      "reason": "PLACE AMULET IN OPENING",
+      "command_index": 70
+    },
+    {
+      "time": 994.29999999542,
+      "text": "GET MASK\r",
+      "reason": "GET MASK",
+      "command_index": 71
+    },
+    {
+      "time": 997.39999999541,
+      "text": "SEARCH ALTAR\r",
+      "reason": "SEARCH ALTAR",
+      "command_index": 72
+    },
+    {
+      "time": 1000.4999999954,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 73
+    },
+    {
+      "time": 1003.5999999954,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 73
+    },
+    {
+      "time": 1006.6999999954,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 73
+    },
+    {
+      "time": 1009.7999999954,
+      "text": "GET MASK\r",
+      "reason": "GET MASK",
+      "command_index": 73
+    },
+    {
+      "time": 1012.8999999953,
+      "text": "BACK\r",
+      "reason": "BACK",
+      "command_index": 74
+    },
+    {
+      "time": 1022.8999999953,
+      "text": "WEAR MASK\r",
+      "reason": "WEAR MASK",
+      "command_index": 75
+    },
+    {
+      "time": 1026.9999999953,
+      "text": "EXIT\r",
+      "reason": "EXIT",
+      "command_index": 76
+    },
+    {
+      "time": 1044.3999999952,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 77
+    },
+    {
+      "time": 1061.3999999951,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 78
+    },
+    {
+      "time": 1064.4999999951,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 78
+    },
+    {
+      "time": 1067.5999999951,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 78
+    },
+    {
+      "time": 1070.6999999951,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 78
+    },
+    {
+      "time": 1073.7999999951,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 78
+    },
+    {
+      "time": 1076.899999995,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 78
+    },
+    {
+      "time": 1079.999999995,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 78
+    },
+    {
+      "time": 1083.099999995,
+      "text": "COFFIN\r",
+      "reason": "COFFIN",
+      "command_index": 78
+    },
+    {
+      "time": 1097.7999999949,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 79
+    },
+    {
+      "time": 1112.4999999949,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 80
+    },
+    {
+      "time": 1127.3999999948,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 81
+    },
+    {
+      "time": 1139.6999999948,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 82
+    },
+    {
+      "time": 1150.1999999947,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 82
+    },
+    {
+      "time": 1162.4999999946,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 83
+    },
+    {
+      "time": 1172.9999999946,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 83
+    },
+    {
+      "time": 1191.0999999945,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 84
+    },
+    {
+      "time": 1194.1999999945,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 84
+    },
+    {
+      "time": 1207.0999999944,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 85
+    },
+    {
+      "time": 1217.1999999944,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 85
+    },
+    {
+      "time": 1231.5999999943,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 86
+    },
+    {
+      "time": 1246.1999999943,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 87
+    },
+    {
+      "time": 1261.1999999942,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 88
+    },
+    {
+      "time": 1273.6999999941,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 89
+    },
+    {
+      "time": 1283.8999999941,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 89
+    },
+    {
+      "time": 1298.399999994,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 90
+    },
+    {
+      "time": 1311.299999994,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 91
+    },
+    {
+      "time": 1321.4999999939,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 91
+    },
+    {
+      "time": 1336.4999999938,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 92
+    },
+    {
+      "time": 1351.0999999938,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 93
+    },
+    {
+      "time": 1365.4999999937,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 94
+    },
+    {
+      "time": 1379.8999999936,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 95
+    },
+    {
+      "time": 1392.3999999936,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 96
+    },
+    {
+      "time": 1402.5999999935,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 96
+    },
+    {
+      "time": 1415.6999999935,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 97
+    },
+    {
+      "time": 1425.8999999934,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 97
+    },
+    {
+      "time": 1440.2999999934,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 98
+    },
+    {
+      "time": 1454.7999999933,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 99
+    },
+    {
+      "time": 1469.7999999932,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 100
+    },
+    {
+      "time": 1484.3999999932,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 101
+    },
+    {
+      "time": 1497.2999999931,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 102
+    },
+    {
+      "time": 1507.3999999931,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 102
+    },
+    {
+      "time": 1519.899999993,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 103
+    },
+    {
+      "time": 1530.099999993,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 103
+    },
+    {
+      "time": 1542.5999999929,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 104
+    },
+    {
+      "time": 1552.8999999929,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 104
+    },
+    {
+      "time": 1567.2999999928,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 105
+    },
+    {
+      "time": 1581.8999999927,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 106
+    },
+    {
+      "time": 1596.3999999927,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 107
+    },
+    {
+      "time": 1609.4999999926,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 108
+    },
+    {
+      "time": 1619.6999999925,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 108
+    },
+    {
+      "time": 1634.1999999925,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 109
+    },
+    {
+      "time": 1648.6999999924,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 110
+    },
+    {
+      "time": 1663.8999999923,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 111
+    },
+    {
+      "time": 1676.9999999923,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 112
+    },
+    {
+      "time": 1687.1999999922,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 112
+    },
+    {
+      "time": 1701.5999999922,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 113
+    },
+    {
+      "time": 1716.0999999921,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 114
+    },
+    {
+      "time": 1730.699999992,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 115
+    },
+    {
+      "time": 1743.599999992,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 116
+    },
+    {
+      "time": 1753.7999999919,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 116
+    },
+    {
+      "time": 1768.2999999919,
+      "text": "R\r",
+      "reason": "R",
+      "command_index": 117
+    },
+    {
+      "time": 1780.5999999918,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 118
+    },
+    {
+      "time": 1790.8999999918,
+      "text": "FORWARD\r",
+      "reason": "FORWARD",
+      "command_index": 118
+    },
+    {
+      "time": 1805.8999999917,
+      "text": "WEAR MASK\r",
+      "reason": "WEAR MASK",
+      "command_index": 119
+    },
+    {
+      "time": 1808.9999999917,
+      "text": "L\r",
+      "reason": "L",
+      "command_index": 120
+    },
+    {
+      "time": 1826.6833333249,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 121
+    },
+    {
+      "time": 1829.6999999916,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 121
+    },
+    {
+      "time": 1832.7166666582,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 121
+    },
+    {
+      "time": 1835.7333333249,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 121
+    },
+    {
+      "time": 1838.7499999915,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 121
+    },
+    {
+      "time": 1839.0999999915,
+      "text": "GIVE MASK\r",
+      "reason": "GIVE MASK",
+      "command_index": 121
+    },
+    {
+      "time": 1845.2833333248,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 122
+    },
+    {
+      "time": 1848.2999999915,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 122
+    },
+    {
+      "time": 1851.3166666581,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 122
+    },
+    {
+      "time": 1867.2333333247,
+      "text": "PLAY FLUTE\r",
+      "reason": "PLAY FLUTE",
+      "command_index": 122
+    },
+    {
+      "time": 1877.6999999914,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 123
+    },
+    {
+      "time": 1880.7999999913,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 123
+    },
+    {
+      "time": 1883.8999999913,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 123
+    },
+    {
+      "time": 1900.6999999913,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 123
+    },
+    {
+      "time": 1903.7999999912,
+      "text": " ",
+      "reason": "pagination",
+      "command_index": 123
+    }
+  ],
+  "checkpoints": [
+    {
+      "name": "001-waiting-01",
+      "time": 29.799999999863,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 172,
+        "P": 181,
+        "IR": 233,
+        "CURFLAGS": 181,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Your search for the Mask of the Sun has",
+        "brought you to Mexico, the home of the",
+        "Aztec culture.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "002-waiting-01",
+      "time": 32.899999999849,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 85,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The plane you chartered in Mexico City",
+        "has landed at a small airfield near",
+        "the ruins spoken of by Prof. de Perez.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "003-prompt-01",
+      "time": 35.999999999834,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "004-prompt-02",
+      "time": 39.09999999982,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "005-waiting-03",
+      "time": 42.999999999802,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 500,
+        "PC": 64682,
+        "A": 45,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You have:",
+        "a box of matches",
+        "a knife",
+        "a bottle of pills",
+        "an ancient amulet",
+        "a loaded revolver",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "006-prompt-03",
+      "time": 46.099999999788,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "OK>^"
+      ]
+    },
+    {
+      "name": "007-prompt-04",
+      "time": 49.199999999774,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "I don't understand \"FERNAP\".",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "008-prompt-05",
+      "time": 52.299999999759,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "I don't recognize an object",
+        "in \"GET\".",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "009-prompt-06",
+      "time": 55.399999999745,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You don't see a lantern",
+        "anywhere around here.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "010-prompt-07",
+      "time": 58.69999999973,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "I don't recognize a verb",
+        "in \"FERNAP GUN\".",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "011-waiting-08",
+      "time": 71.999999999669,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 116,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You're standing on the airfield with",
+        "Professor de Perez and his assistant.",
+        "A dirt road leads north into the jungle.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "012-waiting-08",
+      "time": 75.099999999654,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 2,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"I brought you this map of three places",
+        "that might contain the fabled mask. All",
+        "the supplies are in the jeep.\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "013-waiting-08",
+      "time": 78.19999999964,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 182,
+        "P": 181,
+        "IR": 233,
+        "CURFLAGS": 181,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"My student Raoul will accompany you,",
+        "I'm sure you will find his knowledge of",
+        "ancient languages very valuable.\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "014-prompt-08",
+      "time": 81.299999999626,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Nearby you see:",
+        "the jeep",
+        "a cryptic map",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "015-prompt-09",
+      "time": 84.399999999611,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You pick up a cryptic map.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "016-waiting-10",
+      "time": 92.699999999573,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 109,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The professor bids \"Adios amigos!\" as he",
+        "walks toward the plane. Raoul climbs",
+        "into the jeep next to you.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "017-waiting-10",
+      "time": 95.799999999559,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 78,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"The road north leads to the ruins.\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "018-prompt-10",
+      "time": 116.99999999946,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch, the road continues",
+        "to the west, northwest, and southeast.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "019-waiting-11",
+      "time": 143.79999999934,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 92,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Near the side of the road you see a",
+        "small hut. You hear music coming from",
+        "inside.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "020-prompt-11",
+      "time": 146.89999999932,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The road continues east and west.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "021-prompt-12",
+      "time": 150.79999999931,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You pick up a length of rope.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "022-prompt-13",
+      "time": 153.89999999929,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Ah... It feels good to stretch the legs.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "023-waiting-14",
+      "time": 162.49999999925,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 64,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Inside the hut you see an old woman",
+        "playing a flute. She pauses as you",
+        "enter and looks up at you. . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "024-prompt-14",
+      "time": 165.59999999924,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "\"Help an old woman who is poor and",
+        " hungry. Kindness is always repaid",
+        " by the gods.\"",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "025-waiting-15",
+      "time": 168.69999999922,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 89,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"In exchange for your kindness,",
+        " please take this flute.",
+        " It may help you at some time . . .\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "026-waiting-15",
+      "time": 175.39999999919,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 110,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"Remember, music soothes the savage",
+        " beast.\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "027-prompt-15",
+      "time": 178.49999999918,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The woman disappears, leaving you",
+        "alone, mystified.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "028-waiting-16",
+      "time": 186.29999999914,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 16,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Near the side of the road you see a",
+        "small hut.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "029-waiting-16",
+      "time": 189.39999999913,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 17,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The road continues east and west.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "030-prompt-16",
+      "time": 192.49999999911,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Nearby you see:",
+        "the jeep",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "031-prompt-17",
+      "time": 195.5999999991,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Ok, you're in the jeep.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "032-prompt-18",
+      "time": 220.69999999898,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch, the road continues",
+        "to the west, northwest, and east.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "033-waiting-19",
+      "time": 244.49999999887,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 2,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Near the road, you see a stone statue.",
+        "Raoul seems to recognize it.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "034-waiting-19",
+      "time": 247.59999999886,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 9,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"It's an idol of the Aztec wizard god",
+        "Tezcatlipoca. Prof. DePerez has studied",
+        "this cult extensively.\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "035-prompt-19",
+      "time": 250.69999999885,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Nearby you see:",
+        "a carved stone head",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "036-prompt-20",
+      "time": 258.59999999881,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You set a flute",
+        "into the jeep.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "037-prompt-21",
+      "time": 261.79999999879,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Taken from the jeep.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "038-prompt-22",
+      "time": 264.89999999878,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Ah... It feels good to stretch the legs.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "039-prompt-23",
+      "time": 268.29999999876,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Looking very closely, you notice an",
+        "Aztec word carved into its chest. Raoul",
+        "translates it as \"XOTZIL\".",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "040-prompt-24",
+      "time": 272.09999999875,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The head of the idol feels strangely",
+        "warm, almost as if alive.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "041-waiting-25",
+      "time": 277.19999999872,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 53,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "As soon as the head is replaced on the",
+        "body, the idol begins to tremble.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "042-waiting-25",
+      "time": 307.99999999858,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 130,
+        "P": 181,
+        "IR": 208,
+        "CURFLAGS": 181,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You are in a large clearing. The road",
+        "continues to the south, and northwest.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "043-prompt-25",
+      "time": 311.09999999857,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Nearby you see:",
+        "the jeep",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "044-prompt-26",
+      "time": 314.19999999855,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Ok, you're in the jeep.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "045-prompt-27",
+      "time": 340.59999999843,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The trees part and an old ruin is",
+        "visible in a clearing. A pathway leads",
+        "forward to the foot of the stairs.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "046-prompt-28",
+      "time": 345.79999999841,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You pick up a flute.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "047-prompt-29",
+      "time": 348.89999999839,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Ah... It feels good to stretch the legs.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "048-prompt-30",
+      "time": 355.99999999836,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You're at the temple's base. There are",
+        "steps leading up to the top.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "049-prompt-31",
+      "time": 363.49999999833,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You're in front of a darkened doorway,",
+        "it seems to be the main entrance.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "050-prompt-32",
+      "time": 366.59999999831,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You have a lit match.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "051-prompt-33",
+      "time": 369.6999999983,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You light your lantern with the match.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "052-prompt-34",
+      "time": 382.44999999824,
+      "registers": {
+        "CURPC": 2379,
+        "SP": 503,
+        "PC": 2379,
+        "A": 238,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 2379,
+        "Y": 0,
+        "X": 251
+      },
+      "lines": [
+        "OK>^"
+      ]
+    },
+    {
+      "name": "053-prompt-35",
+      "time": 392.39999999819,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 119,
+        "IR": 44,
+        "CURFLAGS": 119,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are in a room with exits to the",
+        "right and left. Ahead, you see a stone",
+        "platform.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "054-prompt-36",
+      "time": 395.49999999818,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You find a small crack in the wall.",
+        "The crack is very even, perhaps a",
+        "closely fitted door!",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "055-prompt-37",
+      "time": 399.09999999816,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "After pushing and shoving for a while,",
+        "the door opens revealing a dark passage.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "056-prompt-38",
+      "time": 404.79999999814,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You enter a room with a central dais.",
+        "On the dais is a pedestal holding a",
+        "magnificent jade bowl.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "057-waiting-39",
+      "time": 410.29999999811,
+      "registers": {
+        "CURPC": 64689,
+        "SP": 503,
+        "PC": 64689,
+        "A": 126,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64689,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "As you lift the bowl from its resting",
+        "place, you feel the floor drop rapidly.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "058-waiting-39",
+      "time": 413.3999999981,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 117,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "After you and Raoul pick yourselves up",
+        "off the floor, you look around.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "059-prompt-39",
+      "time": 416.69999999808,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "060-prompt-40",
+      "time": 433.899999998,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You enter a secret crypt which contains",
+        "three stone sarcophagi of Aztec design.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "061-waiting-41",
+      "time": 436.99999999799,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 32,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You attempt to move the covering stones,",
+        "two of the slabs are immovable, even",
+        "with Raoul's help.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "062-waiting-41",
+      "time": 440.09999999797,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 21,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The third cover moves with the sound of",
+        "scraping stone.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "063-waiting-41",
+      "time": 480.89999999779,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 498,
+        "PC": 64682,
+        "A": 76,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The apparition fades. Its power drained,",
+        "it dissipates like smoke. In the",
+        "sepulcher you see a gleam of gold!",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "064-prompt-41",
+      "time": 483.99999999777,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Nearby you see:",
+        "a precious gold bowl",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "065-prompt-42",
+      "time": 487.09999999776,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You pick up a precious gold bowl.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "066-prompt-43",
+      "time": 501.89999999769,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "067-waiting-44",
+      "time": 513.89999999763,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 102,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns right.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "068-waiting-44",
+      "time": 527.09999999757,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 103,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You enter a room with an exit at either",
+        "end and a door in the middle. The middle",
+        "door is closed.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "069-prompt-44",
+      "time": 530.19999999756,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Pedestals flank the doorway. On the",
+        "left pedestal is a stone urn.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "070-waiting-45",
+      "time": 548.49999999747,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 12,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You enter a room containing an altar",
+        "guarded by two skeletal warriors. On the",
+        "altar is a silver bowl.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "071-waiting-45",
+      "time": 551.59999999746,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 121,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The only exit is behind you.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "072-prompt-45",
+      "time": 554.69999999745,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Nearby you see:",
+        "a silver bowl",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "073-waiting-46",
+      "time": 557.94999999743,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 39,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "As you move to grab the bowl, Raoul",
+        "yells, \"Look out, Senor! The skeletons",
+        "are moving!\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "074-waiting-46",
+      "time": 560.96666666408,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 105,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "While Raoul fends one off with his",
+        "machete, the other monster jabs at",
+        "you with its spear!",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "075-prompt-46",
+      "time": 563.78333333074,
+      "registers": {
+        "CURPC": 2377,
+        "SP": 507,
+        "PC": 2377,
+        "A": 207,
+        "P": 181,
+        "IR": 230,
+        "CURFLAGS": 181,
+        "GENPC": 2377,
+        "Y": 0,
+        "X": 110
+      },
+      "lines": [
+        "OK>^"
+      ]
+    },
+    {
+      "name": "076-waiting-47",
+      "time": 569.19999999738,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 46,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The amulet strikes the ghoul with",
+        "a flash of light and the sound of",
+        "breaking bones!",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "077-prompt-47",
+      "time": 572.29999999737,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The skeletons disintegrate!",
+        "You breathe a sigh of relief.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "078-waiting-48",
+      "time": 590.59999999728,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 111,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You enter a room with an exit at either",
+        "end and a door in the middle. The middle",
+        "door is closed.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "079-prompt-48",
+      "time": 593.69999999727,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Pedestals flank the doorway. On the",
+        "left pedestal is a stone urn.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "080-prompt-49",
+      "time": 597.09999999725,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The urn is very heavy. You can hardly",
+        "move it.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "081-waiting-50",
+      "time": 601.99999999723,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 36,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You set the urn down on the pedestal.",
+        "You hear a click as the column moves",
+        "a fraction of an inch.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "082-prompt-50",
+      "time": 605.09999999721,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "With startling swiftness the middle",
+        "door opens!",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "083-waiting-51",
+      "time": 611.49999999718,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 66,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The door slides shut behind you,",
+        "concealing the exit.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "084-prompt-51",
+      "time": 614.59999999717,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You're at the temple's base. The path",
+        "leads to the jeep.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "085-waiting-52",
+      "time": 620.39999999714,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 57,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The jeep awaits you near the road,",
+        "which continues to the east and curves",
+        "around to the southeast.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "086-prompt-52",
+      "time": 623.49999999713,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Nearby you see:",
+        "the jeep",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "087-prompt-53",
+      "time": 626.59999999712,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Ok, you're in the jeep.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "088-prompt-54",
+      "time": 652.89999999699,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are in a large clearing. The road",
+        "continues to the south, and northwest.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "089-prompt-55",
+      "time": 677.89999999688,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch, the road continues",
+        "to the west, northwest, and east.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "090-waiting-56",
+      "time": 703.59999999676,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 25,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You see a man by the side of the road.",
+        "He waves at you to stop.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "091-waiting-56",
+      "time": 706.69999999675,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 14,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"I have a deal for you! This potion",
+        " will cure the curse under which you",
+        " suffer.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "092-prompt-56",
+      "time": 709.79999999673,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "\"A venerable product indeed! What am",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "093-prompt-57",
+      "time": 733.99999999662,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch, the road continues",
+        "to the southwest, northwest, and east.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "094-prompt-58",
+      "time": 755.39999999652,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "\"This road is very long Senor.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "095-waiting-59",
+      "time": 774.49999999643,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 82,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Please remove THE MASK OF THE SUN disk,",
+        "side A, turn it over to side B,",
+        "and reinsert it.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "096-waiting-59",
+      "time": 777.59999999642,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 10,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Press RETURN to continue play.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "097-waiting-59",
+      "time": 783.19999999639,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 11,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Raoul slows the jeep. Camped by the",
+        "side of the road is a group of men.",
+        "You seem to recognize one of them.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "098-waiting-59",
+      "time": 786.29999999638,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 82,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Yes, it is! Francisco Roboff, your",
+        "not-so-esteemed colleague appears",
+        "to be their leader.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "099-waiting-59",
+      "time": 789.39999999637,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 70,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Raoul is very agitated. \"They are",
+        "banditos, Senor! We must leave here",
+        "quickly or we will be robbed!\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "100-prompt-59",
+      "time": 797.89999999633,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Raoul slows his mad dash and looks up.",
+        "Ahead you see a massive stone pyramid.",
+        "\"This may be the one, Senor!\"",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "101-prompt-60",
+      "time": 805.69999999629,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The trees part and you drive to the",
+        "edge of a large clearing. Blocking the",
+        "jeep's path is a large hole.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "102-prompt-61",
+      "time": 808.79999999628,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "Ah... It feels good to stretch the legs.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "103-prompt-62",
+      "time": 815.19999999625,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at the bottom. Ahead you see",
+        "a dark tunnel.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "104-waiting-63",
+      "time": 832.19999999617,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 54,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You are at a wide spot in the tunnel.",
+        "Ahead you see a stone altar and what",
+        "appears to be a freshly killed victim.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "105-waiting-63",
+      "time": 835.29999999615,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 81,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"Look, Senor! The body is moving.\"",
+        "Indeed, from the ghastly corpse comes",
+        "slow, hissing speech....",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "106-waiting-63",
+      "time": 838.39999999614,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 156,
+        "P": 181,
+        "IR": 208,
+        "CURFLAGS": 181,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"Beware adventurer!",
+        "You walk the path to doom!   I was",
+        "once like you, a seeker of gold . . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "107-waiting-63",
+      "time": 841.49999999613,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 64,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"But I invaded the domain of the Sun.",
+        "For my folly I exist in eternal torture.",
+        "Death without end . . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "108-waiting-63",
+      "time": 844.59999999611,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 70,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"But like me, you are a fool. You will",
+        "seek the mask of gold. I cannot save",
+        "you, but I can tell you a secret . . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "109-waiting-63",
+      "time": 857.79999999605,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 105,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The altar is empty. There is, however,",
+        "a bright red stain on it . . .",
+        ". . . perhaps fresh blood.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "110-prompt-63",
+      "time": 860.89999999604,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel continues forward.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "111-prompt-64",
+      "time": 877.43333332929,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 105,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 1
+      },
+      "lines": [
+        "You enter a room filled with a pale",
+        "green gas.  You instantly begin to feel",
+        "very faint. You cannot see the way out!",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "112-waiting-65",
+      "time": 894.64999999588,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 66,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You are in a large natural cavern.",
+        "In front of you is a hellish nightmare",
+        "scene . . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "113-waiting-65",
+      "time": 897.66666666253,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 66,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Amid walls of flaming gas, a river",
+        "of fire flows through a canyon of",
+        "molten rock.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "114-waiting-65",
+      "time": 900.68333332919,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 10,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "A single island of stone raises above",
+        "the fire. A fearless adventurer might",
+        "be able to step across to safety.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "115-prompt-65",
+      "time": 907.19999999582,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 506,
+        "PC": 64682,
+        "A": 14,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "And then, just as suddenly, raises",
+        "again . . . You prepare to jump . . .",
+        "         Press return to jump,",
+        "       any other key to retreat"
+      ]
+    },
+    {
+      "name": "116-waiting-66",
+      "time": 925.89999999574,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 158,
+        "P": 181,
+        "IR": 208,
+        "CURFLAGS": 181,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Suddenly, as if disturbed by your entry,",
+        "one of the faces opens its mouth and",
+        "begins to speak . . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "117-waiting-66",
+      "time": 928.99999999572,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 86,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Suddenly, as if disturbed by your entry,",
+        "one of the faces opens its mouth and",
+        "begins to speak . . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "118-waiting-66",
+      "time": 932.09999999571,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 85,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"ONLY A HIGH PRIEST MAY ENTER INTO THE",
+        " PRESENCE OF THE SUN . . . AND LIVE!",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "119-waiting-66",
+      "time": 935.19999999569,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 115,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"IF YOU ARE AN INITIATE OF THE SUN,",
+        " SAY THE WORD AND BE WELCOME.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "120-waiting-66",
+      "time": 938.29999999568,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 32,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"IF NOT, BEGONE AND RETURN NOT . . .",
+        " WHILE YOU YET LIVE!!\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "121-waiting-66",
+      "time": 941.39999999567,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 19,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"IF NOT, BEGONE AND RETURN NOT . . .",
+        " WHILE YOU YET LIVE!!\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "122-prompt-66",
+      "time": 944.49999999565,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "\"IF NOT, BEGONE AND RETURN NOT . . .",
+        " WHILE YOU YET LIVE!!\"",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "123-waiting-67",
+      "time": 949.39999999563,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 22,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "A doorway appears between the faces,",
+        "beckoning you to enter.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "124-prompt-67",
+      "time": 952.49999999562,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "A doorway appears between the faces,",
+        "beckoning you to enter.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "125-waiting-68",
+      "time": 958.89999999559,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 118,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You are in a large room, the temple",
+        "of the Sun. On the floor is a maze",
+        "pattern in a tiled mosaic.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "126-prompt-68",
+      "time": 961.99999999557,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The far end of the room has an altar",
+        "to the Sun God. There are no exits",
+        "except the one you came in through.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "127-waiting-69",
+      "time": 969.19999999554,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 43,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You are near the altar. It appears to",
+        "be a stone slab resting on a stone",
+        "block.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "128-waiting-69",
+      "time": 972.29999999552,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 50,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "On the wall behind the altar is a",
+        "bas-relief sculpture of the Sun God.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "129-prompt-69",
+      "time": 975.39999999551,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "As you get closer to the altar, there",
+        "appears to be some carving on the",
+        "top of the stone itself.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "130-waiting-70",
+      "time": 982.09999999548,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 143,
+        "P": 181,
+        "IR": 208,
+        "CURFLAGS": 181,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "In the top of the altar is an oddly",
+        "shaped opening.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "131-prompt-70",
+      "time": 985.19999999546,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "A close examination reveals nothing",
+        "else significant.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "132-prompt-71",
+      "time": 994.29999999542,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The altar opens . . . a gleam of gold",
+        "shows through rotted cloth . . .",
+        "That's it! The mask is here!",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "133-prompt-72",
+      "time": 997.39999999541,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You reach into the altar and extract",
+        "the mask.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "134-waiting-73",
+      "time": 1000.4999999954,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 140,
+        "P": 181,
+        "IR": 208,
+        "CURFLAGS": 181,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "After fumbling around in the dust for",
+        "awhile you touch something strange.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "135-waiting-73",
+      "time": 1003.5999999954,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 145,
+        "P": 181,
+        "IR": 208,
+        "CURFLAGS": 181,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        " ... It is!... Another mask!",
+        "This one has blue crystals for eyes!",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "136-waiting-73",
+      "time": 1006.6999999954,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 73,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "As soon as you touch the blue eyed",
+        "mask, the other mask disappears in",
+        "a cloud of dust!",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "137-prompt-73",
+      "time": 1009.7999999954,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You feel the accursed disease leave",
+        "your body. This must be the true mask.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "138-prompt-74",
+      "time": 1012.8999999953,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You feel a surge of power as you",
+        "grasp the mask.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "139-prompt-75",
+      "time": 1022.8999999953,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "The altar is closed. There appears",
+        "to be no way out of the temple.",
+        "You are trapped!",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "140-prompt-76",
+      "time": 1026.9999999953,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You put the mask on.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "141-prompt-77",
+      "time": 1044.3999999952,
+      "registers": {
+        "CURPC": 5569,
+        "SP": 501,
+        "PC": 5569,
+        "A": 204,
+        "P": 53,
+        "IR": 232,
+        "CURFLAGS": 53,
+        "GENPC": 5568,
+        "Y": 0,
+        "X": 15
+      },
+      "lines": [
+        "You are at the junction of four",
+        "passages. You hear hissing coming",
+        "from the tunnel in front of you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "142-waiting-78",
+      "time": 1061.3999999951,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 500,
+        "PC": 64684,
+        "A": 22,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "As you enter the room, you see in",
+        "front of you an enormous sun face!",
+        "A giant, gleaming disk of gold!!",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "143-waiting-78",
+      "time": 1064.4999999951,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 500,
+        "PC": 64684,
+        "A": 61,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Disturbed by your entry, the golden",
+        "icon begins to move! The mouth opens",
+        "as if to speak . . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "144-waiting-78",
+      "time": 1067.5999999951,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 500,
+        "PC": 64682,
+        "A": 31,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"IT HAS BEEN MANY YEARS SINCE A MAN",
+        " HAS ENTERED INTO MY PRESENCE . . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "145-waiting-78",
+      "time": 1070.6999999951,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 500,
+        "PC": 64682,
+        "A": 28,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"MY WORSHIPERS HAVE GONE THE WAY OF",
+        " TIME. NO LONGER IS THE BLOOD OF",
+        " MORTALS SPILLED FOR ME . . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "146-waiting-78",
+      "time": 1073.7999999951,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 500,
+        "PC": 64684,
+        "A": 91,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"I SEE YOU HAVE MY GIFT, THE MASK,",
+        " WHICH IS THE SYMBOL OF MY POWER.",
+        " WITH IT YOU MAY ESCAPE MY WRATH.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "147-waiting-78",
+      "time": 1076.899999995,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 500,
+        "PC": 64682,
+        "A": 71,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"STILL, YOU WILL BE TESTED. TO PASS",
+        " BY ME, YOU MUST ANSWER A RIDDLE. . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "148-waiting-78",
+      "time": 1079.999999995,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 500,
+        "PC": 64684,
+        "A": 9,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"WHO MAKES IT HAS NO NEED FOR IT,",
+        " WHO BUYS IT HAS NO USE FOR IT,",
+        " WHO USES, CAN NEITHER SEE NOR FEEL IT.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "149-prompt-78",
+      "time": 1083.099999995,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "OK>^"
+      ]
+    },
+    {
+      "name": "150-prompt-79",
+      "time": 1097.7999999949,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "151-prompt-80",
+      "time": 1112.4999999949,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "152-prompt-81",
+      "time": 1127.3999999948,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "153-waiting-82",
+      "time": 1139.6999999948,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 80,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns right.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "154-prompt-82",
+      "time": 1150.1999999947,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "155-waiting-83",
+      "time": 1162.4999999946,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 91,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns right.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "156-prompt-83",
+      "time": 1172.9999999946,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "157-waiting-84",
+      "time": 1191.0999999945,
+      "registers": {
+        "CURPC": 6715,
+        "SP": 507,
+        "PC": 6715,
+        "A": 3,
+        "P": 52,
+        "IR": 198,
+        "CURFLAGS": 52,
+        "GENPC": 6715,
+        "Y": 0,
+        "X": 1
+      },
+      "lines": [
+        "As you enter the room you feel the",
+        "floor shift! The room begins to",
+        "crumble down around you!!",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "158-prompt-84",
+      "time": 1194.1999999945,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "As you enter the room you feel the",
+        "floor shift! The room begins to",
+        "crumble down around you!!",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "159-waiting-85",
+      "time": 1207.0999999944,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 56,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns right.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "160-prompt-85",
+      "time": 1217.1999999944,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "161-prompt-86",
+      "time": 1231.5999999943,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "162-prompt-87",
+      "time": 1246.1999999943,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "163-prompt-88",
+      "time": 1261.1999999942,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "164-waiting-89",
+      "time": 1273.6999999941,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 52,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns left.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "165-prompt-89",
+      "time": 1283.8999999941,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "166-prompt-90",
+      "time": 1298.399999994,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "167-waiting-91",
+      "time": 1311.299999994,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 33,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns right.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "168-prompt-91",
+      "time": 1321.4999999939,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "169-prompt-92",
+      "time": 1336.4999999938,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "170-prompt-93",
+      "time": 1351.0999999938,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "171-prompt-94",
+      "time": 1365.4999999937,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "172-prompt-95",
+      "time": 1379.8999999936,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "173-waiting-96",
+      "time": 1392.3999999936,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 96,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns left.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "174-prompt-96",
+      "time": 1402.5999999935,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "175-waiting-97",
+      "time": 1415.6999999935,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 18,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns left.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "176-prompt-97",
+      "time": 1425.8999999934,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "177-prompt-98",
+      "time": 1440.2999999934,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "178-prompt-99",
+      "time": 1454.7999999933,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "179-prompt-100",
+      "time": 1469.7999999932,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "180-prompt-101",
+      "time": 1484.3999999932,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "181-waiting-102",
+      "time": 1497.2999999931,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 170,
+        "P": 181,
+        "IR": 208,
+        "CURFLAGS": 181,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns right.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "182-prompt-102",
+      "time": 1507.3999999931,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "183-waiting-103",
+      "time": 1519.899999993,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 68,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns left.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "184-prompt-103",
+      "time": 1530.099999993,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "185-waiting-104",
+      "time": 1542.5999999929,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 101,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns left.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "186-prompt-104",
+      "time": 1552.8999999929,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "187-prompt-105",
+      "time": 1567.2999999928,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "188-prompt-106",
+      "time": 1581.8999999927,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "189-prompt-107",
+      "time": 1596.3999999927,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "190-waiting-108",
+      "time": 1609.4999999926,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 17,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns left.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "191-prompt-108",
+      "time": 1619.6999999925,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "192-prompt-109",
+      "time": 1634.1999999925,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "193-prompt-110",
+      "time": 1648.6999999924,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "194-prompt-111",
+      "time": 1663.8999999923,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "195-waiting-112",
+      "time": 1676.9999999923,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 502,
+        "PC": 64684,
+        "A": 18,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns left.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "196-prompt-112",
+      "time": 1687.1999999922,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "197-prompt-113",
+      "time": 1701.5999999922,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "198-prompt-114",
+      "time": 1716.0999999921,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "199-prompt-115",
+      "time": 1730.699999992,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "200-waiting-116",
+      "time": 1743.599999992,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 502,
+        "PC": 64682,
+        "A": 171,
+        "P": 181,
+        "IR": 233,
+        "CURFLAGS": 181,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The tunnel turns right.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "201-prompt-116",
+      "time": 1753.7999999919,
+      "registers": {
+        "CURPC": 3260,
+        "SP": 503,
+        "PC": 3260,
+        "A": 0,
+        "P": 55,
+        "IR": 44,
+        "CURFLAGS": 55,
+        "GENPC": 3260,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "202-prompt-117",
+      "time": 1768.2999999919,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "203-waiting-118",
+      "time": 1780.5999999918,
+      "registers": {
+        "CURPC": 3987,
+        "SP": 503,
+        "PC": 3987,
+        "A": 114,
+        "P": 53,
+        "IR": 32,
+        "CURFLAGS": 53,
+        "GENPC": 3979,
+        "Y": 1,
+        "X": 3
+      },
+      "lines": [
+        "The tunnel turns right.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "204-prompt-118",
+      "time": 1790.8999999918,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go forward, to the left,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "205-prompt-119",
+      "time": 1805.8999999917,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You are at a branch in the tunnel.",
+        "Passages go to the left, right,",
+        "and back behind you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "206-prompt-120",
+      "time": 1808.9999999917,
+      "registers": {
+        "CURPC": 3263,
+        "SP": 503,
+        "PC": 3263,
+        "A": 0,
+        "P": 55,
+        "IR": 16,
+        "CURFLAGS": 55,
+        "GENPC": 3263,
+        "Y": 3,
+        "X": 0
+      },
+      "lines": [
+        "You put the mask on.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "207-waiting-121",
+      "time": 1826.6833333249,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 53,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "As you enter the room, you sense",
+        "the presence of someone else!",
+        "Suddenly from behind a pillar. . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "208-waiting-121",
+      "time": 1829.6999999916,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 19,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "... steps Francisco Roboff, and",
+        " he's pointing a large caliber",
+        " pistol straight at you!!",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "209-waiting-121",
+      "time": 1832.7166666582,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 57,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"So, we meet again. And I see you have",
+        " that which we both seek. The Mask.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "210-waiting-121",
+      "time": 1835.7333333249,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 57,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"Just in time too. I've been wandering",
+        " around in these passages for days, no",
+        " food or water. . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "211-waiting-121",
+      "time": 1838.7499999915,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 70,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"There seems to be no way out.",
+        " But with the Mask I know I can find",
+        " the exit. . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "212-prompt-121",
+      "time": 1839.0999999915,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 91,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 1
+      },
+      "lines": [
+        "\"But enough of this smalltalk.",
+        " You have something that I need.",
+        " The Mask, Mr. Steele.\"",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "213-waiting-122",
+      "time": 1845.2833333248,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 98,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"At last!  I have it!. . .\"",
+        "Roboff holds the mask for a moment,",
+        "then puts it on.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "214-waiting-122",
+      "time": 1848.2999999915,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 69,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "Suddenly, the voice of the Sun god",
+        "booms through the passages. . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "215-waiting-122",
+      "time": 1851.3166666581,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 119,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"MORTAL, YOU HAVE USED THE MASK TOO",
+        " MUCH. FOR THAT TRANSGRESSION YOU",
+        " MUST DIE. . .\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "216-prompt-122",
+      "time": 1867.2333333247,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 34,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 1
+      },
+      "lines": [
+        "After thoroughly mauling Roboff, the",
+        "jaguar stalks toward you. Poised as",
+        "if to leap, he looks up at you.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "217-waiting-123",
+      "time": 1877.6999999914,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 171,
+        "P": 181,
+        "IR": 233,
+        "CURFLAGS": 181,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "The music seems to soothe the jaguar.",
+        "He listens for a while then walks",
+        "behind a pillar and disappears . . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "218-waiting-123",
+      "time": 1880.7999999913,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 162,
+        "P": 181,
+        "IR": 233,
+        "CURFLAGS": 181,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "... Leaving you alone with the corpse.",
+        "After a brief moment of silence, you",
+        "hear the voice of the Sun God . . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "219-waiting-123",
+      "time": 1883.8999999913,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 145,
+        "P": 181,
+        "IR": 208,
+        "CURFLAGS": 181,
+        "GENPC": 64684,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "\"BEGONE, MORTAL! I SPARE YOUR LIFE THIS",
+        " TIME. BUT RETURN NOT OR YOU WILL DIE.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "220-waiting-123",
+      "time": 1900.6999999913,
+      "registers": {
+        "CURPC": 64684,
+        "SP": 504,
+        "PC": 64684,
+        "A": 2,
+        "P": 53,
+        "IR": 208,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "You are outside! You watch the sun set",
+        "behind its sacred temple. . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "221-waiting-123",
+      "time": 1903.7999999912,
+      "registers": {
+        "CURPC": 64682,
+        "SP": 504,
+        "PC": 64682,
+        "A": 6,
+        "P": 53,
+        "IR": 233,
+        "CURFLAGS": 53,
+        "GENPC": 64682,
+        "Y": 0,
+        "X": 0
+      },
+      "lines": [
+        "YOU HAVE WON THE GAME!!",
+        "You completed the adventure with 83",
+        "pills remaining!",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "ending",
+      "time": 1909.3999999912,
+      "registers": {
+        "CURPC": 3975,
+        "SP": 507,
+        "PC": 3975,
+        "A": 108,
+        "P": 180,
+        "IR": 165,
+        "CURFLAGS": 180,
+        "GENPC": 3975,
+        "Y": 1,
+        "X": 1
+      },
+      "lines": [
+        "Watch for the next Ultrasoft adventure.",
+        "Mac Steele solves the mysteries of",
+        "Tibet in search of fame and fortune."
+      ]
+    }
+  ],
+  "output_character_count": 27895,
+  "output_text": "     BR0DERBUND SOFTWARE presents:\r                  By\r               ULTRASOFT\r   copyright (c) 1982   Release 2.1\rYour search for the Mask of the Sun has\rbrought you to Mexico, the home of the\rAztec culture.\r[ waiting ]\rThe plane you chartered in Mexico City\rhas landed at a small airfield near\rthe ruins spoken of by Prof. de Perez.\r[ waiting ]\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    LOOK\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    INVENTORY\rYou have:\r\ra box of matches\ra knife\ra bottle of pills\ran ancient amulet\ra loaded revolver\r[ waiting ]\rOK>                                    FERNAP\rI don't understand \"FERNAP\".\rOK>                                    GET\rI don't recognize an object\rin \"GET\".\rOK>                                    GET LAMP\rYou don't see a lantern\ranywhere around here.\rOK>                                    FERNAP GUN\rI don't recognize a verb\rin \"FERNAP GUN\".\rOK>                                    EXIT PLANE\rYou leave the plane and approach the    two men.\rYou're standing on the airfield with    Professor de Perez and his assistant.   A dirt road leads north into the jungle.\r[ waiting ]\r\"I brought you this map of three places that might contain the fabled mask. All the supplies are in the jeep.\"\r[ waiting ]\r\"My student Raoul will accompany you,   I'm sure you will find his knowledge of ancient languages very valuable.\"\r[ waiting ]\rNearby you see:\rthe jeep\ra cryptic map\rOK>                                    GET MAP\rYou pick up a cryptic map.\rOK>                                    ENTER JEEP\rThe professor bids \"Adios amigos!\" as hewalks toward the plane. Raoul climbs    into the jeep next to you.\r[ waiting ]\r\"The road north leads to the ruins.\"\r[ waiting ]\rYou are at a branch, the road continues to the west, northwest, and southeast.\r\"Which way should we go, Senor?\"\rOK>                                    W\rNear the side of the road you see a\rsmall hut. You hear music coming from\rinside.\r[ waiting ]\rThe road continues east and west.\rOK>                                    TAKE ALL\rYou pick up a shovel.\rYou pick up a lantern.\rYou pick up tasty food.\rYou pick up a length of rope.\rOK>                                    EXIT JEEP\rAh... It feels good to stretch the legs.\rOK>                                    GO HUT\rYou approach the hut on foot.\rInside the hut you see an old woman\rplaying a flute. She pauses as you\renter and looks up at you. . .\r[ waiting ]\r\"Help an old woman who is poor and\r hungry. Kindness is always repaid\r by the gods.\"\rOK>                                    GIVE FOOD\r\"In exchange for your kindness,\r please take this flute. \r It may help you at some time . . .\"\r[ waiting ]\r\"Remember, music soothes the savage\r beast.\"\r\"Remember, music soothes the savage\r beast.\"\r[ waiting ]\rThe woman disappears, leaving you\ralone, mystified.\rOK>                                    EXIT HUT\rNear the side of the road you see a\rsmall hut. \r[ waiting ]\rThe road continues east and west.\r[ waiting ]\rNearby you see:\rthe jeep\rOK>                                    ENTER JEEP\rOk, you're in the jeep.\rOK>                                    W\rYou move off in that direction.\rYou are at a branch, the road continues to the west, northwest, and east.\r\"Which way should we go, Senor?\"\rOK>                                    NW\rNear the road, you see a stone statue.\rRaoul seems to recognize it.\r[ waiting ]\r\"It's an idol of the Aztec wizard god   Tezcatlipoca. Prof. DePerez has studied this cult extensively.\"\r[ waiting ]\rNearby you see:\ra carved stone head\rOK>                                    DROP ALL\rYou set a shovel \rinto the jeep.\rYou set a lantern \rinto the jeep.\rYou set a box of matches \rinto the jeep.\rYou set a knife \rinto the jeep.\rYou set a bottle of pills \rinto the jeep.\rYou set a cryptic map \rinto the jeep.\rYou set an ancient amulet \rinto the jeep.\rYou set a loaded revolver \rinto the jeep.\rYou set a length of rope \rinto the jeep.\rYou set a flute \rinto the jeep.\rOK>                                    GET BOTTLE\rTaken from the jeep.\rOK>                                    EXIT JEEP\rAh... It feels good to stretch the legs.\rOK>                                    LOOK BEHIND STATUE\rLooking very closely, you notice an\rAztec word carved into its chest. Raoul translates it as \"XOTZIL\".\rOK>                                    GET HEAD\rThe head of the idol feels strangely\rwarm, almost as if alive.\rOK>                                    PLACE HEAD ON STATUE\rAs soon as the head is replaced on the  body, the idol begins to tremble.\r[ waiting ]\rAs you step away, the idol begins an    amazing transformation.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rYou are in a large clearing. The road   continues to the south, and northwest.\r[ waiting ]\rNearby you see:\rthe jeep\rOK>                                    ENTER JEEP\rOk, you're in the jeep.\rOK>                                    NW\rYou move off in that direction.\rThe trees part and an old ruin is\rvisible in a clearing. A pathway leads  forward to the foot of the stairs.\rOK>                                    GET ALL\rYou pick up a shovel.\rYou pick up a lantern.\rYou pick up a box of matches.\rYou pick up a knife.\rYou pick up a cryptic map.\rYou pick up an ancient amulet.\rYou pick up a loaded revolver.\rYou pick up a length of rope.\rYou pick up a flute.\rOK>                                    EXIT JEEP\rAh... It feels good to stretch the legs.\rOK>                                    FORWARD\rYou quietly approach the ancient temple.\rYou're at the temple's base. There are  steps leading up to the top.\rOK>                                    GO TOP\rYou carefully climb the steps.\rYou're in front of a darkened doorway,  it seems to be the main entrance.\rOK>                                    LIGHT MATCH\rYou have a lit match.\rOK>                                    LIGHT LANTERN\rYou light your lantern with the match.\rOK>                                    ENTER\rDaring fools!\rThe two of you enter the chamber. An    unseen door slams shut. Something in    front of you issues a hissing sound.\rA huge snake rises in front of you!\rOK>^\rS^\rH^\rO^\rO^\rT\rYou shoot the snake! \rStunned and wounded, it slithers away.\rYou are in a room with exits to the\rright and left. Ahead, you see a stone\rplatform.\rOK>                                    SEARCH PLATFORM\rYou find a small crack in the wall.\rThe crack is very even, perhaps a\rclosely fitted door!\rOK>                                    OPEN DOOR\rAfter pushing and shoving for a while,\rAfter pushing and shoving for a while,\rthe door opens revealing a dark passage.\rOK>                                    FORWARD\rYou enter a room with a central dais.\rOn the dais is a pedestal holding a\rmagnificent jade bowl.\rOK>                                    GET BOWL\rAs you lift the bowl from its resting\rplace, you feel the floor drop rapidly.\r[ waiting ]\rAfter you and Raoul pick yourselves up\roff the floor, you look around.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou enter a secret crypt which contains\rthree stone sarcophagi of Aztec design.\rOK>                                    MOVE STONE\rYou attempt to move the covering stones,two of the slabs are immovable, even\rwith Raoul's help.\r[ waiting ]\rThe third cover moves with the sound of scraping stone.\r[ waiting ]\rYou feel a presence. Suddenly, a ghostlyapparition takes form.\rOK>^\rThe apparition fades. Its power drained,it dissipates like smoke. In the\rsepulcher you see a gleam of gold!\rThe apparition fades. Its power drained,it dissipates like smoke. In the\rsepulcher you see a gleam of gold!\r[ waiting ]\rNearby you see:\ra precious gold bowl\rOK>                                    GET BOWL\rYou pick up a precious gold bowl.\rOK>                                    EXIT\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rThe tunnel turns right.\r[ waiting ]\rYou enter a room with an exit at either end and a door in the middle. The middledoor is closed.\r[ waiting ]\rPedestals flank the doorway. On the\rleft pedestal is a stone urn.\rOK>                                    R\rYou enter a room containing an altar    guarded by two skeletal warriors. On thealtar is a silver bowl.\r[ waiting ]\rThe only exit is behind you.\r[ waiting ]\rNearby you see:\ra silver bowl\rOK>                                    GET BOWL\rAs you move to grab the bowl, Raoul\ryells, \"Look out, Senor! The skeletons\rare moving!\"\r[ waiting ]\rWhile Raoul fends one off with his\rmachete, the other monster jabs at\ryou with its spear!\r[ waiting ]\rWhat will you do ?!\rWhat will you do ?!\rWhat will you do ?!\rOK>^\rOK>                                    HIT SKELETON WITH AMULET\rThe amulet strikes the ghoul with\ra flash of light and the sound of\rbreaking bones!\r[ waiting ]\rThe skeletons disintegrate!\rYou breathe a sigh of relief.\rThe skeletons disintegrate!\rYou breathe a sigh of relief.\rOK>                                    GET BOWL\rRaoul leading, you run from the room.\rYou enter a room with an exit at either end and a door in the middle. The middledoor is closed.\r[ waiting ]\rPedestals flank the doorway. On the\rleft pedestal is a stone urn.\rOK>                                    GET URN\rThe urn is very heavy. You can hardly   move it.\rOK>                                    PLACE URN RIGHT PEDESTAL\rYou set the urn down on the pedestal.\rYou hear a click as the column moves\ra fraction of an inch.\r[ waiting ]\rWith startling swiftness the middle\rdoor opens!\rOK>                                    FORWARD\rThe door slides shut behind you,\rconcealing the exit.\r[ waiting ]\rYou're at the temple's base. The path   leads to the jeep.\rOK>                                    GO JEEP\rThe jeep awaits you near the road,\rwhich continues to the east and curves  around to the southeast.\r[ waiting ]\rNearby you see:\rthe jeep\rOK>                                    ENTER JEEP\rOk, you're in the jeep.\rOK>                                    SE\rYou move off in that direction.\rYou are in a large clearing. The road   continues to the south, and northwest.\rOK>                                    S\rYou move off in that direction.\rYou are at a branch, the road continues to the west, northwest, and east.\r\"Which way should we go, Senor?\"\rOK>                                    W\rYou see a man by the side of the road.\rHe waves at you to stop.\r[ waiting ]\r\"I have a deal for you! This potion\r will cure the curse under which you\r suffer.\r[ waiting ]\r\"A venerable product indeed! What am\r I offered for this magic cure?\"\rOK>                                    W\rYou are at a branch, the road continues to the southwest, northwest, and east.\rWhich way should we go, Senor?\"\rOK>                                    NW\r\"This road is very long Senor.\r Should we go forward or turn back?\"\rOK>                                    FORWARD\rPlease remove THE MASK OF THE SUN disk,\rside A, turn it over to side B,\rand reinsert it.\r[ waiting ]\rPress RETURN to continue play.\r[ waiting ]\rRaoul slows the jeep. Camped by the\rside of the road is a group of men.\rYou seem to recognize one of them.\r[ waiting ]\rYes, it is! Francisco Roboff, your\rnot-so-esteemed colleague appears\rto be their leader.\r[ waiting ]\rRaoul is very agitated. \"They are\rbanditos, Senor! We must leave here\rquickly or we will be robbed!\"\r[ waiting ]\rRaoul panics. Jamming the jeep into\rgear, you race down the road amid\ra shower of gravel.\rRaoul slows his mad dash and looks up.\rAhead you see a massive stone pyramid.\r\"This may be the one, Senor!\"\rOK>                                    FORWARD\rThe pyramid looms ominously as you driveheadlong toward your doom...\rThe trees part and you drive to the\redge of a large clearing. Blocking the  jeep's path is a large hole.\rOK>                                    EXIT JEEP\rAh... It feels good to stretch the legs.\rOK>                                    D\rGrabbing a stout vine, you descend into\rthe pit.\rYou are at the bottom. Ahead you see\ra dark tunnel.\rOK>                                    FORWARD\rYou are at a wide spot in the tunnel.\rAhead you see a stone altar and what\rappears to be a freshly killed victim.\r[ waiting ]\r\"Look, Senor! The body is moving.\"\rIndeed, from the ghastly corpse comes\rslow, hissing speech....\r[ waiting ]\r\"Beware adventurer!\rYou walk the path to doom!   I was\ronce like you, a seeker of gold . . .\r[ waiting ]\r\"But I invaded the domain of the Sun.\rFor my folly I exist in eternal torture.Death without end . . .\r[ waiting ]\r\"But like me, you are a fool. You will\rseek the mask of gold. I cannot save\ryou, but I can tell you a secret . . .\r[ waiting ]\r\"Bowls of silver, jade, and gold\rused together, safe passage hold . . .\"\r\"Bowls of silver, jade, and gold\rused together, safe passage hold . . .\"\rThe altar is empty. There is, however,\ra bright red stain on it . . .\r. . . perhaps fresh blood.\r[ waiting ]\rThe tunnel continues forward.\rOK>                                    FORWARD\rYou enter a room filled with a pale\rgreen gas.  You instantly begin to feel\rvery faint. You cannot see the way out!\rOK>^\rOK>                                    SW\rRaoul did not make it.  You hear the\rhorrid gurgle of his dying breath as\ryou run toward fresh air and life.\rYou are in a large natural cavern.\rIn front of you is a hellish nightmare\rscene . . .\r[ waiting ]\rAmid walls of flaming gas, a river\rof fire flows through a canyon of\rmolten rock.\r[ waiting ]\rA single island of stone raises above\rthe fire. A fearless adventurer might\rbe able to step across to safety.\r[ waiting ]\rSuddenly, without warning, the stepping\rstone sinks beneath the river of fire!\rAnd then, just as suddenly, raises\ragain . . . You prepare to jump . . .\r         Press return to jump,\r       any other key to retreat\rAnd then, just as suddenly, raises\ragain . . . You prepare to jump . . .\r         Press return to jump,\r       any other key to retreat\rYou made it!\rYou are in a large room with two\rbrightly colored faces painted on the\rfar wall.\rSuddenly, as if disturbed by your entry,one of the faces opens its mouth and\rbegins to speak . . .\r[ waiting ]\r[ waiting ]\r[ waiting ]\r[ waiting ]\r\"WHAT MERE HUMAN WOULD DARE TO ENTER\rTHE TEMPLE OF THE SUN?!\r\"ONLY A HIGH PRIEST MAY ENTER INTO THE\r PRESENCE OF THE SUN . . . AND LIVE!\r[ waiting ]\r[ waiting ]\r\"IF YOU ARE AN INITIATE OF THE SUN,\r SAY THE WORD AND BE WELCOME.\r[ waiting ]\r[ waiting ]\r\"IF NOT, BEGONE AND RETURN NOT . . .\r WHILE YOU YET LIVE!!\"\r[ waiting ]\r[ waiting ]\r\"IF NOT, BEGONE AND RETURN NOT . . .\r WHILE YOU YET LIVE!!\"\r[ waiting ]\r[ waiting ]\r          \rOK>                                    XOTZIL\r\"ENTER INITIATE.  YOU ARE WELCOMED\r  INTO THE PRESENCE OF THE SUN.\"\rA doorway appears between the faces,\rbeckoning you to enter.\r[ waiting ]\r[ waiting ]\r           \rOK>                                    FORWARD\rAbandon all hope, ye who enter here!\rYou are in a large room, the temple\rof the Sun. On the floor is a maze\rpattern in a tiled mosaic.\r[ waiting ]\rThe far end of the room has an altar\rto the Sun God. There are no exits\rexcept the one you came in through.\rOK>                                    FORWARD\rYou approach the altar.\rYou are near the altar. It appears to\rbe a stone slab resting on a stone\rblock.\r[ waiting ]\rOn the wall behind the altar is a\rbas-relief sculpture of the Sun God.\r[ waiting ]\rAs you get closer to the altar, there\rappears to be some carving on the\rtop of the stone itself.\rOK>                                    FORWARD\rIn the top of the altar is an oddly\rshaped opening. \r[ waiting ]\rA close examination reveals nothing\relse significant.\rOK>                                    PLACE AMULET IN OPENING\rYou hear a click and the grinding\rof stone.\rThe altar opens . . . a gleam of gold\rshows through rotted cloth . . .\rThat's it! The mask is here!\rOK>                                    GET MASK\rYou reach into the altar and extract\rthe mask.\rOK>                                    SEARCH ALTAR\rAfter fumbling around in the dust for\rawhile you touch something strange.\rCould it be?... Is it?... \r[ waiting ]\r ... It is!... Another mask!\rThis one has blue crystals for eyes!\r[ waiting ]\rAs soon as you touch the blue eyed\rmask, the other mask disappears in\ra cloud of dust!\r[ waiting ]\rYou feel the accursed disease leave\ryour body. This must be the true mask.\rOK>                                    GET MASK\rYou feel a surge of power as you\rgrasp the mask.\rOK>                                    BACK\rAs you step back, the altar closes\rwith the sound of grinding stone.\rThe altar is closed. There appears\rto be no way out of the temple.\rYou are trapped!\rOK>                                    WEAR MASK\rYou put the mask on.\rOK>                                    EXIT\rYou remove the mask as you enter\rthe tunnel.\rYou are at the junction of four\rpassages. You hear hissing coming\rfrom the tunnel in front of you.\rOK>^\rOK>                                    FORWARD\rAs you enter the room, you see in\rfront of you an enormous sun face!\rA giant, gleaming disk of gold!!\r[ waiting ]\rDisturbed by your entry, the golden\ricon begins to move! The mouth opens\ras if to speak . . .\r[ waiting ]\r\"IT HAS BEEN MANY YEARS SINCE A MAN\r HAS ENTERED INTO MY PRESENCE . . .\r[ waiting ]\r\"MY WORSHIPERS HAVE GONE THE WAY OF\r TIME. NO LONGER IS THE BLOOD OF\r MORTALS SPILLED FOR ME . . .\r[ waiting ]\r\"I SEE YOU HAVE MY GIFT, THE MASK,\r WHICH IS THE SYMBOL OF MY POWER.\r WITH IT YOU MAY ESCAPE MY WRATH.\r[ waiting ]\r\"STILL, YOU WILL BE TESTED. TO PASS\r BY ME, YOU MUST ANSWER A RIDDLE. . .\r[ waiting ]\r\"WHO MAKES IT HAS NO NEED FOR IT,\r WHO BUYS IT HAS NO USE FOR IT,\r WHO USES, CAN NEITHER SEE NOR FEEL IT.\r[ waiting ]\r\"OF WHAT DO I SPEAK?\"\rOK>                                    COFFIN\rYOU MAY PASS . . .\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rThe tunnel turns right.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rThe tunnel turns right.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rAs you enter the room you feel the\rfloor shift! The room begins to\rcrumble down around you!!\r[ waiting ]\rAs you enter the room you feel the\rfloor shift! The room begins to\rcrumble down around you!!\r[ waiting ]\rOK>                                    FORWARD\rThe tunnel turns right.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    FORWARD\rYou continue forward.\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rThe tunnel turns left.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    FORWARD\rYou continue forward.\rThe tunnel turns right.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    FORWARD\rYou continue forward.\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rThe tunnel turns left.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    FORWARD\rYou continue forward.\rThe tunnel turns left.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    FORWARD\rYou continue forward.\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    FORWARD\rYou continue forward.\rThe tunnel turns right.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rThe tunnel turns left.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rThe tunnel turns left.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    FORWARD\rYou continue forward.\rThe tunnel turns left.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    FORWARD\rYou continue forward.\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    FORWARD\rYou continue forward.\rThe tunnel turns left.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    FORWARD\rYou continue forward.\rThe tunnel turns right.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    L\rYou turn down the left passage.\rYou are at a branch in the tunnel.\rPassages go forward, to the right,\rand back behind you.\rOK>                                    R\rYou turn down the right passage.\rThe tunnel turns right.\r[ waiting ]\rYou are at a branch in the tunnel.\rPassages go forward, to the left,\rand back behind you.\rOK>                                    FORWARD\rYou continue forward.\rYou are at a branch in the tunnel.\rPassages go to the left, right,\rand back behind you.\rOK>                                    WEAR MASK\rYou put the mask on.\rOK>                                    L\rYou turn down the left passage.\rYou remove the mask.\rAs you enter the room, you sense\rthe presence of someone else!\rSuddenly from behind a pillar. . .\r[ waiting ]\r... steps Francisco Roboff, and\r he's pointing a large caliber\r pistol straight at you!!\r[ waiting ]\r\"So, we meet again. And I see you have\r that which we both seek. The Mask.\r[ waiting ]\r\"Just in time too. I've been wandering\r around in these passages for days, no\r food or water. . .\r[ waiting ]\r\"There seems to be no way out.\r But with the Mask I know I can find\r the exit. . .\r[ waiting ]\r\"But enough of this smalltalk.\r You have something that I need.\r The Mask, Mr. Steele.\"\rOK>^\rOK>                                    GIVE MASK\r\"You are a smart man, Mr. Steele.\r Resistance would get you nowhere.\"\r\"At last!  I have it!. . .\"\rRoboff holds the mask for a moment,\rthen puts it on.\r[ waiting ]\rSuddenly, the voice of the Sun god\rbooms through the passages. . .\r[ waiting ]\r\"MORTAL, YOU HAVE USED THE MASK TOO\r MUCH. FOR THAT TRANSGRESSION YOU\r MUST DIE. . .\"\r[ waiting ]\rYou hear a growl from behind you.\rFrom behind a pillar, a blue eyed\rjaguar leaps at Roboff.\rThe gun shots seem to have no\reffect on the jaguar!\rAfter thoroughly mauling Roboff, the\rjaguar stalks toward you. Poised as\rif to leap, he looks up at you.\rOK>^\rOK>                                    PLAY FLUTE\rThe music seems to soothe the jaguar.\rHe listens for a while then walks\rbehind a pillar and disappears . . .\r[ waiting ]\r... Leaving you alone with the corpse.\rAfter a brief moment of silence, you\rhear the voice of the Sun God . . .\r[ waiting ]\r\"BEGONE, MORTAL! I SPARE YOUR LIFE THIS\r TIME. BUT RETURN NOT OR YOU WILL DIE.\r[ waiting ]\rYou feel a tingling sensation. The room\rbegins to shimmer . . .\rYou feel a tingling sensation. The room\rbegins to shimmer . . .\rYou are outside! You watch the sun set\rbehind its sacred temple. . .\r[ waiting ]\rYOU HAVE WON THE GAME!!\rYou completed the adventure with 83\rpills remaining!\r[ waiting ]\rCongratulations on completing \r\r         THE MASK OF THE SUN.\rWatch for the next Ultrasoft adventure.\rMac Steele solves the mysteries of\rTibet in search of fame and fortune.\r"
+}

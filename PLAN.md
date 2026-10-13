@@ -113,14 +113,14 @@ and another contributor can reproduce the chosen emulator setup.
 
 ### 2. Capture the original game's behavior
 
-- [ ] Boot the original disks and record startup, controls, initial scene, and
+- [x] Boot the original disks and record startup, controls, initial scene, and
   disk insertion/swap behavior in a reproducible emulator session.
 - [ ] Capture representative screenshots, text, sound where present, disk activity,
   and CPU/memory observations with the emulator configuration and input sequence.
 - [ ] Exercise movement, descriptions, inventory, successful and rejected
   commands, and an early puzzle. Discover save/load or restart behavior from the
   actual game rather than assuming those features exist.
-- [ ] Establish how timed events and player input interact. Record explicit
+- [x] Establish how timed events and player input interact. Record explicit
   waits, conditions, or emulated cycle counts where a plain command list is insufficient.
 - [ ] Complete a manual original-game playthrough to the ending using the supplied
   walkthrough as a guide, covering both disks and timed sequences. Record commands,

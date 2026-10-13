@@ -1,4 +1,4 @@
-# Original opening baseline
+# Original gameplay baseline
 
 The original supplied side A boots on the documented 48K Apple II+ profile.
 The opening renders a plane interior with three pages of introductory text.
@@ -74,8 +74,65 @@ Earlier exploration caught failures in input gating and wait/pagination handling
 those runs are diagnostic, not accepted route evidence. The archived successful
 run uses the corrected gates and never patches game RAM.
 
-This is **not the complete original-game baseline**. Side B, jaguar/chasm timing,
-the ending, sound, inventory limits, save/restore and boundary/restart testing
-remain to be exercised. Step 2 remains open. Step 3's raw sector mapping was
-performed early to support loader and graphics-text investigation; boot-to-game
-loading and memory ownership still need full explanation before that step closes.
+## Both sides and ending
+
+[full-original.json](evidence/full-original.json) records the successful full
+route, and [full-core-rebuilt.json](evidence/full-core-rebuilt.json) records its
+repeat on disks built with the reconstructed interpreter and renderer. Both
+pass seventeen checks and reach the ending at 1909.4 emulated seconds with
+83 pills remaining. The 122 commands include the opening parser probes. The
+replay captures 221 pagination/prompt checkpoints plus the final ending screen;
+representative PNGs are in [full-original](evidence/full-original/).
+
+[full-route.json](full-route.json) is the replay authority. The supplied guide
+was interpreted incrementally, with targeted failed timing investigations kept
+under ignored `build/`; the accepted route never patches game RAM. Blank lines
+in the guide separate commands as well as commas. Earlier candidate extraction
+incorrectly merged commands across paragraphs; that guide view is corrected.
+
+The native COUT entry at $B317 is observed with a memory read tap, which logs
+character A only when the CPU fetches that entry. It returns no replacement
+data. This records short dialogue such as "You made it!" and Raoul's death
+that transitions immediately into another room and can escape frame snapshots.
+The bus observations supplement PNGs and decoded checkpoints. The decoder now
+also recognizes rows drawn with inverted glyphs, used by the chasm and mask.
+
+| Interaction | Accepted input/wait condition |
+| --- | --- |
+| First-pyramid snake | Urgent `SHOOT`, five keys without Return |
+| Crypt ghost | Latch the observed apparition-fades message across pagination |
+| Skeletons | Urgent initial key, then `HIT SKELETON WITH AMULET` |
+| Gas chamber | Urgent `SW`; Raoul's death is part of this successful route |
+| Chasm | Physical Return for 0.08 seconds when D=$6003 is 1 and script PC $D2/$D3 is in $6C8C–$6D26 |
+| Roboff | Urgent `GIVE MASK` at the ready prompt |
+| Final jaguar | Urgent `PLAY FLUTE` at the ready prompt |
+
+The chasm clears old input with `.S R=0` before its timed loop. Posting Return
+while its instructions were still printing was therefore ineffective. Natural
+keyboard Return also arrived too late in an investigated run. The accepted
+physical key is an enumerated Apple II keyboard field, cleared after the bounded
+hold and on exit. RAM predicates read only RAM, never keyboard I/O. The original
+run's optional keyboard bus tap corroborates that PLAY's initial P was polled
+by the timed script, then consumed and acknowledged by the blocking input editor.
+A delayed earlier attempt lost P and was rejected; it is not accepted evidence.
+
+The replay mounts copied side B on the game's explicit disk-turn prompt, using
+the same drive 1. It advances final pagination until the next-adventure text,
+then exits rather than waiting for a command prompt that never appears.
+
+```sh
+python3 tools/mame_session.py --rompath /path/to/roms --output build/full-original \
+  --headless --fast --script tools/opening_replay.lua --route docs/full-route.json
+python3 tools/verify_route.py build/full-original docs/full-route.json
+python3 tools/build.py --output build/rebuilt
+python3 tools/mame_session.py --rompath /path/to/roms --output build/full-rebuilt \
+  --disk-a build/rebuilt/mask-of-sun-a.dsk --disk-b build/rebuilt/mask-of-sun-b.dsk \
+  --headless --fast --script tools/opening_replay.lua --route docs/full-route.json
+python3 tools/verify_route.py build/full-rebuilt docs/full-route.json
+```
+
+Step 2 remains open for sound equivalence, save/restore, inventory limits,
+boundary/restart checks and a behavior matrix. Step 3's boot-to-game loading
+and memory ownership still need full explanation. The current rebuilt full
+route establishes only the early partial source build's behavior; it does not
+make remaining opaque executable regions complete.

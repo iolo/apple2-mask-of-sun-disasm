@@ -153,3 +153,42 @@ not yet editable build inputs. Save/load, sound and the entire second side and
 ending remain unvalidated. `docs/renderer.md` documents this early build's scope.
 Next: extend the original playthrough onto side B, including disk swapping,
 jaguar/chasm timing and the ending; then complete resident/boot disassembly.
+
+## Steps 2c/4b — Original ending and assembled resident interpreter
+
+Completed substeps on 2026-10-13; complete Steps 2–4 remain open.
+
+- Reconstructed the entire $0800–$0CFF resident interpreter payload in
+  `src/interpreter.s`: initialization, script dispatch/stack, command input and
+  normalization, handler matching, catalog/file loader, DOS IOB and string output.
+  Code/data boundaries, mutable fields, interfaces and shared pointers are named
+  and documented in `docs/engine.md`. Intrinsics and bootstrap remain unfinished.
+- Extended the original fresh-boot route through gas escape, timed stepping
+  stone, XOTZIL faces, true-mask cure, coffin maze, Roboff and the final jaguar.
+  Corrected paragraph-separated walkthrough commands and late first-key input.
+  The final route reaches the win and next-adventure screens with 83 pills.
+- Added normal/inverse font decoding, a bounded physical Return at a corroborated
+  chasm phase, keyboard field cleanup, passive COUT output logging and optional
+  keyboard bus observation. No accepted run modifies game RAM or original media.
+  Captured transient success dialogue is verified from the native character log.
+- Repeated all 122 commands on the current two-module standalone rebuild. Both
+  original and rebuilt runs pass seventeen route checks, observe side B mounting,
+  avoid player death and reach the same ending at 1909.4 emulated seconds. Archived
+  222 decoded/CPU checkpoints per run and six representative original PNGs.
+- Added an optional emulated mixer recording mode. Original opening WAV contains
+  nonzero speaker output; sound equivalence work is still in progress and is not
+  inferred from the sound-disabled full-route replays.
+
+Validation: `tools/verify_opening.py build/core-opening-01` passes thirteen gates;
+`tools/verify_route.py build/full-original-02 docs/full-route.json` and the same
+verifier on `build/full-core-rebuilt-01` pass seventeen each. Both owned MAME
+processes exit normally. Fresh `tools/build.py --output build/core-check-02`
+assembles both modules and produces complete disks using tracked regions. Native
+payload encoding equality remains diagnostic, not the behavior gate. Input hash
+verification and Python compilation pass; see `docs/evidence/` for reports.
+
+Remaining: save/restore, sound comparison, restart/boundaries and behavior matrix;
+boot/DOS mapping/source, intrinsic and vector-graphics analysis, editable graphics,
+world documentation and final clean reproducibility. The original full ending is
+now established but does not close all Step 2 checks. Next: finish the remaining
+baseline controls while reconstructing the intrinsic dispatch and graphics formats.
