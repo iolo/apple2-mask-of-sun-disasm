@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="TBTPB" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>TBTPB — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":1993,"native_size":71,"native_sha256":"d19997c8f4ab8052230056607a5a0f6029916e3130765d23e8c91cf4d3c8247e","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="99" data-kind="vector" d="M 103 28 M 103 27 M 103 28 L 103 29 L 103 30 L 103 31 L 103 32 L 103 33 L 103 34 L 104 34 L 104 35 L 104 36 L 104 37 L 103 37 L 102 37 L 101 37 L 100 37 L 99 37 L 98 37 L 97 37 L 96 37 L 95 37 L 94 37 L 93 37 L 92 37 L 91 37 L 90 37 L 89 37 L 88 37 L 87 37 L 86 37 L 85 37 L 84 37 L 83 37 L 82 37 L 81 37 L 80 37 L 79 37 L 78 37 L 77 37 L 76 37 L 75 37 L 74 37 L 73 37 L 72 37 L 71 37 L 70 37 L 69 37 L 68 37 L 67 37 L 66 37 L 65 37 L 64 37 L 63 37 L 62 37 L 61 37 L 60 37 L 59 37 L 58 37 L 57 37 L 56 37 L 55 37 L 54 37 L 53 37 L 52 37 L 51 37 L 50 37 L 49 37 L 48 37 L 47 37 L 46 37 L 45 37 L 44 37 L 43 37 L 42 37 L 41 37 L 40 37 L 39 37" data-packing="23333333333333333333333333" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-01" data-color="99" data-kind="vector" d="M 98 38 M 98 37 M 98 38 L 98 39 L 98 40 L 98 41 L 97 41 L 96 41 L 95 41 L 94 41 L 93 41 L 92 41 L 91 41 L 90 41 L 89 41 L 88 41 L 87 41 L 86 41 L 85 41 L 84 41 L 83 41 L 82 41 L 81 41 L 80 41 L 79 41 L 78 41 L 77 41 L 76 41 L 75 41 L 74 41 L 73 41 L 72 41 L 71 41 L 70 41 L 69 41 L 68 41 L 67 41 L 66 41 L 65 41 L 64 41 L 63 41 L 62 41 L 61 41 L 60 41 L 59 41 L 58 41 L 57 41 L 56 41 L 55 41 L 54 41 L 53 41 L 52 41 L 51 41 L 50 41 L 49 41 L 48 41 L 47 41 L 46 41 L 45 41 L 44 41 L 43 41 L 42 41 L 41 41 L 40 41 L 39 41" data-packing="2333333333333333333332" fill="#aaaaaa" stroke="#000000" />
+  </g>
+</svg>

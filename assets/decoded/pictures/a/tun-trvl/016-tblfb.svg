@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="TBLFB" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>TBLFB — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":1467,"native_size":50,"native_sha256":"9ca769e3b1bc9a0e487eb3852ed20e70716fa358ad419c5b0974ea812a73f041","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="99" data-kind="vector" d="M 36 35 M 36 36 L 37 36 L 38 36 L 39 36 L 39 37 L 39 38 L 39 39 L 39 40 L 39 41 L 39 42 L 38 42 L 38 43 L 38 44 L 38 45 L 38 46 L 38 47 L 37 47 L 37 48 L 37 49 L 37 50 L 37 51 L 37 52 L 36 52 L 36 53 L 36 54 L 36 55 L 36 56 L 36 57 L 35 57 L 35 58 L 35 59 L 35 60 L 35 61 L 35 62 L 35 63 L 34 63 L 34 64 L 34 65 L 34 66 L 34 67 L 34 68 L 33 68 L 33 69 L 33 70 L 33 71 L 33 72 L 33 73 L 32 73 L 32 74 L 32 75 L 32 76 L 32 77 L 32 78 L 31 78 L 31 79 L 31 80 L 31 81 L 31 82 L 31 83 L 30 83 L 30 84 L 30 85 L 30 86 L 30 87 L 30 88 L 30 89 L 29 89 L 29 90 L 29 91 L 29 92 L 29 93 L 29 94 L 28 94 L 28 95 L 28 96 L 28 97 L 28 98 L 28 99 L 27 99 L 27 100 L 27 101 L 27 102 L 27 103 L 27 104 L 26 104 L 26 105 L 26 106 L 26 107 L 26 108 L 26 109 L 25 109 L 25 110 L 24 110 L 23 110 L 22 110" data-packing="33333333333333333333333333333332" fill="#aaaaaa" stroke="#000000" />
+  </g>
+</svg>

@@ -14,6 +14,7 @@ import subprocess
 import sys
 from dos_disk import ROOT, repack
 from font_assets import encode as encode_font
+from picture_assets import encode_all as encode_pictures
 
 
 def main():
@@ -25,7 +26,9 @@ def main():
             p.error(f'missing {name}; install cc65 and run tools/check_tools.py')
     out = args.output.resolve()
     out.mkdir(parents=True, exist_ok=True)
-    replacements, assembled = {}, []
+    replacements, assembled = encode_pictures(ROOT / 'assets/decoded/pictures'), []
+    picture_outputs = [{'asset': asset, 'size': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+                       for asset, data in replacements.items()]
     (out / "font.bin").write_bytes(encode_font(ROOT / "assets/decoded/font"))
     # name, native runtime address/size, then asset offset/source offset/length.
     modules = [
@@ -97,6 +100,10 @@ def main():
                                      'role': region['role'], 'unassembled_ranges': ranges})
     (out / 'build.json').write_text(json.dumps({'status': 'early partial source build',
         'assembled': assembled,
+        'editable_picture_assets': [{'path': str(path.relative_to(ROOT)),
+            'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
+            for path in sorted((ROOT / 'assets/decoded/pictures').rglob('*.svg'))],
+        'encoded_picture_collections': picture_outputs,
         'editable_font_assets': [{'path': str(path.relative_to(ROOT)),
             'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
             for path in sorted((ROOT / 'assets/decoded/font').glob('*.png'))],

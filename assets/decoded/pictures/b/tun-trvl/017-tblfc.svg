@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="TBLFC" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>TBLFC — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":1517,"native_size":41,"native_sha256":"7ed4ef11cd1ffa80351bef74914df3c0f5c319bb1b162051454c4947fbf76e20","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="127" data-kind="vector" d="M 29 27 L 30 27 L 31 27 L 32 27 L 33 27 L 34 27 L 35 27 L 36 27 L 35 27" data-packing="332" fill="none" stroke="#000000" />
+    <path id="layer-01" data-color="127" data-kind="vector" d="M 27 38 M 27 37 L 28 37 L 29 37 L 30 37 L 31 37 L 32 37 L 33 37 L 34 37 L 35 37 L 36 37 L 37 37 L 38 37 L 39 37 L 38 37" data-packing="33332" fill="none" stroke="#000000" />
+    <path id="layer-02" data-color="127" data-kind="vector" d="M 26 41 L 27 41 L 28 41 L 29 41 L 30 41 L 31 41 L 32 41 L 33 41 L 34 41 L 35 41 L 36 41 L 37 41 L 38 41 L 39 41 L 40 41 L 39 41" data-packing="33333" fill="none" stroke="#000000" />
+  </g>
+</svg>

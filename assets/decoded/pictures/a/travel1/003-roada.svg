@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="ROADA" data-origin-x="255" data-origin-y="1" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>ROADA — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":391,"native_size":53,"native_sha256":"fe468de6b12e17328000b4f57cfcf31e95be1ca3011ec7111b5e297ba2d253ef","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(-1 1)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="103" data-kind="vector" d="M 56 107 L 56 106 L 57 106 L 57 105 L 58 105 L 58 104 L 59 104 L 59 103 L 60 103 L 60 102 L 61 102 L 61 101 L 62 101 L 62 100 L 63 100 L 63 99 L 64 99 L 64 98 L 65 98 L 65 97 L 66 97 L 67 97 L 67 96 L 68 96 L 69 96 L 69 95 L 70 95 L 71 95 L 71 94 L 72 94 L 73 94 L 74 94 L 75 94 L 76 94 L 77 94 L 78 94 L 79 94 L 80 94 L 81 94 L 82 94 L 83 94 L 84 94 L 85 94 L 86 94 L 86 95 L 87 95 L 88 95 L 89 95 L 90 95 L 91 95 L 90 95" data-packing="22222222233333333332" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-01" data-color="101" data-kind="vector" d="M 71 93 M 71 94 L 71 95 L 70 95 L 69 95 L 69 96 L 68 96 L 67 96 L 67 97 L 66 97 L 65 97 L 65 98 L 64 98 L 64 99 L 63 99 L 63 100 L 62 100 L 62 101 L 61 101 L 61 102 L 60 102 L 60 103 L 59 103 L 59 104 L 58 104 L 58 105 L 57 105 L 57 106 L 56 106 L 56 107 L 55 107" data-packing="3333333333" fill="#aaaaaa" stroke="#000000" />
+  </g>
+</svg>

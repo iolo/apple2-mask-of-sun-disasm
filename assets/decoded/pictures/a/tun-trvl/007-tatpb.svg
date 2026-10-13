@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="TATPB" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>TATPB — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":708,"native_size":41,"native_sha256":"97b67d2fe620715e1eb4fbcc8c26dd56f7ba40e7f41614f86ad2274ab00c81fc","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="99" data-kind="vector" d="M 101 36 M 101 35 M 101 36 L 101 37 L 101 38 L 101 39 L 101 40 L 101 41 L 100 41 L 99 41 L 98 41 L 97 41 L 96 41 L 95 41 L 94 41 L 93 41 L 92 41 L 91 41 L 90 41 L 89 41 L 88 41 L 87 41 L 86 41 L 85 41 L 84 41 L 83 41 L 82 41 L 81 41 L 80 41 L 79 41 L 78 41 L 77 41 L 76 41 L 75 41 L 74 41 L 73 41 L 72 41 L 71 41 L 70 41 L 69 41 L 68 41 L 67 41 L 66 41 L 65 41 L 64 41 L 63 41 L 62 41 L 61 41 L 60 41 L 59 41 L 58 41 L 57 41 L 56 41 L 55 41 L 54 41 L 53 41 L 52 41 L 51 41 L 50 41 L 49 41 L 48 41 L 47 41 L 46 41 L 45 41 L 44 41 L 43 41 L 42 41 L 41 41 L 40 41" data-packing="23333333333333333333333" fill="#aaaaaa" stroke="#000000" />
+  </g>
+</svg>

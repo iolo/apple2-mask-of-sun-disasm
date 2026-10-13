@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="TBLFA" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>TBLFA — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":1405,"native_size":62,"native_sha256":"f41f87ed6d09382ab70abff77c977ea24fd1aee5565794caf0aea089567449f8","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="99" data-kind="vector" d="M 29 27 L 30 27 L 31 27 L 32 27 L 33 27 L 34 27 L 35 27 L 36 27 L 36 28 L 36 29 L 36 30 L 36 31 L 36 32 L 36 33 L 35 33 L 35 34 L 35 35 L 35 36 L 35 37 L 35 38 L 35 39 L 34 39 L 34 40 L 34 41 L 34 42 L 34 43 L 34 44 L 33 44 L 33 45 L 33 46 L 33 47 L 33 48 L 33 49 L 33 50 L 32 50 L 32 51 L 32 52 L 32 53 L 32 54 L 32 55 L 31 55 L 31 56 L 31 57 L 31 58 L 31 59 L 31 60 L 31 61 L 30 61 L 30 62 L 30 63 L 30 64 L 30 65 L 30 66 L 29 66 L 29 67 L 29 68 L 29 69 L 29 70 L 29 71 L 29 72 L 28 72 L 28 73 L 28 74 L 28 75 L 28 76 L 28 77 L 27 77 L 27 78 L 27 79 L 27 80 L 27 81 L 27 82 L 27 83 L 26 83 L 26 84 L 26 85 L 26 86 L 26 87 L 26 88 L 25 88 L 25 89 L 25 90 L 25 91 L 25 92 L 25 93 L 25 94 L 24 94 L 24 95 L 24 96 L 24 97 L 24 98 L 24 99 L 24 100 L 23 100 L 23 101 L 23 102 L 23 103 L 23 104 L 23 105 L 22 105 L 22 106 L 22 107 L 22 108 L 22 109 L 22 110 L 22 111 L 21 111 L 21 112 L 21 113 L 21 114 L 21 115 L 21 116 L 20 116 L 20 117 L 20 118 L 20 119 L 20 120 L 20 121 L 20 122 L 19 122 L 19 123 L 19 124 L 19 125 L 18 125 L 17 125 L 16 125 L 15 125 L 14 125 L 13 125 L 12 125 L 11 125 L 10 125" data-packing="33333333333333333333333333333333333333333332" fill="#aaaaaa" stroke="#000000" />
+  </g>
+</svg>

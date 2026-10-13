@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="JAGH2" data-origin-x="0" data-origin-y="1" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>JAGH2 — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":2403,"native_size":161,"native_sha256":"82e8284a43f34ce17ae2252fb11688d03b86ca24d017c086d24c254e322c34d0","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 1)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="99" data-kind="vector" d="M 51 32 M 51 31 M 51 32 L 51 33 L 51 34 L 51 35 L 52 35 M 52 36 L 53 36 L 53 37 L 53 38 L 53 39 M 52 39 L 52 40 L 52 41 L 52 42 L 52 43 L 52 44 L 52 45 L 52 46 L 53 46 M 53 47 L 53 48 L 53 49 M 52 49 L 52 50 L 52 51 L 53 51 M 53 52 L 53 53 L 54 53 L 54 54 L 54 55 L 54 56 L 55 56 M 55 57 L 55 58 L 55 59 M 54 59 L 54 60 L 54 61 L 55 61 L 55 62 L 55 63 L 55 64 L 54 64" data-packing="2333333333323332" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-01" data-color="2" data-kind="vector" d="M 53 41 L 54 41 M 54 42 L 54 43 L 54 44 M 53 44 L 52 44" data-packing="33" fill="#286de0" stroke="#000000" />
+    <path id="layer-02" data-color="103" data-kind="vector" d="M 58 39 M 58 40 L 58 41 M 57 41 L 57 42 L 57 43 L 57 44 L 56 44" data-packing="232" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-03" data-color="2" data-kind="vector" d="M 58 41 M 58 40 L 59 40 L 59 41 L 59 42 L 59 43 L 58 43 L 57 43 M 57 42" data-packing="332" fill="#286de0" stroke="#000000" />
+    <path id="layer-04" data-color="3" data-kind="vector" d="M 56 53 L 56 52 M 57 52 L 57 53 L 57 54 L 57 55 L 57 56 L 57 57 L 56 57 L 56 58 L 55 58 M 55 57" data-packing="3332" fill="#df7927" stroke="#000000" />
+    <path id="layer-05" data-color="103" data-kind="vector" d="M 51 32 L 52 32 L 53 32 L 54 32 L 55 32 M 55 33 L 56 33 L 57 33 L 58 33 L 59 33 L 59 32 M 60 32 L 60 31 M 61 31 L 61 30 M 62 30 L 63 30 L 64 30 L 64 31 L 64 32 L 64 33 L 64 34 L 64 35 L 64 36 L 63 36 L 63 37 L 63 38 L 63 39 L 63 40 L 64 40 M 64 41 L 64 42 L 64 43 L 64 44 L 65 44 M 65 45 L 65 46 L 65 47 L 65 48 L 65 49 L 65 50 L 66 50 M 66 51 L 66 52 L 66 53 L 66 54 L 66 55 L 66 56 L 67 56 M 67 57 L 67 58 L 68 58 M 68 59 L 68 60 L 68 61 L 69 61 L 69 62 L 70 62 M 70 63 L 69 63" data-packing="333223333333333323332" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-06" data-color="99" data-kind="vector" d="M 63 31 M 63 30 L 62 30 L 62 31 M 61 31 L 61 32 M 60 32 L 60 33 M 59 33 L 58 33 L 57 33 L 56 33 M 56 32" data-packing="32232" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-07" data-color="127" data-kind="vector" d="M 53 35 L 53 34 M 54 34 L 53 34" data-packing="3" fill="none" stroke="#000000" />
+    <path id="layer-08" data-color="127" data-kind="vector" d="M 56 38 M 56 37 L 55 37 L 55 38 L 54 38 M 54 37" data-packing="32" fill="none" stroke="#000000" />
+    <path id="layer-09" data-color="127" data-kind="vector" d="M 58 36 L 58 35 L 57 35" data-packing="2" fill="none" stroke="#000000" />
+    <path id="layer-10" data-color="127" data-kind="vector" d="M 62 32 M 62 31 L 62 32 L 62 33 L 62 34 L 62 35 L 61 35 L 60 35 M 60 34" data-packing="332" fill="none" stroke="#000000" />
+    <path id="layer-11" data-color="127" data-kind="vector" d="M 56 61 L 57 61 L 57 60 L 58 60 L 58 59 L 58 58 M 59 58 L 59 57 L 59 56 L 59 55 M 60 55 L 60 54 L 60 53 L 61 53 L 61 52 L 61 51 L 61 50 L 62 50 L 62 49 L 61 49" data-packing="322222222" fill="none" stroke="#000000" />
+    <path id="layer-12" data-color="127" data-kind="vector" d="M 65 57 M 65 56 L 65 57 L 65 58 L 64 58 M 64 57" data-packing="32" fill="none" stroke="#000000" />
+    <path id="layer-13" data-color="103" data-kind="vector" d="M 56 48 L 57 48 M 57 49 L 57 50 L 57 51 L 57 52 L 56 52 L 56 53 M 55 53 L 54 53 L 54 52 L 54 51 L 54 50 L 54 49 L 55 49 L 55 50 L 54 50" data-packing="333232" fill="#aaaaaa" stroke="#000000" />
+  </g>
+</svg>

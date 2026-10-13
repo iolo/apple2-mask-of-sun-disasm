@@ -77,5 +77,5 @@ checked against the corresponding font byte and rendered opening text. The
 baseline PNG is restored before the final baseline build. Detailed evidence is
 recorded in `docs/evidence/font-edit.json`.
 
-This font workflow covers character bitmaps. The separate vector picture files
-still need editable assets and conversion/render verification to complete Step6.
+This font workflow covers character bitmaps. The separate vector pictures now
+use the [editable SVG workflow](pictures.md), with native companion previews.

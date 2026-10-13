@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="ROADD" data-origin-x="253" data-origin-y="253" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>ROADD — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":550,"native_size":50,"native_sha256":"c30952650d6b7e3ef9cbc40da7e6c75080effd011e9e4ac25daf232eb1287085","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(-3 -3)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="103" data-kind="vector" d="M 48 98 L 49 98 L 49 97 L 50 97 L 51 97 L 52 97 L 52 96 L 53 96 L 54 96 L 55 96 L 56 96 L 56 95 L 57 95 L 58 95 L 59 95 L 60 95 L 61 95 L 62 95 L 63 95 L 64 95 L 65 95 L 66 95 L 67 95 L 67 96 L 68 96 L 69 96 L 69 97 L 70 97 L 71 97 L 72 97 L 72 98 L 73 98 L 74 98 L 74 99 L 75 99 L 75 100 L 76 100 L 76 101 L 77 101 L 77 102 L 78 102 L 78 103 L 79 103 L 80 103 L 80 104 L 81 104 L 81 105 L 82 105 L 82 106 L 82 107 L 83 107 L 83 108 L 84 108 L 84 109 L 84 110 L 85 110 L 85 111 L 86 111 L 86 112 L 86 113 L 87 113 L 87 114 L 86 114 M 86 113" data-packing="3232333333333333333332" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-01" data-color="101" data-kind="vector" d="M 56 95 M 56 94 M 56 95 L 56 96 L 55 96 L 54 96 L 53 96 L 52 96 L 52 97 L 51 97 L 50 97 L 49 97 L 49 98 L 48 98 L 47 98" data-packing="23333" fill="#aaaaaa" stroke="#000000" />
+  </g>
+</svg>

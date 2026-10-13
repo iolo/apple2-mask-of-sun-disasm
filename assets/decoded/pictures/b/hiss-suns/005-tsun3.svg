@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="TSUN3" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>TSUN3 — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":1386,"native_size":98,"native_sha256":"cf78a0bd0fc979c5ef29eac0c0312e8830b1e68d58aa4e3f148eb428e38518ba","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="103" data-kind="vector" d="M 63 82 L 62 82 L 61 82 L 60 82 L 59 82 L 58 82 L 58 83 M 57 83 L 57 84 L 57 85 L 57 86 L 57 87 L 57 88 L 57 89 L 57 90 L 57 91 L 57 92 L 57 93 L 57 94 L 57 95 L 57 96 L 57 97 L 57 98 L 57 99 L 57 100 L 57 101 L 57 102 L 57 103 L 58 103 M 58 104 L 59 104 L 60 104 L 61 104 L 62 104 L 63 104 L 64 104 L 65 104 L 64 104 M 64 103" data-packing="3333333333332" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-01" data-color="3" data-kind="vector" d="M 68 94 L 68 93 L 68 92 L 68 91 L 68 90 L 68 89 L 68 88 L 68 87 L 68 86 M 67 86 L 66 86 L 65 86 L 64 86 L 63 86 L 62 86 L 61 86 L 60 86 L 60 87 M 59 87 L 59 88 L 59 89 L 59 90 L 59 91 L 59 92 L 59 93 L 59 94 L 59 95 L 59 96 L 59 97 L 59 98 L 59 99 L 60 99 M 60 100 L 61 100 L 62 100 L 63 100 L 64 100 L 65 100 L 66 100 L 67 100 L 67 99 M 68 99 L 68 98 L 68 97 L 68 96 L 68 95 L 67 95" data-packing="222233333332332223" fill="#df7927" stroke="#000000" />
+    <path id="layer-02" data-color="127" data-kind="vector" d="M 62 92 M 62 91 L 62 90 L 62 89 L 62 88 L 62 87 L 62 86 L 63 86 L 64 86 L 65 86 L 66 86 L 66 87 L 66 88 L 66 89 L 66 90 L 66 91 L 65 91" data-packing="223333" fill="none" stroke="#000000" />
+    <path id="layer-03" data-color="127" data-kind="vector" d="M 62 99 M 62 98 L 62 99 L 62 100 L 63 100 L 64 100 L 65 100 L 66 100 L 66 99 L 66 98 L 65 98" data-packing="3322" fill="none" stroke="#000000" />
+    <path id="layer-04" data-color="4" data-kind="vector" d="M 68 91 M 68 92 L 68 93 L 68 94 L 68 95 L 68 96 L 68 97 L 67 97 M 67 96" data-packing="332" fill="#000000" stroke="#000000" />
+    <path id="layer-05" data-color="3" data-kind="vector" d="M 64 82 L 65 82 L 66 82 L 67 82 L 68 82 L 69 82 L 70 82 M 70 83 L 70 84 L 70 85 L 70 86 L 70 87 L 70 88 L 70 89 L 70 90 L 70 91 L 70 92 L 70 93 L 70 94 L 70 95 L 70 96 L 70 97 L 70 98 L 70 99 L 70 100 L 70 101 L 70 102 L 70 103 L 70 104 M 69 104 L 68 104 L 67 104 L 66 104 L 65 104" data-packing="33333333333" fill="#df7927" stroke="#000000" />
+  </g>
+</svg>

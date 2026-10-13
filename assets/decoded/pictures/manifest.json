@@ -1,0 +1,646 @@
+{
+  "format": 1,
+  "collections": [
+    {
+      "side": "a",
+      "name": "AF1.0",
+      "asset": "assets/raw/a/files/af1-0.bin",
+      "allocated_bytes": 256,
+      "pictures": [
+        "a/af1-0/000-airfi.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "AMULET",
+      "asset": "assets/raw/a/files/amulet.bin",
+      "allocated_bytes": 1024,
+      "pictures": [
+        "a/amulet/000-amule.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "BACK JEEP",
+      "asset": "assets/raw/a/files/back-jeep.bin",
+      "allocated_bytes": 1024,
+      "pictures": [
+        "a/back-jeep/000-bkjep.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "CRYPT-TOT",
+      "asset": "assets/raw/a/files/crypt-tot.bin",
+      "allocated_bytes": 2560,
+      "pictures": [
+        "a/crypt-tot/000-rghtl.svg",
+        "a/crypt-tot/001-crypt.svg",
+        "a/crypt-tot/002-appar.svg",
+        "a/crypt-tot/003-bldra.svg",
+        "a/crypt-tot/004-bldrb.svg",
+        "a/crypt-tot/005-bldrm.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "FLUTE",
+      "asset": "assets/raw/a/files/flute.bin",
+      "allocated_bytes": 2560,
+      "pictures": [
+        "a/flute/000-rghtl.svg",
+        "a/flute/001-hutos.svg",
+        "a/flute/002-woman.svg",
+        "a/flute/003-flute.svg",
+        "a/flute/004-noflt.svg",
+        "a/flute/005-empty.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "GOLD BOWL",
+      "asset": "assets/raw/a/files/gold-bowl.bin",
+      "allocated_bytes": 512,
+      "pictures": [
+        "a/gold-bowl/000-goldb.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "JADE BOWL",
+      "asset": "assets/raw/a/files/jade-bowl.bin",
+      "allocated_bytes": 512,
+      "pictures": [
+        "a/jade-bowl/000-jadeb.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "JEEP ALON",
+      "asset": "assets/raw/a/files/jeep-alon.bin",
+      "allocated_bytes": 1280,
+      "pictures": [
+        "a/jeep-alon/000-jeep.svg",
+        "a/jeep-alon/001-jepal.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "LOGO",
+      "asset": "assets/raw/a/files/logo.bin",
+      "allocated_bytes": 2048,
+      "pictures": [
+        "a/logo/000-logo1.svg",
+        "a/logo/001-logo2.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "MAP",
+      "asset": "assets/raw/a/files/map.bin",
+      "allocated_bytes": 768,
+      "pictures": [
+        "a/map/000-map-1.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "P1.1",
+      "asset": "assets/raw/a/files/p1-1.bin",
+      "allocated_bytes": 3328,
+      "pictures": [
+        "a/p1-1/000-pic-1.svg",
+        "a/p1-1/001-jeep.svg",
+        "a/p1-1/002-fig-2.svg",
+        "a/p1-1/003-profs.svg",
+        "a/p1-1/004-raoul.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "P6.5",
+      "asset": "assets/raw/a/files/p6-5.bin",
+      "allocated_bytes": 3072,
+      "pictures": [
+        "a/p6-5/000-bkgnd.svg",
+        "a/p6-5/001-bklne.svg",
+        "a/p6-5/002-idolb.svg",
+        "a/p6-5/003-idolh.svg",
+        "a/p6-5/004-jagb1.svg",
+        "a/p6-5/005-jagb2.svg",
+        "a/p6-5/006-jagb3.svg",
+        "a/p6-5/007-jagb4.svg",
+        "a/p6-5/008-jagh1.svg",
+        "a/p6-5/009-jagh2.svg",
+        "a/p6-5/010-jagh3.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "P7.0",
+      "asset": "assets/raw/a/files/p7-0.bin",
+      "allocated_bytes": 4096,
+      "pictures": [
+        "a/p7-0/000-snaka.svg",
+        "a/p7-0/001-snakb.svg",
+        "a/p7-0/002-snakc.svg",
+        "a/p7-0/003-snakd.svg",
+        "a/p7-0/004-snake.svg",
+        "a/p7-0/005-snakf.svg",
+        "a/p7-0/006-snakg.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "PEDDLER1",
+      "asset": "assets/raw/a/files/peddler1.bin",
+      "allocated_bytes": 2048,
+      "pictures": [
+        "a/peddler1/000-pedl1.svg",
+        "a/peddler1/001-pedh1.svg",
+        "a/peddler1/002-pedh2.svg",
+        "a/peddler1/003-pedl3.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "SILVR BWL",
+      "asset": "assets/raw/a/files/silvr-bwl.bin",
+      "allocated_bytes": 512,
+      "pictures": [
+        "a/silvr-bwl/000-silvb.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "SKEL RM",
+      "asset": "assets/raw/a/files/skel-rm.bin",
+      "allocated_bytes": 3840,
+      "pictures": [
+        "a/skel-rm/000-skela.svg",
+        "a/skel-rm/001-skelo.svg",
+        "a/skel-rm/002-skel1.svg",
+        "a/skel-rm/003-skel2.svg",
+        "a/skel-rm/004-skel3.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "SNAKE-PIT",
+      "asset": "assets/raw/a/files/snake-pit.bin",
+      "allocated_bytes": 3328,
+      "pictures": [
+        "a/snake-pit/000-rghtl.svg",
+        "a/snake-pit/001-altbw.svg",
+        "a/snake-pit/002-pit.svg",
+        "a/snake-pit/003-rubst.svg",
+        "a/snake-pit/004-snklf.svg",
+        "a/snake-pit/005-snkdr.svg",
+        "a/snake-pit/006-snkrt.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "TEMPL EX",
+      "asset": "assets/raw/a/files/templ-ex.bin",
+      "allocated_bytes": 1536,
+      "pictures": [
+        "a/templ-ex/000-rghtl.svg",
+        "a/templ-ex/001-tmpex.svg",
+        "a/templ-ex/002-ped1n.svg",
+        "a/templ-ex/003-ped1j.svg",
+        "a/templ-ex/004-ped2j.svg",
+        "a/templ-ex/005-ped2n.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "TEMPLE1",
+      "asset": "assets/raw/a/files/temple1.bin",
+      "allocated_bytes": 3328,
+      "pictures": [
+        "a/temple1/000-rghtl.svg",
+        "a/temple1/001-temph.svg",
+        "a/temple1/002-tmpen.svg",
+        "a/temple1/003-tmpst.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "TRAVEL1",
+      "asset": "assets/raw/a/files/travel1.bin",
+      "allocated_bytes": 3584,
+      "pictures": [
+        "a/travel1/000-rghtl.svg",
+        "a/travel1/001-jpw-h.svg",
+        "a/travel1/002-mounb.svg",
+        "a/travel1/003-roada.svg",
+        "a/travel1/004-roadb.svg",
+        "a/travel1/005-roadc.svg",
+        "a/travel1/006-roadd.svg",
+        "a/travel1/007-lefta.svg",
+        "a/travel1/008-leftb.svg",
+        "a/travel1/009-leftc.svg",
+        "a/travel1/010-leftd.svg",
+        "a/travel1/011-rghta.svg",
+        "a/travel1/012-rghtb.svg",
+        "a/travel1/013-rghtc.svg",
+        "a/travel1/014-rghtd.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "TRAVEL2",
+      "asset": "assets/raw/a/files/travel2.bin",
+      "allocated_bytes": 3584,
+      "pictures": [
+        "a/travel2/000-rghtl.svg",
+        "a/travel2/001-jpw-h.svg",
+        "a/travel2/002-mouna.svg",
+        "a/travel2/003-roada.svg",
+        "a/travel2/004-roadb.svg",
+        "a/travel2/005-roadc.svg",
+        "a/travel2/006-roadd.svg",
+        "a/travel2/007-lefta.svg",
+        "a/travel2/008-leftb.svg",
+        "a/travel2/009-leftc.svg",
+        "a/travel2/010-leftd.svg",
+        "a/travel2/011-rghta.svg",
+        "a/travel2/012-rghtb.svg",
+        "a/travel2/013-rghtc.svg",
+        "a/travel2/014-rghtd.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "TUN TRVL",
+      "asset": "assets/raw/a/files/tun-trvl.bin",
+      "allocated_bytes": 2304,
+      "pictures": [
+        "a/tun-trvl/000-rghtl.svg",
+        "a/tun-trvl/001-tabkg.svg",
+        "a/tun-trvl/002-talfa.svg",
+        "a/tun-trvl/003-talfb.svg",
+        "a/tun-trvl/004-talfc.svg",
+        "a/tun-trvl/005-talfd.svg",
+        "a/tun-trvl/006-tatpa.svg",
+        "a/tun-trvl/007-tatpb.svg",
+        "a/tun-trvl/008-tarta.svg",
+        "a/tun-trvl/009-tartb.svg",
+        "a/tun-trvl/010-tartc.svg",
+        "a/tun-trvl/011-tartd.svg",
+        "a/tun-trvl/012-tafpa.svg",
+        "a/tun-trvl/013-tafpb.svg",
+        "a/tun-trvl/014-tbbkg.svg",
+        "a/tun-trvl/015-tblfa.svg",
+        "a/tun-trvl/016-tblfb.svg",
+        "a/tun-trvl/017-tblfc.svg",
+        "a/tun-trvl/018-tblfd.svg",
+        "a/tun-trvl/019-tbrta.svg",
+        "a/tun-trvl/020-tbrtb.svg",
+        "a/tun-trvl/021-tbrtc.svg",
+        "a/tun-trvl/022-tbrtd.svg",
+        "a/tun-trvl/023-tbrte.svg",
+        "a/tun-trvl/024-tbtpa.svg",
+        "a/tun-trvl/025-tbtpb.svg",
+        "a/tun-trvl/026-tbfpa.svg",
+        "a/tun-trvl/027-tbfpb.svg",
+        "a/tun-trvl/028-tbdra.svg"
+      ]
+    },
+    {
+      "side": "a",
+      "name": "VIEWS",
+      "asset": "assets/raw/a/files/views.bin",
+      "allocated_bytes": 256,
+      "pictures": [
+        "a/views/000-viewa.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "AMULET",
+      "asset": "assets/raw/b/files/amulet.bin",
+      "allocated_bytes": 1024,
+      "pictures": [
+        "b/amulet/000-amule.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "BANDITOS",
+      "asset": "assets/raw/b/files/banditos.bin",
+      "allocated_bytes": 1536,
+      "pictures": [
+        "b/banditos/000-bandi.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "FALL PILS",
+      "asset": "assets/raw/b/files/fall-pils.bin",
+      "allocated_bytes": 4352,
+      "pictures": [
+        "b/fall-pils/000-rghtl.svg",
+        "b/fall-pils/001-pilla.svg",
+        "b/fall-pils/002-pillb.svg",
+        "b/fall-pils/003-pillc.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "GEO+STRS",
+      "asset": "assets/raw/b/files/geo-strs.bin",
+      "allocated_bytes": 2560,
+      "pictures": [
+        "b/geo-strs/000-georm.svg",
+        "b/geo-strs/001-doorl.svg",
+        "b/geo-strs/002-openl.svg",
+        "b/geo-strs/003-doorr.svg",
+        "b/geo-strs/004-openr.svg",
+        "b/geo-strs/005-staro.svg",
+        "b/geo-strs/006-boxov.svg",
+        "b/geo-strs/007-rtwal.svg",
+        "b/geo-strs/008-webov.svg",
+        "b/geo-strs/009-batsh.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "GOLD BOWL",
+      "asset": "assets/raw/b/files/gold-bowl.bin",
+      "allocated_bytes": 512,
+      "pictures": [
+        "b/gold-bowl/000-goldb.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "HISS-SUNS",
+      "asset": "assets/raw/b/files/hiss-suns.bin",
+      "allocated_bytes": 1792,
+      "pictures": [
+        "b/hiss-suns/000-rghtl.svg",
+        "b/hiss-suns/001-hisrm.svg",
+        "b/hiss-suns/002-tsun0.svg",
+        "b/hiss-suns/003-tsun1.svg",
+        "b/hiss-suns/004-tsun2.svg",
+        "b/hiss-suns/005-tsun3.svg",
+        "b/hiss-suns/006-tsun4.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "INF PSGS",
+      "asset": "assets/raw/b/files/inf-psgs.bin",
+      "allocated_bytes": 1792,
+      "pictures": [
+        "b/inf-psgs/000-infpa.svg",
+        "b/inf-psgs/001-infpb.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "JADE BOWL",
+      "asset": "assets/raw/b/files/jade-bowl.bin",
+      "allocated_bytes": 512,
+      "pictures": [
+        "b/jade-bowl/000-jadeb.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "JAG ATACK",
+      "asset": "assets/raw/b/files/jag-atack.bin",
+      "allocated_bytes": 4864,
+      "pictures": [
+        "b/jag-atack/000-jaga1.svg",
+        "b/jag-atack/001-jaga2.svg",
+        "b/jag-atack/002-jaga3.svg",
+        "b/jag-atack/003-jaga4.svg",
+        "b/jag-atack/004-jaga5.svg",
+        "b/jag-atack/005-jaga6.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "JEEP ALON",
+      "asset": "assets/raw/b/files/jeep-alon.bin",
+      "allocated_bytes": 1280,
+      "pictures": [
+        "b/jeep-alon/000-jeep.svg",
+        "b/jeep-alon/001-jepal.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "MAIN PYR",
+      "asset": "assets/raw/b/files/main-pyr.bin",
+      "allocated_bytes": 2560,
+      "pictures": [
+        "b/main-pyr/000-rghtl.svg",
+        "b/main-pyr/001-mnpyr.svg",
+        "b/main-pyr/002-pyrsn.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "MAP",
+      "asset": "assets/raw/b/files/map.bin",
+      "allocated_bytes": 768,
+      "pictures": [
+        "b/map/000-map-1.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "MASK",
+      "asset": "assets/raw/b/files/mask.bin",
+      "allocated_bytes": 1024,
+      "pictures": [
+        "b/mask/000-mask.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "POOL RM",
+      "asset": "assets/raw/b/files/pool-rm.bin",
+      "allocated_bytes": 3584,
+      "pictures": [
+        "b/pool-rm/000-rghtl.svg",
+        "b/pool-rm/001-polrm.svg",
+        "b/pool-rm/002-stars.svg",
+        "b/pool-rm/003-magpl.svg",
+        "b/pool-rm/004-magst.svg",
+        "b/pool-rm/005-highp.svg",
+        "b/pool-rm/006-hghp2.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "PYR ENTRN",
+      "asset": "assets/raw/b/files/pyr-entrn.bin",
+      "allocated_bytes": 2048,
+      "pictures": [
+        "b/pyr-entrn/000-rghtl.svg",
+        "b/pyr-entrn/001-entrm.svg",
+        "b/pyr-entrn/002-pyren.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "PYR HOLE",
+      "asset": "assets/raw/b/files/pyr-hole.bin",
+      "allocated_bytes": 2816,
+      "pictures": [
+        "b/pyr-hole/000-rghtl.svg",
+        "b/pyr-hole/001-pyrtp.svg",
+        "b/pyr-hole/002-pyrh1.svg",
+        "b/pyr-hole/003-pyrh2.svg",
+        "b/pyr-hole/004-tnent.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "ROBOFFS",
+      "asset": "assets/raw/b/files/roboffs.bin",
+      "allocated_bytes": 2048,
+      "pictures": [
+        "b/roboffs/000-rghtl.svg",
+        "b/roboffs/001-robgn.svg",
+        "b/roboffs/002-robg2.svg",
+        "b/roboffs/003-robod.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "SILVR BWL",
+      "asset": "assets/raw/b/files/silvr-bwl.bin",
+      "allocated_bytes": 512,
+      "pictures": [
+        "b/silvr-bwl/000-silvb.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "STAIRS",
+      "asset": "assets/raw/b/files/stairs.bin",
+      "allocated_bytes": 1536,
+      "pictures": [
+        "b/stairs/000-strbm.svg",
+        "b/stairs/001-rghtl.svg",
+        "b/stairs/002-strdn.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "STEP STN",
+      "asset": "assets/raw/b/files/step-stn.bin",
+      "allocated_bytes": 1792,
+      "pictures": [
+        "b/step-stn/000-rghtl.svg",
+        "b/step-stn/001-step1.svg",
+        "b/step-stn/002-step2.svg",
+        "b/step-stn/003-step3.svg",
+        "b/step-stn/004-step4.svg",
+        "b/step-stn/005-step5.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "SUN ALTAR",
+      "asset": "assets/raw/b/files/sun-altar.bin",
+      "allocated_bytes": 3072,
+      "pictures": [
+        "b/sun-altar/000-rghtl.svg",
+        "b/sun-altar/001-snalt.svg",
+        "b/sun-altar/002-snadr.svg",
+        "b/sun-altar/003-snalb.svg",
+        "b/sun-altar/004-snndr.svg",
+        "b/sun-altar/005-altcl.svg",
+        "b/sun-altar/006-sunal.svg",
+        "b/sun-altar/007-sunma.svg",
+        "b/sun-altar/008-sunme.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "SUN TEMPL",
+      "asset": "assets/raw/b/files/sun-templ.bin",
+      "allocated_bytes": 1536,
+      "pictures": [
+        "b/sun-templ/000-rghtl.svg",
+        "b/sun-templ/001-mazef.svg",
+        "b/sun-templ/002-mazed.svg",
+        "b/sun-templ/003-altwl.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "TALK FACE",
+      "asset": "assets/raw/b/files/talk-face.bin",
+      "allocated_bytes": 2048,
+      "pictures": [
+        "b/talk-face/000-rghtl.svg",
+        "b/talk-face/001-maska.svg",
+        "b/talk-face/002-maskb.svg",
+        "b/talk-face/003-maskc.svg",
+        "b/talk-face/004-maskd.svg",
+        "b/talk-face/005-maske.svg",
+        "b/talk-face/006-maskf.svg",
+        "b/talk-face/007-maskg.svg",
+        "b/talk-face/008-maskh.svg",
+        "b/talk-face/009-grgas.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "TUN TRVL",
+      "asset": "assets/raw/b/files/tun-trvl.bin",
+      "allocated_bytes": 2304,
+      "pictures": [
+        "b/tun-trvl/000-rghtl.svg",
+        "b/tun-trvl/001-tabkg.svg",
+        "b/tun-trvl/002-talfa.svg",
+        "b/tun-trvl/003-talfb.svg",
+        "b/tun-trvl/004-talfc.svg",
+        "b/tun-trvl/005-talfd.svg",
+        "b/tun-trvl/006-tatpa.svg",
+        "b/tun-trvl/007-tatpb.svg",
+        "b/tun-trvl/008-tarta.svg",
+        "b/tun-trvl/009-tartb.svg",
+        "b/tun-trvl/010-tartc.svg",
+        "b/tun-trvl/011-tartd.svg",
+        "b/tun-trvl/012-tafpa.svg",
+        "b/tun-trvl/013-tafpb.svg",
+        "b/tun-trvl/014-tbbkg.svg",
+        "b/tun-trvl/015-tblfa.svg",
+        "b/tun-trvl/016-tblfb.svg",
+        "b/tun-trvl/017-tblfc.svg",
+        "b/tun-trvl/018-tblfd.svg",
+        "b/tun-trvl/019-tbrta.svg",
+        "b/tun-trvl/020-tbrtb.svg",
+        "b/tun-trvl/021-tbrtc.svg",
+        "b/tun-trvl/022-tbrtd.svg",
+        "b/tun-trvl/023-tbrte.svg",
+        "b/tun-trvl/024-tbtpa.svg",
+        "b/tun-trvl/025-tbtpb.svg",
+        "b/tun-trvl/026-tbfpa.svg",
+        "b/tun-trvl/027-tbfpb.svg",
+        "b/tun-trvl/028-tbdra.svg"
+      ]
+    },
+    {
+      "side": "b",
+      "name": "VICT ALTR",
+      "asset": "assets/raw/b/files/vict-altr.bin",
+      "allocated_bytes": 1280,
+      "pictures": [
+        "b/vict-altr/000-rghtl.svg",
+        "b/vict-altr/001-altr1.svg",
+        "b/vict-altr/002-altr2.svg",
+        "b/vict-altr/003-altr3.svg"
+      ]
+    }
+  ]
+}

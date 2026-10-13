@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="ROADC" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>ROADC — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":488,"native_size":62,"native_sha256":"ce435be6b4b4b28ce17a22f89c1cd98ae13cc73d39c5c2415e5da5c456dbe77e","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="103" data-kind="vector" d="M 44 95 L 45 95 L 45 94 L 46 94 L 46 93 L 47 93 L 48 93 L 48 92 L 49 92 L 50 92 L 51 92 L 52 92 L 52 91 L 53 91 L 54 91 L 55 91 L 56 91 L 56 92 L 57 92 L 58 92 L 59 92 L 59 93 L 60 93 L 61 93 L 61 94 L 62 94 L 63 94 L 64 94 L 64 95 L 65 95 L 65 96 L 66 96 L 66 97 L 67 97 L 68 97 L 68 96 L 69 96 L 69 95 L 70 95 L 70 94 L 71 94 L 72 94 L 72 93 L 73 93 L 74 93 L 75 93 L 75 92 L 76 92 L 77 92 L 78 92 L 79 92 L 80 92 L 81 92 L 82 92 L 82 93 L 83 93 L 84 93 L 85 93 L 85 94 L 86 94 L 87 94 L 88 94 L 88 95 L 89 95 L 90 95 L 90 96 L 91 96 L 90 96" data-packing="333233333332223333333332" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-01" data-color="101" data-kind="vector" d="M 52 89 M 52 90 L 52 91 L 51 91 L 50 91 L 49 91 L 48 91 L 48 92 L 47 92 L 46 92 L 46 93 L 45 93 L 45 94 L 44 94 L 43 94" data-packing="33332" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-02" data-color="101" data-kind="vector" d="M 75 90 M 75 91 L 75 92 L 74 92 L 73 92 L 72 92 L 72 93 L 71 93 L 70 93 L 70 94 L 69 94 L 69 95 L 68 95 L 68 96 L 67 96 L 66 96" data-packing="33333" fill="#aaaaaa" stroke="#000000" />
+  </g>
+</svg>

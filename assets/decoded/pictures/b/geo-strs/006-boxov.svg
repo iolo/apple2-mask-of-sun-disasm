@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="BOXOV" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>BOXOV — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":837,"native_size":68,"native_sha256":"02b1d41111d63dc99a2450029de9086b3dfcee0add8c16126580acb3e0ac3373","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="104" data-kind="vector" d="M 49 112 L 48 112 L 47 112 L 46 112 L 46 113 L 45 113 L 45 114 L 44 114 L 44 115 L 44 116 L 44 117 L 44 118 L 44 119 L 44 120 L 44 121 L 44 122 L 44 123 L 44 124 L 44 125 L 44 126 L 44 127 L 44 128 L 44 129 L 44 130 L 45 130 L 44 130 M 44 129" data-packing="333333332" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-01" data-color="4" data-kind="vector" d="M 45 116 L 46 116 L 47 116 L 48 116 L 49 116 L 50 116 L 51 116 L 52 116 L 53 116 L 54 116 L 55 116 L 56 116 L 57 116 L 58 116 L 58 117 L 58 118 L 58 119 L 58 120 L 58 121 L 58 122 L 58 123 L 58 124 L 58 125 L 58 126 L 58 127 L 58 128 L 58 129 L 58 130 L 57 130 L 56 130 L 55 130 L 54 130 L 53 130 L 52 130 L 51 130 L 50 130 L 49 130 L 48 130 L 47 130 L 46 130 L 45 130 M 45 129" data-packing="33333333333332" fill="#000000" stroke="#000000" />
+    <path id="layer-02" data-color="127" data-kind="vector" d="M 50 112 L 51 112 L 52 112 L 53 112 L 54 112 L 55 112 L 56 112 L 57 112 L 58 112 L 59 112 L 60 112 L 60 113 L 60 114 L 59 114 L 59 115 M 58 115 L 57 115" data-packing="333322" fill="none" stroke="#000000" />
+    <path id="layer-03" data-color="127" data-kind="vector" d="M 60 115 M 60 114 L 60 115 L 60 116 L 60 117 L 60 118 L 60 119 L 60 120 L 60 121 L 60 122 L 60 123 L 60 124 L 60 125 L 60 126 L 60 127 L 60 128 M 59 128 L 58 128" data-packing="333332" fill="none" stroke="#000000" />
+  </g>
+</svg>

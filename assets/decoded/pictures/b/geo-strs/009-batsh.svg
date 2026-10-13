@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="BATSH" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>BATSH — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":2304,"native_size":256,"native_sha256":"b64fb48c67eef4c0bde273df0f4098e230dfc3c6858088973a7bab045ee285a9","padding":"//f3Fv/3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="127" data-kind="vector" d="M 32 127 M 32 126 L 32 127 L 31 127 L 31 128 L 31 129 L 32 129 L 33 129 L 32 129" data-packing="332" fill="none" stroke="#000000" />
+    <path id="layer-01" data-color="127" data-kind="vector" d="M 36 114 M 36 113 L 36 114 L 35 114 L 34 114 M 34 113" data-packing="32" fill="none" stroke="#000000" />
+    <path id="layer-02" data-color="127" data-kind="vector" d="M 48 109 L 48 108 L 49 108 L 49 107 L 50 107 L 50 106 L 51 106 L 51 105 L 52 105 M 52 106 L 52 107 L 53 107 L 54 107 L 53 107" data-packing="222232" fill="none" stroke="#000000" />
+    <path id="layer-03" data-color="127" data-kind="vector" d="M 46 122 M 46 121 L 46 122 L 45 122 L 46 122 M 46 123 L 46 124 L 46 125 L 46 126 L 45 126 L 44 126 M 44 125" data-packing="3332" fill="none" stroke="#000000" />
+    <path id="layer-04" data-color="127" data-kind="vector" d="M 41 134 L 41 133 L 41 132 L 42 132 L 43 132 L 43 133 L 42 133" data-packing="33" fill="none" stroke="#000000" />
+    <path id="layer-05" data-color="127" data-kind="vector" d="M 52 127 M 52 126 L 52 125 L 51 125 L 51 124 M 52 124 L 53 124 L 54 124 M 54 125 L 54 126 L 53 126 M 53 125" data-packing="3332" fill="none" stroke="#000000" />
+    <path id="layer-06" data-color="127" data-kind="vector" d="M 58 116 L 59 116 L 60 116 L 60 115 L 60 114 L 60 113 L 60 112 M 61 112 L 61 113 L 62 113 L 62 114 L 61 114" data-packing="22232" fill="none" stroke="#000000" />
+    <path id="layer-07" data-color="127" data-kind="vector" d="M 67 108 M 67 107 L 67 106 L 67 105 L 66 105 L 65 105 L 65 106 L 64 106" data-packing="232" fill="none" stroke="#000000" />
+    <path id="layer-08" data-color="127" data-kind="vector" d="M 65 122 M 65 121 L 66 121 L 67 121 L 68 121 L 69 121 L 68 121" data-packing="33" fill="none" stroke="#000000" />
+    <path id="layer-09" data-color="127" data-kind="vector" d="M 63 133 M 63 132 L 64 132 L 64 131 L 64 130 L 65 130 L 66 130 L 66 131 L 65 131" data-packing="233" fill="none" stroke="#000000" />
+    <path id="layer-10" data-color="127" data-kind="vector" d="M 74 122 M 74 121 L 75 121 L 76 121 L 76 122 L 77 122 L 77 123 L 78 123 L 78 124 L 77 124" data-packing="333" fill="none" stroke="#000000" />
+    <path id="layer-11" data-color="127" data-kind="vector" d="M 82 119 M 82 118 L 82 117 L 81 117 L 81 116 L 80 116 L 80 115 L 80 114 L 79 114 L 79 115 M 78 115 L 77 115" data-packing="3233" fill="none" stroke="#000000" />
+    <path id="layer-12" data-color="127" data-kind="vector" d="M 77 108 M 77 107 L 76 107 L 76 108 L 75 108 L 74 108" data-packing="32" fill="none" stroke="#000000" />
+    <path id="layer-13" data-color="127" data-kind="vector" d="M 86 105 M 86 104 L 87 104 L 87 103 L 88 103 L 89 103 M 89 104 L 88 104" data-packing="232" fill="none" stroke="#000000" />
+    <path id="layer-14" data-color="127" data-kind="vector" d="M 95 118 M 95 117 L 96 117 L 96 118 L 97 118 M 97 119 L 96 119 L 95 119 L 94 119 L 93 119" data-packing="333" fill="none" stroke="#000000" />
+    <path id="layer-15" data-color="127" data-kind="vector" d="M 94 130 M 94 129 L 94 128 L 93 128 L 93 127 L 92 127 L 92 128 M 91 128 L 90 128" data-packing="332" fill="none" stroke="#000000" />
+  </g>
+</svg>

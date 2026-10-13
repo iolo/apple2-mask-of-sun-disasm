@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="PEDH2" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>PEDH2 — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":1118,"native_size":111,"native_sha256":"25565c4a26685a4ab28dbeec32256f40e6d4303d0c2668f1a1b984bbce451381","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="127" data-kind="vector" d="M 49 79 L 49 80 L 48 80 L 48 81 L 48 82 L 48 83 L 48 84 L 48 85 L 48 86 L 48 87 L 48 88 L 47 88 L 47 89 L 47 90 L 47 91 L 47 92 L 47 93 L 47 94 L 47 95 L 47 96 L 46 96 L 46 97 L 46 98 L 46 99 L 47 99 L 47 100 L 48 100 L 49 100 L 49 101 L 50 101 L 51 101 L 51 102 L 52 102 L 53 102 L 54 102 L 54 103 L 55 103 L 56 103 L 55 103" data-packing="3333333333332" fill="none" stroke="#000000" />
+    <path id="layer-01" data-color="96" data-kind="vector" d="M 70 87 L 69 87 L 68 87 L 68 88 M 67 88 L 66 88 L 65 88 L 64 88 L 64 87 L 63 87 L 63 86 L 63 85 M 62 85 L 61 85 L 60 85 L 59 85 L 58 85 L 57 85 L 57 86 M 56 86 L 55 86 L 55 85 M 54 85 L 53 85 L 53 86 L 53 87 L 54 87 M 54 88 L 54 89 M 53 89 L 53 90 L 53 91 M 52 91 L 52 92 L 53 92 M 53 93 L 54 93 M 54 94 L 54 95 L 54 96 L 55 96 M 55 97 L 56 97 M 56 98 L 57 98 L 57 99 L 57 100 L 57 101 L 57 102 L 56 102 M 56 101" data-packing="333233333233233332" fill="#aaaaaa" stroke="#000000" />
+    <path id="layer-02" data-color="127" data-kind="vector" d="M 58 99 M 58 98 L 59 98 L 60 98 L 61 98 L 61 97 M 62 97 L 63 97 L 64 97 L 65 97 L 66 97 L 67 97 L 68 97 L 69 97 L 69 96 L 69 95 L 69 94 L 69 93 L 69 92 L 69 91 L 69 90 L 69 89 L 69 88 L 68 88" data-packing="3233222222" fill="none" stroke="#000000" />
+    <path id="layer-03" data-color="127" data-kind="vector" d="M 54 95 M 54 94 L 55 94 L 56 94 M 56 95 L 57 95 L 58 95 L 57 95 M 57 94" data-packing="332" fill="none" stroke="#000000" />
+    <path id="layer-04" data-color="127" data-kind="vector" d="M 54 91 L 55 91 M 55 92 L 56 92 L 57 92 M 57 93 L 58 93 L 57 93 M 57 92" data-packing="332" fill="none" stroke="#000000" />
+    <path id="layer-05" data-color="127" data-kind="vector" d="M 53 88 M 53 87 L 54 87 M 54 88 L 55 88 M 55 89 L 56 89 M 56 90 L 57 90 L 56 90" data-packing="2223" fill="none" stroke="#000000" />
+    <path id="layer-06" data-color="127" data-kind="vector" d="M 57 88 M 57 87 L 58 87 L 59 87 L 60 87 L 59 87" data-packing="32" fill="none" stroke="#000000" />
+    <path id="layer-07" data-color="96" data-kind="vector" d="M 75 79 M 75 80 L 75 81 L 74 81 L 74 82 L 73 82 L 73 83 L 72 83 L 72 84 L 71 84 L 70 84 L 70 85 L 70 86 L 69 86 M 69 85" data-packing="33332" fill="#aaaaaa" stroke="#000000" />
+  </g>
+</svg>

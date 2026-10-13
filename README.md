@@ -28,11 +28,12 @@ An **early partial rebuild** is now available:
 python3 tools/build.py
 ```
 
-It produces `build/early/mask-of-sun-{a,b}.dsk`, assembles the documented resident
-interpreter, text renderer and disk bootstrap sectors, and packages tracked
-exports without reading original disk templates.
-Other code and graphics still use temporary native exports. See the emitted
-`build.json` for those dependencies and [baseline evidence](docs/baseline.md)
+It produces `build/early/mask-of-sun-{a,b}.dsk`, assembles all loaded engine,
+character generator, DOS/RWTS and bootstrap code, encodes editable
+[font PNGs](docs/chargen.md) and [picture SVGs](docs/pictures.md), and packages
+tracked data without reading original disk templates. Final classification of
+unused system residue and the remaining world/documentation audit are pending.
+See the emitted `build.json` for dependencies and [baseline evidence](docs/baseline.md)
 for the verified opening route. The [disk map](docs/disk-layout.md) documents
 all extracted regions and the raw extraction round-trip checks.
 The [boot trace](docs/boot-loading.md) explains load phases, and the

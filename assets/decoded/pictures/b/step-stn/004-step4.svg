@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="STEP4" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>STEP4 — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":1039,"native_size":105,"native_sha256":"17526522642a28525d282043529b4777807616f3cbf1929f046b8434a44de64e","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="127" data-kind="vector" d="M 36 114 M 36 113 L 36 112 L 36 111 L 37 111 L 37 110 L 37 109 L 37 108 L 38 108 L 38 107 L 39 107 L 38 107" data-packing="22223" fill="none" stroke="#000000" />
+    <path id="layer-01" data-color="127" data-kind="vector" d="M 39 112 M 39 111 L 39 112 L 39 113 L 38 113 L 38 114 L 38 115 L 38 116 L 38 117 L 38 118 L 39 118 L 39 119 L 40 119 L 41 119 L 41 120 L 42 120 L 43 120 L 44 120 L 45 120 L 46 120 L 46 119 L 47 119 L 46 119 M 46 118" data-packing="33333332" fill="none" stroke="#000000" />
+    <path id="layer-02" data-color="127" data-kind="vector" d="M 47 112 L 47 113 L 48 113 L 49 113 L 49 114 L 50 114 L 51 114 L 52 114 L 53 114 L 54 114 L 55 114 L 56 114 L 57 114 L 58 114 L 58 113 L 59 113 L 59 112 L 60 112 L 60 111 L 61 111 L 61 110 L 61 109 L 62 109 L 62 108 L 61 108 L 60 108" data-packing="333332233" fill="none" stroke="#000000" />
+    <path id="layer-03" data-color="127" data-kind="vector" d="M 48 98 M 48 97 L 49 97 L 49 96 L 50 96 L 51 96 L 51 95 L 52 95 L 53 95 L 54 95 L 55 95 L 55 94 L 56 94 L 56 95 L 57 95 L 58 95 L 58 94 L 59 94 L 59 95 L 60 95 L 61 95 L 62 95 L 62 96 L 63 96 L 64 96 L 64 97 L 65 97 L 65 98 L 66 98 L 67 98 L 67 99 L 67 100 L 68 100 L 68 101 L 68 102 L 68 103 L 68 104 L 67 104 M 67 103" data-packing="23323233333332" fill="none" stroke="#000000" />
+    <path id="layer-04" data-color="127" data-kind="vector" d="M 49 104 L 50 104 L 50 103 L 51 103 L 52 103 L 53 103 L 54 103 L 54 102 L 55 102 L 56 102 L 57 102 L 58 102 L 59 102 L 60 102 L 61 102 L 61 103 L 62 103 L 62 104 L 63 104 L 64 104 L 64 105 L 64 106 L 65 106 L 65 107 L 64 107" data-packing="33333333" fill="none" stroke="#000000" />
+    <path id="layer-05" data-color="127" data-kind="vector" d="M 56 110 M 56 109 L 55 109 L 54 109 L 54 108 L 55 108 L 55 107 L 56 107 L 57 107 L 56 107 M 56 106" data-packing="3232" fill="none" stroke="#000000" />
+    <path id="layer-06" data-color="127" data-kind="vector" d="M 62 117 L 63 117 L 64 117 L 64 116 L 65 116 L 65 115 L 66 115 L 67 115 L 67 114 L 67 113 L 68 113 L 68 112 L 68 111 L 69 111 L 69 110 L 69 109 L 69 108 L 70 108 L 70 107 L 70 106 L 70 105 L 69 105" data-packing="223332222" fill="none" stroke="#000000" />
+  </g>
+</svg>

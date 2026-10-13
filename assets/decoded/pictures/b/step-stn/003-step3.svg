@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="STEP3" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>STEP3 — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":989,"native_size":50,"native_sha256":"13639887450fedbc7f88e538b6cbdaaa41404eda66bd931d37e1763ba267cadb","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="127" data-kind="vector" d="M 38 99 L 38 100 L 37 100 L 37 101 L 36 101 L 36 102 L 35 102 L 35 103 L 34 103 L 34 104 L 33 104 L 33 105 L 33 106 L 33 107 L 33 108 L 34 108 L 34 109 L 34 110 L 35 110 L 35 111 L 34 111" data-packing="3333332" fill="none" stroke="#000000" />
+    <path id="layer-01" data-color="127" data-kind="vector" d="M 37 104 M 37 103 L 38 103 L 38 104 M 37 104 L 37 105 M 36 105 L 36 106 L 36 107 L 37 107 L 37 108 L 37 109 L 37 110 L 37 111 L 38 111 L 38 112 L 39 112 L 40 112 L 41 112 L 42 112 L 42 113 L 43 113 L 44 113 L 43 113" data-packing="32333333" fill="none" stroke="#000000" />
+    <path id="layer-02" data-color="127" data-kind="vector" d="M 62 109 M 62 108 L 62 109 L 63 109 L 63 110 L 64 110 L 65 110 L 66 110 L 66 109 L 67 109 L 67 108 L 68 108 L 68 107 L 69 107 L 69 106 L 69 105 L 70 105 L 70 104 L 69 104" data-packing="3332232" fill="none" stroke="#000000" />
+  </g>
+</svg>

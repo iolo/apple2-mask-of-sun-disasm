@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="SNNDR" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>SNNDR — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":1140,"native_size":49,"native_sha256":"28551b8cd4cfc502679d622c4ac83c760be5ad214c1b68d2660d63ef299f0ffd","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="103" data-kind="vector" d="M 115 15 M 115 14 M 115 15 L 115 16 L 115 17 L 115 18 L 115 19 L 115 20 L 115 21 L 115 22 L 115 23 L 115 24 L 115 25 L 115 26 L 115 27 L 115 28 L 115 29 L 115 30 L 115 31 L 115 32 L 115 33 L 115 34 L 115 35 L 115 36 L 115 37 L 115 38 L 115 39 L 115 40 L 115 41 L 115 42 L 115 43 L 115 44 L 115 45 L 115 46 L 115 47 L 115 48 L 115 49 L 115 50 L 115 51 L 115 52 L 115 53 L 115 54 L 115 55 L 115 56 L 115 57 L 115 58 L 115 59 L 115 60 L 115 61 L 115 62 L 115 63 L 115 64 L 115 65 L 115 66 L 115 67 L 115 68 L 115 69 L 115 70 L 115 71 L 115 72 L 115 73 L 115 74 L 115 75 L 115 76 L 115 77 L 115 78 L 115 79 L 115 80 L 115 81 L 115 82 L 115 83 L 115 84 L 115 85 L 115 86 L 115 87 L 115 88 L 115 89 L 115 90 L 115 91 L 115 92 L 115 93 L 115 94 L 115 95 L 115 96 L 115 97 L 115 98 L 115 99 L 115 100 L 115 101 L 115 102 L 115 103 L 114 103" data-packing="2333333333333333333333333333332" fill="#aaaaaa" stroke="#000000" />
+  </g>
+</svg>

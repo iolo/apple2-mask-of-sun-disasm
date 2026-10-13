@@ -1,0 +1,40 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "id": "diagonal",
+      "pass": true,
+      "error": "<fixture>/test.svg: segments must be nonzero orthogonal moves"
+    },
+    {
+      "id": "curve",
+      "pass": true,
+      "error": "<fixture>/test.svg: paths support absolute integer M/L commands only"
+    },
+    {
+      "id": "fractional",
+      "pass": true,
+      "error": "<fixture>/test.svg: paths support absolute integer M/L commands only"
+    },
+    {
+      "id": "dimensions",
+      "pass": true,
+      "error": "<fixture>/test.svg: dimensions/viewBox must stay 280x192 / 0 0 140 192"
+    },
+    {
+      "id": "color-range",
+      "pass": true,
+      "error": "layer color: expected integer 0..255"
+    },
+    {
+      "id": "layer-transform",
+      "pass": true,
+      "error": "<fixture>/test.svg: per-layer transforms/nested elements are unsupported"
+    },
+    {
+      "id": "capacity",
+      "pass": true,
+      "error": "capacity fixture: edits exceed allocated 3328 bytes by 3919"
+    }
+  ]
+}

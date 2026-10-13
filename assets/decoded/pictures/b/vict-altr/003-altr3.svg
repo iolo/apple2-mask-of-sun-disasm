@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="ALTR3" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>ALTR3 — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":1205,"native_size":75,"native_sha256":"759c15da15fe14b1feb68fd10f636aa01683507a9f89450c95b61ab7d1fb6f58","padding":"///3Fv//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="3" data-kind="vector" d="M 71 89 M 71 88 L 71 87 L 71 86 M 70 86 L 70 85 L 70 84 M 69 84 L 69 83 L 69 82 L 70 82 L 71 82 L 72 82 M 72 83 L 73 83 M 73 84 L 73 85 L 73 86 L 73 87 L 73 88 M 72 88 L 71 88" data-packing="222233322" fill="#df7927" stroke="#000000" />
+  </g>
+</svg>

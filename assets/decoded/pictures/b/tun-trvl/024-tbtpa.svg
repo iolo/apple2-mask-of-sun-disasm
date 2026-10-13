@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="TBTPA" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>TBTPA — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":1944,"native_size":49,"native_sha256":"d4168134bc3cf2cc8dc514242eef2b6cbc9cb5d4323e418eccf3bebdfabc1dea","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="99" data-kind="vector" d="M 108 12 M 108 13 L 108 14 L 108 15 L 108 16 L 108 17 L 108 18 L 109 18 L 109 19 L 109 20 L 109 21 L 109 22 L 109 23 L 110 23 L 110 24 L 110 25 L 110 26 L 110 27 L 109 27 L 108 27 L 107 27 L 106 27 L 105 27 L 104 27 L 103 27 L 102 27 L 101 27 L 100 27 L 99 27 L 98 27 L 97 27 L 96 27 L 95 27 L 94 27 L 93 27 L 92 27 L 91 27 L 90 27 L 89 27 L 88 27 L 87 27 L 86 27 L 85 27 L 84 27 L 83 27 L 82 27 L 81 27 L 80 27 L 79 27 L 78 27 L 77 27 L 76 27 L 75 27 L 74 27 L 73 27 L 72 27 L 71 27 L 70 27 L 69 27 L 68 27 L 67 27 L 66 27 L 65 27 L 64 27 L 63 27 L 62 27 L 61 27 L 60 27 L 59 27 L 58 27 L 57 27 L 56 27 L 55 27 L 54 27 L 53 27 L 52 27 L 51 27 L 50 27 L 49 27 L 48 27 L 47 27 L 46 27 L 45 27 L 44 27 L 43 27 L 42 27 L 41 27 L 40 27 L 39 27 L 38 27 L 37 27 L 36 27 M 36 26" data-packing="3333333333333333333333333333332" fill="#aaaaaa" stroke="#000000" />
+  </g>
+</svg>

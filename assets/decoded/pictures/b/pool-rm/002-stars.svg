@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="192" viewBox="0 0 140 192" preserveAspectRatio="none" data-mask-format="1" data-name="STARS" data-origin-x="0" data-origin-y="0" data-scale-x="0" data-scale-y="0" data-options="0">
+  <title>STARS — native ULTRA vector geometry</title>
+  <desc>Editing geometry: native scan-fill and artifact colors are shown in the companion PNG. Layers retain order; M moves without drawing, L plots before moving. Units are orthogonal native steps.</desc>
+  <metadata>{"native_offset":503,"native_size":306,"native_sha256":"dd20e217728525688dff4dbabdeae4cd6e984e4402f6a2cecf46d99db8e85c18","padding":""}</metadata>
+  <rect width="140" height="192" fill="white" data-role="background" />
+  <g data-role="layers" transform="translate(0 0)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="0.35">
+    <path id="layer-00" data-color="127" data-kind="vector" d="M 10 30 L 11 30 L 11 31 L 12 31 M 12 32 L 12 33 L 12 34 M 11 34 L 11 35 L 11 36 L 10 36 L 9 36" data-packing="3332" fill="none" stroke="#000000" />
+    <path id="layer-01" data-color="127" data-kind="vector" d="M 13 29 M 13 28 L 13 29 L 13 30 L 13 31 L 13 32 L 14 32 L 14 31 M 15 31 L 15 30 L 16 30 L 15 30" data-packing="3323" fill="none" stroke="#000000" />
+    <path id="layer-02" data-color="127" data-kind="vector" d="M 13 38 M 13 37 L 13 36 L 13 35 L 13 34 L 13 33 M 14 33 L 15 33 M 15 34 L 15 35 L 15 36 L 16 36 L 15 36" data-packing="22332" fill="none" stroke="#000000" />
+    <path id="layer-03" data-color="127" data-kind="vector" d="M 7 83 M 7 82 L 7 83 L 7 84 L 8 84 M 8 85 L 8 86 M 7 86 L 7 87 L 7 88 L 6 88 M 6 87" data-packing="3332" fill="none" stroke="#000000" />
+    <path id="layer-04" data-color="127" data-kind="vector" d="M 9 80 L 9 81 L 9 82 L 9 83 L 9 84 L 10 84 M 10 85 L 10 86 M 9 86 L 9 87 L 9 88 L 9 89 L 8 89" data-packing="32232" fill="none" stroke="#000000" />
+    <path id="layer-05" data-color="127" data-kind="vector" d="M 11 82 L 11 83 L 11 84 L 11 85 M 10 85 L 11 85 M 11 86 L 11 87 L 11 88 L 10 88 M 10 87" data-packing="3232" fill="none" stroke="#000000" />
+    <path id="layer-06" data-color="127" data-kind="vector" d="M 46 49 L 46 50 L 46 51 L 46 52 L 46 53 M 45 53 L 45 52 M 44 52 L 44 51 M 43 51 L 43 50 L 42 50" data-packing="32222" fill="none" stroke="#000000" />
+    <path id="layer-07" data-color="127" data-kind="vector" d="M 49 51 M 49 50 L 49 51 L 49 52 M 48 52 L 48 53 M 47 53 L 48 53 M 48 54 L 48 55 L 49 55 M 49 56 L 48 56" data-packing="32232" fill="none" stroke="#000000" />
+    <path id="layer-08" data-color="127" data-kind="vector" d="M 43 57 M 43 56 L 43 55 M 44 55 L 44 54 L 44 53 M 45 53 L 46 53 M 46 54 L 46 55 L 46 56 L 46 57 L 45 57" data-packing="22332" fill="none" stroke="#000000" />
+    <path id="layer-09" data-color="127" data-kind="vector" d="M 69 69 M 69 68 L 69 69 L 69 70 L 69 71 L 69 72 M 68 72 L 68 71 M 67 71 L 67 70 L 66 70 L 66 69 L 65 69" data-packing="32232" fill="none" stroke="#000000" />
+    <path id="layer-10" data-color="127" data-kind="vector" d="M 72 70 M 72 69 L 72 70 L 71 70 L 71 71 L 71 72 M 70 72 L 71 72 M 71 73 L 71 74 L 72 74 L 72 75 L 72 76 L 71 76" data-packing="32233" fill="none" stroke="#000000" />
+    <path id="layer-11" data-color="127" data-kind="vector" d="M 72 70 M 72 69 L 72 70 L 71 70 L 71 71 L 71 72 M 70 72 L 71 72 M 71 73 L 71 74 L 72 74 L 72 75 L 72 76 L 71 76" data-packing="32233" fill="none" stroke="#000000" />
+    <path id="layer-12" data-color="127" data-kind="vector" d="M 77 29 L 77 30 L 78 30 L 78 31 L 78 32 L 79 32 M 79 33 L 79 32 M 80 32 L 80 31 L 80 30 L 80 29 L 80 28 L 79 28" data-packing="322222" fill="none" stroke="#000000" />
+    <path id="layer-13" data-color="127" data-kind="vector" d="M 83 30 M 83 29 L 83 30 L 82 30 L 82 31 L 82 32 L 82 33 M 81 33 L 82 33 M 82 34 L 82 35 L 83 35 L 83 36 L 83 37 L 82 37" data-packing="33233" fill="none" stroke="#000000" />
+    <path id="layer-14" data-color="127" data-kind="vector" d="M 77 38 M 77 37 L 77 36 L 77 35 L 78 35 L 78 34 L 78 33 M 79 33 L 80 33 M 80 34 L 80 35 L 80 36 L 80 37 L 80 38 L 80 39 L 79 39 M 79 38" data-packing="2222332" fill="none" stroke="#000000" />
+    <path id="layer-15" data-color="127" data-kind="vector" d="M 116 28 L 116 29 L 117 29 M 117 30 L 118 30 M 118 31 L 119 31 L 119 30 L 119 29 L 119 28 L 119 27 L 118 27" data-packing="22223" fill="none" stroke="#000000" />
+    <path id="layer-16" data-color="127" data-kind="vector" d="M 122 29 M 122 28 L 122 29 L 122 30 M 121 30 L 121 31 M 120 31 L 120 32 L 121 32 M 121 33 L 122 33 M 122 34 L 122 35 L 122 36 L 121 36 M 121 35" data-packing="323232" fill="none" stroke="#000000" />
+    <path id="layer-17" data-color="127" data-kind="vector" d="M 116 36 L 116 35 L 116 34 L 116 33 M 117 33 L 117 32 M 118 32 L 119 32 M 119 33 L 119 34 L 119 35 L 119 36 L 119 37 L 118 37" data-packing="22333" fill="none" stroke="#000000" />
+    <path id="layer-18" data-color="127" data-kind="vector" d="M 125 65 L 125 66 L 125 67 L 126 67 L 126 68 L 127 68 M 127 69 L 127 68 M 128 68 L 128 67 L 128 66 L 128 65 L 128 64 L 128 63 L 127 63" data-packing="322223" fill="none" stroke="#000000" />
+    <path id="layer-19" data-color="127" data-kind="vector" d="M 131 65 L 131 66 L 131 67 L 130 67 L 130 68 L 130 69 M 129 69 L 130 69 M 130 70 L 130 71 L 131 71 L 131 72 L 131 73 L 130 73" data-packing="32233" fill="none" stroke="#000000" />
+    <path id="layer-20" data-color="127" data-kind="vector" d="M 128 75 L 128 74 L 128 73 L 128 72 L 128 71 L 128 70 L 128 69 M 127 69 L 127 70 M 126 70 L 126 71 L 125 71 L 125 72 L 125 73 L 124 73" data-packing="222233" fill="none" stroke="#000000" />
+    <path id="layer-21" data-color="127" data-kind="vector" d="M 68 104 L 68 105 L 68 106 L 68 107 L 67 107 L 67 106 M 66 106 L 65 106" data-packing="322" fill="none" stroke="#000000" />
+    <path id="layer-22" data-color="127" data-kind="vector" d="M 70 107 M 70 106 L 70 107 M 69 107 L 69 108 M 68 108 L 68 109 M 67 109 L 67 110 M 66 110 L 65 110" data-packing="22222" fill="none" stroke="#000000" />
+    <path id="layer-23" data-color="127" data-kind="vector" d="M 68 109 M 68 108 L 69 108 M 69 109 L 70 109 M 70 110 L 69 110" data-packing="222" fill="none" stroke="#000000" />
+    <path id="layer-24" data-color="127" data-kind="vector" d="M 59 119 M 59 118 L 60 118 M 60 119 L 60 118 M 61 118 L 60 118" data-packing="222" fill="none" stroke="#000000" />
+    <path id="layer-25" data-color="127" data-kind="vector" d="M 59 121 M 59 120 L 58 120" data-packing="2" fill="none" stroke="#000000" />
+    <path id="layer-26" data-color="127" data-kind="vector" d="M 61 121 M 61 120 L 60 120" data-packing="2" fill="none" stroke="#000000" />
+    <path id="layer-27" data-color="127" data-kind="vector" d="M 80 116 M 80 115 L 80 116 L 80 117 L 79 117 L 79 116 M 78 116 L 77 116" data-packing="322" fill="none" stroke="#000000" />
+    <path id="layer-28" data-color="127" data-kind="vector" d="M 82 117 M 82 116 L 82 117 M 81 117 L 81 118 M 80 118 L 80 119 M 79 119 L 79 120 M 78 120 L 77 120" data-packing="22222" fill="none" stroke="#000000" />
+    <path id="layer-29" data-color="127" data-kind="vector" d="M 81 120 M 81 119 L 82 119 M 82 120 L 81 120" data-packing="22" fill="none" stroke="#000000" />
+    <path id="layer-30" data-color="127" data-kind="vector" d="M 66 77 L 66 76 L 66 75 L 67 75 L 67 74 L 67 73 M 68 73 L 69 73 M 69 74 L 69 75 L 69 76 L 69 77 L 69 78 L 68 78" data-packing="32233" fill="none" stroke="#000000" />
+  </g>
+</svg>
