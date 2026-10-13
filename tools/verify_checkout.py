@@ -45,7 +45,8 @@ def main():
         'reference_regions_absent': all(not (checkout / path).exists() for path in references),
         'read_and_repeatability_audit': audit['pass'],
         'documented_default_build_matches_audit': all(
-            disk['sha256'] == next(entry['sha256'] for entry in build['disk_images'] if entry['side'] == disk['side'])
+            disk['sha256'] == next(entry['sha256'] for entry in build['disk_images']
+                                  if Path(entry['path']).name == f"mask-of-sun-{disk['side']}.dsk")
             for disk in audit['disks']),
     }
     report = {'revision': revision, 'checkout': str(checkout), 'commands': commands,
