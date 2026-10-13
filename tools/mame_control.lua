@@ -26,16 +26,41 @@ function mask.text()
     end
     return rows
 end
+function mask.graphics_text()
+    local space = cpu().spaces.program
+    local font = {}
+    for code = 32, 126 do
+        local glyph = {}
+        for n = 0, 7 do glyph[#glyph+1] = string.char(space:read_u8(0xb300 + code*8 + n) & 0x7f) end
+        font[table.concat(glyph)] = string.char(code)
+    end
+    local rows = {}
+    local base = space:read_u8(0x0346) == 0 and 0x2000 or 0x4000
+    for row = 0, 15 do
+        local text = {}
+        for column = 0, 39 do
+            local glyph = {}
+            for n = 0, 7 do
+                local y = row*12+n
+                local address = base + ((y & 7) << 10) + (((y >> 3) & 7) << 7) + (y >> 6)*40 + column
+                glyph[#glyph+1] = string.char(space:read_u8(address) & 0x7f)
+            end
+            text[#text+1] = font[table.concat(glyph)] or '?'
+        end
+        rows[#rows+1] = table.concat(text)
+    end
+    return rows
+end
 function mask.capture(name)
     assert(name:match('^[%w_-]+$'), 'checkpoint name must be a simple filename')
     emu.pause()
     local record = {name=name, version=emu.app_version(), driver=machine().system.name,
-                    time=machine().time:as_double(), text=mask.text(), registers={}, media={}}
+                    time=machine().time:as_double(), text=mask.text(), graphics_text=mask.graphics_text(), registers={}, media={}}
     for key, state in pairs(cpu().state) do record.registers[key] = state.value end
     for tag, image in pairs(machine().images) do
         record.media[#record.media + 1] = {tag=tag, filename=image.filename}
     end
-    for _, range in ipairs({{0,0x400,'low'}, {0x400,0x400,'text'},
+    for _, range in ipairs({{0,0xc000,'ram'}, {0,0x400,'low'}, {0x400,0x400,'text'},
                              {0x2000,0x2000,'hgr1'}, {0x4000,0x2000,'hgr2'}}) do
         local f = assert(io.open(name .. '-' .. range[3] .. '.bin', 'wb'))
         f:write(bytes(range[1], range[2])); f:close()
@@ -59,4 +84,24 @@ end
 function mask.resume() emu.unpause() end
 function mask.go() cpu().debug:go() end
 function mask.exit() machine():exit() end
+-- A bounded emulated-time run pauses itself; host/tool latency cannot extend
+-- a gameplay timer after the selected recording interval.
+local pending
+function mask.run(seconds, name)
+    assert(type(seconds) == 'number' and seconds > 0 and seconds <= 300)
+    assert(not pending, 'a capture is already scheduled')
+    pending = {deadline=machine().time:as_double() + seconds, name=name}
+    emu.unpause()
+end
+function mask.send(text, seconds, name)
+    mask.keys(text)
+    mask.run(seconds, name)
+end
+emu.register_frame_done(function()
+    if pending and machine().time:as_double() >= pending.deadline then
+        local name = pending.name
+        pending = nil
+        mask.capture(name)
+    end
+end, 'mask-baseline')
 print('MASK console helpers loaded')

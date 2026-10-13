@@ -136,7 +136,7 @@ timed sections have explicit conditions suitable for later replay automation.
 
 ### 3. Map disk layout, boot sequence, and memory loading
 
-- [ ] Identify container/sector order and catalog any recognized filesystem.
+- [x] Identify container/sector order and catalog any recognized filesystem.
   If storage is custom, inspect and export sectors directly rather than forcing
   a filesystem interpretation.
 - [ ] Trace boot sectors, loader entry points, disk reads, side selection, and
@@ -145,7 +145,7 @@ timed sections have explicit conditions suitable for later replay automation.
   overlays, assets, metadata, padding, or explicitly unknown content.
 - [ ] Record memory ranges, entry points, zero-page usage, stack assumptions,
   buffers, ROM calls, and Apple II soft-switch accesses.
-- [ ] Export raw regions without altering their bytes and verify that a sector
+- [x] Export raw regions without altering their bytes and verify that a sector
   extraction/repacking round trip preserves each original image. Construct the
   repacked images from exports and the manifest, without reading an original
   image as a template; this exact check verifies extraction, not final-build identity.

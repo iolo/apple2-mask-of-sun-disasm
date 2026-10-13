@@ -70,3 +70,44 @@ disabled and does not count as sound validation.
 
 Next: Step 2 — wait for game loading, record startup/opening controls and
 command checks, then establish the complete original route with timed events.
+
+## Steps 2a/3a — Opening replay and complete raw sector export
+
+Completed substeps on 2026-10-13; Steps 2 and 3 remain open.
+
+- Captured the original game's plane introduction, pagination, live command
+  prompt, inventory and parser errors. Incrementally replayed the opening route
+  through the map, hut/flute exchange, statue inscription/head puzzle and
+  clearing transition using a fresh boot and natural-keyboard input.
+- Located the graphics text output vector ($B317) and font addressing in the
+  captured renderer; implemented a glyph decoder for the native 40×16 grid.
+  Runtime screenshots verify the decoded inventory and dialogue. Non-text
+  drawing regions remain explicit unknown glyphs. Ordinary text RAM is stale.
+- Added emulated-time bounded captures and a fresh-boot opening replay, with
+  timestamps and an opening behavior verifier. Archived decoded checkpoint
+  records, input/media configuration and six representative screenshots under
+  `docs/evidence/`. Headless replay does not establish sound behavior.
+- Identified DOS logical sector order, catalog/TS-list chains and full allocated
+  file streams. Exported both disks into non-overlapping source regions and a
+  complete 1,120-sector manifest. Repacking starts from empty arrays and reads
+  only those regions; this remains a temporary raw build, not source completion.
+- Compared every one of 139 live file streams independently against a2kit raw
+  extraction. Two catalog counts have an unexplained added $2800, and graphical
+  files with DOS binary type lack valid DOS binary headers. Both are preserved
+  and documented rather than used as incorrect allocation limits.
+
+Validation: `python3 tools/verify_opening.py build/opening-01 --output
+docs/evidence/opening-original.json` passes all 13 opening checks. The replay
+exits normally at 314.2 emulated seconds after 44 captured pagination/prompt
+checkpoints. `python3 tools/dos_disk.py repack`, both disk `cmp` commands and
+all 139 independent `a2kit get -t raw` comparisons pass. `tools/check_inputs.py`,
+Python compilation and `git diff --check` pass. See `docs/baseline.md` and
+`docs/disk-layout.md` for scope, commands, provenance and interpretation limits.
+
+Remaining: original full route/ending, both-side and timed behavior, sound,
+save/restore, restart/boundaries; boot-to-game loader tracing and memory map;
+all readable assembly and editable graphics. Unowned sectors and mixed/font
+regions are still under analysis. No opaque region is claimed as final retention.
+Next: extend the original route into the first pyramid and investigate its
+keyboard/timer conventions, then trace bootstrap/renderer and replace initial
+raw-code regions with assembly.

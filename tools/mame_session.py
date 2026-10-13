@@ -20,6 +20,8 @@ def main():
     p.add_argument('--disk-b', type=Path, default=ROOT / 'mask-of-sun-b.dsk')
     p.add_argument('--headless', action='store_true')
     p.add_argument('--debug', action='store_true')
+    p.add_argument('--script', type=Path, help='optional owned replay startup Lua script')
+    p.add_argument('--fast', action='store_true', help='unthrottled; compare emulated time, not wall time')
     args = p.parse_args()
     if not args.rompath or not args.rompath.is_dir():
         p.error('supply --rompath or MAME_ROMPATH with locally supplied ROMs')
@@ -49,11 +51,16 @@ def main():
         directory.mkdir()
         cmd.extend(['-' + option, str(directory)])
     env = os.environ.copy()
+    env['MASK_PROJECT_ROOT'] = str(ROOT)
     if args.headless:
         env.update(SDL_VIDEODRIVER='dummy', SDL_AUDIODRIVER='dummy', QT_QPA_PLATFORM='offscreen')
         cmd.extend(['-video', 'none', '-sound', 'none'])
     if args.debug:
         cmd.extend(['-debug', '-debugger', 'qt'])
+    if args.script:
+        cmd.extend(['-autoboot_script', str(args.script.resolve()), '-autoboot_delay', '0'])
+    if args.fast:
+        cmd.append('-nothrottle')
     (out / 'session.json').write_text(json.dumps({'command': cmd, 'media': media,
         'headless': args.headless, 'debug': args.debug}, indent=2) + '\n')
     print('Session: ' + str(out), flush=True)

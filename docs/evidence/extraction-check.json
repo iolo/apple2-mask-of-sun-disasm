@@ -1,0 +1,701 @@
+{
+  "pass": true,
+  "method": "All allocated file streams compared independently with a2kit get -t raw",
+  "files": [
+    {
+      "side": "a",
+      "file": "DEATH",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "INITIAL",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "allocated_bytes": 11264
+    },
+    {
+      "side": "a",
+      "file": "ROOM 1.0",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "a",
+      "file": "ROOM 2.0",
+      "allocated_bytes": 1280
+    },
+    {
+      "side": "a",
+      "file": "ROOM 2.1",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "ROOM 3.0",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "ROOM 4.0",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "ROOM 5.0",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "a",
+      "file": "ROOM 5.1",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "a",
+      "file": "ROOM 6.0",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "a",
+      "file": "ROOM 6.1",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "a",
+      "file": "ROOM 6.2",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "ROOM 7.0",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "a",
+      "file": "ROOM 7.1",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "a",
+      "file": "ROOM 8.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "a",
+      "file": "ROOM 9.0",
+      "allocated_bytes": 1792
+    },
+    {
+      "side": "a",
+      "file": "ROOM 9.1",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "a",
+      "file": "ROOM 9.2",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "a",
+      "file": "ROOM 10.0",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "a",
+      "file": "ROOM 11.0",
+      "allocated_bytes": 1280
+    },
+    {
+      "side": "a",
+      "file": "ROOM 12.0",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "ROOM 13.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "a",
+      "file": "ROOM 14.0",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "a",
+      "file": "ROOM 15.0",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "a",
+      "file": "ROOM 17.0",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "a",
+      "file": "ROOM 18.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "a",
+      "file": "ROOM 19.0",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "a",
+      "file": "ROOM 20.0",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "ROOM 21.0",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "a",
+      "file": "ROOM 22.0",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "ROOM 32.1",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "START",
+      "allocated_bytes": 256
+    },
+    {
+      "side": "a",
+      "file": "TRAVEL",
+      "allocated_bytes": 1792
+    },
+    {
+      "side": "a",
+      "file": "TUNNEL",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "a",
+      "file": "ADVEN INTERP.OBJ",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "a",
+      "file": "CHAR GEN",
+      "allocated_bytes": 2304
+    },
+    {
+      "side": "a",
+      "file": "INTRIN.OBJ",
+      "allocated_bytes": 5120
+    },
+    {
+      "side": "a",
+      "file": "PARMS.OBJ",
+      "allocated_bytes": 256
+    },
+    {
+      "side": "a",
+      "file": "AF1.0",
+      "allocated_bytes": 256
+    },
+    {
+      "side": "a",
+      "file": "AMULET",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "a",
+      "file": "BACK JEEP",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "a",
+      "file": "CRYPT-TOT",
+      "allocated_bytes": 2560
+    },
+    {
+      "side": "a",
+      "file": "FLUTE",
+      "allocated_bytes": 2560
+    },
+    {
+      "side": "a",
+      "file": "GOLD BOWL",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "JADE BOWL",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "JEEP ALON",
+      "allocated_bytes": 1280
+    },
+    {
+      "side": "a",
+      "file": "LOGO",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "a",
+      "file": "MAP",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "a",
+      "file": "P1.1",
+      "allocated_bytes": 3328
+    },
+    {
+      "side": "a",
+      "file": "P6.5",
+      "allocated_bytes": 3072
+    },
+    {
+      "side": "a",
+      "file": "P7.0",
+      "allocated_bytes": 4096
+    },
+    {
+      "side": "a",
+      "file": "PEDDLER1",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "a",
+      "file": "SILVR BWL",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "a",
+      "file": "SKEL RM",
+      "allocated_bytes": 3840
+    },
+    {
+      "side": "a",
+      "file": "SNAKE-PIT",
+      "allocated_bytes": 3328
+    },
+    {
+      "side": "a",
+      "file": "TEMPL EX",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "a",
+      "file": "TEMPLE1",
+      "allocated_bytes": 3328
+    },
+    {
+      "side": "a",
+      "file": "TRAVEL1",
+      "allocated_bytes": 3584
+    },
+    {
+      "side": "a",
+      "file": "TRAVEL2",
+      "allocated_bytes": 3584
+    },
+    {
+      "side": "a",
+      "file": "TUN TRVL",
+      "allocated_bytes": 2304
+    },
+    {
+      "side": "a",
+      "file": "VIEWS",
+      "allocated_bytes": 256
+    },
+    {
+      "side": "b",
+      "file": "DEATH",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "b",
+      "file": "ROOM 23.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 23.1",
+      "allocated_bytes": 1280
+    },
+    {
+      "side": "b",
+      "file": "ROOM 24.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 24.1",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 25.0",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "b",
+      "file": "ROOM 26.0",
+      "allocated_bytes": 1280
+    },
+    {
+      "side": "b",
+      "file": "ROOM 27.0",
+      "allocated_bytes": 1792
+    },
+    {
+      "side": "b",
+      "file": "ROOM 28.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 29.0",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "b",
+      "file": "ROOM 30.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 30.1",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 30.2",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.0",
+      "allocated_bytes": 1792
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.1",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "b",
+      "file": "ROOM 32.0",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "b",
+      "file": "ROOM 33.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 34.0",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "b",
+      "file": "ROOM 34.1",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "b",
+      "file": "ROOM 34.2",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "b",
+      "file": "ROOM 35.0",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "b",
+      "file": "ROOM 36.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 37.0",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "b",
+      "file": "ROOM 39.0",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "b",
+      "file": "ROOM 40.0",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "b",
+      "file": "ROOM 41.3",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "b",
+      "file": "ROOM 41.0",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "b",
+      "file": "ROOM 41.1",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "b",
+      "file": "ROOM 41.2",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "b",
+      "file": "ROOM 40.1",
+      "allocated_bytes": 1792
+    },
+    {
+      "side": "b",
+      "file": "ROOM 42.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 43.0",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "b",
+      "file": "ROOM 44.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 44.1",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 44.2",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 44.3",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "b",
+      "file": "ROOM 44.4",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "b",
+      "file": "ROOM 44.5",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 44.6",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 44.7",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 44.8",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 44.9",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 45.0",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "b",
+      "file": "ROOM 46.0",
+      "allocated_bytes": 1792
+    },
+    {
+      "side": "b",
+      "file": "ROOM 47.0",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.0",
+      "allocated_bytes": 1792
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.1",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "allocated_bytes": 1792
+    },
+    {
+      "side": "b",
+      "file": "ROOM 50.0",
+      "allocated_bytes": 1280
+    },
+    {
+      "side": "b",
+      "file": "TUNNEL",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "b",
+      "file": "AMULET",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "BANDITOS",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "b",
+      "file": "FALL PILS",
+      "allocated_bytes": 4352
+    },
+    {
+      "side": "b",
+      "file": "GEO+STRS",
+      "allocated_bytes": 2560
+    },
+    {
+      "side": "b",
+      "file": "GOLD BOWL",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "b",
+      "file": "HISS-SUNS",
+      "allocated_bytes": 1792
+    },
+    {
+      "side": "b",
+      "file": "INF PSGS",
+      "allocated_bytes": 1792
+    },
+    {
+      "side": "b",
+      "file": "JADE BOWL",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "b",
+      "file": "JAG ATACK",
+      "allocated_bytes": 4864
+    },
+    {
+      "side": "b",
+      "file": "JEEP ALON",
+      "allocated_bytes": 1280
+    },
+    {
+      "side": "b",
+      "file": "MAIN PYR",
+      "allocated_bytes": 2560
+    },
+    {
+      "side": "b",
+      "file": "MAP",
+      "allocated_bytes": 768
+    },
+    {
+      "side": "b",
+      "file": "MASK",
+      "allocated_bytes": 1024
+    },
+    {
+      "side": "b",
+      "file": "POOL RM",
+      "allocated_bytes": 3584
+    },
+    {
+      "side": "b",
+      "file": "PYR ENTRN",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "b",
+      "file": "PYR HOLE",
+      "allocated_bytes": 2816
+    },
+    {
+      "side": "b",
+      "file": "ROBOFFS",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "b",
+      "file": "SILVR BWL",
+      "allocated_bytes": 512
+    },
+    {
+      "side": "b",
+      "file": "STAIRS",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "b",
+      "file": "STEP STN",
+      "allocated_bytes": 1792
+    },
+    {
+      "side": "b",
+      "file": "SUN ALTAR",
+      "allocated_bytes": 3072
+    },
+    {
+      "side": "b",
+      "file": "SUN TEMPL",
+      "allocated_bytes": 1536
+    },
+    {
+      "side": "b",
+      "file": "TALK FACE",
+      "allocated_bytes": 2048
+    },
+    {
+      "side": "b",
+      "file": "TUN TRVL",
+      "allocated_bytes": 2304
+    },
+    {
+      "side": "b",
+      "file": "VICT ALTR",
+      "allocated_bytes": 1280
+    }
+  ]
+}
