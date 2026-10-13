@@ -38,6 +38,11 @@ unowned sectors are pending allocation and content analysis. No region is
 claimed as safely retained opaque data yet. Boot/DOS source and game-code
 source are still required before the final build is complete.
 
+[Boot loading](boot-loading.md) now documents the observed two-stage bootstrap,
+37-page DOS extent and subsequent START/custom-loader destinations. Both disk
+copies' first two sectors are assembled source authority; surrounding system
+track exports remain temporary references and inputs for unfinished DOS analysis.
+
 ```sh
 # One-time analysis export; refuses an existing destination.
 python3 tools/dos_disk.py export

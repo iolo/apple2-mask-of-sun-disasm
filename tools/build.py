@@ -26,7 +26,11 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     replacements, assembled = {}, []
     modules = [('renderer', 0xb300, 0x100, 'assets/raw/a/files/char-gen.bin', 0x504),
-               ('interpreter', 0x0800, 0x500, 'assets/raw/a/files/adven-interp-obj.bin', 4)]
+               ('interpreter', 0x0800, 0x500, 'assets/raw/a/files/adven-interp-obj.bin', 4),
+               ('boot-a', 0x0800, 0x100, 'assets/raw/a/system/track-00.bin', 0),
+               ('boot-b', 0x0800, 0x100, 'assets/raw/b/system/track-00.bin', 0),
+               ('boot-stage2-a', 0xb700, 0x100, 'assets/raw/a/system/track-00.bin', 0x100),
+               ('boot-stage2-b', 0xb700, 0x100, 'assets/raw/b/system/track-00.bin', 0x100)]
     for name, address, length, asset, offset in modules:
         subprocess.run(['ca65', str(ROOT / f'src/{name}.s'), '-o', str(out / f'{name}.o'),
                         '-l', str(out / f'{name}.lst')], check=True)
@@ -37,7 +41,8 @@ def main():
         if len(code) != length:
             raise ValueError(f'{name}: output must occupy its original {length}-byte region')
         native = (ROOT / asset).read_bytes()
-        replacements[asset] = native[:offset] + code + native[offset + length:]
+        current = replacements.get(asset, native)
+        replacements[asset] = current[:offset] + code + current[offset + length:]
         assembled.append({'source': f'src/{name}.s', 'load_address': address, 'size': len(code),
                           'sha256': hashlib.sha256(code).hexdigest(), 'asset': asset, 'offset': offset,
                           'original_encoding_equal': code == native[offset:offset + length]})

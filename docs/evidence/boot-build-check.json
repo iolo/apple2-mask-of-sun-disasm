@@ -1,0 +1,74 @@
+{
+  "pass": true,
+  "repeat_build_manifest_equal": true,
+  "original_disk_reads": [],
+  "method": "strace -f -e trace=openat; supplied-input hash check is separate",
+  "assembled": [
+    {
+      "source": "src/renderer.s",
+      "load_address": 45824,
+      "size": 256,
+      "sha256": "be91d2e6519eb02e6c395d7c7ef5967c668930cbbbb7b6d142d39200c1782f2b",
+      "asset": "assets/raw/a/files/char-gen.bin",
+      "offset": 1284,
+      "original_encoding_equal": true
+    },
+    {
+      "source": "src/interpreter.s",
+      "load_address": 2048,
+      "size": 1280,
+      "sha256": "5b6bffc2f68f9ff9627b5ad08eded942a7955373b6fd121974cef6a2e56dfed4",
+      "asset": "assets/raw/a/files/adven-interp-obj.bin",
+      "offset": 4,
+      "original_encoding_equal": true
+    },
+    {
+      "source": "src/boot-a.s",
+      "load_address": 2048,
+      "size": 256,
+      "sha256": "170671e4a13411d74c506ccaf0c32a02c879485ccbb61af3f70a9c450c92039c",
+      "asset": "assets/raw/a/system/track-00.bin",
+      "offset": 0,
+      "original_encoding_equal": true
+    },
+    {
+      "source": "src/boot-b.s",
+      "load_address": 2048,
+      "size": 256,
+      "sha256": "b9ee72dca4d6a695c6bb82517cfff1ecc89e5bcccd5be7bb4fefc752ea8ef2f4",
+      "asset": "assets/raw/b/system/track-00.bin",
+      "offset": 0,
+      "original_encoding_equal": true
+    },
+    {
+      "source": "src/boot-stage2-a.s",
+      "load_address": 46848,
+      "size": 256,
+      "sha256": "233b065950868accb8e5f5cacd86688e64cdf749575bea9ad46067c32fae74df",
+      "asset": "assets/raw/a/system/track-00.bin",
+      "offset": 256,
+      "original_encoding_equal": true
+    },
+    {
+      "source": "src/boot-stage2-b.s",
+      "load_address": 46848,
+      "size": 256,
+      "sha256": "7ee5fb800866c79247a3e40f9c8ca8f491b2a5038175c05fd9c0776d87812ec0",
+      "asset": "assets/raw/b/system/track-00.bin",
+      "offset": 256,
+      "original_encoding_equal": true
+    }
+  ],
+  "disk_hashes": [
+    {
+      "path": "build/boot-repeat-check/mask-of-sun-a.dsk",
+      "size": 143360,
+      "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+    },
+    {
+      "path": "build/boot-repeat-check/mask-of-sun-b.dsk",
+      "size": 143360,
+      "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+    }
+  ]
+}

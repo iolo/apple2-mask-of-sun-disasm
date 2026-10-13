@@ -29,8 +29,12 @@ python3 tools/build.py
 ```
 
 It produces `build/early/mask-of-sun-{a,b}.dsk`, assembles the documented resident
-interpreter and text renderer, and packages tracked exports without reading original disk templates.
+interpreter, text renderer and disk bootstrap sectors, and packages tracked
+exports without reading original disk templates.
 Other code and graphics still use temporary native exports. See the emitted
 `build.json` for those dependencies and [baseline evidence](docs/baseline.md)
 for the verified opening route. The [disk map](docs/disk-layout.md) documents
 all extracted regions and the raw extraction round-trip checks.
+The [boot trace](docs/boot-loading.md) explains load phases, and the
+[behavior matrix](docs/behavior-matrix.md) links full-ending, sound and
+save/restore results for the current partial build.

@@ -154,6 +154,10 @@ def export(destination):
 
 def repack(manifest_path, output, replacements=None):
     manifest = json.loads(manifest_path.read_text())
+    known = {region['path'] for disk in manifest['disks'] for region in disk['regions']}
+    unknown = set(replacements or {}) - known
+    if unknown:
+        raise ValueError(f'unknown replacement regions: {sorted(unknown)}')
     output.mkdir(parents=True, exist_ok=True)
     reports = []
     for disk in manifest['disks']:

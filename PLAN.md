@@ -155,18 +155,18 @@ provenance, all disk bytes are accounted for, and round-trip comparisons pass.
 
 ### 4. Create an early assembly and disk rebuild
 
-- [ ] Seed disassembly from traced entry points using `da65` or equivalent
+- [x] Seed disassembly from traced entry points using `da65` or equivalent
   tooling. Separate known data from reachable code and flag ambiguous regions.
-- [ ] Create `ca65` modules and explicit `ld65` segment layouts for boot,
+- [x] Create `ca65` modules and explicit `ld65` segment layouts for boot,
   resident code, and overlays at their observed addresses.
-- [ ] Account for tables, self-modifying operands, required padding, and
+- [x] Account for tables, self-modifying operands, required padding, and
   load/run-address differences. Retain original encodings as a convenient starting
   point. Use raw bytes temporarily where necessary, with each such region tracked
   for later interpretation and executable blobs replaced by readable assembly.
-- [ ] Assemble identified code and compare output region by region against the
+- [x] Assemble identified code and compare output region by region against the
   original exports where useful. Investigate unexpected differences; record the
   reason and behavior checks for intentional changes rather than forcing a match.
-- [ ] Reuse Step 3's repacker to build an initial pair of disks from exported
+- [x] Reuse Step 3's repacker to build an initial pair of disks from exported
   regions, progressively replacing code regions with assembled output. Boot them
   through the opening replay. Track all temporary raw-code dependencies.
 
@@ -174,6 +174,11 @@ provenance, all disk bytes are accounted for, and round-trip comparisons pass.
 uses assembled output for identified code, and passes the opening behavior checks.
 Unexpected differences are investigated; intentional differences have explanations
 and validation evidence. Packaging does not read original-image templates.
+
+Current early scope: six bootstrap/interpreter/renderer modules; remaining DOS,
+intrinsics and mixed CHAR GEN content are named temporary inputs. No separate
+6502 overlay has been established yet. Completing this early build step does not
+close the complete-source or editable-graphics criteria in later steps.
 
 ### 5. Explain the loader and resident engine
 

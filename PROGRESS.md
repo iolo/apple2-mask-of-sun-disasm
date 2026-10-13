@@ -235,3 +235,43 @@ all error paths remain untested, as stated in the behavior matrix. Byte equality
 of recordings/save files is diagnostic evidence for the current implementation,
 not a universal future equivalence requirement. Next: trace the bootstrap and
 reconstruct the intrinsic dispatch/vector renderer and editable graphics.
+
+## Steps 3b/4c — Traced and assembled two-stage bootstrap
+
+Completed substep on 2026-10-13. Early-build Step 4 acceptance now passes;
+complete mapping/source and the remaining plan are still unfinished.
+
+- Observed slot6 ROM $C600/$C65C, disk entry $0801, second stage $B700, native
+  RWTS $BD00, DOS output $A000, engine $0800, renderer $B300 and intrinsic/COUT
+  entries. Read taps record native IOB requests without replacing fetched bytes.
+  Snapshot recursion is guarded, and repeated ROM header scans are deduplicated.
+- Established ten first-stage sectors at $B600–$BFFF and the next 27 DOS pages
+  at $9B00–$B5FF, mapping T2/S4 down through T0/S10. Verified START's payload
+  placements and custom full-file loads of INTRIN/CHAR GEN including headers.
+- Added readable assembly for side-A bootstrap plus its resident DOS helpers,
+  side-B wrong-side halt/message, and both variants of the second stage. IOB,
+  DCT, interleave, mutable counter/pointer, native padding and diagnostic code
+  are explicit. Native diagnostic padding alignment was corrected during
+  encoding investigation, without treating disk identity as the acceptance gate.
+- The build now assembles six modules, correctly merging multiple source spans
+  in one exported region. The repacker rejects unknown replacement paths. Source
+  authority covers both first two boot sectors, engine payload and renderer page;
+  remaining system/code regions remain tracked temporary dependencies.
+- Documented phase ownership: graphics and CHAR GEN overwrite portions of
+  startup DOS; gameplay retains custom file loading and high-memory RWTS.
+  Documented physical-vs-DOS logical interleave and true load/run destinations.
+
+Validation: `tools/verify_boot.py build/boot-trace-02
+build/boot-rebuilt-trace-02` passes seven checks per version and full agreement
+of 224 observed entries/requests. Both wrong-side attempts print BOOT OTHER SIDE.
+and halt at $0806. `tools/verify_opening.py build/boot-opening-01` passes thirteen
+checks on the six-module build. A fresh repeated build agrees in its source
+manifest; strace confirms no original-disk reads. Sandbox ptrace restrictions
+required explicit approved tracing. Input preservation, Python compilation and
+diff whitespace checks pass. Reports are archived under `docs/evidence/`.
+
+Limits: bootstrap assembly does not finish the remaining DOS file manager/RWTS
+source. Intrinsic code, mixed CHAR GEN content, graphic encoding/edit authority,
+world interpretation and final reproducibility remain open. Step 3's complete
+semantic manifest/memory map also remains open. Next: map native DOS code/data
+using its traced interfaces, then reconstruct the intrinsic/vector engine.
