@@ -1,0 +1,493 @@
+{
+  "scope": "Original deliberate pill overdose, invalid death command, and restart",
+  "session": {
+    "command": [
+      "/usr/games/mame",
+      "apple2p",
+      "-noreadconfig",
+      "-rompath",
+      "/home/iolo/workspace/retro/a2x/mame/roms",
+      "-ramsize",
+      "48K",
+      "-sl0",
+      "",
+      "-sl4",
+      "",
+      "-sl6",
+      "diskiing",
+      "-flop1",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restart-core-01/side-a.dsk",
+      "-console",
+      "-pluginspath",
+      "/usr/share/games/mame/plugins",
+      "-skip_gameinfo",
+      "-natural",
+      "-window",
+      "-nomouse",
+      "-homepath",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restart-core-01",
+      "-cfg_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restart-core-01/cfg_directory",
+      "-nvram_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restart-core-01/nvram_directory",
+      "-snapshot_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restart-core-01/snapshot_directory",
+      "-state_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restart-core-01/state_directory",
+      "-diff_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restart-core-01/diff_directory",
+      "-video",
+      "none",
+      "-sound",
+      "none",
+      "-autoboot_script",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/opening_replay.lua",
+      "-autoboot_delay",
+      "0",
+      "-nothrottle"
+    ],
+    "media": {
+      "a": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/core-check-02/mask-of-sun-a.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restart-core-01/side-a.dsk",
+        "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+      },
+      "b": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/core-check-02/mask-of-sun-b.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restart-core-01/side-b.dsk",
+        "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+      }
+    },
+    "headless": true,
+    "debug": false
+  },
+  "checks": [
+    {
+      "id": "ordered-command-sequence",
+      "pass": true
+    },
+    {
+      "id": "final-prompt",
+      "pass": true
+    },
+    {
+      "id": "expected-death",
+      "pass": true
+    },
+    {
+      "id": "restart-room",
+      "pass": true,
+      "address": 24589,
+      "observed": 1,
+      "expected": 1
+    },
+    {
+      "id": "restart-inventory",
+      "pass": true,
+      "address": 25112,
+      "length": 252,
+      "hashes": [
+        "c507e8cfaf9e061094cda0ba95b6d9050ece7689ee7bb417233acdf83c4925bd",
+        "c507e8cfaf9e061094cda0ba95b6d9050ece7689ee7bb417233acdf83c4925bd"
+      ]
+    },
+    {
+      "id": "death",
+      "pass": true,
+      "expected": "You are dead.",
+      "checkpoints": [],
+      "output_stream": true
+    },
+    {
+      "id": "restart-offered",
+      "pass": true,
+      "expected": "Or to start a new game, enter START.",
+      "checkpoints": [
+        "005-prompt-03",
+        "006-prompt-04"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "death-rejection",
+      "pass": true,
+      "expected": "INVALID COMMAND.",
+      "checkpoints": [],
+      "output_stream": true
+    },
+    {
+      "id": "restart-plane",
+      "pass": true,
+      "expected": "The ride was bumpy, but you made it.",
+      "checkpoints": [
+        "003-prompt-01",
+        "004-prompt-02",
+        "010-prompt-05",
+        "011-prompt-06"
+      ],
+      "output_stream": true
+    }
+  ],
+  "pass": true,
+  "inputs": [
+    {
+      "time": 29.799999999863,
+      "text": " ",
+      "command_index": 1,
+      "reason": "pagination"
+    },
+    {
+      "time": 32.899999999849,
+      "text": " ",
+      "command_index": 1,
+      "reason": "pagination"
+    },
+    {
+      "time": 35.999999999834,
+      "text": "LOOK\r",
+      "command_index": 1,
+      "reason": "LOOK"
+    },
+    {
+      "time": 39.09999999982,
+      "text": "TAKE ALL PILLS\r",
+      "command_index": 2,
+      "reason": "TAKE ALL PILLS"
+    },
+    {
+      "time": 49.099999999774,
+      "text": "FERNAP\r",
+      "command_index": 3,
+      "reason": "FERNAP"
+    },
+    {
+      "time": 54.19999999975,
+      "text": "START\r",
+      "command_index": 4,
+      "reason": "START"
+    },
+    {
+      "time": 57.299999999736,
+      "text": " ",
+      "command_index": 5,
+      "reason": "pagination"
+    },
+    {
+      "time": 69.799999999679,
+      "text": " ",
+      "command_index": 5,
+      "reason": "pagination"
+    },
+    {
+      "time": 72.899999999664,
+      "text": " ",
+      "command_index": 5,
+      "reason": "pagination"
+    },
+    {
+      "time": 75.99999999965,
+      "text": "LOOK\r",
+      "command_index": 5,
+      "reason": "LOOK"
+    },
+    {
+      "time": 79.099999999636,
+      "text": "INVENTORY\r",
+      "command_index": 6,
+      "reason": "INVENTORY"
+    },
+    {
+      "time": 82.999999999618,
+      "text": " ",
+      "command_index": 7,
+      "reason": "pagination"
+    }
+  ],
+  "checkpoints": [
+    {
+      "name": "001-waiting-01",
+      "time": 29.799999999863,
+      "registers": {
+        "X": 0,
+        "Y": 0,
+        "GENPC": 64684,
+        "CURPC": 64682,
+        "SP": 504,
+        "P": 181,
+        "A": 172,
+        "PC": 64682,
+        "IR": 233,
+        "CURFLAGS": 181
+      },
+      "lines": [
+        "Your search for the Mask of the Sun has",
+        "brought you to Mexico, the home of the",
+        "Aztec culture.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "002-waiting-01",
+      "time": 32.899999999849,
+      "registers": {
+        "X": 0,
+        "Y": 0,
+        "GENPC": 64684,
+        "CURPC": 64682,
+        "SP": 504,
+        "P": 53,
+        "A": 85,
+        "PC": 64682,
+        "IR": 233,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "The plane you chartered in Mexico City",
+        "has landed at a small airfield near",
+        "the ruins spoken of by Prof. de Perez.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "003-prompt-01",
+      "time": 35.999999999834,
+      "registers": {
+        "X": 0,
+        "Y": 3,
+        "GENPC": 3260,
+        "CURPC": 3260,
+        "SP": 503,
+        "P": 55,
+        "A": 0,
+        "PC": 3260,
+        "IR": 44,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "004-prompt-02",
+      "time": 39.09999999982,
+      "registers": {
+        "X": 0,
+        "Y": 3,
+        "GENPC": 3260,
+        "CURPC": 3260,
+        "SP": 503,
+        "P": 55,
+        "A": 0,
+        "PC": 3260,
+        "IR": 44,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "005-prompt-03",
+      "time": 49.099999999774,
+      "registers": {
+        "X": 0,
+        "Y": 3,
+        "GENPC": 3260,
+        "CURPC": 3260,
+        "SP": 503,
+        "P": 55,
+        "A": 0,
+        "PC": 3260,
+        "IR": 44,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "You may RESTORE GAME at this point.",
+        "Or to start a new game, enter START.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "006-prompt-04",
+      "time": 54.19999999975,
+      "registers": {
+        "X": 0,
+        "Y": 3,
+        "GENPC": 3260,
+        "CURPC": 3260,
+        "SP": 503,
+        "P": 55,
+        "A": 0,
+        "PC": 3260,
+        "IR": 44,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "You may RESTORE GAME at this point.",
+        "Or to start a new game, enter START.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "007-waiting-05",
+      "time": 57.299999999736,
+      "registers": {
+        "X": 0,
+        "Y": 0,
+        "GENPC": 64684,
+        "CURPC": 64684,
+        "SP": 502,
+        "P": 53,
+        "A": 19,
+        "PC": 64684,
+        "IR": 208,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "Place THE MASK OF THE SUN disk, side A",
+        "into Drive #1 and press RETURN.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "008-waiting-05",
+      "time": 69.799999999679,
+      "registers": {
+        "X": 0,
+        "Y": 0,
+        "GENPC": 64682,
+        "CURPC": 64682,
+        "SP": 504,
+        "P": 53,
+        "A": 115,
+        "PC": 64682,
+        "IR": 233,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "Your search for the Mask of the Sun has",
+        "brought you to Mexico, the home of the",
+        "Aztec culture.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "009-waiting-05",
+      "time": 72.899999999664,
+      "registers": {
+        "X": 0,
+        "Y": 0,
+        "GENPC": 64682,
+        "CURPC": 64682,
+        "SP": 504,
+        "P": 53,
+        "A": 29,
+        "PC": 64682,
+        "IR": 233,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "The plane you chartered in Mexico City",
+        "has landed at a small airfield near",
+        "the ruins spoken of by Prof. de Perez.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "010-prompt-05",
+      "time": 75.99999999965,
+      "registers": {
+        "X": 0,
+        "Y": 3,
+        "GENPC": 3260,
+        "CURPC": 3260,
+        "SP": 503,
+        "P": 55,
+        "A": 0,
+        "PC": 3260,
+        "IR": 44,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "011-prompt-06",
+      "time": 79.099999999636,
+      "registers": {
+        "X": 0,
+        "Y": 3,
+        "GENPC": 3263,
+        "CURPC": 3263,
+        "SP": 503,
+        "P": 55,
+        "A": 0,
+        "PC": 3263,
+        "IR": 16,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "012-waiting-07",
+      "time": 82.999999999618,
+      "registers": {
+        "X": 0,
+        "Y": 0,
+        "GENPC": 64682,
+        "CURPC": 64684,
+        "SP": 500,
+        "P": 53,
+        "A": 44,
+        "PC": 64684,
+        "IR": 208,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "You have:",
+        "a box of matches",
+        "a knife",
+        "a bottle of pills",
+        "an ancient amulet",
+        "a loaded revolver",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "013-prompt-07",
+      "time": 86.099999999604,
+      "registers": {
+        "X": 0,
+        "Y": 3,
+        "GENPC": 3260,
+        "CURPC": 3263,
+        "SP": 503,
+        "P": 55,
+        "A": 0,
+        "PC": 3263,
+        "IR": 16,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "OK>^"
+      ]
+    }
+  ],
+  "output_character_count": 2377,
+  "output_text": "     BR0DERBUND SOFTWARE presents:\r                  By\r               ULTRASOFT\r   copyright (c) 1982   Release 2.1\rYour search for the Mask of the Sun has\rbrought you to Mexico, the home of the\rAztec culture.\r[ waiting ]\rThe plane you chartered in Mexico City\rhas landed at a small airfield near\rthe ruins spoken of by Prof. de Perez.\r[ waiting ]\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    LOOK\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    TAKE ALL PILLS\r                                       \r                                       \r                                       \r                                       \r                                       \r                                       \r                                       \r                                       \r                                       \r                                       \r                                       \r                                       \rYou feel life draining away, blackness\rclosing in on you...\rYou are dead.\rYou may RESTORE GAME at this point.\rOr to start a new game, enter START.\rOK>                                    FERNAP\rINVALID COMMAND.\rYou may RESTORE GAME at this point.\rOr to start a new game, enter START.\rOK>                                    START\rPlace THE MASK OF THE SUN disk, side A\rinto Drive #1 and press RETURN.\r[ waiting ]\r     BR0DERBUND SOFTWARE presents:\r                  By\r               ULTRASOFT\r   copyright (c) 1982   Release 2.1\rYour search for the Mask of the Sun has\rbrought you to Mexico, the home of the\rAztec culture.\r[ waiting ]\rThe plane you chartered in Mexico City\rhas landed at a small airfield near\rthe ruins spoken of by Prof. de Perez.\r[ waiting ]\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    LOOK\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    INVENTORY\rYou have:\r\ra box of matches\ra knife\ra bottle of pills\ran ancient amulet\ra loaded revolver\r[ waiting ]\rOK>                                    "
+}

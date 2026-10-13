@@ -110,6 +110,15 @@ errors, unterminated input and stack overflow. Original I/O is retained.
 Boot-time relocation and the full DOS/RWTS source still require tracing and
 reconstruction; the high entry address alone does not prove every memory owner.
 
+Static intrinsic code at $122C/$129D implements save/restore with RWTS commands
+2/1. Its shared transfer at $123B starts at track31/sector15 and buffer $AF00,
+then reads/writes $90 pages in descending sector and memory order, ending with
+track23/sector0 and $2000. It preserves DOS I/O through $BA72/$BA69. This is a
+raw RAM snapshot of $2000–$AFFF, not a DOS catalog file. Runtime isolated-media
+comparisons observe exactly those 144 changed sectors, and restored object/room
+state passes both same-session and fresh-boot checks. The complete intrinsic
+source and its DOS workspace preservation still need reconstruction.
+
 The early build now assembles interpreter and renderer. Their original encodings
 match as a diagnostic. It still needs intrinsics, boot/DOS, the remaining CHAR
 GEN content and decoded editable graphics before satisfying PLAN.md.

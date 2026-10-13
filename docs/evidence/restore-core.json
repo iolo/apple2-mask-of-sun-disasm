@@ -1,0 +1,436 @@
+{
+  "scope": "Restore an existing save after a fresh original boot",
+  "session": {
+    "command": [
+      "/usr/games/mame",
+      "apple2p",
+      "-noreadconfig",
+      "-rompath",
+      "/home/iolo/workspace/retro/a2x/mame/roms",
+      "-ramsize",
+      "48K",
+      "-sl0",
+      "",
+      "-sl4",
+      "",
+      "-sl6",
+      "diskiing",
+      "-flop1",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restore-core-01/side-a.dsk",
+      "-console",
+      "-pluginspath",
+      "/usr/share/games/mame/plugins",
+      "-skip_gameinfo",
+      "-natural",
+      "-window",
+      "-nomouse",
+      "-homepath",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restore-core-01",
+      "-cfg_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restore-core-01/cfg_directory",
+      "-nvram_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restore-core-01/nvram_directory",
+      "-snapshot_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restore-core-01/snapshot_directory",
+      "-state_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restore-core-01/state_directory",
+      "-diff_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restore-core-01/diff_directory",
+      "-video",
+      "none",
+      "-sound",
+      "none",
+      "-autoboot_script",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/opening_replay.lua",
+      "-autoboot_delay",
+      "0",
+      "-nothrottle"
+    ],
+    "media": {
+      "a": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/core-check-02/mask-of-sun-a.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restore-core-01/side-a.dsk",
+        "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+      },
+      "b": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/core-check-02/mask-of-sun-b.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restore-core-01/side-b.dsk",
+        "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+      },
+      "save": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/save-core-rebuilt-01/save.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/restore-core-01/save.dsk",
+        "sha256": "f165392867c7a6a36d6d2e7716d411c636a8d22d8c3d9bda0108c286d722bd9f"
+      }
+    },
+    "headless": true,
+    "debug": false
+  },
+  "checks": [
+    {
+      "id": "ordered-command-sequence",
+      "pass": true
+    },
+    {
+      "id": "final-prompt",
+      "pass": true
+    },
+    {
+      "id": "no-death",
+      "pass": true
+    },
+    {
+      "id": "ordered-media-events",
+      "pass": true,
+      "observed": [
+        "save",
+        "a"
+      ]
+    },
+    {
+      "id": "restored-room",
+      "pass": true,
+      "address": 24589,
+      "observed": 3,
+      "expected": 3
+    },
+    {
+      "id": "restored-jeep",
+      "pass": true,
+      "address": 25114,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "id": "restored-map",
+      "pass": true,
+      "address": 25124,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "id": "restoring",
+      "pass": true,
+      "expected": "Restoring, please wait.",
+      "checkpoints": [],
+      "output_stream": true
+    }
+  ],
+  "pass": true,
+  "inputs": [
+    {
+      "text": " ",
+      "command_index": 1,
+      "time": 29.799999999863,
+      "reason": "pagination"
+    },
+    {
+      "text": " ",
+      "command_index": 1,
+      "time": 32.899999999849,
+      "reason": "pagination"
+    },
+    {
+      "text": "LOOK\r",
+      "command_index": 1,
+      "time": 35.999999999834,
+      "reason": "LOOK"
+    },
+    {
+      "text": "RESTORE GAME\r",
+      "command_index": 2,
+      "time": 39.09999999982,
+      "reason": "RESTORE GAME"
+    },
+    {
+      "text": "Y\r",
+      "command_index": 3,
+      "time": 42.199999999806,
+      "reason": "Y"
+    },
+    {
+      "side": "save",
+      "kind": "mount",
+      "time": 42.699999999803
+    },
+    {
+      "text": " ",
+      "command_index": 4,
+      "time": 45.299999999791,
+      "reason": "pagination"
+    },
+    {
+      "side": "a",
+      "kind": "mount",
+      "time": 52.399999999759
+    },
+    {
+      "text": " ",
+      "command_index": 4,
+      "time": 53.099999999756,
+      "reason": "pagination"
+    },
+    {
+      "text": "LOOK\r",
+      "command_index": 4,
+      "time": 56.199999999741,
+      "reason": "LOOK"
+    },
+    {
+      "text": "INVENTORY\r",
+      "command_index": 5,
+      "time": 59.299999999727,
+      "reason": "INVENTORY"
+    },
+    {
+      "text": " ",
+      "command_index": 6,
+      "time": 63.09999999971,
+      "reason": "pagination"
+    }
+  ],
+  "checkpoints": [
+    {
+      "name": "001-waiting-01",
+      "time": 29.799999999863,
+      "registers": {
+        "GENPC": 64684,
+        "X": 0,
+        "Y": 0,
+        "CURFLAGS": 181,
+        "CURPC": 64682,
+        "PC": 64682,
+        "P": 181,
+        "A": 172,
+        "IR": 233,
+        "SP": 504
+      },
+      "lines": [
+        "Your search for the Mask of the Sun has",
+        "brought you to Mexico, the home of the",
+        "Aztec culture.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "002-waiting-01",
+      "time": 32.899999999849,
+      "registers": {
+        "GENPC": 64684,
+        "X": 0,
+        "Y": 0,
+        "CURFLAGS": 53,
+        "CURPC": 64682,
+        "PC": 64682,
+        "P": 53,
+        "A": 85,
+        "IR": 233,
+        "SP": 504
+      },
+      "lines": [
+        "The plane you chartered in Mexico City",
+        "has landed at a small airfield near",
+        "the ruins spoken of by Prof. de Perez.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "003-prompt-01",
+      "time": 35.999999999834,
+      "registers": {
+        "GENPC": 3260,
+        "X": 0,
+        "Y": 3,
+        "CURFLAGS": 55,
+        "CURPC": 3260,
+        "PC": 3260,
+        "P": 55,
+        "A": 0,
+        "IR": 44,
+        "SP": 503
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "004-prompt-02",
+      "time": 39.09999999982,
+      "registers": {
+        "GENPC": 3260,
+        "X": 0,
+        "Y": 3,
+        "CURFLAGS": 55,
+        "CURPC": 3260,
+        "PC": 3260,
+        "P": 55,
+        "A": 0,
+        "IR": 44,
+        "SP": 503
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "005-prompt-03",
+      "time": 42.199999999806,
+      "registers": {
+        "GENPC": 3263,
+        "X": 0,
+        "Y": 3,
+        "CURFLAGS": 55,
+        "CURPC": 3263,
+        "PC": 3263,
+        "P": 55,
+        "A": 0,
+        "IR": 16,
+        "SP": 505
+      },
+      "lines": [
+        "Restore a saved game.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "006-waiting-04",
+      "time": 45.299999999791,
+      "registers": {
+        "GENPC": 64684,
+        "X": 0,
+        "Y": 0,
+        "CURFLAGS": 53,
+        "CURPC": 64684,
+        "PC": 64684,
+        "P": 53,
+        "A": 39,
+        "IR": 208,
+        "SP": 504
+      },
+      "lines": [
+        "Place SAVE GAME disk into Drive #1 and",
+        "press RETURN.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "007-waiting-04",
+      "time": 53.099999999756,
+      "registers": {
+        "GENPC": 64682,
+        "X": 0,
+        "Y": 0,
+        "CURFLAGS": 53,
+        "CURPC": 64684,
+        "PC": 64684,
+        "P": 53,
+        "A": 69,
+        "IR": 208,
+        "SP": 502
+      },
+      "lines": [
+        "Place THE MASK OF THE SUN disk, side A",
+        "into Drive #1 and press RETURN.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "008-prompt-04",
+      "time": 56.199999999741,
+      "registers": {
+        "GENPC": 3263,
+        "X": 0,
+        "Y": 3,
+        "CURFLAGS": 55,
+        "CURPC": 3260,
+        "PC": 3260,
+        "P": 55,
+        "A": 0,
+        "IR": 44,
+        "SP": 503
+      },
+      "lines": [
+        "You are at a branch, the road continues",
+        "to the west, northwest, and southeast.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "009-prompt-05",
+      "time": 59.299999999727,
+      "registers": {
+        "GENPC": 3263,
+        "X": 0,
+        "Y": 3,
+        "CURFLAGS": 55,
+        "CURPC": 3260,
+        "PC": 3260,
+        "P": 55,
+        "A": 0,
+        "IR": 44,
+        "SP": 503
+      },
+      "lines": [
+        "You are in an old jeep.",
+        "You are at a branch, the road continues",
+        "to the west, northwest, and southeast.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "010-waiting-06",
+      "time": 63.09999999971,
+      "registers": {
+        "GENPC": 64682,
+        "X": 0,
+        "Y": 0,
+        "CURFLAGS": 53,
+        "CURPC": 64684,
+        "PC": 64684,
+        "P": 53,
+        "A": 32,
+        "IR": 208,
+        "SP": 500
+      },
+      "lines": [
+        "You have:",
+        "Raoul",
+        "the jeep",
+        "a box of matches",
+        "a knife",
+        "a bottle of pills",
+        "a cryptic map",
+        "an ancient amulet",
+        "a loaded revolver",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "011-prompt-06",
+      "time": 66.199999999695,
+      "registers": {
+        "GENPC": 3263,
+        "X": 0,
+        "Y": 3,
+        "CURFLAGS": 55,
+        "CURPC": 3260,
+        "PC": 3260,
+        "P": 55,
+        "A": 0,
+        "IR": 44,
+        "SP": 503
+      },
+      "lines": [
+        "OK>^"
+      ]
+    }
+  ],
+  "output_character_count": 1374,
+  "output_text": "     BR0DERBUND SOFTWARE presents:\r                  By\r               ULTRASOFT\r   copyright (c) 1982   Release 2.1\rYour search for the Mask of the Sun has\rbrought you to Mexico, the home of the\rAztec culture.\r[ waiting ]\rThe plane you chartered in Mexico City\rhas landed at a small airfield near\rthe ruins spoken of by Prof. de Perez.\r[ waiting ]\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    LOOK\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    RESTORE GAME\rRestore a saved game.\rAre you sure (Y/N)?\rOK>                                    Y\rPlace SAVE GAME disk into Drive #1 and  press RETURN.\r[ waiting ]\rRestoring, please wait.\rPlace THE MASK OF THE SUN disk, side A\rinto Drive #1 and press RETURN.\r[ waiting ]\rYou are at a branch, the road continues to the west, northwest, and southeast.\rOK>                                    LOOK\rYou are in an old jeep.\rYou are at a branch, the road continues to the west, northwest, and southeast.\rOK>                                    INVENTORY\rYou have:\r\rRaoul\rthe jeep\ra box of matches\ra knife\ra bottle of pills\ra cryptic map\ran ancient amulet\ra loaded revolver\r[ waiting ]\rOK>                                    "
+}

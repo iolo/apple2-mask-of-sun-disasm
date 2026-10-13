@@ -1,0 +1,47 @@
+{
+  "scope": "Restore an existing save after a fresh original boot",
+  "timeout": 400,
+  "commands": [
+    "LOOK",
+    "RESTORE GAME",
+    "Y",
+    "LOOK",
+    "INVENTORY"
+  ],
+  "media_events": [
+    {
+      "when": "Place SAVE GAME disk into Drive #1",
+      "side": "save"
+    },
+    {
+      "when": "Place THE MASK OF THE SUN disk, side",
+      "side": "a"
+    }
+  ],
+  "ram_checks": [
+    {
+      "id": "restored-room",
+      "before_command": 4,
+      "address": 24589,
+      "equals": 3
+    },
+    {
+      "id": "restored-jeep",
+      "before_command": 4,
+      "address": 25114,
+      "equals": 0
+    },
+    {
+      "id": "restored-map",
+      "before_command": 4,
+      "address": 25124,
+      "equals": 0
+    }
+  ],
+  "requirements": [
+    {
+      "id": "restoring",
+      "text": "Restoring, please wait."
+    }
+  ]
+}

@@ -131,8 +131,57 @@ python3 tools/mame_session.py --rompath /path/to/roms --output build/full-rebuil
 python3 tools/verify_route.py build/full-rebuilt docs/full-route.json
 ```
 
-Step 2 remains open for sound equivalence, save/restore, inventory limits,
-boundary/restart checks and a behavior matrix. Step 3's boot-to-game loading
+## Sound and baseline controls
+
+[audio-full.json](evidence/audio-full.json) compares two fresh complete route
+recordings, original and rebuilt, at 22050 Hz, 16-bit PCM. Both have 42,101,830
+frames; channel0 has nonzero output and the two additional recorded channels
+are silent. Complete PCM hashes agree. Opening recordings also agree in
+[audio-opening.json](evidence/audio-opening.json). Extracted mono examples of
+the hut, statue, final flute and jaguar are under [audio](evidence/audio/).
+These recordings are verification artifacts, not native game sound assets.
+Exact PCM is useful evidence for this deterministic early build; future
+intentional timing changes require assessing audible behavior rather than
+assuming different samples mean different gameplay.
+
+[control-route.json](control-route.json) tests sound toggles, pill effects,
+command chaining, input overflow, empty GET ALL and rejected movement. Both
+versions pass twelve route/state checks. [audio-controls.json](evidence/audio-controls.json)
+also verifies zero mixer samples during a pill command with SOUND OFF and
+nonzero output for the corresponding SOUND ON command. The input editor retains
+thirty-six A characters from a forty-five-key overflow probe; the reference's
+claimed thirty-seven-character window is not assumed to be the observed limit.
+
+[save-route.json](save-route.json) saves in room3 inside the jeep, moves west
+to room18, and restores room3 with all five object arrays equal to their earlier
+values. Both versions pass eighteen checks. [restore-route.json](restore-route.json)
+then restores that existing disk after another fresh boot, passing eight checks
+for each version. Save changes exactly the 144 sectors in tracks23–31, leaving
+other sectors and the catalog intact; original and rebuilt save disks agree.
+The native transfer snapshots RAM $2000–$AFFF directly, despite requiring an
+initialized scratch disk in the instructions. It does not create a catalog file.
+
+```sh
+a2kit mkdsk --os dos33 --type do --volume 254 --dimg build/save-blank.dsk
+python3 tools/mame_session.py --rompath /path/to/roms --output build/save-test \
+  --save-disk build/save-blank.dsk --headless --fast \
+  --script tools/opening_replay.lua --route docs/save-route.json
+python3 tools/verify_route.py build/save-test docs/save-route.json
+```
+
+The launcher copies the scratch disk; all explicit mount events follow observed
+game instructions. An investigated mount-result assertion was incorrect because
+MAME load returns nil on success; the fixed helper checks the mounted filename.
+The failed run is excluded. [restart-route.json](restart-route.json) deliberately
+kills the player with TAKE ALL PILLS, checks an invalid death-screen command,
+then START. Both versions pass nine checks and return to room1 and initial
+inventory. These deliberate-death tests explicitly expect death; successful
+full-route checks still reject it.
+
+[behavior-matrix.md](behavior-matrix.md) collects the accepted evidence and
+remaining coverage limits. Step 2's separate all-manual full-route requirement
+remains open; the accepted route was guided and automated incrementally.
+Step 3's boot-to-game loading
 and memory ownership still need full explanation. The current rebuilt full
 route establishes only the early partial source build's behavior; it does not
 make remaining opaque executable regions complete.

@@ -192,3 +192,46 @@ boot/DOS mapping/source, intrinsic and vector-graphics analysis, editable graphi
 world documentation and final clean reproducibility. The original full ending is
 now established but does not close all Step 2 checks. Next: finish the remaining
 baseline controls while reconstructing the intrinsic dispatch and graphics formats.
+
+## Step 2d — Sound, save/restore, controls and restart evidence
+
+Completed substep on 2026-10-13; the separate all-manual full-route criterion
+and full Steps 3–10 remain open.
+
+- Recorded original and rebuilt opening and full routes with the emulated mixer
+  enabled. Full recordings have 42,101,830 frames at 22050Hz, nonzero channel0
+  and two silent extra channels. PCM agrees throughout the ending; four compact
+  mono examples and reproducible streaming verification are archived.
+- Tested SOUND OFF/ON, chained LOOK/INVENTORY, a rejected unknown-word chain,
+  forty-five-key input overflow, empty GET ALL and invalid plane movement. Both
+  versions pass twelve route/state gates; dedicated PCM windows confirm silent
+  pill effects with OFF and audible effects with ON. Actual retained input is
+  thirty-six characters, rather than assuming the booklet's stated window size.
+- Tested SAVE GAME in the jeep at room3, westward movement to room18, RESTORE
+  GAME, cancellation and sound flags. Both versions pass eighteen checks and
+  restore five $FC-byte object arrays exactly. Separate fresh boots restore
+  existing saved media and pass eight checks each.
+- Identified the native $90-page raw save transfer: RAM $AF00 downward to $2000
+  maps track31/sector15 downward to track23/sector0. Isolated save images have
+  exactly those 144 changed sectors, unchanged surrounding/catalog sectors,
+  and original/rebuilt agreement. Native save is not a catalog file.
+- Tested deliberate pill-overdose death, invalid death-screen input, and START
+  restart. Both versions pass nine gates and recover room1/initial inventory.
+  Added explicit expected-death mode without weakening successful-route checks.
+- Created `docs/behavior-matrix.md` and documented commands, scope, media
+  operations and uncertainty limits. Scratch media are copied before writes.
+
+Validation: all four original/rebuilt control/save/restore/restart route pairs
+pass. Audio-enabled full-route pairs still pass seventeen gameplay checks each;
+`tools/verify_audio.py` passes opening, full and toggle comparisons, and
+`tools/verify_save_disk.py` passes both save footprints. Owned MAME processes
+exit normally. Python compilation, supplied-input hashes and diff whitespace
+checks pass. A failed investigation treated MAME's nil load-success result as
+an error; the corrected mount helper verifies its resulting filename instead.
+
+Limits: the full route was guided and automated incrementally; no separate
+all-manual full-route recording is claimed. Maximum inventory, side-B save and
+all error paths remain untested, as stated in the behavior matrix. Byte equality
+of recordings/save files is diagnostic evidence for the current implementation,
+not a universal future equivalence requirement. Next: trace the bootstrap and
+reconstruct the intrinsic dispatch/vector renderer and editable graphics.

@@ -1,0 +1,128 @@
+{
+  "scope": "Save/restore and sound-control baseline at the airstrip",
+  "timeout": 600,
+  "commands": [
+    "LOOK",
+    "INVENTORY",
+    "EXIT PLANE",
+    "GET MAP",
+    "ENTER JEEP",
+    "SAVE GAME",
+    "Y",
+    "W",
+    "RESTORE GAME",
+    "Y",
+    "LOOK",
+    "INVENTORY",
+    "SOUND OFF",
+    "SOUND ON",
+    "SAVE GAME",
+    "N",
+    "LOOK"
+  ],
+  "media_events": [
+    {
+      "when": "Place an initialized disk into Drive #1",
+      "side": "save"
+    },
+    {
+      "when": "Place THE MASK OF THE SUN disk, side",
+      "side": "a"
+    },
+    {
+      "when": "Place SAVE GAME disk into Drive #1",
+      "side": "save"
+    },
+    {
+      "when": "Place THE MASK OF THE SUN disk, side",
+      "side": "a"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "saving",
+      "text": "Saving, please wait."
+    },
+    {
+      "id": "restoring",
+      "text": "Restoring, please wait."
+    },
+    {
+      "id": "sound-off",
+      "text": "Sound turned off."
+    },
+    {
+      "id": "sound-on",
+      "text": "Sound turned on."
+    }
+  ],
+  "ram_checks": [
+    {
+      "id": "saved-room",
+      "before_command": 6,
+      "address": 24589,
+      "equals": 3
+    },
+    {
+      "id": "moved-room",
+      "before_command": 9,
+      "address": 24589,
+      "equals": 18
+    },
+    {
+      "id": "restored-room",
+      "before_command": 11,
+      "address": 24589,
+      "equals": 3
+    },
+    {
+      "id": "sound-off-flag",
+      "before_command": 14,
+      "address": 24580,
+      "equals": 1
+    },
+    {
+      "id": "sound-on-flag",
+      "before_command": 15,
+      "address": 24580,
+      "equals": 0
+    }
+  ],
+  "ram_ranges_equal": [
+    {
+      "id": "restore-object-state",
+      "before_command": 6,
+      "after_command": 11,
+      "address": 24608,
+      "length": 252
+    },
+    {
+      "id": "restore-object-aux",
+      "before_command": 6,
+      "after_command": 11,
+      "address": 24860,
+      "length": 252
+    },
+    {
+      "id": "restore-inventory",
+      "before_command": 6,
+      "after_command": 11,
+      "address": 25112,
+      "length": 252
+    },
+    {
+      "id": "restore-locations",
+      "before_command": 6,
+      "after_command": 11,
+      "address": 25364,
+      "length": 252
+    },
+    {
+      "id": "restore-quantities",
+      "before_command": 6,
+      "after_command": 11,
+      "address": 25616,
+      "length": 252
+    }
+  ]
+}

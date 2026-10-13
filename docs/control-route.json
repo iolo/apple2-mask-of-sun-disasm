@@ -1,0 +1,77 @@
+{
+  "scope": "Original sound toggles, chained commands and input boundaries",
+  "timeout": 500,
+  "commands": [
+    "LOOK",
+    "INVENTORY",
+    "SOUND OFF",
+    "TAKE PILL",
+    "SOUND ON",
+    "TAKE PILL",
+    "LOOK, INVENTORY",
+    "FERNAP, LOOK",
+    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "LOOK",
+    "GET ALL",
+    "N",
+    "LOOK"
+  ],
+  "requirements": [
+    {
+      "id": "sound-off",
+      "text": "Sound turned off."
+    },
+    {
+      "id": "sound-on",
+      "text": "Sound turned on."
+    },
+    {
+      "id": "pill-used",
+      "text": "Your pill supply slowly dwindles."
+    },
+    {
+      "id": "unknown-chain",
+      "text": "I don't understand \"FERNAP\"."
+    },
+    {
+      "id": "input-overflow",
+      "text": "I don't understand \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"."
+    },
+    {
+      "id": "empty-take-all",
+      "text": "There is nothing to get."
+    },
+    {
+      "id": "blocked-movement",
+      "text": "You can't go that direction."
+    }
+  ],
+  "ram_checks": [
+    {
+      "id": "sound-disabled",
+      "before_command": 4,
+      "address": 24580,
+      "equals": 1
+    },
+    {
+      "id": "sound-enabled",
+      "before_command": 6,
+      "address": 24580,
+      "equals": 0
+    }
+  ],
+  "audio_checks": [
+    {
+      "id": "disabled-pill-silent",
+      "command": 4,
+      "until_command": 5,
+      "audible": false
+    },
+    {
+      "id": "enabled-pill-audible",
+      "command": 6,
+      "until_command": 7,
+      "audible": true
+    }
+  ]
+}

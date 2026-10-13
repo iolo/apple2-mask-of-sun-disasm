@@ -1,0 +1,48 @@
+{
+  "scope": "Original deliberate pill overdose, invalid death command, and restart",
+  "timeout": 500,
+  "expect_death": true,
+  "commands": [
+    "LOOK",
+    "TAKE ALL PILLS",
+    "FERNAP",
+    "START",
+    "LOOK",
+    "INVENTORY"
+  ],
+  "requirements": [
+    {
+      "id": "death",
+      "text": "You are dead."
+    },
+    {
+      "id": "restart-offered",
+      "text": "Or to start a new game, enter START."
+    },
+    {
+      "id": "death-rejection",
+      "text": "INVALID COMMAND."
+    },
+    {
+      "id": "restart-plane",
+      "text": "The ride was bumpy, but you made it."
+    }
+  ],
+  "ram_checks": [
+    {
+      "id": "restart-room",
+      "before_command": 5,
+      "address": 24589,
+      "equals": 1
+    }
+  ],
+  "ram_ranges_equal": [
+    {
+      "id": "restart-inventory",
+      "before_command": 2,
+      "after_command": 5,
+      "address": 25112,
+      "length": 252
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Verify ordered replay inputs, ending prompt and semantic route requirements."""
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import sys
@@ -29,15 +30,36 @@ def main():
     final_ready = bool(checkpoints) and checkpoints[-1]['name'].endswith(f'prompt-{len(expected)+1:02d}')
     if route.get('ending_text'):
         final_ready = any(route['ending_text'] in line for checkpoint in checkpoints for line in checkpoint['lines'])
+    death = any('RESTORE GAME at this point' in line or 'You are dead.' in line
+                for entry in checkpoints for line in entry['lines']) or 'You are dead.' in output_text
     checks = [{'id': 'ordered-command-sequence', 'pass': actual == expected},
               {'id': 'ending-observed' if route.get('ending_text') else 'final-prompt', 'pass': final_ready},
-              {'id': 'no-death', 'pass': not any('RESTORE GAME at this point' in line or 'You are dead.' in line
-                                               for entry in checkpoints for line in entry['lines'])
-                and 'You are dead.' not in output_text}]
+              {'id': 'expected-death' if route.get('expect_death') else 'no-death',
+               'pass': death == bool(route.get('expect_death'))}]
     if route.get('required_sides'):
         sides = {'a'} | {entry['side'] for entry in inputs if entry.get('kind') == 'mount'}
         checks.append({'id': 'required-disk-sides', 'pass': set(route['required_sides']) <= sides,
                        'observed': sorted(sides)})
+    if route.get('media_events'):
+        observed = [entry['side'] for entry in inputs if entry.get('kind') == 'mount']
+        checks.append({'id': 'ordered-media-events', 'pass': observed == [event['side'] for event in route['media_events']],
+                       'observed': observed})
+    def prompt_ram(command):
+        paths = list(args.session.glob(f'*-prompt-{command:02d}-ram.bin'))
+        if len(paths) != 1:
+            raise ValueError(f'expected one RAM capture before command {command}, found {len(paths)}')
+        return paths[0].read_bytes()
+    for rule in route.get('ram_checks', []):
+        value = prompt_ram(rule['before_command'])[rule['address']]
+        checks.append({'id': rule['id'], 'pass': value == rule['equals'],
+                       'address': rule['address'], 'observed': value, 'expected': rule['equals']})
+    for rule in route.get('ram_ranges_equal', []):
+        start, end = rule['address'], rule['address']+rule['length']
+        before = prompt_ram(rule['before_command'])[start:end]
+        after = prompt_ram(rule['after_command'])[start:end]
+        checks.append({'id': rule['id'], 'pass': before == after and len(before) == rule['length'],
+                       'address': start, 'length': rule['length'],
+                       'hashes': [hashlib.sha256(data).hexdigest() for data in (before, after)]})
     for requirement in route.get('requirements', []):
         matching = [entry['name'] for entry in checkpoints if any(requirement['text'] in line for line in entry['lines'])]
         streamed = requirement['text'] in output_text

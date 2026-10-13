@@ -25,6 +25,7 @@ def main():
     p.add_argument('--route', type=Path, help='JSON exploration route for opening_replay.lua')
     p.add_argument('--record-audio', action='store_true', help='record emulated mixer output to session audio.wav')
     p.add_argument('--trace-keyboard', action='store_true', help='observe late-game keyboard bus reads without additional I/O reads')
+    p.add_argument('--save-disk', type=Path, help='copy an initialized scratch disk for save/restore tests')
     args = p.parse_args()
     if not args.rompath or not args.rompath.is_dir():
         p.error('supply --rompath or MAME_ROMPATH with locally supplied ROMs')
@@ -44,6 +45,11 @@ def main():
         shutil.copyfile(source, destination)
         media[side] = {'source': str(source.resolve()), 'copy': str(destination),
                        'sha256': hashlib.sha256(destination.read_bytes()).hexdigest()}
+    if args.save_disk:
+        destination = out / 'save.dsk'
+        shutil.copyfile(args.save_disk, destination)
+        media['save'] = {'source': str(args.save_disk.resolve()), 'copy': str(destination),
+                         'sha256': hashlib.sha256(destination.read_bytes()).hexdigest()}
     cmd = [mame, 'apple2p', '-noreadconfig', '-rompath', str(args.rompath.resolve()),
            '-ramsize', '48K', '-sl0', '', '-sl4', '', '-sl6', 'diskiing',
            '-flop1', media['a']['copy'], '-console', '-pluginspath', str(plugins),

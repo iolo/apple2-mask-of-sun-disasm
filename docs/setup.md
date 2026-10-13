@@ -36,8 +36,10 @@ python3 tools/mame_session.py --rompath /path/to/roms \
   --output build/session-01 --debug --headless
 ```
 
-Omit `--headless` for a visible window and audible sound. Headless sessions have
-no audio output and cannot establish sound equivalence. The launcher disables
+Omit `--headless` for a visible window and audible sound. Ordinary headless runs
+disable sound. Add `--record-audio` to enable the emulated mixer and write a WAV
+even with headless dummy host audio; compare that recording for sound evidence.
+The launcher disables
 configuration reads and isolates configuration, NVRAM, snapshots, states, and
 disk copies inside the session directory. `session.json` records the exact
 command and hashes of the media copies. Original disks are never mounted writable.

@@ -115,9 +115,9 @@ and another contributor can reproduce the chosen emulator setup.
 
 - [x] Boot the original disks and record startup, controls, initial scene, and
   disk insertion/swap behavior in a reproducible emulator session.
-- [ ] Capture representative screenshots, text, sound where present, disk activity,
+- [x] Capture representative screenshots, text, sound where present, disk activity,
   and CPU/memory observations with the emulator configuration and input sequence.
-- [ ] Exercise movement, descriptions, inventory, successful and rejected
+- [x] Exercise movement, descriptions, inventory, successful and rejected
   commands, and an early puzzle. Discover save/load or restart behavior from the
   actual game rather than assuming those features exist.
 - [x] Establish how timed events and player input interact. Record explicit
@@ -127,7 +127,7 @@ and another contributor can reproduce the chosen emulator setup.
   observable wait conditions, and checkpoints; automate the route incrementally.
   If blocked, use targeted loader or logic investigation from later steps to
   resolve the obstacle before marking this baseline complete.
-- [ ] Begin a behavior matrix from that route and the command checks; expand it
+- [x] Begin a behavior matrix from that route and the command checks; expand it
   as later disk regions and game states become understood.
 
 **Acceptance:** The unmodified game boots reliably, baseline artifacts exist,

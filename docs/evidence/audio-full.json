@@ -1,0 +1,209 @@
+{
+  "scope": "mixer output for the recorded replay only",
+  "pass": true,
+  "checks": {
+    "matching_format": true,
+    "nonzero_output": true,
+    "matching_pcm": true
+  },
+  "original": {
+    "sha256": "5924a5cde93c67d33c399596cbfb9c57998fd53423ad60b38503bd2023e9a168",
+    "pcm_sha256": "413ffa13144a6d07bd1345b81108729b360b3ea9380dff057c93b6126bcd5625",
+    "frames": 42101830,
+    "rate": 22050,
+    "channels": 3,
+    "sample_width": 2,
+    "statistics": [
+      {
+        "channel": 0,
+        "minimum": -9089,
+        "maximum": 8672,
+        "mean_square": 131070.8597878287
+      },
+      {
+        "channel": 1,
+        "minimum": 0,
+        "maximum": 0,
+        "mean_square": 0.0
+      },
+      {
+        "channel": 2,
+        "minimum": 0,
+        "maximum": 0,
+        "mean_square": 0.0
+      }
+    ]
+  },
+  "rebuilt": {
+    "sha256": "5924a5cde93c67d33c399596cbfb9c57998fd53423ad60b38503bd2023e9a168",
+    "pcm_sha256": "413ffa13144a6d07bd1345b81108729b360b3ea9380dff057c93b6126bcd5625",
+    "frames": 42101830,
+    "rate": 22050,
+    "channels": 3,
+    "sample_width": 2,
+    "statistics": [
+      {
+        "channel": 0,
+        "minimum": -9089,
+        "maximum": 8672,
+        "mean_square": 131070.8597878287
+      },
+      {
+        "channel": 1,
+        "minimum": 0,
+        "maximum": 0,
+        "mean_square": 0.0
+      },
+      {
+        "channel": 2,
+        "minimum": 0,
+        "maximum": 0,
+        "mean_square": 0.0
+      }
+    ]
+  },
+  "clips": [
+    {
+      "path": "docs/evidence/audio/final-flute.wav",
+      "source_channel": 0,
+      "start_seconds": 1868.0,
+      "duration_seconds": 8.0,
+      "sha256": "2a8bddeee325d294b0fa01d2d8ac0591593bfa828ef191366925c70303e1082a"
+    },
+    {
+      "path": "docs/evidence/audio/jaguar-attack.wav",
+      "source_channel": 0,
+      "start_seconds": 1853.0,
+      "duration_seconds": 10.0,
+      "sha256": "35bd2cacb9d14a74399135ce238c25281afbb729c6c85ff74c8427b42b406b06"
+    }
+  ],
+  "sessions": [
+    {
+      "command": [
+        "/usr/games/mame",
+        "apple2p",
+        "-noreadconfig",
+        "-rompath",
+        "/home/iolo/workspace/retro/a2x/mame/roms",
+        "-ramsize",
+        "48K",
+        "-sl0",
+        "",
+        "-sl4",
+        "",
+        "-sl6",
+        "diskiing",
+        "-flop1",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-original-01/side-a.dsk",
+        "-console",
+        "-pluginspath",
+        "/usr/share/games/mame/plugins",
+        "-skip_gameinfo",
+        "-natural",
+        "-window",
+        "-nomouse",
+        "-homepath",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-original-01",
+        "-cfg_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-original-01/cfg_directory",
+        "-nvram_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-original-01/nvram_directory",
+        "-snapshot_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-original-01/snapshot_directory",
+        "-state_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-original-01/state_directory",
+        "-diff_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-original-01/diff_directory",
+        "-video",
+        "none",
+        "-wavwrite",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-original-01/audio.wav",
+        "-samplerate",
+        "22050",
+        "-autoboot_script",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/opening_replay.lua",
+        "-autoboot_delay",
+        "0",
+        "-nothrottle"
+      ],
+      "media": {
+        "a": {
+          "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/mask-of-sun-a.dsk",
+          "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-original-01/side-a.dsk",
+          "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+        },
+        "b": {
+          "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/mask-of-sun-b.dsk",
+          "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-original-01/side-b.dsk",
+          "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+        }
+      },
+      "headless": true,
+      "debug": false
+    },
+    {
+      "command": [
+        "/usr/games/mame",
+        "apple2p",
+        "-noreadconfig",
+        "-rompath",
+        "/home/iolo/workspace/retro/a2x/mame/roms",
+        "-ramsize",
+        "48K",
+        "-sl0",
+        "",
+        "-sl4",
+        "",
+        "-sl6",
+        "diskiing",
+        "-flop1",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-core-01/side-a.dsk",
+        "-console",
+        "-pluginspath",
+        "/usr/share/games/mame/plugins",
+        "-skip_gameinfo",
+        "-natural",
+        "-window",
+        "-nomouse",
+        "-homepath",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-core-01",
+        "-cfg_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-core-01/cfg_directory",
+        "-nvram_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-core-01/nvram_directory",
+        "-snapshot_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-core-01/snapshot_directory",
+        "-state_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-core-01/state_directory",
+        "-diff_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-core-01/diff_directory",
+        "-video",
+        "none",
+        "-wavwrite",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-core-01/audio.wav",
+        "-samplerate",
+        "22050",
+        "-autoboot_script",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/opening_replay.lua",
+        "-autoboot_delay",
+        "0",
+        "-nothrottle"
+      ],
+      "media": {
+        "a": {
+          "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/core-check-02/mask-of-sun-a.dsk",
+          "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-core-01/side-a.dsk",
+          "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+        },
+        "b": {
+          "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/core-check-02/mask-of-sun-b.dsk",
+          "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/audio-full-core-01/side-b.dsk",
+          "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+        }
+      },
+      "headless": true,
+      "debug": false
+    }
+  ]
+}

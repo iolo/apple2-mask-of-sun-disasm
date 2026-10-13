@@ -12,12 +12,15 @@ local commands = {
 local route_path = os.getenv('MASK_ROUTE')
 local timeout = 600
 local ending_text
+local media_events = {}
+local media_index = 1
 if route_path then
     local f = assert(io.open(route_path, 'r'))
     local route = json.parse(f:read('a')); f:close()
     commands = route.commands
     timeout = route.timeout or 1200
     ending_text = route.ending_text
+    media_events = route.media_events or {}
 end
 local index, serial, frames = 1, 0, 0
 local last_action, last_screen, stable_since = 0, '', 0
@@ -71,6 +74,11 @@ emu.register_frame_done(function()
     local rows = mask.graphics_text()
     local screen = table.concat(rows, '\n')
     local requested_side
+    local media_event = media_events[media_index]
+    if media_event and screen:find(media_event.when, 1, true) then
+        requested_side = media_event.side
+        media_index = media_index + 1
+    end
     if screen:find('side A, turn it over to side B,', 1, true) then requested_side = 'b' end
     if screen:find('side B, turn it over to side A,', 1, true) then requested_side = 'a' end
     if requested_side and requested_side ~= mounted_side then
