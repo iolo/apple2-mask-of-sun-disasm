@@ -175,8 +175,10 @@ uses assembled output for identified code, and passes the opening behavior check
 Unexpected differences are investigated; intentional differences have explanations
 and validation evidence. Packaging does not read original-image templates.
 
-Current early scope: six bootstrap/interpreter/renderer modules; remaining DOS,
-intrinsics and mixed CHAR GEN content are named temporary inputs. No separate
+Current scope: bootstrap, all loaded DOS/RWTS pages, resident interpreter,
+intrinsics and complete CHAR GEN source/data with editable font PNGs. Reserved
+unused disk residue still needs final classification; vector images still need
+editable conversion authority. No separate
 6502 overlay has been established yet. Completing this early build step does not
 close the complete-source or editable-graphics criteria in later steps.
 

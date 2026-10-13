@@ -1,0 +1,154 @@
+{
+  "pass": true,
+  "checks": {
+    "baseline-font-roundtrip": true,
+    "baseline-glyph-restored": true,
+    "font-one-pixel-change": true,
+    "same-drawing-page": true,
+    "rendered-pixel-change": true,
+    "only-expected-hgr-byte-changed": true
+  },
+  "edit": {
+    "glyph": 89,
+    "column": 6,
+    "row": 7
+  },
+  "font_address": 46543,
+  "screen_address": 23888,
+  "font_bytes": [
+    0,
+    64
+  ],
+  "screen_bytes": [
+    0,
+    64
+  ],
+  "graphics_changes": [
+    23888
+  ],
+  "baseline_font_sha256": "73d544f2d915fd88fb4f0bf3153f2e6862ad48bd0fb6700943f905d00b160665",
+  "sessions": [
+    {
+      "command": [
+        "/usr/games/mame",
+        "apple2p",
+        "-noreadconfig",
+        "-rompath",
+        "/home/iolo/workspace/retro/a2x/mame/roms",
+        "-ramsize",
+        "48K",
+        "-sl0",
+        "",
+        "-sl4",
+        "",
+        "-sl6",
+        "diskiing",
+        "-flop1",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-opening-01/side-a.dsk",
+        "-console",
+        "-pluginspath",
+        "/usr/share/games/mame/plugins",
+        "-skip_gameinfo",
+        "-natural",
+        "-window",
+        "-nomouse",
+        "-homepath",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-opening-01",
+        "-cfg_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-opening-01/cfg_directory",
+        "-nvram_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-opening-01/nvram_directory",
+        "-snapshot_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-opening-01/snapshot_directory",
+        "-state_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-opening-01/state_directory",
+        "-diff_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-opening-01/diff_directory",
+        "-video",
+        "none",
+        "-sound",
+        "none",
+        "-autoboot_script",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/opening_replay.lua",
+        "-autoboot_delay",
+        "0",
+        "-nothrottle"
+      ],
+      "media": {
+        "a": {
+          "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-core-02/mask-of-sun-a.dsk",
+          "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-opening-01/side-a.dsk",
+          "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+        },
+        "b": {
+          "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-core-02/mask-of-sun-b.dsk",
+          "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-opening-01/side-b.dsk",
+          "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+        }
+      },
+      "headless": true,
+      "debug": false
+    },
+    {
+      "command": [
+        "/usr/games/mame",
+        "apple2p",
+        "-noreadconfig",
+        "-rompath",
+        "/home/iolo/workspace/retro/a2x/mame/roms",
+        "-ramsize",
+        "48K",
+        "-sl0",
+        "",
+        "-sl4",
+        "",
+        "-sl6",
+        "diskiing",
+        "-flop1",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-edit-opening-01/side-a.dsk",
+        "-console",
+        "-pluginspath",
+        "/usr/share/games/mame/plugins",
+        "-skip_gameinfo",
+        "-natural",
+        "-window",
+        "-nomouse",
+        "-homepath",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-edit-opening-01",
+        "-cfg_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-edit-opening-01/cfg_directory",
+        "-nvram_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-edit-opening-01/nvram_directory",
+        "-snapshot_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-edit-opening-01/snapshot_directory",
+        "-state_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-edit-opening-01/state_directory",
+        "-diff_directory",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-edit-opening-01/diff_directory",
+        "-video",
+        "none",
+        "-sound",
+        "none",
+        "-autoboot_script",
+        "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/opening_replay.lua",
+        "-autoboot_delay",
+        "0",
+        "-nothrottle"
+      ],
+      "media": {
+        "a": {
+          "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-edit-01/mask-of-sun-a.dsk",
+          "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-edit-opening-01/side-a.dsk",
+          "sha256": "2d5b68b8a6dcae414cb31beea8607d614a258d6f95221c789d07eec091fd3d4f"
+        },
+        "b": {
+          "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-edit-01/mask-of-sun-b.dsk",
+          "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/chargen-edit-opening-01/side-b.dsk",
+          "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+        }
+      },
+      "headless": true,
+      "debug": false
+    }
+  ]
+}

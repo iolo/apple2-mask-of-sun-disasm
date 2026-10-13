@@ -381,3 +381,37 @@ CHAR GEN bytes are legacy code and still need readable source; graphics need
 codec/edit/render verification and remaining disk residue needs classification.
 Next: finish CHAR GEN lookup/font and retained legacy content, then implement
 editable vector assets and complete world/puzzle mapping.
+
+## Steps 5d/6a — Complete CHAR GEN and editable glyph authority
+
+Completed substep on 2026-10-13; vector assets and full plan remain open.
+
+- Constructed all nine CHAR GEN sectors from source: nominal header, uncalled
+  old editor instructions/key-address tables/mask residue, formula-generated
+  horizontal/HGR scanline lookups, existing character renderer and encoded font.
+  The old fragment is not a callable complete editor or live gameplay subsystem.
+- Extracted 96 separately editable glyph PNGs, with exact 8x8 format. Seven
+  columns contain glyph pixels and the eighth explicitly preserves the Apple II
+  phase bit. Four absent final-glyph rows remain transparent rather than adding
+  bytes outside the allocated file. Glyph PNGs are now authoritative build inputs.
+- Added constrained font encoding, actionable errors for size/colors/phase/absent
+  rows, input PNG hashes in the build manifest, and documentation/provenance.
+  Identified graphics' 140 logical horizontal units across 280 physical pixels.
+- Built a temporary Y glyph with one extra pixel, replayed the opening and
+  verified the loaded font and displayed HGR byte both change by the expected
+  bit. Exactly one HGR byte changes at the intro checkpoint. Restored the PNG
+  immediately after producing the isolated edited disk; archived both screenshots.
+
+Validation: baseline and edited builds pass thirteen opening checks each. All
+764 unmodified font bytes round-trip, including the cursor phase bits. Six font
+edit checks pass; unsupported dimensions, pixel colors, phase colors and absent
+rows are rejected in isolated fixtures. Two baseline output manifests agree;
+source/size assertions, Python compilation, input hashes and whitespace checks pass.
+No raw file remains a live game-code dependency; three unused system-region
+spans remain conservatively listed until their final provenance classification.
+
+Limits: editable glyphs do not close vector-image extraction/conversion. Native
+legacy editor command meanings are not all known, but their data/code boundaries
+and absence from live game calls are recorded. World/puzzle analysis, remaining
+baseline paths, separate manual route and final audit remain open. Next: decode
+individual picture records and establish editable vector-image build inputs.

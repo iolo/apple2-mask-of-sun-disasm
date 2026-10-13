@@ -27,7 +27,9 @@ inventory capture its value differs from the native zero, as expected.
 The jump-over space at $B375–$B378 is four reserved zero bytes, not four BRKs.
 The last nine bytes at $B3F7–$B3FF have no entry points or references in this
 module; their origin remains unconfirmed and is explicitly recorded as data.
-The surrounding `CHAR GEN` lookup/font and other bytes still require analysis.
+The surrounding CHAR GEN header, legacy fragment and generated lookup pages
+are assembled in `src/chargen.s`. Font PNGs are authoritative build inputs;
+see [chargen.md](chargen.md) for phase bits, truncated last glyph and editing rules.
 
 ```sh
 python3 tools/build.py

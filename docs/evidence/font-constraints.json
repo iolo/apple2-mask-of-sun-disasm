@@ -1,0 +1,25 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "case": "size",
+      "rejected": true,
+      "reason": "glyphs/59.png: glyph must be 8x8"
+    },
+    {
+      "case": "pixel-color",
+      "rejected": true,
+      "reason": "glyphs/59.png: unsupported color at column 0, row 0"
+    },
+    {
+      "case": "phase-color",
+      "rejected": true,
+      "reason": "glyphs/59.png: unsupported color at column 7, row 0"
+    },
+    {
+      "case": "absent-row",
+      "rejected": true,
+      "reason": "glyphs/7f.png: absent native rows must stay transparent"
+    }
+  ]
+}

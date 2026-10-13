@@ -13,6 +13,7 @@ import shutil
 import subprocess
 import sys
 from dos_disk import ROOT, repack
+from font_assets import encode as encode_font
 
 
 def main():
@@ -25,9 +26,10 @@ def main():
     out = args.output.resolve()
     out.mkdir(parents=True, exist_ok=True)
     replacements, assembled = {}, []
+    (out / "font.bin").write_bytes(encode_font(ROOT / "assets/decoded/font"))
     # name, native runtime address/size, then asset offset/source offset/length.
     modules = [
-        ('renderer', 0xb300, 0x100, [('assets/raw/a/files/char-gen.bin', 0x504, 0, 0x100)]),
+        ('chargen', 0xadfc, 0x900, [('assets/raw/a/files/char-gen.bin', 0, 0, 0x900)]),
         ('interpreter', 0x0800, 0x500, [('assets/raw/a/files/adven-interp-obj.bin', 4, 0, 0x500)]),
         ('boot-a', 0x0800, 0x100, [('assets/raw/a/system/track-00.bin', 0, 0, 0x100)]),
         ('boot-b', 0x0800, 0x100, [('assets/raw/b/system/track-00.bin', 0, 0, 0x100)]),
@@ -43,7 +45,7 @@ def main():
     ]
     covered = {}
     for name, address, length, spans in modules:
-        subprocess.run(['ca65', '-g', str(ROOT / f'src/{name}.s'), '-o', str(out / f'{name}.o'),
+        subprocess.run(['ca65', '-g', '--bin-include-dir', str(out), str(ROOT / f'src/{name}.s'), '-o', str(out / f'{name}.o'),
                         '-l', str(out / f'{name}.lst')], check=True)
         subprocess.run(['ld65', '-C', str(ROOT / f'src/{name}.cfg'), str(out / f'{name}.o'),
                         '-o', str(out / f'{name}.bin'), '-m', str(out / f'{name}.map'),
@@ -95,6 +97,9 @@ def main():
                                      'role': region['role'], 'unassembled_ranges': ranges})
     (out / 'build.json').write_text(json.dumps({'status': 'early partial source build',
         'assembled': assembled,
+        'editable_font_assets': [{'path': str(path.relative_to(ROOT)),
+            'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
+            for path in sorted((ROOT / 'assets/decoded/font').glob('*.png'))],
         'temporary_raw_code_dependencies': dependencies}, indent=2) + '\n')
 
 

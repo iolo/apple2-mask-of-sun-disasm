@@ -1,6 +1,6 @@
 ; ULTRA high-resolution character output, loaded as part of CHAR GEN.
 ; Original allocated-file offsets $0504-$0603 -> CPU $B300-$B3FF.
-; Character bitmaps begin at $B400 and are currently in the native asset.
+; Character bitmaps begin at $B400, encoded from assets/decoded/font PNGs.
 ;
 ; Install: call renderer_install; sets ROM COUT vector $36 and $0348 draw vector.
 ; COUT: A = high-bit Apple character; preserves X/Y via absolute $001C/$001D,
