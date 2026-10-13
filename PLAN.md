@@ -175,12 +175,13 @@ uses assembled output for identified code, and passes the opening behavior check
 Unexpected differences are investigated; intentional differences have explanations
 and validation evidence. Packaging does not read original-image templates.
 
-Current scope: bootstrap, all loaded DOS/RWTS pages, resident interpreter,
+Completed source scope: bootstrap, all loaded DOS/RWTS pages, resident interpreter,
 intrinsics and complete CHAR GEN source/data with editable font PNGs. Reserved
 unused disk residue is classified; vector images are now
 encoded from individual editable SVGs with native previews. No separate
-6502 overlay has been established yet. Completing this early build step does not
-close the complete-source or editable-graphics criteria in later steps.
+6502 overlay was found; the apparent room overlays are interpreted scripts.
+The early-build acceptance preceded complete-source and editable-graphics
+acceptance, subsequently closed in Steps 5–8.
 
 ### 5. Explain the loader and resident engine
 
@@ -301,19 +302,24 @@ retry and failed-attempt evidence.
 
 ### 10. Publish project documentation and final audit
 
-- [ ] Expand `README.md` with purpose, prerequisites, build commands, output
+- [x] Expand `README.md` with purpose, prerequisites, build commands, output
   locations, emulator instructions, validation commands, and input provenance.
-- [ ] Finish architecture, disk-layout, memory-map, engine, asset-format, and
+- [x] Finish architecture, disk-layout, memory-map, engine, asset-format, and
   puzzle documentation with source cross-references.
-- [ ] Separate confirmed findings from unresolved questions and explain any
+- [x] Separate confirmed findings from unresolved questions and explain any
   retained opaque data or incomplete path coverage. Document intentional rebuild
   differences, image-editing constraints, and any optional I/O replacement.
-- [ ] Perform a clean-checkout build and boot check using only documented steps.
-- [ ] Update `PROGRESS.md` against the PRD's completion criteria and commit the
+- [x] Perform a clean-checkout build and boot check using only documented steps.
+- [x] Update `PROGRESS.md` against the PRD's completion criteria and commit the
   final verified source, tools, assets, and documentation.
 
 **Acceptance:** A new contributor can build, play, and navigate the disassembly
 without relying on undocumented local files or knowledge.
+
+Accepted final requirement review and clean-checkout evidence are recorded in
+[docs/final-audit.md](docs/final-audit.md). All steps are complete; documented
+untested paths and historical-data semantics remain coverage limits, not unfinished
+game-code or build dependencies.
 
 ## Dependencies and iteration
 
@@ -326,8 +332,8 @@ code paths. Keep rebuilding and replaying the established checkpoints during
 that work. Step 8 requires complete loader and asset mapping; Step 9 validates
 the final build; Step 10 closes documentation and reproducibility gaps.
 
-The main uncertainties are custom sector loading, overlays, code mixed with
+The initial uncertainties were custom sector loading, overlays, code mixed with
 data, compression, self-modification, and event timing. Resolve each through
 targeted runtime traces, behavior checks, and byte comparisons where useful.
-Document original formats from evidence; base any relocation or replacement
-filesystem choice on understood dependencies and validate the resulting behavior.
+Original formats are documented from evidence. The final implementation retains
+the native layout/I/O; no optional replacement filesystem was needed.

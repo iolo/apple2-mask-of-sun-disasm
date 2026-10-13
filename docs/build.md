@@ -70,9 +70,12 @@ accepted report is [standalone-build.json](evidence/standalone-build.json).
 This verifies build inputs and reproducibility; gameplay uses separate fresh
 emulator replays with the original profile.
 
-The final audit also builds a clean tracked-file checkout with supplied inputs
-and reference-only regions deliberately absent, then boots its disks. That check
-must be recorded separately before the overall plan is complete. The ordinary
+The final audit builds a clean tracked-file checkout with supplied inputs and
+reference-only regions deliberately absent, then boots its disks. Run
+`python3 tools/verify_checkout.py --output build/checkout-audit` and follow the
+[clean-checkout boot commands](validation.md). The accepted
+[build report](evidence/clean-checkout.json) and
+[boot report](evidence/clean-checkout-boot.json) both pass. The ordinary
 `check_inputs.py` is a provenance check for a checkout containing supplied inputs;
 it is not called by the build and is unnecessary in a reference-free checkout.
 

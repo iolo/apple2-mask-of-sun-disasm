@@ -29,6 +29,8 @@ checks does not establish exhaustive execution-path coverage. The separate
 | All257 native pictures and a supported vector edit | [reference comparison](evidence/picture-roundtrip.json) | Same comparison; [geometry edit](evidence/picture-edit.json) | Every standalone record matches both HGR pages; edited PIC1 loads and appears in game. |
 | Side-B save/restore and media reinsertion | [side-B original](evidence/save-side-b-original.json) | [side-B source](evidence/save-side-b-rebuilt.json) | Nineteen checks pass; room34/jeep/side and all five object arrays restore; [144-sector footprint](evidence/save-side-b-disk.json) agrees. |
 | Separate operator-stepped full playthrough | [manual original](evidence/manual-original.json) | Automatic full-route evidence above | 26 checks; documented complete native checkpoint retry, 122 commands, two parser retries, both sides and 83 pills. |
+| Representative route scenes and complete world state | [scene/state comparison](evidence/full-scene-state-comparison.json) | Same comparison | Sixteen checkpoints match text, displayed HGR pages, scalar state and object/room arrays. |
+| Clean checkout without original/reference build inputs | Original data used only as independent boot reference | [clean build](evidence/clean-checkout.json), [clean boot](evidence/clean-checkout-boot.json) | 206 supplied/reference files absent; three matching builds, zero forbidden reads, seven boot gates and native trace agreement. |
 
 Not yet covered: missing/unformatted save media errors,
 every invalid action, carrying restrictions beyond the observed head rule,

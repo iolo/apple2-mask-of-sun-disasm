@@ -3,8 +3,8 @@
 [interpreter.s](../src/interpreter.s) reconstructs the 1,280-byte payload of
 `ADVEN INTERP.OBJ` at $0800–$0CFF. The native DOS binary header is four bytes;
 the startup script BLOADs the payload at $0800 and calls it. The file's complete
-allocated stream includes header and trailing bytes, which the repacker preserves
-separately from the authoritative assembled payload.
+allocated stream includes header and trailing bytes, all explicitly constructed
+by `src/interpreter.s` alongside the authoritative assembled payload.
 
 At entry the interpreter resets the hardware stack, establishes pointers from
 the $0300 parameter block, installs its intrinsic dispatch and helper vectors,

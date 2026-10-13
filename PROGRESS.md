@@ -576,3 +576,51 @@ The earlier clean-checkout boot report survives, but its /tmp build directory
 disappeared during the session reset. Rerun against this committed preparation
 revision, archive the full report, and complete requirement-by-requirement
 review before closing Step10. Python compilation and whitespace checks pass.
+
+## Step 10 completion — Final PRD/PLAN audit
+
+Completed on 2026-10-13. Every plan checklist and PRD output is fulfilled.
+
+- Human-readable source: eleven fixed-address compiled modules cover bootstrap,
+  both retained DOS/RWTS copies, resident interpreter/intrinsics and complete
+  character generator. Code/data/zero authorities account for all289 disk regions;
+  no unknown region, opaque executable include or temporary raw-code dependency
+  remains. Interfaces, phase ownership, parser/world/timer/sound logic and
+  self-modification have source cross-references.
+- Extracted assets:87 native scripts with stable readable views; world/object/
+  vocabulary/text/parameter indexes;257 separately editable SVGs and native
+  PNG previews;96 editable font PNGs. Project codecs build images and enforce
+  supported constraints. In-game vector/font edits and all257 native render
+  comparisons pass. Speaker synthesis is source rather than an opaque asset.
+- Standalone build: source/data plus generated metadata assemble both143360-byte
+  disks. The final committed source/tool revision b557cd48979d4956d62f1c55d309ee5dc44335ca
+  builds in an archived clean tree with11 supplied inputs and195 reference-only
+  regions absent. Default build and two fresh audit builds agree;197 forbidden
+  original/reference paths have zero successful reads. The reporting lookup
+  initially used a nonexistent side field; corrected by emitted filename before
+  the accepted rerun. No game/source content changed.
+- Behavior: clean checkout disks boot through seven native placement/loading
+  gates and224 matching entry/read observations. Emitted content is the pair
+  already validated by the full122-command ending, both disks/timed sequences,
+  sixteen scene/state comparisons and nonzero full PCM. Controls, input/carrying,
+  deaths/restart, A/B saves and fresh restore reports pass. Separate manual
+  ending evidence includes its native checkpoint recovery and failed attempts.
+- Contributor documentation: README build/play/navigation, setup/tool versions,
+  build authority, validation commands, disk/memory/engine/asset/world guides and
+  final requirement review are complete. Current source/asset hashes, evidence
+  checks, counts and output association are in docs/evidence/final-audit.json.
+
+Final checks: all11 supplied input hashes unchanged; build-source/editable-asset
+  hashes agree with the manifest and are tracked; Python compilation and
+  whitespace checks pass; all local documentation links resolve. Fresh main-tree
+  output is build/disks/mask-of-sun-{a,b}.dsk. Clean tree build/boot and final
+  audit reports are committed under docs/evidence. The final commit changes
+  documentation/evidence only after the tested source/tool revision.
+
+Remaining limits: missing/unformatted media errors, all DOS/optional machine
+paths, every invalid action/room branch/alternate solution and arbitrary image
+editing combinations are not exhaustively tested. Historical catalog anomalies
+and legacy editor semantics remain unconfirmed. These are explicit testing/
+historical interpretation limits, not incomplete game-code reconstruction.
+Original layout/I/O is retained and no significant unexplained behavior/timing
+discrepancy requires a second emulator. No required implementation work remains.

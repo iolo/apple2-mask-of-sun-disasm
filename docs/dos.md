@@ -125,4 +125,4 @@ Formatting, the entire DOS command set, RAM Applesoft and optional language-card
 paths are not covered by these gameplay checks. Unloaded disk residue is
 classified in [disk-layout.md](disk-layout.md). Intrinsics/CHAR GEN are complete
 source, and fonts/pictures are editable inputs. This does not claim exhaustive
-DOS command testing or close the remaining overall validation audit.
+DOS command testing. The completed project audit is in [final-audit.md](final-audit.md).

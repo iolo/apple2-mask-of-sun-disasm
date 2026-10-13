@@ -51,5 +51,15 @@
     "driver": "apple2p",
     "exit_code": 0,
     "output": "romset apple2p [apple2] is good\n1 romsets found, 1 were OK.\n"
+  },
+  "python_packages": {
+    "Pillow": {
+      "version": "12.1.1",
+      "role": "required for font build"
+    },
+    "numpy": {
+      "version": "2.3.5",
+      "role": "optional screen analysis"
+    }
   }
 }

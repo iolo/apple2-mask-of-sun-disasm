@@ -38,8 +38,8 @@ $6000–$67FD and both HGR pages against the pre-encounter capture. It is a
 documented checkpoint retry, not an uninterrupted single-life run. Original
 disk-copy hashes match the preserved inputs in both segments.
 
-Timed readers consume the first natural-key character to leave their wait loop.
-The final GIVE MASK and PLAY FLUTE therefore first produced `IVE MASK` and
+In this manual run, the final timed readers consumed the first natural-key
+character before normal command reading. GIVE MASK and PLAY FLUTE produced `IVE MASK` and
 `LAY FLUTE` parser errors; individually recorded retries succeeded. The native
 snake command uses SHOOT without Return. Ghost progression waits explicitly for
 `The apparition fades`, then its completed description. The stepping-stone

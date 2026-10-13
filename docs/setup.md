@@ -49,6 +49,11 @@ disk copies inside the session directory. `session.json` records the exact
 command and hashes of the media copies. The launcher copies chosen disks before
 mounting them. Pass `--disk-a build/disks/mask-of-sun-a.dsk` and the corresponding
 `--disk-b` to play rebuilt disks instead of the default reference disks.
+For native saves, first initialize a disposable disk with
+`a2kit mkdsk --os dos33 --type do --volume 254 --dimg build/save-blank.dsk`,
+then add `--save-disk build/save-blank.dsk` at launch. At save-media prompts,
+`mask.swap('save')` mounts the copied scratch disk; reinsert A/B as requested.
+See [validation.md](validation.md) for complete save/restore test commands.
 
 Enter the printed `dofile(...)` command into the owned Lua console. With
 `--debug`, the CPU starts stopped at reset; `mask.go()` runs it. Without the
