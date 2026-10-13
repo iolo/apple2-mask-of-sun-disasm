@@ -113,7 +113,7 @@ def main():
             if ranges:
                 dependencies.append({'side': disk['side'], 'path': region['path'],
                                      'role': region['role'], 'unassembled_ranges': ranges})
-    (out / 'build.json').write_text(json.dumps({'status': 'standalone source and asset build; final gameplay audit pending',
+    (out / 'build.json').write_text(json.dumps({'status': 'standalone source and asset build',
         'disk_images': json.loads((out / 'repack.json').read_text())['disks'],
         'source_inputs': [{'path':str(path.relative_to(ROOT)),
             'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}

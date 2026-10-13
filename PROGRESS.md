@@ -562,3 +562,17 @@ The helper now saves whole native emulator state before pausing each capture.
 
 Next: archive the clean reference-free checkout build/boot audit, finish README
 and final navigation, audit every PRD/plan deliverable, and commit completion.
+
+## Step 10 preparation — Contributor navigation and repeatable checkout audit
+
+Published build/play instructions and a source/asset navigation table in README,
+plus docs/validation.md with full-route, scene, sound, save and boot commands.
+Added tools/verify_checkout.py to archive a committed tree, omit all11 supplied
+inputs and195 reference regions, and execute documented builds plus strace audit.
+Removed the stale pending-gameplay wording from the build manifest. No native
+code, data, disk layout or gameplay behavior changed.
+
+The earlier clean-checkout boot report survives, but its /tmp build directory
+disappeared during the session reset. Rerun against this committed preparation
+revision, archive the full report, and complete requirement-by-requirement
+review before closing Step10. Python compilation and whitespace checks pass.
