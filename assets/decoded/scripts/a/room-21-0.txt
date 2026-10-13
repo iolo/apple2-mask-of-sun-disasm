@@ -1,0 +1,111 @@
+.S N=21
+.S GE(13)=0
+.L L,PEDDLER1
+.S P=3-P
+.C 1,P,0
+.I N0(21):1
+.T !RTRN
+.E !FRST
+.!HERE
+!FRST
+.B PEDH1
+.S V=P
+.D 
+.B PEDL1
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "You see a man by the side of the road.
+.P "He waves at you to stop.
+.$ P
+.!MORE
+.P ""I have a deal for you! This potion
+.P " will cure the curse under which you
+.P " suffer.
+.!MORE
+.P ""A venerable product indeed! What am
+.P " I offered for this magic cure?"
+!RTRN
+.B PEDL3
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "The peddler has gone.
+.$ P
+!LOOK
+.I N0(21):0
+.T P "Nearby, a peddler sits on a stump.
+.P "The road goes east and west.
+LOOK PEDDL
+EXAMIPEDDL
+.!CLRT
+.P "He looks a little shady.
+LOOK POTIO
+LOOK CURE 
+.!CLRT
+.I N0(21):1
+.P "The bottle ;
+.T P "is empty.
+.E P "holds a pink liquid.
+%OF13
+%OF14
+%OF16
+%OF17
+%OF18
+.I N0(21):1
+.T %OF..
+.T J -3
+.S P=3-P
+.C 1,P,0
+.B PEDH2
+.S V=P
+.D 
+.B PEDL1
+.S V=P
+.D 
+._ P
+.!CLRT
+.P ""Listen closely! You must drink it
+.P " quickly for the cure to be effective."
+.$ P
+.!MORE
+.P "He grabs the offered payment and heads
+.P "for the hills.
+.S P=3-P
+.C 1,P,0
+.B PEDL3
+.S V=P
+.D 
+.!MORE
+._ P
+.!CLRT
+.P "As you gulp the chalky, pink liquid
+.P "you notice the label on the bottle.
+.$ P
+.!MORE
+.P "It seems you just consumed a vintage
+.P "bottle of stomach upset remedy.
+.S TC(L)=255
+.S TL(L)=255
+.S N0(21)=1
+%OF..
+.I N0(21):1
+.T P "To whom? There is no one here.
+.T J -3
+.P "Your offer is declined. Try again.
+%W...
+.S GE(4)=2
+.S GE(5)=3
+.S N0(21)=1
+.3 ROOM 22.0 
+.!LEAV
+%E...
+.S GE(4)=1
+.S GE(5)=3
+.S N0(21)=1
+.3 ROOM 20.0 
+.!LEAV
+@@@@@
+

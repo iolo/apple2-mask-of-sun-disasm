@@ -1,0 +1,53 @@
+.S N=18
+.S GE(13)=0
+.L L,FLUTE
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B HUTOS
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "Near the side of the road you see a
+.P "small hut. ;
+.I N0(19)#2
+.T P "You hear music coming from
+.T P "inside.
+.E P "
+.$ P
+.T !PLFT
+.!MORE
+.P "The road continues east and west.
+.!HERE
+!LOOK
+.P "You are near a hut.
+.I N0(19)#2
+.T P " You hear music from inside.
+.T !PLFT
+.P " The road goes east and west.
+%LOHU
+.P "The door of the hut is wide open.
+.I N0(19)#2
+.T P "The music you hear issuing from it
+.T P "has a strange haunting melody.
+%E...
+.3 ROOM 3.0  
+.S GE(4)=1
+.S GE(5)=3
+.!LEAV
+%W...
+.3 ROOM 20.0 
+.S GE(4)=2
+.S GE(5)=3
+.!LEAV
+%INHU
+%..HU
+.I TC(2):0
+.T P "You'll have to leave the jeep here.
+.E P "You approach the hut on foot.
+.E 3 ROOM 19.0 
+.E !GOTO
+@@@@@

@@ -1,0 +1,105 @@
+.S N=49
+.L L,ROBOFFS
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B ROBGN
+.S V=P
+.D 
+.B ROBG2
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "As you enter the room, you sense
+.P "the presence of someone else!
+.P "Suddenly from behind a pillar. . .
+.$ P
+.!MORE
+.P "... steps Francisco Roboff, and
+.P " he's pointing a large caliber
+.P " pistol straight at you!!
+.!MORE
+.P ""So, we meet again. And I see you have
+.P " that which we both seek. The Mask.
+.!MORE
+.P ""Just in time too. I've been wandering
+.P " around in these passages for days, no
+.P " food or water. . .
+.!MORE
+.P ""There seems to be no way out.
+.P " But with the Mask I know I can find
+.P " the exit. . .
+.!MORE
+.P ""But enough of this smalltalk.
+.P " You have something that I need.
+.P " The Mask, Mr. Steele."
+.!TIME
+!LOOK
+.P "Roboff is pointing a pistol at you
+.P "and demanding the Mask. He seems to
+.P "be getting quite impatient.
+GIVE MASK 
+OFFERMASK 
+HAND MASK 
+%DR23
+.!CLRT
+.P ""You are a smart man, Mr. Steele.
+.P " Resistance would get you nowhere."
+.3 ROOM 49.1 
+.!GOTO
+%GT..
+%GTA.
+%GTAB
+%DR..
+%DRA.
+%DRAB
+%DRON
+%US23
+.I L:0
+.E P ""I wouldn't do that if I were you!"
+.T !VAGR
+%LO12
+%LO13
+%LO16
+%LO17
+%LO18
+%RE12
+.P "There's no time for that!
+!INVD
+.P "Stay right there, Mr. Steele. I don't
+.P "want you wandering off.
+SHOOT
+GUN  
+REVOL
+.!CLRT
+.P "You draw your gun but Roboff has the
+.P "drop on you. . .
+.J +14
+!TIME
+.V 15
+.P "OK>^
+.S B=B+1
+.W 
+.I Q>127
+.T J -6
+.I B<100
+.T J -5
+.!CLRT
+.P "Well, if you won't give me the Mask,
+.P "I will just have to take it from you!
+.!WAIT
+.!WAIT
+.S SV(6)=6
+.S SV(7)=0
+.S SV(4)=0
+.N N
+.!WAIT
+.!CLRT
+.P "You have been shot!!!
+.!WAIT
+.!DEAD
+@@@@@
+

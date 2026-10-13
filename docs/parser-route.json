@@ -1,0 +1,83 @@
+{
+  "scope": "Fresh native parser and statue-head carrying boundaries",
+  "timeout": 800,
+  "commands": [
+    "LOOK",
+    "/",
+    "LOOX\bK",
+    "\bLOOK",
+    "LOOK AND INVENTORY",
+    "LOOK THEN INVENTORY",
+    "LOOK",
+    "INVENTORY",
+    "FERNAP",
+    "GET",
+    "GET LAMP",
+    "FERNAP GUN",
+    "EXIT PLANE",
+    "GET MAP",
+    "ENTER JEEP",
+    "W",
+    "TAKE ALL",
+    "EXIT JEEP",
+    "GO HUT",
+    "GIVE FOOD",
+    "EXIT HUT",
+    "ENTER JEEP",
+    "W",
+    "NW",
+    "EXIT JEEP",
+    "LOOK BEHIND STATUE",
+    "GET HEAD",
+    "ENTER JEEP",
+    "DROP ALL",
+    "GET BOTTLE",
+    "EXIT JEEP",
+    "GET HEAD",
+    "GET MAP",
+    "PLACE HEAD ON STATUE",
+    "ENTER JEEP"
+  ],
+  "requirements": [
+    {
+      "id": "head-load-rejected",
+      "text": "Your load is too heavy."
+    },
+    {
+      "id": "head-prevents-pickup",
+      "text": "You can't get anything else!"
+    },
+    {
+      "id": "head-taken-after-dropping",
+      "text": "The head of the idol feels strangely"
+    },
+    {
+      "id": "statue-replaced",
+      "text": "As soon as the head is replaced on the"
+    },
+    {
+      "id": "inventory-seen",
+      "text": "a loaded revolver"
+    },
+    {
+      "id": "slash-repeat-native-rejection",
+      "text": "I don't understand \"/\"."
+    }
+  ],
+  "ram_ranges_equal": [
+    {
+      "id": "backspace-corrects-letter",
+      "before_command": 2,
+      "after_command": 4,
+      "address": 592,
+      "length": 5
+    },
+    {
+      "id": "backspace-protects-prompt",
+      "before_command": 2,
+      "after_command": 5,
+      "address": 592,
+      "length": 5
+    }
+  ]
+}

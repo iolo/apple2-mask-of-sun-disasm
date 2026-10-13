@@ -1,0 +1,157 @@
+.S N=37
+.L L,TALK FACE
+.S B=0
+.!DRAW
+._ P
+.!CLRT
+.P "You are in a large room with two
+.P "brightly colored faces painted on the
+.P "far wall.
+.$ P
+.S B=1
+.!DRAW
+._ P
+.!CLRT
+.P "Suddenly, as if disturbed by your entry,one of the faces opens its mouth and
+.P "begins to speak . . .
+.!MOR2
+.$ P
+.!MOR2
+.!CLRT
+.P ""WHAT MERE HUMAN WOULD DARE TO ENTER
+.P "THE TEMPLE OF THE SUN?!
+.S B=2
+.!DRAW
+._ P
+.!CLRT
+.P ""ONLY A HIGH PRIEST MAY ENTER INTO THE
+.P " PRESENCE OF THE SUN . . . AND LIVE!
+.!MOR2
+.$ P
+.S B=1
+.!DRAW
+._ P
+.!CLRT
+.P ""IF YOU ARE AN INITIATE OF THE SUN,
+.P " SAY THE WORD AND BE WELCOME.
+.!MOR2
+.$ P
+.S B=2
+.!DRAW
+._ P
+.!CLRT
+.P ""IF NOT, BEGONE AND RETURN NOT . . .
+.P " WHILE YOU YET LIVE!!"
+.!MOR2
+.$ P
+.S B=0
+.!DRAW
+._ P
+.!CLRT
+.P ""IF NOT, BEGONE AND RETURN NOT . . .
+.P " WHILE YOU YET LIVE!!"
+.!MOR2
+.V 15
+.P "          
+.$ P
+.!HERE
+!DRAW
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B MASKA
+.S V=P
+.D 
+.I B:1
+.E I B:3
+.T B MASKE
+.T S V=P
+.T D 
+.E B MASKD
+.E S V=P
+.E D 
+.I B:4
+.T B MASKB
+.T S V=P
+.T D 
+.B MASKC
+.S V=P
+.D 
+.I B:2
+.E I B:3
+.T B MASKG
+.T S V=P
+.T D 
+.E B MASKF
+.E S V=P
+.E D 
+.B MASKH
+.S V=P
+.D 
+XOTZI
+.I B:4
+.T !CLRT
+.T P "Nothing changes.
+.T J -4
+.S B=3
+.!DRAW
+._ P
+.!CLRT
+.P ""ENTER INITIATE.  YOU ARE WELCOMED
+.P "  INTO THE PRESENCE OF THE SUN."
+.$ P
+.S B=4
+.!DRAW
+._ P
+.!CLRT
+.P "A doorway appears between the faces,
+.P "beckoning you to enter.
+.!MOR2
+.V 15
+.P "           
+.$ P
+!LOOK
+.P "There are exits to the left and right.
+.I B:4
+.T P "There is an open doorway in front 
+.T P "of you.
+.I N0(37):0
+.T S N0(37)=1
+.T !MORE
+.T P "With a rumble, the passage behind you
+.T P "is blocked by a fall of rocks.
+%LOID
+.!CLRT
+.P "The faces are now silent and immobile.
+%FW..
+%..EN
+%IN..
+.I B#4
+.T J +4
+.P "Abandon all hope, ye who enter here!
+.3 ROOM 40.0 
+.!GOTO
+.!INVD
+%L...
+%S...
+.3 ROOM 38.0 
+.!TUNL
+%R...
+%N...
+.3 ROOM 47.0 
+.S GE(6)=22
+.!TUNL
+!MOR2
+._ 3-P
+.V 15
+.P "[ waiting ]
+._ P
+.P "[ waiting ]
+.W 
+.I Q<128
+.T J -2
+.S R=0
+@@@@@
+

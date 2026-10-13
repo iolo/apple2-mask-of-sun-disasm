@@ -1,0 +1,49 @@
+.S N=41
+.L L,SUN ALTAR
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B ALTCL
+.S V=P
+.D 
+._ P
+.I TL(23):254
+.T R P
+.!CLRT
+.P "In the top of the altar is an oddly
+.P "shaped opening. 
+.$ P
+.!MORE
+.P "A close examination reveals nothing
+.P "else significant.
+!LOOK
+%LOAL
+.J -9
+%ISAL
+%DRAL
+%PUAL
+%ISPT
+%DRPT
+%PUPT
+%USAL
+%USPT
+.!GETO
+.I L:13
+.T P "You hear a click and the grinding
+.T P "of stone.
+.T 3 ROOM 41.2 
+.T !GOTO
+.P "It doesn't seem to do anything.
+%OPAL
+.!CLRT
+.P "The stone is apparently solid and
+.P "immovable.
+%BK..
+%OU..
+%E...
+.3 ROOM 41.0 
+.!GOTO
+@@@@@
+

@@ -1,0 +1,108 @@
+.S N=1
+.S H=0
+.M 1
+._ 2
+.S P=2
+.C 1,P,0
+.L L,P1.1
+.B PIC 1
+.S V=2
+.D 
+.!CLRT
+.P "Your search for the Mask of the Sun has
+.P "brought you to Mexico, the home of the
+.P "Aztec culture.
+.$ P
+.!MORE
+.P "The plane you chartered in Mexico City
+.P "has landed at a small airfield near
+.P "the ruins spoken of by Prof. de Perez.
+.!MORE
+.P "The ride was bumpy, but you made it.
+.P "Looking out the doorway you see a worn
+.P "runway where two figures are waiting.
+!LOOK
+.J -4
+%OUPL
+.!CLRT
+.P "You leave the plane and approach the    two men.
+.L L,P1.1
+.S A=128
+.S B=9
+.S C=34
+.S D=48
+.S P=1
+.!ANIM
+.S A=175
+.S B=10
+.S C=25
+.S D=36
+.S P=2
+.!ANIM
+.S A=204
+.S B=9
+.S C=17
+.S D=24
+.S P=1
+.!ANIM
+.S B=2
+.S P=2
+.S C=0
+.S D=0
+.!ANIM
+.3 ROOM 2.0  
+.!GOTO
+!ANIM
+.B JEEP 
+.S S=A
+.S T=A
+.S V=B
+.S X=C
+.S Y=D
+.C 1,P,0
+.D 
+.B FIG 2
+.S S=A
+.S T=A
+.S V=B
+.S X=C
+.S Y=D
+.D 
+.$ P
+%SY..
+%WV..
+.!CLRT
+.P "The figures wave and gesture.
+%LOFG
+.!CLRT
+.P "Professor de Perez and another man wait by a jeep.
+%LOPL
+.!CLRT
+.P "You are in an old transport plane that  you chartered in Mexico City.
+LOOK OUT  
+LOOK OUTSI
+%LORD
+.!CLRT
+.P "You can't see the area clearly from
+.P "inside the plane.
+%LOWA
+%REWA
+.!CLRT
+.P "The sign on the wall says:
+.P "    WATCH YOUR STEP
+%OU..
+.!CLRT
+.I W:141
+.T %OUPL
+.E P "You can't get there from here.
+JEEP 
+.!CLRT
+.I H:0
+.T P "Do you mean the jeep by Prof. de Perez ?
+.T S H=H++
+.E P "You can't do that from in the plane.
+%LOSP
+.%LOEQ
+@@@@@
+
+

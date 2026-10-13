@@ -1,0 +1,149 @@
+.S N=31
+.!DRW1
+.$ P
+.!DRW2
+._ P
+.!CLRT
+.P "As you look into the pool you are
+.P "amazed by the clearness of the water.
+.P "You can't stop watching the reflections.
+._ K
+.!CLRK
+.P "As you look into the pool you are
+.P "amazed by the clearness of the water.
+.P "You can't stop watching the reflections.
+.!FLIK
+._ P
+.!CLRT
+.P "The reflections from the pool exert
+.P "a hypnotic effect on you. You feel
+.P "yourself becoming mesmerized.
+._ K
+.!CLRK
+.P "The reflections from the pool exert
+.P "a hypnotic effect on you. You feel
+.P "yourself becoming mesmerized.
+.!FLIK
+._ P
+.!CLRT
+.P "You feel your mind expanding, you sense
+.P "movement, lights, sounds. You seem to
+.P "see a change in the reflection.
+._ K
+.!CLRK
+.P "You feel your mind expanding, you sense
+.P "movement, lights, sounds. You seem to
+.P "see a change in the reflection.
+.!FLIK
+.!CLRT
+.!CLRK
+.B HIGHP
+.S V=K
+.D 
+.B HGHP2
+.S V=K
+.D 
+.!XFRM
+.S K=3-P
+.C 1,K,0
+.B RGHTL
+.S V=K
+.D 
+.B HIGHP
+.S V=K
+.D 
+.B HGHP2
+.S V=K
+.D 
+.!XFRM
+.!WAIT
+.!WAIT
+.!WAIT
+.!XFRM
+.!DRW2
+.!XFRM
+.!DRW1
+.$ P
+._ P
+.P "The moment passes. You shake your head
+.P "to clear it, turn around, and step back
+.P "from the mysterious pool.
+._ K
+.!CLRK
+.P "The moment passes. You shake your head
+.P "to clear it, turn around, and step back
+.P "from the mysterious pool.
+.!FLIK
+.3 ROOM 31.0 
+.!GOTO
+!DRW1
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B MAGPL
+.S V=P
+.D 
+.R P
+.B MAGST
+.S V=P
+.D 
+.R P
+.!CLRT
+!DRW2
+.S K=3-P
+.C 1,K,0
+.B RGHTL
+.S V=K
+.D 
+.B MAGPL
+.S V=K
+.D 
+.B MAGST
+.S V=K
+.D 
+.!CLRK
+!FLIK
+.S R=0
+.V 15
+.P "[ waiting ]
+._ P
+.V 15
+.P "[ waiting ]
+.$ K
+.S A=A
+.$ P
+.W 
+.I Q>127
+.E J -5
+.S R=0
+!CLRK
+.C 0,K,143
+.V 12
+!XFRM
+.S K=3-P
+.S A=20
+.S B=A
+.$ P
+.S B=B-1
+.I B>0
+.T J -2
+.S A=A-1
+.I A>1
+.$ K
+.T J -8
+.$ P
+.S B=A
+.$ K
+.S B=B-1
+.I B>0
+.T J -2
+.S A=A+1
+.I A<10
+.$ P
+.T J -8
+.$ K
+.S P=K
+@@@@@
+

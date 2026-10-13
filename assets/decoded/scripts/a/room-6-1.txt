@@ -1,0 +1,176 @@
+.$ P
+.S C=5
+.S D=20
+.S K=3-P
+.!JAGP
+.!XFRM
+.!PDIS
+.S P=3-P
+.!JAG2
+.!PDIS
+.!GRWL
+.!WAIT
+.S P=3-P
+.!JAG3
+.!PDIS
+.S C=C-7
+.S P=3-P
+.!JAG4
+.!PDIS
+.S C=C-7
+.I C<245
+.E J -9
+.3 ROOM 6.2  
+.!GOTO
+!PDIS
+._ P
+.C 0,P,155
+.V 13
+.P "The jaguar has blue eyes! It pauses for
+.P "a moment then walks off into the jungle.
+.$ P
+!JAGP
+.C 1,K,0
+.B BKLNE
+.S V=K
+.D 
+.B JAGH1
+.S V=K
+.S X=C
+.S Y=D+2
+.D 
+.B JAGB1
+.S V=K
+.S X=C
+.S Y=D
+.D 
+.B BKGND
+.S V=K
+.D 
+!JAG2
+.C 1,P,0
+.B BKLNE
+.S V=P
+.D 
+.E B JAGH2
+.S V=P
+.S X=C
+.S Y=D
+.D 
+.B JAGB1
+.S V=P
+.S X=C
+.S Y=D
+.D 
+.B BKGND
+.S V=P
+.D 
+!JAG3
+.C 1,P,0
+.B BKLNE
+.S V=P
+.D 
+.B JAGB2
+.S V=P
+.S X=C
+.S Y=D-1
+.D 
+.B JAGH3
+.S V=P
+.S X=C
+.S Y=D
+.D 
+.B BKGND
+.S V=P
+.D 
+!JAG4
+.C 1,P,0
+.B BKLNE
+.S V=P
+.D 
+.B JAGB3
+.S V=P
+.S X=C
+.S Y=D-3
+.D 
+.B JAGH3
+.S V=P
+.S X=C
+.S Y=D
+.D 
+.B JAGB4
+.S V=P
+.S X=C
+.S Y=D-1
+.D 
+.B BKGND
+.S V=P
+.D 
+!GRWL
+.I E
+.T J -2
+.S SV(7)=0
+.S SV(4)=10
+.S SV(6)=1
+.N N
+.S SV(4)=9
+.S SV(6)=1
+.N N
+.S SV(4)=8
+.S SV(6)=1
+.N N
+.S SV(4)=7
+.S SV(6)=1
+.N N
+.S SV(4)=6
+.S SV(6)=1
+.N N
+.S SV(4)=5
+.S SV(6)=1
+.N N
+.S SV(4)=4
+.S SV(6)=1
+.N N
+.S SV(4)=3
+.S SV(6)=1
+.N N
+.S SV(4)=2
+.S SV(6)=2
+.N N
+.S SV(4)=1
+.S SV(6)=2
+.N N
+.S SV(4)=0
+.S SV(6)=5
+.N N
+.S SV(4)=1
+.S SV(6)=2
+.N N
+.S SV(4)=2
+.S SV(6)=1
+.N N
+.S SV(4)=3
+.S SV(6)=1
+.N N
+.S SV(4)=4
+.S SV(6)=1
+.N N
+.S SV(4)=5
+.S SV(6)=1
+.N N
+.S SV(4)=6
+.S SV(6)=1
+.N N
+.S SV(4)=7
+.S SV(6)=1
+.N N
+.S SV(4)=8
+.S SV(6)=1
+.N N
+.S SV(4)=9
+.S SV(6)=1
+.N N
+.S SV(4)=10
+.S SV(6)=1
+.N N
+@@@@@

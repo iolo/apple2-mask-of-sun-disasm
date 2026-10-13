@@ -1,0 +1,118 @@
+.S N=34
+.S P=3-P
+.L L,PYR HOLE
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B PYRH1
+.S V=P
+.D 
+.B PYRH2
+.S V=P
+.D 
+._ P
+.!CLRT
+.I N1(34):1
+.T !LOOK
+.T J +5
+.P "The trees part and you drive to the
+.P "edge of a large clearing. Blocking the  jeep's path is a large hole.
+.$ P
+.S N1(34)=1
+.!HERE
+!LOOK
+.P "You are near a large pyramid.
+.P "The road leads back to the east.
+.$ P
+%LOPT
+.!CLRT
+.P "The hole is square and bordered by stoneblocks. It's about fifteen feet deep.
+.P "There are vines growing to the bottom.
+.!MORE
+.P "The bottom is strewn with rubble but
+.P "there seems to be an opening or
+.P "passage leading north.
+%LOPY
+.!CLRT
+.P "It's constructed of dark gray stone.
+.P "Any detail has long ago worn away.
+%E...
+%BK..
+%OU..
+!FLIP
+.S GE(12)=1
+.I TC(2)#0
+.T J +9
+.P "Please remove THE MASK OF THE SUN disk,
+.P "side B, turn it over to side A,
+.P "and reinsert it.
+.!MORE
+.P "Press RETURN to continue play.
+.!MORE
+.S GE(4)=1
+.S GE(5)=3
+.3 ROOM 22.0 
+.!LEAV
+%..PT
+%..02
+%BK02
+.P "You are near the jeep and the hole.
+%CLPY
+%CLST
+%U...
+.!CLRT
+.I TC(2):0
+.T !INVD
+.E P "You begin the climb of the
+.E P "massive structure.
+.E 3 ROOM 34.1 
+.E !GOTO
+TIE  ROPE TREE 
+TIE  ROPE BUSH 
+.!CLRT
+.I TC(15):254
+.T P "You did that.
+.T J -4
+.I TC(2):0
+.T P "That's hard to do from inside the jeep.
+.T J -3
+.I TC(15):0
+.T P "You tie the rope to a nearby tree.
+.T S TC(15)=254
+.T S TL(15)=34
+.E P "You don't have any rope.
+%CL15
+%D.15
+.!CLRT
+.I TC(2):0
+.T P "That's hard to do from inside the jeep.
+.T J -4
+.I TC(15):254
+.T P "Grabbing the rope, you descend into
+.T P "the pit.
+.T 3 ROOM 34.2 
+.T !GOTO
+.E P "There is no rope secured here
+.E P "to climb down.
+%INPT
+%CLPT
+%D...
+.!CLRT
+.I TC(2):0
+.T P "You can't do that from in the jeep.
+.E P "Grabbing a stout vine, you descend into
+.E P "the pit.
+.E 3 ROOM 34.2 
+.E !GOTO
+!INVD
+.!CLRT
+.I TC(2):0
+.T P "You can't go that way in the jeep.
+.T P "You will have to get out and walk.
+.E P "After searching for a while you find
+.E P "nothing interesting and return to the
+.E P "hole.
+@@@@@
+
+

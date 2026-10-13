@@ -1,0 +1,1618 @@
+{
+  "entries": [
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0784",
+      "pair": "object/category",
+      "value": "01",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0782",
+          "text": "RAOUL"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0787",
+      "pair": "object/category",
+      "value": "03",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0785",
+          "text": "SHOVE"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0791",
+      "pair": "object/category",
+      "value": "04",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0788",
+          "text": "LAMP "
+        },
+        {
+          "id": "a:LIBRARY:0789",
+          "text": "LANTE"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0794",
+      "pair": "object/category",
+      "value": "05",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0792",
+          "text": "MATCH"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0797",
+      "pair": "object/category",
+      "value": "06",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0795",
+          "text": "KNIFE"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0800",
+      "pair": "object/category",
+      "value": "07",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0798",
+          "text": "FOOD "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0804",
+      "pair": "object/category",
+      "value": "08",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0801",
+          "text": "BOTTL"
+        },
+        {
+          "id": "a:LIBRARY:0802",
+          "text": "PILLS"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0807",
+      "pair": "object/category",
+      "value": "09",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0805",
+          "text": "JAGUA"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0810",
+      "pair": "object/category",
+      "value": "10",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0808",
+          "text": "HEAD "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0813",
+      "pair": "object/category",
+      "value": "11",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0811",
+          "text": "SNAKE"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0816",
+      "pair": "object/category",
+      "value": "12",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0814",
+          "text": "MAP  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0819",
+      "pair": "object/category",
+      "value": "13",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0817",
+          "text": "AMULE"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0823",
+      "pair": "object/category",
+      "value": "14",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0820",
+          "text": "GUN  "
+        },
+        {
+          "id": "a:LIBRARY:0821",
+          "text": "REVOL"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0826",
+      "pair": "object/category",
+      "value": "15",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0824",
+          "text": "ROPE "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0829",
+      "pair": "object/category",
+      "value": "16",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0827",
+          "text": "JADE BOWL "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0832",
+      "pair": "object/category",
+      "value": "17",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0830",
+          "text": "SILVEBOWL "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0835",
+      "pair": "object/category",
+      "value": "18",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0833",
+          "text": "GOLD BOWL "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0839",
+      "pair": "object/category",
+      "value": "19",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0836",
+          "text": "GOLD KEY  "
+        },
+        {
+          "id": "a:LIBRARY:0837",
+          "text": "GOLDEKEY  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0842",
+      "pair": "object/category",
+      "value": "20",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0840",
+          "text": "BLACKKEY  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0845",
+      "pair": "object/category",
+      "value": "21",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0843",
+          "text": "SILVEKEY  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0848",
+      "pair": "object/category",
+      "value": "22",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0846",
+          "text": "FLUTE"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0851",
+      "pair": "object/category",
+      "value": "23",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0849",
+          "text": "MASK "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0854",
+      "pair": "object/category",
+      "value": "02",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0852",
+          "text": "JEEP "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0895",
+      "pair": "object/category",
+      "value": "EQ",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0893",
+          "text": "INVEN"
+        },
+        {
+          "id": "a:LIBRARY:0894",
+          "text": "EQUIP"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0897",
+      "pair": "object/category",
+      "value": "SP",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0896",
+          "text": "SUPPL"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0902",
+      "pair": "object/category",
+      "value": "PY",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0898",
+          "text": "RUIN "
+        },
+        {
+          "id": "a:LIBRARY:0899",
+          "text": "RUINS"
+        },
+        {
+          "id": "a:LIBRARY:0900",
+          "text": "TEMPL"
+        },
+        {
+          "id": "a:LIBRARY:0901",
+          "text": "PYRAM"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0906",
+      "pair": "object/category",
+      "value": "EN",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0903",
+          "text": "DOOR "
+        },
+        {
+          "id": "a:LIBRARY:0904",
+          "text": "DOORW"
+        },
+        {
+          "id": "a:LIBRARY:0905",
+          "text": "ENTRA"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0908",
+      "pair": "object/category",
+      "value": "RD",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0907",
+          "text": "ROAD "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0911",
+      "pair": "object/category",
+      "value": "PA",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0909",
+          "text": "PATH "
+        },
+        {
+          "id": "a:LIBRARY:0910",
+          "text": "PATHW"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0914",
+      "pair": "object/category",
+      "value": "TU",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0912",
+          "text": "TUNNE"
+        },
+        {
+          "id": "a:LIBRARY:0913",
+          "text": "PASSA"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0917",
+      "pair": "object/category",
+      "value": "ST",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0915",
+          "text": "STAIR"
+        },
+        {
+          "id": "a:LIBRARY:0916",
+          "text": "STEPS"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0921",
+      "pair": "object/category",
+      "value": "PL",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0918",
+          "text": "PLANE"
+        },
+        {
+          "id": "a:LIBRARY:0919",
+          "text": "AIRPL"
+        },
+        {
+          "id": "a:LIBRARY:0920",
+          "text": "AIRCR"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0924",
+      "pair": "object/category",
+      "value": "FG",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0922",
+          "text": "PEOPL"
+        },
+        {
+          "id": "a:LIBRARY:0923",
+          "text": "FIGUR"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0927",
+      "pair": "object/category",
+      "value": "WA",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0925",
+          "text": "SIGN "
+        },
+        {
+          "id": "a:LIBRARY:0926",
+          "text": "WALL "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0931",
+      "pair": "object/category",
+      "value": "MZ",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0928",
+          "text": "MAZE "
+        },
+        {
+          "id": "a:LIBRARY:0929",
+          "text": "FLOOR"
+        },
+        {
+          "id": "a:LIBRARY:0930",
+          "text": "GROUN"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0941",
+      "pair": "object/category",
+      "value": "AL",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0932",
+          "text": "ALTAR"
+        },
+        {
+          "id": "a:LIBRARY:0933",
+          "text": "DIAS "
+        },
+        {
+          "id": "a:LIBRARY:0934",
+          "text": "SLAB "
+        },
+        {
+          "id": "a:LIBRARY:0935",
+          "text": "SLABS"
+        },
+        {
+          "id": "a:LIBRARY:0936",
+          "text": "STONE"
+        },
+        {
+          "id": "a:LIBRARY:0937",
+          "text": "CRYPT"
+        },
+        {
+          "id": "a:LIBRARY:0938",
+          "text": "COFFI"
+        },
+        {
+          "id": "a:LIBRARY:0939",
+          "text": "SARCO"
+        },
+        {
+          "id": "a:LIBRARY:0940",
+          "text": "PLATF"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0946",
+      "pair": "object/category",
+      "value": "ID",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0942",
+          "text": "FACE "
+        },
+        {
+          "id": "a:LIBRARY:0943",
+          "text": "FACES"
+        },
+        {
+          "id": "a:LIBRARY:0944",
+          "text": "IDOL "
+        },
+        {
+          "id": "a:LIBRARY:0945",
+          "text": "STATU"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0950",
+      "pair": "object/category",
+      "value": "PT",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0947",
+          "text": "PIT  "
+        },
+        {
+          "id": "a:LIBRARY:0948",
+          "text": "HOLE "
+        },
+        {
+          "id": "a:LIBRARY:0949",
+          "text": "OPENI"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0954",
+      "pair": "object/category",
+      "value": "HU",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0951",
+          "text": "HUT  "
+        },
+        {
+          "id": "a:LIBRARY:0952",
+          "text": "HOUSE"
+        },
+        {
+          "id": "a:LIBRARY:0953",
+          "text": "SHACK"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0956",
+      "pair": "object/category",
+      "value": "BW",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0955",
+          "text": "BOWL "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0958",
+      "pair": "object/category",
+      "value": "CK",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0957",
+          "text": "CRACK"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0962",
+      "pair": "object/category",
+      "value": "SK",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0959",
+          "text": "UNDEA"
+        },
+        {
+          "id": "a:LIBRARY:0960",
+          "text": "MONST"
+        },
+        {
+          "id": "a:LIBRARY:0961",
+          "text": "SKELE"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0965",
+      "pair": "object/category",
+      "value": "UR",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0963",
+          "text": "URN  "
+        },
+        {
+          "id": "a:LIBRARY:0964",
+          "text": "POT  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0969",
+      "pair": "object/category",
+      "value": "PO",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0966",
+          "text": "POOL "
+        },
+        {
+          "id": "a:LIBRARY:0967",
+          "text": "WATER"
+        },
+        {
+          "id": "a:LIBRARY:0968",
+          "text": "REFLE"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0972",
+      "pair": "object/category",
+      "value": "LK",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0970",
+          "text": "LOCKS"
+        },
+        {
+          "id": "a:LIBRARY:0971",
+          "text": "LOCK "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0974",
+      "pair": "object/category",
+      "value": "KY",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0973",
+          "text": "KEY  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0979",
+      "pair": "object/category",
+      "value": "IJ",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0975",
+          "text": "IN   JEEP "
+        },
+        {
+          "id": "a:LIBRARY:0976",
+          "text": "INTO JEEP "
+        },
+        {
+          "id": "a:LIBRARY:0977",
+          "text": "INSIDJEEP "
+        },
+        {
+          "id": "a:LIBRARY:0978",
+          "text": "ENTERJEEP "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0984",
+      "pair": "object/category",
+      "value": "OJ",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0980",
+          "text": "OUT  JEEP "
+        },
+        {
+          "id": "a:LIBRARY:0981",
+          "text": "FROM JEEP "
+        },
+        {
+          "id": "a:LIBRARY:0982",
+          "text": "EXIT JEEP "
+        },
+        {
+          "id": "a:LIBRARY:0983",
+          "text": "LEAVEJEEP "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0986",
+      "pair": "object/category",
+      "value": "AB",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0985",
+          "text": "ALL  BUT  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0988",
+      "pair": "object/category",
+      "value": "A.",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0987",
+          "text": "ALL  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0990",
+      "pair": "object/category",
+      "value": "ON",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0989",
+          "text": "ON   "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:0992",
+      "pair": "object/category",
+      "value": "OF",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0991",
+          "text": "OFF  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1005",
+      "pair": "verb",
+      "value": "GT",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:0998",
+          "text": "GET  "
+        },
+        {
+          "id": "a:LIBRARY:0999",
+          "text": "GRAB "
+        },
+        {
+          "id": "a:LIBRARY:1000",
+          "text": "TAKE "
+        },
+        {
+          "id": "a:LIBRARY:1001",
+          "text": "PICK UP   "
+        },
+        {
+          "id": "a:LIBRARY:1002",
+          "text": "CARRY"
+        },
+        {
+          "id": "a:LIBRARY:1003",
+          "text": "KEEP "
+        },
+        {
+          "id": "a:LIBRARY:1004",
+          "text": "STEAL"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1011",
+      "pair": "verb",
+      "value": "DR",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1006",
+          "text": "DROP "
+        },
+        {
+          "id": "a:LIBRARY:1007",
+          "text": "SET  "
+        },
+        {
+          "id": "a:LIBRARY:1008",
+          "text": "PUT  "
+        },
+        {
+          "id": "a:LIBRARY:1009",
+          "text": "PLACE"
+        },
+        {
+          "id": "a:LIBRARY:1010",
+          "text": "DUMP "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1014",
+      "pair": "verb",
+      "value": "OF",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1012",
+          "text": "GIVE "
+        },
+        {
+          "id": "a:LIBRARY:1013",
+          "text": "OFFER"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1019",
+      "pair": "verb",
+      "value": "SY",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1015",
+          "text": "SAY  "
+        },
+        {
+          "id": "a:LIBRARY:1016",
+          "text": "SPEAK"
+        },
+        {
+          "id": "a:LIBRARY:1017",
+          "text": "SHOUT"
+        },
+        {
+          "id": "a:LIBRARY:1018",
+          "text": "YELL "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1023",
+      "pair": "verb",
+      "value": "LO",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1020",
+          "text": "LOOK "
+        },
+        {
+          "id": "a:LIBRARY:1021",
+          "text": "EXAMI"
+        },
+        {
+          "id": "a:LIBRARY:1022",
+          "text": "CHECK"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1025",
+      "pair": "verb",
+      "value": "RE",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1024",
+          "text": "READ "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1027",
+      "pair": "verb",
+      "value": "SR",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1026",
+          "text": "SEARC"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1030",
+      "pair": "verb",
+      "value": "OP",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1028",
+          "text": "OPEN "
+        },
+        {
+          "id": "a:LIBRARY:1029",
+          "text": "UNLOC"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1032",
+      "pair": "verb",
+      "value": "CL",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1031",
+          "text": "CLOSE"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1037",
+      "pair": "verb",
+      "value": "U.",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1033",
+          "text": "UP   "
+        },
+        {
+          "id": "a:LIBRARY:1034",
+          "text": "ASCEN"
+        },
+        {
+          "id": "a:LIBRARY:1035",
+          "text": "TOP  "
+        },
+        {
+          "id": "a:LIBRARY:1036",
+          "text": "U    "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1043",
+      "pair": "verb",
+      "value": "D.",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1038",
+          "text": "DOWN "
+        },
+        {
+          "id": "a:LIBRARY:1039",
+          "text": "DESCE"
+        },
+        {
+          "id": "a:LIBRARY:1040",
+          "text": "BOTTO"
+        },
+        {
+          "id": "a:LIBRARY:1041",
+          "text": "BASE "
+        },
+        {
+          "id": "a:LIBRARY:1042",
+          "text": "D    "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1045",
+      "pair": "verb",
+      "value": "IS",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1044",
+          "text": "INSER"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1048",
+      "pair": "verb",
+      "value": "PU",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1046",
+          "text": "PUSH "
+        },
+        {
+          "id": "a:LIBRARY:1047",
+          "text": "PRESS"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1051",
+      "pair": "verb",
+      "value": "MV",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1049",
+          "text": "MOVE "
+        },
+        {
+          "id": "a:LIBRARY:1050",
+          "text": "LIFT "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1054",
+      "pair": "verb",
+      "value": "US",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1052",
+          "text": "WEAR "
+        },
+        {
+          "id": "a:LIBRARY:1053",
+          "text": "USE  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1059",
+      "pair": "verb",
+      "value": "IN",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1055",
+          "text": "IN   "
+        },
+        {
+          "id": "a:LIBRARY:1056",
+          "text": "INTO "
+        },
+        {
+          "id": "a:LIBRARY:1057",
+          "text": "INSID"
+        },
+        {
+          "id": "a:LIBRARY:1058",
+          "text": "ENTER"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1064",
+      "pair": "verb",
+      "value": "OU",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1060",
+          "text": "OUT  "
+        },
+        {
+          "id": "a:LIBRARY:1061",
+          "text": "OUTSI"
+        },
+        {
+          "id": "a:LIBRARY:1062",
+          "text": "EXIT "
+        },
+        {
+          "id": "a:LIBRARY:1063",
+          "text": "LEAVE"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1067",
+      "pair": "verb",
+      "value": "FW",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1065",
+          "text": "FORWA"
+        },
+        {
+          "id": "a:LIBRARY:1066",
+          "text": "F    "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1070",
+      "pair": "verb",
+      "value": "BK",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1068",
+          "text": "BACK "
+        },
+        {
+          "id": "a:LIBRARY:1069",
+          "text": "B    "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1073",
+      "pair": "verb",
+      "value": "N.",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1071",
+          "text": "NORTH"
+        },
+        {
+          "id": "a:LIBRARY:1072",
+          "text": "N    "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1076",
+      "pair": "verb",
+      "value": "S.",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1074",
+          "text": "SOUTH"
+        },
+        {
+          "id": "a:LIBRARY:1075",
+          "text": "S    "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1079",
+      "pair": "verb",
+      "value": "E.",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1077",
+          "text": "EAST "
+        },
+        {
+          "id": "a:LIBRARY:1078",
+          "text": "E    "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1082",
+      "pair": "verb",
+      "value": "W.",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1080",
+          "text": "WEST "
+        },
+        {
+          "id": "a:LIBRARY:1081",
+          "text": "W    "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1084",
+      "pair": "verb",
+      "value": "NW",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1083",
+          "text": "NW   "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1086",
+      "pair": "verb",
+      "value": "SW",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1085",
+          "text": "SW   "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1088",
+      "pair": "verb",
+      "value": "NE",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1087",
+          "text": "NE   "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1090",
+      "pair": "verb",
+      "value": "SE",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1089",
+          "text": "SE   "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1093",
+      "pair": "verb",
+      "value": "L.",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1091",
+          "text": "LEFT "
+        },
+        {
+          "id": "a:LIBRARY:1092",
+          "text": "L    "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1096",
+      "pair": "verb",
+      "value": "R.",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1094",
+          "text": "RIGHT"
+        },
+        {
+          "id": "a:LIBRARY:1095",
+          "text": "R    "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1098",
+      "pair": "verb",
+      "value": "CL",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1097",
+          "text": "CLIMB"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1101",
+      "pair": "verb",
+      "value": "CI",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1099",
+          "text": "AROUN"
+        },
+        {
+          "id": "a:LIBRARY:1100",
+          "text": "CIRCL"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1103",
+      "pair": "verb",
+      "value": "LI",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1102",
+          "text": "LIGHT"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1110",
+      "pair": "verb",
+      "value": "..",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1104",
+          "text": "GO   "
+        },
+        {
+          "id": "a:LIBRARY:1105",
+          "text": "GOTO "
+        },
+        {
+          "id": "a:LIBRARY:1106",
+          "text": "APPRO"
+        },
+        {
+          "id": "a:LIBRARY:1107",
+          "text": "FOLLO"
+        },
+        {
+          "id": "a:LIBRARY:1108",
+          "text": "DRIVE"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1112",
+      "pair": "verb",
+      "value": "KI",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1111",
+          "text": "KICK "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1119",
+      "pair": "verb",
+      "value": "AT",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1113",
+          "text": "ATTAC"
+        },
+        {
+          "id": "a:LIBRARY:1114",
+          "text": "HIT  "
+        },
+        {
+          "id": "a:LIBRARY:1115",
+          "text": "KILL "
+        },
+        {
+          "id": "a:LIBRARY:1116",
+          "text": "FIGHT"
+        },
+        {
+          "id": "a:LIBRARY:1117",
+          "text": "BREAK"
+        },
+        {
+          "id": "a:LIBRARY:1118",
+          "text": "DESTR"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1121",
+      "pair": "verb",
+      "value": "SH",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1120",
+          "text": "SHOOT"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1123",
+      "pair": "verb",
+      "value": "EA",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1122",
+          "text": "EAT  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1126",
+      "pair": "verb",
+      "value": "WV",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1124",
+          "text": "WAVE "
+        },
+        {
+          "id": "a:LIBRARY:1125",
+          "text": "GESTU"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1128",
+      "pair": "verb",
+      "value": "PL",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1127",
+          "text": "PLAY "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1130",
+      "pair": "verb",
+      "value": "RM",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1129",
+          "text": "REMOV"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1132",
+      "pair": "verb",
+      "value": "DG",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1131",
+          "text": "DIG  "
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "id": "a:LIBRARY:1134",
+      "pair": "verb",
+      "value": "AK",
+      "patterns": [
+        {
+          "id": "a:LIBRARY:1133",
+          "text": "ASK  "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1676 @@
+{
+  "scope": "Fresh native parser and statue-head carrying boundaries",
+  "session": {
+    "command": [
+      "/usr/games/mame",
+      "apple2p",
+      "-noreadconfig",
+      "-rompath",
+      "/home/iolo/workspace/retro/a2x/mame/roms",
+      "-ramsize",
+      "48K",
+      "-sl0",
+      "",
+      "-sl4",
+      "",
+      "-sl6",
+      "diskiing",
+      "-flop1",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/parser-core-01/side-a.dsk",
+      "-console",
+      "-pluginspath",
+      "/usr/share/games/mame/plugins",
+      "-skip_gameinfo",
+      "-natural",
+      "-window",
+      "-nomouse",
+      "-homepath",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/parser-core-01",
+      "-cfg_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/parser-core-01/cfg_directory",
+      "-nvram_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/parser-core-01/nvram_directory",
+      "-snapshot_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/parser-core-01/snapshot_directory",
+      "-state_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/parser-core-01/state_directory",
+      "-diff_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/parser-core-01/diff_directory",
+      "-video",
+      "none",
+      "-sound",
+      "none",
+      "-autoboot_script",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/opening_replay.lua",
+      "-autoboot_delay",
+      "0",
+      "-nothrottle"
+    ],
+    "media": {
+      "a": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/pictures-core-03/mask-of-sun-a.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/parser-core-01/side-a.dsk",
+        "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+      },
+      "b": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/pictures-core-03/mask-of-sun-b.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/parser-core-01/side-b.dsk",
+        "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+      }
+    },
+    "headless": true,
+    "debug": false
+  },
+  "checks": [
+    {
+      "id": "ordered-command-sequence",
+      "pass": true
+    },
+    {
+      "id": "final-prompt",
+      "pass": true
+    },
+    {
+      "id": "no-death",
+      "pass": true
+    },
+    {
+      "id": "backspace-corrects-letter",
+      "pass": true,
+      "address": 592,
+      "length": 5,
+      "hashes": [
+        "c8fe5eb59add6a18090ced8774f315c1e6086a1e8e226dec38672ae110d3b8c6",
+        "c8fe5eb59add6a18090ced8774f315c1e6086a1e8e226dec38672ae110d3b8c6"
+      ]
+    },
+    {
+      "id": "backspace-protects-prompt",
+      "pass": true,
+      "address": 592,
+      "length": 5,
+      "hashes": [
+        "c8fe5eb59add6a18090ced8774f315c1e6086a1e8e226dec38672ae110d3b8c6",
+        "c8fe5eb59add6a18090ced8774f315c1e6086a1e8e226dec38672ae110d3b8c6"
+      ]
+    },
+    {
+      "id": "head-load-rejected",
+      "pass": true,
+      "expected": "Your load is too heavy.",
+      "checkpoints": [
+        "046-prompt-28"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "head-prevents-pickup",
+      "pass": true,
+      "expected": "You can't get anything else!",
+      "checkpoints": [
+        "052-prompt-34"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "head-taken-after-dropping",
+      "pass": true,
+      "expected": "The head of the idol feels strangely",
+      "checkpoints": [
+        "051-prompt-33"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "statue-replaced",
+      "pass": true,
+      "expected": "As soon as the head is replaced on the",
+      "checkpoints": [
+        "053-waiting-35"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "inventory-seen",
+      "pass": true,
+      "expected": "a loaded revolver",
+      "checkpoints": [
+        "008-waiting-06",
+        "010-waiting-07",
+        "013-waiting-09"
+      ],
+      "output_stream": true
+    },
+    {
+      "id": "slash-repeat-native-rejection",
+      "pass": true,
+      "expected": "I don't understand \"/\".",
+      "checkpoints": [
+        "005-prompt-03"
+      ],
+      "output_stream": true
+    }
+  ],
+  "pass": true,
+  "inputs": [
+    {
+      "reason": "pagination",
+      "time": 29.799999999863,
+      "command_index": 1,
+      "text": " "
+    },
+    {
+      "reason": "pagination",
+      "time": 32.899999999849,
+      "command_index": 1,
+      "text": " "
+    },
+    {
+      "reason": "LOOK",
+      "time": 35.999999999834,
+      "command_index": 1,
+      "text": "LOOK\r"
+    },
+    {
+      "reason": "/",
+      "time": 39.09999999982,
+      "command_index": 2,
+      "text": "/\r"
+    },
+    {
+      "reason": "LOOX\bK",
+      "time": 42.199999999806,
+      "command_index": 3,
+      "text": "LOOX\bK\r"
+    },
+    {
+      "reason": "\bLOOK",
+      "time": 45.299999999791,
+      "command_index": 4,
+      "text": "\bLOOK\r"
+    },
+    {
+      "reason": "LOOK AND INVENTORY",
+      "time": 48.399999999777,
+      "command_index": 5,
+      "text": "LOOK AND INVENTORY\r"
+    },
+    {
+      "reason": "pagination",
+      "time": 54.599999999749,
+      "command_index": 6,
+      "text": " "
+    },
+    {
+      "reason": "LOOK THEN INVENTORY",
+      "time": 57.699999999734,
+      "command_index": 6,
+      "text": "LOOK THEN INVENTORY\r"
+    },
+    {
+      "reason": "pagination",
+      "time": 63.899999999706,
+      "command_index": 7,
+      "text": " "
+    },
+    {
+      "reason": "LOOK",
+      "time": 66.999999999692,
+      "command_index": 7,
+      "text": "LOOK\r"
+    },
+    {
+      "reason": "INVENTORY",
+      "time": 70.099999999677,
+      "command_index": 8,
+      "text": "INVENTORY\r"
+    },
+    {
+      "reason": "pagination",
+      "time": 73.999999999659,
+      "command_index": 9,
+      "text": " "
+    },
+    {
+      "reason": "FERNAP",
+      "time": 77.099999999645,
+      "command_index": 9,
+      "text": "FERNAP\r"
+    },
+    {
+      "reason": "GET",
+      "time": 80.199999999631,
+      "command_index": 10,
+      "text": "GET\r"
+    },
+    {
+      "reason": "GET LAMP",
+      "time": 83.299999999617,
+      "command_index": 11,
+      "text": "GET LAMP\r"
+    },
+    {
+      "reason": "FERNAP GUN",
+      "time": 86.399999999602,
+      "command_index": 12,
+      "text": "FERNAP GUN\r"
+    },
+    {
+      "reason": "EXIT PLANE",
+      "time": 89.699999999587,
+      "command_index": 13,
+      "text": "EXIT PLANE\r"
+    },
+    {
+      "reason": "pagination",
+      "time": 102.99999999953,
+      "command_index": 14,
+      "text": " "
+    },
+    {
+      "reason": "pagination",
+      "time": 106.09999999951,
+      "command_index": 14,
+      "text": " "
+    },
+    {
+      "reason": "pagination",
+      "time": 109.1999999995,
+      "command_index": 14,
+      "text": " "
+    },
+    {
+      "reason": "GET MAP",
+      "time": 112.29999999948,
+      "command_index": 14,
+      "text": "GET MAP\r"
+    },
+    {
+      "reason": "ENTER JEEP",
+      "time": 115.39999999947,
+      "command_index": 15,
+      "text": "ENTER JEEP\r"
+    },
+    {
+      "reason": "pagination",
+      "time": 123.69999999943,
+      "command_index": 16,
+      "text": " "
+    },
+    {
+      "reason": "pagination",
+      "time": 126.79999999942,
+      "command_index": 16,
+      "text": " "
+    },
+    {
+      "reason": "W",
+      "time": 147.99999999932,
+      "command_index": 16,
+      "text": "W\r"
+    },
+    {
+      "reason": "pagination",
+      "time": 174.7999999992,
+      "command_index": 17,
+      "text": " "
+    },
+    {
+      "reason": "TAKE ALL",
+      "time": 177.89999999918,
+      "command_index": 17,
+      "text": "TAKE ALL\r"
+    },
+    {
+      "reason": "EXIT JEEP",
+      "time": 181.79999999916,
+      "command_index": 18,
+      "text": "EXIT JEEP\r"
+    },
+    {
+      "reason": "GO HUT",
+      "time": 184.89999999915,
+      "command_index": 19,
+      "text": "GO HUT\r"
+    },
+    {
+      "reason": "pagination",
+      "time": 193.49999999911,
+      "command_index": 20,
+      "text": " "
+    },
+    {
+      "reason": "GIVE FOOD",
+      "time": 196.59999999909,
+      "command_index": 20,
+      "text": "GIVE FOOD\r"
+    },
+    {
+      "reason": "pagination",
+      "time": 199.69999999908,
+      "command_index": 21,
+      "text": " "
+    },
+    {
+      "reason": "pagination",
+      "time": 206.39999999905,
+      "command_index": 21,
+      "text": " "
+    },
+    {
+      "reason": "EXIT HUT",
+      "time": 209.49999999904,
+      "command_index": 21,
+      "text": "EXIT HUT\r"
+    },
+    {
+      "reason": "pagination",
+      "time": 217.299999999,
+      "command_index": 22,
+      "text": " "
+    },
+    {
+      "reason": "pagination",
+      "time": 220.39999999899,
+      "command_index": 22,
+      "text": " "
+    },
+    {
+      "reason": "ENTER JEEP",
+      "time": 223.49999999897,
+      "command_index": 22,
+      "text": "ENTER JEEP\r"
+    },
+    {
+      "reason": "W",
+      "time": 226.59999999896,
+      "command_index": 23,
+      "text": "W\r"
+    },
+    {
+      "reason": "NW",
+      "time": 251.69999999884,
+      "command_index": 24,
+      "text": "NW\r"
+    },
+    {
+      "reason": "pagination",
+      "time": 275.49999999873,
+      "command_index": 25,
+      "text": " "
+    },
+    {
+      "reason": "pagination",
+      "time": 278.59999999872,
+      "command_index": 25,
+      "text": " "
+    },
+    {
+      "reason": "EXIT JEEP",
+      "time": 281.6999999987,
+      "command_index": 25,
+      "text": "EXIT JEEP\r"
+    },
+    {
+      "reason": "LOOK BEHIND STATUE",
+      "time": 284.79999999869,
+      "command_index": 26,
+      "text": "LOOK BEHIND STATUE\r"
+    },
+    {
+      "reason": "GET HEAD",
+      "time": 288.19999999867,
+      "command_index": 27,
+      "text": "GET HEAD\r"
+    },
+    {
+      "reason": "ENTER JEEP",
+      "time": 291.29999999866,
+      "command_index": 28,
+      "text": "ENTER JEEP\r"
+    },
+    {
+      "reason": "DROP ALL",
+      "time": 294.39999999864,
+      "command_index": 29,
+      "text": "DROP ALL\r"
+    },
+    {
+      "reason": "GET BOTTLE",
+      "time": 302.29999999861,
+      "command_index": 30,
+      "text": "GET BOTTLE\r"
+    },
+    {
+      "reason": "EXIT JEEP",
+      "time": 305.49999999859,
+      "command_index": 31,
+      "text": "EXIT JEEP\r"
+    },
+    {
+      "reason": "GET HEAD",
+      "time": 308.59999999858,
+      "command_index": 32,
+      "text": "GET HEAD\r"
+    },
+    {
+      "reason": "GET MAP",
+      "time": 312.39999999856,
+      "command_index": 33,
+      "text": "GET MAP\r"
+    },
+    {
+      "reason": "PLACE HEAD ON STATUE",
+      "time": 315.49999999855,
+      "command_index": 34,
+      "text": "PLACE HEAD ON STATUE\r"
+    },
+    {
+      "reason": "pagination",
+      "time": 320.59999999852,
+      "command_index": 35,
+      "text": " "
+    },
+    {
+      "reason": "pagination",
+      "time": 351.39999999838,
+      "command_index": 35,
+      "text": " "
+    },
+    {
+      "reason": "ENTER JEEP",
+      "time": 354.49999999837,
+      "command_index": 35,
+      "text": "ENTER JEEP\r"
+    }
+  ],
+  "checkpoints": [
+    {
+      "name": "001-waiting-01",
+      "time": 29.799999999863,
+      "registers": {
+        "GENPC": 64684,
+        "A": 172,
+        "SP": 504,
+        "PC": 64682,
+        "IR": 233,
+        "P": 181,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64682,
+        "CURFLAGS": 181
+      },
+      "lines": [
+        "Your search for the Mask of the Sun has",
+        "brought you to Mexico, the home of the",
+        "Aztec culture.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "002-waiting-01",
+      "time": 32.899999999849,
+      "registers": {
+        "GENPC": 64684,
+        "A": 85,
+        "SP": 504,
+        "PC": 64682,
+        "IR": 233,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64682,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "The plane you chartered in Mexico City",
+        "has landed at a small airfield near",
+        "the ruins spoken of by Prof. de Perez.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "003-prompt-01",
+      "time": 35.999999999834,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "004-prompt-02",
+      "time": 39.09999999982,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "005-prompt-03",
+      "time": 42.199999999806,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "I don't understand \"/\".",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "006-prompt-04",
+      "time": 45.299999999791,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "007-prompt-05",
+      "time": 48.399999999777,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "008-waiting-06",
+      "time": 54.599999999749,
+      "registers": {
+        "GENPC": 64682,
+        "A": 137,
+        "SP": 500,
+        "PC": 64682,
+        "IR": 233,
+        "P": 181,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64682,
+        "CURFLAGS": 181
+      },
+      "lines": [
+        "You have:",
+        "a box of matches",
+        "a knife",
+        "a bottle of pills",
+        "an ancient amulet",
+        "a loaded revolver",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "009-prompt-06",
+      "time": 57.699999999734,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "OK>^"
+      ]
+    },
+    {
+      "name": "010-waiting-07",
+      "time": 63.899999999706,
+      "registers": {
+        "GENPC": 64684,
+        "A": 32,
+        "SP": 500,
+        "PC": 64682,
+        "IR": 233,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64682,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "You have:",
+        "a box of matches",
+        "a knife",
+        "a bottle of pills",
+        "an ancient amulet",
+        "a loaded revolver",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "011-prompt-07",
+      "time": 66.999999999692,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "OK>^"
+      ]
+    },
+    {
+      "name": "012-prompt-08",
+      "time": 70.099999999677,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The ride was bumpy, but you made it.",
+        "Looking out the doorway you see a worn",
+        "runway where two figures are waiting.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "013-waiting-09",
+      "time": 73.999999999659,
+      "registers": {
+        "GENPC": 64684,
+        "A": 44,
+        "SP": 500,
+        "PC": 64684,
+        "IR": 208,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64684,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "You have:",
+        "a box of matches",
+        "a knife",
+        "a bottle of pills",
+        "an ancient amulet",
+        "a loaded revolver",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "014-prompt-09",
+      "time": 77.099999999645,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3263,
+        "IR": 16,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3263,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "OK>^"
+      ]
+    },
+    {
+      "name": "015-prompt-10",
+      "time": 80.199999999631,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "I don't understand \"FERNAP\".",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "016-prompt-11",
+      "time": 83.299999999617,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3263,
+        "IR": 16,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3263,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "I don't recognize an object",
+        "in \"GET\".",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "017-prompt-12",
+      "time": 86.399999999602,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3263,
+        "IR": 16,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3263,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "You don't see a lantern",
+        "anywhere around here.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "018-prompt-13",
+      "time": 89.699999999587,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3263,
+        "IR": 16,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3263,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "I don't recognize a verb",
+        "in \"FERNAP GUN\".",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "019-waiting-14",
+      "time": 102.99999999953,
+      "registers": {
+        "GENPC": 64684,
+        "A": 115,
+        "SP": 504,
+        "PC": 64684,
+        "IR": 208,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64684,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "You're standing on the airfield with",
+        "Professor de Perez and his assistant.",
+        "A dirt road leads north into the jungle.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "020-waiting-14",
+      "time": 106.09999999951,
+      "registers": {
+        "GENPC": 64682,
+        "A": 2,
+        "SP": 504,
+        "PC": 64682,
+        "IR": 233,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64682,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "\"I brought you this map of three places",
+        "that might contain the fabled mask. All",
+        "the supplies are in the jeep.\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "021-waiting-14",
+      "time": 109.1999999995,
+      "registers": {
+        "GENPC": 64684,
+        "A": 181,
+        "SP": 502,
+        "PC": 64684,
+        "IR": 208,
+        "P": 181,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64684,
+        "CURFLAGS": 181
+      },
+      "lines": [
+        "\"My student Raoul will accompany you,",
+        "I'm sure you will find his knowledge of",
+        "ancient languages very valuable.\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "022-prompt-14",
+      "time": 112.29999999948,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3263,
+        "IR": 16,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3263,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Nearby you see:",
+        "the jeep",
+        "a cryptic map",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "023-prompt-15",
+      "time": 115.39999999947,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "You pick up a cryptic map.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "024-waiting-16",
+      "time": 123.69999999943,
+      "registers": {
+        "GENPC": 64682,
+        "A": 108,
+        "SP": 502,
+        "PC": 64684,
+        "IR": 208,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64684,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "The professor bids \"Adios amigos!\" as he",
+        "walks toward the plane. Raoul climbs",
+        "into the jeep next to you.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "025-waiting-16",
+      "time": 126.79999999942,
+      "registers": {
+        "GENPC": 64684,
+        "A": 77,
+        "SP": 502,
+        "PC": 64682,
+        "IR": 233,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64682,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "\"The road north leads to the ruins.\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "026-prompt-16",
+      "time": 147.99999999932,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "You are at a branch, the road continues",
+        "to the west, northwest, and southeast.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "027-waiting-17",
+      "time": 174.7999999992,
+      "registers": {
+        "GENPC": 64684,
+        "A": 93,
+        "SP": 504,
+        "PC": 64682,
+        "IR": 233,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64682,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "Near the side of the road you see a",
+        "small hut. You hear music coming from",
+        "inside.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "028-prompt-17",
+      "time": 177.89999999918,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The road continues east and west.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "029-prompt-18",
+      "time": 181.79999999916,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "You pick up a length of rope.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "030-prompt-19",
+      "time": 184.89999999915,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Ah... It feels good to stretch the legs.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "031-waiting-20",
+      "time": 193.49999999911,
+      "registers": {
+        "GENPC": 64684,
+        "A": 65,
+        "SP": 504,
+        "PC": 64684,
+        "IR": 208,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64684,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "Inside the hut you see an old woman",
+        "playing a flute. She pauses as you",
+        "enter and looks up at you. . .",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "032-prompt-20",
+      "time": 196.59999999909,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "\"Help an old woman who is poor and",
+        " hungry. Kindness is always repaid",
+        " by the gods.\"",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "033-waiting-21",
+      "time": 199.69999999908,
+      "registers": {
+        "GENPC": 64682,
+        "A": 89,
+        "SP": 502,
+        "PC": 64684,
+        "IR": 208,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64684,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "\"In exchange for your kindness,",
+        " please take this flute.",
+        " It may help you at some time . . .\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "034-waiting-21",
+      "time": 206.39999999905,
+      "registers": {
+        "GENPC": 64684,
+        "A": 111,
+        "SP": 502,
+        "PC": 64682,
+        "IR": 233,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64682,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "\"Remember, music soothes the savage",
+        " beast.\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "035-prompt-21",
+      "time": 209.49999999904,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The woman disappears, leaving you",
+        "alone, mystified.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "036-waiting-22",
+      "time": 217.299999999,
+      "registers": {
+        "GENPC": 64684,
+        "A": 17,
+        "SP": 504,
+        "PC": 64682,
+        "IR": 233,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64682,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "Near the side of the road you see a",
+        "small hut.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "037-waiting-22",
+      "time": 220.39999999899,
+      "registers": {
+        "GENPC": 64682,
+        "A": 18,
+        "SP": 502,
+        "PC": 64682,
+        "IR": 233,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64682,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "The road continues east and west.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "038-prompt-22",
+      "time": 223.49999999897,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Nearby you see:",
+        "the jeep",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "039-prompt-23",
+      "time": 226.59999999896,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Ok, you're in the jeep.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "040-prompt-24",
+      "time": 251.69999999884,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "You are at a branch, the road continues",
+        "to the west, northwest, and east.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "041-waiting-25",
+      "time": 275.49999999873,
+      "registers": {
+        "GENPC": 64682,
+        "A": 2,
+        "SP": 504,
+        "PC": 64682,
+        "IR": 233,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64682,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "Near the road, you see a stone statue.",
+        "Raoul seems to recognize it.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "042-waiting-25",
+      "time": 278.59999999872,
+      "registers": {
+        "GENPC": 64684,
+        "A": 8,
+        "SP": 502,
+        "PC": 64684,
+        "IR": 208,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64684,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "\"It's an idol of the Aztec wizard god",
+        "Tezcatlipoca. Prof. DePerez has studied",
+        "this cult extensively.\"",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "043-prompt-25",
+      "time": 281.6999999987,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Nearby you see:",
+        "a carved stone head",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "044-prompt-26",
+      "time": 284.79999999869,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Ah... It feels good to stretch the legs.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "045-prompt-27",
+      "time": 288.19999999867,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3263,
+        "IR": 16,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3263,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Looking very closely, you notice an",
+        "Aztec word carved into its chest. Raoul",
+        "translates it as \"XOTZIL\".",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "046-prompt-28",
+      "time": 291.29999999866,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Your load is too heavy. You'll have to",
+        "drop some items.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "047-prompt-29",
+      "time": 294.39999999864,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3263,
+        "IR": 16,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3263,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Ok, you're in the jeep.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "048-prompt-30",
+      "time": 302.29999999861,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3263,
+        "IR": 16,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3263,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "You set a flute",
+        "into the jeep.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "049-prompt-31",
+      "time": 305.49999999859,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Taken from the jeep.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "050-prompt-32",
+      "time": 308.59999999858,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Ah... It feels good to stretch the legs.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "051-prompt-33",
+      "time": 312.39999999856,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "The head of the idol feels strangely",
+        "warm, almost as if alive.",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "052-prompt-34",
+      "time": 315.49999999855,
+      "registers": {
+        "GENPC": 3263,
+        "A": 0,
+        "SP": 503,
+        "PC": 3263,
+        "IR": 16,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3263,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "You can't get anything else!",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "053-waiting-35",
+      "time": 320.59999999852,
+      "registers": {
+        "GENPC": 64684,
+        "A": 52,
+        "SP": 502,
+        "PC": 64684,
+        "IR": 208,
+        "P": 53,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64684,
+        "CURFLAGS": 53
+      },
+      "lines": [
+        "As soon as the head is replaced on the",
+        "body, the idol begins to tremble.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "054-waiting-35",
+      "time": 351.39999999838,
+      "registers": {
+        "GENPC": 64684,
+        "A": 129,
+        "SP": 502,
+        "PC": 64684,
+        "IR": 208,
+        "P": 181,
+        "Y": 0,
+        "X": 0,
+        "CURPC": 64684,
+        "CURFLAGS": 181
+      },
+      "lines": [
+        "You are in a large clearing. The road",
+        "continues to the south, and northwest.",
+        "[ waiting ]"
+      ]
+    },
+    {
+      "name": "055-prompt-35",
+      "time": 354.49999999837,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Nearby you see:",
+        "the jeep",
+        "OK>^"
+      ]
+    },
+    {
+      "name": "056-prompt-36",
+      "time": 357.59999999835,
+      "registers": {
+        "GENPC": 3260,
+        "A": 0,
+        "SP": 503,
+        "PC": 3260,
+        "IR": 44,
+        "P": 55,
+        "Y": 3,
+        "X": 0,
+        "CURPC": 3260,
+        "CURFLAGS": 55
+      },
+      "lines": [
+        "Ok, you're in the jeep.",
+        "OK>^"
+      ]
+    }
+  ],
+  "output_character_count": 6953,
+  "output_text": "     BR0DERBUND SOFTWARE presents:\r                  By\r               ULTRASOFT\r   copyright (c) 1982   Release 2.1\rYour search for the Mask of the Sun has\rbrought you to Mexico, the home of the\rAztec culture.\r[ waiting ]\rThe plane you chartered in Mexico City\rhas landed at a small airfield near\rthe ruins spoken of by Prof. de Perez.\r[ waiting ]\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    LOOK\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    /\rI don't understand \"/\".\rOK>                                    LOOX\bK\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    LOOK\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    LOOK AND INVENTORY\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rYou have:\r\ra box of matches\ra knife\ra bottle of pills\ran ancient amulet\ra loaded revolver\r[ waiting ]\rOK>                                    LOOK THEN INVENTORY\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rYou have:\r\ra box of matches\ra knife\ra bottle of pills\ran ancient amulet\ra loaded revolver\r[ waiting ]\rOK>                                    LOOK\rThe ride was bumpy, but you made it.\rLooking out the doorway you see a worn\rrunway where two figures are waiting.\rOK>                                    INVENTORY\rYou have:\r\ra box of matches\ra knife\ra bottle of pills\ran ancient amulet\ra loaded revolver\r[ waiting ]\rOK>                                    FERNAP\rI don't understand \"FERNAP\".\rOK>                                    GET\rI don't recognize an object\rin \"GET\".\rOK>                                    GET LAMP\rYou don't see a lantern\ranywhere around here.\rOK>                                    FERNAP GUN\rI don't recognize a verb\rin \"FERNAP GUN\".\rOK>                                    EXIT PLANE\rYou leave the plane and approach the    two men.\rYou're standing on the airfield with    Professor de Perez and his assistant.   A dirt road leads north into the jungle.\r[ waiting ]\r\"I brought you this map of three places that might contain the fabled mask. All the supplies are in the jeep.\"\r[ waiting ]\r\"My student Raoul will accompany you,   I'm sure you will find his knowledge of ancient languages very valuable.\"\r[ waiting ]\rNearby you see:\rthe jeep\ra cryptic map\rOK>                                    GET MAP\rYou pick up a cryptic map.\rOK>                                    ENTER JEEP\rThe professor bids \"Adios amigos!\" as hewalks toward the plane. Raoul climbs    into the jeep next to you.\r[ waiting ]\r\"The road north leads to the ruins.\"\r[ waiting ]\rYou are at a branch, the road continues to the west, northwest, and southeast.\r\"Which way should we go, Senor?\"\rOK>                                    W\rNear the side of the road you see a\rsmall hut. You hear music coming from\rinside.\r[ waiting ]\rThe road continues east and west.\rOK>                                    TAKE ALL\rYou pick up a shovel.\rYou pick up a lantern.\rYou pick up tasty food.\rYou pick up a length of rope.\rOK>                                    EXIT JEEP\rAh... It feels good to stretch the legs.\rOK>                                    GO HUT\rYou approach the hut on foot.\rInside the hut you see an old woman\rplaying a flute. She pauses as you\renter and looks up at you. . .\r[ waiting ]\r\"Help an old woman who is poor and\r hungry. Kindness is always repaid\r by the gods.\"\rOK>                                    GIVE FOOD\r\"In exchange for your kindness,\r please take this flute. \r It may help you at some time . . .\"\r[ waiting ]\r\"Remember, music soothes the savage\r beast.\"\r\"Remember, music soothes the savage\r beast.\"\r[ waiting ]\rThe woman disappears, leaving you\ralone, mystified.\rOK>                                    EXIT HUT\rNear the side of the road you see a\rsmall hut. \r[ waiting ]\rThe road continues east and west.\r[ waiting ]\rNearby you see:\rthe jeep\rOK>                                    ENTER JEEP\rOk, you're in the jeep.\rOK>                                    W\rYou move off in that direction.\rYou are at a branch, the road continues to the west, northwest, and east.\r\"Which way should we go, Senor?\"\rOK>                                    NW\rNear the road, you see a stone statue.\rRaoul seems to recognize it.\r[ waiting ]\r\"It's an idol of the Aztec wizard god   Tezcatlipoca. Prof. DePerez has studied this cult extensively.\"\r[ waiting ]\rNearby you see:\ra carved stone head\rOK>                                    EXIT JEEP\rAh... It feels good to stretch the legs.\rOK>                                    LOOK BEHIND STATUE\rLooking very closely, you notice an\rAztec word carved into its chest. Raoul translates it as \"XOTZIL\".\rOK>                                    GET HEAD\rYour load is too heavy. You'll have to\rdrop some items.\rOK>                                    ENTER JEEP\rOk, you're in the jeep.\rOK>                                    DROP ALL\rYou set a shovel \rinto the jeep.\rYou set a lantern \rinto the jeep.\rYou set a box of matches \rinto the jeep.\rYou set a knife \rinto the jeep.\rYou set a bottle of pills \rinto the jeep.\rYou set a cryptic map \rinto the jeep.\rYou set an ancient amulet \rinto the jeep.\rYou set a loaded revolver \rinto the jeep.\rYou set a length of rope \rinto the jeep.\rYou set a flute \rinto the jeep.\rOK>                                    GET BOTTLE\rTaken from the jeep.\rOK>                                    EXIT JEEP\rAh... It feels good to stretch the legs.\rOK>                                    GET HEAD\rThe head of the idol feels strangely\rwarm, almost as if alive.\rOK>                                    GET MAP\rYou can't get anything else!\rOK>                                    PLACE HEAD ON STATUE\rAs soon as the head is replaced on the  body, the idol begins to tremble.\r[ waiting ]\rAs you step away, the idol begins an    amazing transformation.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rThe jaguar has blue eyes! It pauses for\ra moment then walks off into the jungle.\rYou are in a large clearing. The road   continues to the south, and northwest.\r[ waiting ]\rNearby you see:\rthe jeep\rOK>                                    ENTER JEEP\rOk, you're in the jeep.\rOK>                                    "
+}

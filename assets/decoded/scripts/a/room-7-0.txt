@@ -1,0 +1,45 @@
+.S N=7
+.L L,TEMPLE1
+.S P=3-P
+.C 1,P,0
+.B TMPST
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "You're at the temple's base. There are  steps leading up to the top.
+.$ P
+.!HERE
+!LOOK
+.P "You are near the temple's steps.
+.P "The path leads back to the jeep.
+GO   JEEP 
+%OU..
+%BK..
+%..RD
+%..PA
+%E...
+.!CLRT
+.P "Chicken!
+.3 ROOM 5.1  
+.!GOTO
+%CLST
+%CLPY
+%U...
+.!CLRT
+.P "You carefully climb the steps.
+.3 ROOM 8.0  
+.!GOTO
+%LOPY
+.!CLRT
+.P "It's small and made of dark stone, thereappears to be an entrance on top.
+%..PY
+.!CLRT
+.P "You're already there.
+!INVD
+.!CLRT
+.P "The jungle becomes too thick to pass    through. You give up and return to the  steps.
+%LOST
+.!CLRT
+.P "They look safe enough.
+@@@@@

@@ -1,0 +1,47 @@
+.S N=5
+.S P=3-P
+.C 1,P,0
+.L L,JEEP ALON
+.B JEEP 
+.S V=P
+.D 
+.B JEPAL
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "The jeep awaits you near the road,
+.P "which continues to the east and curves  around to the southeast.
+.$ P
+.!HERE
+!LOOK
+.P "You are near a path to a ruined temple.
+.!MORE
+.P "The road continues to the east and      curves around to the southeast.
+%SE..
+.S GE(4)=1
+.I TL(10):6
+.T 3 ROOM 6.0  
+.E 3 ROOM 6.2  
+.!LEAV
+%E...
+.S GE(4)=1
+.S GE(5)=3
+.3 ROOM 3.0  
+.!LEAV
+%..PY
+%..PA
+%..ST
+%W...
+.!CLRT
+.I TC(2):0
+.T J +4
+.P "You turn around and walk back toward thetemple.
+.3 ROOM 7.0  
+.!GOTO
+.P "The pathway is far too narrow to use thejeep.
+%LOPY
+.!CLRT
+.P "It's small and made of dark stone, but  you can't see any details.
+@@@@@
+

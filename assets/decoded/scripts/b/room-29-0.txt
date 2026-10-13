@@ -1,0 +1,31 @@
+.S N=29
+.L L,STAIRS
+.S P=3-P
+.C 1,P,0
+.B STRBM
+.S V=P
+.D 
+._ P
+.!CLRT
+.!LOOK
+.!HERE
+!LOOK
+.P "You are at the bottom of the stairs.
+.P "The tunnel continues forward.
+.$ P
+SEARC
+.!CLRT
+.P "After searching for a while you find
+.P "nothing unusual.
+%FW..
+.P "You enter the labyrinth.
+.3 ROOM 30.0 
+.S GE(6)=12
+.!TUNL
+%U...
+%U.ST
+.P "You climb the stairs.
+.3 ROOM 28.0 
+.!GOTO
+@@@@@
+

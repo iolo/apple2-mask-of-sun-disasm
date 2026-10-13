@@ -1,0 +1,111 @@
+.S N=14
+.L L,CRYPT-TOT
+.S P=3-P
+.C 1,P,0
+.B BLDRA
+.S V=P
+.D 
+.B BLDRM
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "As you enter the room you hear a
+.P "rumbling sound. You see an enormous
+.P "boulder teetering on a ramped pedestal.
+.$ P
+.S P=3-P
+.C 1,P,0
+.B BLDRB
+.S V=P
+.D 
+.B BLDRM
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "As you enter the room you hear a
+.P "rumbling sound. You see an enormous
+.P "boulder teetering on a ramped pedestal.
+.P "OK>^
+.!TETR
+!HERE
+._ P
+!TETR
+.S P=3-P
+._ P
+.V 15
+.P "OK>^
+.S P=3-P
+.$ P
+.S A=0
+.S A=A++
+.W 
+.I Q>127
+.T J +4
+.I A<10
+.T J -5
+.J -9
+._ P
+!LOOK
+.P "You are in a room with an enormous,
+.P "unstable boulder, perched on a ramp,
+.P "ready to roll down and crush you!
+.S P=3-P
+.!CLRT
+._ P
+.P "You are in a room with an enormous,
+.P "unstable boulder, perched on a ramp,
+.P "ready to roll down and crush you!
+.P "OK>^
+.!TETR
+LOOK BOULD
+EXAMIBOULD
+SEARCBOULD
+.!CLRT
+.P "It looks like it may become your
+.P "headstone at any moment!
+.S P=3-P
+.!CLRT
+._ P
+.P "It looks like it may become your
+.P "headstone at any moment!
+.V 15
+.P "OK>^
+.!TETR
+%LOBW
+%RE12
+%LO12
+%LO13
+%LOEQ
+%..EQ
+.P "Death looms over you and you want to
+.P "look at artifacts !?
+.S P=3-P
+.!CLRT
+._ P
+.P "Death looms over you and you want to
+.P "look at artifacts !?
+.V 15
+.P "OK>^
+.!TETR
+BOULD
+.!CLRT
+.P "Better not get too close, it may
+.P "go at any time!
+.S P=3-P
+.!CLRT
+._ P
+.P "Better not get too close, it may
+.P "go at any time!
+.V 15
+.P "OK>^
+.!TETR
+%BK..
+%OU..
+.P "You beat a hasty retreat!
+.3 ROOM 13.0 
+.S GE(6)=6
+.!TUNL
+@@@@@
+

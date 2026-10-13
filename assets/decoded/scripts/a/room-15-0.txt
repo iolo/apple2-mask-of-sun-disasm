@@ -1,0 +1,127 @@
+.S N=15
+.S TL(18)=255
+.S NV(15)=0
+.L L,CRYPT-TOT
+.!DRAW
+._ P
+.!CLRT
+.I N1(15):0
+.T P "You enter a secret crypt which contains
+.T P "three stone sarcophagi of Aztec design.
+.E P "You are back in the crypt.
+.E I N0(15)<1
+.E P "The stone cover has been replaced!!
+.S N1(15)=1
+.I N0(15):1
+.T S N0(15)=0
+.$ P
+.!HERE
+!LOOK
+%LOAL
+LOOK APPAR
+.!CLRT
+.I N0(15):1
+.T P "You stare transfixed at the apparition.
+.T P "Raoul edges toward the door.
+.E P "You see three sarcophagi covered with
+.E P "carved stone slabs. There is a single
+.E P "passage leading out.
+SEARC
+%MVAL
+%OPAL
+%RMAL
+.!CLRT
+.I N0(15):1
+.T P "With an ethereal moaning, the spirit
+.T P "blocks your movement!
+.T J -5
+.I N0(15):2
+.T P "You find nothing else.
+.T J -8
+.P "You attempt to move the covering stones,two of the slabs are immovable, even
+.P "with Raoul's help.
+.!MORE
+.P "The third cover moves with the sound of scraping stone.
+.S SV(4)=0
+.S SV(6)=30
+.S SV(7)=130
+.I E:0
+.T N N
+.!DRAW
+.R P
+.B APPAR
+.S V=P
+.D 
+.R P
+.!MORE
+._ P
+.P "You feel a presence. Suddenly, a ghostlyapparition takes form.
+.$ P
+.S N0(15)=1
+.!TIME
+%GTBW
+.I TL(18):15
+.E !VAGR
+.T S L=18
+.T S O=3
+.T %GT..
+ASK  SPIRI
+ASK  APPAR
+ASK  GHOST
+.!CLRT
+.I N0(15)#1
+.T P "Ask what?
+.T J -4
+.P ""BEWARE THE UNDEAD GUARDIANS! NO WEAPON
+.P " CAN HARM THEM. ONLY THE SYMBOL OF THE
+.P " POWER OF THE SUN MAY VANQUISH THEM!"
+.S NV(15)=210
+.!TIME
+%OU..
+%BK..
+%..TU
+.I N0(15):1
+.T P "Raoul runs from the room, screaming,
+.T P "with you hot on his heels.
+.S GE(6)=2
+.3 ROOM 13.0 
+.!TUNL
+!TIME
+.S R=0
+.I N0(15)#1
+.T J -3
+.V 15
+.P "OK>^
+.S NV(15)=NV(15)++
+.W 
+.I NV(15)>250
+.T J +4
+.I Q<128
+.T J -5
+%TEST
+.!DRAW
+.S K=P
+.S P=3-P
+.!CLRT
+.S N0(15)=2
+.P "The apparition fades. Its power drained,it dissipates like smoke. In the
+.P "sepulcher you see a gleam of gold!
+.C 0,K,143
+.V 12
+._ K
+.P "The apparition fades. Its power drained,it dissipates like smoke. In the
+.P "sepulcher you see a gleam of gold!
+.!XFRM
+.S TL(18)=15
+.!HERE
+!DRAW
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B CRYPT
+.S V=P
+.D 
+@@@@@
+

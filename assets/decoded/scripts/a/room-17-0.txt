@@ -1,0 +1,149 @@
+.S N=17
+.S N0(17)=0
+.L L,SKEL RM
+.!DRAW
+._ P
+.P "You enter a room containing an altar    guarded by two skeletal warriors. On thealtar is a silver bowl.
+.$ P
+.!MORE
+.P "The only exit is behind you.
+.!HERE
+!LOOK
+.P "You are in a room with an altar;
+.I N0(17):0
+.T P " guarded by two skeletal warriors.
+.E P ".
+.P "The only exit is back behind you.
+%GTA.
+%GTAB
+%LOEQ
+%..EQ
+.P "That doesn't work here.
+%LOBW
+%LO12
+%RE12
+%LO13
+.I L:0
+.E I L:17
+.T J +10
+.I N0(17):2
+.T P "You better keep dodging the spear and   stop fooling around!
+.E %LO23
+%GTBW
+.I L:0
+.E I L:17
+.T J +3
+.%GT..
+!!!!!
+.I N0(17)#4
+.T J +7
+.S L=17
+.%GT..
+.P "Raoul leading, you run from the room.
+.3 ROOM 16.0 
+.!TUNL
+!!!!!
+.I N0(17):2
+.T P "The skeletons block your way.
+.T J -3
+.P "As you move to grab the bowl, Raoul
+.P "yells, "Look out, Senor! The skeletons
+.P "are moving!"
+.S N0(17)=1
+.!DRAW
+.!MORE
+._ P
+.P "While Raoul fends one off with his
+.P "machete, the other monster jabs at
+.P "you with its spear!
+.$ P
+.!MORE
+.P "What will you do ?!
+.S N0(17)=2
+.S NV(17)=P
+.!DRAW
+._ P
+.P "What will you do ?!
+.$ P
+.!WAIT
+%AT..
+.P "That has no effect!
+%ATSK
+%AT13
+.I L#13
+.T P "That seems to have no effect!
+.T J -3
+.S N0(17)=3
+.!DRAW
+._ P
+.P "The amulet strikes the ghoul with
+.P "a flash of light and the sound of
+.P "breaking bones!
+.C 1,3-P,0
+.$ P
+.!MORE
+.P "The skeletons disintegrate!
+.P "You breathe a sigh of relief.
+.S N0(17)=4
+.!DRAW
+._ P
+.P "The skeletons disintegrate!
+.P "You breathe a sigh of relief.
+.$ P
+!TIME
+.I N0(17)#2
+.T J -2
+.I N1(17)>0
+.T !MORE
+.S P=3-P
+._ P
+.!CLRT
+.P "What will you do ?!
+.V 15
+.P "OK>^
+.$ P
+.I P#NV(17)
+.T S B=12
+.E S B=0
+.S N1(17)=N1(17)++
+.S B=B++
+.W 
+.I B>20
+.T J -14
+.I N1(17)>10
+.T J +4
+.I Q<128
+.T J -7
+!!!!!
+.!CLRT
+.P "It got you !!
+.!WAIT
+.!DEAD
+%OU..
+%BK..
+.P "You exit, leaving a fortune in silver.
+.3 ROOM 16.0 
+.!TUNL
+!DRAW
+.S P=3-P
+.C 1,P,0
+.I N0(17):0
+.E I N0(17):4
+.T B SKELA
+.I N0(17):1
+.T B SKEL1
+.I N0(17):2
+.T B SKEL2
+.I N0(17):3
+.T B SKEL3
+.S V=P
+.D 
+.I N0(17):0
+.T R P
+.T B SKELO
+.T S V=P
+.T D 
+.T R P
+.!CLRT
+@@@@@
+

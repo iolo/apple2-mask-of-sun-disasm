@@ -1,0 +1,60 @@
+.S N=45
+.S N0(45)=0
+.L L,INF PSGS
+.S P=3-P
+.C 1,P,0
+.B INFPB
+.S V=P
+.D 
+.!LOOK
+.!HERE
+!LOOK
+._ P
+.!CLRT
+.I N0(45):0
+.T P "Ahead of you the passage leads to
+.T P "the outside. Just a few feet more
+.T P "to freedom!!
+.I N0(45):1
+.T P "The passage continues forward.
+.I N0(45)>1
+.T P "The passage seems unusually long. . .
+.$ P
+%FW..
+%OU..
+.I TL(23):254
+.T P "You remove the mask.
+.T S TL(23)=255
+.S L=0
+.S L=L++
+.S P=3-P
+.C 1,P,0
+.B INFPA
+.S V=P
+.D 
+.I TL(23):254
+.T R P
+.$ P
+.W 
+.W 
+.S P=3-P
+.C 1,P,0
+.B INFPB
+.S V=P
+.D 
+.I TL(23):254
+.T R P
+.W 
+.W 
+.$ P
+.I L<5
+.T J -22
+.S N0(45)=N0(45)+1
+.!LOOK
+.!HERE
+%BK..
+.3 ROOM 44.9 
+.S GE(6)=6
+.!TUNL
+@@@@@
+

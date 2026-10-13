@@ -1,0 +1,81 @@
+.S F=N
+.S N=24
+.L L,GEO+STRS
+.S P=3-P
+.C 1,P,0
+.I F:26
+.T B OPENL
+.E B DOORL
+.S V=P
+.D 
+.B GEORM
+.S V=P
+.D 
+.I F:25
+.T B OPENR
+.E B DOORR
+.S V=P
+.D 
+.B RTWAL
+.S V=P
+.D 
+.B BATSH
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "You are back in the guano room.
+.$ P
+.!HERE
+!LOOK
+%LOEN
+.P "The door is closed. It has a metal
+.P "plate attached to it. There is a hole
+.P "in the plate, perhaps for a key.
+%FW..
+.P "You continue forward.
+.I F:25
+.T !LGHT
+.E !WEBS
+%BK..
+.P "You turn around and go back.
+.I F:25
+.T !WEBS
+.E !LGHT
+%L...
+.I F:25
+.T !DOOR
+.E !EXIT
+%R...
+.I F:25
+.T !EXIT
+.E !DOOR
+!DOOR
+%..EN
+.P "The door prevents your entrance.
+.P "It appears to be locked tight.
+!EXIT
+.P "You exit the pyramid.
+.S GE(6)=2
+.3 ROOM 23.1 
+.!TUNL
+!LGHT
+.S GE(6)=10
+.3 ROOM 26.0 
+.!TUNL
+!WEBS
+.S GE(6)=20
+.3 ROOM 25.0 
+.!TUNL
+SEARCFLOOR
+.!CLRT
+.P "Don't you know what 'guano' is? BLECH!
+%USKY
+%OPEN
+%OPLK
+.I L:0
+.T P "You must specify which key to use.
+.T J -3
+.P "The key doesn't work in this lock.
+@@@@@
+

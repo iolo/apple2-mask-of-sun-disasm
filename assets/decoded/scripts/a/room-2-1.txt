@@ -1,0 +1,23 @@
+.S N=2
+.S TL(1)=255
+.S P=3-P
+.C 1,P,0
+.L L,AF1.0
+.B AIRFI
+.S V=P
+.D 
+.!CLRT
+._ P
+.P "You are back at the airfield. Professor de Perez  has left in the plane.
+.$ P
+.!HERE
+!LOOK
+.P "A dirt road leads north into the jungle.
+%N...
+.S GE(4)=2
+.S GE(5)=3
+.3 ROOM 3.0  
+.!LEAV
+@@@@@
+
+

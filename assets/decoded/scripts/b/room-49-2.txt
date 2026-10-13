@@ -1,0 +1,160 @@
+.!CLRT
+.P "After thoroughly mauling Roboff, the
+.P "jaguar stalks toward you. Poised as
+.P "if to leap, he looks up at you.
+.$ P
+.!TIME
+!LOOK
+.P "You are in a room with a dead body
+.P "and a vicious jaguar. You had better
+.P "think fast.
+PLAY FLUTE
+USE  FLUTE
+PLAY MUSIC
+.I TC(22)#0
+.T J +4
+.%PL22
+.3 ROOM 50.0 
+.!GOTO
+.!CLRT
+.P "You don't see a flute anywhere
+.P "around here!
+.!TIME
+SHOOT
+.!CLRT
+.W 
+.W 
+.P "Your shots have no effect!
+.!SHOT
+.W 
+.W 
+.!SHOT
+.S B=150
+.!TIME
+JAGUA
+.!CLRT
+.P "Careful, you might provoke an attack.
+!TIME
+.V 15
+.P "OK>^
+.S B=B+1
+.W 
+.I Q>127
+.T J -6
+.I B:80
+.T !JAG4
+.T J -8
+.I B<150
+.T J -8
+.S P=3-P
+.C 1,P,0
+.B JAGA5
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "The jaguar goes for your throat!
+.$ P
+.!WAIT
+.S P=3-P
+.C 1,P,0
+.B JAGA6
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "The jaguar goes for your throat!
+.$ P
+.!GRWL
+.!WAIT
+.!WAIT
+.!DEAD
+!JAG4
+.S P=3-P
+.C 1,P,0
+.B JAGA4
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "The jaguar growls and moves closer!
+.$ P
+.!GRWL
+!SHOT
+.S SV(6)=2
+.S SV(7)=140
+.S SV(4)=0
+.N N
+!GRWL
+.S SV(7)=0
+.S SV(4)=10
+.S SV(6)=1
+.N N
+.S SV(4)=9
+.S SV(6)=1
+.N N
+.S SV(4)=8
+.S SV(6)=1
+.N N
+.S SV(4)=7
+.S SV(6)=1
+.N N
+.S SV(4)=6
+.S SV(6)=1
+.N N
+.S SV(4)=5
+.S SV(6)=1
+.N N
+.S SV(4)=4
+.S SV(6)=1
+.N N
+.S SV(4)=3
+.S SV(6)=1
+.N N
+.S SV(4)=2
+.S SV(6)=2
+.N N
+.S SV(4)=1
+.S SV(6)=2
+.N N
+.S SV(4)=0
+.S SV(6)=5
+.N N
+.S SV(4)=1
+.S SV(6)=2
+.N N
+.S SV(4)=2
+.S SV(6)=1
+.N N
+.S SV(4)=3
+.S SV(6)=1
+.N N
+.S SV(4)=4
+.S SV(6)=1
+.N N
+.S SV(4)=5
+.S SV(6)=1
+.N N
+.S SV(4)=6
+.S SV(6)=1
+.N N
+.S SV(4)=7
+.S SV(6)=1
+.N N
+.S SV(4)=8
+.S SV(6)=1
+.N N
+.S SV(4)=9
+.S SV(6)=1
+.N N
+.S SV(4)=10
+.S SV(6)=1
+.N N
+%LO12
+%LO16
+%LO17
+%LO18
+%LO23
+.!CLRT
+.P ""Not NOW!!!"
+@@@@@

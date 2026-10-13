@@ -1,0 +1,135 @@
+.S N=46
+.S B=0
+.L L,FALL PILS
+.S P=3-P
+.C 1,P,0
+.I B:0
+.T B PILLA
+.I B:1
+.T B PILLB
+.I B:2
+.T B PILLC
+.I B:3
+.T B PILLB
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "As you enter the room you feel the
+.P "floor shift! The room begins to
+.P "crumble down around you!!
+.P "[ waiting ]
+.$ P
+.S B=B+1
+.I B>3
+.T S B=0
+.I Q<128
+.T J -23
+.S R=0
+!LOOK
+.!FAL1
+.P "You feel the floor shift!
+.P "The room crumbles down around you!!
+.!FAL2
+.T J -4
+%GT..
+%GTA.
+%GTAB
+.!FAL1
+.P "There is nothing here to get.
+.!FAL2
+.T J -3
+%DR..
+%DRA.
+%DRAB
+%KI..
+.!FAL1
+.I L:4
+.T !DARK
+.P "The object rolls into a crack and
+.P "disappears!
+.S TC(L)=255
+.!FAL2
+.T J -7
+%LOEQ
+%..EQ
+%LO23
+%DRON
+%US23
+%GTOF
+.!FAL1
+.P "The room is moving too much to do that!
+.!FAL2
+.T J -3
+%LO12
+%LO13
+%RE13
+%LO16
+%LO17
+%LO18
+.!FAL1
+.P "As you take it from your pack, the
+.P "room suddenly moves. The object leaves
+.P "your grip and disappears into a crack.
+.S TC(L)=255
+.!FAL2
+.T J -6
+%FW..
+%..TU
+%..EN
+%INTU
+%IN..
+.3 ROOM 47.0 
+.S GE(6)=22
+.!TUNL
+%BK..
+%OU..
+.3 ROOM 44.9 
+.S GE(6)=2
+.!TUNL
+!INVD
+.!FAL1
+.P "There is no passage in that direction.
+.P "In fact, if you don't hurry, you might
+.P "not get out at all !!
+.!FAL2
+.T J -5
+!FAL1
+.S P=3-P
+.C 1,P,0
+.I B:0
+.T B PILLA
+.I B:1
+.T B PILLB
+.I B:2
+.T B PILLC
+.I B:3
+.T B PILLB
+.S V=P
+.D 
+._ P
+.!CLRT
+!FAL2
+.V 15
+.P "[ waiting ]
+.$ P
+.S B=B+1
+.I B>3
+.T S B=0
+.I Q<128
+.T S R=0
+!DARK
+.C 0,P,0
+.V 12
+._ P
+.P "Your lantern rolls into a crack
+.P "and disappears. You are in total
+.P "darkness. 
+.$ P
+.!MORE
+.P "Without the lamp you're lost,
+.P "so the game ends here.
+.3 DEATH     
+.!GOTO
+@@@@@
+

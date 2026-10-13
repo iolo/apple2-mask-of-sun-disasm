@@ -1,0 +1,162 @@
+.S F=N
+.S N=25
+.L L,GEO+STRS
+.!DRAW
+.!CLRT
+.!LOOK
+.$ P
+.!HERE
+!LOOK
+LOOK WEBS 
+.!CLRT
+.I N0(25):0
+.T P "The room is completely filled with
+.T P "giant spider webs. The tough strands
+.T P "prevent your entry.
+.E P "You are in a room with chopped up
+.E P "webs and other debris on the floor.
+%LOEN
+.P "The door is closed. It has a familiar
+.P "looking plate and keyhole.
+SEARCFLOOR
+.!CLRT
+.!WEBS
+.T J -3
+.I N1(25):0
+.T P "You get a silver key from under the
+.T P "chopped webs.
+.T S N1(25)=1
+.T S TC(21)=0
+.E P "You find nothing.
+SEARC
+.!CLRT
+.!WEBS
+.T J -3
+.I NV(25):1
+.T J +14
+.S NV(25)=1
+.P "After searching for a while you find
+.P "nothing but a large vicious green
+.P "man-eating spider!!!
+.!WAIT
+.I E
+.T J +5
+.S SV(4)=100
+.S SV(7)=60
+.S SV(6)=60
+.N N
+.!MORE
+.P "No, no, I'm just kidding.
+.P "You find nothing unusual.
+%USKY
+%OPEN
+%OPLK
+.!WEBS
+.T J -2
+.I L:0
+.T P "You must specify which key to use.
+.T J -5
+.P "The key doesn't work in this lock.
+%FW..
+.!WEBS
+.T J -2
+.P "You continue forward.
+.I F:24
+.T !DRTS
+.E !GUNO
+%BK..
+.P "You turn around and go back.
+.I F:24
+.T !GUNO
+.E !DRTS
+%L...
+.!WEBS
+.T J -2
+.I F:24
+.T !INVD
+.E !DOOR
+%R...
+.!WEBS
+.T J -2
+.I F:24
+.T !DOOR
+.E !INVD
+!DOOR
+%..EN
+.!WEBS
+.T J -2
+.P "The door is locked tight. It won't open.
+!GUNO
+.S GE(6)=10
+.3 ROOM 24.1 
+.!TUNL
+!DRTS
+.S GE(6)=20
+.3 ROOM 27.0 
+.!TUNL
+!WEBS
+.I N0(25):0
+.T P "You can't get through the webs.
+CUT  WEB  
+REMOVWEB  
+CLEARWEB  
+CUT  WEBS 
+REMOVWEBS 
+CLEARWEBS 
+.!CLRT
+.I N0(25):1
+.T P "The webs have all been removed.
+.T J -4
+.P "Raoul begins to remove the webs with
+.P "his machete. ;
+.S B=0
+.P ". ;
+.!WAIT
+.!SLIC
+.!WAIT
+.!SLIC
+.S B=B++
+.I B<6
+.T J -7
+.S N0(25)=1
+.!DRAW
+.!CLRT
+.P "Raoul begins to remove the webs with
+.P "his machete. . . . . . . Whew!
+.P "That took a while.
+.$ P
+!SLIC
+.I E
+.T J -2
+.S SV(4)=0
+.S SV(6)=1
+.S SV(7)=130
+.N N
+!DRAW
+.S P=3-P
+.C 1,P,0
+.B DOORL
+.S V=P
+.I F:27
+.T D 
+.B GEORM
+.S V=P
+.D 
+.B DOORR
+.S V=P
+.I F:24
+.T D 
+.B RTWAL
+.S V=P
+.D 
+.I N0(25):0
+.T B WEBOV
+.E B BATSH
+.S V=P
+.D 
+.E S X=2
+.E S Y=1
+.S V=P
+.E D 
+._ P
+@@@@@

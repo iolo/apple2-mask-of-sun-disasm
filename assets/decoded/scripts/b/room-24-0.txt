@@ -1,0 +1,61 @@
+.S N=24
+.S N0(24)=1
+.L L,PYR ENTRN
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B ENTRM
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "You enter a room with doors in all four
+.P "directions. The door in front of you
+.P "is closed.
+.$ P
+.!MORE
+.P "This room is obviously the bats'
+.P "nesting place. The floor is covered
+.P "with guano.
+.!HERE
+!LOOK
+%LOEN
+.P "The door in front of you has a metal
+.P "plate attached to it. There is a hole
+.P "in the plate, perhaps for a key.
+%LOMZ
+SEARCFLOOR
+.!CLRT
+.P "Don't you know what 'guano' is? BLECH!
+SEARC
+.!CLRT
+.P "After searching for a while you find
+.P "nothing unusual.
+%USKY
+%OPEN
+%OPLK
+.I L:0
+.T P "You must specify which key to use.
+.T J -3
+.P "The key doesn't work in this lock.
+%FW..
+%..EN
+.P "The door prevents your entrance.
+.P "It appears to be locked tight.
+%BK..
+%OU..
+.S GE(6)=2
+.3 ROOM 23.1 
+.!TUNL
+%L...
+.S GE(6)=20
+.3 ROOM 25.0 
+.!TUNL
+%R...
+.S GE(6)=10
+.3 ROOM 26.0 
+.!TUNL
+@@@@@
+

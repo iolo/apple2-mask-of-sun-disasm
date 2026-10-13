@@ -1,0 +1,138 @@
+.S N=16
+.L L,TEMPL EX
+.!DRAW
+.P "You enter a room with an exit at either end and a door in the middle. The middledoor is ;
+.I N0(16):4
+.E P "closed.
+.T P "open.
+.$ P
+.!MORE
+.P "Pedestals flank the doorway. On the
+.T P "right pedestal;
+.T J +4
+.I N0(16):2
+.T P "ground;
+.E P "left pedestal;
+.P " is a stone urn.
+.!HERE
+!LOOK
+.P "The room has exits to the left and rightand a door in front of you.
+%LOUR
+.P "It looks like it held hot coals.
+%GTUR
+.I N0(16):1
+.T P "You already have it.
+.T J -3
+.S N1(16)=N0(16)
+.S N0(16)=1
+.!DRAW
+.I N1(16):4
+.T P "The door closes.
+.E P "The urn is very heavy. You can hardly   move it.
+.$ P
+%DRUR
+.!NURN
+.T J -2
+.S N0(16)=2
+.P "You set the urn down next to you.
+!NURN
+.!CLRT
+.I N0(16)#1
+.T P "You don't have the urn.
+DROP URN  LEFT PEDES
+SET  URN  LEFT PEDES
+PUT  URN  LEFT PEDES
+PLACEURN  LEFT PEDES
+.!NURN
+.T J -2
+.S N0(16)=0
+.!DRAW
+._ P
+.!CLRT
+.P "You set the urn down with a sigh.
+.$ P
+DROP URN  RIGHTPEDES
+SET  URN  RIGHTPEDES
+PUT  URN  RIGHTPEDES
+PLACEURN  RIGHTPEDES
+.!NURN
+.T J -2
+.S N0(16)=3
+.!DRAW
+._ P
+.!CLRT
+.P "You set the urn down on the pedestal.
+.P "You hear a click as the column moves
+.P "a fraction of an inch.
+.$ P
+.!MORE
+.S N0(16)=4
+.!DRAW
+.P "With startling swiftness the middle
+.P "door opens!
+.$ P
+DROP URN  PEDES
+SET  URN  PEDES
+PUT  URN  PEDES
+PLACEURN  PEDES
+.!NURN
+.T J -2
+.P "You must specify which pedestal.
+PEDIS
+.!CLRT
+.P "It's spelled pedestal.
+INVEN
+EQUIP
+.!CLRT
+.I N0(16):1
+.T P "You can't see what you have when you're holding a massive urn.
+.E %..EQ
+%FW..
+%..EN
+.I N0(16)#4
+.T P "The door is closed. You can't open it.
+.E 3 ROOM 7.1  
+.E !GOTO
+!NOGO
+.I N0(16):1
+.T P "The urn is very heavy, you can't
+.T P "carry it anywhere.
+%L...
+.!NOGO
+.E S GE(6)=17
+.E 3 ROOM 13.0 
+.E !TUNL
+%R...
+.!NOGO
+.T J -2
+.I N0(17):4
+.T S GE(6)=100
+.T 3 ROOM 16.0 
+.E S GE(6)=0
+.E 3 ROOM 17.0 
+.!TUNL
+!DRAW
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.I N0(16):0
+.T B PED1J
+.E B PED1N
+.S V=P
+.D 
+.I N0(16)>2
+.T B PED2J
+.E B PED2N
+.S V=P
+.D 
+.B TMPEX
+.I N0(16):4
+.T S CO(15)=4
+.S V=P
+.D 
+._ P
+.!CLRT
+@@@@@
+

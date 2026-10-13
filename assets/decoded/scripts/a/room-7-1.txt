@@ -1,0 +1,52 @@
+.S F=N
+.S N=7
+.L L,BACK JEEP
+.S P=3-P
+.C 1,P,0
+.B BKJEP
+.S V=P
+.D 
+._ P
+.!CLRT
+.I F:16
+.T P "The door slides shut behind you,
+.T P "concealing the exit.
+.T $ P
+.T !MORE
+.P "You're at the temple's base. The path   leads to the jeep.
+.$ P
+.!HERE
+!LOOK
+.P "You are near the temple's steps.
+.P "The path leads to the jeep.
+JEEP 
+%FW..
+%OU..
+%..RD
+%..PA
+.!CLRT
+.3 ROOM 5.1  
+.!GOTO
+%INPY
+%BK..
+.P "The exit is sealed shut.
+%CLST
+%CLPY
+%U...
+.!CLRT
+.P "You carefully climb the steps.
+.3 ROOM 8.0  
+.!GOTO
+%LOPY
+.!CLRT
+.P "It's hasn't changed much while you were inside.
+%..PY
+.!CLRT
+.P "You're already there.
+!INVD
+.!CLRT
+.P "The jungle becomes too thick to pass    through. You give up and return to the  steps.
+%LOST
+.!CLRT
+.P "They look safe enough.
+@@@@@

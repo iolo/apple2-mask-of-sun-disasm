@@ -1,0 +1,53 @@
+.S N=8
+.L L,TEMPLE1
+.S P=3-P
+.C 1,P,0
+.B TMPEN
+.I N0(8)>0
+.T S CO(15)=4
+.T S CO(16)=4
+.S V=P
+.D 
+._ P
+.!CLRT
+.I N0(8)>0
+.T P "You're at the top of the temple again.  The doorway is blocked by a stone slab.
+.E P "You're in front of a darkened doorway,  it seems to be the main entrance.
+.$ P
+.!HERE
+!LOOK
+.P "You are near the temple's entrance.
+.P "Behind you, the stairs lead down.
+%D...
+%BK..
+%OU..
+.I N0(8)>0
+.T J +3
+.!CLRT
+.P "In your haste to depart you trip down   the stairs. Raoul chuckles but only yourpride is hurt.
+.3 ROOM 7.1  
+.!GOTO
+%IN..
+%FW..
+%..PY
+%..EN
+.!CLRT
+.I N0(8)>0
+.T P "The slab won't budge! You cannot get    into the temple.
+.T J -4
+.P "Daring fools!
+.S N0(8)=1
+.I T0(4):1
+.T 3 ROOM 9.0  
+.E 3 ROOM 9.1  
+.I T0(5):1
+.T S T0(5)=0
+.T P "A gust of wind blows out your match!
+.!GOTO
+%LOPY
+.!CLRT
+.P "It's small, made of grey stone, and     covered with Aztec carvings.
+%LOEN
+.!CLRT
+.P "The entrance itself is about seven feet high, the floor is smooth and worn. You can't see inside.
+@@@@@

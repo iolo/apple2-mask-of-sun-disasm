@@ -1,0 +1,35 @@
+.S N=4
+.I N0(4):0
+.T J +3
+.!RTRN
+!FRST
+.!CLRT
+.P "Raoul suddenly stops the jeep.
+.P ""Look, Senor! There in the jungle."
+.P "The road continues west toward a ruin.
+.S N0(4)=255
+.!HERE
+%LOPY
+.!CLRT
+.!LOOK
+!LOOK
+.P ""This looks like one of the ruins on
+.P "the map!"  The road continues west.
+%LORD
+.!CLRT
+.P "The road continues to the west.
+!RTRN
+.!HERE
+.T J +3
+.3 ROOM 5.0  
+.!LEAV
+%W...
+.S GE(4)=2
+.3 ROOM 5.0  
+.!LEAV
+%SE..
+.S GE(5)=3
+.S GE(4)=1
+.3 ROOM 3.0  
+.!LEAV
+@@@@@

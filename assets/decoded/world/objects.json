@@ -1,0 +1,212 @@
+{
+  "objects": [
+    {
+      "number": 1,
+      "name": "Raoul",
+      "name_line": "a:LIBRARY:0199",
+      "initial": {
+        "TC": 255,
+        "TL": 2
+      }
+    },
+    {
+      "number": 2,
+      "name": "the jeep",
+      "name_line": "a:LIBRARY:0201",
+      "initial": {
+        "TC": 255,
+        "TL": 2
+      }
+    },
+    {
+      "number": 3,
+      "name": "a shovel",
+      "name_line": "a:LIBRARY:0203",
+      "initial": {
+        "TC": 2,
+        "TL": 255
+      }
+    },
+    {
+      "number": 4,
+      "name": "a lantern",
+      "name_line": "a:LIBRARY:0205",
+      "initial": {
+        "TC": 2,
+        "TL": 255
+      }
+    },
+    {
+      "number": 5,
+      "name": "a box of matches",
+      "name_line": "a:LIBRARY:0207",
+      "initial": {
+        "TC": 0,
+        "TL": 255
+      }
+    },
+    {
+      "number": 6,
+      "name": "a knife",
+      "name_line": "a:LIBRARY:0209",
+      "initial": {
+        "TC": 0,
+        "TL": 255
+      }
+    },
+    {
+      "number": 7,
+      "name": "tasty food",
+      "name_line": "a:LIBRARY:0211",
+      "initial": {
+        "TC": 2,
+        "TL": 255
+      }
+    },
+    {
+      "number": 8,
+      "name": "a bottle of pills",
+      "name_line": "a:LIBRARY:0213",
+      "initial": {
+        "TC": 0,
+        "TL": 255,
+        "TV": 100
+      }
+    },
+    {
+      "number": 9,
+      "name": "a jaguar",
+      "name_line": "a:LIBRARY:0215",
+      "initial": {
+        "TC": 255,
+        "TL": 255
+      }
+    },
+    {
+      "number": 10,
+      "name": "a carved stone head",
+      "name_line": "a:LIBRARY:0217",
+      "initial": {
+        "TC": 255,
+        "TL": 6
+      }
+    },
+    {
+      "number": 11,
+      "name": "a snake",
+      "name_line": "a:LIBRARY:0219",
+      "initial": {
+        "TC": 255,
+        "TL": 9
+      }
+    },
+    {
+      "number": 12,
+      "name": "a cryptic map",
+      "name_line": "a:LIBRARY:0221",
+      "initial": {
+        "TC": 255,
+        "TL": 2
+      }
+    },
+    {
+      "number": 13,
+      "name": "an ancient amulet",
+      "name_line": "a:LIBRARY:0223",
+      "initial": {
+        "TC": 0,
+        "TL": 255
+      }
+    },
+    {
+      "number": 14,
+      "name": "a loaded revolver",
+      "name_line": "a:LIBRARY:0225",
+      "initial": {
+        "TC": 0,
+        "TL": 255
+      }
+    },
+    {
+      "number": 15,
+      "name": "a length of rope",
+      "name_line": "a:LIBRARY:0227",
+      "initial": {
+        "TC": 2,
+        "TL": 255
+      }
+    },
+    {
+      "number": 16,
+      "name": "a carved jade bowl",
+      "name_line": "a:LIBRARY:0229",
+      "initial": {
+        "TC": 255,
+        "TL": 11
+      }
+    },
+    {
+      "number": 17,
+      "name": "a silver bowl",
+      "name_line": "a:LIBRARY:0231",
+      "initial": {
+        "TC": 255,
+        "TL": 17
+      }
+    },
+    {
+      "number": 18,
+      "name": "a precious gold bowl",
+      "name_line": "a:LIBRARY:0233",
+      "initial": {
+        "TC": 255,
+        "TL": 15
+      }
+    },
+    {
+      "number": 19,
+      "name": "a golden key",
+      "name_line": "a:LIBRARY:0235",
+      "initial": {
+        "TC": 255,
+        "TL": 255
+      }
+    },
+    {
+      "number": 20,
+      "name": "a black key",
+      "name_line": "a:LIBRARY:0237",
+      "initial": {
+        "TC": 255,
+        "TL": 255
+      }
+    },
+    {
+      "number": 21,
+      "name": "a silver key",
+      "name_line": "a:LIBRARY:0239",
+      "initial": {
+        "TC": 255,
+        "TL": 255
+      }
+    },
+    {
+      "number": 22,
+      "name": "a flute",
+      "name_line": "a:LIBRARY:0241",
+      "initial": {
+        "TC": 255,
+        "TL": 19
+      }
+    },
+    {
+      "number": 23,
+      "name": "the Mask of the Sun",
+      "name_line": "a:LIBRARY:0243",
+      "initial": {
+        "TC": 255,
+        "TL": 255
+      }
+    }
+  ]
+}

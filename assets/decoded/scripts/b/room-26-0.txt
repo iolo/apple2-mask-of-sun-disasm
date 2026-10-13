@@ -1,0 +1,96 @@
+.S F=N
+.S N=26
+.L L,GEO+STRS
+.S P=3-P
+.C 1,P,0
+.B DOORL
+.S V=P
+.I F:24
+.T D 
+.B STARO
+.S V=P
+.S X=226
+.T D 
+.B GEORM
+.S V=P
+.D 
+.B DOORR
+.S V=P
+.I F:27
+.T D 
+.B STARO
+.S V=P
+.S X=65
+.T D 
+.B RTWAL
+.S V=P
+.D 
+._ P
+.!CLRT
+.!LOOK
+.$ P
+.!HERE
+!LOOK
+.P "You enter a room with a star painted
+.P "over the door.
+%LOEN
+.P "The door is closed. It has a metal
+.P "plate attached to it. There is a hole
+.P "in the plate, perhaps for a key.
+LOOK STAR 
+.!CLRT
+.P "It's just an eight-point star done
+.P "in some kind of gold paint.
+SEARCDOOR 
+SEARCDOORW
+.!CLRT
+.I N1(26):0
+.T P "Above the doorway, on the stone beam
+.T P "you get a golden key.
+.T S N1(26)=1
+.T S TC(19)=0
+.E P "You find nothing else.
+SEARC
+.!CLRT
+.P "After searching for a while you find
+.P "nothing unusual.
+%USKY
+%OPEN
+%OPLK
+.I L:0
+.T P "You must specify which key to use.
+.T J -3
+.P "The key doesn't work in this lock.
+%FW..
+.P "You continue forward.
+.I F:24
+.T !DRTS
+.E !GUNO
+%BK..
+.P "You turn around and go back.
+.I F:24
+.T !GUNO
+.E !DRTS
+%L...
+.I F:24
+.T !DOOR
+.E !INVD
+%R...
+.I F:24
+.T !INVD
+.E !DOOR
+!DOOR
+%..EN
+.P "The door prevents your entrance.
+.P "It appears to be locked tight.
+!GUNO
+.3 ROOM 24.1 
+.S GE(6)=20
+.!TUNL
+!DRTS
+.3 ROOM 27.0 
+.S GE(6)=10
+.!TUNL
+@@@@@
+
+

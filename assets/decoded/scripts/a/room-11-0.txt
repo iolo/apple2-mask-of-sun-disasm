@@ -1,0 +1,85 @@
+.S N=11
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B ALTBW
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "You enter a room with a central dais.
+.P "On the dais is a pedestal holding a
+.P "magnificent jade bowl.
+.$ P
+!LOOK
+.P "You are in an inner chamber.
+.P "A passage leads out to the main room.
+LOOK BOWL 
+EXAMIBOWL 
+CHECKBOWL 
+%LO16
+.!CLRT
+.P "The bowl appears to have some carvings
+.P "on its bottom.
+LOOK CARVI
+.!CLRT
+.P "You must pick up the bowl to see them.
+%OU..
+%BK..
+.3 ROOM 9.2  
+.!GOTO
+%GTA.
+%GTAB
+.P "That doesn't work here.
+%GTBW
+.S TC(16)=0
+.S TL(16)=255
+.C 0,P,0
+.V 12
+.P "As you lift the bowl from its resting
+.P "place, you feel the floor drop rapidly.
+.L L,TUN TRVL
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B TBBKG
+.S V=P
+.D 
+.B TBLFA
+.S V=P
+.D 
+.B TBLFB
+.S V=P
+.D 
+.B TBTPA
+.S V=P
+.D 
+.B TBTPB
+.S V=P
+.D 
+.B TBRTE
+.S V=P
+.D 
+.B TBFPA
+.S Y=2
+.S V=P
+.D 
+.B TBFPB
+.S V=P
+.D 
+.!MORE
+._ P
+.!CLRT
+.P "After you and Raoul pick yourselves up
+.P "off the floor, you look around.
+.$ P
+.!MORE
+.S GE(6)=7
+.S N=16
+.3 ROOM 13.0 
+.!GOTO
+@@@@@

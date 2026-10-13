@@ -1,0 +1,60 @@
+.S N=23
+.S GE(13)=0
+.L L,PYR ENTRN
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B PYREN
+.S V=P
+.D 
+._ P
+.!CLRT
+.I N0(23):0
+.T P "The road ends at the base of a pyramid.
+.T P ""This may be the pyramid of Tikal.
+.T P " It is good we found it."
+.E !LOOK
+.S N0(23)=1
+.$ P
+.!HERE
+!LOOK
+%LOPY
+.P "You are near the entrance of a small
+.P "pyramid. The road goes back to the NE.
+%FW..
+%IN..
+%..EN
+%..ST
+%..TU
+%..PY
+.I TC(2):0
+.T P "You must leave the jeep to enter.
+.T J -3
+.I T0(4):0
+.T J +7
+.I N1(23):0
+.T P "Disturbed by your entry, a flight of
+.T P "bats takes wing.
+.S N1(23)=1
+.S GE(6)=0
+.3 ROOM 24.0 
+.!TUNL
+%BK..
+%NE..
+.S GE(12)=1
+.I TC(2)#0
+.T J +10
+.P "Please remove THE MASK OF THE SUN disk,
+.P "side B, turn it over to side A,
+.P "and reinsert it.
+.!MORE
+.P "Press RETURN to continue play.
+.!MORE
+.S GE(4)=1
+.S GE(5)=3
+.3 ROOM 22.0 
+.!LEAV
+@@@@@
+

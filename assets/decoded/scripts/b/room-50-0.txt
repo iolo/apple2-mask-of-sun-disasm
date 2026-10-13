@@ -1,0 +1,71 @@
+.S N=50
+.S P=3-P
+.C 1,P,0
+.B JAGA3
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "The music seems to soothe the jaguar.
+.P "He listens for a while then walks
+.P "behind a pillar and disappears . . .
+.$ P
+.L L,ROBOFFS
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B ROBOD
+.S V=P
+.D 
+.!MORE
+._ P
+.!CLRT
+.P "... Leaving you alone with the corpse.
+.P "After a brief moment of silence, you
+.P "hear the voice of the Sun God . . .
+.$ P
+.!MORE
+.P ""BEGONE, MORTAL! I SPARE YOUR LIFE THIS
+.P " TIME. BUT RETURN NOT OR YOU WILL DIE.
+.!MORE
+.P "You feel a tingling sensation. The room
+.P "begins to shimmer . . .
+.L L,MAIN PYR
+.S K=3-P
+.C 1,K,0
+.B PYRSN
+.S V=K
+.D 
+._ K
+.C 0,K,143
+.V 12
+.P "You feel a tingling sensation. The room
+.P "begins to shimmer . . .
+.!XFRM
+.!WAIT
+.!CLRT
+.P "You are outside! You watch the sun set
+.P "behind its sacred temple. . .
+.!MORE
+.P "YOU HAVE WON THE GAME!!
+.P "You completed the adventure with ;
+.P TV(8)
+.P "pills remaining!
+.!MORE
+.P "Congratulations on completing 
+.P "
+.P "         THE MASK OF THE SUN.
+.!WAIT
+.!WAIT
+.!WAIT
+.!WAIT
+.!CLRT
+.P "Watch for the next Ultrasoft adventure.
+.P "Mac Steele solves the mysteries of
+.P "Tibet in search of fame and fortune.
+.J +1
+.J -1
+@@@@@
+

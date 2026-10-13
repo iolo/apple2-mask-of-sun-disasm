@@ -1,0 +1,147 @@
+.S N=9
+.S F=1
+.S P=3-P
+.C 0,P,0
+._ P
+.P "The two of you enter the chamber. An    unseen door slams shut. Something in    front of you issues a hissing sound.
+.$ P
+.!SLAM
+.!WAIT
+.!WAIT
+.!SNRT
+.!WAIT
+.!SNRT
+.S T0(4)=0
+!CLRT
+.C 0,P,0
+.V 5
+%LO..
+%GT..
+%LO13
+%LO12
+%LO08
+.!CLRT
+.P "It's much too dark to see anything.
+.!TIME
+!INVD
+.!CLRT
+.P "It's much too dark to go anywhere.
+.!TIME
+%OU..
+%BK..
+.!CLRT
+.I W:141
+.T P "The door will not move.
+.E P "You can't do that.
+.!TIME
+%KI..
+.!CLRT
+.P "Raoul yelps as your foot hits something soft.
+.!TIME
+DOOR 
+.!CLRT
+.P "The door mocks you with its solidity.
+.!TIME
+!TIME
+.I F:2
+.T !SONE
+.I F:4
+.T !STWO
+.S F=F++
+!SONE
+.P "
+.P "The hissing increases in volume and
+.P "grows nearer!
+.!SNRT
+!STWO
+.P "
+.P "You hear something slithering right in
+.P "front of you!
+.!SNRT
+%LI05
+.I TC(5):0
+.S L=5
+.E ? 
+.!CLRT
+.P "A huge snake rises in front of you!
+.L L,P7.0
+.S P=3-P
+.B SNAKA
+.S V=P
+.C 1,P,0
+.D 
+.!SNRT
+.$ P
+.S P=3-P
+.B SNAKB
+.S V=P
+.C 1,P,0
+.D 
+.$ P
+.S P=3-P
+.B SNAKC
+.S V=P
+.C 1,P,0
+.D 
+.$ P
+.!SNRT
+.S P=3-P
+.B SNAKD
+.S V=P
+.C 1,P,0
+.D 
+.$ P
+.S P=3-P
+.B SNAKE
+.S V=P
+.C 1,P,0
+.D 
+.$ P
+.!SNRT
+.S P=3-P
+.B SNAKF
+.S V=P
+.C 1,P,0
+.D 
+.$ P
+.!SNRT
+.S P=3-P
+.B SNAKG
+.S V=P
+.C 1,P,0
+.D 
+.$ P
+._ P
+.V 
+.!WAIT
+.P "The snake strikes. . .
+.!WAIT
+.!WAIT
+.V 
+.P "Crushing coils wrap around you!
+.!WAIT
+.!WAIT
+.!DEAD
+!SNRT
+.I E
+.T J -2
+.S SV(4)=0
+.S SV(7)=0
+.S L=0
+.S SV(6)=2
+.N N
+.I L<5
+.T S L=L++
+.T J -4
+!SLAM
+.I E
+.T J -2
+.S SV(4)=0
+.S SV(6)=20
+.S SV(7)=220
+.N N
+.S SV(4)=0
+.S SV(6)=6
+.S SV(7)=140
+.N N
+@@@@@

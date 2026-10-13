@@ -1,0 +1,124 @@
+.S N=43
+.L L,HISS-SUNS
+.S P=3-P
+.C 1,P,0
+.B TSUN0
+.S V=P
+.D 
+.B TSUN1
+.S V=P
+.D 
+.B TSUN4
+.S V=P
+.D 
+._ P
+.!CLRT
+.I N0(43):0
+.T !FRST
+.I N0(43):1
+.T !SECO
+.I N0(43):2
+.T !THRD
+!FRST
+.P "As you enter the room, you see in
+.P "front of you an enormous sun face!
+.P "A giant, gleaming disk of gold!!
+.!DRAW
+.P "Disturbed by your entry, the golden
+.P "icon begins to move! The mouth opens
+.P "as if to speak . . .
+.!DRAW
+.P ""IT HAS BEEN MANY YEARS SINCE A MAN
+.P " HAS ENTERED INTO MY PRESENCE . . .
+.!DRAW
+.P ""MY WORSHIPERS HAVE GONE THE WAY OF
+.P " TIME. NO LONGER IS THE BLOOD OF
+.P " MORTALS SPILLED FOR ME . . .
+.!DRAW
+.P ""I SEE YOU HAVE MY GIFT, THE MASK,
+.P " WHICH IS THE SYMBOL OF MY POWER.
+.P " WITH IT YOU MAY ESCAPE MY WRATH.
+.!DRAW
+.P ""STILL, YOU WILL BE TESTED. TO PASS
+.P " BY ME, YOU MUST ANSWER A RIDDLE. . .
+.!DRAW
+.P ""WHO MAKES IT HAS NO NEED FOR IT,
+.P " WHO BUYS IT HAS NO USE FOR IT,
+.P " WHO USES, CAN NEITHER SEE NOR FEEL IT.
+.!DRAW
+.P ""OF WHAT DO I SPEAK?"
+.$ P
+.A 
+.= A COFFIN
+.E = COFFIN
+.E = A GRAVE
+.E = GRAVE
+.!CLRT
+.T P "YOU MAY PASS . . .
+.T !EXIT
+.E P "WRONG, MORTAL . . .
+.E 3 ROOM 38.0 
+.E S N0(43)=1
+.!GOTO
+!SECO
+.P ""YOU WILL BE GIVEN A SECOND CHANCE.
+.P " ANSWER THIS RIDDLE AND YOU MAY PASS".
+.!DRAW
+.P ""WHAT EATS ALL IT IS GIVEN,
+.P " AND YET, IS NEVER FULL?"
+.$ P
+.A 
+.= A FIRE
+.E = FIRE
+.!CLRT
+.T P "YOU MAY PASS . . .
+.T !EXIT
+.E P "WRONG AGAIN . . .
+.E 3 ROOM 38.0 
+.E S N0(43)=2
+.!GOTO
+!THRD
+.P ""THIS IS YOUR LAST CHANCE, MORTAL.
+.P " FAIL THIS AND YOU WILL DIE. . .
+.!DRAW
+.P ""WHAT WALKS ON FOUR LEGS IN THE MORNING, TWO LEGS AT MIDDAY,
+.P " AND THREE IN THE EVENING?
+.$ P
+.A 
+.= A MAN
+.E = MAN
+.!CLRT
+.T P "YOU MAY PASS . . .
+.T !EXIT
+.P "DIE, MORTAL . . .
+.!WAIT
+.!DEAD
+!EXIT
+.3 ROOM 44.0 
+.S GE(6)=2
+.!TUNL
+!DRAW
+.$ P
+.!MORE
+.S N1(43)=N1(43)+1
+.I N1(43)>3
+.T S N1(43)=1
+.S P=3-P
+.C 1,P,0
+.B TSUN0
+.S V=P
+.D 
+.I N1(43):1
+.T B TSUN1
+.I N1(43):2
+.T B TSUN2
+.I N1(43):3
+.T B TSUN3
+.S V=P
+.D 
+.B TSUN4
+.S V=P
+.D 
+._ P
+.!CLRT
+@@@@@

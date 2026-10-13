@@ -1,0 +1,174 @@
+.S F=N
+.S N=41
+.L L,SUN ALTAR
+.!DRAW
+.!CLRT
+.!LOOK
+.I F:41
+.T !GRND
+.$ P
+.!HERE
+!LOOK
+.I TL(23):254
+.T P "Behind the altar you see an exit!
+.T P "It must be visible only with the
+.T P "aid of the mask!
+.E P "The altar is closed. There appears
+.E P "to be no way out of the temple.
+.E P "You are trapped!
+!DRAW
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B SNALT
+.S V=P
+.D 
+.I TL(23):254
+.T B SNADR
+.E B SNNDR
+.S V=P
+.D 
+.B SNALB
+.S V=P
+.D 
+._ P
+.I TL(23):254
+.T R P
+%LOAL
+%FW..
+%..AL
+.S K=3-P
+.C 1,K,0
+.B RGHTL
+.S V=K
+.D 
+.B ALTCL
+.S V=K
+.D 
+._ K
+.I TL(23):254
+.T R K
+.C 0,K,143
+.V 12
+.P "The altar has swallowed the amulet. Now
+.P "it's closed. Nothing else has changed.
+.$ K
+.!MORE
+._ P
+.!CLRT
+.P "You walk away disgusted.
+.$ P
+%DRON
+%US23
+.I L#23
+.T P "You can't wear that.
+.T J +11
+.!GETO
+.I TL(23)<255
+.T P "You already have it on.
+.T J +7
+.S TL(23)=T0(23)+253
+.I TL(23):254
+.T !DRAW
+.!CLRT
+.P "You put the mask on.
+.$ P
+%DR23
+%KI23
+%TH23
+.I TC(23)#0
+.T P "You don't have it.
+.T J -3
+.I TL(23):254
+.E J +3
+.%GTOF
+.!MORE
+.!DROP
+%RM23
+%GTOF
+.I L#23
+.T P "You can't do that.
+.T J -3
+.I TL(23):255
+.T P "You don`t have it on.
+.T J -6
+.I TL(23):254
+.S TL(23)=255
+.T !DRAW
+.!CLRT
+.P "You take off the mask.
+.$ P
+%OU..
+%W...
+%..EN
+%..TU
+.I TL(23):254
+.E !INVD
+.E J -3
+.I TC(4):0
+.E P "Not without the lamp!
+.E J -3
+.P "You remove the mask as you enter
+.P "the tunnel.
+.S TL(23)=255
+.3 ROOM 42.0 
+.!TUNL
+%BK..
+%E...
+.3 ROOM 40.1 
+.!GOTO
+!DROP
+.!IFSV
+.I L:0
+.T !VAGR
+.I O:2
+.E I O:4
+.T P "You don't have it. It's in the jeep.
+.I O:3
+.T P "You don't have it to get rid of.
+.I O:1
+.E J +14
+.I L:23
+.T I TL(23):254
+.T !DRAW
+.!CLRT
+.P "You set ;
+.!OBJL
+.P " 
+.I TC(2):0
+.E P "on the ground.
+.E S TC(L)=255
+.E S TL(L)=N
+.T P "into the jeep.
+.T S TC(L)=2
+.!IFRS
+!GRND
+.S SV(4)=0
+.S SV(6)=110
+.S SV(7)=130
+.N N
+%LO23
+.S P=3-P
+.C 1,P,0
+.L N,MASK
+.B MASK!
+.I T0(23)#1
+.T S CO(9)=4
+.T S CO(11)=4
+.S V=P
+.D 
+.!CLRT
+._ P
+.I TL(23):254
+.T P "You take the mask off to look at it.
+.T S TL(23)=255
+.E P "You see a golden mask.
+.$ P
+.!MORE
+.!DRAW
+._ P
+.!CLRT
+.$ P
+@@@@@

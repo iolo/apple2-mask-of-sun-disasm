@@ -1,0 +1,40 @@
+.S N=3
+.S GE(1)=2
+._ P
+.!CLRT
+.!LOOK
+.!HERE
+.S A=10
+.S B=128
+.!BIRD
+.E P ""Which way should we go, Senor?"
+!LOOK
+.S A=14
+.S B=128
+.!BIRD
+.P "You are at a branch, the road continues to the west, northwest, and southeast.
+%W...
+.S GE(4)=2
+.3 ROOM 18.0 
+.!LEAV
+%NW..
+.S GE(4)=2
+.S GE(5)=2
+.3 ROOM 4.0  
+.!LEAV
+%SE..
+.S GE(4)=1
+.3 ROOM 2.1  
+.!LEAV
+!BIRD
+.I E
+.T J -2
+.S L=0
+.S SV(0)=0
+.S SV(2)=A
+.S SV(3)=B
+.N 
+.I L<4
+.T S L=L++
+.T J -6
+@@@@@

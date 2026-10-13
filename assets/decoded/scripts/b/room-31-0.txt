@@ -1,0 +1,155 @@
+.S TC(2)=255
+.S N=31
+.L L,POOL RM
+.!DRAW
+._ P
+.!LOOK
+.!HERE
+.!FLIK
+!LOOK
+.!CLRT
+.P "You are in a room which contains a
+.P "large clear pool. The water is clean,
+.P "perhaps fed from an unseen source.
+._ K
+.C 0,K,143
+.V 12
+.P "You are in a room which contains a
+.P "large clear pool. The water is clean,
+.P "perhaps fed from an unseen source.
+._ P
+.!MRTN
+.!CLRT
+.P "Reflections of your lamp dance on the
+.P "walls and ceiling.
+._ K
+.C 0,K,143
+.V 12
+.P "Reflections of your lamp dance on the
+.P "walls and ceiling.
+._ P
+LOOK WATER
+LOOK POOL 
+LOOK REFLE
+EXAMIWATER
+EXAMIPOOL 
+EXAMIREFLE
+FORWA
+.!CLRT
+.I N0(31):0
+.T P "You approach the water.
+.T S N0(31)=1
+.T 3 ROOM 31.1 
+.T !GOTO
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B MAGPL
+.S V=P
+.D 
+.R P
+.B MAGST
+.S V=P
+.D 
+.R P
+._ P
+.!CLRT
+.P "You stare into the water, but the
+.P "effect you imagined does not repeat.
+.$ P
+.!MORE
+.!DRAW
+._ P
+.P "You see nothing else unusual.
+._ K
+.C 0,K,143
+.V 12
+.P "You see nothing else unusual.
+._ P
+.!FLIK
+%LOBW
+%LO12
+%RE12
+%LO13
+%..EQ
+%LOEQ
+.P "You can think about relics at a time
+.P "like this?
+._ K
+.C 0,K,143
+.V 12
+.P "You can think about relics at a time
+.P "like this?
+._ P
+.!FLIK
+%BK..
+%OU..
+.I TC(4):0
+.T J +4
+.P "You can't venture through dark tunnels
+.P "without a lamp.
+.J -5
+.3 ROOM 30.2 
+.S GE(6)=2
+.!TUNL
+!FLIK
+.V 15
+.P "OK>^
+._ K
+.V 15
+.P "OK>^
+._ P
+.$ K
+.S A=A
+.$ P
+.W 
+.I Q>127
+.E J -5
+!MRTN
+.V 15
+.P "[ waiting ]
+._ K
+.V 15
+.P "[ waiting ]
+._ P
+.$ K
+.S A=A
+.$ P
+.W 
+.I Q>127
+.E J -5
+.!CLRT
+.S R=0
+!DRAW
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B POLRM
+.S V=P
+.D 
+.R P
+.B STARS
+.S V=P
+.D 
+.R P
+.!CLRT
+.$ P
+.S K=3-P
+.C 1,K,0
+.B RGHTL
+.S V=K
+.D 
+.B POLRM
+.S V=K
+.D 
+.B STARS
+.S V=K
+.D 
+.C 0,K,143
+.V 12
+@@@@@
+

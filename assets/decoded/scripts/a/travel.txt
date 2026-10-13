@@ -1,0 +1,168 @@
+.T !CLRT
+.T P "You move off in that direction.
+.I GE(4):GE(13)
+.T J +7
+.I GE(4):1
+.T L L,TRAVEL2,VIEWS
+.T S GE(9)=33
+.E L L,TRAVEL1,VIEWS
+.E S GE(9)=101
+.S GE(13)=GE(4)
+.S GE(14)=0
+.!INCL
+.!TRAV
+.!INCB
+.I GE(5):1
+.T S GE(5)=0
+.!TRAV
+.!INCB
+.S GE(1)=4
+.!TRAV
+.!INCB
+.S GE(1)=2
+.!TRAV
+.!INCB
+.!TRAV
+.!INCB
+.S GE(1)=1
+.!TRAV
+.!INCB
+.!TRAV
+.!INCB
+.S GE(1)=2
+.!TRAV
+.I GE(5)#2
+.T J +4
+.!INCB
+.S GE(5)=1
+.!TRAV
+.I GE(5)#3
+.T J +4
+.!INCB
+.S GE(1)=3
+.S GE(5)=0
+.!TRAV
+.I GE(5)#4
+.T J +11
+.S GE(5)=0
+.S GE(12)=2
+.!CLRT
+._ P
+.P "Please remove THE MASK OF THE SUN disk,
+.P "side A, turn it over to side B,
+.P "and reinsert it.
+.!MORE
+.P "Press RETURN to continue play.
+.!MORE
+.!GOTO
+!TRAV
+.S K=3-P
+.C 1,K,0
+.B RGHTL
+.S V=K
+.D 
+.!BRLS
+.I GE(1):4
+.T I GE(2):4
+.T S CO(3)=103
+.S V=K
+.D 
+.I GE(0)#1
+.T J +6
+.B JPW&H
+.S V=K
+.S GE(14)=3-GE(14)
+.S X=GE(14)
+.D 
+.!BRRD
+.S V=K
+.D 
+.I GE(5)#1
+.T J +6
+.B VIEWA
+.S V=K
+.S X=247
+.S Y=16
+.D 
+.!BRMN
+.S V=K
+.D 
+.!BRRS
+.I GE(3):1
+.T J +8
+.I GE(1):2
+.T S CO(2)=GE(9)
+.T J +10
+.I GE(1):4
+.T S CO(2)=GE(9)
+.E S CO(2)=103
+.J +6
+.I GE(1):4
+.T S CO(6)=GE(9)
+.T J +3
+.I GE(1)#2
+.T S CO(6)=103
+.S V=K
+.D 
+.S P=K
+.$ P
+!BRMN
+.S GE(8)=GE(4)+GE(4)
+.J +GE(8)
+!XXE0
+.B MOUNA
+!XXX1
+.B MOUNB
+!XXX2
+!BRRD
+.S GE(8)=GE(1)+GE(1)
+.J +GE(8)
+!XXE1
+.B ROADA
+!XXX3
+.B ROADB
+!XXX4
+.B ROADC
+!XXX5
+.B ROADD
+!XXX6
+!BRLS
+.S GE(8)=GE(2)+GE(2)
+.J +GE(8)
+!XXE2
+.B LEFTA
+!XXX7
+.B LEFTB
+!XXX8
+.B LEFTC
+!XXX9
+.B LEFTD
+!XXXA
+!BRRS
+.S GE(8)=GE(3)+GE(3)
+.J +GE(8)
+!XXE3
+.B RGHTA
+!XXXB
+.B RGHTB
+!XXXC
+.B RGHTC
+!XXXD
+.B RGHTD
+!XXXE
+!INCL
+.S GE(2)=GE(2)+1
+.I GE(2)>4
+.T S GE(2)=1
+!INCR
+.S GE(3)=GE(3)+1
+.I GE(3)>4
+.T S GE(3)=1
+!INCB
+.S GE(2)=GE(2)+1
+.I GE(2)>4
+.T S GE(2)=1
+.S GE(3)=GE(3)+1
+.I GE(3)>4
+.T S GE(3)=1
+@@@@@

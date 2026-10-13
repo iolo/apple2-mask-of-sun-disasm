@@ -1,0 +1,221 @@
+.I TL(23):254
+.T P "You remove the mask.
+.S TL(23)=255
+.L L,TUN TRVL
+.S A=0
+.S B=0
+.S C=0
+.S D=0
+.I GE(6)>99
+.T !DEND
+.I GE(6)>19
+.T !RGHT
+.I GE(6)>9
+.T !LEFT
+.S A=0
+.S B=0
+.S D=0
+.I GE(6):1
+.T S A=1
+.T S B=1
+.I GE(6):2
+.T S D=1
+.I GE(6):3
+.T S A=1
+.T S B=1
+.T S D=1
+.I GE(6):4
+.T S B=1
+.T S D=1
+.I GE(6):5
+.T S A=1
+.T S D=1
+.I GE(6):6
+.T S B=1
+.T S C=1
+.I GE(6):7
+.T S A=1
+.T S C=1
+.I GE(6):9
+.T S A=1
+.T S B=1
+.!LOOP
+.I GE(6):9
+.T !CLRT
+.T P "An unseen pit opens beneath your feet!!
+.T !WAIT
+.T P "Your screams echo through the tunnel.
+.T !WAIT
+.T !DEAD
+.!GOTO
+!DEND
+.S GE(6)=GE(6)-100
+.S A=1
+.S B=1
+.S D=1
+.!LOOP
+.!CLRT
+.P "The tunnel dead ends. You turn back.
+.!MORE
+!RGHT
+.S A=1
+.S D=1
+.!LOOP
+.S GE(6)=GE(6)-20
+.!CLRT
+.P "The tunnel turns right.
+.!MORE
+!LEFT
+.S B=1
+.S D=1
+.!LOOP
+.S GE(6)=GE(6)-10
+.!CLRT
+.P "The tunnel turns left.
+.!MORE
+!LOOP
+.S L=3
+.S L=L--
+.S K=1
+.!ANIM
+.!FFLA
+.S K=0
+.!ANIM
+.!FFLB
+.I L>0
+.T J -8
+!ANIM
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.I K
+.T B TABKG
+.E B TBBKG
+.S V=P
+.D 
+.I K
+.T B TALFA
+.E B TBLFA
+.S V=P
+.I L>0
+.E I A:1
+.T D 
+.I K
+.T B TALFB
+.E B TBLFB
+.S V=P
+.I L>1
+.E I A:1
+.E I C>L
+.T D 
+.I K
+.T B TATPA
+.E B TBTPA
+.S V=P
+.I L>0
+.E I A+B
+.T D 
+.I K
+.T B TATPB
+.E B TBTPB
+.S V=P
+.I L>1
+.E I A+B
+.T D 
+.I K
+.T B TARTA
+.E B TBRTA
+.S V=P
+.I L>0
+.E I B:1
+.T D 
+.I K
+.T B TARTB
+.E B TBRTB
+.S V=P
+.I L>1
+.E I B:1
+.T D 
+.I K
+.T B TARTD
+.E B TBRTE
+.S V=P
+.I C>L
+.T I B:0
+.T D 
+.I K
+.T B TARTC
+.E B TBRTD
+.S V=P
+.I L:0
+.T I C:0
+.T I A>B
+.T D 
+.I K
+.T B TALFC
+.E B TBLFC
+.S V=P
+.I L<2
+.T I A<B
+.T D 
+.I K
+.T B TALFD
+.E B TBLFD
+.S V=P
+.I A<B
+.T I C>L
+.T D 
+.I K
+.T J +6
+.B TBRTC
+.S V=P
+.I L:1
+.T I A>B
+.T D 
+!FFLA
+.B TAFPA
+.S V=P
+.D 
+.B TAFPB
+.S V=P
+.I A+B
+.T J +8
+.I L:1
+.T S Y=Y-6
+.T W 
+.I L:0
+.T S Y=Y-18
+.T W 
+.T W 
+.I D:1
+.T I L:0
+.T S CO(0)=52+128
+.D 
+.$ P
+!FFLB
+.B TBFPA
+.S Y=2
+.S V=P
+.I L:0
+.T I GE(6):9
+.T S CO(0)=4+128
+.D 
+.B TBFPB
+.S V=P
+.I A+B
+.T J +8
+.I L:1
+.T S Y=Y-14
+.T W 
+.I L:0
+.T S Y=Y-29
+.T W 
+.T W 
+.I D:1
+.T I L:0
+.T S CO(0)=103+128
+.D 
+.$ P
+@@@@@

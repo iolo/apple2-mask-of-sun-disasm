@@ -50,7 +50,7 @@ length and the RWTS parameter block from code.
 | $EC/$ED | File destination pointer; updated next page |
 | $F0/$F1 | Prompt/parameter base ($0300) |
 
-This is a provisional resident map, not a complete zero-page ownership map.
+This resident map is complemented by the full [phase/ownership map](memory.md).
 Intrinsic/graphics routines share additional workspace; their interfaces are
 documented in [intrinsics.md](intrinsics.md). Assembly comments state known register clobbers for
 the reconstructed routines rather than asserting registers are preserved.
@@ -71,7 +71,7 @@ contents and a runtime capture establish the following additional map:
 | N0 / N1 / NV | $650C,$6608,$6704 room arrays |
 
 Each object/room array reserves $FC bytes. Names and roles are corroborated by
-room/library scripts; individual flag meanings still need puzzle cross-references.
+room/library scripts; [world.md](world.md) cross-references object and puzzle flags.
 Reads/writes of Q/R/Z access hardware and must not be treated as passive RAM.
 For example `.S R=0` clears a previous key before a timed interaction.
 
@@ -87,8 +87,12 @@ of the remaining sentence need different replay treatment.
 The normalizer strips insignificant words and recognizes chain separators using
 the table at $0390. Each significant word retains five high-bit characters and
 space padding. The handler matcher compares those five-character words against
-room and library patterns. Specific `%...` vocabulary expansion, command repeat
-and intrinsic conditional flow remain to be documented after intrinsic analysis.
+room and library patterns. `%...` vocabulary expansion and library sections are
+documented in [world.md](world.md); intrinsic condition flow is in
+[intrinsics.md](intrinsics.md). The slash repeat branch tests a zero low input
+pointer, whereas the supplied buffer begins at $0250. The parser route confirms
+that slash is rejected as an unknown command on both original and rebuilt disks.
+The apparent repeat intent is preserved without inventing a working feature.
 Observed invalid-command behavior is archived in the opening baseline.
 
 ## File loading
@@ -122,6 +126,7 @@ $BA69/$BA72 are short register-return stubs, not workspace-preservation routines
 $BA69 returns X=$6E,Y=$36 and $BA72 returns X=$6F,Y=$00. Their purpose in the
 supplied cracked version remains unconfirmed; no memory preservation is inferred.
 
-The early build now assembles bootstrap, DOS/RWTS, interpreter, character renderer
-and the full intrinsic allocated stream. Remaining CHAR GEN content, decoded
-editable graphics, world mapping and final validation still need completion.
+The build assembles bootstrap, DOS/RWTS, interpreter, complete CHAR GEN and the
+full intrinsic allocated stream. Fonts/pictures are editable build inputs and
+all scripts have decoded views. Unused system residue and final standalone/
+validation audits remain open.

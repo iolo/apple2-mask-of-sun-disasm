@@ -1,0 +1,152 @@
+{
+  "native": "assets/raw/a/files/parms-obj.bin",
+  "nominal_address": 2304,
+  "nominal_length": 240,
+  "actual_load_address": 768,
+  "prompt": "OK>",
+  "initial_loads": [
+    {
+      "parameter_address": 784,
+      "destination": 26624,
+      "filename": "INITIAL   "
+    },
+    {
+      "parameter_address": 796,
+      "destination": 28672,
+      "filename": "LIBRARY   "
+    },
+    {
+      "parameter_address": 808,
+      "destination": 3324,
+      "filename": "INTRIN.OBJ"
+    },
+    {
+      "parameter_address": 820,
+      "destination": 44540,
+      "filename": "CHAR GEN  "
+    }
+  ],
+  "raw_input": 592,
+  "normalized_input": 512,
+  "errors": [
+    {
+      "address": 848,
+      "text": "FILE NOT FOUND "
+    },
+    {
+      "address": 864,
+      "text": "DOS ERROR      "
+    },
+    {
+      "address": 880,
+      "text": "NO CR IN INPUT "
+    },
+    {
+      "address": 896,
+      "text": "STACK OVERFLOW "
+    }
+  ],
+  "insignificant_words": [
+    {
+      "address": 912,
+      "file_offset": 148,
+      "text": "AND ",
+      "terminator": 0
+    },
+    {
+      "address": 917,
+      "file_offset": 153,
+      "text": "AND.",
+      "terminator": 0
+    },
+    {
+      "address": 922,
+      "file_offset": 158,
+      "text": "AND,",
+      "terminator": 0
+    },
+    {
+      "address": 927,
+      "file_offset": 163,
+      "text": "AND\r",
+      "terminator": 0
+    },
+    {
+      "address": 932,
+      "file_offset": 168,
+      "text": "THEN ",
+      "terminator": 0
+    },
+    {
+      "address": 938,
+      "file_offset": 174,
+      "text": "THEN.",
+      "terminator": 0
+    },
+    {
+      "address": 944,
+      "file_offset": 180,
+      "text": "THEN,",
+      "terminator": 0
+    },
+    {
+      "address": 950,
+      "file_offset": 186,
+      "text": "THEN\r",
+      "terminator": 0
+    },
+    {
+      "address": 956,
+      "file_offset": 192,
+      "text": " AND ",
+      "terminator": 0
+    },
+    {
+      "address": 962,
+      "file_offset": 198,
+      "text": " AND.",
+      "terminator": 0
+    },
+    {
+      "address": 968,
+      "file_offset": 204,
+      "text": " AND,",
+      "terminator": 0
+    },
+    {
+      "address": 974,
+      "file_offset": 210,
+      "text": " AND\r",
+      "terminator": 0
+    },
+    {
+      "address": 980,
+      "file_offset": 216,
+      "text": " THEN ",
+      "terminator": 0
+    },
+    {
+      "address": 987,
+      "file_offset": 223,
+      "text": " THEN.",
+      "terminator": 0
+    },
+    {
+      "address": 994,
+      "file_offset": 230,
+      "text": " THEN,",
+      "terminator": 0
+    },
+    {
+      "address": 1001,
+      "file_offset": 237,
+      "text": " THEN\r",
+      "terminator": 1
+    }
+  ],
+  "allocation_tail": {
+    "file_offset": 244,
+    "length": 12,
+    "meaning": "zero allocation padding"
+  }
+}

@@ -1,0 +1,44 @@
+.S N=250
+.C 0,P,0
+.!CLRT
+.P "You are in an area of total darkness.
+.P "Your lamp appears to have gone out.
+.P "It is very cold.
+.S T0(4)=0
+.S T0(5)=0
+.S B=0
+LOOK 
+EXAMI
+CHECK
+READ 
+GET  
+GRAB 
+TAKE 
+PICK UP   
+PICKU
+CARRY
+KEEP 
+STEAL
+.!CLRT
+.P "It's much too dark to see anything.
+%LI05
+.I O:1
+.E P "You don't have any matches.
+.E J -4
+.P "You strike the match, but it won't
+.P "light.
+!INVD
+.!CLRT
+.P "You stumble around in the darkness
+.P "for a time.
+.S B=B+1
+.I B<9
+.T J +7
+.S T0(4)=1
+.I N0(43):0
+.T 3 ROOM 37.0 
+.I N0(43)>0
+.T 3 ROOM 43.0 
+.!TUNL
+@@@@@
+

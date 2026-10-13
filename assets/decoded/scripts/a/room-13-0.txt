@@ -1,0 +1,69 @@
+.S F=N
+.S N=13
+.!LOOK
+.!HERE
+!LOOK
+.!CLRT
+.P "You are at a branch in the tunnel.
+.I GE(6):2
+.T P "Passages go to the left, right,
+.I GE(6):7
+.T P "Passages go forward, to the right,
+.I GE(6):6
+.T P "Passages go forward, to the left,
+.P "and back behind you.
+%L...
+.!CLRT
+.I F#16
+.T J +3
+.!INVD
+!!!!!
+.P "You turn down the left passage.
+.I F:14
+.T !GT15
+.E !GT16
+.!TUNL
+%R...
+.!CLRT
+.I F#14
+.T J +3
+.!INVD
+!!!!!
+.P "You turn down the right passage.
+.I F:15
+.T !GT14
+.E !GT15
+.!TUNL
+%FW..
+.!CLRT
+.I F#15
+.T J +3
+.!INVD
+!!!!!
+.P "You continue forward.
+.I F:14
+.T !GT16
+.E !GT14
+.!TUNL
+%BK..
+.!CLRT
+.P "You turn around and trudge back down
+.P "the passage.
+.I F:14
+.T !GT14
+.I F:15
+.T !GT15
+.I F:16
+.T !GT16
+.!TUNL
+!GT14
+.3 ROOM 14.0 
+.S GE(6)=0
+!GT15
+.3 ROOM 15.0 
+.S GE(6)=0
+!GT16
+.3 ROOM 16.0 
+.S GE(6)=20
+@@@@@
+

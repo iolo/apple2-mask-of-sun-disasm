@@ -1,0 +1,155 @@
+.S N=19
+.!DRAW
+.!CLRT
+.I N0(19):2
+.T P "The old woman is gone.
+.E P "Inside the hut you see an old woman
+.E P "playing a flute. She pauses as you
+.E P "enter and looks up at you. . .
+.E !PLFT
+.$ P
+.E !MORE
+.E P ""Help an old woman who is poor and
+.E P " hungry. Kindness is always repaid
+.E P " by the gods."
+.T !HERE
+%LO22
+.P "It is a Kashmir-blue sapphire flute!
+!LOOK
+LOOK WOMAN
+.!CLRT
+.I N0(19):0
+.T P "The woman is looking at you as if
+.T P "she's expecting something.
+.E P "You are alone in the hut.
+%OF07
+.I TC(7)#0
+.T P "You don't have any food.
+.T J -3
+.I N0(19):2
+.T P "To whom?
+.T J -6
+.S TC(7)=255
+.S TC(22)=0
+.S TL(22)=255
+.P ""In exchange for your kindness,
+.P " please take this flute. 
+.P " It may help you at some time . . ."
+.!MORE
+.S N0(19)=1
+.!DRAW
+.!CLRT
+.!PRT1
+.$ P
+.!DSAP
+.!PRT1
+.!WAIT
+.!XFRM
+.!WAIT
+.!MORE
+.P "The woman disappears, leaving you
+.P "alone, mystified.
+.S N0(19)=2
+%GT22
+.I N0(19):2
+.T P "You already have it.
+.T J -3
+.S TL(22)=255
+.!PRT2
+.!DSAP
+.!PRT2
+.!XFRM
+.!WAIT
+.!MORE
+.P "You are alone in the hut, mystified.
+.S N0(19)=2
+%..02
+%OU..
+%..HU
+.3 ROOM 18.0 
+.!GOTO
+!DRAW
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.I N0(19):0
+.T B FLUTE
+.I N0(19):1
+.T B NOFLT
+.I N0(19):2
+.T B EMPTY
+.S V=P
+.D 
+.I N0(19)<2
+.T B WOMAN
+.S V=P
+.D 
+._ P
+SHOOT
+.!CLRT
+.%SH..
+.I N0(19):2
+.T J -4
+.!WAIT
+.S TL(22)=255
+.!DSAP
+.!CLRT
+.!XFRM
+.P "    "Violence often reaps violence."
+.P "
+.P "            BE WARNED!!
+.S N0(19)=2
+ASK  WOMAN
+.!CLRT
+.I N0(19):2
+.E P ""The first two of three"
+.E P " provide a key."
+.T P "You are alone in the hut.
+%OF..
+.I N0(19):2
+.T P "To whom??
+.E P "The old lady kindly refuses your offer.
+!DSAP
+.S K=3-P
+.C 1,K,0
+.B RGHTL
+.S V=K
+.D 
+.B EMPTY
+.S V=K
+.D 
+._ K
+.C 0,K,143
+.V 12
+!PRT1
+.P ""Remember, music soothes the savage
+.P " beast."
+!PRT2
+.P ""Your greed gets you nothing."
+!XFRM
+.S K=3-P
+.S A=20
+.S B=A
+.$ P
+.S B=B-1
+.I B>0
+.T J -2
+.S A=A-1
+.I A>1
+.$ K
+.T J -8
+.$ P
+.S B=A
+.$ K
+.S B=B-1
+.I B>0
+.T J -2
+.S A=A+1
+.I A<10
+.$ P
+.T J -8
+.$ K
+.S P=K
+@@@@@

@@ -1,0 +1,72 @@
+.S N=2
+.S P=1
+.C 
+.!CLRT
+.B PROFS
+.S V=1
+.D 
+.B RAOUL
+.S V=1
+.D 
+._ 1
+.S TC(1)=0
+.S TL(1)=255
+.P "You're standing on the airfield with    Professor de Perez and his assistant.   A dirt road leads north into the jungle.
+.$ 1
+.!MORE
+.P ""I brought you this map of three places that might contain the fabled mask. All the supplies are in the jeep."
+.!MORE
+.P ""My student Raoul will accompany you,   I'm sure you will find his knowledge of ancient languages very valuable."
+.!HERE
+!LOOK
+.P "A dirt road leads north into the jungle.
+ASK  
+.!CLRT
+.P ""You will have to find those answers on your quest for the Mask."
+%N...
+.!CLRT
+.P ""We should use the jeep, Senor!"
+%GTIJ
+%INIJ
+.S TC(2)=0
+.S TL(2)=255
+.S GE(0)=1
+.S GE(1)=2
+.S P=3-P
+.C 1,P,0
+.L L,TRAVEL1,VIEWS
+.S GE(9)=101
+.B RGHTL
+.S V=P
+.D 
+.B RGHTL
+.S V=P
+.D 
+.B LEFTA
+.S V=P
+.D 
+.B JPW&H
+.S V=P
+.D 
+.B ROADA
+.S V=P
+.D 
+.B MOUNB
+.S V=P
+.D 
+.B RGHTA
+.S CO(6)=103
+.S V=P
+.D 
+.$ P
+._ P
+.!WAIT
+.!CLRT
+.P "The professor bids "Adios amigos!" as hewalks toward the plane. Raoul climbs    into the jeep next to you.
+.!MORE
+.P ""The road north leads to the ruins."
+.!MORE
+.S GE(5)=3
+.3 ROOM 3.0  
+.!LEAV
+@@@@@

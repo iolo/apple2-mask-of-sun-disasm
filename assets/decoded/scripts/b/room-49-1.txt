@@ -1,0 +1,143 @@
+.S N=49
+.S TC(23)=255
+.S B=0
+.L L,MASK
+.S P=3-P
+.C 1,P,0
+.B MASK!
+.S V=P
+.D 
+._ P
+.!CLRT
+.P ""At last!  I have it!. . ."
+.P "Roboff holds the mask for a moment,
+.P "then puts it on.
+.$ P
+.!MORE
+.P "Suddenly, the voice of the Sun god
+.P "booms through the passages. . .
+.!MORE
+.P ""MORTAL, YOU HAVE USED THE MASK TOO
+.P " MUCH. FOR THAT TRANSGRESSION YOU
+.P " MUST DIE. . ."
+.!MORE
+.P "You hear a growl from behind you.
+.!GRWL
+.L L,JAG ATACK
+.S P=3-P
+.C 1,P,0
+.B JAGA1
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "From behind a pillar, a blue eyed
+.P "jaguar leaps at Roboff.
+.$ P
+.!WAIT
+.!SHOT
+.W 
+.W 
+.W 
+.!SHOT
+.!WAIT
+.!SHOT
+.W 
+.W 
+.W 
+.W 
+.W 
+.!GRWL
+.S P=3-P
+.C 1,P,0
+.B JAGA2
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "The gun shots seem to have no
+.P "effect on the jaguar!
+.$ P
+.!WAIT
+.!GRWL
+.!WAIT
+.S P=3-P
+.C 1,P,0
+.B JAGA3
+.S V=P
+.D 
+._ P
+.3 ROOM 49.2 
+.!GOTO
+!SHOT
+.S SV(6)=2
+.S SV(7)=140
+.S SV(4)=0
+.N N
+!GRWL
+.S SV(7)=0
+.S SV(4)=10
+.S SV(6)=1
+.N N
+.S SV(4)=9
+.S SV(6)=1
+.N N
+.S SV(4)=8
+.S SV(6)=1
+.N N
+.S SV(4)=7
+.S SV(6)=1
+.N N
+.S SV(4)=6
+.S SV(6)=1
+.N N
+.S SV(4)=5
+.S SV(6)=1
+.N N
+.S SV(4)=4
+.S SV(6)=1
+.N N
+.S SV(4)=3
+.S SV(6)=1
+.N N
+.S SV(4)=2
+.S SV(6)=2
+.N N
+.S SV(4)=1
+.S SV(6)=2
+.N N
+.S SV(4)=0
+.S SV(6)=5
+.N N
+.S SV(4)=1
+.S SV(6)=2
+.N N
+.S SV(4)=2
+.S SV(6)=1
+.N N
+.S SV(4)=3
+.S SV(6)=1
+.N N
+.S SV(4)=4
+.S SV(6)=1
+.N N
+.S SV(4)=5
+.S SV(6)=1
+.N N
+.S SV(4)=6
+.S SV(6)=1
+.N N
+.S SV(4)=7
+.S SV(6)=1
+.N N
+.S SV(4)=8
+.S SV(6)=1
+.N N
+.S SV(4)=9
+.S SV(6)=1
+.N N
+.S SV(4)=10
+.S SV(6)=1
+.N N
+@@@@@
+

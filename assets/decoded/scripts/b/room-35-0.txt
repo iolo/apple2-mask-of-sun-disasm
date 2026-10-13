@@ -1,0 +1,82 @@
+.S N=35
+.S P=3-P
+.C 1,P,0
+.L L,VICT ALTR
+.B RGHTL
+.S V=P
+.D 
+.B ALTR1
+.S V=P
+.D 
+.I N0(35):0
+.T B ALTR2
+.E B ALTR3
+.S V=P
+.D 
+._ P
+.!CLRT
+.I N0(35):0
+.T J +3
+.!RTRN
+!FRST
+.P "You are at a wide spot in the tunnel.
+.P "Ahead you see a stone altar and what
+.P "appears to be a freshly killed victim.
+.$ P
+.!MORE
+.P ""Look, Senor! The body is moving."
+.P "Indeed, from the ghastly corpse comes
+.P "slow, hissing speech....
+.!MORE
+.P ""Beware adventurer!
+.P "You walk the path to doom!   I was
+.P "once like you, a seeker of gold . . .
+.!MORE
+.P ""But I invaded the domain of the Sun.
+.P "For my folly I exist in eternal torture.Death without end . . .
+.!MORE
+.P ""But like me, you are a fool. You will
+.P "seek the mask of gold. I cannot save
+.P "you, but I can tell you a secret . . .
+.!MORE
+.P ""Bowls of silver, jade, and gold
+.P "used together, safe passage hold . . ."
+.S K=3-P
+.C 1,K,0
+.B RGHTL
+.S V=K
+.D 
+.B ALTR1
+.S V=K
+.D 
+.B ALTR3
+.S V=K
+.D 
+.C 0,K,143
+.V 12
+._ K
+.P ""Bowls of silver, jade, and gold
+.P "used together, safe passage hold . . ."
+.!XFRM
+.S N0(35)=1
+.!RTRN
+!LOOK
+!RTRN
+.!CLRT
+.P "The altar is empty. There is, however,
+.P "a bright red stain on it . . .
+.P ". . . perhaps fresh blood.
+.$ P
+.!MORE
+.P "The tunnel continues forward.
+%FW..
+%N...
+.3 ROOM 36.0 
+.!TUNL
+%BK..
+%S...
+.3 ROOM 34.2 
+.!TUNL
+@@@@@
+
+

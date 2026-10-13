@@ -42,7 +42,7 @@ def main():
                             'named_room_references': sorted(set(re.findall(r'ROOM [0-9]+\.[0-9]+', text))),
                             'lines': lines})
     output.mkdir(parents=True, exist_ok=True)
-    (output / 'scripts.json').write_text(json.dumps({'status': 'decoded views; interpretation still in progress',
+    (output / 'scripts.json').write_text(json.dumps({'status': 'decoded views; native scripts remain authoritative',
                                                     'scripts': records}, indent=2) + '\n')
     print(f'Generated {len(records)} readable script views and line provenance')
 

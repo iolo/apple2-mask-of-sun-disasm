@@ -1,0 +1,39 @@
+.S N=134
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B PYRTP
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "After much painful climbing you reach
+.P "the top. You see a large stone slab,
+.P "perhaps an altar of some kind.
+.$ P
+.!HERE
+!LOOK
+.P "You are on top of the pyramid. Nearby
+.P "is a featureless stone slab.
+!INVD
+.!CLRT
+.P "The only way is down.
+%D...
+.!CLRT
+.P "You begin the climb back down.
+.3 ROOM 34.0 
+.!GOTO
+%LOAL
+%PUAL
+.!CLRT
+.P "The stone slab is immovable. Close
+.P "examination reveals nothing significant.
+%LOPY
+.!CLRT
+.P "It's constructed of dark gray stone.
+.P "Any detail has long ago worn away.
+@@@@@
+
+

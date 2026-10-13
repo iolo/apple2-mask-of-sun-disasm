@@ -1,0 +1,27 @@
+.S N=12
+.L L,SNAKE-PIT
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B RUBST
+.S V=P
+.D 
+._ P
+.!CLRT
+.!LOOK
+.$ P
+.!HERE
+!LOOK
+.P "The passage ends in stairs going down.
+.P "The tunnel has collapsed making it
+.P "impassable.
+%LOST
+.P "The stairs are blocked by debris.
+%BK..
+.P "You head back.
+.3 ROOM 9.2  
+.!TUNL
+@@@@@
+

@@ -1,0 +1,44 @@
+.S N=234
+.L L,PYR HOLE
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B TNENT
+.S V=P
+.D 
+._ P
+.!CLRT
+.!LOOK
+.$ P
+.!HERE
+!LOOK
+%LOTU
+.P "You are at the bottom. Ahead you see
+.P "a dark tunnel.
+%N...
+%FW..
+%..TU
+.S GE(6)=0
+.3 ROOM 35.0 
+.!TUNL
+%CL..
+%U...
+.!CLRT
+.P "You scramble up a vine.
+.3 ROOM 34.0 
+.!GOTO
+CLIMBROPE 
+.!CLRT
+.I TC(15):254
+.T P "You climb the rope.
+.T 3 ROOM 34.0 
+.T !GOTO
+.P "There's no climbable rope here.
+ROPE 
+.!CLRT
+.I TC(15):254
+.T P "The rope is tied above.
+.E %AK..
+@@@@@

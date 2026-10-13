@@ -1,0 +1,123 @@
+.S N=40
+.L L,SUN TEMPL
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B ALTWL
+.S V=P
+.D 
+._ P
+.I TL(23):254
+.T R P
+.!CLRT
+.T P "The doorway is still not there.
+.E P "The doorway has disappeared!
+.E P "Now there is only a blank wall where
+.E P "the doorway was.
+.$ P
+.!MORE
+.!DRAW
+.!CLRT
+.T P "As you turn toward the altar you
+.T P "see a doorway behind it!
+.E P "You turn back to face the altar.
+.E P "You may find a clue there.
+.$ P
+.!HERE
+!DRAW
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B MAZEF
+.S V=P
+.D 
+.I TL(23):254
+.T B MAZED
+.T S V=P
+.T D 
+.T R P
+._ P
+!LOOK
+.!CLRT
+.P "You are in a large room, the temple
+.P "of the Sun. On the floor is a maze
+.P "pattern in a tiled mosaic.
+.!MORE
+.P "The far end of the room has an altar
+.P "to the Sun God.
+%LOAL
+.!CLRT
+.P "You can't see much detail from here.
+%FW..
+%..AL
+%W...
+.P "You approach the altar.
+.I N1(40):1
+.T 3 ROOM 41.3 
+.E 3 ROOM 41.0 
+.!GOTO
+%..EN
+%..TU
+.I TL(23):254
+.T P "You walk toward the doorway.
+.T 3 ROOM 41.3 
+.T !GOTO
+.!INVD
+%DRON
+%US23
+.I L#23
+.T P "You can't wear that.
+.T J +11
+.!GETO
+.I TL(23)<255
+.T P "You already have it on.
+.T J +7
+.S TL(23)=T0(23)+253
+.I TL(23):254
+.T !DRAW
+.!CLRT
+.P "You put the mask on.
+.$ P
+%DR23
+%RM23
+%GTOF
+.I L#23
+.T P "You can't do that.
+.T J +10
+.I TL(23):255
+.T P "You don`t have it on.
+.T J +7
+.I TL(23):254
+.S TL(23)=255
+.T !DRAW
+.!CLRT
+.P "You take off the mask.
+.$ P
+%LO23
+.S P=3-P
+.C 1,P,0
+.L N,MASK
+.B MASK!
+.I T0(23)#1
+.T S CO(9)=4
+.T S CO(11)=4
+.S V=P
+.D 
+.!CLRT
+._ P
+.I TL(23):254
+.T P "You take the mask off to look at it.
+.T S TL(23)=255
+.E P "You see a golden mask.
+.$ P
+.!MORE
+.!DRAW
+._ P
+.!CLRT
+.$ P
+@@@@@
+

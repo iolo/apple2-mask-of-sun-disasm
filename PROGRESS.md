@@ -458,3 +458,41 @@ outside accepted coverage. Text/vocabulary/world views, unused system residue,
 remaining behavior branches, separate manual baseline and final audit remain open.
 Next: map decoded scripts, text and vocabulary to world/puzzle state, then close
 disk/memory classifications and final standalone build dependencies.
+
+## Steps 5e/6c/7b — Script, vocabulary, world and memory indexes
+
+Completed substep on 2026-10-13; disk-source closure and final audit continue.
+
+- Generated readable high-bit ASCII views for all87 catalog text files with
+  stable side/filename/line IDs and native offsets/lengths. Native scripts remain
+  build authorities; views preserve controls and trailing-semicolon conventions.
+- Indexed1352 text literals,94 vocabulary groups,23 object names/initial states,
+  parameter pointers/errors/AND-THEN table and every script's literal room states,
+  file/picture references, conditions, assignments and array uses. The world index
+  explicitly distinguishes static references from proven reachable transitions.
+- Documented multi-section library scanning, five-character pattern matching,
+  macro substitutions, object containment/availability, puzzle flags, timers,
+  major failure/ending logic and optional branches. Linked original/native script
+  evidence rather than treating walkthrough prose as proof of engine behavior.
+- Added startup/gameplay memory ownership, complete world array spans, shared
+  zero-page roles, stack conventions, firmware/soft-switch interfaces, mutable
+  instructions and a focused boot-to-engine call graph.
+- Added a fresh parser/carrying route: corrected LOOX with backspace, tested
+  backspace at the prompt boundary, AND/THEN chaining, slash, head load restriction
+  and pickup restriction while holding the head. Both original/rebuilt versions
+  pass eleven checks. Slash is actually rejected in this supplied configuration;
+  the apparent repeat branch requires a different low buffer pointer and is not
+  claimed as a working feature or changed in the rebuild.
+
+Validation: all87 views' line bytes match native offsets; regenerating decoded
+script/world views gives identical hashes. Python compilation, unchanged supplied
+inputs and whitespace checks pass. An initial vocabulary index cleared pending
+patterns at `.S L=...`, omitting numbered object synonyms; retaining the pattern
+group through assignment fixes the index before acceptance.
+
+Limits: world conditions are mapped but not every branch is executed. Arbitrary
+script editing/encoding is not promised; retained native text is permitted by
+the plan. Side-B saves, inactive DOS fragments/free-sector residue, standalone
+read dependencies, separate manual baseline and final validation remain open.
+Next: assemble the retained side-B DOS copies, generate unused reserved zeros,
+finish per-region classification and audit source-only build reads.

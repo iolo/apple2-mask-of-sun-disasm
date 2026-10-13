@@ -1,0 +1,134 @@
+.S N=6
+.S GE(13)=0
+.L L,P6.5
+.!IDOL
+._ P
+.$ P
+.!CLRT
+.P "Near the road, you see a stone statue.
+.P "Raoul seems to recognize it.
+.!MORE
+.P ""It's an idol of the Aztec wizard god   Tezcatlipoca. Prof. DePerez has studied this cult extensively."
+.$ P
+.!HERE
+!IDOL
+.S P=3-P
+.C 1,P,0
+.B BKLNE
+.S V=P
+.D 
+.B IDOLB
+.S V=P
+.D 
+.I TL(10):6
+.E J +6
+.B IDOLH
+.S V=P
+.S X=27
+.S Y=55
+.D 
+.I N1(6)>0
+.E J +4
+.B IDOLH
+.S V=P
+.D 
+.B BKGND
+.S V=P
+.D 
+%LOID
+.I TC(2):0
+.T P "The idol is broken, but it looks like a stylized jaguar.
+.E P "Looking very closely, you notice an
+.E P "Aztec word carved into its chest. Raoul translates it as "XOTZIL".
+.E S N0(6)=1
+%LO10
+%LOAL
+.P "It's broken off at the neck. The eyes   are of blue stone.
+!LOOK
+.P "The road goes south, and northwest.
+%GT10
+%GTAL
+.!CLRT
+.I L#10
+.T !VAGR
+.T J -4
+.I O:1
+.T P "You already have it.
+.T J +6
+.I TC(2):0
+.E J +5
+.I O:2
+.T J +3
+.P "You can't get it from in the jeep.
+!XXGH
+.S J=0
+.I TC(3):0
+.E I TC(4):0
+.E I TC(5):0
+.E I TC(6):0
+.E I TC(7):0
+.E I TC(12):0
+.E I TC(13):0
+.E I TC(14):0
+.E J +4
+.P "Your load is too heavy. You'll have to
+.P "drop some items.
+!XGH2
+.S TC(10)=0
+.S TL(10)=255
+.!IDOL
+._ P
+.!CLRT
+.I O:2
+.T P "Taken from the jeep.
+.P "The head of the idol feels strangely
+.P "warm, almost as if alive.
+.$ P
+%DR10
+.I TC(10):0
+.E %DRID
+.E J -3
+.I TC(2):0
+.T P "You set the head in the jeep.
+.T S TC(10)=2
+.T J -7
+.S TC(10)=255
+.S TL(10)=6
+.!IDOL
+._ P
+.!CLRT
+.P "You set the head on the ground.
+.$ P
+%DRID
+.I L#10
+.T !VAGR
+.E J +2
+REPLAHEAD 
+.!CLRT
+.I TC(10):0
+.T J +3
+.P "You don't have the head.
+!XXRH
+.I TC(2):0
+.E J +3
+.P "You can't do that from in the jeep.
+!XXG2
+.S TC(10)=255
+.S N1(6)=1
+.!IDOL
+._ P
+.!CLRT
+.P "As soon as the head is replaced on the  body, the idol begins to tremble.
+.$ P
+.!MORE
+.P "As you step away, the idol begins an    amazing transformation.
+.!IDOL
+.3 ROOM 6.1  
+.!GOTO
+!INVD
+.!CLRT
+.I TC(2):0
+.E P "You must use the jeep for long trips.
+.T P "You try to start the jeep, but it won't even turn over!  "I have a bad feeling  about this, Senor."
+@@@@@
+

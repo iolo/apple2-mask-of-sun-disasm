@@ -1,0 +1,48 @@
+.S N=41
+.L L,SUN ALTAR
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B SNALT
+.S V=P
+.D 
+.B SNNDR
+.S V=P
+.D 
+.B SNALB
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "You are near the altar. It appears to
+.P "be a stone slab resting on a stone
+.P "block.
+.$ P
+.!MORE
+.!LOOK
+.!HERE
+!LOOK
+.P "On the wall behind the altar is a
+.P "bas-relief sculpture of the Sun God.
+.!MORE
+.P "As you get closer to the altar, there
+.P "appears to be some carving on the
+.P "top of the stone itself.
+LOOK CARVI
+EXAMICARVI
+%LOAL
+%FW..
+%..AL
+%W...
+.!CLRT
+.3 ROOM 41.1 
+.!GOTO
+%BK..
+%OU..
+%E...
+.3 ROOM 40.1 
+.!GOTO
+@@@@@
+

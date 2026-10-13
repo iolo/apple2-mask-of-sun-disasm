@@ -1,0 +1,69 @@
+.I N<100
+.E I N:200
+.T S N=149
+.T S N0(47)=7
+.S N=N++
+._ P
+.!CLRT
+.P "You are at a branch in the tunnel.
+.I GE(6):2
+.T P "Passages go to the left, right,
+.I GE(6):7
+.T P "Passages go forward, to the right,
+.I GE(6):6
+.T P "Passages go forward, to the left,
+.P "and back behind you.
+!LOOK
+.J -10
+%L...
+.!CLRT
+.I GE(6):7
+.T J +6
+.I GE(6):2
+.T S N0(47)=7
+.E S N0(47)=2
+.P "You turn down the left passage.
+.!GTON
+.!INVD
+%R...
+.!CLRT
+.I GE(6):6
+.T J +6
+.I GE(6):2
+.T S N0(47)=6
+.E S N0(47)=2
+.P "You turn down the right passage.
+.!GTON
+.!INVD
+%FW..
+.!CLRT
+.I GE(6):2
+.T J +6
+.I GE(6):6
+.T S N0(47)=7
+.E S N0(47)=6
+.P "You continue forward.
+.!GTON
+.!INVD
+%BK..
+.!CLRT
+.P "You turn around and trudge back down
+.P "the passage.
+.S GE(6)=N0(47)
+.3 ROOM 47.0 
+.!TUNL
+!GTON
+.S GE(6)=N0(N)
+.I GE(6)>19
+.T S N0(47)=N0(47)+10
+.T J +3
+.I GE(6)>9
+.T S N0(47)=N0(47)+20
+.I N>160
+.T I TL(23):254
+.T S GE(6)=0
+.T 3 ROOM 49.0 
+.E 3 ROOM 47.0 
+.!TUNL
+@@@@@
+

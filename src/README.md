@@ -9,5 +9,6 @@ both disk copies' bootstrap sectors. They have fixed-address ld65 configurations
 `intrinsics.s` covers script directives, expressions, vectors, speaker synthesis
 and save/restore, including its allocated header/tail.
 `tools/build.py` assembles these modules
-and incorporates them into a pair of early disks. Other executable regions still
-require disassembly; no executable blob is considered completed source.
+and incorporates them into a pair of disks. All live game-code regions now have
+source. Unbooted side-B DOS copies and zero reserved-sector residue still need
+final build classification; no executable blob is considered completed source.

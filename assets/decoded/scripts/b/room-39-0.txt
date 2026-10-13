@@ -1,0 +1,122 @@
+.S N=39
+.L L,STEP STN
+.S B=0
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B STEP1
+.S V=P
+.D 
+.B STEP2
+.S V=P
+.D 
+.B STEP5
+.S V=P
+.D 
+.B STEP3
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "You are in a large natural cavern.
+.P "In front of you is a hellish nightmare
+.P "scene . . .
+.$ P
+.!MORE
+.P "Amid walls of flaming gas, a river
+.P "of fire flows through a canyon of
+.P "molten rock.
+.!MORE
+.P "A single island of stone raises above
+.P "the fire. A fearless adventurer might
+.P "be able to step across to safety.
+.!MORE
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B STEP1
+.S V=P
+.D 
+.B STEP5
+.S V=P
+.D 
+.B STEP4
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "Suddenly, without warning, the stepping
+.P "stone sinks beneath the river of fire!
+.$ P
+.!WAIT
+.!WAIT
+.!WAIT
+.S P=3-P
+._ P
+.!CLRT
+.P "And then, just as suddenly, raises
+.P "again . . . You prepare to jump . . .
+.M 0
+.C 1,P,168
+.V 14
+.P "         Press return to jump,
+.P "       any other key to retreat
+.M 1
+.$ P
+.S P=3-P
+._ P
+.!CLRT
+.P "And then, just as suddenly, raises
+.P "again . . . You prepare to jump . . .
+.M 0
+.C 1,P,168
+.V 14
+.P "         Press return to jump,
+.P "       any other key to retreat
+.M 1
+.S P=3-P
+.S R=0
+.S D=1
+.S B=0
+.J +17
+.I D:0
+.T S B=B+6
+.I B>14
+.T S B=B-13
+.W 
+.H 
+.I D:1
+.T J +7
+.S C=C++
+.W 
+.I Q>127
+.T J +10
+.I C<B
+.T J -5
+.I Q>127
+.T J +6
+.S P=3-P
+.$ P
+.S D=1-D
+.S C=0
+.J -20
+._ P
+.!CLRT
+.I Q#141
+.S R=0
+.T P "Chicken!
+.T 3 ROOM 36.0 
+.T !TUNL
+.I D:1
+.T P "You made it!
+.E P "Splash and burn . . . 
+.E !WAIT
+.E !DEAD
+.3 ROOM 37.0 
+.!TUNL
+@@@@@
+

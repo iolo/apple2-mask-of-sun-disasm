@@ -1,0 +1,53 @@
+.S N=40
+.L L,SUN TEMPL
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B MAZEF
+.S V=P
+.D 
+._ P
+.!CLRT
+.!LOOK
+.!HERE
+!LOOK
+.P "You are in a large room, the temple
+.P "of the Sun. On the floor is a maze
+.P "pattern in a tiled mosaic.
+.$ P
+.!MORE
+.P "The far end of the room has an altar
+.P "to the Sun God. There are no exits
+.P "except the one you came in through.
+%LOAL
+.!CLRT
+.P "You can't see much detail from here.
+%FW..
+%..AL
+%W...
+.!CLRT
+.P "You approach the altar.
+.3 ROOM 41.0 
+.!GOTO
+%BK..
+%OU..
+%E...
+.!CLRT
+.P "You turn around.
+.3 ROOM 40.1 
+.!GOTO
+%LOMZ
+.!CLRT
+.P "Nice maze floor isn't it?
+%USMZ
+.!CLRT
+.P "So you like puzzles?? 
+%..MZ
+.!CLRT
+.P "Maze floors are confusing, aren't they?
+@@@@@
+
+
+

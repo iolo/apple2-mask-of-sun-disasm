@@ -1,0 +1,83 @@
+.S N=10
+.S TC(4)=254
+.S P=3-P
+.C 0,P,0
+.V 12
+._ P
+.P "Your screams echo through the tunnels
+.P "as you fall into a pit.
+.$ P
+.!WAIT
+.L L,SNAKE-PIT
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B PIT  
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "You land on something soft, which breaksyour fall, not your neck. You seem to
+.P "be in one piece, nothing damaged.
+.$ P
+.!MORE
+.P "You are at the bottom of a pit. You see
+.P "Raoul above you in the tunnel, holding
+.P "the lamp.
+.!MORE
+.P "Raoul lowers the end of a rope down
+.P "to you. "Grab hold, Senor! I will
+.P "get you out!"
+.!HERE
+!LOOK
+%LOPT
+.P "You are at the bottom of a pit. You see
+.P "Raoul above you in the tunnel, holding
+.P "the lamp. There is a rope here to climb.
+LAMP 
+LANTE
+.!CLRT
+.P "Raoul has the lamp.
+%GT15
+.P "You grab the end of the rope. Now what?
+CLIMBROPE 
+CLIMBOUT  
+UP   ROPE 
+.!CLRT
+.P "You climb out of the pit, and head back
+.P "toward the room.
+.S TC(4)=0
+.3 ROOM 9.2  
+.!TUNL
+ROPE 
+.!CLRT
+.P "The end hangs within your reach.
+.P "Raoul calls, "Climb out, Senor, I'll
+.P "hold the rope!"
+RAOULDOWN 
+.!CLRT
+.P ""It would serve no purpose for me to
+.P "join you in the pit, Senor."
+SEARCWALL 
+SEARCPIT  
+.!CLRT
+.P "You feel your way around the perimeter
+.P "of the pit. You discover a passage
+.P "leading away from the pit.
+.S N0(10)=1
+%..TU
+%OU..
+.I N0(10):0
+.T P "You'll have to climb the rope to exit.
+.T J -3
+.P "You call to Raoul to join you.
+.P "He climbs down the rope and the two
+.P "of you enter the tunnel.
+.S TC(4)=0
+.!WAIT
+.3 ROOM 15.0 
+.!TUNL
+@@@@@
+

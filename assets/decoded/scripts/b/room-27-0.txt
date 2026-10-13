@@ -1,0 +1,133 @@
+.S NV(27)=N
+.S F=N
+.S N=27
+.L L,GEO+STRS
+.!DRAW
+._ P
+.!CLRT
+.!LOOK
+.$ P
+.!HERE
+!LOOK
+.P "You are in a dark, musty room which
+.P "is featureless except for a stone
+.P "block on the floor.
+.$ P
+.I N1(27):0
+.E !MORE
+.E J +5
+%LOEN
+.I N1(27):0
+.T P "The door is closed. It has the same
+.T P "metal plate and keyhole.
+.E P "The door is open. It leads into a
+.E P "dark passage.
+LOOK BLOCK
+LOOK STONE
+.!CLRT
+.P "What can you say about a stone block?
+.P "It's there.
+LIFT STONE
+LIFT BLOCK
+MOVE STONE
+MOVE BLOCK
+SEARCSTONE
+SEARCBLOCK
+.!CLRT
+.I N0(27):0
+.T P "Ugh . . erf . . There! From under
+.T P "the stone block, you get a black key. 
+.T S N0(27)=1
+.T S TC(20)=0
+.E P "You find nothing else.
+SEARC
+.!CLRT
+.P "After searching for a while you find
+.P "nothing unusual.
+%USKY
+%OPEN
+%OPLK
+.I N1(27):1
+.T P "The door is already open.
+.T J -3
+.I L:0
+.T P "You must specify which key to use.
+.T J -6
+.I L#19
+.T P "The key doesn't work in this lock.
+.T J -9
+.P "The stone door grinds open. 
+.S N1(27)=1
+.!DRAW
+._ P
+.!CLRT
+.P "The door opens revealing a dark passage.
+.$ P
+.!DRNS
+%FW..
+.P "You continue forward.
+.I F:25
+.T !LGHT
+.E !WEBS
+%BK..
+.P "You turn around and go back.
+.I F:25
+.T !WEBS
+.E !LGHT
+%L...
+.I F:26
+.T !DOOR
+.E !INVD
+%R...
+.I F:26
+.T !INVD
+.E !DOOR
+!DOOR
+%..EN
+.I N1(27):0
+.T P "The door prevents your entrance.
+.T P "It appears to be locked tight.
+.E P "You go through the doorway.
+.E 3 ROOM 28.0 
+.E !GOTO
+!WEBS
+.3 ROOM 25.0 
+.S GE(6)=10
+.!TUNL
+!LGHT
+.3 ROOM 26.0 
+.S GE(6)=20
+.!TUNL
+!DRAW
+.S P=3-P
+.C 1,P,0
+.I N1(27):1
+.T B OPENL
+.E B DOORL
+.S V=P
+.I F:26
+.T D 
+.B GEORM
+.S V=P
+.D 
+.B BOXOV
+.S V=P
+.T S X=25
+.D 
+.I N1(27):1
+.T B OPENR
+.E B DOORR
+.S V=P
+.I F:25
+.T D 
+.B RTWAL
+.S V=P
+.D 
+!DRNS
+.I E
+.T J -2
+.S SV(4)=0
+.S SV(6)=150
+.S SV(7)=130
+.N N
+@@@@@

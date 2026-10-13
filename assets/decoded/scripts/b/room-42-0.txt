@@ -1,0 +1,67 @@
+.S N=42
+.L L,HISS-SUNS
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B HISRM
+.S V=P
+.D 
+._ P
+.!CLRT
+.I N0(42):0
+.T P "You are at the junction of four
+.T P "passages. You hear hissing coming
+.T P "from the tunnel in front of you.
+.E P "This room looks familiar! The tunnel
+.E P "seems to have looped back. The hissing
+.E P "sound continues from the passage ahead.
+.$ P
+.S N0(42)=1
+.!HERE
+.!TIME
+!LOOK
+.P "You are at the junction of four
+.P "passages. You hear hissing coming
+.P "from the tunnel in front of you.
+%FW..
+%W...
+.3 ROOM 43.0 
+.!TUNL
+%L...
+%N...
+%R...
+%S...
+%BK..
+%E...
+.3 ROOM 42.0 
+.!TUNL
+!TIME
+.V 15
+.P "OK>^
+.I Q>127
+.T J +4
+.!HISS
+.!TIM2
+.J -4
+!HISS
+.S SV(4)=0
+.S SV(7)=0
+.S L=0
+.S SV(6)=2
+.N N
+.I Q>127
+.T J +4
+.I L<5
+.T S L=L++
+.T J -6
+!TIM2
+.S L=0
+.I Q>127
+.T J -3
+.S L=L++
+.I L<250
+.T J -4
+@@@@@
+

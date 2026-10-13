@@ -1,0 +1,40 @@
+.S N=32
+._ P
+.!CLRT
+.!LOOK
+.!HERE
+.S A=8
+.S B=128
+.!BIRD
+!LOOK
+.S A=11
+.S B=128
+.!BIRD
+.P ""This road is very long Senor.
+.P " Should we go forward or turn back?"
+%SE..
+%BK..
+.S GE(4)=1
+.S GE(5)=3
+.3 ROOM 22.0 
+.!LEAV
+%NW..
+%FW..
+.S GE(4)=2
+.S GE(5)=4
+.I N0(32):1
+.T 3 ROOM 33.0 
+.E 3 ROOM 32.0 
+.!LEAV
+!BIRD
+.I E
+.T J -2
+.S L=0
+.S SV(0)=0
+.S SV(2)=A
+.S SV(3)=B
+.N 
+.I L<3
+.T S L=L++
+.T J -6
+@@@@@

@@ -1,0 +1,69 @@
+.S N=36
+.S B=0
+.S P=3-P
+.L L,TALK FACE
+.C 1,P,0
+.B GRGAS
+.S V=P
+.D 
+._ P
+.I N0(36):0
+.T J +3
+.!RTRN
+!FRST
+.!CLRT
+.P "You enter a room filled with a pale
+.P "green gas.  You instantly begin to feel
+.P "very faint. You cannot see the way out!
+.$ P
+.S N0(36)=1
+.!TIME
+%LO..
+.!CLRT
+.P "You cannot see any details.
+.!WAIT
+.P "If you stay in the gas much longer,
+.P "you won't ever see anything again!
+!RTRN
+.!CLRT
+.P ""The green gas again!"
+.P " You share Raoul's fate.
+.$ P
+.!WAIT
+.!WAIT
+.!WAIT
+.!WAIT
+.!DEAD
+!INVD
+.!CLRT
+.P "WHAM! You hit your head on a wall.
+.P "There is no exit in that direction.
+.P "Hurry! or you will be gassed to death.
+%SW..
+.!CLRT
+.P "Raoul did not make it.  You hear the
+.P "horrid gurgle of his dying breath as
+.P "you run toward fresh air and life.
+.S TC(1)=255
+.3 ROOM 39.0 
+.!TUNL
+!TIME
+.V 15
+.P "OK>^
+.S B=B+1
+.W 
+.I Q>127
+.T J +11
+.I B<100
+.T J -5
+.!CLRT
+.P "You collapse on the ground.
+.$ P
+.!WAIT
+.!WAIT
+.!WAIT
+.!WAIT
+.!DEAD
+@@@@@
+
+

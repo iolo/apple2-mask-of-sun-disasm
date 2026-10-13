@@ -1,0 +1,1153 @@
+!LEAV
+.I TC(2)#0
+.T J +5
+.I B:0
+.G TRAVEL    
+.!LDER
+.J -2
+.!CLRT
+.P "You must use the jeep for long trips.
+!TUNL
+.I TC(4):0
+.T I T0(4):1
+.T J +14
+.S K=3-P
+.C 0,K,0
+._ K
+.!CLRT
+.P "The tunnel is totally dark.
+.P "You return to the light.
+.$ K
+.!MORE
+._ P
+.$ P
+.!CLRT
+.!LOOK
+!!!!!
+.G TUNNEL    
+.!LDER
+.J -2
+!GOTO
+.!CLPR
+.G 
+.!LDER
+.J -2
+!LDER
+._ P
+.!CLRT
+.P "Error during disk action!
+.!CONT
+!CLPR
+.S C=0
+.S L=0
+.S G=0
+!XFRM
+.S K=3-P
+.S A=60
+.S B=A
+.$ P
+.S B=B-1
+.I B>0
+.T J -2
+.S A=A-1
+.I A>1
+.$ K
+.T J -8
+.$ P
+.S B=A
+.$ K
+.S B=B-1
+.I B>0
+.T J -2
+.S A=A+1
+.I A<30
+.$ P
+.T J -8
+.$ K
+.S P=K
+.!WAIT
+!CLRT
+.C 0,P,143
+.V 12
+.H 
+!WAIT
+.!IFSV
+.S L=0
+.S L=L++
+.W 
+.I L<10
+.T J -3
+.!IFRS
+!MORE
+.!IFSV
+.V 15
+.P "[ waiting ]
+.W 
+.I Q<128
+.T J -2
+.S R=0
+.!CLRT
+.!IFRS
+!IFSV
+.T S GE(15)=1
+.E S GE(15)=0
+!IFRS
+.I GE(15):1
+!VAGR
+.P "I don't recognize an object
+.P "in ";
+.& 
+.P "".
+!GETO
+.!IFSV
+.I L:0
+.T !VAGR
+.T J +17
+.I L:10
+.T P "The head is too heavy.
+.T J +14
+.I TC(10):0
+.T P "You can't get anything else!
+.T J +11
+.I O:2
+.E I O:4
+.T P "Taken from the jeep.
+.I O:3
+.T P "You pick up ;
+.T !OBJL
+.T P ".
+.I O#1
+.T S TC(L)=0
+.T S TL(L)=255
+.!IFRS
+!DROP
+.!IFSV
+.I L:2
+.T %GT01
+.T J -5
+.I L:0
+.T !VAGR
+.I O>1
+.T !DONT
+.I O:2
+.E I O:4
+.T P "It's in the jeep.
+.I O:1
+.E J +14
+.I L:23
+.T I TL(23):254
+.T R P
+.!CLRT
+.P "You set ;
+.!OBJL
+.P " 
+.I TC(2):0
+.E P "on the ground.
+.E S TC(L)=255
+.E S TL(L)=N
+.T P "into the jeep.
+.T S TC(L)=2
+.!IFRS
+!LOOK
+!TIME
+!PICD
+.S A=A
+!INVD
+.!IFSV
+.!CLRT
+.S GE(10)=GE(10)++
+.I GE(10)<2
+.T P "You can't go that direction.
+.I GE(10)>1
+.T P "You can't go that way.
+.T S GE(10)=0
+.!IFRS
+!DEAD
+.!CLRT
+.S L=0
+.V L
+.P "                                       
+.S L=L++
+.I L<12
+.T J -4
+.C 0,P,0
+.V 12
+.P "You feel life draining away, blackness
+.P "closing in on you...
+.!WAIT
+.P "You are dead.
+.3 DEATH     
+.!GOTO
+!NPIL
+.P "You feel faint, you need a pill but
+.P "don't have any !!
+.!MORE
+.!DEAD
+!BLOP
+.S SV(0)=200
+.S SV(3)=0
+.S SV(2)=10
+.I E:0
+.T N 
+!DONT
+.P "You don't have ;
+.!OBJL
+.P ".
+!OBJL
+.J +L+L
+!XXX1
+.P "Raoul;
+!XXX2
+.P "the jeep;
+!XXX3
+.P "a shovel;
+!XXX4
+.P "a lantern;
+!XXX5
+.P "a box of matches;
+!XXX6
+.P "a knife;
+!XXX7
+.P "tasty food;
+!XXX8
+.P "a bottle of pills;
+!XXX9
+.P "a jaguar;
+!XX10
+.P "a carved stone head;
+!XX11
+.P "a snake;
+!XX12
+.P "a cryptic map;
+!XX13
+.P "an ancient amulet;
+!XX14
+.P "a loaded revolver;
+!XX15
+.P "a length of rope;
+!XX16
+.P "a carved jade bowl;
+!XX17
+.P "a silver bowl;
+!XX18
+.P "a precious gold bowl;
+!XX19
+.P "a golden key;
+!XX20
+.P "a black key;
+!XX21
+.P "a silver key;
+!XX22
+.P "a flute;
+!XX23
+.P "the Mask of the Sun;
+!ALTP
+.!IFSV
+.I J:255
+.E J +4
+.!CLRT
+.S I=3
+!XXAL
+.S I=12
+.S K=3-P
+.C 0,K,0
+.$ K
+._ K
+.V 
+.!IFRS
+!IFCK
+.S M=0
+.S L=0
+.I J:254
+.T S J=255
+.T S L=2
+.S L=L++
+.I J:255
+.T J +3
+.I TC(L):J
+.J +2
+.I TL(L):N
+.T J +3
+.I L<23
+.T J -8
+!INVN
+.!IFSV
+.S L=0
+.S L=L++
+.I J:255
+.T J +3
+.I TC(L):J
+.J +2
+.I TL(L):N
+.E J +8
+.I M:I
+.T !MORE
+.T !ALTP
+.T S M=0
+.!OBJL
+.P "
+.S M=M++
+.I L<23
+.T J -15
+.I J:255
+.E !MORE
+.$ P
+._ P
+.!IFRS
+!HERE
+.S J=255
+.!IFCK
+.T !MORE
+.T !ALTP
+.T P "Nearby you see:
+.T S M=1
+.T !INVN
+%..EQ
+%LOEQ
+.S J=0
+.!IFCK
+.E P "You have nothing.
+.T !ALTP
+.T P "You have:
+.T P "
+.T !INVN
+%LO..
+.I L>0
+.T J +10
+.I W:141
+.T J +3
+.P "I can't tell you anything about that.
+!XLO1
+.I TC(2):0
+.T P "You are in an old jeep.
+.!LOOK
+.!HERE
+!XLO2
+.!GETO
+.P "You see nothing unusual about
+.!OBJL
+.P ".
+%LO08
+.!GETO
+.P "In the bottle you count ;
+.P TV(8)
+.P "of your lifegiving pills!
+%LO22
+.!GETO
+.P "You have a Kashmir-blue sapphire flute!
+%LO12
+%RE12
+%LO13
+%LOBW
+%LO23
+.!GETO
+.I TC(L)#0
+.T J -3
+.S GE(13)=0
+.S K=3-P
+.C 1,K,0
+.I L:13
+.T L N,AMULET
+.T B AMULE
+.I L:12
+.T L N,MAP
+.T B MAP.1
+.I L:16
+.T L N,JADE BOWL
+.T B JADEB
+.I L:17
+.T L N,SILVR BWL
+.T B SILVB
+.I L:18
+.T L N,GOLD BOWL
+.T B GOLDB
+.I L:23
+.E J +6
+.L N,MASK
+.B MASK!
+.I T0(23)#1
+.T S CO(11)=4
+.T S CO(13)=4
+.S V=K
+.D 
+.I TL(23):254
+.T I L#23
+.T R K
+._ K
+.I L:13
+.T $ K
+.T !MORE
+.C 0,K,143
+.V 12
+.T P "Your examination of the amulet at the   university was thorough. It only remainsto find where it may be used.
+.I L:12
+.T P "Aztec Ruins of Central Mexico.
+.T P "From the journal of Cortez' second
+.T P "expedition. White oval is the airfield.
+.I L:23
+.T I TL(23):254
+.T S TL(23)=255
+.T R P
+.T P "You take the mask off to look at it.
+.I L>13
+.T P "You see ;
+.T !OBJL
+.T P ".
+.$ K
+.!MORE
+.$ P
+._ P
+.!CLRT
+%LORD
+.!LOOK
+%LO02
+%LOSP
+%LOIJ
+.I TL(2)#N
+.T I TC(2)#0
+.T P "The jeep isn't here.
+.T J -4
+.S J=2
+.!IFCK
+.E P "The jeep is empty.
+.T !ALTP
+.T S T0(2)=1
+.T P "In the jeep you see:
+.T P "
+.T !INVN
+%LO04
+.!GETO
+.I T0(4):1
+.T P "The lamp is lit.
+.E P "The lamp is not lit, but it has plenty  of fuel.
+%GT..
+.I O:1
+.T P "You already have ;
+.T !OBJL
+.T P ".
+.E !GETO
+%GTA.
+%GTAB
+.S A=L
+.I TC(2):0
+.T S J=2
+.E S J=254
+.!IFCK
+.E P "There is nothing to get.
+.E J -7
+.S O=3
+.S L=2
+.S L=L++
+.I TC(2)#0
+.T I TL(L):N
+.T J +3
+.I TC(2):0
+.T I TC(L):2
+.T I L#A
+.T !CLRT
+.T !GETO
+.I L<23
+.T J -10
+%GT01
+%DR01
+.P "What a concept!
+%GT02
+%DR02
+.P "The jeep is too heavy for you to move!
+%GTIJ
+%INIJ
+.I O:3
+.T J +3
+.P "You are already in the jeep.
+!XXIJ
+.S TC(2)=0
+.S TL(2)=255
+.S GE(0)=1
+.!PICD
+.!CLRT
+.P "Ok, you're in the jeep.
+%GTOJ
+%OUOJ
+.I L:2
+.T J +3
+.%GT..
+!XOJ1
+.I O:1
+.T J +3
+.E P "You're not in the jeep.
+!XOJ2
+.S TC(2)=255
+.S TL(2)=N
+.S GE(0)=0
+.!PICD
+.!CLRT
+.P "Ah... It feels good to stretch the legs.
+%DR..
+.!DROP
+%DRIJ
+.I TL(2)#N
+.T I TC(2)#0
+.T P "There is no jeep here.
+.T J +5
+.I TC(2)#0
+.T S TC(2)=0
+.!DROP
+.T S TC(2)=255
+%DRA.
+%DRAB
+.S A=L
+.S J=0
+.!IFCK
+.E P "You have nothing.
+.E J -5
+.S O=1
+.S L=2
+.S L=L++
+.I TC(L):0
+.T I L#A
+.T !CLRT
+.T !DROP
+.I L<23
+.T J -6
+%LI05
+.!GETO
+.P "You have a lit match.
+.S T0(5)=1
+%LI04
+.!GETO
+.I T0(4):1
+.T P "Your lamp is already lit.
+.T J +5
+.I T0(5):1
+.E P "You need a match to light the lantern.
+.T P "You light your lantern with the match.
+.T S T0(4)=1
+.T S T0(5)=0
+%LI..
+.I L:0
+.T !VAGR
+.E P "You can't light that!
+.I T0(5):1
+.T !MORE
+.T P "Your match went out.
+.T S T0(5)=0
+%EA07
+.!GETO
+.P "Mmm, that was good.
+.S TC(7)=255
+%EA..
+.P "Yech!  I think I've lost my appetite.
+%DRON
+%US23
+!MAON
+.I L#23
+.T !VAGR
+.T J -3
+.!GETO
+.I TL(23)<255
+.T P "You already have it on.
+.T J +7
+.S TL(23)=T0(23)+253
+.I TL(23):254
+.T R P
+.T S TV(23)=TV(23)++
+.!CLRT
+.P "You put the mask on.
+%GTOF
+%RM23
+.I L#23
+.T !VAGR
+.T J -3
+.I TL(23):255
+.T P "You don`t have it on.
+.T J +6
+.I TL(23):254
+.T R P
+.!CLRT
+.P "You take off the mask.
+.S TL(23)=255
+%AK01
+.P ""I don't have a good answer, Senor!"
+%AT..
+.P "You must not! The gods would look
+.P "in disfavor if you did.
+%KI..
+.I L:0
+.E I L:2
+.T P "Ouch! You should exercise self control.
+.T J -4
+.I L:1
+.T P "Raoul kicks you back.
+.T J -7
+.I L:23
+.T I TL(L):254
+.T R P
+.!CLRT
+.!GETO
+.P "You see ;
+.!OBJL
+.P " sail
+.P "gracefully through the air.
+.S TC(L)=255
+.S TL(L)=N
+%SH..
+.I TC(14)#0
+.S L=14
+.T !DONT
+.T J -4
+.S SV(4)=0
+.S SV(6)=2
+.S SV(7)=140
+.I E:0
+.T N N
+.P "You seem to have missed.
+%PL22
+%US22
+.I TC(22)#0
+.S L=22
+.E J +3
+.!DONT
+!PLFT
+.I E
+.T J -2
+.S A=30
+.S SV(0)=A
+.S SV(2)=50
+.S SV(3)=0
+.N 
+.S A=A-2
+.I A>17
+.T J -6
+.!WAIT
+%DG03
+%US03
+.!GETO
+.P "Chunk!... The digging is too difficult.
+%U...
+%D...
+%IN..
+%OU..
+%FW..
+%BK..
+%N...
+%S...
+%E...
+%W...
+%NW..
+%SW..
+%NE..
+%SE..
+%CI..
+%L...
+%R...
+.!INVD
+SAVE GAME 
+.!CLRT
+.P "Save the current game.
+.P "Are you sure (Y/N)?
+.A 
+.!CLRT
+.= Y
+.E J +8
+.P "Place an initialized disk into Drive #1 and press RETURN.
+.!MORE
+.!CLRT
+.V 13
+.P "Saving, please wait.
+.- 
+._ P
+.!CONT
+.$ P
+.!LOOK
+RESTOGAME 
+.!CLRT
+.P "Restore a saved game.
+.P "Are you sure (Y/N)?
+.A 
+.!CLRT
+.= Y
+.E J +8
+.P "Place SAVE GAME disk into Drive #1 and  press RETURN.
+.!MORE
+.!CLRT
+.V 13
+.P "Restoring, please wait.
+.+ 
+._ P
+.!CONT
+.$ P
+.!LOOK
+!CONT
+.V 13
+.P "Place THE MASK OF THE SUN disk, side ;
+.I GE(12):2
+.E P "A
+.T P "B
+.P "into Drive #1 and press RETURN.
+.$ P
+.!MORE
+.!CLPR
+SOUNDON   
+.!CLRT
+.P "Sound turned on.
+.S E=0
+SOUNDOFF  
+.!CLRT
+.P "Sound turned off.
+.S E=1
+IT   
+.!CLRT
+.P "What do you mean by 'it' ?
+XOTZI
+.!CLRT
+.I N0(6)>0
+.E P "What ?
+.T P "Nothing appears to have changed.
+EAT  ALL  PILLS
+TAKE ALL  PILLS
+.!CLRT
+.I TC(8):0
+.S L=8
+.E !DONT
+.T !DEAD
+TAKE PILLS
+.!CLRT
+.I TC(8):0
+.T P "You must take only one pill at a time.
+.E S L=8
+.E ? 
+TAKE PILL 
+EAT  PILL 
+.!CLRT
+.I TC(8):0
+.T P "Your pill supply slowly dwindles.
+.T S TV(8)=TV(8)--
+.T S GE(7)=1
+.S L=8
+.E !DONT
+.T !BLOP
+BLOW OUT  
+.!CLRT
+.P "You can't do that.
+YES  
+NO   
+.!CLRT
+.P "What about it?
+%....
+.I C:1
+.T I G#1
+.T P "I don't understand ";
+.T & 
+.T P "".
+.E !XNM2
+%OP..
+%CL..
+%RE..
+%OF..
+%SY..
+%IS..
+%PU..
+%US..
+%PL..
+%RM..
+%AK..
+.I C:1
+.T P "I don't recognize a noun
+.T P "in ";
+.T & 
+.T P "".
+.E J +2
+
+.!CLRT
+.I C:0
+.T ? 
+.I G:1
+.E J +3
+.!INVD
+!XNM1
+.I C:1
+.E J +3
+.T S C=2
+!XNM2
+.I L>0
+.E J +6
+.P "I don't recognize a verb
+.P "in ";
+.& 
+.P "".
+!XNM3
+.& 
+.P " doesn't work here.
+@@@@@
+RAOUL
+.S L=1
+.2 01
+SHOVE
+.S L=3
+.2 03
+LAMP 
+LANTE
+.S L=4
+.2 04
+MATCH
+.S L=5
+.2 05
+KNIFE
+.S L=6
+.2 06
+FOOD 
+.S L=7
+.2 07
+BOTTL
+PILLS
+.S L=8
+.2 08
+JAGUA
+.S L=9
+.2 09
+HEAD 
+.S L=10
+.2 10
+SNAKE
+.S L=11
+.2 11
+MAP  
+.S L=12
+.2 12
+AMULE
+.S L=13
+.2 13
+GUN  
+REVOL
+.S L=14
+.2 14
+ROPE 
+.S L=15
+.2 15
+JADE BOWL 
+.S L=16
+.2 16
+SILVEBOWL 
+.S L=17
+.2 17
+GOLD BOWL 
+.S L=18
+.2 18
+GOLD KEY  
+GOLDEKEY  
+.S L=19
+.2 19
+BLACKKEY  
+.S L=20
+.2 20
+SILVEKEY  
+.S L=21
+.2 21
+FLUTE
+.S L=22
+.2 22
+MASK 
+.S L=23
+.2 23
+JEEP 
+.S L=2
+.2 02
+
+.S L=0
+.2 00
+@@@@@
+
+.I GE(7)<4
+.E I T0(8):1
+.T J +7
+.I TC(8)#0
+.E I TV(8):0
+.T !NPIL
+.S TV(8)=TV(8)--
+.S GE(7)=0
+.!BLOP
+.S GE(7)=GE(7)++
+.I L:0
+.T S O=0
+.T ? 
+.I TC(L):0
+.T S O=1
+.T ? 
+.S H=TC(L)
+.I TC(H):0
+.T S O=2
+.T ? 
+.I TL(L):N
+.T S O=3
+.T ? 
+.I TL(H):N
+.T S O=4
+.T ? 
+.!CLRT
+.P "You don't see ;
+.!OBJL
+.P "
+.P "anywhere around here.
+.!TIME
+@@@@@
+INVEN
+EQUIP
+.2 EQ
+SUPPL
+.2 SP
+RUIN 
+RUINS
+TEMPL
+PYRAM
+.2 PY
+DOOR 
+DOORW
+ENTRA
+.2 EN
+ROAD 
+.2 RD
+PATH 
+PATHW
+.2 PA
+TUNNE
+PASSA
+.2 TU
+STAIR
+STEPS
+.2 ST
+PLANE
+AIRPL
+AIRCR
+.2 PL
+PEOPL
+FIGUR
+.2 FG
+SIGN 
+WALL 
+.2 WA
+MAZE 
+FLOOR
+GROUN
+.2 MZ
+ALTAR
+DIAS 
+SLAB 
+SLABS
+STONE
+CRYPT
+COFFI
+SARCO
+PLATF
+.2 AL
+FACE 
+FACES
+IDOL 
+STATU
+.2 ID
+PIT  
+HOLE 
+OPENI
+.2 PT
+HUT  
+HOUSE
+SHACK
+.2 HU
+BOWL 
+.2 BW
+CRACK
+.2 CK
+UNDEA
+MONST
+SKELE
+.2 SK
+URN  
+POT  
+.2 UR
+POOL 
+WATER
+REFLE
+.2 PO
+LOCKS
+LOCK 
+.2 LK
+KEY  
+.2 KY
+IN   JEEP 
+INTO JEEP 
+INSIDJEEP 
+ENTERJEEP 
+.2 IJ
+OUT  JEEP 
+FROM JEEP 
+EXIT JEEP 
+LEAVEJEEP 
+.2 OJ
+ALL  BUT  
+.2 AB
+ALL  
+.2 A.
+ON   
+.2 ON
+OFF  
+.2 OF
+
+.I L>0
+.T ? 
+.2 ..
+@@@@@
+GET  
+GRAB 
+TAKE 
+PICK UP   
+CARRY
+KEEP 
+STEAL
+.1 GT
+DROP 
+SET  
+PUT  
+PLACE
+DUMP 
+.1 DR
+GIVE 
+OFFER
+.1 OF
+SAY  
+SPEAK
+SHOUT
+YELL 
+.1 SY
+LOOK 
+EXAMI
+CHECK
+.1 LO
+READ 
+.1 RE
+SEARC
+.1 SR
+OPEN 
+UNLOC
+.1 OP
+CLOSE
+.1 CL
+UP   
+ASCEN
+TOP  
+U    
+.1 U.
+DOWN 
+DESCE
+BOTTO
+BASE 
+D    
+.1 D.
+INSER
+.1 IS
+PUSH 
+PRESS
+.1 PU
+MOVE 
+LIFT 
+.1 MV
+WEAR 
+USE  
+.1 US
+IN   
+INTO 
+INSID
+ENTER
+.1 IN
+OUT  
+OUTSI
+EXIT 
+LEAVE
+.1 OU
+FORWA
+F    
+.1 FW
+BACK 
+B    
+.1 BK
+NORTH
+N    
+.1 N.
+SOUTH
+S    
+.1 S.
+EAST 
+E    
+.1 E.
+WEST 
+W    
+.1 W.
+NW   
+.1 NW
+SW   
+.1 SW
+NE   
+.1 NE
+SE   
+.1 SE
+LEFT 
+L    
+.1 L.
+RIGHT
+R    
+.1 R.
+CLIMB
+.1 CL
+AROUN
+CIRCL
+.1 CI
+LIGHT
+.1 LI
+GO   
+GOTO 
+APPRO
+FOLLO
+DRIVE
+.S G=1
+.1 ..
+KICK 
+.1 KI
+ATTAC
+HIT  
+KILL 
+FIGHT
+BREAK
+DESTR
+.1 AT
+SHOOT
+.1 SH
+EAT  
+.1 EA
+WAVE 
+GESTU
+.1 WV
+PLAY 
+.1 PL
+REMOV
+.1 RM
+DIG  
+.1 DG
+ASK  
+.1 AK
+
+.1 ..
+@@@@@
+
+.S C=1
+.! %****
+.I C:1
+.E J +4
+.!CLPR
+.!TIME
+!XEL1
+.2 ..
+@@@@@
+
+.S C=3
+.! %****
+.!CLPR
+.!TIME
+@@@@@

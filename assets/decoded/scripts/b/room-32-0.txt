@@ -1,0 +1,33 @@
+.S N=32
+.S N0(32)=1
+.S GE(13)=0
+.L L,BANDITOS
+.S P=3-P
+.C 1,P,0
+.B BANDI
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "Raoul slows the jeep. Camped by the
+.P "side of the road is a group of men.
+.P "You seem to recognize one of them.
+.$ P
+.!MORE
+.P "Yes, it is! Francisco Roboff, your
+.P "not-so-esteemed colleague appears
+.P "to be their leader.
+.!MORE
+.P "Raoul is very agitated. "They are
+.P "banditos, Senor! We must leave here
+.P "quickly or we will be robbed!"
+.!MORE
+.P "Raoul panics. Jamming the jeep into
+.P "gear, you race down the road amid
+.P "a shower of gravel.
+.!WAIT
+.!WAIT
+.3 ROOM 33.0 
+.!GOTO
+@@@@@
+

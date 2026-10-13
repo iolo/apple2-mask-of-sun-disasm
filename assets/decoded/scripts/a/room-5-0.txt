@@ -1,0 +1,46 @@
+.S N=5
+.S P=3-P
+.C 1,P,0
+.L L,TEMPLE1
+.B TEMPH
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "The trees part and an old ruin is
+.P "visible in a clearing. A pathway leads  forward to the foot of the stairs.
+.$ P
+.!HERE
+!LOOK
+.P "You are near a path to a ruined temple.
+.!MORE
+.P "The road continues to the east and      curves around to the southeast.
+%SE..
+.S GE(4)=1
+.I TL(10):6
+.T 3 ROOM 6.0  
+.E 3 ROOM 6.2  
+.!LEAV
+%E...
+.S GE(4)=1
+.S GE(5)=3
+.3 ROOM 3.0  
+.!LEAV
+%..PY
+%..PA
+%..ST
+%W...
+%FW..
+.!CLRT
+.I TC(2):0
+.T J +4
+.P "You quietly approach the ancient temple.
+.3 ROOM 7.0  
+.!GOTO
+.P "The pathway is far too narrow to use thejeep.
+%LOPY
+.!CLRT
+.P "It's small and made of dark stone, but  you can't see any details.
+@@@@@
+
+

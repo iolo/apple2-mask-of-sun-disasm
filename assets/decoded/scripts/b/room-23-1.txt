@@ -1,0 +1,111 @@
+.S N=23
+.S GE(13)=0
+.L L,JEEP ALON
+.S P=3-P
+.C 1,P,0
+.B JEEP 
+.S V=P
+.D 
+.B JEPAL
+.S V=P
+.D 
+._ P
+.!CLRT
+.P "You notice how pleasant fresh air
+.P "smells as you step into the sunlight.
+.$ P
+.!HERE
+%LORD
+!LOOK
+.P "You are near the entrance of a small
+.P "pyramid. The road goes back to the NE.
+%FW..
+%IN..
+%..EN
+%..TU
+%..PY
+%BK..
+%INPY
+.I TC(2):0
+.T P "You must leave the jeep to enter.
+.T J -3
+.S GE(6)=0
+.3 ROOM 24.0 
+.!TUNL
+%GTOJ
+%OUOJ
+.I L:2
+.T J +3
+.%GT..
+!!!!!
+.!FLIP
+.!XOJ1
+.$ P
+!PICD
+.L L,PYR ENTRN
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B PYREN
+.S V=P
+.D 
+._ P
+%GTIJ
+%INIJ
+.!FLIP
+.S GE(4)=1
+.S TC(2)=0
+.S TL(2)=255
+.S GE(0)=1
+.S GE(1)=2
+.S P=3-P
+.C 1,P,0
+.L L,TRAVEL1
+.S GE(9)=101
+.B RGHTL
+.S V=P
+.D 
+.B RGHTL
+.S V=P
+.D 
+.B LEFTA
+.S V=P
+.D 
+.B JPW&H
+.S V=P
+.D 
+.B ROADA
+.S V=P
+.D 
+.B MOUNB
+.S V=P
+.D 
+.B RGHTA
+.S CO(6)=103
+.S V=P
+.D 
+.$ P
+._ P
+.!WAIT
+.!CLRT
+.P "You climb into the jeep.
+.P "The road leads northeast.
+%NE..
+.S GE(5)=3
+.S GE(4)=1
+.3 ROOM 22.0 
+.!LEAV
+!FLIP
+.S GE(12)=3-GE(12)
+.P "Please remove THE MASK OF THE SUN disk,
+.I GE(12):1
+.T P "side B, turn it over to side A,
+.E P "side A, turn it over to side B,
+.P "and reinsert it.
+.!MORE
+.P "Press RETURN to continue play.
+.!MORE
+@@@@@
+

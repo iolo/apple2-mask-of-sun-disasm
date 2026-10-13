@@ -1,0 +1,33 @@
+.!WAIT
+.!WAIT
+.!WAIT
+.C 0,P,0
+.!CLRT
+.P "You may RESTORE GAME at this point.
+.P "Or to start a new game, enter START.
+START
+.S GE(12)=1
+.!CLRT
+.!CONT
+.3 INITIAL   
+.!GOTO
+RESTOGAME 
+!CLRT
+!MORE
+!CONT
+!GOTO
+!WAIT
+!IFSV
+!IFRS
+!CLPR
+!LDER
+!LOOK
+.? 
+!!!!!
+
+.!CLRT
+.P "INVALID COMMAND.
+.* 
+@@@@@
+!!!!!
+@@@@@

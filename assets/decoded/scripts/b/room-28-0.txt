@@ -1,0 +1,65 @@
+.S F=N
+.S N=28
+.L L,STAIRS
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B STRDN
+.S V=P
+.D 
+._ P
+.!CLRT
+.!LOOK
+.!HERE
+!LOOK
+.P "You enter a room with four doorways.
+.P "All are closed except the one you came
+.P "in through.
+.$ P
+.!MORE
+.P "In the middle of the room are stairs
+.P "leading down.
+%LOEN
+.P "The other three doors are locked tight.
+SEARC
+.!CLRT
+.P "After searching for a while you find
+.P "nothing unusual.
+%USKY
+%OPEN
+%OPLK
+.I L:0
+.T P "You must specify which key to use.
+.T J -3
+.P "That key doesn't work here.
+%CLEN
+.P "The door is stuck in the open position.
+%BK..
+.P "Back you go.
+.S N=NV(27)
+.I F:27
+.T 3 ROOM 27.0 
+.E 3 ROOM 29.0 
+.!GOTO
+%OU..
+.P "You exit the room.
+.S N=NV(27)
+.3 ROOM 27.0 
+.!GOTO
+%D...
+%D.ST
+.P "You descend into the depths.
+.3 ROOM 29.0 
+.!GOTO
+%FW..
+%L...
+%R...
+%..EN
+.P "The door is locked. You can't get
+.P "out that way.
+%LOST
+.!CLRT
+.P "They look like they will hold you.
+@@@@@

@@ -1,0 +1,155 @@
+.S N=41
+.S N1(40)=1
+.S TL(23)=41
+.S TC(13)=255
+.S T1(23)=1
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B SUNAL
+.S V=P
+.D 
+.B SUNMA
+.S V=P
+.D 
+.!GRND
+._ P
+.!CLRT
+.P "The altar opens . . . a gleam of gold
+.P "shows through rotted cloth . . .
+.P "That's it! The mask is here!
+.$ P
+!LOOK
+%LOAL
+.I T1(23)#1
+.T P "The altar is empty.
+.E P "There is a golden mask in the altar!
+!HERE
+.S A=A
+%LO23
+.I T0(23):0
+.T P "The mask is golden, with dark eyeholes.
+.E P "This mask has blue crystals for eyes!
+%GT23
+.I T1(23):1
+.T J +3
+.E %GT..
+!!!!!
+.S T1(23)=0
+.S TC(23)=0
+.S TL(23)=255
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B SUNAL
+.S V=P
+.D 
+.B SUNME
+.S V=P
+.D 
+._ P
+.!CLRT
+.I T0(23):0
+.T P "You reach into the altar and extract
+.T P "the mask.
+.E P "You feel a surge of power as you
+.E P "grasp the mask.
+.E S T1(23)=2
+.$ P
+SEARCALTAR
+SEARCOPENI
+SEARCHOLE 
+.!CLRT
+.I T1(23):0
+.T J +5
+.I T1(23):1
+.T P "There is a mask in the altar.
+.E P "You find nothing else.
+!!!!!
+.P "After fumbling around in the dust for
+.P "awhile you touch something strange.
+.P "Could it be?... Is it?... 
+.!MORE
+.S P=3-P
+.C 1,P,0
+.B RGHTL
+.S V=P
+.D 
+.B SUNAL
+.S V=P
+.D 
+.B SUNMA
+.S V=P
+.S CO(5)=2
+.S CO(7)=2
+.S CO(25)=5
+.D 
+._ P
+.!CLRT
+.P " ... It is!... Another mask!
+.P "This one has blue crystals for eyes!
+.$ P
+.!MORE
+.P "As soon as you touch the blue eyed
+.P "mask, the other mask disappears in
+.P "a cloud of dust!
+.!MORE
+.S T0(23)=1
+.S TC(23)=255
+.S TL(23)=41
+.S T0(8)=1
+.P "You feel the accursed disease leave
+.P "your body. This must be the true mask.
+.S T1(23)=1
+SEARC
+.!CLRT
+.P "Search what?
+%BK..
+%D...
+%OU..
+%E...
+.P "As you step back, the altar closes
+.P "with the sound of grinding stone.
+.I T1(23):1
+.T S TL(23)=255
+.3 ROOM 41.3 
+.!GOTO
+REMOVMASK 
+%GTOF
+.!CLRT
+.I TC(23):0
+.E !DHMK
+.T %RM23
+%GTA.
+%GTAB
+.P "Be specific.
+%DR23
+.I TC(23):0
+.E !DHMK
+.T %DR..
+%KI23
+%TH23
+.I TC(23):0
+.E !DHMK
+.T %KI..
+%DRON
+%US23
+.I L#23
+.T !VAGR
+.T J -3
+.I TC(23):0
+.E !DHMK
+.T !MAON
+!DHMK
+.P "You don't have the mask.
+!GRND
+.S SV(4)=0
+.S SV(6)=110
+.S SV(7)=130
+.N N
+@@@@@
+
