@@ -537,3 +537,28 @@ a second emulator; unformatted media errors and exhaustive branches remain untes
 Next: complete the separate operator-stepped original playthrough, build/boot from
 a clean tracked-file checkout without supplied/reference inputs, finish README/
 validation navigation and perform the final PRD/plan audit before declaring complete.
+
+## Step 2 completion — Operator-stepped original ending
+
+Completed on 2026-10-13. Individually supplied and inspected all122 route
+commands,102 page advances and side-B mount; the original reached victory and
+the final sequel message with83 pills. Native snake/skeleton/gas/Roboff/jaguar
+responses and an explicit ghost wait/jump-phase observation are recorded.
+
+The session reset interrupted an earlier partial run. The accepted restart
+records commands1–32 from reset, then a complete MAME checkpoint recovery before
+the snake. A strict reader predicate had missed that timed prompt and caused
+death; the failed attempt remains in raw logs/report. The successful continuation
+records commands33–122 and two final timed-reader parser retries. No game RAM or
+registers were patched. World bytes and both HGR pages agree across recovery.
+This is an agent-operated manual checkpoint retry, not a claimed human or
+uninterrupted single-life run. Fresh-boot automated equivalence remains separate.
+
+Validation: tools/verify_manual.py passes26 checks, original media hashes match,
+all122 commands/captures are present, and victory/final-message PNGs were visually
+inspected. Logs/transcript/screenshots and recovery provenance are committed under
+docs/evidence/manual-original; docs/manual-playthrough.md explains methods/limits.
+The helper now saves whole native emulator state before pausing each capture.
+
+Next: archive the clean reference-free checkout build/boot audit, finish README
+and final navigation, audit every PRD/plan deliverable, and commit completion.

@@ -1,0 +1,544 @@
+{"condition":"ready","label":"recovery","kind":"observe","time":0.0,"minimum":1,"maximum":120}
+{"condition":"ready","label":"recovery","kind":"capture","time":309.68333333191,"timeout":false}
+{"kind":"input","time":309.68333333191,"text":"ENTER\r","label":"command033"}
+{"condition":"ready","label":"command033","kind":"observe","time":309.68333333191,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command033","kind":"capture","time":322.43333333185,"timeout":false}
+{"kind":"input","time":322.43333333185,"text":"SHOOT","label":"command034"}
+{"condition":"ready","label":"command034","kind":"observe","time":322.43333333185,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command034","kind":"capture","time":331.74999999847,"timeout":false}
+{"kind":"input","time":331.74999999847,"text":"SEARCH PLATFORM\r","label":"command035"}
+{"condition":"ready","label":"command035","kind":"observe","time":331.74999999847,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command035","kind":"capture","time":334.1333333318,"timeout":false}
+{"kind":"input","time":334.1333333318,"text":"OPEN DOOR\r","label":"command036"}
+{"condition":"ready","label":"command036","kind":"observe","time":334.1333333318,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command036","kind":"capture","time":337.04999999845,"timeout":false}
+{"kind":"input","time":337.04999999845,"text":"FORWARD\r","label":"command037"}
+{"condition":"ready","label":"command037","kind":"observe","time":337.04999999845,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command037","kind":"capture","time":342.11666666509,"timeout":false}
+{"kind":"input","time":342.11666666509,"text":"GET BOWL\r","label":"command038"}
+{"condition":"ready","label":"command038","kind":"observe","time":342.11666666509,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command038","kind":"capture","time":346.96666666507,"timeout":false}
+{"kind":"input","time":346.96666666507,"text":" ","label":"page019"}
+{"condition":"ready","label":"page019","kind":"observe","time":346.96666666507,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page019","kind":"capture","time":347.98333333173,"timeout":false}
+{"kind":"input","time":347.98333333173,"text":" ","label":"page020"}
+{"condition":"ready","label":"page020","kind":"observe","time":347.98333333173,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page020","kind":"capture","time":350.64999999839,"timeout":false}
+{"kind":"input","time":350.64999999839,"text":"R\r","label":"command039"}
+{"condition":"ready","label":"command039","kind":"observe","time":350.64999999839,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command039","kind":"capture","time":367.24999999831,"timeout":false}
+{"kind":"input","time":367.24999999831,"text":"MOVE STONE\r","label":"command040"}
+{"condition":"ready","label":"command040","kind":"observe","time":367.24999999831,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command040","kind":"capture","time":369.21666666497,"timeout":false}
+{"kind":"input","time":369.21666666497,"text":" ","label":"page021"}
+{"condition":"ready","label":"page021","kind":"observe","time":369.21666666497,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page021","kind":"capture","time":371.58333333162,"timeout":false}
+{"kind":"input","time":371.58333333162,"text":" ","label":"page022"}
+{"condition":"ready","label":"page022","kind":"observe","time":371.58333333162,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page022","kind":"capture","time":372.59999999828,"timeout":false}
+{"condition":"The apparition fades","label":"ghost-fade","kind":"observe","time":372.59999999828,"minimum":1,"maximum":90.0}
+{"condition":"The apparition fades","label":"ghost-fade","kind":"capture","time":400.04999999816,"timeout":false}
+{"condition":"ready","label":"ghost-ready","kind":"observe","time":400.04999999816,"minimum":1,"maximum":120}
+{"condition":"ready","label":"ghost-ready","kind":"capture","time":411.73333333144,"timeout":false}
+{"kind":"input","time":411.73333333144,"text":" ","label":"page023"}
+{"condition":"ready","label":"page023","kind":"observe","time":411.73333333144,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page023","kind":"capture","time":413.18333333143,"timeout":false}
+{"kind":"input","time":413.18333333143,"text":"GET BOWL\r","label":"command041"}
+{"condition":"ready","label":"command041","kind":"observe","time":413.18333333143,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command041","kind":"capture","time":415.26666666475,"timeout":false}
+{"kind":"input","time":415.26666666475,"text":"EXIT\r","label":"command042"}
+{"condition":"ready","label":"command042","kind":"observe","time":415.26666666475,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command042","kind":"capture","time":429.41666666469,"timeout":false}
+{"kind":"input","time":429.41666666469,"text":"L\r","label":"command043"}
+{"condition":"ready","label":"command043","kind":"observe","time":429.41666666469,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command043","kind":"capture","time":440.81666666464,"timeout":false}
+{"kind":"input","time":440.81666666464,"text":" ","label":"page024"}
+{"condition":"ready","label":"page024","kind":"observe","time":440.81666666464,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page024","kind":"capture","time":453.36666666458,"timeout":false}
+{"kind":"input","time":453.36666666458,"text":" ","label":"page025"}
+{"condition":"ready","label":"page025","kind":"observe","time":453.36666666458,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page025","kind":"capture","time":454.38333333124,"timeout":false}
+{"kind":"input","time":454.38333333124,"text":"R\r","label":"command044"}
+{"condition":"ready","label":"command044","kind":"observe","time":454.38333333124,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command044","kind":"capture","time":471.99999999783,"timeout":false}
+{"kind":"input","time":471.99999999783,"text":" ","label":"page026"}
+{"condition":"ready","label":"page026","kind":"observe","time":471.99999999783,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page026","kind":"capture","time":473.01666666449,"timeout":false}
+{"kind":"input","time":473.01666666449,"text":" ","label":"page027"}
+{"condition":"ready","label":"page027","kind":"observe","time":473.01666666449,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page027","kind":"capture","time":474.43333333115,"timeout":false}
+{"kind":"input","time":474.43333333115,"text":"GET BOWL\r","label":"command045"}
+{"condition":"ready","label":"command045","kind":"observe","time":474.43333333115,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command045","kind":"capture","time":477.16666666447,"timeout":false}
+{"kind":"input","time":477.16666666447,"text":" ","label":"page028"}
+{"condition":"ready","label":"page028","kind":"observe","time":477.16666666447,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page028","kind":"capture","time":478.18333333113,"timeout":false}
+{"kind":"input","time":478.18333333113,"text":" ","label":"page029"}
+{"condition":"ready","label":"page029","kind":"observe","time":478.18333333113,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page029","kind":"capture","time":481.01666666445,"timeout":false}
+{"kind":"input","time":481.01666666445,"text":"HIT SKELETON WITH AMULET\r","label":"command046"}
+{"condition":"ready","label":"command046","kind":"observe","time":481.01666666445,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command046","kind":"capture","time":485.76666666443,"timeout":false}
+{"kind":"input","time":485.76666666443,"text":" ","label":"page030"}
+{"condition":"ready","label":"page030","kind":"observe","time":485.76666666443,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page030","kind":"capture","time":487.18333333109,"timeout":false}
+{"kind":"input","time":487.18333333109,"text":"GET BOWL\r","label":"command047"}
+{"condition":"ready","label":"command047","kind":"observe","time":487.18333333109,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command047","kind":"capture","time":504.83333333101,"timeout":false}
+{"kind":"input","time":504.83333333101,"text":" ","label":"page031"}
+{"condition":"ready","label":"page031","kind":"observe","time":504.83333333101,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page031","kind":"capture","time":505.84999999767,"timeout":false}
+{"kind":"input","time":505.84999999767,"text":"GET URN\r","label":"command048"}
+{"condition":"ready","label":"command048","kind":"observe","time":505.84999999767,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command048","kind":"capture","time":508.61666666433,"timeout":false}
+{"kind":"input","time":508.61666666433,"text":"PLACE URN RIGHT PEDESTAL\r","label":"command049"}
+{"condition":"ready","label":"command049","kind":"observe","time":508.61666666433,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command049","kind":"capture","time":512.91666666431,"timeout":false}
+{"kind":"input","time":512.91666666431,"text":" ","label":"page032"}
+{"condition":"ready","label":"page032","kind":"observe","time":512.91666666431,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page032","kind":"capture","time":514.4666666643,"timeout":false}
+{"kind":"input","time":514.4666666643,"text":"FORWARD\r","label":"command050"}
+{"condition":"ready","label":"command050","kind":"observe","time":514.4666666643,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command050","kind":"capture","time":520.21666666427,"timeout":false}
+{"kind":"input","time":520.21666666427,"text":" ","label":"page033"}
+{"condition":"ready","label":"page033","kind":"observe","time":520.21666666427,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page033","kind":"capture","time":521.23333333093,"timeout":false}
+{"kind":"input","time":521.23333333093,"text":"GO JEEP\r","label":"command051"}
+{"condition":"ready","label":"command051","kind":"observe","time":521.23333333093,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command051","kind":"capture","time":526.39999999758,"timeout":false}
+{"kind":"input","time":526.39999999758,"text":" ","label":"page034"}
+{"condition":"ready","label":"page034","kind":"observe","time":526.39999999758,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page034","kind":"capture","time":527.4833333309,"timeout":false}
+{"kind":"input","time":527.4833333309,"text":"ENTER JEEP\r","label":"command052"}
+{"condition":"ready","label":"command052","kind":"observe","time":527.4833333309,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command052","kind":"capture","time":529.59999999756,"timeout":false}
+{"kind":"input","time":529.59999999756,"text":"SE\r","label":"command053"}
+{"condition":"ready","label":"command053","kind":"observe","time":529.59999999756,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command053","kind":"capture","time":555.24999999744,"timeout":false}
+{"kind":"input","time":555.24999999744,"text":"S\r","label":"command054"}
+{"condition":"ready","label":"command054","kind":"observe","time":555.24999999744,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command054","kind":"capture","time":579.566666664,"timeout":false}
+{"kind":"input","time":579.566666664,"text":"W\r","label":"command055"}
+{"condition":"ready","label":"command055","kind":"observe","time":579.566666664,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command055","kind":"capture","time":604.59999999722,"timeout":false}
+{"kind":"input","time":604.59999999722,"text":" ","label":"page035"}
+{"condition":"ready","label":"page035","kind":"observe","time":604.59999999722,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page035","kind":"capture","time":605.61666666388,"timeout":false}
+{"kind":"input","time":605.61666666388,"text":" ","label":"page036"}
+{"condition":"ready","label":"page036","kind":"observe","time":605.61666666388,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page036","kind":"capture","time":606.63333333054,"timeout":false}
+{"kind":"input","time":606.63333333054,"text":"W\r","label":"command056"}
+{"condition":"ready","label":"command056","kind":"observe","time":606.63333333054,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command056","kind":"capture","time":630.18333333043,"timeout":false}
+{"kind":"input","time":630.18333333043,"text":"NW\r","label":"command057"}
+{"condition":"ready","label":"command057","kind":"observe","time":630.18333333043,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command057","kind":"capture","time":650.98333333034,"timeout":false}
+{"kind":"input","time":650.98333333034,"text":"FORWARD\r","label":"command058"}
+{"condition":"ready","label":"command058","kind":"observe","time":650.98333333034,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command058","kind":"capture","time":669.41666666358,"timeout":false}
+{"kind":"mount","side":"b","time":669.41666666358}
+{"kind":"input","time":669.41666666358,"text":" ","label":"page037"}
+{"condition":"ready","label":"page037","kind":"observe","time":669.41666666358,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page037","kind":"capture","time":670.43333333025,"timeout":false}
+{"kind":"input","time":670.43333333025,"text":"\r","label":"page038"}
+{"condition":"ready","label":"page038","kind":"observe","time":670.43333333025,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page038","kind":"capture","time":675.53333333022,"timeout":false}
+{"kind":"input","time":675.53333333022,"text":" ","label":"page039"}
+{"condition":"ready","label":"page039","kind":"observe","time":675.53333333022,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page039","kind":"capture","time":676.54999999689,"timeout":false}
+{"kind":"input","time":676.54999999689,"text":" ","label":"page040"}
+{"condition":"ready","label":"page040","kind":"observe","time":676.54999999689,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page040","kind":"capture","time":677.56666666355,"timeout":false}
+{"kind":"input","time":677.56666666355,"text":" ","label":"page041"}
+{"condition":"ready","label":"page041","kind":"observe","time":677.56666666355,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page041","kind":"capture","time":685.48333333018,"timeout":false}
+{"kind":"input","time":685.48333333018,"text":"FORWARD\r","label":"command059"}
+{"condition":"ready","label":"command059","kind":"observe","time":685.48333333018,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command059","kind":"capture","time":692.64999999681,"timeout":false}
+{"kind":"input","time":692.64999999681,"text":"EXIT JEEP\r","label":"command060"}
+{"condition":"ready","label":"command060","kind":"observe","time":692.64999999681,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command060","kind":"capture","time":694.8999999968,"timeout":false}
+{"kind":"input","time":694.8999999968,"text":"D\r","label":"command061"}
+{"condition":"ready","label":"command061","kind":"observe","time":694.8999999968,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command061","kind":"capture","time":700.66666666344,"timeout":false}
+{"kind":"input","time":700.66666666344,"text":"FORWARD\r","label":"command062"}
+{"condition":"ready","label":"command062","kind":"observe","time":700.66666666344,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command062","kind":"capture","time":717.03333333003,"timeout":false}
+{"kind":"input","time":717.03333333003,"text":" ","label":"page042"}
+{"condition":"ready","label":"page042","kind":"observe","time":717.03333333003,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page042","kind":"capture","time":718.04999999669,"timeout":false}
+{"kind":"input","time":718.04999999669,"text":" ","label":"page043"}
+{"condition":"ready","label":"page043","kind":"observe","time":718.04999999669,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page043","kind":"capture","time":719.06666666336,"timeout":false}
+{"kind":"input","time":719.06666666336,"text":" ","label":"page044"}
+{"condition":"ready","label":"page044","kind":"observe","time":719.06666666336,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page044","kind":"capture","time":720.08333333002,"timeout":false}
+{"kind":"input","time":720.08333333002,"text":" ","label":"page045"}
+{"condition":"ready","label":"page045","kind":"observe","time":720.08333333002,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page045","kind":"capture","time":721.09999999668,"timeout":false}
+{"kind":"input","time":721.09999999668,"text":" ","label":"page046"}
+{"condition":"ready","label":"page046","kind":"observe","time":721.09999999668,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page046","kind":"capture","time":733.66666666329,"timeout":false}
+{"kind":"input","time":733.66666666329,"text":" ","label":"page047"}
+{"condition":"ready","label":"page047","kind":"observe","time":733.66666666329,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page047","kind":"capture","time":734.68333332995,"timeout":false}
+{"kind":"input","time":734.68333332995,"text":"FORWARD\r","label":"command063"}
+{"condition":"ready","label":"command063","kind":"observe","time":734.68333332995,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command063","kind":"capture","time":751.21666666321,"timeout":false}
+{"kind":"input","time":751.21666666321,"text":"SW\r","label":"command064"}
+{"condition":"ready","label":"command064","kind":"observe","time":751.21666666321,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command064","kind":"capture","time":767.91666666313,"timeout":false}
+{"kind":"input","time":767.91666666313,"text":" ","label":"page048"}
+{"condition":"ready","label":"page048","kind":"observe","time":767.91666666313,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page048","kind":"capture","time":768.93333332979,"timeout":false}
+{"kind":"input","time":768.93333332979,"text":" ","label":"page049"}
+{"condition":"ready","label":"page049","kind":"observe","time":768.93333332979,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page049","kind":"capture","time":769.94999999646,"timeout":false}
+{"kind":"input","time":769.94999999646,"text":" ","label":"page050"}
+{"condition":"Press return to jump,","label":"page050","kind":"observe","time":769.94999999646,"minimum":1,"maximum":120}
+{"condition":"Press return to jump,","label":"page050","kind":"capture","time":775.44999999643,"timeout":false}
+{"condition":"safe-jump","label":"jump-ready","kind":"observe","time":775.44999999643,"minimum":0.0,"maximum":120}
+{"condition":"safe-jump","label":"jump-ready","kind":"capture","time":776.48333332976,"timeout":false}
+{"key":"Return","label":"command065","kind":"physical-key","seconds":0.08,"time":776.48333332976}
+{"condition":"ready","label":"command065","kind":"observe","time":776.48333332976,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command065","kind":"capture","time":794.56666666301,"timeout":false}
+{"kind":"input","time":794.56666666301,"text":" ","label":"page051"}
+{"condition":"ready","label":"page051","kind":"observe","time":794.56666666301,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page051","kind":"capture","time":795.58333332967,"timeout":false}
+{"kind":"input","time":795.58333332967,"text":" ","label":"page052"}
+{"condition":"ready","label":"page052","kind":"observe","time":795.58333332967,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page052","kind":"capture","time":797.58333332966,"timeout":false}
+{"kind":"input","time":797.58333332966,"text":" ","label":"page053"}
+{"condition":"ready","label":"page053","kind":"observe","time":797.58333332966,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page053","kind":"capture","time":798.59999999632,"timeout":false}
+{"kind":"input","time":798.59999999632,"text":" ","label":"page054"}
+{"condition":"ready","label":"page054","kind":"observe","time":798.59999999632,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page054","kind":"capture","time":799.61666666299,"timeout":false}
+{"kind":"input","time":799.61666666299,"text":" ","label":"page055"}
+{"condition":"ready","label":"page055","kind":"observe","time":799.61666666299,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page055","kind":"capture","time":800.63333332965,"timeout":false}
+{"kind":"input","time":800.63333332965,"text":" ","label":"page056"}
+{"condition":"ready","label":"page056","kind":"observe","time":800.63333332965,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page056","kind":"capture","time":801.64999999631,"timeout":false}
+{"kind":"input","time":801.64999999631,"text":" ","label":"page057"}
+{"condition":"ready","label":"page057","kind":"observe","time":801.64999999631,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page057","kind":"capture","time":802.66666666297,"timeout":false}
+{"kind":"input","time":802.66666666297,"text":" ","label":"page058"}
+{"condition":"ready","label":"page058","kind":"observe","time":802.66666666297,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page058","kind":"capture","time":803.68333332963,"timeout":false}
+{"kind":"input","time":803.68333332963,"text":"XOTZIL\r","label":"command066"}
+{"condition":"ready","label":"command066","kind":"observe","time":803.68333332963,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command066","kind":"capture","time":807.89999999628,"timeout":false}
+{"kind":"input","time":807.89999999628,"text":" ","label":"page059"}
+{"condition":"ready","label":"page059","kind":"observe","time":807.89999999628,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page059","kind":"capture","time":808.91666666294,"timeout":false}
+{"kind":"input","time":808.91666666294,"text":"FORWARD\r","label":"command067"}
+{"condition":"ready","label":"command067","kind":"observe","time":808.91666666294,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command067","kind":"capture","time":814.71666666292,"timeout":false}
+{"kind":"input","time":814.71666666292,"text":" ","label":"page060"}
+{"condition":"ready","label":"page060","kind":"observe","time":814.71666666292,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page060","kind":"capture","time":815.73333332958,"timeout":false}
+{"kind":"input","time":815.73333332958,"text":"FORWARD\r","label":"command068"}
+{"condition":"ready","label":"command068","kind":"observe","time":815.73333332958,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command068","kind":"capture","time":822.26666666288,"timeout":false}
+{"kind":"input","time":822.26666666288,"text":" ","label":"page061"}
+{"condition":"ready","label":"page061","kind":"observe","time":822.26666666288,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page061","kind":"capture","time":823.28333332954,"timeout":false}
+{"kind":"input","time":823.28333332954,"text":" ","label":"page062"}
+{"condition":"ready","label":"page062","kind":"observe","time":823.28333332954,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page062","kind":"capture","time":824.29999999621,"timeout":false}
+{"kind":"input","time":824.29999999621,"text":"FORWARD\r","label":"command069"}
+{"condition":"ready","label":"command069","kind":"observe","time":824.29999999621,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command069","kind":"capture","time":830.36666666284,"timeout":false}
+{"kind":"input","time":830.36666666284,"text":" ","label":"page063"}
+{"condition":"ready","label":"page063","kind":"observe","time":830.36666666284,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page063","kind":"capture","time":831.38333332951,"timeout":false}
+{"kind":"input","time":831.38333332951,"text":"PLACE AMULET IN OPENING\r","label":"command070"}
+{"condition":"ready","label":"command070","kind":"observe","time":831.38333332951,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command070","kind":"capture","time":839.8166666628,"timeout":false}
+{"kind":"input","time":839.8166666628,"text":"GET MASK\r","label":"command071"}
+{"condition":"ready","label":"command071","kind":"observe","time":839.8166666628,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command071","kind":"capture","time":842.26666666279,"timeout":false}
+{"kind":"input","time":842.26666666279,"text":"SEARCH ALTAR\r","label":"command072"}
+{"condition":"ready","label":"command072","kind":"observe","time":842.26666666279,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command072","kind":"capture","time":844.04999999611,"timeout":false}
+{"kind":"input","time":844.04999999611,"text":" ","label":"page064"}
+{"condition":"ready","label":"page064","kind":"observe","time":844.04999999611,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page064","kind":"capture","time":845.63333332944,"timeout":false}
+{"kind":"input","time":845.63333332944,"text":" ","label":"page065"}
+{"condition":"ready","label":"page065","kind":"observe","time":845.63333332944,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page065","kind":"capture","time":846.6499999961,"timeout":false}
+{"kind":"input","time":846.6499999961,"text":" ","label":"page066"}
+{"condition":"ready","label":"page066","kind":"observe","time":846.6499999961,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page066","kind":"capture","time":847.66666666276,"timeout":false}
+{"kind":"input","time":847.66666666276,"text":"GET MASK\r","label":"command073"}
+{"condition":"ready","label":"command073","kind":"observe","time":847.66666666276,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command073","kind":"capture","time":850.13333332942,"timeout":false}
+{"kind":"input","time":850.13333332942,"text":"BACK\r","label":"command074"}
+{"condition":"ready","label":"command074","kind":"observe","time":850.13333332942,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command074","kind":"capture","time":859.51666666271,"timeout":false}
+{"kind":"input","time":859.51666666271,"text":"WEAR MASK\r","label":"command075"}
+{"condition":"ready","label":"command075","kind":"observe","time":859.51666666271,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command075","kind":"capture","time":862.96666666269,"timeout":false}
+{"kind":"input","time":862.96666666269,"text":"EXIT\r","label":"command076"}
+{"condition":"ready","label":"command076","kind":"observe","time":862.96666666269,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command076","kind":"capture","time":879.74999999595,"timeout":false}
+{"condition":"ready","label":"mask-exit-ready","kind":"observe","time":879.74999999595,"minimum":2.0,"maximum":120}
+{"condition":"ready","label":"mask-exit-ready","kind":"capture","time":881.76666666261,"timeout":false}
+{"kind":"input","time":881.76666666261,"text":"FORWARD\r","label":"command077"}
+{"condition":"ready","label":"command077","kind":"observe","time":881.76666666261,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command077","kind":"capture","time":898.0833333292,"timeout":false}
+{"kind":"input","time":898.0833333292,"text":" ","label":"page067"}
+{"condition":"ready","label":"page067","kind":"observe","time":898.0833333292,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page067","kind":"capture","time":899.79999999586,"timeout":false}
+{"kind":"input","time":899.79999999586,"text":" ","label":"page068"}
+{"condition":"ready","label":"page068","kind":"observe","time":899.79999999586,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page068","kind":"capture","time":901.49999999585,"timeout":false}
+{"kind":"input","time":901.49999999585,"text":" ","label":"page069"}
+{"condition":"ready","label":"page069","kind":"observe","time":901.49999999585,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page069","kind":"capture","time":903.23333332918,"timeout":false}
+{"kind":"input","time":903.23333332918,"text":" ","label":"page070"}
+{"condition":"ready","label":"page070","kind":"observe","time":903.23333332918,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page070","kind":"capture","time":904.94999999583,"timeout":false}
+{"kind":"input","time":904.94999999583,"text":" ","label":"page071"}
+{"condition":"ready","label":"page071","kind":"observe","time":904.94999999583,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page071","kind":"capture","time":906.64999999583,"timeout":false}
+{"kind":"input","time":906.64999999583,"text":" ","label":"page072"}
+{"condition":"ready","label":"page072","kind":"observe","time":906.64999999583,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page072","kind":"capture","time":908.38333332915,"timeout":false}
+{"kind":"input","time":908.38333332915,"text":" ","label":"page073"}
+{"condition":"ready","label":"page073","kind":"observe","time":908.38333332915,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page073","kind":"capture","time":909.91666666248,"timeout":false}
+{"kind":"input","time":909.91666666248,"text":"COFFIN\r","label":"command078"}
+{"condition":"ready","label":"command078","kind":"observe","time":909.91666666248,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command078","kind":"capture","time":923.98333332908,"timeout":false}
+{"kind":"input","time":923.98333332908,"text":"R\r","label":"command079"}
+{"condition":"ready","label":"command079","kind":"observe","time":923.98333332908,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command079","kind":"capture","time":937.99999999568,"timeout":false}
+{"kind":"input","time":937.99999999568,"text":"L\r","label":"command080"}
+{"condition":"ready","label":"command080","kind":"observe","time":937.99999999568,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command080","kind":"capture","time":952.21666666228,"timeout":false}
+{"kind":"input","time":952.21666666228,"text":"L\r","label":"command081"}
+{"condition":"ready","label":"command081","kind":"observe","time":952.21666666228,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command081","kind":"capture","time":963.89999999556,"timeout":false}
+{"kind":"input","time":963.89999999556,"text":" ","label":"page074"}
+{"condition":"ready","label":"page074","kind":"observe","time":963.89999999556,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page074","kind":"capture","time":973.73333332885,"timeout":false}
+{"kind":"input","time":973.73333332885,"text":"L\r","label":"command082"}
+{"condition":"ready","label":"command082","kind":"observe","time":973.73333332885,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command082","kind":"capture","time":985.41666666213,"timeout":false}
+{"kind":"input","time":985.41666666213,"text":" ","label":"page075"}
+{"condition":"ready","label":"page075","kind":"observe","time":985.41666666213,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page075","kind":"capture","time":995.31666666208,"timeout":false}
+{"kind":"input","time":995.31666666208,"text":"R\r","label":"command083"}
+{"condition":"ready","label":"command083","kind":"observe","time":995.31666666208,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command083","kind":"capture","time":1012.7833333287,"timeout":false}
+{"kind":"input","time":1012.7833333287,"text":" ","label":"page076"}
+{"condition":"ready","label":"page076","kind":"observe","time":1012.7833333287,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page076","kind":"capture","time":1013.7999999953,"timeout":false}
+{"kind":"input","time":1013.7999999953,"text":" ","label":"page077"}
+{"condition":"ready","label":"page077","kind":"observe","time":1013.7999999953,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page077","kind":"capture","time":1014.816666662,"timeout":false}
+{"kind":"input","time":1014.816666662,"text":"FORWARD\r","label":"command084"}
+{"condition":"ready","label":"command084","kind":"observe","time":1014.816666662,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command084","kind":"capture","time":1027.0499999953,"timeout":false}
+{"kind":"input","time":1027.0499999953,"text":" ","label":"page078"}
+{"condition":"ready","label":"page078","kind":"observe","time":1027.0499999953,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page078","kind":"capture","time":1036.5166666619,"timeout":false}
+{"kind":"input","time":1036.5166666619,"text":"L\r","label":"command085"}
+{"condition":"ready","label":"command085","kind":"observe","time":1036.5166666619,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command085","kind":"capture","time":1050.2999999952,"timeout":false}
+{"kind":"input","time":1050.2999999952,"text":"R\r","label":"command086"}
+{"condition":"ready","label":"command086","kind":"observe","time":1050.2999999952,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command086","kind":"capture","time":1064.2499999951,"timeout":false}
+{"kind":"input","time":1064.2499999951,"text":"FORWARD\r","label":"command087"}
+{"condition":"ready","label":"command087","kind":"observe","time":1064.2499999951,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command087","kind":"capture","time":1078.6333333284,"timeout":false}
+{"kind":"input","time":1078.6333333284,"text":"L\r","label":"command088"}
+{"condition":"ready","label":"command088","kind":"observe","time":1078.6333333284,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command088","kind":"capture","time":1090.499999995,"timeout":false}
+{"kind":"input","time":1090.499999995,"text":" ","label":"page079"}
+{"condition":"ready","label":"page079","kind":"observe","time":1090.499999995,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page079","kind":"capture","time":1099.9499999949,"timeout":false}
+{"kind":"input","time":1099.9499999949,"text":"R\r","label":"command089"}
+{"condition":"ready","label":"command089","kind":"observe","time":1099.9499999949,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command089","kind":"capture","time":1113.7666666615,"timeout":false}
+{"kind":"input","time":1113.7666666615,"text":"FORWARD\r","label":"command090"}
+{"condition":"ready","label":"command090","kind":"observe","time":1113.7666666615,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command090","kind":"capture","time":1126.0666666615,"timeout":false}
+{"kind":"input","time":1126.0666666615,"text":" ","label":"page080"}
+{"condition":"ready","label":"page080","kind":"observe","time":1126.0666666615,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page080","kind":"capture","time":1135.6666666614,"timeout":false}
+{"kind":"input","time":1135.6666666614,"text":"FORWARD\r","label":"command091"}
+{"condition":"ready","label":"command091","kind":"observe","time":1135.6666666614,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command091","kind":"capture","time":1150.0499999947,"timeout":false}
+{"kind":"input","time":1150.0499999947,"text":"R\r","label":"command092"}
+{"condition":"ready","label":"command092","kind":"observe","time":1150.0499999947,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command092","kind":"capture","time":1163.9999999946,"timeout":false}
+{"kind":"input","time":1163.9999999946,"text":"L\r","label":"command093"}
+{"condition":"ready","label":"command093","kind":"observe","time":1163.9999999946,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command093","kind":"capture","time":1177.7999999946,"timeout":false}
+{"kind":"input","time":1177.7999999946,"text":"R\r","label":"command094"}
+{"condition":"ready","label":"command094","kind":"observe","time":1177.7999999946,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command094","kind":"capture","time":1191.5833333278,"timeout":false}
+{"kind":"input","time":1191.5833333278,"text":"R\r","label":"command095"}
+{"condition":"ready","label":"command095","kind":"observe","time":1191.5833333278,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command095","kind":"capture","time":1203.4499999945,"timeout":false}
+{"kind":"input","time":1203.4499999945,"text":" ","label":"page081"}
+{"condition":"ready","label":"page081","kind":"observe","time":1203.4499999945,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page081","kind":"capture","time":1212.9333333277,"timeout":false}
+{"kind":"input","time":1212.9333333277,"text":"FORWARD\r","label":"command096"}
+{"condition":"ready","label":"command096","kind":"observe","time":1212.9333333277,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command096","kind":"capture","time":1225.3999999944,"timeout":false}
+{"kind":"input","time":1225.3999999944,"text":" ","label":"page082"}
+{"condition":"ready","label":"page082","kind":"observe","time":1225.3999999944,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page082","kind":"capture","time":1234.866666661,"timeout":false}
+{"kind":"input","time":1234.866666661,"text":"R\r","label":"command097"}
+{"condition":"ready","label":"command097","kind":"observe","time":1234.866666661,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command097","kind":"capture","time":1248.6499999943,"timeout":false}
+{"kind":"input","time":1248.6499999943,"text":"L\r","label":"command098"}
+{"condition":"ready","label":"command098","kind":"observe","time":1248.6499999943,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command098","kind":"capture","time":1262.4666666609,"timeout":false}
+{"kind":"input","time":1262.4666666609,"text":"FORWARD\r","label":"command099"}
+{"condition":"ready","label":"command099","kind":"observe","time":1262.4666666609,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command099","kind":"capture","time":1276.8499999941,"timeout":false}
+{"kind":"input","time":1276.8499999941,"text":"R\r","label":"command100"}
+{"condition":"ready","label":"command100","kind":"observe","time":1276.8499999941,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command100","kind":"capture","time":1290.7999999941,"timeout":false}
+{"kind":"input","time":1290.7999999941,"text":"FORWARD\r","label":"command101"}
+{"condition":"ready","label":"command101","kind":"observe","time":1290.7999999941,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command101","kind":"capture","time":1303.099999994,"timeout":false}
+{"kind":"input","time":1303.099999994,"text":" ","label":"page083"}
+{"condition":"ready","label":"page083","kind":"observe","time":1303.099999994,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page083","kind":"capture","time":1312.549999994,"timeout":false}
+{"kind":"input","time":1312.549999994,"text":"L\r","label":"command102"}
+{"condition":"ready","label":"command102","kind":"observe","time":1312.549999994,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command102","kind":"capture","time":1324.4166666606,"timeout":false}
+{"kind":"input","time":1324.4166666606,"text":" ","label":"page084"}
+{"condition":"ready","label":"page084","kind":"observe","time":1324.4166666606,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page084","kind":"capture","time":1333.8999999939,"timeout":false}
+{"kind":"input","time":1333.8999999939,"text":"R\r","label":"command103"}
+{"condition":"ready","label":"command103","kind":"observe","time":1333.8999999939,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command103","kind":"capture","time":1345.7666666605,"timeout":false}
+{"kind":"input","time":1345.7666666605,"text":" ","label":"page085"}
+{"condition":"ready","label":"page085","kind":"observe","time":1345.7666666605,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page085","kind":"capture","time":1355.3833333271,"timeout":false}
+{"kind":"input","time":1355.3833333271,"text":"L\r","label":"command104"}
+{"condition":"ready","label":"command104","kind":"observe","time":1355.3833333271,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command104","kind":"capture","time":1369.1666666604,"timeout":false}
+{"kind":"input","time":1369.1666666604,"text":"R\r","label":"command105"}
+{"condition":"ready","label":"command105","kind":"observe","time":1369.1666666604,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command105","kind":"capture","time":1383.1166666603,"timeout":false}
+{"kind":"input","time":1383.1166666603,"text":"L\r","label":"command106"}
+{"condition":"ready","label":"command106","kind":"observe","time":1383.1166666603,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command106","kind":"capture","time":1396.9333333269,"timeout":false}
+{"kind":"input","time":1396.9333333269,"text":"FORWARD\r","label":"command107"}
+{"condition":"ready","label":"command107","kind":"observe","time":1396.9333333269,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command107","kind":"capture","time":1409.3999999935,"timeout":false}
+{"kind":"input","time":1409.3999999935,"text":" ","label":"page086"}
+{"condition":"ready","label":"page086","kind":"observe","time":1409.3999999935,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page086","kind":"capture","time":1418.8499999935,"timeout":false}
+{"kind":"input","time":1418.8499999935,"text":"L\r","label":"command108"}
+{"condition":"ready","label":"command108","kind":"observe","time":1418.8499999935,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command108","kind":"capture","time":1432.6666666601,"timeout":false}
+{"kind":"input","time":1432.6666666601,"text":"R\r","label":"command109"}
+{"condition":"ready","label":"command109","kind":"observe","time":1432.6666666601,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command109","kind":"capture","time":1446.4833333267,"timeout":false}
+{"kind":"input","time":1446.4833333267,"text":"FORWARD\r","label":"command110"}
+{"condition":"ready","label":"command110","kind":"observe","time":1446.4833333267,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command110","kind":"capture","time":1461.0166666599,"timeout":false}
+{"kind":"input","time":1461.0166666599,"text":"FORWARD\r","label":"command111"}
+{"condition":"ready","label":"command111","kind":"observe","time":1461.0166666599,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command111","kind":"capture","time":1473.4833333266,"timeout":false}
+{"kind":"input","time":1473.4833333266,"text":" ","label":"page087"}
+{"condition":"ready","label":"page087","kind":"observe","time":1473.4833333266,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page087","kind":"capture","time":1482.9499999932,"timeout":false}
+{"kind":"input","time":1482.9499999932,"text":"R\r","label":"command112"}
+{"condition":"ready","label":"command112","kind":"observe","time":1482.9499999932,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command112","kind":"capture","time":1496.7333333264,"timeout":false}
+{"kind":"input","time":1496.7333333264,"text":"L\r","label":"command113"}
+{"condition":"ready","label":"command113","kind":"observe","time":1496.7333333264,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command113","kind":"capture","time":1510.549999993,"timeout":false}
+{"kind":"input","time":1510.549999993,"text":"R\r","label":"command114"}
+{"condition":"ready","label":"command114","kind":"observe","time":1510.549999993,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command114","kind":"capture","time":1524.499999993,"timeout":false}
+{"kind":"input","time":1524.499999993,"text":"FORWARD\r","label":"command115"}
+{"condition":"ready","label":"command115","kind":"observe","time":1524.499999993,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command115","kind":"capture","time":1536.7999999929,"timeout":false}
+{"kind":"input","time":1536.7999999929,"text":" ","label":"page088"}
+{"condition":"ready","label":"page088","kind":"observe","time":1536.7999999929,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page088","kind":"capture","time":1546.4166666595,"timeout":false}
+{"kind":"input","time":1546.4166666595,"text":"L\r","label":"command116"}
+{"condition":"ready","label":"command116","kind":"observe","time":1546.4166666595,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command116","kind":"capture","time":1560.2333333262,"timeout":false}
+{"kind":"input","time":1560.2333333262,"text":"R\r","label":"command117"}
+{"condition":"ready","label":"command117","kind":"observe","time":1560.2333333262,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command117","kind":"capture","time":1571.9333333261,"timeout":false}
+{"kind":"input","time":1571.9333333261,"text":" ","label":"page089"}
+{"condition":"ready","label":"page089","kind":"observe","time":1571.9333333261,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page089","kind":"capture","time":1581.5499999927,"timeout":false}
+{"kind":"input","time":1581.5499999927,"text":"FORWARD\r","label":"command118"}
+{"condition":"ready","label":"command118","kind":"observe","time":1581.5499999927,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command118","kind":"capture","time":1595.933333326,"timeout":false}
+{"kind":"input","time":1595.933333326,"text":"WEAR MASK\r","label":"command119"}
+{"condition":"ready","label":"command119","kind":"observe","time":1595.933333326,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command119","kind":"capture","time":1598.1166666593,"timeout":false}
+{"kind":"input","time":1598.1166666593,"text":"L\r","label":"command120"}
+{"condition":"ready","label":"command120","kind":"observe","time":1598.1166666593,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command120","kind":"capture","time":1615.2833333259,"timeout":false}
+{"kind":"input","time":1615.2833333259,"text":" ","label":"page090"}
+{"condition":"ready","label":"page090","kind":"observe","time":1615.2833333259,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page090","kind":"capture","time":1616.2999999926,"timeout":false}
+{"kind":"input","time":1616.2999999926,"text":" ","label":"page091"}
+{"condition":"ready","label":"page091","kind":"observe","time":1616.2999999926,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page091","kind":"capture","time":1617.3166666592,"timeout":false}
+{"kind":"input","time":1617.3166666592,"text":" ","label":"page092"}
+{"condition":"ready","label":"page092","kind":"observe","time":1617.3166666592,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page092","kind":"capture","time":1618.3333333259,"timeout":false}
+{"kind":"input","time":1618.3333333259,"text":" ","label":"page093"}
+{"condition":"ready","label":"page093","kind":"observe","time":1618.3333333259,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page093","kind":"capture","time":1619.3499999925,"timeout":false}
+{"kind":"input","time":1619.3499999925,"text":" ","label":"page094"}
+{"condition":"ready","label":"page094","kind":"observe","time":1619.3499999925,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page094","kind":"capture","time":1620.3666666592,"timeout":false}
+{"kind":"input","time":1620.3666666592,"text":"GIVE MASK\r","label":"command121"}
+{"condition":"ready","label":"command121","kind":"observe","time":1620.3666666592,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command121","kind":"capture","time":1622.8999999925,"timeout":false}
+{"kind":"input","time":1622.8999999925,"text":"GIVE MASK\r","label":"retry121"}
+{"condition":"ready","label":"retry121","kind":"observe","time":1622.8999999925,"minimum":1,"maximum":120}
+{"condition":"ready","label":"retry121","kind":"capture","time":1628.5666666592,"timeout":false}
+{"kind":"input","time":1628.5666666592,"text":" ","label":"page095"}
+{"condition":"ready","label":"page095","kind":"observe","time":1628.5666666592,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page095","kind":"capture","time":1629.5833333258,"timeout":false}
+{"kind":"input","time":1629.5833333258,"text":" ","label":"page096"}
+{"condition":"ready","label":"page096","kind":"observe","time":1629.5833333258,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page096","kind":"capture","time":1630.5999999925,"timeout":false}
+{"kind":"input","time":1630.5999999925,"text":" ","label":"page097"}
+{"condition":"ready","label":"page097","kind":"observe","time":1630.5999999925,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page097","kind":"capture","time":1646.5333333258,"timeout":false}
+{"condition":"ready","label":"jaguar-ready","kind":"observe","time":1646.5333333258,"minimum":1.0,"maximum":120}
+{"condition":"ready","label":"jaguar-ready","kind":"capture","time":1647.5499999924,"timeout":false}
+{"kind":"input","time":1647.5499999924,"text":"PLAY FLUTE\r","label":"command122"}
+{"condition":"ready","label":"command122","kind":"observe","time":1647.5499999924,"minimum":1,"maximum":120}
+{"condition":"ready","label":"command122","kind":"capture","time":1650.1833333257,"timeout":false}
+{"kind":"input","time":1650.1833333257,"text":"PLAY FLUTE\r","label":"retry122"}
+{"condition":"ready","label":"retry122","kind":"observe","time":1650.1833333257,"minimum":1,"maximum":120}
+{"condition":"ready","label":"retry122","kind":"capture","time":1660.0499999924,"timeout":false}
+{"kind":"input","time":1660.0499999924,"text":" ","label":"page098"}
+{"condition":"ready","label":"page098","kind":"observe","time":1660.0499999924,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page098","kind":"capture","time":1661.066666659,"timeout":false}
+{"kind":"input","time":1661.066666659,"text":" ","label":"page099"}
+{"condition":"ready","label":"page099","kind":"observe","time":1661.066666659,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page099","kind":"capture","time":1662.0833333257,"timeout":false}
+{"kind":"input","time":1662.0833333257,"text":" ","label":"page100"}
+{"condition":"ready","label":"page100","kind":"observe","time":1662.0833333257,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page100","kind":"capture","time":1678.2499999923,"timeout":false}
+{"kind":"input","time":1678.2499999923,"text":" ","label":"page101"}
+{"condition":"ready","label":"page101","kind":"observe","time":1678.2499999923,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page101","kind":"capture","time":1679.2666666589,"timeout":false}
+{"kind":"input","time":1679.2666666589,"text":" ","label":"page102"}
+{"condition":"ready","label":"page102","kind":"observe","time":1679.2666666589,"minimum":1,"maximum":120}
+{"condition":"ready","label":"page102","kind":"capture","time":1799.2833333251,"timeout":true}
+{"condition":"Watch for the next Ultrasoft adventure.","label":"ending","kind":"observe","time":1799.2833333251,"minimum":0.0,"maximum":120}
+{"condition":"Watch for the next Ultrasoft adventure.","label":"ending","kind":"capture","time":1799.2999999917,"timeout":false}
+{"kind":"finish","time":1799.2999999917}

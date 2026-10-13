@@ -1,0 +1,156 @@
+{"kind":"observe","condition":"ready","minimum":1,"label":"boot","time":0.0,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"boot","time":29.183333333199}
+{"text":" ","kind":"input","time":29.183333333199,"label":"page001"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page001","time":29.183333333199,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page001","time":30.199999999861}
+{"text":" ","kind":"input","time":30.199999999861,"label":"page002"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page002","time":30.199999999861,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page002","time":31.216666666523}
+{"text":"LOOK\r","kind":"input","time":31.216666666523,"label":"command001"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command001","time":31.216666666523,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command001","time":33.249999999847}
+{"text":"INVENTORY\r","kind":"input","time":33.249999999847,"label":"command002"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command002","time":33.249999999847,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command002","time":36.533333333165}
+{"text":" ","kind":"input","time":36.533333333165,"label":"page003"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page003","time":36.533333333165,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page003","time":37.549999999827}
+{"text":"FERNAP\r","kind":"input","time":37.549999999827,"label":"command003"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command003","time":37.549999999827,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command003","time":39.166666666486}
+{"text":"GET\r","kind":"input","time":39.166666666486,"label":"command004"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command004","time":39.166666666486,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command004","time":40.61666666648}
+{"text":"GET LAMP\r","kind":"input","time":40.61666666648,"label":"command005"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command005","time":40.61666666648,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command005","time":42.433333333138}
+{"text":"FERNAP GUN\r","kind":"input","time":42.433333333138,"label":"command006"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command006","time":42.433333333138,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command006","time":45.099999999792}
+{"text":"EXIT PLANE\r","kind":"input","time":45.099999999792,"label":"command007"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command007","time":45.099999999792,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command007","time":57.766666666401}
+{"text":" ","kind":"input","time":57.766666666401,"label":"page004"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page004","time":57.766666666401,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page004","time":58.783333333063}
+{"text":" ","kind":"input","time":58.783333333063,"label":"page005"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page005","time":58.783333333063,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page005","time":59.799999999725}
+{"text":" ","kind":"input","time":59.799999999725,"label":"page006"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page006","time":59.799999999725,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page006","time":61.066666666386}
+{"text":"GET MAP\r","kind":"input","time":61.066666666386,"label":"command008"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command008","time":61.066666666386,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command008","time":63.199999999709}
+{"text":"ENTER JEEP\r","kind":"input","time":63.199999999709,"label":"command009"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command009","time":63.199999999709,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command009","time":70.86666666634}
+{"text":" ","kind":"input","time":70.86666666634,"label":"page007"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page007","time":70.86666666634,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page007","time":71.883333333002}
+{"text":" ","kind":"input","time":71.883333333002,"label":"page008"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page008","time":71.883333333002,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page008","time":92.449999999574}
+{"text":"W\r","kind":"input","time":92.449999999574,"label":"command010"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command010","time":92.449999999574,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command010","time":118.64999999945}
+{"text":" ","kind":"input","time":118.64999999945,"label":"page009"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page009","time":118.64999999945,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page009","time":119.66666666612}
+{"text":"TAKE ALL\r","kind":"input","time":119.66666666612,"label":"command011"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command011","time":119.66666666612,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command011","time":122.89999999943}
+{"text":"EXIT JEEP\r","kind":"input","time":122.89999999943,"label":"command012"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command012","time":122.89999999943,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command012","time":124.81666666609}
+{"text":"GO HUT\r","kind":"input","time":124.81666666609,"label":"command013"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command013","time":124.81666666609,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command013","time":132.81666666606}
+{"text":" ","kind":"input","time":132.81666666606,"label":"page010"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page010","time":132.81666666606,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page010","time":133.83333333272}
+{"text":"GIVE FOOD\r","kind":"input","time":133.83333333272,"label":"command014"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command014","time":133.83333333272,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command014","time":135.63333333271}
+{"text":" ","kind":"input","time":135.63333333271,"label":"page011"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page011","time":135.63333333271,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page011","time":141.73333333268}
+{"text":" ","kind":"input","time":141.73333333268,"label":"page012"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page012","time":141.73333333268,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page012","time":142.74999999934}
+{"text":"EXIT HUT\r","kind":"input","time":142.74999999934,"label":"command015"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command015","time":142.74999999934,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command015","time":149.94999999931}
+{"text":" ","kind":"input","time":149.94999999931,"label":"page013"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page013","time":149.94999999931,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page013","time":150.96666666597}
+{"text":" ","kind":"input","time":150.96666666597,"label":"page014"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page014","time":150.96666666597,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page014","time":152.0499999993}
+{"text":"ENTER JEEP\r","kind":"input","time":152.0499999993,"label":"command016"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command016","time":152.0499999993,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command016","time":154.04999999929}
+{"text":"W\r","kind":"input","time":154.04999999929,"label":"command017"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command017","time":154.04999999929,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command017","time":178.51666666584}
+{"text":"NW\r","kind":"input","time":178.51666666584,"label":"command018"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command018","time":178.51666666584,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command018","time":201.63333333241}
+{"text":" ","kind":"input","time":201.63333333241,"label":"page015"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page015","time":201.63333333241,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page015","time":202.64999999907}
+{"text":" ","kind":"input","time":202.64999999907,"label":"page016"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page016","time":202.64999999907,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page016","time":204.03333333239}
+{"text":"DROP ALL\r","kind":"input","time":204.03333333239,"label":"command019"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command019","time":204.03333333239,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command019","time":211.33333333236}
+{"text":"GET BOTTLE\r","kind":"input","time":211.33333333236,"label":"command020"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command020","time":211.33333333236,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command020","time":213.84999999902}
+{"text":"EXIT JEEP\r","kind":"input","time":213.84999999902,"label":"command021"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command021","time":213.84999999902,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command021","time":216.09999999901}
+{"text":"LOOK BEHIND STATUE\r","kind":"input","time":216.09999999901,"label":"command022"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command022","time":216.09999999901,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command022","time":218.84999999899}
+{"text":"GET HEAD\r","kind":"input","time":218.84999999899,"label":"command023"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command023","time":218.84999999899,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command023","time":221.99999999898}
+{"text":"PLACE HEAD ON STATUE\r","kind":"input","time":221.99999999898,"label":"command024"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command024","time":221.99999999898,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command024","time":226.43333333229}
+{"text":" ","kind":"input","time":226.43333333229,"label":"page017"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page017","time":226.43333333229,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page017","time":256.56666666549}
+{"text":" ","kind":"input","time":256.56666666549,"label":"page018"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"page018","time":256.56666666549,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"page018","time":257.59999999881}
+{"text":"ENTER JEEP\r","kind":"input","time":257.59999999881,"label":"command025"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command025","time":257.59999999881,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command025","time":259.66666666547}
+{"text":"NW\r","kind":"input","time":259.66666666547,"label":"command026"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command026","time":259.66666666547,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command026","time":285.38333333202}
+{"text":"GET ALL\r","kind":"input","time":285.38333333202,"label":"command027"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command027","time":285.38333333202,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command027","time":289.91666666533}
+{"text":"EXIT JEEP\r","kind":"input","time":289.91666666533,"label":"command028"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command028","time":289.91666666533,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command028","time":291.81666666532}
+{"text":"FORWARD\r","kind":"input","time":291.81666666532,"label":"command029"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command029","time":291.81666666532,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command029","time":298.29999999863}
+{"text":"GO TOP\r","kind":"input","time":298.29999999863,"label":"command030"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command030","time":298.29999999863,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command030","time":305.13333333193}
+{"text":"LIGHT MATCH\r","kind":"input","time":305.13333333193,"label":"command031"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command031","time":305.13333333193,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command031","time":307.28333333192}
+{"text":"LIGHT LANTERN\r","kind":"input","time":307.28333333192,"label":"command032"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command032","time":307.28333333192,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command032","time":309.66666666524}
+{"text":"ENTER\r","kind":"input","time":309.66666666524,"label":"command033"}
+{"kind":"observe","condition":"ready","minimum":1,"label":"command033","time":309.66666666524,"maximum":120}
+{"kind":"capture","timeout":false,"condition":"ready","label":"command033","time":358.61666666502}
+{"time":358.61666666502,"kind":"finish"}

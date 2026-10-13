@@ -5,7 +5,8 @@ The rebuilt column records progressively reconstructed builds; later source
 changes repeat the relevant routes. All live game code now has source and images
 are editable build inputs. Reports include exact commands, emulated
 timestamps, media hashes, decoded output and CPU observations. Passing these
-checks does not close the separate manual-baseline and final-checkout audit.
+checks does not establish exhaustive execution-path coverage. The separate
+[operator-stepped baseline](manual-playthrough.md) now reaches the ending.
 
 | Behavior | Original evidence | Rebuilt evidence | Result / limits |
 | --- | --- | --- | --- |
@@ -27,10 +28,11 @@ checks does not close the separate manual-baseline and final-checkout audit.
 | Statue-head carrying restriction | Same parser reports | Same parser reports | Carried items block head pickup; dropping them permits pickup; carried head then blocks map pickup. |
 | All257 native pictures and a supported vector edit | [reference comparison](evidence/picture-roundtrip.json) | Same comparison; [geometry edit](evidence/picture-edit.json) | Every standalone record matches both HGR pages; edited PIC1 loads and appears in game. |
 | Side-B save/restore and media reinsertion | [side-B original](evidence/save-side-b-original.json) | [side-B source](evidence/save-side-b-rebuilt.json) | Nineteen checks pass; room34/jeep/side and all five object arrays restore; [144-sector footprint](evidence/save-side-b-disk.json) agrees. |
+| Separate operator-stepped full playthrough | [manual original](evidence/manual-original.json) | Automatic full-route evidence above | 26 checks; documented complete native checkpoint retry, 122 commands, two parser retries, both sides and 83 pills. |
 
 Not yet covered: missing/unformatted save media errors,
 every invalid action, carrying restrictions beyond the observed head rule,
 alternative puzzle solutions and all room branches. Exhaustive path coverage is
 not required, but later source/asset changes should add cases when they affect
-currently untested behavior. A separate all-manual full-route recording has not
-been established; the full route was guided and automated incrementally.
+currently untested behavior. Manual checkpoint recovery and failed attempts are
+documented separately from the fresh-boot automated equivalence tests.

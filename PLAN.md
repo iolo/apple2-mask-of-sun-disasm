@@ -122,7 +122,7 @@ and another contributor can reproduce the chosen emulator setup.
   actual game rather than assuming those features exist.
 - [x] Establish how timed events and player input interact. Record explicit
   waits, conditions, or emulated cycle counts where a plain command list is insufficient.
-- [ ] Complete a manual original-game playthrough to the ending using the supplied
+- [x] Complete a manual original-game playthrough to the ending using the supplied
   walkthrough as a guide, covering both disks and timed sequences. Record commands,
   observable wait conditions, and checkpoints; automate the route incrementally.
   If blocked, use targeted loader or logic investigation from later steps to
@@ -295,7 +295,9 @@ and there are no unexplained gameplay regressions. Validation limits are explici
 No significant unresolved behavior/timing discrepancy remains that requires a
 second emulator. Accepted tests use the fixed MAME profile; optional error paths
 and exhaustive alternate solutions remain explicitly untested. The separate
-operator-stepped manual original baseline in Step2 still remains open.
+operator-stepped manual original baseline is recorded in
+[manual-playthrough.md](docs/manual-playthrough.md), including its native checkpoint
+retry and failed-attempt evidence.
 
 ### 10. Publish project documentation and final audit
 

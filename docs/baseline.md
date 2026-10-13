@@ -178,10 +178,10 @@ then START. Both versions pass nine checks and return to room1 and initial
 inventory. These deliberate-death tests explicitly expect death; successful
 full-route checks still reject it.
 
-[behavior-matrix.md](behavior-matrix.md) collects the accepted evidence and
-remaining coverage limits. Step 2's separate all-manual full-route requirement
-remains open; the accepted route was guided and automated incrementally.
-Step 3's boot-to-game loading
-and memory ownership still need full explanation. The current rebuilt full
-route establishes only the early partial source build's behavior; it does not
-make remaining opaque executable regions complete.
+[behavior-matrix.md](behavior-matrix.md) collects accepted evidence and remaining
+coverage limits. The separate [manual playthrough](manual-playthrough.md) now
+reaches the ending, with explicitly retained checkpoint-retry and parser-error
+evidence. [Boot loading](boot-loading.md) and [memory ownership](memory.md) explain
+the reconstructed source. All executable regions have readable assembly; the
+current SVG/source full route, state/scene comparison and PCM reports validate
+the final source and asset content.
