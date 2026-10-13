@@ -308,3 +308,38 @@ Limits: remaining $9B00–$B5FF DOS, INTRIN, mixed CHAR GEN code, graphics asset
 edit authority and world analysis are unfinished. Formatting, optional language
 card and all disk-error paths are not exercised. Next: reconstruct startup and
 DOS file manager, then the intrinsic/vector engine.
+
+## Steps 3d/5b — Source for all loaded startup DOS pages
+
+Completed substep on 2026-10-13; intrinsic/graphics and later plan work remain open.
+
+- Reconstructed the 27-page $9B00–$B5FF DOS command processor/file manager in
+  `src/dos-low.s`. All 37 pages loaded by side A now have assembly authority.
+  Cleared relocation sectors, vectors, command/option/error tables, buffers and
+  captured state are explicit data; command/function dispatch vectors use symbols.
+- Confirmed native boot uses EXEC START, with pending command index $14. START
+  is high-bit text feeding Applesoft/DOS commands, not a tokenized BASIC program.
+  Identified $9EBD as the output intercept and $A000 as its control-character
+  processing path. Native boot-sector helpers serve file-manager recovery/append.
+- Documented public DOS hooks, BLOAD, file-manager parameters, track/sector-list
+  traversal, workspace lifetime and native differences in `docs/dos.md`.
+  A standard transcription was consulted for identities/boundaries, not imported
+  as the native implementation; incorrect standard-address assumptions were
+  removed during analysis before final assembly.
+- Extended build mappings to split one source module across three tracked disk
+  regions. Source/asset bounds, source coverage and overlaps are checked. Debug
+  symbols are emitted; unfinished dependencies now list precise unassembled spans
+  instead of continuing to list fully reconstructed regions as raw code.
+
+Validation: nine modules assemble; new boot replay passes all seven checks and
+224 entry/request signatures agree with the original. New opening replay passes
+thirteen checks. Two independent output directories have matching source manifests
+and disk hashes. Current byte agreement remains diagnostic. Source assertions,
+Python compilation, unchanged supplied-input hashes and whitespace checks pass.
+
+Limits: unbooted side-B DOS remnants and unloaded reserved-sector residue still
+need final classification; no claim is made that those copies are executed during
+normal swaps. DOS formatting, every command/error path and alternate BASIC paths
+are untested. INTRIN and mixed CHAR GEN remain temporary game-code dependencies.
+Next: reconstruct intrinsic command dispatch, variable/expression evaluation,
+vector graphics and sound, then make decoded graphics editable build inputs.

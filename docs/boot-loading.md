@@ -64,7 +64,7 @@ interpreter subsequently uses its own catalog loader and retained RWTS $BD00,
 not the overwritten high-level DOS command/file interpreter. Save/restore calls
 retained $BA72/$BA69 register-return stubs and RWTS. That phase change is important
 when classifying a RAM capture: live font/graphics data can occupy addresses
-that held DOS code during startup. Original DOS code still requires full source.
+that held DOS code during startup. All 37 loaded DOS pages now have assembly source; see [dos.md](dos.md) and [rwts.md](rwts.md).
 
 The trace observes selected execution entries rather than every instruction.
 Captures are guarded against recursive observation of their own memory reads.

@@ -25,16 +25,24 @@ def main():
     out = args.output.resolve()
     out.mkdir(parents=True, exist_ok=True)
     replacements, assembled = {}, []
-    modules = [('renderer', 0xb300, 0x100, 'assets/raw/a/files/char-gen.bin', 0x504),
-               ('interpreter', 0x0800, 0x500, 'assets/raw/a/files/adven-interp-obj.bin', 4),
-               ('boot-a', 0x0800, 0x100, 'assets/raw/a/system/track-00.bin', 0),
-               ('boot-b', 0x0800, 0x100, 'assets/raw/b/system/track-00.bin', 0),
-               ('boot-stage2-a', 0xb700, 0x100, 'assets/raw/a/system/track-00.bin', 0x100),
-               ('boot-stage2-b', 0xb700, 0x100, 'assets/raw/b/system/track-00.bin', 0x100),
-               ('rwts-a', 0xb800, 0x800, 'assets/raw/a/system/track-00.bin', 0x200),
-               ('rwts-b', 0xb800, 0x800, 'assets/raw/b/system/track-00.bin', 0x200)]
-    for name, address, length, asset, offset in modules:
-        subprocess.run(['ca65', str(ROOT / f'src/{name}.s'), '-o', str(out / f'{name}.o'),
+    # name, native runtime address/size, then asset offset/source offset/length.
+    modules = [
+        ('renderer', 0xb300, 0x100, [('assets/raw/a/files/char-gen.bin', 0x504, 0, 0x100)]),
+        ('interpreter', 0x0800, 0x500, [('assets/raw/a/files/adven-interp-obj.bin', 4, 0, 0x500)]),
+        ('boot-a', 0x0800, 0x100, [('assets/raw/a/system/track-00.bin', 0, 0, 0x100)]),
+        ('boot-b', 0x0800, 0x100, [('assets/raw/b/system/track-00.bin', 0, 0, 0x100)]),
+        ('boot-stage2-a', 0xb700, 0x100, [('assets/raw/a/system/track-00.bin', 0x100, 0, 0x100)]),
+        ('boot-stage2-b', 0xb700, 0x100, [('assets/raw/b/system/track-00.bin', 0x100, 0, 0x100)]),
+        ('rwts-a', 0xb800, 0x800, [('assets/raw/a/system/track-00.bin', 0x200, 0, 0x800)]),
+        ('rwts-b', 0xb800, 0x800, [('assets/raw/b/system/track-00.bin', 0x200, 0, 0x800)]),
+        ('dos-low', 0x9b00, 0x1b00, [
+            ('assets/raw/a/system/track-00.bin', 0xa00, 0, 0x600),
+            ('assets/raw/a/system/track-01.bin', 0, 0x600, 0x1000),
+            ('assets/raw/a/system/track-02.bin', 0, 0x1600, 0x500)]),
+    ]
+    covered = {}
+    for name, address, length, spans in modules:
+        subprocess.run(['ca65', '-g', str(ROOT / f'src/{name}.s'), '-o', str(out / f'{name}.o'),
                         '-l', str(out / f'{name}.lst')], check=True)
         subprocess.run(['ld65', '-C', str(ROOT / f'src/{name}.cfg'), str(out / f'{name}.o'),
                         '-o', str(out / f'{name}.bin'), '-m', str(out / f'{name}.map'),
@@ -42,17 +50,48 @@ def main():
         code = (out / f'{name}.bin').read_bytes()
         if len(code) != length:
             raise ValueError(f'{name}: output must occupy its original {length}-byte region')
-        native = (ROOT / asset).read_bytes()
-        current = replacements.get(asset, native)
-        replacements[asset] = current[:offset] + code + current[offset + length:]
+        mapped = bytearray(length)
+        encoded_equal, mapped_spans = True, []
+        for asset, offset, source_offset, size in spans:
+            native = (ROOT / asset).read_bytes()
+            if offset < 0 or offset + size > len(native) or source_offset < 0 or source_offset + size > length:
+                raise ValueError(f'{name}: mapping outside source or asset boundary')
+            coverage = covered.setdefault(asset, bytearray(len(native)))
+            if any(coverage[offset:offset+size]) or any(mapped[source_offset:source_offset+size]):
+                raise ValueError(f'{name}: overlapping assembly mapping')
+            coverage[offset:offset+size] = b'\x01' * size
+            mapped[source_offset:source_offset+size] = b'\x01' * size
+            payload = code[source_offset:source_offset + size]
+            current = replacements.get(asset, native)
+            replacements[asset] = current[:offset] + payload + current[offset + size:]
+            encoded_equal &= payload == native[offset:offset + size]
+            mapped_spans.append({'asset': asset, 'offset': offset, 'source_offset': source_offset, 'size': size})
+        if not all(mapped):
+            raise ValueError(f'{name}: unmapped assembled bytes')
         assembled.append({'source': f'src/{name}.s', 'load_address': address, 'size': len(code),
-                          'sha256': hashlib.sha256(code).hexdigest(), 'asset': asset, 'offset': offset,
-                          'original_encoding_equal': code == native[offset:offset + length]})
+                          'sha256': hashlib.sha256(code).hexdigest(), 'spans': mapped_spans,
+                          'original_encoding_equal': encoded_equal})
     repack(ROOT / 'assets/raw/manifest.json', out, replacements)
     manifest = json.loads((ROOT / 'assets/raw/manifest.json').read_text())
-    dependencies = [{'side': disk['side'], 'path': region['path'], 'role': region['role']}
-                    for disk in manifest['disks'] for region in disk['regions']
-                    if region['role'].startswith('temporary') and region['path'] != 'assets/raw/a/files/adven-interp-obj.bin']
+    dependencies = []
+    for disk in manifest['disks']:
+        for region in disk['regions']:
+            if not region['role'].startswith('temporary'):
+                continue
+            # Header/tail of the interpreter file is retained data, not code.
+            if region['path'] == 'assets/raw/a/files/adven-interp-obj.bin':
+                continue
+            coverage = covered.get(region['path'], bytearray(region['length']))
+            ranges, start = [], None
+            for offset, value in enumerate(coverage + b'\x01'):
+                if not value and start is None:
+                    start = offset
+                elif value and start is not None:
+                    ranges.append({'offset': start, 'size': offset - start})
+                    start = None
+            if ranges:
+                dependencies.append({'side': disk['side'], 'path': region['path'],
+                                     'role': region['role'], 'unassembled_ranges': ranges})
     (out / 'build.json').write_text(json.dumps({'status': 'early partial source build',
         'assembled': assembled,
         'temporary_raw_code_dependencies': dependencies}, indent=2) + '\n')

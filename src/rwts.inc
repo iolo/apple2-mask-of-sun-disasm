@@ -11,7 +11,7 @@ dos_close       := $A75B
 dos_file_type   := $AA63
 dos_file_address:= $AA70
 dos_file_address_high:= $AA71
-dos_output_state:= $AAB7
+dos_run_intercepted:= $AAB7
 dos_release_file_buffer:= $AE7E
 dos_file_error  := $B385
 dos_saved_stack := $B39B
@@ -1020,10 +1020,10 @@ dos_reset_file_selection:
         sta     dos_file_address_high
         rts
 
-; $BFE6: close file then save Y as DOS output state.
+; $BFE6: close file then save Y as DOS RUN-interception state.
 dos_close_from_exec:
         jsr     dos_close
-        sty     dos_output_state
+        sty     dos_run_intercepted
         rts
 
 ; $BFED: release buffer, restore DOS stack, close all and raise error 9.
