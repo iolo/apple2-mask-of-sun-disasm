@@ -21,3 +21,16 @@ python3 tools/mame_session.py --rompath /path/to/locally-supplied/roms \
 `src/` is for assembly, `assets/` for extracted game data, `tools/` for analysis
 and build commands, `docs/` for evidence and explanations, and ignored `build/`
 for generated output. Original inputs remain unchanged at the repository root.
+
+An **early partial rebuild** is now available:
+
+```sh
+python3 tools/build.py
+```
+
+It produces `build/early/mask-of-sun-{a,b}.dsk`, assembles the documented text
+renderer and packages tracked exports without reading original disk templates.
+Other code and graphics still use temporary native exports. See the emitted
+`build.json` for those dependencies and [baseline evidence](docs/baseline.md)
+for the verified opening route. The [disk map](docs/disk-layout.md) documents
+all extracted regions and the raw extraction round-trip checks.

@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "repeatable": true,
+  "original_disks_read": false,
+  "method": "strace -f -e trace=openat tools/build.py in fresh output directory; inspect O_RDONLY .dsk opens; compare two output image pairs",
+  "scope": "early partial source build only"
+}

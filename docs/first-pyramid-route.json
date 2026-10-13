@@ -1,0 +1,98 @@
+{
+  "scope": "Original opening and first-pyramid route; snake/skeleton reactions and ghost wait; sound/save/load pending",
+  "timeout": 1600,
+  "commands": [
+    "LOOK",
+    "INVENTORY",
+    "FERNAP",
+    "GET",
+    "GET LAMP",
+    "FERNAP GUN",
+    "EXIT PLANE",
+    "GET MAP",
+    "ENTER JEEP",
+    "W",
+    "TAKE ALL",
+    "EXIT JEEP",
+    "GO HUT",
+    "GIVE FOOD",
+    "EXIT HUT",
+    "ENTER JEEP",
+    "W",
+    "NW",
+    "DROP ALL",
+    "GET BOTTLE",
+    "EXIT JEEP",
+    "LOOK BEHIND STATUE",
+    "GET HEAD",
+    "PLACE HEAD ON STATUE",
+    "ENTER JEEP",
+    "NW",
+    "GET ALL",
+    "EXIT JEEP",
+    "FORWARD",
+    "GO TOP",
+    "LIGHT MATCH",
+    "LIGHT LANTERN",
+    "ENTER",
+    {
+      "command": "SHOOT",
+      "urgent": true,
+      "no_return": true
+    },
+    "SEARCH PLATFORM",
+    "OPEN DOOR",
+    "FORWARD",
+    "GET BOWL",
+    "R",
+    "MOVE STONE",
+    {
+      "command": "GET BOWL",
+      "wait_for": "The apparition fades"
+    },
+    "EXIT",
+    "L",
+    "R",
+    "GET BOWL",
+    {
+      "command": "HIT SKELETON WITH AMULET",
+      "urgent": true
+    },
+    "GET BOWL",
+    "GET URN",
+    "PLACE URN RIGHT PEDESTAL",
+    "FORWARD",
+    "GO JEEP",
+    "ENTER JEEP"
+  ],
+  "requirements": [
+    {
+      "id": "snake-survival",
+      "text": "You are in a room with exits to the"
+    },
+    {
+      "id": "jade-bowl",
+      "text": "magnificent jade bowl."
+    },
+    {
+      "id": "ghost-fades",
+      "text": "The apparition fades."
+    },
+    {
+      "id": "gold-bowl",
+      "text": "You pick up a precious gold bowl."
+    },
+    {
+      "id": "skeletons-defeated",
+      "text": "The skeletons disintegrate!"
+    },
+    {
+      "id": "urn-door",
+      "text": "With startling swiftness the middle"
+    },
+    {
+      "id": "pyramid-exit",
+      "text": "You're at the temple's base. The path"
+    }
+  ]
+}

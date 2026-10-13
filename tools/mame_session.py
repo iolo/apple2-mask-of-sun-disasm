@@ -22,6 +22,7 @@ def main():
     p.add_argument('--debug', action='store_true')
     p.add_argument('--script', type=Path, help='optional owned replay startup Lua script')
     p.add_argument('--fast', action='store_true', help='unthrottled; compare emulated time, not wall time')
+    p.add_argument('--route', type=Path, help='JSON exploration route for opening_replay.lua')
     args = p.parse_args()
     if not args.rompath or not args.rompath.is_dir():
         p.error('supply --rompath or MAME_ROMPATH with locally supplied ROMs')
@@ -52,6 +53,8 @@ def main():
         cmd.extend(['-' + option, str(directory)])
     env = os.environ.copy()
     env['MASK_PROJECT_ROOT'] = str(ROOT)
+    if args.route:
+        env['MASK_ROUTE'] = str(args.route.resolve())
     if args.headless:
         env.update(SDL_VIDEODRIVER='dummy', SDL_AUDIODRIVER='dummy', QT_QPA_PLATFORM='offscreen')
         cmd.extend(['-video', 'none', '-sound', 'none'])

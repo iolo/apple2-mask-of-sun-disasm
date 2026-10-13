@@ -111,3 +111,45 @@ regions are still under analysis. No opaque region is claimed as final retention
 Next: extend the original route into the first pyramid and investigate its
 keyboard/timer conventions, then trace bootstrap/renderer and replace initial
 raw-code regions with assembly.
+
+## Steps 2b/4a — First pyramid and assembled text renderer
+
+Completed substeps on 2026-10-13; full Steps 2–4 remain open.
+
+- Extended the fresh-boot original route through the first pyramid: lit lantern,
+  snake response, secret platform door, jade-bowl descent, ghost wait/gold bowl,
+  skeletal guardians/silver bowl, urn pedestal door, and return to the jeep.
+  Archived the successful 626.6-emulated-second replay with ten route gates and
+  five representative screenshots. Original full playthrough is not yet done.
+- Corrected natural-keyboard gating after a failed investigation run: inspect
+  both queue-empty and posting state, require the ready cursor rather than
+  typed partial text, distinguish urgent command reactions from ordinary
+  pagination, and latch event conditions across page changes. Snake SHOOT has
+  five keys and no Return; the skeleton requires an immediate initial reaction.
+- Added readable high-bit ASCII views/line provenance for all 87 text/script
+  files, generated from native authority with `tools/script_views.py`.
+- Reconstructed $B300–$B3FF in `src/renderer.s` with named routines, explicit
+  code/data boundaries, workspace, clobbers and text/page interfaces. ca65/ld65
+  build and package this page into the native CHAR GEN region. Nine tail bytes
+  remain explicitly unconfirmed data; the surrounding asset remains temporary.
+- Added `tools/build.py` as an early partial source rebuild; both output disks
+  are constructed from assembled output plus tracked exports, never from
+  original-image templates. Its manifest names remaining temporary raw code.
+
+Validation: `tools/verify_route.py build/pyramid-06
+docs/first-pyramid-route.json --output docs/evidence/first-pyramid-original.json`
+passes ordered commands, final prompt, no death and all seven puzzle gates.
+`tools/verify_opening.py build/opening-rebuilt-01 --output
+docs/evidence/opening-rebuilt.json` passes all thirteen opening checks for the
+early source rebuild. Two fresh-output builds have identical hashes; a
+`strace -f -e trace=openat` inspection finds no original-disk reads. Renderer
+encoding currently equals its native reference, including its preserved data,
+as a diagnostic. Source address/size assertions pass. Python compilation,
+`tools/check_inputs.py` and `git diff --check` pass.
+
+Limits: only the renderer page is reconstructed so far. Interpreter/intrinsics,
+boot/DOS and the remainder of mixed CHAR GEN need source/analysis. Graphics are
+not yet editable build inputs. Save/load, sound and the entire second side and
+ending remain unvalidated. `docs/renderer.md` documents this early build's scope.
+Next: extend the original playthrough onto side B, including disk swapping,
+jaguar/chasm timing and the ending; then complete resident/boot disassembly.

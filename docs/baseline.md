@@ -42,8 +42,40 @@ python3 tools/mame_session.py --rompath /path/to/roms --output build/opening-01 
 python3 tools/verify_opening.py build/opening-01 --output build/opening-report.json
 ```
 
-This is **not the complete original-game baseline**. Side B, the jaguar/chasm
-timers, the ghost, the ending, sound, inventory limits, save/restore and restart
+## First pyramid
+
+[first-pyramid-original.json](evidence/first-pyramid-original.json) extends the
+original route through the first pyramid and back to the jeep, passing ordered
+input, no-death and seven puzzle checks at 626.6 emulated seconds. The supplied
+short walkthrough's first quick `SHOOT` is a **snake** encounter, not a jaguar.
+The later jaguar sequence is on side B. Static room scripts corroborate the
+observed events but do not replace the runtime evidence.
+
+The snake reacts to five successive keys `S H O O T`, without Return, while
+cycling animation frames. `SHOOT` is queued immediately upon a ready prompt,
+with the prior natural-keyboard queue empty. The skeleton encounter also needs
+an immediate first-key response after pagination, followed by the full
+`HIT SKELETON WITH AMULET` command. A three-second delay at that prompt failed
+and led to the restart screen. The successful route keeps ordinary pagination
+at three-second spacing; it never applies urgent command timing to Space.
+The crypt waits for the observed apparition-fades message before taking the
+gold bowl (about 41 emulated seconds after moving the stone). The condition is
+latched across pagination so the next page cannot discard it.
+
+```sh
+python3 tools/mame_session.py --rompath /path/to/roms --output build/pyramid-01 \
+  --headless --fast --script tools/opening_replay.lua \
+  --route docs/first-pyramid-route.json > build/pyramid-01.log 2>&1
+python3 tools/verify_route.py build/pyramid-01 docs/first-pyramid-route.json
+python3 tools/script_views.py  # high-bit ASCII room/library views and line IDs
+```
+
+Earlier exploration caught failures in input gating and wait/pagination handling;
+those runs are diagnostic, not accepted route evidence. The archived successful
+run uses the corrected gates and never patches game RAM.
+
+This is **not the complete original-game baseline**. Side B, jaguar/chasm timing,
+the ending, sound, inventory limits, save/restore and boundary/restart testing
 remain to be exercised. Step 2 remains open. Step 3's raw sector mapping was
 performed early to support loader and graphics-text investigation; boot-to-game
 loading and memory ownership still need full explanation before that step closes.

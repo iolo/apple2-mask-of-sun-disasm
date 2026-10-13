@@ -152,7 +152,7 @@ def export(destination):
     return manifest
 
 
-def repack(manifest_path, output):
+def repack(manifest_path, output, replacements=None):
     manifest = json.loads(manifest_path.read_text())
     output.mkdir(parents=True, exist_ok=True)
     reports = []
@@ -163,6 +163,11 @@ def repack(manifest_path, output):
             if len(content) != region['length'] or sha(content) != region['sha256']:
                 raise ValueError(f"export changed: {region['path']}")
             cache[region['path']] = content
+        for path, content in (replacements or {}).items():
+            if path in cache:
+                if len(content) != len(cache[path]):
+                    raise ValueError(f'replacement allocation size changed: {path}')
+                cache[path] = content
         used = {path: set() for path in cache}
         for entry in disk['sectors']:
             start = offset(entry['track'], entry['sector'])
@@ -177,12 +182,12 @@ def repack(manifest_path, output):
         if len(covered) != TRACKS * SECTORS or any(len(used[path])*SECTOR_SIZE != len(content) for path,content in cache.items()):
             raise ValueError('disk or region coverage is incomplete')
         digest = sha(data)
-        if digest != disk['sha256']:
+        if replacements is None and digest != disk['sha256']:
             raise ValueError('raw export/repack hash mismatch')
         path = output / f"mask-of-sun-{disk['side']}.dsk"
         path.write_bytes(data)
         reports.append({'path': str(path.relative_to(ROOT)), 'size': len(data), 'sha256': digest})
-    (output / 'repack.json').write_text(json.dumps({'purpose': 'raw extraction integrity, not final rebuild',
+    (output / 'repack.json').write_text(json.dumps({'purpose': 'early partial source rebuild' if replacements else 'raw extraction integrity, not final rebuild',
                                                   'disks': reports}, indent=2) + '\n')
     print(json.dumps(reports, indent=2))
 
