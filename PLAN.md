@@ -9,22 +9,44 @@ repeatable build that produces playable disk images.
 The project is complete when:
 
 - Game code, including boot code and overlays, has buildable source with meaningful
-  labels, comments, and documented interfaces. Code and data are distinguished;
-  unresolved regions are explicitly recorded rather than presented as understood.
+  labels, explanations of its role, and documented interfaces. Code and data are
+  distinguished; remaining uncertainties are explicitly recorded. Raw executable
+  blobs cannot substitute for disassembling game code. Exhaustive explanation of
+  every instruction and exhaustive execution-path coverage are not required.
 - Text, graphics, world data, and any sound data found in the game are extracted,
-  documented, and incorporated into the build. Editable representations have
-  encoders; assets retained in their native format have documented provenance.
+  documented, and incorporated into the build. Images have separate human-viewable,
+  editable files, decoded from any game-specific compression or encoding, and
+  project-specific converters that rebuild supported edits into the game.
+  Other assets may retain their native format with provenance and decoded views
+  where needed for understanding; general asset-editing tools are not required.
 - A clean checkout can generate both disk images from source and assets without
   reading the original disk images as build templates or extracting them at build time.
-- Rebuilt disks boot and preserve the original game's commands, presentation,
-  puzzles, transitions, disk changes, timing-sensitive events, and ending.
+- Rebuilt disks boot and preserve the original game's commands, text, graphics,
+  sound where present, puzzles, progression, timing-sensitive interactions, and
+  ending. Changes to disk insertion, swapping, or loading behavior caused by an
+  optional I/O replacement are documented and validated on the target machine.
 - Setup, build, validation, architecture, and remaining uncertainties are documented.
 
-Byte-identical disk images are useful diagnostic targets, but are not required.
-Preserve load addresses and disk layout initially to reduce variables. Change
-layout only after all relevant disk accesses are understood and gameplay remains
-equivalent. Preserve observed behavior of the cracked inputs; restoring copy
-protection or redesigning gameplay is outside this project's scope.
+Byte-for-byte identity is not required for disk images, executable code, or encoded
+assets. Byte comparisons are diagnostic tools, not completion criteria for the
+rebuilt game. Intentional differences are acceptable when documented and validated
+against the required behavior. Do not spend effort eliminating byte differences
+solely to achieve identity. Exact checks of input preservation and raw extraction
+still establish provenance; repeatable build hashes establish reproducibility,
+not identity with the original disks.
+
+Preserving load addresses and disk layout is a useful starting point, not a final
+requirement. Replacing low-level track/sector I/O with filesystem-based I/O is
+permitted but not required. Disk layout, allocation metadata, loader code, and
+physical access patterns may change when affected dependencies are understood
+and required behavior is preserved. Retain readable source for the original I/O
+implementation and explain any replacement. Keep the original I/O approach when
+replacement offers no concrete benefit. Preserve gameplay of the cracked inputs;
+restoring copy protection or redesigning gameplay is outside this project's scope.
+
+Retained opaque data must have provenance and a stated reason for retention,
+including why it does not conceal unfinished game-code analysis. Distinguish
+incomplete testing from incomplete disassembly when reporting limitations.
 
 ## Starting point
 
@@ -50,8 +72,9 @@ or loader behavior. Determine those from the images and runtime evidence.
   encoding, and load address where applicable. Distinguish evidence from inference.
 - Maintain one authoritative representation for each code/data region; generate
   alternate views and previews from it to avoid conflicting copies.
-- Reassemble small regions early. Compare bytes at each stage before adding
-  semantic labels or restructuring modules.
+- Reassemble small regions early. Use byte comparisons to investigate unexpected
+  differences where original encodings are retained; validate intentional changes
+  through documented behavior checks without making byte identity a gate.
 - Combine static analysis with runtime traces, especially for computed jumps,
   overlays, self-modifying code, and timing-sensitive behavior.
 - After each completed step, update `PROGRESS.md` with changes, evidence,
@@ -79,8 +102,9 @@ complete each implementation step.
   Apple II model, CPU, memory, ROM requirements, disk controller, and drive setup.
 - [ ] Inspect the manuals and booklet for controls, disk changes, timing rules,
   and save/load features if present; turn walkthroughs into a candidate route.
-- [ ] Review the earlier disassembly repositories linked in the PRD for reusable
-  conventions, without assuming their engines or disk layouts apply here.
+- [ ] Consult the earlier disassembly repositories linked in the PRD when a
+  specific convention would help; a comprehensive survey is optional. Do not
+  assume their engines or disk layouts apply here.
 - [ ] Establish `src/`, `assets/`, `tools/`, `docs/`, and ignored `build/` outputs,
   plus an initial setup guide and tool checks.
 
@@ -91,18 +115,24 @@ and another contributor can reproduce the chosen emulator setup.
 
 - [ ] Boot the original disks and record startup, controls, initial scene, and
   disk insertion/swap behavior in a reproducible emulator session.
-- [ ] Capture representative screenshots, text, disk activity, and CPU/memory
-  observations with the emulator configuration and input sequence attached.
+- [ ] Capture representative screenshots, text, sound where present, disk activity,
+  and CPU/memory observations with the emulator configuration and input sequence.
 - [ ] Exercise movement, descriptions, inventory, successful and rejected
   commands, and an early puzzle. Discover save/load or restart behavior from the
   actual game rather than assuming those features exist.
 - [ ] Establish how timed events and player input interact. Record explicit
   waits, conditions, or emulated cycle counts where a plain command list is insufficient.
-- [ ] Begin a behavior matrix and replay route based on the supplied walkthrough;
-  expand it as later disk regions and game states become understood.
+- [ ] Complete a manual original-game playthrough to the ending using the supplied
+  walkthrough as a guide, covering both disks and timed sequences. Record commands,
+  observable wait conditions, and checkpoints; automate the route incrementally.
+  If blocked, use targeted loader or logic investigation from later steps to
+  resolve the obstacle before marking this baseline complete.
+- [ ] Begin a behavior matrix from that route and the command checks; expand it
+  as later disk regions and game states become understood.
 
 **Acceptance:** The unmodified game boots reliably, baseline artifacts exist,
-and a repeatable opening route is available for later comparisons.
+and a recorded full route reaches the ending. The opening route is repeatable;
+timed sections have explicit conditions suitable for later replay automation.
 
 ### 3. Map disk layout, boot sequence, and memory loading
 
@@ -116,7 +146,9 @@ and a repeatable opening route is available for later comparisons.
 - [ ] Record memory ranges, entry points, zero-page usage, stack assumptions,
   buffers, ROM calls, and Apple II soft-switch accesses.
 - [ ] Export raw regions without altering their bytes and verify that a sector
-  extraction/repacking round trip preserves each original image.
+  extraction/repacking round trip preserves each original image. Construct the
+  repacked images from exports and the manifest, without reading an original
+  image as a template; this exact check verifies extraction, not final-build identity.
 
 **Acceptance:** Boot-to-game loading is explained, exported data has complete
 provenance, all disk bytes are accounted for, and round-trip comparisons pass.
@@ -127,17 +159,21 @@ provenance, all disk bytes are accounted for, and round-trip comparisons pass.
   tooling. Separate known data from reachable code and flag ambiguous regions.
 - [ ] Create `ca65` modules and explicit `ld65` segment layouts for boot,
   resident code, and overlays at their observed addresses.
-- [ ] Preserve instruction encodings, tables, padding, self-modifying operands,
-  and load/run-address differences. Use raw bytes temporarily where necessary,
-  with each such region tracked for later interpretation.
+- [ ] Account for tables, self-modifying operands, required padding, and
+  load/run-address differences. Retain original encodings as a convenient starting
+  point. Use raw bytes temporarily where necessary, with each such region tracked
+  for later interpretation and executable blobs replaced by readable assembly.
 - [ ] Assemble identified code and compare output region by region against the
-  original exports. Report the location and context of any mismatch.
-- [ ] Package an initial pair of rebuilt disks using the discovered layout and
-  boot them through the opening replay. Original-image templates may be used
-  temporarily here, with their removal tracked explicitly for Step 8.
+  original exports where useful. Investigate unexpected differences; record the
+  reason and behavior checks for intentional changes rather than forcing a match.
+- [ ] Reuse Step 3's repacker to build an initial pair of disks from exported
+  regions, progressively replacing code regions with assembled output. Boot them
+  through the opening replay. Track all temporary raw-code dependencies.
 
 **Acceptance:** A repeatable build produces disks that boot to the opening scene,
-and identified assembled code matches the corresponding original regions.
+uses assembled output for identified code, and passes the opening behavior checks.
+Unexpected differences are investigated; intentional differences have explanations
+and validation evidence. Packaging does not read original-image templates.
 
 ### 5. Explain the loader and resident engine
 
@@ -148,28 +184,42 @@ and identified assembled code matches the corresponding original regions.
   graphics rendering, game-state updates, and timing/randomness routines as present.
 - [ ] Annotate routine inputs, outputs, register clobbers, shared memory, firmware
   calls, and any self-modifying code.
-- [ ] Maintain call graphs and memory maps; confirm uncertain indirect calls and
+- [ ] Maintain memory maps and add focused call graphs where they aid understanding;
+  comprehensive call graphs are optional. Confirm uncertain indirect calls and
   code/data boundaries with targeted execution traces.
 
 **Acceptance:** Core subsystems have readable source and documented interfaces,
-reassembly still matches, and the opening behavior matrix passes.
+the build succeeds, and the established behavior checks pass. Intentional code
+differences are documented without requiring original-byte identity.
 
 ### 6. Decode and extract assets
 
 - [ ] Identify text encoding/compression, dictionary/token tables, graphics
   representation, palettes or artifact-color assumptions, and world-data formats.
 - [ ] Export texts with stable identifiers and decoding notes; preserve control
-  codes and references in an editable, reversible form.
-- [ ] Export scene graphics in their native representation and generate indexed
-  previews using the game's rendering rules. Document vector or compressed formats
-  if discovered rather than assuming every picture is a stored bitmap.
+  codes and references. Native build assets plus readable decoded views are
+  sufficient; an editable text format and encoder are optional.
+- [ ] Extract each image into a separate documented, human-viewable and editable
+  file. Decode any game-specific compression or encoding for review. Determine
+  the actual representation, including vector formats if present, and preserve
+  the game's rendering and artifact-color behavior for unmodified images.
+- [ ] Implement only the project-specific conversion needed to encode/compress
+  those editable image files back into game assets. Make the editable files
+  authoritative build inputs; native reference exports are provenance artifacts.
+  Document supported edits, colors, dimensions, and storage constraints, and
+  report unsupported input or edits that exceed those constraints.
 - [ ] Extract room/object tables, vocabulary, puzzle data, and sound sequences
   where present. If sounds are generated by code, document the routines instead.
-- [ ] Implement encoders for editable formats and meaningful round-trip checks,
-  including malformed-input handling and length/address constraints.
+- [ ] Verify that unmodified image files rebuild to equivalent rendered scenes,
+  even if encoded bytes differ. Make a representative supported image edit and
+  verify its appearance in the rebuilt game, then restore the baseline asset.
+  General-purpose editors and reusable asset-conversion frameworks are out of scope.
 
 **Acceptance:** Every identified asset region has provenance and format notes;
-decode/encode checks preserve native data, and previews agree with original scenes.
+images are separately reviewable and editable, unmodified images retain their
+appearance after conversion, and a supported edit appears in the rebuilt game.
+Other extracted assets are incorporated into the build with readable views where
+needed. Encoded-byte identity is not required.
 
 ### 7. Explain overlays, world logic, and puzzles
 
@@ -183,35 +233,50 @@ decode/encode checks preserve native data, and previews agree with original scen
   repeated interactions, alternate transitions, deaths, and restart/save handling
   where implemented.
 - [ ] Review all remaining raw-code regions and unknown disk regions. Resolve
-  game-critical uncertainties and document evidence for unused or opaque remnants.
+  game-critical uncertainties and replace temporary executable blobs with readable
+  assembly. Document provenance and reasons for retaining opaque data, including
+  evidence that it does not conceal unfinished game-code analysis.
 
-**Acceptance:** All game-code regions have readable source, reachable gameplay
-logic is documented, and a full original-game route reaches the ending.
+**Acceptance:** All game-code regions have readable source with roles and interfaces
+documented; major world, puzzle, and ending logic is explained. The rebuilt game
+passes the established route checkpoints. Remaining uncertainties and untested
+paths are recorded; exhaustive instruction commentary or path coverage is not required.
 
 ### 8. Finish the standalone, reproducible build
 
-- [ ] Remove original-disk template dependencies. Construct both disks entirely
-  from assembled code, tracked assets, and documented required metadata/padding.
+- [ ] Replace any remaining temporary raw-code dependencies. Construct both disks
+  entirely from assembled code, tracked assets, and documented required metadata
+  or retained opaque data, continuing to exclude original-image templates.
 - [ ] Generate disk allocation tables and asset references from the manifest
   where possible; enforce fixed-address, size, overlap, and capacity constraints.
 - [ ] Provide one documented build command, clean behavior, clear missing-tool
   errors, and machine-readable build manifests with output hashes.
-- [ ] Retain the initial layout unless a change has a concrete benefit. Any
-  changed layout must update all affected loader references and receive validation.
+- [ ] Keep the original layout and I/O approach unless a change has a concrete
+  benefit. Optionally replace track/sector I/O with filesystem-based I/O; update
+  affected references, document target memory and filesystem requirements, retain
+  readable original I/O source, and validate required behavior. Document any changes
+  to disk insertion, swapping, or loading. This replacement is not an acceptance gate.
 - [ ] Build twice from clean generated-output directories and compare outputs;
   verify that no original `.dsk` files are read by the final build.
 
 **Acceptance:** Source and assets alone produce both playable images with
 repeatable hashes, and the build documents any preserved non-game disk components.
+Repeatability compares clean builds with each other, not with original disk hashes.
 
 ### 9. Validate gameplay equivalence
 
 - [ ] Automate original/rebuilt replays under the same emulator configuration,
-  using fresh boots and controlled input timing.
-- [ ] Compare semantic state, text, disk accesses, and representative rendered
-  scenes at checkpoints; document acceptable differences in unused disk bytes.
-- [ ] Complete a walkthrough on rebuilt disks, covering both sides, disk swaps,
-  major puzzles, timed sequences, failures/restarts, and the ending.
+  using fresh boots and controlled input timing or observable event conditions.
+  Adapt replay loading steps for documented I/O changes without masking changes
+  to gameplay timers or required player reactions.
+- [ ] Compare semantic state, text, sound where present, and representative rendered
+  scenes at checkpoints. Compare physical disk accesses only as diagnostics for
+  unchanged layouts; changed layouts are checked for correct loaded content,
+  logical transitions, disk prompts, and gameplay timing. Intentional differences
+  in code, encoded assets, metadata, or layout do not require byte equality.
+- [ ] Complete a walkthrough on rebuilt disks, covering content from both original
+  sides, disk swaps as required by the rebuilt layout, major puzzles, timed
+  sequences, failures/restarts, and the ending.
 - [ ] Exercise save/load if present, command errors, inventory limits or other
   discovered boundary conditions, and alternate reachable branches.
 - [ ] Use a second emulator for significant unresolved behavior or timing
@@ -227,7 +292,8 @@ and there are no unexplained gameplay regressions. Validation limits are explici
 - [ ] Finish architecture, disk-layout, memory-map, engine, asset-format, and
   puzzle documentation with source cross-references.
 - [ ] Separate confirmed findings from unresolved questions and explain any
-  retained opaque bytes or incomplete path coverage.
+  retained opaque data or incomplete path coverage. Document intentional rebuild
+  differences, image-editing constraints, and any optional I/O replacement.
 - [ ] Perform a clean-checkout build and boot check using only documented steps.
 - [ ] Update `PROGRESS.md` against the PRD's completion criteria and commit the
   final verified source, tools, assets, and documentation.
@@ -237,7 +303,10 @@ without relying on undocumented local files or knowledge.
 
 ## Dependencies and iteration
 
-Steps 1–4 establish the evidence and a working rebuild. Steps 5–7 are iterative:
+Steps 1–4 establish the evidence and a working rebuild. Step 2 establishes that
+the original game can be completed before extensive reconstruction; targeted
+investigation from later steps may be used to resolve baseline obstacles. Step 3's
+raw repacker becomes Step 4's early template-free build. Steps 5–7 are iterative:
 new engine findings inform asset decoders, and decoded world data exposes new
 code paths. Keep rebuilding and replaying the established checkpoints during
 that work. Step 8 requires complete loader and asset mapping; Step 9 validates
@@ -245,5 +314,6 @@ the final build; Step 10 closes documentation and reproducibility gaps.
 
 The main uncertainties are custom sector loading, overlays, code mixed with
 data, compression, self-modification, and event timing. Resolve each through
-small byte comparisons and targeted runtime traces. Do not choose a filesystem,
-relocate code, or declare a data format before the evidence supports it.
+targeted runtime traces, behavior checks, and byte comparisons where useful.
+Document original formats from evidence; base any relocation or replacement
+filesystem choice on understood dependencies and validate the resulting behavior.

@@ -17,3 +17,22 @@ been performed. Original inputs are unchanged.
 
 Next: Step 1 — record input hashes/provenance, verify tooling and emulator
 prerequisites, and establish the project structure.
+
+## Plan review revision
+
+Completed on 2026-10-13 following review and user clarification.
+
+- Made original-byte identity optional for disks, code, and encoded assets;
+  distinguished behavioral validation, extraction integrity, and build repeatability.
+- Moved the full original-game playthrough into the baseline step and reused the
+  raw repacker for an early build without original-image templates.
+- Clarified readable-code completion requirements and acceptable opaque data
+  without requiring exhaustive instruction explanations or execution-path coverage.
+- Required separate editable image files and project-specific decode/encode
+  conversion, including verification that image edits appear in the rebuilt game.
+- Made filesystem-based I/O replacement explicitly optional, with documented
+  differences and behavior checks, and reduced optional tooling/documentation scope.
+
+Validation: reviewed the revised plan against `PRD.md` and the user's clarified
+requirements, and checked the documentation diff for formatting errors. No game
+implementation or runtime validation was performed. Next remains Step 1.
