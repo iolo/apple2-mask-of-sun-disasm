@@ -113,11 +113,14 @@ reconstruction; the high entry address alone does not prove every memory owner.
 Static intrinsic code at $122C/$129D implements save/restore with RWTS commands
 2/1. Its shared transfer at $123B starts at track31/sector15 and buffer $AF00,
 then reads/writes $90 pages in descending sector and memory order, ending with
-track23/sector0 and $2000. It preserves DOS I/O through $BA72/$BA69. This is a
+track23/sector0 and $2000. It calls native entries $BA72/$BA69 around RWTS. This is a
 raw RAM snapshot of $2000–$AFFF, not a DOS catalog file. Runtime isolated-media
 comparisons observe exactly those 144 changed sectors, and restored object/room
 state passes both same-session and fresh-boot checks. The complete intrinsic
-source and its DOS workspace preservation still need reconstruction.
+source still needs reconstruction. Further native instruction inspection shows
+$BA69/$BA72 are short register-return stubs, not workspace-preservation routines:
+$BA69 returns X=$6E,Y=$36 and $BA72 returns X=$6F,Y=$00. Their purpose in the
+supplied cracked version remains unconfirmed; no memory preservation is inferred.
 
 The early build now assembles interpreter and renderer. Their original encodings
 match as a diagnostic. It still needs intrinsics, boot/DOS, the remaining CHAR

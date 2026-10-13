@@ -30,7 +30,9 @@ def main():
                ('boot-a', 0x0800, 0x100, 'assets/raw/a/system/track-00.bin', 0),
                ('boot-b', 0x0800, 0x100, 'assets/raw/b/system/track-00.bin', 0),
                ('boot-stage2-a', 0xb700, 0x100, 'assets/raw/a/system/track-00.bin', 0x100),
-               ('boot-stage2-b', 0xb700, 0x100, 'assets/raw/b/system/track-00.bin', 0x100)]
+               ('boot-stage2-b', 0xb700, 0x100, 'assets/raw/b/system/track-00.bin', 0x100),
+               ('rwts-a', 0xb800, 0x800, 'assets/raw/a/system/track-00.bin', 0x200),
+               ('rwts-b', 0xb800, 0x800, 'assets/raw/b/system/track-00.bin', 0x200)]
     for name, address, length, asset, offset in modules:
         subprocess.run(['ca65', str(ROOT / f'src/{name}.s'), '-o', str(out / f'{name}.o'),
                         '-l', str(out / f'{name}.lst')], check=True)

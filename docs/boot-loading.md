@@ -22,7 +22,9 @@ encodings. The remainder of DOS is still temporary native input.
    at $B7E8 and calls $BD00. It loads 27 pages downward: T2/S4..S0, T1/S15..S0,
    T0/S15..S10 into $B500..$9B00. The complete DOS boot extent is therefore
    $9B00..$BFFF, 37 pages. Firmware/DOS buffers later change some of those bytes.
-4. Stage2 initializes DOS I/O at $BA6D, then transfers to cold start $9D84.
+4. Stage2 calls native DOS initialization entry $BA6D, then transfers to cold
+   start $9D84. In this crack that entry is a short stub returning X=$8A,Y=$36;
+   it does not initialize memory. The nibble decode table is already present.
    DOS locates the startup text file `START`, then executes its Applesoft/DOS
    commands. Its first observed output-processing entry at $A000 is at 4.809
    seconds. `START` initializes both HGR pages, BLOADs `ADVEN INTERP.OBJ` at
@@ -59,8 +61,8 @@ The game does not preserve the whole DOS boot extent as active OS code. Its
 graphics files load at $9C00 and can overwrite front DOS code/buffers; CHAR GEN
 overwrites $ADFC..$B6FB, including the copied bootstrap/DOS helper page. The
 interpreter subsequently uses its own catalog loader and retained RWTS $BD00,
-not the overwritten high-level DOS command/file interpreter. Save/restore uses
-retained $BA72/$BA69 workspace routines and RWTS. That phase change is important
+not the overwritten high-level DOS command/file interpreter. Save/restore calls
+retained $BA72/$BA69 register-return stubs and RWTS. That phase change is important
 when classifying a RAM capture: live font/graphics data can occupy addresses
 that held DOS code during startup. Original DOS code still requires full source.
 

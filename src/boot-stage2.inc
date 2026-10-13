@@ -72,7 +72,7 @@ reload_dos_pages:
         rts
 .ifdef SIDE_A
 initialize_dos:
-        jsr $ba6d ; DOS I/O initialization
+        jsr $ba6d ; native initialization stub: returns X=$8A,Y=$36 in this crack
         jmp $9d84 ; DOS cold start
 .else
         .res 6,0 ; side-B copy omits this trampoline

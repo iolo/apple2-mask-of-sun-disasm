@@ -275,3 +275,36 @@ source. Intrinsic code, mixed CHAR GEN content, graphic encoding/edit authority,
 world interpretation and final reproducibility remain open. Step 3's complete
 semantic manifest/memory map also remains open. Next: map native DOS code/data
 using its traced interfaces, then reconstruct the intrinsic/vector engine.
+
+## Steps 3c/5a — Resident sector read/write source
+
+Completed substep on 2026-10-13; full DOS and the remaining plan stay open.
+
+- Reconstructed $B800–$BFFF as `src/rwts.inc`, with side-specific wrappers:
+  6-and-2 conversion, timed GCR/address readers and writers, seek/motor control,
+  public RWTS dispatch/retries, format code and DOS tail helpers. Interfaces,
+  carry/status errors, shared scratch and cycle-sensitive instructions are named.
+- Classified lookup tables, nibble scratch, verification flags and isolated
+  residual/padding bytes explicitly. Preserved the overlapping BIT/SEC success
+  and error entry with an annotated opcode byte rather than hiding a code span.
+- Corrected the earlier interpretation of $BA69/$BA6D/$BA72: native side-A
+  entries return register constants and perform no workspace writes. The old
+  DOS initializer fragment is bypassed. Side B's corresponding 43 residual
+  bytes are retained as data; normal swaps continue using side-A resident RWTS.
+- Added source size/entry assertions and expanded the early build to eight
+  modules. Both high-memory copies are now assembled without raw CODE includes.
+  `docs/rwts.md` records data boundaries, caller contracts and validation limits.
+
+Validation: new assembled disks pass seven boot checks and agreement of all
+224 observed entry/request signatures, thirteen opening checks and eighteen
+save/restore checks. Save-footprint verification confirms exactly the same 144
+written sectors and untouched surrounding sectors. Repeated builds agree;
+current native encoding agreement is diagnostic. Supplied-input hashes remain
+unchanged. The first side-B investigation incorrectly attributed its difference
+bytes to nibble scratch; direct comparison located them at $BA69–$BA93 and the
+source was corrected before acceptance.
+
+Limits: remaining $9B00–$B5FF DOS, INTRIN, mixed CHAR GEN code, graphics asset
+edit authority and world analysis are unfinished. Formatting, optional language
+card and all disk-error paths are not exercised. Next: reconstruct startup and
+DOS file manager, then the intrinsic/vector engine.
