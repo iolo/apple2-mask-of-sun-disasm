@@ -7,7 +7,7 @@ from pathlib import Path
 from catalog import ROOT, digest, review_hash, validate, write_json
 from encoding import decode, encode
 from packages import split
-from startup_disk import Disk, file_bytes
+from startup_disk import Disk, file_bytes, SAVE_SECTORS
 
 
 def read(path):return json.loads(path.read_text())
@@ -41,11 +41,18 @@ def verify(media, repeat, approval):
     for side,key in [('extra','extra'),('a','game_a'),('b','game_b')]:
         image=(media/built['disk_names'][side]).read_bytes()
         assert digest(image)==built[key]['sha256']
-        files=Disk(image).catalog()['files']
+        disk=Disk(image);files=disk.catalog()['files']
         assert len(files)==len(built[key]['files'])
         for record,f in zip(built[key]['files'],files):
             assert record['name']==f['name']
             assert digest(file_bytes(image,f)[:record['bytes']])==record['sha256']
+        if side=='extra' and built.get('save_media',{}).get('disk')=='extra':
+            assert {tuple(pair) for pair in built['extra']['save_sectors']}==SAVE_SECTORS
+            assert not SAVE_SECTORS.intersection(disk.owners)
+            vtoc=disk.sector(17,0)
+            for t,s in SAVE_SECTORS:
+                assert not int.from_bytes(vtoc[0x38+4*t:0x3a+4*t],'big')&(1<<s)
+                assert disk.sector(t,s)==bytes(256)
     identical={}
     for name in [*built['disk_names'].values(),'runtime-asset.bin','font-asset.bin','resident-asset.bin',
                  'bootstrap.bin','interpreter.bin','intrinsics.bin','parms.bin']:
@@ -53,6 +60,7 @@ def verify(media, repeat, approval):
         identical[name]=digest((media/name).read_bytes())
     return dict(pass_validation=True,approved_entries_verified=len(checked),approved_catalog_sha256=catalog_hash,
         human_contextual_playtest_acceptance=False,all_allocated_file_hashes_verified=True,
+        save_media=built.get('save_media'),
         identical_artifacts=identical,free_sectors={k:built[k]['free_sectors'] for k in ['extra','game_a','game_b']},
         runtime_bytes=built['runtime']['bytes'],font_bytes=enc['font_bytes'],glyph_count=enc['glyph_count'],
         resident_pool_bytes=enc['resident_pool_bytes'],largest_room_pool=enc['largest_room_pool'],

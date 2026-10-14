@@ -1,0 +1,54 @@
+{
+  "pass_validation": true,
+  "emulator": "Apple2TS APPLE2EE",
+  "old_build": {
+    "initial_side": 255,
+    "after_inserting_a": {
+      "load_error": 6,
+      "package_side_mask": 1,
+      "package_media_id": "1a7779c53fc090fc54967bcb",
+      "runtime_media_id": "1a7779c53fc090fc54967bcb"
+    },
+    "diagnostic_only": {
+      "write_601c": 0,
+      "result_room": 1
+    }
+  },
+  "fixed_build": {
+    "poison_before_bootstrap": 170,
+    "side_after_bootstrap": 0,
+    "room_after_swap": 1,
+    "load_error": 0,
+    "prompt": {
+      "emulator": {
+        "serverInstanceId": "5d984390-68f8-4c9c-8ba9-7e327844ab74",
+        "rendererId": "579a5ab1-6051-4624-89f4-dedf0150ff0e",
+        "targetId": "5d984390-68f8-4c9c-8ba9-7e327844ab74:579a5ab1-6051-4624-89f4-dedf0150ff0e"
+      },
+      "outcome": "stopped",
+      "expectationMatched": true,
+      "state": {
+        "executionSequence": 8,
+        "state": "paused",
+        "pauseReason": "breakpoint",
+        "breakpoint": {
+          "breakpointId": "bp:3260",
+          "address": 3260
+        },
+        "memoryWrite": null,
+        "PC": 3260,
+        "A": 0,
+        "X": 0,
+        "Y": 3,
+        "S": 247,
+        "PStatus": 55,
+        "machineName": "APPLE2EE",
+        "memoryConfiguration": {
+          "slot3Card": "aux",
+          "ramWorksKb": 64
+        }
+      }
+    }
+  },
+  "scope": "Owned private sessions. Old build diagnosed with a one-byte runtime intervention. Fixed build uses its own startup code, with only pre-bootstrap RAM poisoning and keyboard/media control."
+}

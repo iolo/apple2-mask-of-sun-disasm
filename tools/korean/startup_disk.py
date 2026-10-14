@@ -26,6 +26,9 @@ sys.path.insert(0,str(ROOT/'tools'))
 from dos_disk import Disk, offset
 
 A_BOOT_NOTICE = 'BOOT THE STARTUP DISK.'
+# Native snapshot: T23/S0 through T31/S15; Korean commit header: T22/S15.
+# These are raw sectors, not a DOS file. Keep them allocated in EXTRA's VTOC.
+SAVE_SECTORS = frozenset({(22,15)} | {(t,s) for t in range(23,32) for s in range(16)})
 
 
 def approved_catalog(baseline):
@@ -50,7 +53,7 @@ def reusable_file_sectors(image):
     return reusable
 
 
-def dos_disk(seed, files, reusable_sectors=None):
+def dos_disk(seed, files, reusable_sectors=None, reserved_sectors=()):
     """Fresh deterministic allocation, one TS per file, original boot tracks."""
     if len(files)>105 or len({name[:10] for name,_,_ in files})!=len(files):
         raise ValueError('catalog capacity or native ten-character name collision')
@@ -64,6 +67,11 @@ def dos_disk(seed, files, reusable_sectors=None):
         if any(not (1<=t<35 and t!=17 and 0<=s<16) for t,s in available):
             raise ValueError('unsafe reusable sector (track zero/catalog/out of range)')
         reserved={(t,s) for t in range(35) for s in range(16)}-set(available)
+    reserved_sectors=set(reserved_sectors)
+    if not reserved_sectors<=set(available):
+        raise ValueError('reserved sectors must belong to the allocatable data area')
+    reserved.update(reserved_sectors)
+    available=[pair for pair in available if pair not in reserved_sectors]
     cats=[(17,s) for s in range(15,0,-1)]
     for i,pair in enumerate(cats):
         base=offset(*pair)
@@ -270,7 +278,8 @@ def main():
            ('KO.RUNTIME',0,b''.join(assets['runtime'])),('KO.FONT',0,b''.join(assets['font'])),('KO.TEXT',0,b''.join(assets['resident'])),
            resource('INITIAL'),resource('LIBRARY'),('INTRIN.OBJ',4,(out/'intrinsics.bin').read_bytes()),
            ('CHAR GEN',*originals['CHAR GEN']),('LOGO',*originals['LOGO'])]
-    extra_bytes,extra_report=dos_disk(image,extra)
+    extra_bytes,extra_report=dos_disk(image,extra,reserved_sectors=SAVE_SECTORS)
+    extra_report['save_sectors']=[list(pair) for pair in sorted(SAVE_SECTORS)]
     (out/disk_names['extra']).write_bytes(extra_bytes)
     game=[];game_b_report=None
     for f in original['files']:
@@ -304,6 +313,9 @@ def main():
         write_json(out/'approved-messages.json',catalog)
     write_json(out/'startup-build.json',{'kind':('approved Korean playtest A/B/startup' if args.approved else 'complete synthetic draft-shaped A/B/startup; no translated message bodies' if args.full_synthetic else 'synthetic cold-boot prototype; original English + synthetic Korean caption, no translation drafts'),
         'approved_translations':args.approved,'disk_names':disk_names,
+        'save_media':{'disk':'extra','slots':1,'header':[22,15],
+                      'snapshot_first':[23,0],'snapshot_last':[31,15],
+                      'reserved_sectors':len(SAVE_SECTORS)},
         'catalog_sha256':digest(json.dumps(catalog,ensure_ascii=False,sort_keys=True).encode()),
         'tool_versions':{tool:subprocess.run([tool,'--version'],stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,check=True).stdout.strip()
                          for tool in ('ca65','ld65')},

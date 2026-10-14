@@ -7,9 +7,9 @@ local config=json.parse(bytes(assert(os.getenv('MASK_KOREAN_GAME_CONFIG'))))
 local cpu=manager.machine.devices[':maincpu'];local space=cpu.spaces.program
 local labels=config.labels
 local index=1;local frames=0;local last=0;local stable=0;local prior=''
-local mounted='extra';local pending_media;local seen={};local events={};local finished=false
+local mounted='extra';local pending_media;local pending_message;local seen={};local events={};local finished=false
 local glyph_count=0;local bad_references=0;local taps={};local asset_checks=0
-local room_pool_checks=0;local pools={};local ending_seen_at
+local room_pool_checks=0;local pools={};local ending_seen_at;local last_message
 for key,spec in pairs(config.pools) do pools[key]=bytes(spec.path):sub(spec.offset+1,spec.offset+spec.bytes) end
 local function word(a)return space:read_u8(a)+256*space:read_u8(a+1) end
 local function filename()
@@ -23,13 +23,14 @@ local function tap(address,name,fn)
 end
 tap(labels.ko_print_message,'ko-game-message',function()
  local id=cpu.state.A.value+256*cpu.state.X.value
+ last_message=id
  seen[filename()..':'..id]=true
  if id>=0x8000 then seen['*:'..id]=true end
  for _,key in ipairs(config.ending_messages or {}) do
   if seen[key] and not ending_seen_at then ending_seen_at=manager.machine.time:as_double() end
  end
  local event=config.media_messages[tostring(id)]
- if event then pending_media=event end
+ if event then pending_media=event;pending_message=id end
 end)
 tap(labels.ko_glyph_valid,'ko-game-glyph',function()glyph_count=glyph_count+1 end)
 tap(labels.ko_bad_reference,'ko-game-bad-reference',function()bad_references=bad_references+1 end)
@@ -92,6 +93,14 @@ emu.register_frame_done(function()
  local restore_wait=pc>=labels.ko_save_wait and pc<labels.ko_save_wait+12
  if (boot_wait or restore_wait) and now-last>=3 then
   if not assets_ok() then finish(false,'LC assets changed');return end
+  if config.runtime_game_prompts then
+   local side=game_side()
+   if last_message~=config.runtime_game_prompts[side] then finish(false,'wrong game disk prompt');return end
+   local capture=string.format('media-%s-%03d-%04d',side,index,#events)
+   mask.capture(capture);mask.resume()
+   events[#events+1]={kind='runtime_prompt',side=side,message_id=last_message,
+                     capture=capture,before_command=index,restore=restore_wait}
+  end
   mount(game_side());send('\r','runtime game media',now);return
  end
  local pointer=word(0xd2)
@@ -115,8 +124,13 @@ emu.register_frame_done(function()
  if screen~=prior then stable=now;prior=screen end
  if not urgent and (now-last<3 or now-stable<0.5) then return end
  if pagination then
-  if pending_media then mount(pending_media=='game' and game_side() or pending_media);pending_media=nil end
-  mask.capture(string.format('page-%03d-%04d',index,#events));mask.resume()
+  local capture=string.format('page-%03d-%04d',index,#events)
+  mask.capture(capture);mask.resume()
+  if pending_media then
+   events[#events+1]={kind='media_instruction',side=pending_media,message_id=pending_message,
+                     capture=capture,before_command=index}
+   mount(pending_media=='game' and game_side() or pending_media);pending_media=nil;pending_message=nil
+  end
   send(' ','pagination',now);return
  end
  local custom_ready=false

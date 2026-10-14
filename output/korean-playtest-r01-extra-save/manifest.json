@@ -1,0 +1,138 @@
+{
+  "version": "r01-extra-save",
+  "approved_entries": 1328,
+  "catalog_sha256": "295b6cc8a34f09a5433e9ee33cc88499b2ee66d4b51db132a638e763230b3bc0",
+  "media_id": "b7e954921a72c51244c2ef02",
+  "save_id": "4b4f53310a8ebb166002cdba3a9ef8ee",
+  "save_media": {
+    "disk": "extra",
+    "slots": 1,
+    "header": [
+      22,
+      15
+    ],
+    "snapshot_first": [
+      23,
+      0
+    ],
+    "snapshot_last": [
+      31,
+      15
+    ],
+    "reserved_sectors": 145
+  },
+  "files": {
+    "README.md": {
+      "bytes": 2094,
+      "sha256": "aba5332d14e888389cbd2014bbe2301b475bc0b0c238aad886a27e814e3d4572"
+    },
+    "assets/korean/font/OFL.md": {
+      "bytes": 4266,
+      "sha256": "9a9e5a342c430c3fcf01a408b680f4405d5bf4ac659c931be35f8a1b27ea69c9"
+    },
+    "assets/korean/font/source.json": {
+      "bytes": 722,
+      "sha256": "399c1081cf1d28421d0b7c545017338825a454aa9ba993e9c206cd5240b2bbd0"
+    },
+    "assets/korean/glossary.json": {
+      "bytes": 16187,
+      "sha256": "fe7098ceef1caed8f96a9261430528b6ccb2311fe3f1d9eade00c704aa03e5e8"
+    },
+    "assets/korean/messages.json": {
+      "bytes": 1893111,
+      "sha256": "b4444a2b88c46b9bcb2b7d600f936f485027f77a7250d958fe9afb449b36a052"
+    },
+    "build-manifest.json": {
+      "bytes": 108397,
+      "sha256": "e0f01cbbe3b3e9c083fa8f649a45ce63b641b05ef53810060d71d427e2b79e00"
+    },
+    "docs/evidence/korean/approved-r01-extra-save-build.json": {
+      "bytes": 2571,
+      "sha256": "1cd270faa8f4864a11a3e043ed3f88a85e5a5c6c4acd9ff6d2928e378ee88239"
+    },
+    "docs/evidence/korean/approved-r01-extra-save-game.json": {
+      "bytes": 177002,
+      "sha256": "c4f8f35149bb41a6d2b2e8d44c85619389dcbc404a4bb6b6156646ea3cc76a2c"
+    },
+    "docs/evidence/korean/approved-r01-extra-save-output-audit.json": {
+      "bytes": 34718,
+      "sha256": "72933dce59c334cfe7b15c9fb8c25f84652e2dd9eba581e75b0c3f284018f80c"
+    },
+    "docs/korean/approval-r01-extra-save.json": {
+      "bytes": 126526,
+      "sha256": "478ed0148f0f7a5d21515cd480d81672477ae3e21ef13a4d2884cdcef2a3ef38"
+    },
+    "docs/korean/approval-r01-fix2.json": {
+      "bytes": 123847,
+      "sha256": "251dab19c0cd7e4256564f995871110c10110fd8e0fff1287acb049b87896795"
+    },
+    "docs/korean/approval-r01.json": {
+      "bytes": 122419,
+      "sha256": "dc053adb5eeb26c14c2419161e20ebae964b6913733670472222ce534d9f6794"
+    },
+    "docs/korean/extra-save.md": {
+      "bytes": 3345,
+      "sha256": "c367fb0cd3ee2914ea9b4af9d6a657fffc0036cc490b59532b8a3c808e19b0b5"
+    },
+    "docs/korean/input-guide.md": {
+      "bytes": 1861,
+      "sha256": "9923097a6ce359ca795465fa5eb4114ea8c450004de86b5505342bb56d32fae1"
+    },
+    "docs/korean/playtest-r01.md": {
+      "bytes": 4346,
+      "sha256": "0584da5254e7cdfc2b7c247cff110538700c59939a05f511e54695e1d494d13a"
+    },
+    "glyphs.json": {
+      "bytes": 5853,
+      "sha256": "8f8b46aaf35982956e4f50442d4e3dc07f6700ab83dec910446f9cc4276f013d"
+    },
+    "mask-of-sun-ko-a.dsk": {
+      "bytes": 143360,
+      "sha256": "960852fea1a0de0532c400dad19f2f6e355926a0fd7fdc21d3e9f24dd0e2b4b7"
+    },
+    "mask-of-sun-ko-b.dsk": {
+      "bytes": 143360,
+      "sha256": "b103674de983c68a4b4686a079a156dda1384d8bdd85c684147b0b6f9d12ff53"
+    },
+    "mask-of-sun-ko-extra.dsk": {
+      "bytes": 143360,
+      "sha256": "f9b02aadcdf1d8d891c44d5b128a9b6dc2c012d1a18c73bee558843ff6b48274"
+    },
+    "screenshots/fresh-boot-media-a-001-0000.png": {
+      "bytes": 4790,
+      "sha256": "4420ee371a7424f9f0b765ff83bd7b2584af06a609cc6bf03dfdee95d364157a"
+    },
+    "screenshots/fresh-boot-media-b-003-0010.png": {
+      "bytes": 5420,
+      "sha256": "73652218e0381b3dc705e6bbf1055042961a34ef08544ab0125ae164daae3d67"
+    },
+    "screenshots/fresh-boot-page-003-0007.png": {
+      "bytes": 4296,
+      "sha256": "510ac1d8918482abf8d4d1160fe5ae6f4b0a79c18cf13eaf91c3642142012145"
+    },
+    "screenshots/opening.png": {
+      "bytes": 4490,
+      "sha256": "fc5a34f491f2a2bc6e7d206a40a0db1c9ce416151b7720f55dd7ced76a098c0f"
+    },
+    "screenshots/same-session-media-a-001-0000.png": {
+      "bytes": 4790,
+      "sha256": "4420ee371a7424f9f0b765ff83bd7b2584af06a609cc6bf03dfdee95d364157a"
+    },
+    "screenshots/same-session-media-b-059-0102.png": {
+      "bytes": 4498,
+      "sha256": "f09a657872a14cf47f8c4052cf411f60ae3afab972cb243ee982964ff9d93425"
+    },
+    "screenshots/same-session-media-b-065-0123.png": {
+      "bytes": 5420,
+      "sha256": "73652218e0381b3dc705e6bbf1055042961a34ef08544ab0125ae164daae3d67"
+    },
+    "screenshots/same-session-page-062-0111.png": {
+      "bytes": 5742,
+      "sha256": "c6c25cb64265bfb7019bc5ef4b7fdb8dd889ddb8a19224593b8ea2dc6d4cfc0a"
+    },
+    "screenshots/same-session-page-065-0120.png": {
+      "bytes": 5742,
+      "sha256": "c6c25cb64265bfb7019bc5ef4b7fdb8dd889ddb8a19224593b8ea2dc6d4cfc0a"
+    }
+  }
+}

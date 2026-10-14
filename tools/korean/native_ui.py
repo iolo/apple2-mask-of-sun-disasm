@@ -7,7 +7,7 @@ from catalog import ascii_text, digest
 
 INTRINSIC_IDS = ('disk_error_text', 'picture_load_overflow_text',
                  'disk_action_error_text', 'game_disk_prompt_text', 'drive_prompt_text')
-RUNTIME_IDS = ('ko_media_text', 'ko_save_prompt')
+RUNTIME_IDS = ('ko_media_text', 'ko_media_b_text', 'ko_save_prompt')
 
 
 def reference(message, aliases):

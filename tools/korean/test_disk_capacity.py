@@ -1,7 +1,7 @@
 """Reclaim native B data sectors without inheriting stale TS-list headers."""
 import unittest
 
-from startup_disk import Disk, dos_disk, file_bytes, offset
+from startup_disk import Disk, dos_disk, file_bytes, offset, SAVE_SECTORS
 
 
 class DiskCapacityTests(unittest.TestCase):
@@ -29,6 +29,26 @@ class DiskCapacityTests(unittest.TestCase):
         for pair in ((0, 1), (17, 1), (35, 0), (1, 16)):
             with self.subTest(pair=pair), self.assertRaises(ValueError):
                 dos_disk(self.seed(), [('TEST', 0, b'x')], reusable_sectors={pair})
+
+    def test_save_reservation_survives_allocation_and_raw_snapshot_writes(self):
+        files=[(f'FILE{i}',0,bytes([i+1])*110*256) for i in range(3)]
+        image,report=dos_disk(self.seed(),files,reserved_sectors=SAVE_SECTORS)
+        disk=Disk(image);catalog=disk.catalog();vtoc=disk.sector(17,0)
+        self.assertEqual(len(SAVE_SECTORS),145)
+        self.assertFalse(SAVE_SECTORS.intersection(disk.owners))
+        self.assertTrue(any(t>=32 for t,s in disk.owners))
+        self.assertEqual(report['free_sectors'],18)
+        saved=bytearray(image)
+        for t,s in SAVE_SECTORS:
+            self.assertFalse(int.from_bytes(vtoc[0x38+4*t:0x3a+4*t],'big')&(1<<s))
+            self.assertEqual(disk.sector(t,s),bytes(256))
+            saved[offset(t,s):offset(t,s)+256]=b'\xa5'*256
+        self.assertEqual(Disk(bytes(saved)).catalog(),catalog)
+        for spec,file in zip(files,catalog['files']):
+            self.assertEqual(file_bytes(saved,file),spec[2])
+        with self.assertRaisesRegex(ValueError,'allocation overflow'):
+            dos_disk(self.seed(),[(f'FILE{i}',0,b'x'*117*256) for i in range(3)],
+                     reserved_sectors=SAVE_SECTORS)
 
 
 if __name__ == '__main__':

@@ -12,7 +12,7 @@ from build_messages import labels
 from catalog import ROOT, digest, write_json, validate
 from packages import split, HEADER_BYTES
 from encoding import decode
-from startup_disk import offset
+from startup_disk import offset, Disk, SAVE_SECTORS
 
 
 def high(text):return bytes(ord(c)|128 for c in text)
@@ -31,6 +31,7 @@ def main():
     approved=built.get('approved_translations',False)
     assert built['full_synthetic'] or approved
     disk_names=built.get('disk_names',{'extra':'synthetic-startup.dsk','a':'synthetic-a.dsk','b':'synthetic-b.dsk'})
+    combined_save=built.get('save_media',{}).get('disk')=='extra'
     for path,h in built['source_hashes'].items():assert digest((ROOT/path).read_bytes())==h,path
     for side,key in [('extra','extra'),('a','game_a'),('b','game_b')]:
         assert digest((media/disk_names[side]).read_bytes())==built[key]['sha256']
@@ -90,6 +91,9 @@ def main():
                                            'offset':HEADER_BYTES+f['script_bytes'],'bytes':f['pool_bytes']}
                      for f in encoding['files']},
             'resident':str(media/'resident-asset.bin'),'font':str(media/'font-asset.bin')}
+    if built.get('native_ui') and 'runtime:ko_media_b_text' in resident:
+        config['runtime_game_prompts']={'a':resident['runtime:ko_media_text'],
+                                        'b':resident['runtime:ko_media_b_text']}
     def message_keys(prefix,contains=False):
         return [f'{"*" if index&0x8000 else name}:{index}' for name,index in references(prefix,contains)]
     if args.ending:config['ending_messages']=message_keys(route['ending_text'])
@@ -104,18 +108,21 @@ def main():
     text=decode(pool[at:end+1],glyphs)
     config['waiting_glyphs']=[ord(c) if ord(c)<128 else list(font[glyphs.index(c)*8:glyphs.index(c)*8+8]) for c in text]
     blank=out/'blank-save.dsk'
-    if not args.recheck_results:
+    if not args.recheck_results and not combined_save:
         subprocess.run(['a2kit','mkdsk','--os','dos33','--type','do','--volume','254','--dimg',str(blank)],check=True)
     reports=[]
     for profile in (('ending',) if args.ending else ('same-session','fresh-boot')):
         session=out/profile
-        # The session launcher owns copies of startup and A. B/save are separate
-        # owned copies; this probe never mounts the source media for writing.
+        # Combined media must save onto the very copy used to boot, and the next
+        # session must boot from that saved image. Never write to release media.
         bcopy=out/(profile+'-b.dsk')
-        save=out/(profile+'-save.dsk')
+        save=session/'side-a.dsk' if combined_save else out/(profile+'-save.dsk')
+        boot_source=(out/'same-session/side-a.dsk' if combined_save and profile=='fresh-boot'
+                     else media/disk_names['extra'])
         if not args.recheck_results:
             shutil.copyfile(media/disk_names['b'],bcopy)
-            shutil.copyfile(out/'same-session-save.dsk' if profile=='fresh-boot' else blank,save)
+            if not combined_save:
+                shutil.copyfile(out/'same-session-save.dsk' if profile=='fresh-boot' else blank,save)
         active=dict(config,commands=['RESTORE GAME','Y','LOOK','INVENTORY'] if profile=='fresh-boot' else commands,
                     timeout=route['timeout'] if args.ending else 1800 if profile=='same-session' else 400,
                     media={'a':'side-b.dsk','b':str(bcopy),'save':str(save)})
@@ -123,7 +130,7 @@ def main():
         if args.recheck_results:assert json.loads(config_path.read_text())==active,'replay configuration changed'
         else:write_json(config_path,active)
         cmd=[sys.executable,str(ROOT/'tools/mame_session.py'),'--rompath',str(args.rompath.resolve()),
-             '--disk-a',str(media/disk_names['extra']),'--disk-b',str(media/disk_names['a']),
+             '--disk-a',str(boot_source),'--disk-b',str(media/disk_names['a']),
              '--output',str(session),'--headless','--fast','--language-card',
              '--script',str(ROOT/'tools/korean/full_game_probe.lua')]
         if not args.recheck_results:
@@ -132,6 +139,32 @@ def main():
                                stderr=subprocess.STDOUT,timeout=300,check=True)
         result=json.loads((session/'full-game-probe.json').read_text())
         assert result['pass'] and result['bad_references']==0 and result['room_pool_checks']==len(active['commands'])+(0 if args.ending else 1),result
+        if config.get('runtime_game_prompts') and not args.ending:
+            prompts=[e for e in result['events'] if e['kind']=='runtime_prompt']
+            assert prompts[0]['side']=='a' and not prompts[0]['restore']
+            assert any(e['side']=='b' and e['restore'] for e in prompts)
+            # Check rendered cells, not just the selected resident message ID.
+            for event in prompts:
+                if not approved:continue  # Synthetic bodies have their own pixel harness.
+                memory=(session/(event['capture']+'-ram.bin')).read_bytes()
+                base=0x4000 if memory[0x0346] else 0x2000
+                inverse=memory[0x0347]
+                cells=[[' ']*40 for _ in range(4)]
+                suffix='ko_media_text' if event['side']=='a' else 'ko_media_b_text'
+                message=next(m for m in catalog['messages'] if m['id']=='runtime:'+suffix)
+                body=message['ko']
+                for row,line in enumerate(body.split('\n')):
+                    assert row<4 and len(line)<=40
+                    cells[row][:len(line)]=line
+                for row,line in enumerate(cells,12):
+                    for column,char in enumerate(line):
+                        bitmap=(memory[0xb300+ord(char)*8:0xb300+ord(char)*8+8] if ord(char)<128
+                                else font[glyphs.index(char)*8:glyphs.index(char)*8+8])
+                        for scan,value in enumerate(bitmap,row*12):
+                            address=base+(scan&7)*1024+((scan>>3)&7)*128+(scan>>6)*40+column
+                            assert memory[address]==value^inverse,(event,char,row,column,scan)
+                event['rendered_message']=body
+                event['prompt_pixels_verified']=True
         def ram(index):return (session/f'prompt-{index:03d}-ram.bin').read_bytes()
         checks=[]
         if args.ending:
@@ -168,6 +201,20 @@ def main():
             checks.append({'id':'fresh-boot-B-world-and-mutated-script-preserved','passed':True})
         assert digest(bcopy.read_bytes())==built['game_b']['sha256']
         assert digest((session/'side-b.dsk').read_bytes())==built['game_a']['sha256']
+        if combined_save and not args.ending:
+            pristine=(media/disk_names['extra']).read_bytes();saved=save.read_bytes()
+            changed={(t,s) for t in range(35) for s in range(16)
+                     if pristine[offset(t,s):offset(t,s)+256]!=saved[offset(t,s):offset(t,s)+256]}
+            assert changed and changed<=SAVE_SECTORS and (22,15) in changed
+            assert Disk(saved).catalog()==Disk(pristine).catalog()
+            assert saved[offset(22,15):offset(22,15)+16].hex()==built['save_id']
+            if profile=='fresh-boot':assert saved==boot_source.read_bytes()
+            checks.append({'id':'extra-save-preserves-all-startup-files-and-non-save-sectors',
+                           'changed_sectors':len(changed),'passed':True})
+            if profile=='fresh-boot':
+                checks.append({'id':'cold-boot-and-restore-from-saved-extra','passed':True})
+            for prefix in ('Place SAVE GAME disk',)+(('Place an initialized disk',) if profile=='same-session' else ()):
+                assert any(result['seen_messages'].get(k) for k in message_keys(prefix))
         result.update(profile=profile,checks=checks,session=json.loads((session/'session.json').read_text()))
         reports.append(result);print('PASS: '+profile,flush=True)
     write_json(args.evidence,{'pass':True,'runs':reports,'build':built,

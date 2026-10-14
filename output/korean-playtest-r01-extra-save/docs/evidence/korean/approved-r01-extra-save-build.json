@@ -1,0 +1,69 @@
+{
+  "pass_validation": true,
+  "approved_entries_verified": 1328,
+  "approved_catalog_sha256": "295b6cc8a34f09a5433e9ee33cc88499b2ee66d4b51db132a638e763230b3bc0",
+  "human_contextual_playtest_acceptance": false,
+  "all_allocated_file_hashes_verified": true,
+  "save_media": {
+    "disk": "extra",
+    "slots": 1,
+    "header": [
+      22,
+      15
+    ],
+    "snapshot_first": [
+      23,
+      0
+    ],
+    "snapshot_last": [
+      31,
+      15
+    ],
+    "reserved_sectors": 145
+  },
+  "identical_artifacts": {
+    "mask-of-sun-ko-extra.dsk": "f9b02aadcdf1d8d891c44d5b128a9b6dc2c012d1a18c73bee558843ff6b48274",
+    "mask-of-sun-ko-a.dsk": "960852fea1a0de0532c400dad19f2f6e355926a0fd7fdc21d3e9f24dd0e2b4b7",
+    "mask-of-sun-ko-b.dsk": "b103674de983c68a4b4686a079a156dda1384d8bdd85c684147b0b6f9d12ff53",
+    "runtime-asset.bin": "d34ced24e57c9c747e719d6b37fff4fad47022ac41aeb013fd61dec6719e49ea",
+    "font-asset.bin": "78a389461c7c38be25b1ee08c27d3c661bacd8fdbd9a7f6eb215362826064209",
+    "resident-asset.bin": "c7cb4b6232ca08d23f989a846cd18650fdb9805c3d8164d61dec261694102ac9",
+    "bootstrap.bin": "6ea6d080da1e890191a9ef7052b00b6e5f1143fdf817d2fd7274ff0ab5f52123",
+    "interpreter.bin": "6d3ba77eb1ef8e6343fb4e6ba2d659c39bd217092c1312afd584e381046a566a",
+    "intrinsics.bin": "c0360fc1909c775cc0e69dfa6ec92d215776357fcc1237b043b428fda085c357",
+    "parms.bin": "417152ab34adb2fbc0e909d91c17991fe4fd795f9f496734d7959ed081a36ade"
+  },
+  "free_sectors": {
+    "extra": 199,
+    "game_a": 3,
+    "game_b": 8
+  },
+  "runtime_bytes": 1892,
+  "font_bytes": 5200,
+  "glyph_count": 650,
+  "resident_pool_bytes": 4096,
+  "largest_room_pool": {
+    "name": "ROOM 43.0",
+    "side": "b",
+    "bytes": 1013
+  },
+  "font_source": {
+    "repository": "https://github.com/quiple/galmuri",
+    "commit": "71e1cacf1437a11220307120e63e30bc275312d4",
+    "font_name": "GalmuriMono7",
+    "embedded_version": "2.403",
+    "license": "SIL OFL 1.1",
+    "derived_name": "Mask Korean 7x8",
+    "files": {
+      "GalmuriMono7.kbitx": {
+        "url": "https://raw.githubusercontent.com/quiple/galmuri/71e1cacf1437a11220307120e63e30bc275312d4/src/GalmuriMono7.kbitx",
+        "sha256": "3658b9e0eb214d847eedd369df2e0b3620a92fbb5623fb52509c03058d5adb6a"
+      },
+      "OFL.md": {
+        "url": "https://raw.githubusercontent.com/quiple/galmuri/71e1cacf1437a11220307120e63e30bc275312d4/ofl.md",
+        "sha256": "9a9e5a342c430c3fcf01a408b680f4405d5bf4ac659c931be35f8a1b27ea69c9"
+      }
+    }
+  },
+  "verifier_sha256": "5802f5fc3084e783d4ae7b287f7b9b67a2e4a15d409b92391adb88571e2a971d"
+}

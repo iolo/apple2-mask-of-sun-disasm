@@ -12,18 +12,18 @@
     "src/dos-low.s": "d65d67a9492bee76e22b8bd6c300124504f14d5050cf5e34a482ec551731d6e5",
     "src/interpreter.s": "b7995c055b523a4fd059aaef76c9f54af14c55962f8d39fb79e6fc2898d71b2a",
     "src/intrinsics.s": "f9bf8783afbc69cb628367852e1ee10f9d713e7b7d286a8f07eecdabb64e8ba2",
-    "src/korean/bootstrap.s": "46e3fff41be6127c4c7c93e993913628b487ce78e455351d63a63c8284a4facc",
-    "src/korean/dispatch.s": "05cc40d132c2065b60be6a23a47ffa949d0685bf2a50d41db3098c696690c0e7",
+    "src/korean/bootstrap.s": "d366323a9b8789edbf4b3d0cd01424407ddfbd002bc691430fede0140a323db6",
+    "src/korean/dispatch.s": "022e35cd2963431492e944441509d8c88bcc76f9c3710a34968a51890d1c5627",
     "src/korean/lc.s": "9c5d158c72ba7c415774455a1f36096cd20a3492568d103d0f4b49fbf6b800f7",
     "src/korean/loader.s": "1c6760e8a9bbcbe8f04f74502d43ab75dee700f843ee3674f8d94c60337ffa15",
     "src/korean/messages.s": "2f1f7e24161a57f4f895172bcea90a069f8b44e06085b09ae95b516c6725ddd9",
     "src/korean/restore-guard.inc": "df0108a474de8990a627fdbce21be9dfefab74d0d16e424801bd888f4aa67fd6",
-    "src/korean/save.s": "8f0bcc11d91c57e6bf15a843c91ce8ea74c3c3ab70e97200b7c682843a3156aa",
+    "src/korean/save.s": "4a98a9840d372822741b8d7ed05fbec1ffb6d56cc32d07efc330bdfc5fde91cf",
     "src/renderer.s": "a65a2246de7d6c5b24adad654222dc592a1b90ac657a5c87d974c4921378476d",
     "src/rwts-a.s": "6021641099b675350efcb00bf5b8209d31337d14981affbc9089475a7121cc0d",
     "src/rwts-b.s": "d01ac09a3d6f689e90d817146afe071b760f3f7e72743d173d7aa435724ec5f6",
     "src/rwts.inc": "72f5746dfcb2d451369ba8f27a7c5eb3eda81a81a85f537e0437aed6452c2843",
-    "tools/korean/startup_disk.py": "5c450fcd61670e2ce5daebc4bc011f452fb22f621c923e1d6f07674ab43d7702",
+    "tools/korean/startup_disk.py": "eaef494f64989f7b5e5ade43a41c73e3fd525ae0da056df0e5d5bb610023ea6d",
     "tools/korean/title_caption.py": "8b188b6f6910ef4d56a667800ad36822801dce473e1f9a51ea5f704683cdc229"
   },
   "sites": {
@@ -200,7 +200,8 @@
       "reason": "Resident game-media/save instructions, callable while room cache is invalid. KOREAN_NATIVE_UI selects the message-reference wrapper; default fixtures retain native ASCII.",
       "catalog_ids": [
         "runtime:ko_media_text",
-        "runtime:ko_save_prompt"
+        "runtime:ko_save_prompt",
+        "runtime:ko_media_b_text"
       ]
     },
     "restore_recovery": {

@@ -85,6 +85,11 @@ bootstrap_entry:
         sta runtime_font_count
         lda #>font_glyphs
         sta runtime_font_count+1
+        ; INITIAL leaves GE(12) undefined. The Korean loader checks it before
+        ; accepting ROOM 1.0's A-only package, so cold RAM must not select B.
+        ; Restore later replaces this byte with the saved world's disk side.
+        lda #0
+        sta $601c               ; GE(12): initial game side A
         jmp $0800               ; normal engine initialization; resets stack
 
 boot_load_asset:

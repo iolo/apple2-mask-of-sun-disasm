@@ -53,8 +53,7 @@ ko_restore_finish:
         ; Snapshot restored the current package name, but LC's room pool belongs
         ; to the pre-restore room. Reload only its pool, preserving script macros.
 ko_restore_pool_retry:
-        lda #<ko_media_text
-        ldx #>ko_media_text
+        jsr ko_select_game_media
         jsr ko_prompt_media
         lda #0
         sta $ec
@@ -89,4 +88,4 @@ ko_save_wait:
         bne ko_save_wait
         rts
 ko_save_commit: .byte 0
-ko_save_prompt: .byte $c9,$ce,$d3,$c5,$d2,$d4,$a0,$d3,$c1,$d6,$c5,$a0,$c4,$c9,$d3,$cb,$ac,$a0,$d0,$d2,$c5,$d3,$d3,$a0,$d2,$c5,$d4,$d5,$d2,$ce,$ae,$8d
+ko_save_prompt: .byte $c9,$ce,$d3,$c5,$d2,$d4,$a0,$c5,$d8,$d4,$d2,$c1,$a0,$c4,$c9,$d3,$cb,$ac,$a0,$d0,$d2,$c5,$d3,$d3,$a0,$d2,$c5,$d4,$d5,$d2,$ce,$ae,$8d

@@ -1,0 +1,36 @@
+{
+  "pass_validation": true,
+  "runs": [
+    {
+      "profile": "old-ff",
+      "platform_id": 3,
+      "poisoned_side": 255,
+      "side_before_swap": 255,
+      "return_reached_loader": true,
+      "load_error": 6,
+      "room1_accepted": false,
+      "media_id": "1a7779c53fc090fc54967bcb",
+      "disk_sha256": {
+        "extra": "b8ea240eb8902b05d4ce412c5821a57ea172a25837f2a74f5e86f709713f2a84",
+        "game_a": "3f23c94190e00c3216c2f136f48b9560f335990dbfff9e01b908381daa864435"
+      }
+    },
+    {
+      "profile": "fixed-ff",
+      "platform_id": 3,
+      "poisoned_side": 255,
+      "side_before_swap": 0,
+      "return_reached_loader": true,
+      "load_error": 0,
+      "room1_accepted": true,
+      "media_id": "74d69410dfb29c4c78325f2c",
+      "disk_sha256": {
+        "extra": "c3ae2ffaf8ed3bab69f73b9569c4c850d8706f1e8f09c90ada60d579ba02f058",
+        "game_a": "195b641190b0b9315f7ea9eb9eb75e6f710651afdb21edd412aa7773c9abfd4e"
+      },
+      "first_room_prompt": true
+    }
+  ],
+  "scope": "GSSquared enhanced IIe, same-drive EXTRA-to-A replacement with Return. Only GE(12) poisoned before bootstrap; original code/PC preserved.",
+  "source_sha256": "ebc478f36cf27514ed7c0a5e9a50c9a085567fe176f77ee3f74de56f736b412f"
+}

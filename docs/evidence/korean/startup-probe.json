@@ -2,30 +2,45 @@
   "pass": true,
   "build": {
     "kind": "synthetic cold-boot prototype; original English + synthetic Korean caption, no translation drafts",
+    "approved_translations": false,
+    "disk_names": {
+      "extra": "synthetic-startup.dsk",
+      "a": "synthetic-a.dsk",
+      "b": "synthetic-b.dsk"
+    },
+    "catalog_sha256": "54af3c2f19b943c711d0965f5786fe910af1bb4755b851bdc39325bade756313",
+    "tool_versions": {
+      "ca65": "ca65 V2.19 - Git e47ac5060",
+      "ld65": "ld65 V2.19 - Git e47ac5060"
+    },
     "scene": "opening",
     "synthetic_shape": "none",
     "full_synthetic": false,
+    "native_ui": false,
+    "native_ui_records": [],
+    "title_caption": null,
     "runtime": {
       "kind": "candidate main-RAM Korean runtime; no game integration",
       "load_address": 37888,
       "bytes": 1818,
       "remaining_in_2k": 230,
-      "sha256": "c40c029d8ddd228ffd5d0939c3c9d8241ce987dbfa3066dd8dad68ea166bd677",
+      "sha256": "4bbeb31c3169da20ca3386cc24790d1eb4156892ff6b4ac657d73d01d004dca8",
+      "native_ui": false,
       "source_hashes": {
         "src/korean/lc.s": "9c5d158c72ba7c415774455a1f36096cd20a3492568d103d0f4b49fbf6b800f7",
         "src/korean/messages.s": "2f1f7e24161a57f4f895172bcea90a069f8b44e06085b09ae95b516c6725ddd9",
         "src/korean/loader.s": "1c6760e8a9bbcbe8f04f74502d43ab75dee700f843ee3674f8d94c60337ffa15",
-        "src/korean/dispatch.s": "c46c67f174aaceaf89db78c85eed64a3fb3e7f5729121c0206df40fe1caccb9d",
-        "src/korean/save.s": "f083be0d56f14174c1830f0dba2efe60c6b05aa409023a8d72a1561fc92c4ee1"
+        "src/korean/dispatch.s": "05cc40d132c2065b60be6a23a47ffa949d0685bf2a50d41db3098c696690c0e7",
+        "src/korean/save.s": "8f0bcc11d91c57e6bf15a843c91ce8ea74c3c3ab70e97200b7c682843a3156aa"
       },
       "native_renderer_sha256": "e46f017a45f82e5b03d75cc54ccb8deb3e81b8747a9fadd61c01a1d085da80fe",
-      "media_id": "87503cb260e7da652094bebe"
+      "media_id": "da3606be4139fcd2af16796c"
     },
-    "bootstrap_bytes": 1152,
-    "bootstrap_sha256": "65b3394d320f366d222b63b9a8c0bfaf16c1ed2c288bc484a7259d74c288dbc2",
+    "bootstrap_bytes": 1157,
+    "bootstrap_sha256": "95ee6b8b09f2168186563312907550e6aef5736700d019af61e303672c2ee0f5",
     "bootstrap_labels": {
-      "boot_no_lc_wait": 20761,
-      "boot_wait_media": 20728,
+      "boot_no_lc_wait": 20766,
+      "boot_wait_media": 20733,
       "bootstrap_entry": 20480
     },
     "runtime_labels": {
@@ -36,9 +51,9 @@
       "ko_resident_size": 38655,
       "ko_font_count": 38657
     },
-    "media_id": "87503cb260e7da652094bebe",
+    "media_id": "da3606be4139fcd2af16796c",
     "package_header_bytes": 24,
-    "save_id": "4b4f5331c82780037924a248e051e296",
+    "save_id": "4b4f5331a4c579527b44ff6697b52d99",
     "save_labels": {
       "ko_restore_wait": 8124,
       "ko_restore_error_text": 8140,
@@ -51,15 +66,19 @@
     },
     "source_hashes": {
       "src/interpreter.s": "b7995c055b523a4fd059aaef76c9f54af14c55962f8d39fb79e6fc2898d71b2a",
-      "src/intrinsics.s": "bde00b4f71ef79975ce5a75c286f74d9eb2cc4eabc96e6b34c5656f530516357",
+      "src/intrinsics.s": "f9bf8783afbc69cb628367852e1ee10f9d713e7b7d286a8f07eecdabb64e8ba2",
       "src/korean/restore-guard.inc": "df0108a474de8990a627fdbce21be9dfefab74d0d16e424801bd888f4aa67fd6",
-      "src/korean/bootstrap.s": "46e3fff41be6127c4c7c93e993913628b487ce78e455351d63a63c8284a4facc",
-      "tools/korean/startup_disk.py": "689831f9c8ec6738201b015fc69743ab45e6900b63b097dc30e2fb0049174235"
+      "src/korean/bootstrap.s": "d366323a9b8789edbf4b3d0cd01424407ddfbd002bc691430fede0140a323db6",
+      "tools/korean/startup_disk.py": "5c450fcd61670e2ce5daebc4bc011f452fb22f621c923e1d6f07674ab43d7702",
+      "tools/korean/encoding.py": "841fac458aa12e8956ddd93a28e669f593cf8eb3172837206506beb0ca9f1548",
+      "tools/korean/title_caption.py": "8b188b6f6910ef4d56a667800ad36822801dce473e1f9a51ea5f704683cdc229",
+      "tools/korean/native_ui.py": "8486d4c59d86244f00688c2e48e745ac0f55c0c87ca6dfacd37069e9ac69dde6",
+      "tools/korean/build_messages.py": "64ba834f187326448845cff275e39198a332a9c59c0409870210b78b7bc4fdcc"
     },
     "font_bytes": 5200,
     "resident_bytes": 4096,
     "asset_hashes": {
-      "runtime": "c40c029d8ddd228ffd5d0939c3c9d8241ce987dbfa3066dd8dad68ea166bd677",
+      "runtime": "4bbeb31c3169da20ca3386cc24790d1eb4156892ff6b4ac657d73d01d004dca8",
       "font": "14cffb74b9de76248343f3c765a1007f20a2a704d29a6445aa0e958c29850162",
       "resident": "a31884fb880e98be24f6b56c51276db9e7e7780b536e0b3e6a1704eb2afdb067"
     },
@@ -137,8 +156,8 @@
         {
           "name": "KOBOOT",
           "type": 4,
-          "bytes": 1156,
-          "sha256": "948f545163ffcfe024d900e4bbee0253d3f002aac463c90b63e0bce10819843c",
+          "bytes": 1161,
+          "sha256": "de3c37a8020a04ca72fbc8b558c00e24938b7ad81c2fc828a3d270c7bbf3a49e",
           "ts": [
             3,
             11
@@ -170,7 +189,7 @@
           "name": "KO.RUNTIME",
           "type": 0,
           "bytes": 1834,
-          "sha256": "c47262a828f96ebd1481f8d5b65e973eb201795fda1ec8162b721e3183f680af",
+          "sha256": "ec14f90731dca42c39b73afd80ac475c780143ba10a050e76a3f9da518185e6e",
           "ts": [
             4,
             1
@@ -390,7 +409,7 @@
           "name": "INITIAL",
           "type": 0,
           "bytes": 1787,
-          "sha256": "50abe20b5c5a3d50f1f60a93b92da5cc85441dbadfc7f4ce593355aa5cad8f1a",
+          "sha256": "31544e0b8f73edd51bb3a8c595bf6460227f87749038b13fa6d318aeb0669c41",
           "ts": [
             7,
             2
@@ -430,7 +449,7 @@
           "name": "LIBRARY",
           "type": 0,
           "bytes": 9149,
-          "sha256": "e79b18d2002a9bf151d9bd2d1e3d7066884d630bd8cffb556015413454a0dec4",
+          "sha256": "04e259ab05d77ac167d96155295ac5b64c4d389f36cd505038b66c773f1065ed",
           "ts": [
             7,
             10
@@ -586,7 +605,7 @@
           "name": "INTRIN.OBJ",
           "type": 4,
           "bytes": 5120,
-          "sha256": "728422b67443f9ebabe16eea4e9b5d84f001ffde2cb7b932a35baa2bcd6bb15d",
+          "sha256": "e5bc941fa0468c557e8d5c66c075f406c99d6b5b9f0a146fce9f2ffd1eb9764f",
           "ts": [
             9,
             15
@@ -768,7 +787,7 @@
         }
       ],
       "free_sectors": 345,
-      "sha256": "c52eee005e61aea06f0218307acf57bbf97773537a015e838fabdf0c52e8ca61"
+      "sha256": "7a6b55313f17530d81653b9a9e42f976817f89806b78a209e8238935e4e19ea5"
     },
     "game_a": {
       "files": [
@@ -776,7 +795,7 @@
           "name": "DEATH",
           "type": 0,
           "bytes": 256,
-          "sha256": "b72c038031b8179caa04e3377a35028a572edd82101c6cea7f1e163a4cdadf2a",
+          "sha256": "c3d931cf91e71c9b2f8997e9183ede48c30c70c3b764b4ab3088fb5c65c31a33",
           "ts": [
             3,
             0
@@ -792,7 +811,7 @@
           "name": "INITIAL",
           "type": 0,
           "bytes": 1787,
-          "sha256": "50abe20b5c5a3d50f1f60a93b92da5cc85441dbadfc7f4ce593355aa5cad8f1a",
+          "sha256": "31544e0b8f73edd51bb3a8c595bf6460227f87749038b13fa6d318aeb0669c41",
           "ts": [
             3,
             2
@@ -832,7 +851,7 @@
           "name": "LIBRARY",
           "type": 0,
           "bytes": 9149,
-          "sha256": "e79b18d2002a9bf151d9bd2d1e3d7066884d630bd8cffb556015413454a0dec4",
+          "sha256": "04e259ab05d77ac167d96155295ac5b64c4d389f36cd505038b66c773f1065ed",
           "ts": [
             3,
             10
@@ -988,7 +1007,7 @@
           "name": "ROOM 1.0",
           "type": 0,
           "bytes": 1629,
-          "sha256": "63761fbe4bec41f3d0a367f190a372e27a1d65ea6071d45ce126a780b74ae824",
+          "sha256": "98e8cd9223e8e14205926e4d77f0fb25745e2ad0c443bd9c59e1126f397eca01",
           "ts": [
             5,
             15
@@ -1028,7 +1047,7 @@
           "name": "ROOM 2.0",
           "type": 0,
           "bytes": 1242,
-          "sha256": "710ebfc66db2a261e6d1cb821b1e1d6f821a169ac48c28e2fb125cfd9b86af9f",
+          "sha256": "c0d9b27af3ca03d70fed0fae467e076b0e4492f78d059a451a05f390cbf7b641",
           "ts": [
             6,
             7
@@ -1060,7 +1079,7 @@
           "name": "ROOM 2.1",
           "type": 0,
           "bytes": 321,
-          "sha256": "92908650557bea576db31d014c4aa81c48e522a3c1b26e8464f03cbbae9381b1",
+          "sha256": "392d1705756e774899a79cd3e685c876b76d64b84e0fffd49de75bd73de3f7a0",
           "ts": [
             6,
             13
@@ -1080,7 +1099,7 @@
           "name": "ROOM 3.0",
           "type": 0,
           "bytes": 483,
-          "sha256": "4432e0dbf99dbd0c67346f7e528d9efbbad80a81545fb8ccd686e28604724684",
+          "sha256": "44f8500f7beab5322b47c4419c119b36f90017fbb4a8b83e00b08027962de44b",
           "ts": [
             7,
             0
@@ -1100,7 +1119,7 @@
           "name": "ROOM 4.0",
           "type": 0,
           "bytes": 550,
-          "sha256": "077f269bd9001e2fbc5ac1cc76505f8d510de472252f102448116a42ce9f4871",
+          "sha256": "3a3e21ed081fcdcac9cb9fdbe8462cc9c5e4a9912f0239b0ef66e01e0dc8e620",
           "ts": [
             7,
             3
@@ -1124,7 +1143,7 @@
           "name": "ROOM 5.0",
           "type": 0,
           "bytes": 796,
-          "sha256": "8436bcfc4d78354e6e8560f857c85f5fc045ed9686e4b99bcc16fc2e1fe99e3b",
+          "sha256": "9de4f4d493798a1c1355e5fc267a015c2cec9d9497165e254bb2b5fb48009425",
           "ts": [
             7,
             7
@@ -1152,7 +1171,7 @@
           "name": "ROOM 5.1",
           "type": 0,
           "bytes": 809,
-          "sha256": "0417bb54e2b065fb064a52161fed528445fd6740831429895b3eee41e4973ef2",
+          "sha256": "3785f25fa172c94e4d993b0d083600454b4b93ae8d6a1d539d21948143d97739",
           "ts": [
             7,
             12
@@ -1180,7 +1199,7 @@
           "name": "ROOM 6.0",
           "type": 0,
           "bytes": 2192,
-          "sha256": "74c39d2e0ab897e1a5e1ec033621152a0fd7d0e3c9c224d0b1f3352bb2da21e8",
+          "sha256": "31f1c888ead62d217ef8e3be116da495bb9a3f853c8d4471ce134b08f4dce7fb",
           "ts": [
             8,
             1
@@ -1228,7 +1247,7 @@
           "name": "ROOM 6.1",
           "type": 0,
           "bytes": 1495,
-          "sha256": "2e3a34c2015a7dcfc273e594816ab3590ca759b65f24330f204bf3335d170b66",
+          "sha256": "2241092b3fb83545612383e8bf80878e552d233a9caa949adacb1c384aa0e4fd",
           "ts": [
             8,
             11
@@ -1264,7 +1283,7 @@
           "name": "ROOM 6.2",
           "type": 0,
           "bytes": 456,
-          "sha256": "eb304c353314c74d24460a0da6f8f75ef8ee51a1e3fcceb915de1d61933d8767",
+          "sha256": "aac0790cf2bd6d6e4462e3c8b3b8c737ffd7f3ef274c6fbf47b3796d61872289",
           "ts": [
             9,
             2
@@ -1284,7 +1303,7 @@
           "name": "ROOM 7.0",
           "type": 0,
           "bytes": 766,
-          "sha256": "2f317c56468ea1602d02abc1aff58cf812192657a19d3ddf8a4a30b2392ceeba",
+          "sha256": "1b51702c2ed467fc004948a1ec4987d1d7e1f1cbcb466dfed68e46be87890c22",
           "ts": [
             9,
             5
@@ -1308,7 +1327,7 @@
           "name": "ROOM 7.1",
           "type": 0,
           "bytes": 868,
-          "sha256": "015d358aeab5d0ed9ce8c7bbefe47b98606d338378584662a65d5c6d1fa7ceca",
+          "sha256": "b68038641de93beb7e7255a56f2743d695643361732920f8514096051124c005",
           "ts": [
             9,
             9
@@ -1352,7 +1371,7 @@
           "name": "TRAVEL",
           "type": 0,
           "bytes": 1727,
-          "sha256": "c7d0fae19a9f10ef0b46a900d65871c64bb1969df7c815d5dc8a6090b3804232",
+          "sha256": "e2b36c6f825ada72402a78eba11b4b0d9bf9b175350e10e074d90a1fccdc0d50",
           "ts": [
             10,
             0
@@ -1392,7 +1411,7 @@
           "name": "TUNNEL",
           "type": 0,
           "bytes": 2071,
-          "sha256": "47ccf4ccc4b94859c70059b23db1ee63697684060f2c077ba8b09c9554627919",
+          "sha256": "d0dba3122da07679a706d4d290e8eb1c383c028e0bcf527c7b766caabf247772",
           "ts": [
             10,
             8
@@ -1524,7 +1543,7 @@
           "name": "INTRIN.OBJ",
           "type": 4,
           "bytes": 5120,
-          "sha256": "728422b67443f9ebabe16eea4e9b5d84f001ffde2cb7b932a35baa2bcd6bb15d",
+          "sha256": "e5bc941fa0468c557e8d5c66c075f406c99d6b5b9f0a146fce9f2ffd1eb9764f",
           "ts": [
             12,
             3
@@ -2646,26 +2665,25 @@
         }
       ],
       "free_sectors": 118,
-      "sha256": "8a327fac6d646494c3b2eed1fa48c2d6b0d91c6eaa7d379641b5642456e5565e"
+      "sha256": "8846b0df2afd45ebc17c2872351efd5de7a919688429dc7573911be78edfb2ff"
     },
     "game_b": null,
     "scope_limit": "Opening resources through room7 only. Not final A/B packing, save/restore, whole-game timing or approved translation integration."
   },
   "runs": [
     {
-      "retry_count": 8,
-      "command_count": 5,
       "phase": "opening",
-      "no_lc": false,
-      "reason": "opening commands completed",
+      "retry_count": 8,
       "pass": true,
-      "world_boot_preserved": true,
+      "no_lc": false,
+      "initial_side_ready": true,
+      "command_count": 5,
+      "reason": "opening commands completed",
+      "world_boot_preserved_except_side": true,
+      "pc": 3263,
       "checkpoints": [
         {
           "name": "startup-assets-loaded",
-          "room": 0,
-          "error": 2,
-          "time": 46.799999999785,
           "graphics_text": [
             "??? ?? ?? ABC 123                       ",
             "                                        ",
@@ -2684,13 +2702,13 @@
             "               ULTRASOFT                ",
             "   copyright (c) 1982   Release 2.1     "
           ],
-          "room_pool": 0
+          "room_pool": 0,
+          "time": 46.799999999785,
+          "error": 2,
+          "room": 0
         },
         {
           "name": "startup-wrong-media",
-          "room": 0,
-          "error": 3,
-          "time": 49.89999999977,
           "graphics_text": [
             "??? ?? ?? ABC 123                       ",
             "                                        ",
@@ -2709,13 +2727,13 @@
             "               ULTRASOFT                ",
             "   copyright (c) 1982   Release 2.1     "
           ],
-          "room_pool": 0
+          "room_pool": 0,
+          "time": 49.89999999977,
+          "error": 3,
+          "room": 0
         },
         {
           "name": "startup-page-2",
-          "room": 1,
-          "error": 0,
-          "time": 57.699999999734,
           "graphics_text": [
             "????????????????????????????????????????",
             "????????????????????????????????????????",
@@ -2734,13 +2752,13 @@
             "Aztec culture.                          ",
             "[ waiting ]                             "
           ],
-          "room_pool": 774
+          "room_pool": 774,
+          "time": 57.699999999734,
+          "error": 0,
+          "room": 1
         },
         {
           "name": "startup-page-3",
-          "room": 1,
-          "error": 0,
-          "time": 60.79999999972,
           "graphics_text": [
             "????????????????????????????????????????",
             "????????????????????????????????????????",
@@ -2759,13 +2777,13 @@
             "the ruins spoken of by Prof. de Perez.  ",
             "[ waiting ]                             "
           ],
-          "room_pool": 774
+          "room_pool": 774,
+          "time": 60.79999999972,
+          "error": 0,
+          "room": 1
         },
         {
           "name": "startup-command-1",
-          "room": 1,
-          "error": 0,
-          "time": 63.899999999706,
           "graphics_text": [
             "????????????????????????????????????????",
             "????????????????????????????????????????",
@@ -2784,13 +2802,13 @@
             "runway where two figures are waiting.   ",
             "OK>^                                    "
           ],
-          "room_pool": 774
+          "room_pool": 774,
+          "time": 63.899999999706,
+          "error": 0,
+          "room": 1
         },
         {
           "name": "startup-command-2",
-          "room": 1,
-          "error": 0,
-          "time": 66.999999999692,
           "graphics_text": [
             "????????????????????????????????????????",
             "????????????????????????????????????????",
@@ -2809,13 +2827,13 @@
             "runway where two figures are waiting.   ",
             "OK>^                                    "
           ],
-          "room_pool": 774
+          "room_pool": 774,
+          "time": 66.999999999692,
+          "error": 0,
+          "room": 1
         },
         {
           "name": "startup-page-6",
-          "room": 1,
-          "error": 0,
-          "time": 70.599999999675,
           "graphics_text": [
             "You have:                               ",
             "                                        ",
@@ -2834,13 +2852,13 @@
             "                                        ",
             "[ waiting ]                             "
           ],
-          "room_pool": 774
+          "room_pool": 774,
+          "time": 70.599999999675,
+          "error": 0,
+          "room": 1
         },
         {
           "name": "startup-command-3",
-          "room": 1,
-          "error": 0,
-          "time": 73.699999999661,
           "graphics_text": [
             "????????????????????????????????????????",
             "????????????????????????????????????????",
@@ -2859,13 +2877,13 @@
             "                                        ",
             "OK>^                                    "
           ],
-          "room_pool": 774
+          "room_pool": 774,
+          "time": 73.699999999661,
+          "error": 0,
+          "room": 1
         },
         {
           "name": "startup-page-8",
-          "room": 2,
-          "error": 0,
-          "time": 88.399999999593,
           "graphics_text": [
             "???????????????????????????  ???????????",
             "???????????????????????        ?????????",
@@ -2884,13 +2902,13 @@
             "A dirt road leads north into the jungle.",
             "[ waiting ]                             "
           ],
-          "room_pool": 648
+          "room_pool": 648,
+          "time": 88.399999999593,
+          "error": 0,
+          "room": 2
         },
         {
           "name": "startup-page-9",
-          "room": 2,
-          "error": 0,
-          "time": 91.499999999579,
           "graphics_text": [
             "???????????????????????????  ???????????",
             "???????????????????????        ?????????",
@@ -2909,13 +2927,13 @@
             "the supplies are in the jeep.\"          ",
             "[ waiting ]                             "
           ],
-          "room_pool": 648
+          "room_pool": 648,
+          "time": 91.499999999579,
+          "error": 0,
+          "room": 2
         },
         {
           "name": "startup-page-10",
-          "room": 2,
-          "error": 0,
-          "time": 94.599999999565,
           "graphics_text": [
             "???????????????????????????  ???????????",
             "???????????????????????        ?????????",
@@ -2934,13 +2952,13 @@
             "ancient languages very valuable.\"       ",
             "[ waiting ]                             "
           ],
-          "room_pool": 648
+          "room_pool": 648,
+          "time": 94.599999999565,
+          "error": 0,
+          "room": 2
         },
         {
           "name": "startup-command-4",
-          "room": 2,
-          "error": 0,
-          "time": 97.69999999955,
           "graphics_text": [
             "???????????????????????????  ???????????",
             "???????????????????????        ?????????",
@@ -2959,13 +2977,13 @@
             "a cryptic map                           ",
             "OK>^                                    "
           ],
-          "room_pool": 648
+          "room_pool": 648,
+          "time": 97.69999999955,
+          "error": 0,
+          "room": 2
         },
         {
           "name": "startup-command-5",
-          "room": 2,
-          "error": 0,
-          "time": 100.79999999954,
           "graphics_text": [
             "???????????????????????????  ???????????",
             "???????????????????????        ?????????",
@@ -2984,13 +3002,13 @@
             "                                        ",
             "OK>^                                    "
           ],
-          "room_pool": 648
+          "room_pool": 648,
+          "time": 100.79999999954,
+          "error": 0,
+          "room": 2
         },
         {
           "name": "startup-page-13",
-          "room": 2,
-          "error": 0,
-          "time": 110.69999999949,
           "graphics_text": [
             "????????????????????????????????????????",
             "????????????????????????????????????????",
@@ -3009,13 +3027,13 @@
             "into the jeep next to you.              ",
             "[ waiting ]                             "
           ],
-          "room_pool": 648
+          "room_pool": 648,
+          "time": 110.69999999949,
+          "error": 0,
+          "room": 2
         },
         {
           "name": "startup-page-14",
-          "room": 2,
-          "error": 0,
-          "time": 113.79999999948,
           "graphics_text": [
             "????????????????????????????????????????",
             "????????????????????????????????????????",
@@ -3034,13 +3052,13 @@
             "                                        ",
             "[ waiting ]                             "
           ],
-          "room_pool": 648
+          "room_pool": 648,
+          "time": 113.79999999948,
+          "error": 0,
+          "room": 2
         },
         {
           "name": "startup-command-6",
-          "room": 3,
-          "error": 0,
-          "time": 135.09999999938,
           "graphics_text": [
             "????????????????????????????????????????",
             "????????????????????????????????????????",
@@ -3059,13 +3077,13 @@
             "\"Which way should we go, Senor?\"        ",
             "OK>^                                    "
           ],
-          "room_pool": 118
+          "room_pool": 118,
+          "time": 135.09999999938,
+          "error": 0,
+          "room": 3
         },
         {
           "name": "startup-success",
-          "room": 3,
-          "error": 0,
-          "time": 135.09999999938,
           "graphics_text": [
             "????????????????????????????????????????",
             "????????????????????????????????????????",
@@ -3084,10 +3102,12 @@
             "\"Which way should we go, Senor?\"        ",
             "OK>^                                    "
           ],
-          "room_pool": 118
+          "room_pool": 118,
+          "time": 135.09999999938,
+          "error": 0,
+          "room": 3
         }
       ],
-      "pc": 3263,
       "session": {
         "command": [
           "/usr/games/mame",
@@ -3104,7 +3124,7 @@
           "-sl6",
           "diskiing",
           "-flop1",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/lc/side-a.dsk",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/lc/side-a.dsk",
           "-console",
           "-pluginspath",
           "/usr/share/games/mame/plugins",
@@ -3113,17 +3133,17 @@
           "-window",
           "-nomouse",
           "-homepath",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/lc",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/lc",
           "-cfg_directory",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/lc/cfg_directory",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/lc/cfg_directory",
           "-nvram_directory",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/lc/nvram_directory",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/lc/nvram_directory",
           "-snapshot_directory",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/lc/snapshot_directory",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/lc/snapshot_directory",
           "-state_directory",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/lc/state_directory",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/lc/state_directory",
           "-diff_directory",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/lc/diff_directory",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/lc/diff_directory",
           "-video",
           "none",
           "-sound",
@@ -3136,14 +3156,14 @@
         ],
         "media": {
           "a": {
-            "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/fixture/synthetic-startup.dsk",
-            "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/lc/side-a.dsk",
-            "sha256": "c52eee005e61aea06f0218307acf57bbf97773537a015e838fabdf0c52e8ca61"
+            "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/fixture/synthetic-startup.dsk",
+            "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/lc/side-a.dsk",
+            "sha256": "7a6b55313f17530d81653b9a9e42f976817f89806b78a209e8238935e4e19ea5"
           },
           "b": {
-            "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/fixture/synthetic-a.dsk",
-            "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/lc/side-b.dsk",
-            "sha256": "8a327fac6d646494c3b2eed1fa48c2d6b0d91c6eaa7d379641b5642456e5565e"
+            "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/fixture/synthetic-a.dsk",
+            "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/lc/side-b.dsk",
+            "sha256": "8846b0df2afd45ebc17c2872351efd5de7a919688429dc7573911be78edfb2ff"
           }
         },
         "headless": true,
@@ -3153,12 +3173,11 @@
     },
     {
       "no_lc": true,
-      "command_count": 0,
-      "retry_count": 0,
       "pass": true,
+      "pc": 20766,
       "checkpoints": [
         {
-          "name": "startup-success",
+          "time": 15.19999999993,
           "graphics_text": [
             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -3177,15 +3196,16 @@
             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
           ],
-          "room": 255,
           "error": 0,
-          "time": 15.19999999993,
+          "room": 255,
+          "name": "startup-success",
           "room_pool": 0
         }
       ],
       "reason": "no-LC stop",
+      "retry_count": 0,
       "phase": "boot",
-      "pc": 20761,
+      "command_count": 0,
       "session": {
         "command": [
           "/usr/games/mame",
@@ -3202,7 +3222,7 @@
           "-sl6",
           "diskiing",
           "-flop1",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/no-lc/side-a.dsk",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/no-lc/side-a.dsk",
           "-console",
           "-pluginspath",
           "/usr/share/games/mame/plugins",
@@ -3211,17 +3231,17 @@
           "-window",
           "-nomouse",
           "-homepath",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/no-lc",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/no-lc",
           "-cfg_directory",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/no-lc/cfg_directory",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/no-lc/cfg_directory",
           "-nvram_directory",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/no-lc/nvram_directory",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/no-lc/nvram_directory",
           "-snapshot_directory",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/no-lc/snapshot_directory",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/no-lc/snapshot_directory",
           "-state_directory",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/no-lc/state_directory",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/no-lc/state_directory",
           "-diff_directory",
-          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/no-lc/diff_directory",
+          "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/no-lc/diff_directory",
           "-video",
           "none",
           "-sound",
@@ -3234,14 +3254,14 @@
         ],
         "media": {
           "a": {
-            "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/fixture/synthetic-startup.dsk",
-            "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/no-lc/side-a.dsk",
-            "sha256": "c52eee005e61aea06f0218307acf57bbf97773537a015e838fabdf0c52e8ca61"
+            "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/fixture/synthetic-startup.dsk",
+            "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/no-lc/side-a.dsk",
+            "sha256": "7a6b55313f17530d81653b9a9e42f976817f89806b78a209e8238935e4e19ea5"
           },
           "b": {
-            "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/fixture/synthetic-a.dsk",
-            "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/startup-validation-full-builder-01/no-lc/side-b.dsk",
-            "sha256": "8a327fac6d646494c3b2eed1fa48c2d6b0d91c6eaa7d379641b5642456e5565e"
+            "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/fixture/synthetic-a.dsk",
+            "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/fix1-startup-regression/no-lc/side-b.dsk",
+            "sha256": "8846b0df2afd45ebc17c2872351efd5de7a919688429dc7573911be78edfb2ff"
           }
         },
         "headless": true,

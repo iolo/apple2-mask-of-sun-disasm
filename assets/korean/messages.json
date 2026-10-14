@@ -5160,18 +5160,19 @@
       },
       "kind": "script_text",
       "protected_tokens": [
+        "EXTRA",
         "RETURN"
       ],
       "layout": {
         "newline": true,
         "columns": 40
       },
-      "ko": "초기화한 저장용 디스크를 1번 드라이브에\n넣고 RETURN을 누르세요.",
+      "ko": "EXTRA 디스크를 1번 드라이브에 넣고\nRETURN을 누르세요.",
       "status": "approved",
-      "reviewer": "user (conversation approval)",
+      "reviewer": "user (EXTRA+SAVE implementation request)",
       "reviewed_at": "2026-10-14",
-      "reviewed_hash": "0c576b3c2c9d8dc93ad8580736f49d5f3f9a5eb6cb798db99886cfa6a0fd2fe2",
-      "notes": "초안: 동적 결합 및 실제 화면 배치 검증 후 사람 검수 필요."
+      "reviewed_hash": "e2585e75472c7ebdf8d9314d5294dec4ea1f154aae0434c9650c99cc6acce9fe",
+      "notes": "User requested combined EXTRA+SAVE. Name the existing boot disk EXTRA for saving, restoring and save-write retry. No disk initialization is required."
     },
     {
       "id": "a:LIBRARY:1cd6",
@@ -5330,18 +5331,19 @@
       },
       "kind": "script_text",
       "protected_tokens": [
+        "EXTRA",
         "RETURN"
       ],
       "layout": {
         "newline": true,
         "columns": 40
       },
-      "ko": "저장 디스크를 1번 드라이브에 넣고\nRETURN을 누르세요.",
+      "ko": "EXTRA 디스크를 1번 드라이브에 넣고\nRETURN을 누르세요.",
       "status": "approved",
-      "reviewer": "user (conversation approval)",
+      "reviewer": "user (EXTRA+SAVE implementation request)",
       "reviewed_at": "2026-10-14",
-      "reviewed_hash": "aefd380809ac60b498de452a36f590fc254bbee29d14e166b1051b9d5d56ec6f",
-      "notes": "초안: 동적 결합 및 실제 화면 배치 검증 후 사람 검수 필요."
+      "reviewed_hash": "35694d16914e239c3fe06b6975c1609df18dc6140a18688f2662c0232387640e",
+      "notes": "User requested combined EXTRA+SAVE. Name the existing boot disk EXTRA for saving, restoring and save-write retry. No disk initialization is required."
     },
     {
       "id": "a:LIBRARY:1db5",
@@ -58282,14 +58284,14 @@
         {
           "path": "src/korean/dispatch.s",
           "label": "ko_media_text",
-          "original_hex": "c9ced3c5d2d4a0c7c1cdc5a0c4c9d3cba0c1afc2a0c1cec4a0d0d2c5d3d3a0d2c5d4d5d2ceae8d",
-          "literal_sha256": "e49177c451dd5ef1623d4ba43254748bf8f66c445f004e4e3f5566c66300bced"
+          "original_hex": "c9ced3c5d2d4a0c7c1cdc5a0c4c9d3cba0c1a0c1cec4a0d0d2c5d3d3a0d2c5d4d5d2ceae8d",
+          "literal_sha256": "6b1699ac776cfa6a03283d37c397bcb42e41bf3d7ca098f41114c86cd84a3106"
         }
       ],
-      "source": "INSERT GAME DISK A/B AND PRESS RETURN.",
-      "source_hash": "beca04ac175e20faadedc83591d329af208cfb0ff94c5eabd665bf2479ad4936",
+      "source": "INSERT GAME DISK A AND PRESS RETURN.",
+      "source_hash": "a6af8702288ba690c02cd6840ee874889be56b23e51082166fcaf8955ee47c1e",
       "context": {
-        "usage": "Resource load retry and post-restore room-pool reload; resident assets are initialized, room cache may be invalid."
+        "usage": "Game side A (GE(12) < 2): resource load retry and post-restore room-pool reload; resident assets are initialized, room cache may be invalid."
       },
       "kind": "media_prompt",
       "protected_tokens": [
@@ -58299,12 +58301,42 @@
         "newline": true,
         "columns": 40
       },
-      "ko": "게임 디스크 A/B를 넣고\nRETURN을 누르세요.",
+      "ko": "게임 디스크 A를 넣고\nRETURN을 누르세요.",
       "status": "approved",
-      "reviewer": "user (conversation approval)",
+      "reviewer": "user (explicit disk-label correction)",
       "reviewed_at": "2026-10-14",
-      "reviewed_hash": "056cf5c59d734ff449000f2b806f37cbdb8d5181028b94820109bdf4a482b275",
-      "notes": "Resident media instruction; host draft only. Preserve the RETURN key name. Destination-side selection remains a runtime integration task; A/B follows the current source wording."
+      "reviewed_hash": "e4c487d0b37d6502be6c004a462bd9009a7af739e68e81faa56622d87f66c181",
+      "notes": "User requested an explicit required disk instead of A/B. Startup requires A; the same instruction selects B only when the current/restored game side requires B."
+    },
+    {
+      "id": "runtime:ko_media_b_text",
+      "references": [
+        {
+          "path": "src/korean/dispatch.s",
+          "label": "ko_media_b_text",
+          "original_hex": "c9ced3c5d2d4a0c7c1cdc5a0c4c9d3cba0c2a0c1cec4a0d0d2c5d3d3a0d2c5d4d5d2ceae8d",
+          "literal_sha256": "2a967aa9945af9f656fb9d57577996f79b4e824b1ec33d93ffdd732b6941ada1"
+        }
+      ],
+      "source": "INSERT GAME DISK B AND PRESS RETURN.",
+      "source_hash": "b020faf561b787730e079e438a0eef5569ec7a329db8232456b92f095055a39b",
+      "context": {
+        "usage": "Game side B (GE(12) >= 2): resource load retry and post-restore room-pool reload; resident assets are initialized, room cache may be invalid."
+      },
+      "kind": "media_prompt",
+      "protected_tokens": [
+        "RETURN"
+      ],
+      "layout": {
+        "newline": true,
+        "columns": 40
+      },
+      "ko": "게임 디스크 B를 넣고\nRETURN을 누르세요.",
+      "status": "approved",
+      "reviewer": "user (explicit disk-label correction)",
+      "reviewed_at": "2026-10-14",
+      "reviewed_hash": "c4b87ed06f7e064799e8e8c498caf6ddc8b3ea43ced034e1584b1f7f2e69e6e6",
+      "notes": "User requested an explicit required disk instead of A/B. Startup requires A; the same instruction selects B only when the current/restored game side requires B."
     },
     {
       "id": "runtime:ko_save_prompt",
@@ -58312,29 +58344,30 @@
         {
           "path": "src/korean/save.s",
           "label": "ko_save_prompt",
-          "original_hex": "c9ced3c5d2d4a0d3c1d6c5a0c4c9d3cbaca0d0d2c5d3d3a0d2c5d4d5d2ceae8d",
-          "literal_sha256": "78a0826a23a549450750ee86603a74c9ee1f5c4e19972ce3c6c29bbe7679acef"
+          "original_hex": "c9ced3c5d2d4a0c5d8d4d2c1a0c4c9d3cbaca0d0d2c5d3d3a0d2c5d4d5d2ceae8d",
+          "literal_sha256": "4d892b77ec68ebad556c22beee106c4f0af3d1a2757559de435ba88669e358c3"
         }
       ],
-      "source": "INSERT SAVE DISK, PRESS RETURN.",
-      "source_hash": "bacb1b33569f4cff96918c141d0cfa0f1b60e03b5eef8c4fc045e8c4866d055a",
+      "source": "INSERT EXTRA DISK, PRESS RETURN.",
+      "source_hash": "346c8c01d7174376b34a50b224f839dba939d0e6346c1c00e3e857dcf5879775",
       "context": {
         "usage": "Before save-header invalidation and snapshot writes; resident assets are initialized."
       },
       "kind": "media_prompt",
       "protected_tokens": [
+        "EXTRA",
         "RETURN"
       ],
       "layout": {
         "newline": true,
         "columns": 40
       },
-      "ko": "저장 디스크를 넣고\nRETURN을 누르세요.",
+      "ko": "EXTRA 디스크를 1번 드라이브에 넣고\nRETURN을 누르세요.",
       "status": "approved",
-      "reviewer": "user (conversation approval)",
+      "reviewer": "user (EXTRA+SAVE implementation request)",
       "reviewed_at": "2026-10-14",
-      "reviewed_hash": "fd07dfd1fd5d3672c1589cf399c15ac1d831ece0b7746d4e07ca25ca74d04401",
-      "notes": "Resident media instruction; host draft only. Preserve the RETURN key name."
+      "reviewed_hash": "31dd6e9db4994a5049750b0472b253215422f03f0f12092bea3223f1c603b436",
+      "notes": "User requested combined EXTRA+SAVE. Name the existing boot disk EXTRA for saving, restoring and save-write retry. No disk initialization is required."
     },
     {
       "id": "runtime:ko_restore_error_text",

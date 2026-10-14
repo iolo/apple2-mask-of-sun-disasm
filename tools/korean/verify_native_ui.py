@@ -35,7 +35,7 @@ def audit(media, output):
         raise ValueError('stale catalog')
     records=metadata['records']
     expected_ids={f'parms:error-{i}' for i in range(4)}|{'intrinsic:'+s for s in INTRINSIC_IDS}|{'runtime:'+s for s in RUNTIME_IDS}
-    if len(records)!=11 or {r['id'] for r in records}!=expected_ids:
+    if len(records)!=len(expected_ids) or {r['id'] for r in records}!=expected_ids:
         raise ValueError('missing/duplicate native UI patches')
     # Relink the objects from the exact fixture to obtain pre-packing bytes.
     # These contain the conditional engine/save guard but no UI string changes.
@@ -118,7 +118,7 @@ def audit(media, output):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--media',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
-    p.add_argument('--rompath',type=Path,help='also run 26 packed-string/dirty-HGR cases on Apple II+ + LC')
+    p.add_argument('--rompath',type=Path,help='also exercise packed strings on both dirty HGR pages on Apple II+ + LC')
     args=p.parse_args();out=args.output.resolve();r=audit(args.media.resolve(),out)
     if args.rompath:
         from build_native_ui_probe import build
@@ -134,7 +134,7 @@ if __name__=='__main__':
         probe=read(session/'native-ui-probe.json')
         if not probe['pass'] or probe['case_count']!=len(screen_build['cases']):raise ValueError('native UI screen probe failed')
         r.update(screen_probe=probe,screen_fixture=screen_build,screen_session=read(session/'session.json'),
-                 screen_scope='Instruction-boundary harness: 11 packed messages and native A/B prompt composition on both dirty HGR pages; page 1 inverse; room cache invalid. Compare all 16KB HGR and 13KB LC after each of 26 calls. This does not trigger every native error condition.')
+                 screen_scope='Instruction-boundary harness: all packed messages and native A/B prompt composition on both dirty HGR pages; page 1 inverse; room cache invalid. Compare all 16KB HGR and 13KB LC after each call. This does not trigger every native error condition.')
         for name in ['build_native_ui_probe.py','native_ui_probe.lua']:
             r['source_sha256']['tools/korean/'+name]=digest((ROOT/'tools/korean'/name).read_bytes())
         write_json(out/'native-ui-audit.json',r)

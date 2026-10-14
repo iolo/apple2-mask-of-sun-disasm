@@ -1,0 +1,1440 @@
+{
+  "kind": "reviewed source-level output inventory; not execution/layout coverage",
+  "source_inventory_complete": true,
+  "runtime_coverage_complete": false,
+  "source_sha256": {
+    "src/boot-a.s": "0c35dde35dc60004cb4f7a002752cd553beca00a60d43447561f77dc6f37b4ca",
+    "src/boot-b.s": "23e32b725f14b2e0a9392e1defa51273b2d81b86f936a525841398f996fb80c8",
+    "src/boot-stage2-a.s": "3126c3860640e6ab2e2378cec9475f2f8b280fdb080ccf77f816933925ef120f",
+    "src/boot-stage2-b.s": "bf34ba9cf8623064168682ae1d351e5094cc8cc843933f06758165f0edc387cd",
+    "src/boot-stage2.inc": "9df48e9e42b8a4c64b68e119e5542da8bfc21b18552738f4cc68c81e5eaced52",
+    "src/chargen.s": "919272f8058b09ee01cd4614f7a8c2e17a6e2135dc2c4436bfae6b60b0dffc14",
+    "src/dos-low-b.s": "80e4cc7cc9b20699b3a976501baf203202990cafdf4ceae20bf1cf630c3990bc",
+    "src/dos-low.s": "d65d67a9492bee76e22b8bd6c300124504f14d5050cf5e34a482ec551731d6e5",
+    "src/interpreter.s": "b7995c055b523a4fd059aaef76c9f54af14c55962f8d39fb79e6fc2898d71b2a",
+    "src/intrinsics.s": "f9bf8783afbc69cb628367852e1ee10f9d713e7b7d286a8f07eecdabb64e8ba2",
+    "src/korean/bootstrap.s": "d366323a9b8789edbf4b3d0cd01424407ddfbd002bc691430fede0140a323db6",
+    "src/korean/dispatch.s": "05cc40d132c2065b60be6a23a47ffa949d0685bf2a50d41db3098c696690c0e7",
+    "src/korean/lc.s": "9c5d158c72ba7c415774455a1f36096cd20a3492568d103d0f4b49fbf6b800f7",
+    "src/korean/loader.s": "1c6760e8a9bbcbe8f04f74502d43ab75dee700f843ee3674f8d94c60337ffa15",
+    "src/korean/messages.s": "2f1f7e24161a57f4f895172bcea90a069f8b44e06085b09ae95b516c6725ddd9",
+    "src/korean/restore-guard.inc": "df0108a474de8990a627fdbce21be9dfefab74d0d16e424801bd888f4aa67fd6",
+    "src/korean/save.s": "8f0bcc11d91c57e6bf15a843c91ce8ea74c3c3ab70e97200b7c682843a3156aa",
+    "src/renderer.s": "a65a2246de7d6c5b24adad654222dc592a1b90ac657a5c87d974c4921378476d",
+    "src/rwts-a.s": "6021641099b675350efcb00bf5b8209d31337d14981affbc9089475a7121cc0d",
+    "src/rwts-b.s": "d01ac09a3d6f689e90d817146afe071b760f3f7e72743d173d7aa435724ec5f6",
+    "src/rwts.inc": "72f5746dfcb2d451369ba8f27a7c5eb3eda81a81a85f537e0437aed6452c2843",
+    "tools/korean/startup_disk.py": "5c450fcd61670e2ce5daebc4bc011f452fb22f621c923e1d6f07674ab43d7702",
+    "tools/korean/title_caption.py": "8b188b6f6910ef4d56a667800ad36822801dce473e1f9a51ea5f704683cdc229"
+  },
+  "policy_sha256": "4b9f5ae5a825cbeaf068e9de9a79c893bb158443dbaef644929925737dc17655",
+  "tool_sha256": "e7de11a06158292f241d1910fd9c651fbad1e4fb4feb6a4b0f5f50342ed35172",
+  "catalog_sha256": "8125341340cd05a5f4970d7f9e5278807ec08724e68989f7a8acf605ab58deb6",
+  "catalog_entries": 1388,
+  "translated_drafts": 1327,
+  "excluded": 61,
+  "assembly_output_calls": [
+    {
+      "id": "src/boot-a.s:resident_diagnostic:jsr:$fded:1",
+      "path": "src/boot-a.s",
+      "line": 100,
+      "label": "resident_diagnostic",
+      "operation": "jsr",
+      "target": "$fded",
+      "category": "boot_diagnostic"
+    },
+    {
+      "id": "src/boot-a.s:resident_diagnostic:jsr:$fdda:1",
+      "path": "src/boot-a.s",
+      "line": 102,
+      "label": "resident_diagnostic",
+      "operation": "jsr",
+      "target": "$fdda",
+      "category": "boot_diagnostic"
+    },
+    {
+      "id": "src/boot-a.s:resident_diagnostic:jsr:$fded:2",
+      "path": "src/boot-a.s",
+      "line": 104,
+      "label": "resident_diagnostic",
+      "operation": "jsr",
+      "target": "$fded",
+      "category": "boot_diagnostic"
+    },
+    {
+      "id": "src/boot-a.s:resident_diagnostic:jsr:$fdda:2",
+      "path": "src/boot-a.s",
+      "line": 106,
+      "label": "resident_diagnostic",
+      "operation": "jsr",
+      "target": "$fdda",
+      "category": "boot_diagnostic"
+    },
+    {
+      "id": "src/boot-b.s:wrong_side_halt:jsr:$fdf0:1",
+      "path": "src/boot-b.s",
+      "line": 13,
+      "label": "wrong_side_halt",
+      "operation": "jsr",
+      "target": "$fdf0",
+      "category": "boot_wrong_side"
+    },
+    {
+      "id": "src/chargen.s:legacy_editor_video_action:jsr:$1f00:1",
+      "path": "src/chargen.s",
+      "line": 17,
+      "label": "legacy_editor_video_action",
+      "operation": "jsr",
+      "target": "$1f00",
+      "category": "legacy_editor"
+    },
+    {
+      "id": "src/dos-low.s:dos_dsplyall:jsr:dos_godsply:1",
+      "path": "src/dos-low.s",
+      "line": 470,
+      "label": "dos_dsplyall",
+      "operation": "jsr",
+      "target": "dos_godsply",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/dos-low.s:dos_godsply:jmp:(rom_output_vector):1",
+      "path": "src/dos-low.s",
+      "line": 486,
+      "label": "dos_godsply",
+      "operation": "jmp",
+      "target": "(rom_output_vector)",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/dos-low.s:dos_crviados:jmp:dos_godsply:1",
+      "path": "src/dos-low.s",
+      "line": 490,
+      "label": "dos_crviados",
+      "operation": "jmp",
+      "target": "dos_godsply",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/dos-low.s:dos_morermsg:jsr:dos_godsply:1",
+      "path": "src/dos-low.s",
+      "line": 1563,
+      "label": "dos_morermsg",
+      "operation": "jsr",
+      "target": "dos_godsply",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/dos-low.s:dos_prdskvol:jsr:rom_cout:1",
+      "path": "src/dos-low.s",
+      "line": 2399,
+      "label": "dos_prdskvol",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/dos-low.s:dos_prlocode:jsr:rom_cout:1",
+      "path": "src/dos-low.s",
+      "line": 2424,
+      "label": "dos_prlocode",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/dos-low.s:dos_prtftype:jsr:rom_cout:1",
+      "path": "src/dos-low.s",
+      "line": 2436,
+      "label": "dos_prtftype",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/dos-low.s:dos_prtftype:jsr:rom_cout:2",
+      "path": "src/dos-low.s",
+      "line": 2438,
+      "label": "dos_prtftype",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/dos-low.s:dos_prtftype:jsr:rom_cout:3",
+      "path": "src/dos-low.s",
+      "line": 2445,
+      "label": "dos_prtftype",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/dos-low.s:dos_prtfname:jsr:rom_cout:1",
+      "path": "src/dos-low.s",
+      "line": 2452,
+      "label": "dos_prtfname",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/dos-low.s:dos_crcatlog:jsr:rom_cout:1",
+      "path": "src/dos-low.s",
+      "line": 2466,
+      "label": "dos_crcatlog",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/dos-low.s:dos_tonegasc:jsr:rom_cout:1",
+      "path": "src/dos-low.s",
+      "line": 2497,
+      "label": "dos_tonegasc",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "dos_shell"
+    },
+    {
+      "id": "src/interpreter.s:print_prompt_character:jsr:rom_cout:1",
+      "path": "src/interpreter.s",
+      "line": 237,
+      "label": "print_prompt_character",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "input_ascii"
+    },
+    {
+      "id": "src/interpreter.s:print_engine_error:jsr:ko_print_script_string:1",
+      "path": "src/interpreter.s",
+      "line": 589,
+      "label": "print_engine_error",
+      "operation": "jsr",
+      "target": "ko_print_script_string",
+      "category": "engine_errors"
+    },
+    {
+      "id": "src/interpreter.s:print_engine_error:jsr:print_script_string:1",
+      "path": "src/interpreter.s",
+      "line": 591,
+      "label": "print_engine_error",
+      "operation": "jsr",
+      "target": "print_script_string",
+      "category": "engine_errors"
+    },
+    {
+      "id": "src/interpreter.s:emit_string_character:jsr:rom_cout:1",
+      "path": "src/interpreter.s",
+      "line": 608,
+      "label": "emit_string_character",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "message_bridge"
+    },
+    {
+      "id": "src/interpreter.s:handle_input_backspace:jsr:rom_cout:1",
+      "path": "src/interpreter.s",
+      "line": 664,
+      "label": "handle_input_backspace",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "input_ascii"
+    },
+    {
+      "id": "src/interpreter.s:store_and_echo_character:jsr:rom_cout:1",
+      "path": "src/interpreter.s",
+      "line": 687,
+      "label": "store_and_echo_character",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "input_ascii"
+    },
+    {
+      "id": "src/interpreter.s:draw_cursor_space:jmp:(draw_character_vector):1",
+      "path": "src/interpreter.s",
+      "line": 728,
+      "label": "draw_cursor_space",
+      "operation": "jmp",
+      "target": "(draw_character_vector)",
+      "category": "input_ascii"
+    },
+    {
+      "id": "src/interpreter.s:clear_input_cell:jsr:rom_cout:1",
+      "path": "src/interpreter.s",
+      "line": 742,
+      "label": "clear_input_cell",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "input_ascii"
+    },
+    {
+      "id": "src/intrinsics.s:echo_command_byte:jsr:rom_cout:1",
+      "path": "src/intrinsics.s",
+      "line": 428,
+      "label": "echo_command_byte",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "input_ascii"
+    },
+    {
+      "id": "src/intrinsics.s:print_ask_prompt:jsr:rom_cout:1",
+      "path": "src/intrinsics.s",
+      "line": 664,
+      "label": "print_ask_prompt",
+      "operation": "jsr",
+      "target": "rom_cout",
+      "category": "input_ascii"
+    },
+    {
+      "id": "src/intrinsics.s:print_quoted_string:jmp:(string_printer_vector):1",
+      "path": "src/intrinsics.s",
+      "line": 760,
+      "label": "print_quoted_string",
+      "operation": "jmp",
+      "target": "(string_printer_vector)",
+      "category": "script_literals"
+    },
+    {
+      "id": "src/intrinsics.s:decimal_next_digit:jmp:(string_printer_vector):1",
+      "path": "src/intrinsics.s",
+      "line": 838,
+      "label": "decimal_next_digit",
+      "operation": "jmp",
+      "target": "(string_printer_vector)",
+      "category": "decimal_output"
+    },
+    {
+      "id": "src/intrinsics.s:snapshot_error:jsr:call_string_printer:1",
+      "path": "src/intrinsics.s",
+      "line": 1029,
+      "label": "snapshot_error",
+      "operation": "jsr",
+      "target": "call_string_printer",
+      "category": "save_error"
+    },
+    {
+      "id": "src/intrinsics.s:picture_load_overflow:jsr:call_string_printer:1",
+      "path": "src/intrinsics.s",
+      "line": 1949,
+      "label": "picture_load_overflow",
+      "operation": "jsr",
+      "target": "call_string_printer",
+      "category": "picture_error"
+    },
+    {
+      "id": "src/intrinsics.s:call_string_printer:jmp:(string_printer_vector):1",
+      "path": "src/intrinsics.s",
+      "line": 1964,
+      "label": "call_string_printer",
+      "operation": "jmp",
+      "target": "(string_printer_vector)",
+      "category": "message_bridge"
+    },
+    {
+      "id": "src/intrinsics.s:print_game_disk_prompt:jsr:call_string_printer:1",
+      "path": "src/intrinsics.s",
+      "line": 1991,
+      "label": "print_game_disk_prompt",
+      "operation": "jsr",
+      "target": "call_string_printer",
+      "category": "native_media_prompt"
+    },
+    {
+      "id": "src/intrinsics.s:print_game_disk_prompt:jsr:call_string_printer:2",
+      "path": "src/intrinsics.s",
+      "line": 1994,
+      "label": "print_game_disk_prompt",
+      "operation": "jsr",
+      "target": "call_string_printer",
+      "category": "native_media_prompt"
+    },
+    {
+      "id": "src/intrinsics.s:print_game_disk_prompt_at_181c_at_1820:jsr:call_string_printer:1",
+      "path": "src/intrinsics.s",
+      "line": 2007,
+      "label": "print_game_disk_prompt_at_181c_at_1820",
+      "operation": "jsr",
+      "target": "call_string_printer",
+      "category": "native_media_prompt"
+    },
+    {
+      "id": "src/intrinsics.s:print_game_disk_prompt_at_181c_at_1820:jsr:call_string_printer:2",
+      "path": "src/intrinsics.s",
+      "line": 2010,
+      "label": "print_game_disk_prompt_at_181c_at_1820",
+      "operation": "jsr",
+      "target": "call_string_printer",
+      "category": "native_media_prompt"
+    },
+    {
+      "id": "src/intrinsics.s:print_game_disk_prompt_at_181c_at_1820:jsr:call_string_printer:3",
+      "path": "src/intrinsics.s",
+      "line": 2013,
+      "label": "print_game_disk_prompt_at_181c_at_1820",
+      "operation": "jsr",
+      "target": "call_string_printer",
+      "category": "native_media_prompt"
+    },
+    {
+      "id": "src/korean/bootstrap.s:boot_error_text_loop:jsr:$fded:1",
+      "path": "src/korean/bootstrap.s",
+      "line": 124,
+      "label": "boot_error_text_loop",
+      "operation": "jsr",
+      "target": "$fded",
+      "category": "startup_error"
+    },
+    {
+      "id": "src/korean/bootstrap.s:boot_no_lc_text:jsr:$fded:1",
+      "path": "src/korean/bootstrap.s",
+      "line": 141,
+      "label": "boot_no_lc_text",
+      "operation": "jsr",
+      "target": "$fded",
+      "category": "no_lc"
+    },
+    {
+      "id": "src/korean/dispatch.s:ko_resource_retry:jsr:ko_print_script_string:1",
+      "path": "src/korean/dispatch.s",
+      "line": 49,
+      "label": "ko_resource_retry",
+      "operation": "jsr",
+      "target": "ko_print_script_string",
+      "category": "runtime_media"
+    },
+    {
+      "id": "src/korean/dispatch.s:ko_resource_retry:jsr:ko_native_print_script_string:1",
+      "path": "src/korean/dispatch.s",
+      "line": 51,
+      "label": "ko_resource_retry",
+      "operation": "jsr",
+      "target": "ko_native_print_script_string",
+      "category": "runtime_media"
+    },
+    {
+      "id": "src/korean/dispatch.s:ko_clear_message_cell:jsr:$fded:1",
+      "path": "src/korean/dispatch.s",
+      "line": 85,
+      "label": "ko_clear_message_cell",
+      "operation": "jsr",
+      "target": "$fded",
+      "category": "message_row_clear"
+    },
+    {
+      "id": "src/korean/messages.s:ko_print_script_string:jsr:ko_native_print_script_string:1",
+      "path": "src/korean/messages.s",
+      "line": 27,
+      "label": "ko_print_script_string",
+      "operation": "jsr",
+      "target": "ko_native_print_script_string",
+      "category": "message_bridge"
+    },
+    {
+      "id": "src/korean/messages.s:ko_reference_ready:jsr:ko_print_message:1",
+      "path": "src/korean/messages.s",
+      "line": 79,
+      "label": "ko_reference_ready",
+      "operation": "jsr",
+      "target": "ko_print_message",
+      "category": "message_bridge"
+    },
+    {
+      "id": "src/korean/messages.s:ko_reference_ready:jsr:$fded:1",
+      "path": "src/korean/messages.s",
+      "line": 84,
+      "label": "ko_reference_ready",
+      "operation": "jsr",
+      "target": "$fded",
+      "category": "message_bridge"
+    },
+    {
+      "id": "src/korean/messages.s:ko_ascii:jsr:$fded:1",
+      "path": "src/korean/messages.s",
+      "line": 277,
+      "label": "ko_ascii",
+      "operation": "jsr",
+      "target": "$fded",
+      "category": "message_bridge"
+    },
+    {
+      "id": "src/korean/messages.s:ko_message_newline:jsr:$fded:1",
+      "path": "src/korean/messages.s",
+      "line": 281,
+      "label": "ko_message_newline",
+      "operation": "jsr",
+      "target": "$fded",
+      "category": "message_bridge"
+    },
+    {
+      "id": "src/korean/restore-guard.inc:ko_restore_failed:jsr:$0bf3:1",
+      "path": "src/korean/restore-guard.inc",
+      "line": 42,
+      "label": "ko_restore_failed",
+      "operation": "jsr",
+      "target": "$0bf3",
+      "category": "restore_recovery"
+    },
+    {
+      "id": "src/korean/save.s:ko_prompt_media:jsr:ko_print_script_string:1",
+      "path": "src/korean/save.s",
+      "line": 80,
+      "label": "ko_prompt_media",
+      "operation": "jsr",
+      "target": "ko_print_script_string",
+      "category": "runtime_media"
+    },
+    {
+      "id": "src/korean/save.s:ko_prompt_media:jsr:ko_native_print_script_string:1",
+      "path": "src/korean/save.s",
+      "line": 82,
+      "label": "ko_prompt_media",
+      "operation": "jsr",
+      "target": "ko_native_print_script_string",
+      "category": "runtime_media"
+    }
+  ],
+  "script_streams": 87,
+  "generated_output_sites": {
+    "tools/korean/title_caption.py:add_caption": "picture_caption"
+  },
+  "literal_references": 1352,
+  "numeric_outputs": [
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 3409,
+      "line": 333,
+      "opcode": "P",
+      "conditions": [],
+      "text": ".P TV(8)"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 50.0",
+      "offset": 894,
+      "line": 54,
+      "opcode": "P",
+      "conditions": [],
+      "text": ".P TV(8)"
+    }
+  ],
+  "macro_selectors": [
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 8798,
+      "line": 784,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 01"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 8817,
+      "line": 787,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 03"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 8842,
+      "line": 791,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 04"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 8861,
+      "line": 794,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 05"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 8880,
+      "line": 797,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 06"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 8899,
+      "line": 800,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 07"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 8924,
+      "line": 804,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 08"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 8943,
+      "line": 807,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 09"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 8963,
+      "line": 810,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 10"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 8983,
+      "line": 813,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 11"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9003,
+      "line": 816,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 12"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9023,
+      "line": 819,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 13"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9049,
+      "line": 823,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 14"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9069,
+      "line": 826,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 15"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9094,
+      "line": 829,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 16"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9119,
+      "line": 832,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 17"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9144,
+      "line": 835,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 18"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9180,
+      "line": 839,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 19"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9205,
+      "line": 842,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 20"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9230,
+      "line": 845,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 21"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9250,
+      "line": 848,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 22"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9270,
+      "line": 851,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 23"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9289,
+      "line": 854,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 02"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9303,
+      "line": 857,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 00"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9660,
+      "line": 895,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 EQ"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9672,
+      "line": 897,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 SP"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9702,
+      "line": 902,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 PY"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9726,
+      "line": 906,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 EN"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9738,
+      "line": 908,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 RD"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9756,
+      "line": 911,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 PA"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9774,
+      "line": 914,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 TU"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9792,
+      "line": 917,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 ST"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9816,
+      "line": 921,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 PL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9834,
+      "line": 924,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 FG"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9852,
+      "line": 927,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 WA"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9876,
+      "line": 931,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 MZ"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9936,
+      "line": 941,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 AL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9966,
+      "line": 946,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 ID"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 9990,
+      "line": 950,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 PT"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10014,
+      "line": 954,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 HU"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10026,
+      "line": 956,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 BW"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10038,
+      "line": 958,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 CK"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10062,
+      "line": 962,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 SK"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10080,
+      "line": 965,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 UR"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10104,
+      "line": 969,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 PO"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10122,
+      "line": 972,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 LK"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10134,
+      "line": 974,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 KY"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10184,
+      "line": 979,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 IJ"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10234,
+      "line": 984,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 OJ"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10251,
+      "line": 986,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 AB"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10263,
+      "line": 988,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 A."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10275,
+      "line": 990,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 ON"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10287,
+      "line": 992,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 OF"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10307,
+      "line": 996,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 .."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10366,
+      "line": 1005,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 GT"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10402,
+      "line": 1011,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 DR"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10420,
+      "line": 1014,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 OF"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10450,
+      "line": 1019,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 SY"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10474,
+      "line": 1023,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 LO"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10486,
+      "line": 1025,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 RE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10498,
+      "line": 1027,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 SR"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10516,
+      "line": 1030,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 OP"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10528,
+      "line": 1032,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 CL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10558,
+      "line": 1037,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 U."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10594,
+      "line": 1043,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 D."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10606,
+      "line": 1045,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 IS"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10624,
+      "line": 1048,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 PU"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10642,
+      "line": 1051,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 MV"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10660,
+      "line": 1054,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 US"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10690,
+      "line": 1059,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 IN"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10720,
+      "line": 1064,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 OU"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10738,
+      "line": 1067,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 FW"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10756,
+      "line": 1070,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 BK"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10774,
+      "line": 1073,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 N."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10792,
+      "line": 1076,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 S."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10810,
+      "line": 1079,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 E."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10828,
+      "line": 1082,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 W."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10840,
+      "line": 1084,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 NW"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10852,
+      "line": 1086,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 SW"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10864,
+      "line": 1088,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 NE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10876,
+      "line": 1090,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 SE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10894,
+      "line": 1093,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 L."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10912,
+      "line": 1096,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 R."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10924,
+      "line": 1098,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 CL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10942,
+      "line": 1101,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 CI"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10954,
+      "line": 1103,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 LI"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 10997,
+      "line": 1110,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 .."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 11009,
+      "line": 1112,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 KI"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 11051,
+      "line": 1119,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 AT"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 11063,
+      "line": 1121,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 SH"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 11075,
+      "line": 1123,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 EA"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 11093,
+      "line": 1126,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 WV"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 11105,
+      "line": 1128,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 PL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 11117,
+      "line": 1130,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 RM"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 11129,
+      "line": 1132,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 DG"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 11141,
+      "line": 1134,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 AK"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 11148,
+      "line": 1136,
+      "opcode": "1",
+      "conditions": [],
+      "text": ".1 .."
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "offset": 11212,
+      "line": 1146,
+      "opcode": "2",
+      "conditions": [],
+      "text": ".2 .."
+    }
+  ],
+  "output_opcode_counts": {
+    "!": 1461,
+    "P": 1354,
+    "&": 5,
+    "A": 5,
+    "=": 10,
+    "2": 55,
+    "1": 43
+  },
+  "source_roundtrip_pass": true,
+  "system_scope_exclusions": [
+    {
+      "scope": "Apple II ROM / Applesoft / monitor UI",
+      "reason": "Machine-provided startup, input echo, BASIC/monitor prompts and errors are outside game-owned text; Korean LC initialization has not run. Preserve firmware and English diagnostics."
+    },
+    {
+      "scope": "DOS command interpreter / CATALOG",
+      "reason": "Not in-game dialogue. Owned fixed text is catalogued as excluded; filenames, file types, counts and user command echoes remain ASCII."
+    },
+    {
+      "scope": "Legacy editor / dormant boot diagnostic",
+      "reason": "Explicit excluded catalog entries preserve historical unused bytes, without claiming those routines were executed."
+    },
+    {
+      "scope": "HGR glyph and picture primitives",
+      "reason": "Renderer/LC helpers draw catalog-selected glyphs or original vector art; title inventory supplies the only translated picture caption. Pixel primitives do not introduce new text literals."
+    }
+  ],
+  "limits": [
+    "All known source literals and output classes accounted for at pinned source hashes.",
+    "Computed macro dispatch selects existing handlers; this does not prove handler reachability or dynamic cursor/page composition.",
+    "Runtime firmware/DOS shell diagnostics and legacy editor fragments retain English; no ROM localization.",
+    "No approval, production patch or full-game layout validation."
+  ]
+}

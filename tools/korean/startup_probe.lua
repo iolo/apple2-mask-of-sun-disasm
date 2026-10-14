@@ -9,7 +9,7 @@ local cpu=manager.machine.devices[':maincpu'];local space=cpu.spaces.program
 local labels=build.runtime_labels
 local phase='boot';local finished=false;local last=0;local stable=0;local previous=''
 local retry_count=0;local wrong_retry;local reports={};local commands={'LOOK','INVENTORY','EXIT PLANE','GET MAP','ENTER JEEP'};local index=1
-local world_before_boot;local world_boot_preserved
+local world_before_boot;local world_boot_preserved;local initial_side_ready
 local function world_bytes()
  local result={}
  for a=0x6000,0x67ff do result[#result+1]=string.char(space:read_u8(a)) end
@@ -22,7 +22,12 @@ local boot_tap=space:install_read_tap(build.bootstrap_labels.bootstrap_entry,bui
 end)
 local engine_tap=space:install_read_tap(0x0800,0x0800,'ko-engine-world',function(_,data,_)
  if world_before_boot and world_boot_preserved==nil and (cpu.state.PC.value==0x0800 or cpu.state.CURPC.value==0x0800) then
-  world_boot_preserved=world_bytes()==world_before_boot
+  local after=world_bytes()
+  -- Bootstrap owns only the initial disk selector. Every other world byte
+  -- must survive; INITIAL will perform the game's normal initialization.
+  world_boot_preserved=after:sub(1,0x1c)==world_before_boot:sub(1,0x1c)
+                    and after:sub(0x1e)==world_before_boot:sub(0x1e)
+  initial_side_ready=after:byte(0x1d)==0
  end
 end)
 local retry_tap=space:install_read_tap(labels.ko_resource_retry,labels.ko_resource_retry,'ko-resource-retry',function(_,data,_)
@@ -50,12 +55,15 @@ local function capture(name)
 end
 local function finish(pass,reason)
  if finished then return end
- if pass and not no_lc and world_boot_preserved~=true then pass=false;reason='bootstrap changed world RAM' end
+ if pass and not no_lc and (world_boot_preserved~=true or initial_side_ready~=true) then
+  pass=false;reason='bootstrap world preservation or initial side failed'
+ end
  finished=true;capture(pass and 'startup-success' or 'startup-failure')
  local f=assert(io.open('startup-probe.json','w'))
  f:write(json.stringify({pass=pass,reason=reason,no_lc=no_lc,phase=phase,retry_count=retry_count,
                          command_count=index-1,pc=cpu.state.PC.value,checkpoints=reports,
-                         world_boot_preserved=world_boot_preserved}));f:close()
+                         world_boot_preserved_except_side=world_boot_preserved,
+                         initial_side_ready=initial_side_ready}));f:close()
  retry_tap:remove();boot_tap:remove();engine_tap:remove();mask.exit()
 end
 local function mount(path)
