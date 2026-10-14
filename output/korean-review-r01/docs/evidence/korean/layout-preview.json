@@ -1,0 +1,41 @@
+{
+  "catalog_sha256": "ae3c41e213589e66897bd6e1efd65f8b53cb0ce590bbf694d5c47820a6993c15",
+  "font_sha256": "0cf733c2224267b560c9adc1f160ba61391972ad6bb1e1715e2714f60e5424af",
+  "font_source_sha256": "3658b9e0eb214d847eedd369df2e0b3620a92fbb5623fb52509c03058d5adb6a",
+  "source_runs": 348,
+  "counts": {
+    "messages": 1327,
+    "composition_variants": 403,
+    "message_concerns": 0,
+    "composition_concerns": 0
+  },
+  "complete_layout_validation": false,
+  "limitations": [
+    "Host monochrome glyph preview, not NTSC artifact colors or an emulator screenshot.",
+    "A row12/column0 projection does not establish the actual cursor, page, picture overlap or reachable branches.",
+    "Computed calls, cross-block combinations, inventory pagination and conditional cursor changes require explicit cases or execution evidence.",
+    "No approval is granted and no game image is generated."
+  ],
+  "tool_sha256": "008a8b12ff83af30871f36b628284bf7e28d00b10cf755a1773fad5d166ac2df",
+  "report_sha256": "c57208fb8e0c88a6ae2d9e0b041d143cbbaa786067f2e6e52a0c87781215da7f",
+  "image_records": 1675,
+  "intentional_prompt_row_compositions": [
+    "run:a:ROOM 14.0:27:1",
+    "run:a:ROOM 14.0:57:1",
+    "run:b:ROOM 46.0:18:1"
+  ],
+  "host_tests_passed": 37,
+  "prior_browser_checks": {
+    "catalog_sha256": "1e3c2ded7f37f5d55acaa62dc14b8a53e9b12ee287975cdc64ef981c0504ffca",
+    "checks": {
+      "search_results_for_pill_prefix": 2,
+      "composition_filter_with_search": 1,
+      "composition_filter_total": 348,
+      "initial_page_size": 100,
+      "after_more": 200,
+      "concern_filter_total": 0,
+      "displayed_pill_images_loaded": 2,
+      "console_errors_after_reload": 0
+    }
+  }
+}

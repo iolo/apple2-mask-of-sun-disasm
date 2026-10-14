@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "messages": [
+    {
+      "id": "picture:title",
+      "source": "THE MASK OF THE SUN",
+      "references": [
+        {"path": "assets/decoded/pictures/a/logo/000-logo1.svg", "record": "LOGO1"},
+        {"path": "assets/decoded/pictures/a/logo/001-logo2.svg", "record": "LOGO2"}
+      ],
+      "context": {
+        "display": "INITIAL startup screen; two vector records form the English title",
+        "implementation": "Preserve the original logo and add an approved Korean title caption; final position must be checked in HGR."
+      }
+    }
+  ]
+}

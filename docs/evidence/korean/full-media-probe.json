@@ -1,0 +1,8256 @@
+{
+  "pass": true,
+  "reason": "all resources read",
+  "mounts": [
+    {
+      "time": 23.322452534731,
+      "side": "a",
+      "before_case": 1
+    },
+    {
+      "time": 86.234086905416,
+      "side": "b",
+      "before_case": 36
+    }
+  ],
+  "case": 86,
+  "time": 169.26666666589,
+  "phase": "finish",
+  "pc": 20572,
+  "cases": [
+    {
+      "pass": true,
+      "name": "DEATH",
+      "number": 1,
+      "side": "a",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 24.338881385777
+    },
+    {
+      "pass": true,
+      "name": "INITIAL",
+      "number": 2,
+      "side": "a",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 26.527155999203
+    },
+    {
+      "pass": true,
+      "name": "LIBRARY",
+      "number": 3,
+      "side": "a",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 33.795544137779
+    },
+    {
+      "pass": true,
+      "name": "ROOM 1.0",
+      "number": 4,
+      "side": "a",
+      "pool_size": 725,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 35.990050890567
+    },
+    {
+      "pass": true,
+      "name": "ROOM 10.0",
+      "number": 5,
+      "side": "a",
+      "pool_size": 894,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 38.147223527089
+    },
+    {
+      "pass": true,
+      "name": "ROOM 11.0",
+      "number": 6,
+      "side": "a",
+      "pool_size": 387,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 39.616865335662
+    },
+    {
+      "pass": true,
+      "name": "ROOM 12.0",
+      "number": 7,
+      "side": "a",
+      "pool_size": 127,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 40.734434331551
+    },
+    {
+      "pass": true,
+      "name": "ROOM 13.0",
+      "number": 8,
+      "side": "a",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 42.03268447835
+    },
+    {
+      "pass": true,
+      "name": "ROOM 14.0",
+      "number": 9,
+      "side": "a",
+      "pool_size": 418,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 43.862812683477
+    },
+    {
+      "pass": true,
+      "name": "ROOM 15.0",
+      "number": 10,
+      "side": "a",
+      "pool_size": 867,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 46.055963006435
+    },
+    {
+      "pass": true,
+      "name": "ROOM 16.0",
+      "number": 11,
+      "side": "a",
+      "pool_size": 845,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 48.411706791911
+    },
+    {
+      "pass": true,
+      "name": "ROOM 17.0",
+      "number": 12,
+      "side": "a",
+      "pool_size": 740,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 50.547575846519
+    },
+    {
+      "pass": true,
+      "name": "ROOM 18.0",
+      "number": 13,
+      "side": "a",
+      "pool_size": 355,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 52.022758856892
+    },
+    {
+      "pass": true,
+      "name": "ROOM 19.0",
+      "number": 14,
+      "side": "a",
+      "pool_size": 811,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 54.150787825378
+    },
+    {
+      "pass": true,
+      "name": "ROOM 2.0",
+      "number": 15,
+      "side": "a",
+      "pool_size": 482,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 55.62828440005
+    },
+    {
+      "pass": true,
+      "name": "ROOM 2.1",
+      "number": 16,
+      "side": "a",
+      "pool_size": 105,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 56.73941084358
+    },
+    {
+      "pass": true,
+      "name": "ROOM 20.0",
+      "number": 17,
+      "side": "a",
+      "pool_size": 90,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 57.711608925396
+    },
+    {
+      "pass": true,
+      "name": "ROOM 21.0",
+      "number": 18,
+      "side": "a",
+      "pool_size": 704,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 59.690128205097
+    },
+    {
+      "pass": true,
+      "name": "ROOM 22.0",
+      "number": 19,
+      "side": "a",
+      "pool_size": 92,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 60.822837150096
+    },
+    {
+      "pass": true,
+      "name": "ROOM 3.0",
+      "number": 20,
+      "side": "a",
+      "pool_size": 92,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 61.70948424346
+    },
+    {
+      "pass": true,
+      "name": "ROOM 32.1",
+      "number": 21,
+      "side": "a",
+      "pool_size": 59,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 62.769058524141
+    },
+    {
+      "pass": true,
+      "name": "ROOM 4.0",
+      "number": 22,
+      "side": "a",
+      "pool_size": 187,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 63.843186533535
+    },
+    {
+      "pass": true,
+      "name": "ROOM 5.0",
+      "number": 23,
+      "side": "a",
+      "pool_size": 325,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 65.125300450152
+    },
+    {
+      "pass": true,
+      "name": "ROOM 5.1",
+      "number": 24,
+      "side": "a",
+      "pool_size": 276,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 66.421616754712
+    },
+    {
+      "pass": true,
+      "name": "ROOM 6.0",
+      "number": 25,
+      "side": "a",
+      "pool_size": 903,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 68.764746525703
+    },
+    {
+      "pass": true,
+      "name": "ROOM 6.1",
+      "number": 26,
+      "side": "a",
+      "pool_size": 78,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 70.598561362265
+    },
+    {
+      "pass": true,
+      "name": "ROOM 6.2",
+      "number": 27,
+      "side": "a",
+      "pool_size": 124,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 71.930043061227
+    },
+    {
+      "pass": true,
+      "name": "ROOM 7.0",
+      "number": 28,
+      "side": "a",
+      "pool_size": 351,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 73.238242317441
+    },
+    {
+      "pass": true,
+      "name": "ROOM 7.1",
+      "number": 29,
+      "side": "a",
+      "pool_size": 380,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 74.676972988805
+    },
+    {
+      "pass": true,
+      "name": "ROOM 8.0",
+      "number": 30,
+      "side": "a",
+      "pool_size": 497,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 76.164348209004
+    },
+    {
+      "pass": true,
+      "name": "ROOM 9.0",
+      "number": 31,
+      "side": "a",
+      "pool_size": 249,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 78.167898805988
+    },
+    {
+      "pass": true,
+      "name": "ROOM 9.1",
+      "number": 32,
+      "side": "a",
+      "pool_size": 487,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 80.144070268113
+    },
+    {
+      "pass": true,
+      "name": "ROOM 9.2",
+      "number": 33,
+      "side": "a",
+      "pool_size": 661,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 81.961048150281
+    },
+    {
+      "pass": true,
+      "name": "TRAVEL",
+      "number": 34,
+      "side": "a",
+      "pool_size": 138,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 83.898362693243
+    },
+    {
+      "pass": true,
+      "name": "TUNNEL",
+      "number": 35,
+      "side": "a",
+      "pool_size": 178,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 86.234086905416
+    },
+    {
+      "pass": true,
+      "name": "DEATH",
+      "number": 36,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 87.250516735128
+    },
+    {
+      "pass": true,
+      "name": "ROOM 23.0",
+      "number": 37,
+      "side": "b",
+      "pool_size": 376,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 88.918271677386
+    },
+    {
+      "pass": true,
+      "name": "ROOM 23.1",
+      "number": 38,
+      "side": "b",
+      "pool_size": 370,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 90.909404971572
+    },
+    {
+      "pass": true,
+      "name": "ROOM 24.0",
+      "number": 39,
+      "side": "b",
+      "pool_size": 400,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 92.617431004063
+    },
+    {
+      "pass": true,
+      "name": "ROOM 24.1",
+      "number": 40,
+      "side": "b",
+      "pool_size": 319,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 94.377649246379
+    },
+    {
+      "pass": true,
+      "name": "ROOM 25.0",
+      "number": 41,
+      "side": "b",
+      "pool_size": 681,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 96.692321393569
+    },
+    {
+      "pass": true,
+      "name": "ROOM 26.0",
+      "number": 42,
+      "side": "b",
+      "pool_size": 432,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 98.576824231697
+    },
+    {
+      "pass": true,
+      "name": "ROOM 27.0",
+      "number": 43,
+      "side": "b",
+      "pool_size": 638,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 100.71721471907
+    },
+    {
+      "pass": true,
+      "name": "ROOM 28.0",
+      "number": 44,
+      "side": "b",
+      "pool_size": 429,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 102.42551575646
+    },
+    {
+      "pass": true,
+      "name": "ROOM 29.0",
+      "number": 45,
+      "side": "b",
+      "pool_size": 122,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 103.53921706787
+    },
+    {
+      "pass": true,
+      "name": "ROOM 30.0",
+      "number": 46,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 104.82086024657
+    },
+    {
+      "pass": true,
+      "name": "ROOM 30.1",
+      "number": 47,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 106.12170874921
+    },
+    {
+      "pass": true,
+      "name": "ROOM 30.2",
+      "number": 48,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 107.48734977485
+    },
+    {
+      "pass": true,
+      "name": "ROOM 31.0",
+      "number": 49,
+      "side": "b",
+      "pool_size": 406,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 109.64195830881
+    },
+    {
+      "pass": true,
+      "name": "ROOM 31.1",
+      "number": 50,
+      "side": "b",
+      "pool_size": 386,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 111.47489038945
+    },
+    {
+      "pass": true,
+      "name": "ROOM 32.0",
+      "number": 51,
+      "side": "b",
+      "pool_size": 362,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 112.99171559986
+    },
+    {
+      "pass": true,
+      "name": "ROOM 33.0",
+      "number": 52,
+      "side": "b",
+      "pool_size": 387,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 114.45333333327
+    },
+    {
+      "pass": true,
+      "name": "ROOM 34.0",
+      "number": 53,
+      "side": "b",
+      "pool_size": 960,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 116.79838128786
+    },
+    {
+      "pass": true,
+      "name": "ROOM 34.1",
+      "number": 54,
+      "side": "b",
+      "pool_size": 360,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 118.1185427676
+    },
+    {
+      "pass": true,
+      "name": "ROOM 34.2",
+      "number": 55,
+      "side": "b",
+      "pool_size": 174,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 119.59107653155
+    },
+    {
+      "pass": true,
+      "name": "ROOM 35.0",
+      "number": 56,
+      "side": "b",
+      "pool_size": 721,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 121.43697592478
+    },
+    {
+      "pass": true,
+      "name": "ROOM 36.0",
+      "number": 57,
+      "side": "b",
+      "pool_size": 522,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 123.0800851438
+    },
+    {
+      "pass": true,
+      "name": "ROOM 37.0",
+      "number": 58,
+      "side": "b",
+      "pool_size": 775,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 125.29236934814
+    },
+    {
+      "pass": true,
+      "name": "ROOM 38.0",
+      "number": 59,
+      "side": "b",
+      "pool_size": 231,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 126.56065179089
+    },
+    {
+      "pass": true,
+      "name": "ROOM 39.0",
+      "number": 60,
+      "side": "b",
+      "pool_size": 537,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 128.38961342722
+    },
+    {
+      "pass": true,
+      "name": "ROOM 40.0",
+      "number": 61,
+      "side": "b",
+      "pool_size": 325,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 129.67653748281
+    },
+    {
+      "pass": true,
+      "name": "ROOM 40.1",
+      "number": 62,
+      "side": "b",
+      "pool_size": 499,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 131.58143765897
+    },
+    {
+      "pass": true,
+      "name": "ROOM 41.0",
+      "number": 63,
+      "side": "b",
+      "pool_size": 207,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 132.9206429829
+    },
+    {
+      "pass": true,
+      "name": "ROOM 41.1",
+      "number": 64,
+      "side": "b",
+      "pool_size": 225,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 134.43629379519
+    },
+    {
+      "pass": true,
+      "name": "ROOM 41.2",
+      "number": 65,
+      "side": "b",
+      "pool_size": 807,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 136.77783421406
+    },
+    {
+      "pass": true,
+      "name": "ROOM 41.3",
+      "number": 66,
+      "side": "b",
+      "pool_size": 487,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 139.20802016043
+    },
+    {
+      "pass": true,
+      "name": "ROOM 42.0",
+      "number": 67,
+      "side": "b",
+      "pool_size": 195,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 140.63195733013
+    },
+    {
+      "pass": true,
+      "name": "ROOM 43.0",
+      "number": 68,
+      "side": "b",
+      "pool_size": 1013,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 143.00879819918
+    },
+    {
+      "pass": true,
+      "name": "ROOM 44.0",
+      "number": 69,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 144.31135153643
+    },
+    {
+      "pass": true,
+      "name": "ROOM 44.1",
+      "number": 70,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 145.39774711286
+    },
+    {
+      "pass": true,
+      "name": "ROOM 44.2",
+      "number": 71,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 146.69872088464
+    },
+    {
+      "pass": true,
+      "name": "ROOM 44.3",
+      "number": 72,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 147.84940203555
+    },
+    {
+      "pass": true,
+      "name": "ROOM 44.4",
+      "number": 73,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 148.97462614985
+    },
+    {
+      "pass": true,
+      "name": "ROOM 44.5",
+      "number": 74,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 150.24738794277
+    },
+    {
+      "pass": true,
+      "name": "ROOM 44.6",
+      "number": 75,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 151.54823350941
+    },
+    {
+      "pass": true,
+      "name": "ROOM 44.7",
+      "number": 76,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 152.6743472303
+    },
+    {
+      "pass": true,
+      "name": "ROOM 44.8",
+      "number": 77,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 153.9611166568
+    },
+    {
+      "pass": true,
+      "name": "ROOM 44.9",
+      "number": 78,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 155.04599921699
+    },
+    {
+      "pass": true,
+      "name": "ROOM 45.0",
+      "number": 79,
+      "side": "b",
+      "pool_size": 130,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 156.35395674292
+    },
+    {
+      "pass": true,
+      "name": "ROOM 46.0",
+      "number": 80,
+      "side": "b",
+      "pool_size": 581,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 158.16435995294
+    },
+    {
+      "pass": true,
+      "name": "ROOM 47.0",
+      "number": 81,
+      "side": "b",
+      "pool_size": 0,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 159.25912898798
+    },
+    {
+      "pass": true,
+      "name": "ROOM 49.0",
+      "number": 82,
+      "side": "b",
+      "pool_size": 862,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 161.28510863174
+    },
+    {
+      "pass": true,
+      "name": "ROOM 49.1",
+      "number": 83,
+      "side": "b",
+      "pool_size": 367,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 163.23606772354
+    },
+    {
+      "pass": true,
+      "name": "ROOM 49.2",
+      "number": 84,
+      "side": "b",
+      "pool_size": 398,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 165.28593364642
+    },
+    {
+      "pass": true,
+      "name": "ROOM 50.0",
+      "number": 85,
+      "side": "b",
+      "pool_size": 607,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 166.92005382649
+    },
+    {
+      "pass": true,
+      "name": "TUNNEL",
+      "number": 86,
+      "side": "b",
+      "pool_size": 178,
+      "checks": [],
+      "error": 0,
+      "carry": 1,
+      "time": 169.25907516139
+    }
+  ],
+  "build": {
+    "kind": "all-resource synthetic media reader; no game logic execution",
+    "build": {
+      "kind": "complete synthetic draft-shaped A/B/startup; no translated message bodies",
+      "scene": "opening",
+      "synthetic_shape": "none",
+      "full_synthetic": true,
+      "runtime": {
+        "kind": "candidate main-RAM Korean runtime; no game integration",
+        "load_address": 37888,
+        "bytes": 1818,
+        "remaining_in_2k": 230,
+        "sha256": "c325c6d13fabbc12677cd69029a9615fc1c8eec5d3b26c8df2b2b31e2aebe073",
+        "source_hashes": {
+          "src/korean/lc.s": "9c5d158c72ba7c415774455a1f36096cd20a3492568d103d0f4b49fbf6b800f7",
+          "src/korean/messages.s": "2f1f7e24161a57f4f895172bcea90a069f8b44e06085b09ae95b516c6725ddd9",
+          "src/korean/loader.s": "1c6760e8a9bbcbe8f04f74502d43ab75dee700f843ee3674f8d94c60337ffa15",
+          "src/korean/dispatch.s": "c46c67f174aaceaf89db78c85eed64a3fb3e7f5729121c0206df40fe1caccb9d",
+          "src/korean/save.s": "f083be0d56f14174c1830f0dba2efe60c6b05aa409023a8d72a1561fc92c4ee1"
+        },
+        "native_renderer_sha256": "e46f017a45f82e5b03d75cc54ccb8deb3e81b8747a9fadd61c01a1d085da80fe",
+        "media_id": "3a94ce1f77f446effa849389"
+      },
+      "bootstrap_bytes": 1152,
+      "bootstrap_sha256": "1663ccb450c052836e7de7f508597c3c7e9fb2b71d1474ee8a11295573e0023d",
+      "bootstrap_labels": {
+        "boot_no_lc_wait": 20761,
+        "boot_wait_media": 20728,
+        "bootstrap_entry": 20480
+      },
+      "runtime_labels": {
+        "ko_wait_game_media": 39453,
+        "ko_resource_retry": 39420,
+        "ko_load_error": 39379,
+        "ko_room_size": 38653,
+        "ko_resident_size": 38655,
+        "ko_font_count": 38657
+      },
+      "media_id": "3a94ce1f77f446effa849389",
+      "package_header_bytes": 24,
+      "save_id": "4b4f533184cdd5e93cdf956f3610bbb3",
+      "save_labels": {
+        "ko_restore_wait": 8124,
+        "ko_restore_error_text": 8140,
+        "ko_save_id": 8176,
+        "ko_check_save_id": 8088,
+        "ko_restore_failed": 8110,
+        "ko_restore_stack": 8139,
+        "ko_restore_guard": 8046,
+        "ko_snapshot_error_guard": 8100
+      },
+      "source_hashes": {
+        "src/interpreter.s": "b7995c055b523a4fd059aaef76c9f54af14c55962f8d39fb79e6fc2898d71b2a",
+        "src/intrinsics.s": "bde00b4f71ef79975ce5a75c286f74d9eb2cc4eabc96e6b34c5656f530516357",
+        "src/korean/restore-guard.inc": "df0108a474de8990a627fdbce21be9dfefab74d0d16e424801bd888f4aa67fd6",
+        "src/korean/bootstrap.s": "46e3fff41be6127c4c7c93e993913628b487ce78e455351d63a63c8284a4facc",
+        "tools/korean/startup_disk.py": "689831f9c8ec6738201b015fc69743ab45e6900b63b097dc30e2fb0049174235"
+      },
+      "font_bytes": 5200,
+      "resident_bytes": 4096,
+      "asset_hashes": {
+        "runtime": "c325c6d13fabbc12677cd69029a9615fc1c8eec5d3b26c8df2b2b31e2aebe073",
+        "font": "f7829b01c6506bd90d49e5979a5a59d6b1e2ef6be75b6b7fcfc2dc9ea9e8635b",
+        "resident": "e26352dbf57eb84d380a030f2be386f416904cc371e74427eb531fc766182f78"
+      },
+      "source_disk_sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab",
+      "extra": {
+        "files": [
+          {
+            "name": "START",
+            "type": 0,
+            "bytes": 102,
+            "sha256": "bd92d72e2e55986926edd30654ae5d503abb5a85fa47f6cb8d1fed96a183626a",
+            "ts": [
+              3,
+              0
+            ],
+            "data_sectors": [
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "ADVEN INTERP.OBJ",
+            "type": 4,
+            "bytes": 1536,
+            "sha256": "c8d2fe12ce61b921ce88d8e8834ef78c87383633a6506c446e33e60d19531e80",
+            "ts": [
+              3,
+              2
+            ],
+            "data_sectors": [
+              [
+                3,
+                3
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ]
+            ]
+          },
+          {
+            "name": "PARMS.OBJ",
+            "type": 4,
+            "bytes": 256,
+            "sha256": "430844728d164480732e9930ff0cfea1ed61f1d75b219fa44d2dbff2b1ee7ab3",
+            "ts": [
+              3,
+              9
+            ],
+            "data_sectors": [
+              [
+                3,
+                10
+              ]
+            ]
+          },
+          {
+            "name": "KOBOOT",
+            "type": 4,
+            "bytes": 1156,
+            "sha256": "091ee797d8a4815b5e803fc328e2b87673698a3ec385ee66a116f059097098aa",
+            "ts": [
+              3,
+              11
+            ],
+            "data_sectors": [
+              [
+                3,
+                12
+              ],
+              [
+                3,
+                13
+              ],
+              [
+                3,
+                14
+              ],
+              [
+                3,
+                15
+              ],
+              [
+                4,
+                0
+              ]
+            ]
+          },
+          {
+            "name": "KO.RUNTIME",
+            "type": 0,
+            "bytes": 1834,
+            "sha256": "4295d08cd3867b8ad3c4c02182600fe05dd45902ee0ab8f97c08ef432c9c2842",
+            "ts": [
+              4,
+              1
+            ],
+            "data_sectors": [
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                9
+              ]
+            ]
+          },
+          {
+            "name": "KO.FONT",
+            "type": 0,
+            "bytes": 5216,
+            "sha256": "78a389461c7c38be25b1ee08c27d3c661bacd8fdbd9a7f6eb215362826064209",
+            "ts": [
+              4,
+              10
+            ],
+            "data_sectors": [
+              [
+                4,
+                11
+              ],
+              [
+                4,
+                12
+              ],
+              [
+                4,
+                13
+              ],
+              [
+                4,
+                14
+              ],
+              [
+                4,
+                15
+              ],
+              [
+                5,
+                0
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                9
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                5,
+                12
+              ],
+              [
+                5,
+                13
+              ],
+              [
+                5,
+                14
+              ],
+              [
+                5,
+                15
+              ]
+            ]
+          },
+          {
+            "name": "KO.TEXT",
+            "type": 0,
+            "bytes": 4112,
+            "sha256": "3ab3ef10dd58e20b0b15b4eca26144a296adf2db95bccf30ae087f09adf58838",
+            "ts": [
+              6,
+              0
+            ],
+            "data_sectors": [
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                6,
+                4
+              ],
+              [
+                6,
+                5
+              ],
+              [
+                6,
+                6
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                6,
+                12
+              ],
+              [
+                6,
+                13
+              ],
+              [
+                6,
+                14
+              ],
+              [
+                6,
+                15
+              ],
+              [
+                7,
+                0
+              ],
+              [
+                7,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "INITIAL",
+            "type": 0,
+            "bytes": 1787,
+            "sha256": "603222a681042a43b295533e74d1fe2e1a06c42e74a31a805d33f8c2f5ee80d2",
+            "ts": [
+              7,
+              2
+            ],
+            "data_sectors": [
+              [
+                7,
+                3
+              ],
+              [
+                7,
+                4
+              ],
+              [
+                7,
+                5
+              ],
+              [
+                7,
+                6
+              ],
+              [
+                7,
+                7
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                9
+              ]
+            ]
+          },
+          {
+            "name": "LIBRARY",
+            "type": 0,
+            "bytes": 9149,
+            "sha256": "c72cb4f3413b67096903e638faeaa2133c0a72e4bbe164ea585361b2c6479577",
+            "ts": [
+              7,
+              10
+            ],
+            "data_sectors": [
+              [
+                7,
+                11
+              ],
+              [
+                7,
+                12
+              ],
+              [
+                7,
+                13
+              ],
+              [
+                7,
+                14
+              ],
+              [
+                7,
+                15
+              ],
+              [
+                8,
+                0
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                8,
+                2
+              ],
+              [
+                8,
+                3
+              ],
+              [
+                8,
+                4
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                8,
+                6
+              ],
+              [
+                8,
+                7
+              ],
+              [
+                8,
+                8
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                8,
+                12
+              ],
+              [
+                8,
+                13
+              ],
+              [
+                8,
+                14
+              ],
+              [
+                8,
+                15
+              ],
+              [
+                9,
+                0
+              ],
+              [
+                9,
+                1
+              ],
+              [
+                9,
+                2
+              ],
+              [
+                9,
+                3
+              ],
+              [
+                9,
+                4
+              ],
+              [
+                9,
+                5
+              ],
+              [
+                9,
+                6
+              ],
+              [
+                9,
+                7
+              ],
+              [
+                9,
+                8
+              ],
+              [
+                9,
+                9
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                9,
+                12
+              ],
+              [
+                9,
+                13
+              ],
+              [
+                9,
+                14
+              ]
+            ]
+          },
+          {
+            "name": "INTRIN.OBJ",
+            "type": 4,
+            "bytes": 5120,
+            "sha256": "0b4912e62ab740e12a3f76f8e7308ef27eabc0432d494e9ddbdfd9a3cd2c6cfb",
+            "ts": [
+              9,
+              15
+            ],
+            "data_sectors": [
+              [
+                10,
+                0
+              ],
+              [
+                10,
+                1
+              ],
+              [
+                10,
+                2
+              ],
+              [
+                10,
+                3
+              ],
+              [
+                10,
+                4
+              ],
+              [
+                10,
+                5
+              ],
+              [
+                10,
+                6
+              ],
+              [
+                10,
+                7
+              ],
+              [
+                10,
+                8
+              ],
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                10
+              ],
+              [
+                10,
+                11
+              ],
+              [
+                10,
+                12
+              ],
+              [
+                10,
+                13
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                10,
+                15
+              ],
+              [
+                11,
+                0
+              ],
+              [
+                11,
+                1
+              ],
+              [
+                11,
+                2
+              ],
+              [
+                11,
+                3
+              ]
+            ]
+          },
+          {
+            "name": "CHAR GEN",
+            "type": 4,
+            "bytes": 2304,
+            "sha256": "e46f017a45f82e5b03d75cc54ccb8deb3e81b8747a9fadd61c01a1d085da80fe",
+            "ts": [
+              11,
+              4
+            ],
+            "data_sectors": [
+              [
+                11,
+                5
+              ],
+              [
+                11,
+                6
+              ],
+              [
+                11,
+                7
+              ],
+              [
+                11,
+                8
+              ],
+              [
+                11,
+                9
+              ],
+              [
+                11,
+                10
+              ],
+              [
+                11,
+                11
+              ],
+              [
+                11,
+                12
+              ],
+              [
+                11,
+                13
+              ]
+            ]
+          },
+          {
+            "name": "LOGO",
+            "type": 4,
+            "bytes": 2048,
+            "sha256": "6ef55c50acdbc320eb11cddc65c02813339fc7d748aabd928597c5ec9ef536ab",
+            "ts": [
+              11,
+              14
+            ],
+            "data_sectors": [
+              [
+                11,
+                15
+              ],
+              [
+                12,
+                0
+              ],
+              [
+                12,
+                1
+              ],
+              [
+                12,
+                2
+              ],
+              [
+                12,
+                3
+              ],
+              [
+                12,
+                4
+              ],
+              [
+                12,
+                5
+              ],
+              [
+                12,
+                6
+              ]
+            ]
+          }
+        ],
+        "free_sectors": 345,
+        "sha256": "47cf42dd4c8cedf6a5afe71c52d0e1dc0afb447bbe4a9a04108ed12b93fe4203"
+      },
+      "game_a": {
+        "files": [
+          {
+            "name": "DEATH",
+            "type": 0,
+            "bytes": 256,
+            "sha256": "a4c2b577d3de3e8b9f61259d3ec60e5420edf1d54f9d8d1dfe089a8312052115",
+            "ts": [
+              3,
+              0
+            ],
+            "data_sectors": [
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "INITIAL",
+            "type": 0,
+            "bytes": 1787,
+            "sha256": "603222a681042a43b295533e74d1fe2e1a06c42e74a31a805d33f8c2f5ee80d2",
+            "ts": [
+              3,
+              2
+            ],
+            "data_sectors": [
+              [
+                3,
+                3
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                9
+              ]
+            ]
+          },
+          {
+            "name": "LIBRARY",
+            "type": 0,
+            "bytes": 9149,
+            "sha256": "c72cb4f3413b67096903e638faeaa2133c0a72e4bbe164ea585361b2c6479577",
+            "ts": [
+              3,
+              10
+            ],
+            "data_sectors": [
+              [
+                3,
+                11
+              ],
+              [
+                3,
+                12
+              ],
+              [
+                3,
+                13
+              ],
+              [
+                3,
+                14
+              ],
+              [
+                3,
+                15
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                9
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                4,
+                11
+              ],
+              [
+                4,
+                12
+              ],
+              [
+                4,
+                13
+              ],
+              [
+                4,
+                14
+              ],
+              [
+                4,
+                15
+              ],
+              [
+                5,
+                0
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                9
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                5,
+                12
+              ],
+              [
+                5,
+                13
+              ],
+              [
+                5,
+                14
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 1.0",
+            "type": 0,
+            "bytes": 1580,
+            "sha256": "11bf12476b3ca00200b336caf440313edc00c40df5c0ae7781edfd7771180ee8",
+            "ts": [
+              5,
+              15
+            ],
+            "data_sectors": [
+              [
+                6,
+                0
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                6,
+                4
+              ],
+              [
+                6,
+                5
+              ],
+              [
+                6,
+                6
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 2.0",
+            "type": 0,
+            "bytes": 1076,
+            "sha256": "c9edcd0a55a95d5e073a6b20e83987bbfe40c352ee2c9ca2cb1a764fd0459f8c",
+            "ts": [
+              6,
+              7
+            ],
+            "data_sectors": [
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                6,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 2.1",
+            "type": 0,
+            "bytes": 306,
+            "sha256": "e5b21f0b6354e1b52145b04271e48f74118d03e5c9a47fa5eb0e2e2c0ca8fdf9",
+            "ts": [
+              6,
+              13
+            ],
+            "data_sectors": [
+              [
+                6,
+                14
+              ],
+              [
+                6,
+                15
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 3.0",
+            "type": 0,
+            "bytes": 457,
+            "sha256": "1453d6e87ae5dc8f8471140ec4068c5c56a3f66c0f52f34724a61dca0ba1e5de",
+            "ts": [
+              7,
+              0
+            ],
+            "data_sectors": [
+              [
+                7,
+                1
+              ],
+              [
+                7,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 4.0",
+            "type": 0,
+            "bytes": 512,
+            "sha256": "d036b200844a41690b13ad9dce4fab0995aef6970c432c48947718dc12d2b1c5",
+            "ts": [
+              7,
+              3
+            ],
+            "data_sectors": [
+              [
+                7,
+                4
+              ],
+              [
+                7,
+                5
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 5.0",
+            "type": 0,
+            "bytes": 730,
+            "sha256": "9c6b5aa23d7e473477beb59b515d7349879be961df14957c4f484d962b200269",
+            "ts": [
+              7,
+              6
+            ],
+            "data_sectors": [
+              [
+                7,
+                7
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                9
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 5.1",
+            "type": 0,
+            "bytes": 696,
+            "sha256": "352b9397c479697e4134db0bedd95e46f5b10720fa6aa1429b6a75b9cd7f6d3c",
+            "ts": [
+              7,
+              10
+            ],
+            "data_sectors": [
+              [
+                7,
+                11
+              ],
+              [
+                7,
+                12
+              ],
+              [
+                7,
+                13
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 6.0",
+            "type": 0,
+            "bytes": 2088,
+            "sha256": "d9c4835825fb8d9462f9b63255dd872b841b963925be5a4884e57955576ca26b",
+            "ts": [
+              7,
+              14
+            ],
+            "data_sectors": [
+              [
+                7,
+                15
+              ],
+              [
+                8,
+                0
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                8,
+                2
+              ],
+              [
+                8,
+                3
+              ],
+              [
+                8,
+                4
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                8,
+                6
+              ],
+              [
+                8,
+                7
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 6.1",
+            "type": 0,
+            "bytes": 1486,
+            "sha256": "9673803c622dfb951f549e5fc2e9c90c51555031f6c1babfaffbf0bac0ae85cd",
+            "ts": [
+              8,
+              8
+            ],
+            "data_sectors": [
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                8,
+                12
+              ],
+              [
+                8,
+                13
+              ],
+              [
+                8,
+                14
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 6.2",
+            "type": 0,
+            "bytes": 421,
+            "sha256": "31549d101e73a6d5073fba35a7062fb11f6a044ca0f28feb346a82be47c0ae99",
+            "ts": [
+              8,
+              15
+            ],
+            "data_sectors": [
+              [
+                9,
+                0
+              ],
+              [
+                9,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 7.0",
+            "type": 0,
+            "bytes": 727,
+            "sha256": "0eef800a57616e00e9e6c26ba827b417e6a46640f02a0813e53e63b6b9b8caf2",
+            "ts": [
+              9,
+              2
+            ],
+            "data_sectors": [
+              [
+                9,
+                3
+              ],
+              [
+                9,
+                4
+              ],
+              [
+                9,
+                5
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 7.1",
+            "type": 0,
+            "bytes": 814,
+            "sha256": "d7d7783d49b3a749f361af7834fae26c92dc8e4ff51693ab7beb75e0efd310c9",
+            "ts": [
+              9,
+              6
+            ],
+            "data_sectors": [
+              [
+                9,
+                7
+              ],
+              [
+                9,
+                8
+              ],
+              [
+                9,
+                9
+              ],
+              [
+                9,
+                10
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 8.0",
+            "type": 0,
+            "bytes": 1000,
+            "sha256": "98e28c396766dfb477005814b978426db57be9601af6760412d7ce07848e0a53",
+            "ts": [
+              9,
+              11
+            ],
+            "data_sectors": [
+              [
+                9,
+                12
+              ],
+              [
+                9,
+                13
+              ],
+              [
+                9,
+                14
+              ],
+              [
+                9,
+                15
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 9.0",
+            "type": 0,
+            "bytes": 1599,
+            "sha256": "906ba6bbe305442ab56d6f464a68313f01295a4aa10528fd5576513b489bf91b",
+            "ts": [
+              10,
+              0
+            ],
+            "data_sectors": [
+              [
+                10,
+                1
+              ],
+              [
+                10,
+                2
+              ],
+              [
+                10,
+                3
+              ],
+              [
+                10,
+                4
+              ],
+              [
+                10,
+                5
+              ],
+              [
+                10,
+                6
+              ],
+              [
+                10,
+                7
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 9.1",
+            "type": 0,
+            "bytes": 1620,
+            "sha256": "5922f8aff0d26f9869e930b83c1ba4440e7616b91aae80c86993093c378e36d7",
+            "ts": [
+              10,
+              8
+            ],
+            "data_sectors": [
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                10
+              ],
+              [
+                10,
+                11
+              ],
+              [
+                10,
+                12
+              ],
+              [
+                10,
+                13
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                10,
+                15
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 9.2",
+            "type": 0,
+            "bytes": 1549,
+            "sha256": "5e819be64acd53dec0b6e5dde6ead9db76dc201f9300b603bf3004ff06fba21f",
+            "ts": [
+              11,
+              0
+            ],
+            "data_sectors": [
+              [
+                11,
+                1
+              ],
+              [
+                11,
+                2
+              ],
+              [
+                11,
+                3
+              ],
+              [
+                11,
+                4
+              ],
+              [
+                11,
+                5
+              ],
+              [
+                11,
+                6
+              ],
+              [
+                11,
+                7
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 10.0",
+            "type": 0,
+            "bytes": 1643,
+            "sha256": "33cabc1537d06f50a8107ae86bebcb5ecc43e620a6c662eda5a0a8b8f6104916",
+            "ts": [
+              11,
+              8
+            ],
+            "data_sectors": [
+              [
+                11,
+                9
+              ],
+              [
+                11,
+                10
+              ],
+              [
+                11,
+                11
+              ],
+              [
+                11,
+                12
+              ],
+              [
+                11,
+                13
+              ],
+              [
+                11,
+                14
+              ],
+              [
+                11,
+                15
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 11.0",
+            "type": 0,
+            "bytes": 1083,
+            "sha256": "c2010739d26c9f804b82fce4c07dce9693e59e48dac103ba860309980b5189f5",
+            "ts": [
+              12,
+              0
+            ],
+            "data_sectors": [
+              [
+                12,
+                1
+              ],
+              [
+                12,
+                2
+              ],
+              [
+                12,
+                3
+              ],
+              [
+                12,
+                4
+              ],
+              [
+                12,
+                5
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 12.0",
+            "type": 0,
+            "bytes": 360,
+            "sha256": "495c49b6ac4f566a12e48d930803f0c9ff7c06d4cb32982f467b0e4306bad015",
+            "ts": [
+              12,
+              6
+            ],
+            "data_sectors": [
+              [
+                12,
+                7
+              ],
+              [
+                12,
+                8
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 13.0",
+            "type": 0,
+            "bytes": 603,
+            "sha256": "2d1473c82a9d1016c8ba29bccb8af33549caed7820d25cfb3ea833e99da86dcc",
+            "ts": [
+              12,
+              9
+            ],
+            "data_sectors": [
+              [
+                12,
+                10
+              ],
+              [
+                12,
+                11
+              ],
+              [
+                12,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 14.0",
+            "type": 0,
+            "bytes": 1313,
+            "sha256": "fcde14e4a80fcb7d26308fc609f4a01ea0a80928b7db5c01432a2533ccd1e8dd",
+            "ts": [
+              12,
+              13
+            ],
+            "data_sectors": [
+              [
+                12,
+                14
+              ],
+              [
+                12,
+                15
+              ],
+              [
+                13,
+                0
+              ],
+              [
+                13,
+                1
+              ],
+              [
+                13,
+                2
+              ],
+              [
+                13,
+                3
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 15.0",
+            "type": 0,
+            "bytes": 2046,
+            "sha256": "09abb8e19a731c76ccc2402d7e5ba1b53b73e468dc00aeebcf529f57ac236295",
+            "ts": [
+              13,
+              4
+            ],
+            "data_sectors": [
+              [
+                13,
+                5
+              ],
+              [
+                13,
+                6
+              ],
+              [
+                13,
+                7
+              ],
+              [
+                13,
+                8
+              ],
+              [
+                13,
+                9
+              ],
+              [
+                13,
+                10
+              ],
+              [
+                13,
+                11
+              ],
+              [
+                13,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 16.0",
+            "type": 0,
+            "bytes": 2250,
+            "sha256": "a79403cfbbb209875d4c5381d28fba0a6081a7ee332bf0170c62706e964106f5",
+            "ts": [
+              13,
+              13
+            ],
+            "data_sectors": [
+              [
+                13,
+                14
+              ],
+              [
+                13,
+                15
+              ],
+              [
+                14,
+                0
+              ],
+              [
+                14,
+                1
+              ],
+              [
+                14,
+                2
+              ],
+              [
+                14,
+                3
+              ],
+              [
+                14,
+                4
+              ],
+              [
+                14,
+                5
+              ],
+              [
+                14,
+                6
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 17.0",
+            "type": 0,
+            "bytes": 2053,
+            "sha256": "16c1d53d6669c8fbd8d2bb4b13ddd80bafeef7adf2dff68ae7142ffa012b6715",
+            "ts": [
+              14,
+              7
+            ],
+            "data_sectors": [
+              [
+                14,
+                8
+              ],
+              [
+                14,
+                9
+              ],
+              [
+                14,
+                10
+              ],
+              [
+                14,
+                11
+              ],
+              [
+                14,
+                12
+              ],
+              [
+                14,
+                13
+              ],
+              [
+                14,
+                14
+              ],
+              [
+                14,
+                15
+              ],
+              [
+                15,
+                0
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 18.0",
+            "type": 0,
+            "bytes": 870,
+            "sha256": "bef7a5c19c98b4e56e0ac27564d44ec703e0e1198143055587322f41643b13a7",
+            "ts": [
+              15,
+              1
+            ],
+            "data_sectors": [
+              [
+                15,
+                2
+              ],
+              [
+                15,
+                3
+              ],
+              [
+                15,
+                4
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 19.0",
+            "type": 0,
+            "bytes": 2181,
+            "sha256": "75c4c11451142c14ea5a89d5d04524548ff01c974c402c208bb0fce807e1828e",
+            "ts": [
+              15,
+              6
+            ],
+            "data_sectors": [
+              [
+                15,
+                7
+              ],
+              [
+                15,
+                8
+              ],
+              [
+                15,
+                9
+              ],
+              [
+                15,
+                10
+              ],
+              [
+                15,
+                11
+              ],
+              [
+                15,
+                12
+              ],
+              [
+                15,
+                13
+              ],
+              [
+                15,
+                14
+              ],
+              [
+                15,
+                15
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 20.0",
+            "type": 0,
+            "bytes": 474,
+            "sha256": "41349e880fe2db685997af69a0cb5c531909e926890f20858103ca593a96182c",
+            "ts": [
+              16,
+              0
+            ],
+            "data_sectors": [
+              [
+                16,
+                1
+              ],
+              [
+                16,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 21.0",
+            "type": 0,
+            "bytes": 1678,
+            "sha256": "f1fb6d6f19864cd6870134c7c5b65efcd187d4a44d33e3e0c1e73159443da6ee",
+            "ts": [
+              16,
+              3
+            ],
+            "data_sectors": [
+              [
+                16,
+                4
+              ],
+              [
+                16,
+                5
+              ],
+              [
+                16,
+                6
+              ],
+              [
+                16,
+                7
+              ],
+              [
+                16,
+                8
+              ],
+              [
+                16,
+                9
+              ],
+              [
+                16,
+                10
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 22.0",
+            "type": 0,
+            "bytes": 457,
+            "sha256": "8d0591b063a43f5feb55572cafe3483b68a2a47620a71e4459ff26a2eb839e0c",
+            "ts": [
+              16,
+              11
+            ],
+            "data_sectors": [
+              [
+                16,
+                12
+              ],
+              [
+                16,
+                13
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 32.1",
+            "type": 0,
+            "bytes": 426,
+            "sha256": "f81e14f3a1b3502e02a19ba1305c5e52b51cc71d6c909ff9590eafa79967ad9e",
+            "ts": [
+              16,
+              14
+            ],
+            "data_sectors": [
+              [
+                16,
+                15
+              ],
+              [
+                18,
+                0
+              ]
+            ]
+          },
+          {
+            "name": "START",
+            "type": 0,
+            "bytes": 256,
+            "sha256": "60505279a89ccf417ae67f4549eb57976729181b5c25aabe42e7adbfd506268a",
+            "ts": [
+              18,
+              1
+            ],
+            "data_sectors": [
+              [
+                18,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "TRAVEL",
+            "type": 0,
+            "bytes": 1743,
+            "sha256": "4291362974a43b7567e50cc555b5d9576af87e6ce0c3e84fff5fb79e7b3cd091",
+            "ts": [
+              18,
+              3
+            ],
+            "data_sectors": [
+              [
+                18,
+                4
+              ],
+              [
+                18,
+                5
+              ],
+              [
+                18,
+                6
+              ],
+              [
+                18,
+                7
+              ],
+              [
+                18,
+                8
+              ],
+              [
+                18,
+                9
+              ],
+              [
+                18,
+                10
+              ]
+            ]
+          },
+          {
+            "name": "TUNNEL",
+            "type": 0,
+            "bytes": 2052,
+            "sha256": "d9717b1947dc2e4d51b57f498423e6a8bc6452406469f0b7aa1bbd50e43c4ad3",
+            "ts": [
+              18,
+              11
+            ],
+            "data_sectors": [
+              [
+                18,
+                12
+              ],
+              [
+                18,
+                13
+              ],
+              [
+                18,
+                14
+              ],
+              [
+                18,
+                15
+              ],
+              [
+                19,
+                0
+              ],
+              [
+                19,
+                1
+              ],
+              [
+                19,
+                2
+              ],
+              [
+                19,
+                3
+              ],
+              [
+                19,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "ADVEN INTERP.OBJ",
+            "type": 4,
+            "bytes": 1536,
+            "sha256": "c8d2fe12ce61b921ce88d8e8834ef78c87383633a6506c446e33e60d19531e80",
+            "ts": [
+              19,
+              5
+            ],
+            "data_sectors": [
+              [
+                19,
+                6
+              ],
+              [
+                19,
+                7
+              ],
+              [
+                19,
+                8
+              ],
+              [
+                19,
+                9
+              ],
+              [
+                19,
+                10
+              ],
+              [
+                19,
+                11
+              ]
+            ]
+          },
+          {
+            "name": "CHAR GEN",
+            "type": 4,
+            "bytes": 2304,
+            "sha256": "e46f017a45f82e5b03d75cc54ccb8deb3e81b8747a9fadd61c01a1d085da80fe",
+            "ts": [
+              19,
+              12
+            ],
+            "data_sectors": [
+              [
+                19,
+                13
+              ],
+              [
+                19,
+                14
+              ],
+              [
+                19,
+                15
+              ],
+              [
+                20,
+                0
+              ],
+              [
+                20,
+                1
+              ],
+              [
+                20,
+                2
+              ],
+              [
+                20,
+                3
+              ],
+              [
+                20,
+                4
+              ],
+              [
+                20,
+                5
+              ]
+            ]
+          },
+          {
+            "name": "INTRIN.OBJ",
+            "type": 4,
+            "bytes": 5120,
+            "sha256": "0b4912e62ab740e12a3f76f8e7308ef27eabc0432d494e9ddbdfd9a3cd2c6cfb",
+            "ts": [
+              20,
+              6
+            ],
+            "data_sectors": [
+              [
+                20,
+                7
+              ],
+              [
+                20,
+                8
+              ],
+              [
+                20,
+                9
+              ],
+              [
+                20,
+                10
+              ],
+              [
+                20,
+                11
+              ],
+              [
+                20,
+                12
+              ],
+              [
+                20,
+                13
+              ],
+              [
+                20,
+                14
+              ],
+              [
+                20,
+                15
+              ],
+              [
+                21,
+                0
+              ],
+              [
+                21,
+                1
+              ],
+              [
+                21,
+                2
+              ],
+              [
+                21,
+                3
+              ],
+              [
+                21,
+                4
+              ],
+              [
+                21,
+                5
+              ],
+              [
+                21,
+                6
+              ],
+              [
+                21,
+                7
+              ],
+              [
+                21,
+                8
+              ],
+              [
+                21,
+                9
+              ],
+              [
+                21,
+                10
+              ]
+            ]
+          },
+          {
+            "name": "PARMS.OBJ",
+            "type": 4,
+            "bytes": 256,
+            "sha256": "430844728d164480732e9930ff0cfea1ed61f1d75b219fa44d2dbff2b1ee7ab3",
+            "ts": [
+              21,
+              11
+            ],
+            "data_sectors": [
+              [
+                21,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "AF1.0",
+            "type": 4,
+            "bytes": 256,
+            "sha256": "5d00b4bc83726621986f1da1c1d5b62bca97fc3db4fb23b66b3dda919c4f6af8",
+            "ts": [
+              21,
+              13
+            ],
+            "data_sectors": [
+              [
+                21,
+                14
+              ]
+            ]
+          },
+          {
+            "name": "AMULET",
+            "type": 4,
+            "bytes": 1024,
+            "sha256": "f9831300453233b2d67de5cb883ef78e090daef3d9e3924912b4d67968dae937",
+            "ts": [
+              21,
+              15
+            ],
+            "data_sectors": [
+              [
+                22,
+                0
+              ],
+              [
+                22,
+                1
+              ],
+              [
+                22,
+                2
+              ],
+              [
+                22,
+                3
+              ]
+            ]
+          },
+          {
+            "name": "BACK JEEP",
+            "type": 4,
+            "bytes": 1024,
+            "sha256": "22c284b65076dd6a4a1506ae1635a76ad63a7ce20baadd2ac218c5979da77c9a",
+            "ts": [
+              22,
+              4
+            ],
+            "data_sectors": [
+              [
+                22,
+                5
+              ],
+              [
+                22,
+                6
+              ],
+              [
+                22,
+                7
+              ],
+              [
+                22,
+                8
+              ]
+            ]
+          },
+          {
+            "name": "CRYPT-TOT",
+            "type": 4,
+            "bytes": 2560,
+            "sha256": "c094b3fd031ee0e22eca8721211287e673bbd16f4692ad7aa52d69b06a47d653",
+            "ts": [
+              22,
+              9
+            ],
+            "data_sectors": [
+              [
+                22,
+                10
+              ],
+              [
+                22,
+                11
+              ],
+              [
+                22,
+                12
+              ],
+              [
+                22,
+                13
+              ],
+              [
+                22,
+                14
+              ],
+              [
+                22,
+                15
+              ],
+              [
+                23,
+                0
+              ],
+              [
+                23,
+                1
+              ],
+              [
+                23,
+                2
+              ],
+              [
+                23,
+                3
+              ]
+            ]
+          },
+          {
+            "name": "FLUTE",
+            "type": 4,
+            "bytes": 2560,
+            "sha256": "3932529d84b7a81507908343899194ddf04a687010c1eff7ca25135ce6182f65",
+            "ts": [
+              23,
+              4
+            ],
+            "data_sectors": [
+              [
+                23,
+                5
+              ],
+              [
+                23,
+                6
+              ],
+              [
+                23,
+                7
+              ],
+              [
+                23,
+                8
+              ],
+              [
+                23,
+                9
+              ],
+              [
+                23,
+                10
+              ],
+              [
+                23,
+                11
+              ],
+              [
+                23,
+                12
+              ],
+              [
+                23,
+                13
+              ],
+              [
+                23,
+                14
+              ]
+            ]
+          },
+          {
+            "name": "GOLD BOWL",
+            "type": 4,
+            "bytes": 512,
+            "sha256": "58aef842c9ecba9642cff20c87197f3a3123d6cc107b00ecc9f3699c173d4349",
+            "ts": [
+              23,
+              15
+            ],
+            "data_sectors": [
+              [
+                24,
+                0
+              ],
+              [
+                24,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "JADE BOWL",
+            "type": 4,
+            "bytes": 512,
+            "sha256": "6aae5415002ea8db88ac3ae59ce87b1177d548cc3b2311a1b69576ac1e637f9c",
+            "ts": [
+              24,
+              2
+            ],
+            "data_sectors": [
+              [
+                24,
+                3
+              ],
+              [
+                24,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "JEEP ALON",
+            "type": 4,
+            "bytes": 1280,
+            "sha256": "f67b1ba987639621fdbec369902355692abe92c179e1eead8563530c29493d1f",
+            "ts": [
+              24,
+              5
+            ],
+            "data_sectors": [
+              [
+                24,
+                6
+              ],
+              [
+                24,
+                7
+              ],
+              [
+                24,
+                8
+              ],
+              [
+                24,
+                9
+              ],
+              [
+                24,
+                10
+              ]
+            ]
+          },
+          {
+            "name": "LOGO",
+            "type": 4,
+            "bytes": 2048,
+            "sha256": "6ef55c50acdbc320eb11cddc65c02813339fc7d748aabd928597c5ec9ef536ab",
+            "ts": [
+              24,
+              11
+            ],
+            "data_sectors": [
+              [
+                24,
+                12
+              ],
+              [
+                24,
+                13
+              ],
+              [
+                24,
+                14
+              ],
+              [
+                24,
+                15
+              ],
+              [
+                25,
+                0
+              ],
+              [
+                25,
+                1
+              ],
+              [
+                25,
+                2
+              ],
+              [
+                25,
+                3
+              ]
+            ]
+          },
+          {
+            "name": "MAP",
+            "type": 4,
+            "bytes": 768,
+            "sha256": "42228fbcb81d40baec4abbb87909b00a2faff9f7e7aa9c0acb3adca9b07ed4b3",
+            "ts": [
+              25,
+              4
+            ],
+            "data_sectors": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                6
+              ],
+              [
+                25,
+                7
+              ]
+            ]
+          },
+          {
+            "name": "P1.1",
+            "type": 4,
+            "bytes": 3328,
+            "sha256": "da392901df29c86612917a4adfb3c17e8bb95652ca15401d3cc86333eca6f843",
+            "ts": [
+              25,
+              8
+            ],
+            "data_sectors": [
+              [
+                25,
+                9
+              ],
+              [
+                25,
+                10
+              ],
+              [
+                25,
+                11
+              ],
+              [
+                25,
+                12
+              ],
+              [
+                25,
+                13
+              ],
+              [
+                25,
+                14
+              ],
+              [
+                25,
+                15
+              ],
+              [
+                26,
+                0
+              ],
+              [
+                26,
+                1
+              ],
+              [
+                26,
+                2
+              ],
+              [
+                26,
+                3
+              ],
+              [
+                26,
+                4
+              ],
+              [
+                26,
+                5
+              ]
+            ]
+          },
+          {
+            "name": "P6.5",
+            "type": 4,
+            "bytes": 3072,
+            "sha256": "0a6a6280f3da717268cb9e44259e99fcca3eb09d1505cd6dd6665cef44bfcc45",
+            "ts": [
+              26,
+              6
+            ],
+            "data_sectors": [
+              [
+                26,
+                7
+              ],
+              [
+                26,
+                8
+              ],
+              [
+                26,
+                9
+              ],
+              [
+                26,
+                10
+              ],
+              [
+                26,
+                11
+              ],
+              [
+                26,
+                12
+              ],
+              [
+                26,
+                13
+              ],
+              [
+                26,
+                14
+              ],
+              [
+                26,
+                15
+              ],
+              [
+                27,
+                0
+              ],
+              [
+                27,
+                1
+              ],
+              [
+                27,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "P7.0",
+            "type": 4,
+            "bytes": 4096,
+            "sha256": "45d80d6606dee4f59e24d56ea82fc606713ebec038ef955d8d9948fe08da1170",
+            "ts": [
+              27,
+              3
+            ],
+            "data_sectors": [
+              [
+                27,
+                4
+              ],
+              [
+                27,
+                5
+              ],
+              [
+                27,
+                6
+              ],
+              [
+                27,
+                7
+              ],
+              [
+                27,
+                8
+              ],
+              [
+                27,
+                9
+              ],
+              [
+                27,
+                10
+              ],
+              [
+                27,
+                11
+              ],
+              [
+                27,
+                12
+              ],
+              [
+                27,
+                13
+              ],
+              [
+                27,
+                14
+              ],
+              [
+                27,
+                15
+              ],
+              [
+                28,
+                0
+              ],
+              [
+                28,
+                1
+              ],
+              [
+                28,
+                2
+              ],
+              [
+                28,
+                3
+              ]
+            ]
+          },
+          {
+            "name": "PEDDLER1",
+            "type": 4,
+            "bytes": 2048,
+            "sha256": "bfcf1f650e3a8ad4732c2f63f6cf699ac27906ca591c6474afa0656c3cac80b7",
+            "ts": [
+              28,
+              4
+            ],
+            "data_sectors": [
+              [
+                28,
+                5
+              ],
+              [
+                28,
+                6
+              ],
+              [
+                28,
+                7
+              ],
+              [
+                28,
+                8
+              ],
+              [
+                28,
+                9
+              ],
+              [
+                28,
+                10
+              ],
+              [
+                28,
+                11
+              ],
+              [
+                28,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "SILVR BWL",
+            "type": 4,
+            "bytes": 512,
+            "sha256": "719b7b4cb63a8e7125230f442c05eaa3c27bb00061622b6176bed5c9bdf77430",
+            "ts": [
+              28,
+              13
+            ],
+            "data_sectors": [
+              [
+                28,
+                14
+              ],
+              [
+                28,
+                15
+              ]
+            ]
+          },
+          {
+            "name": "SKEL RM",
+            "type": 4,
+            "bytes": 3840,
+            "sha256": "808d169513477ca0e47cdd619afdba4df62fd08b0810e314fbcd6d914842b16f",
+            "ts": [
+              29,
+              0
+            ],
+            "data_sectors": [
+              [
+                29,
+                1
+              ],
+              [
+                29,
+                2
+              ],
+              [
+                29,
+                3
+              ],
+              [
+                29,
+                4
+              ],
+              [
+                29,
+                5
+              ],
+              [
+                29,
+                6
+              ],
+              [
+                29,
+                7
+              ],
+              [
+                29,
+                8
+              ],
+              [
+                29,
+                9
+              ],
+              [
+                29,
+                10
+              ],
+              [
+                29,
+                11
+              ],
+              [
+                29,
+                12
+              ],
+              [
+                29,
+                13
+              ],
+              [
+                29,
+                14
+              ],
+              [
+                29,
+                15
+              ]
+            ]
+          },
+          {
+            "name": "SNAKE-PIT",
+            "type": 4,
+            "bytes": 3328,
+            "sha256": "afd2ae87c46e76a3b068eab560486fe21d65f31d9979f0d760a783c757759233",
+            "ts": [
+              30,
+              0
+            ],
+            "data_sectors": [
+              [
+                30,
+                1
+              ],
+              [
+                30,
+                2
+              ],
+              [
+                30,
+                3
+              ],
+              [
+                30,
+                4
+              ],
+              [
+                30,
+                5
+              ],
+              [
+                30,
+                6
+              ],
+              [
+                30,
+                7
+              ],
+              [
+                30,
+                8
+              ],
+              [
+                30,
+                9
+              ],
+              [
+                30,
+                10
+              ],
+              [
+                30,
+                11
+              ],
+              [
+                30,
+                12
+              ],
+              [
+                30,
+                13
+              ]
+            ]
+          },
+          {
+            "name": "TEMPL EX",
+            "type": 4,
+            "bytes": 1536,
+            "sha256": "2ca7952e3e806e096e26efd67e45881b72b79b565ab5ce8c37f3583dd6426d1d",
+            "ts": [
+              30,
+              14
+            ],
+            "data_sectors": [
+              [
+                30,
+                15
+              ],
+              [
+                31,
+                0
+              ],
+              [
+                31,
+                1
+              ],
+              [
+                31,
+                2
+              ],
+              [
+                31,
+                3
+              ],
+              [
+                31,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "TEMPLE1",
+            "type": 4,
+            "bytes": 3328,
+            "sha256": "baa00db915f24f15b54e86481348d1fdc27e416b5b245620c329f4c3de434bf0",
+            "ts": [
+              31,
+              5
+            ],
+            "data_sectors": [
+              [
+                31,
+                6
+              ],
+              [
+                31,
+                7
+              ],
+              [
+                31,
+                8
+              ],
+              [
+                31,
+                9
+              ],
+              [
+                31,
+                10
+              ],
+              [
+                31,
+                11
+              ],
+              [
+                31,
+                12
+              ],
+              [
+                31,
+                13
+              ],
+              [
+                31,
+                14
+              ],
+              [
+                31,
+                15
+              ],
+              [
+                32,
+                0
+              ],
+              [
+                32,
+                1
+              ],
+              [
+                32,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "TRAVEL1",
+            "type": 4,
+            "bytes": 3584,
+            "sha256": "7b82c709005a1cd291847249c26db82735f859972e991a09f1ba2b0992012891",
+            "ts": [
+              32,
+              3
+            ],
+            "data_sectors": [
+              [
+                32,
+                4
+              ],
+              [
+                32,
+                5
+              ],
+              [
+                32,
+                6
+              ],
+              [
+                32,
+                7
+              ],
+              [
+                32,
+                8
+              ],
+              [
+                32,
+                9
+              ],
+              [
+                32,
+                10
+              ],
+              [
+                32,
+                11
+              ],
+              [
+                32,
+                12
+              ],
+              [
+                32,
+                13
+              ],
+              [
+                32,
+                14
+              ],
+              [
+                32,
+                15
+              ],
+              [
+                33,
+                0
+              ],
+              [
+                33,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "TRAVEL2",
+            "type": 4,
+            "bytes": 3584,
+            "sha256": "2d364ee0752be2890efad43c537af329e8be978547422ea4f870fdf6e45ea359",
+            "ts": [
+              33,
+              2
+            ],
+            "data_sectors": [
+              [
+                33,
+                3
+              ],
+              [
+                33,
+                4
+              ],
+              [
+                33,
+                5
+              ],
+              [
+                33,
+                6
+              ],
+              [
+                33,
+                7
+              ],
+              [
+                33,
+                8
+              ],
+              [
+                33,
+                9
+              ],
+              [
+                33,
+                10
+              ],
+              [
+                33,
+                11
+              ],
+              [
+                33,
+                12
+              ],
+              [
+                33,
+                13
+              ],
+              [
+                33,
+                14
+              ],
+              [
+                33,
+                15
+              ],
+              [
+                34,
+                0
+              ]
+            ]
+          },
+          {
+            "name": "TUN TRVL",
+            "type": 4,
+            "bytes": 2304,
+            "sha256": "dc02fed551e66101b18de9821af153e9bc243c1ad7b03d994272616b151c24dd",
+            "ts": [
+              34,
+              1
+            ],
+            "data_sectors": [
+              [
+                34,
+                2
+              ],
+              [
+                34,
+                3
+              ],
+              [
+                34,
+                4
+              ],
+              [
+                34,
+                5
+              ],
+              [
+                34,
+                6
+              ],
+              [
+                34,
+                7
+              ],
+              [
+                34,
+                8
+              ],
+              [
+                34,
+                9
+              ],
+              [
+                34,
+                10
+              ]
+            ]
+          },
+          {
+            "name": "VIEWS",
+            "type": 4,
+            "bytes": 256,
+            "sha256": "f5454fe9c05f642827bfe12627d0ab3d5e9b5f420f998e27b1c90ae572fd7f4b",
+            "ts": [
+              34,
+              11
+            ],
+            "data_sectors": [
+              [
+                34,
+                12
+              ]
+            ]
+          }
+        ],
+        "free_sectors": 3,
+        "sha256": "b78e156684fcd3497835279cf45295681d6738d8bdffde18189c7bd15608ce52"
+      },
+      "game_b": {
+        "files": [
+          {
+            "name": "DEATH",
+            "type": 0,
+            "bytes": 256,
+            "sha256": "a4c2b577d3de3e8b9f61259d3ec60e5420edf1d54f9d8d1dfe089a8312052115",
+            "ts": [
+              1,
+              0
+            ],
+            "data_sectors": [
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 23.0",
+            "type": 0,
+            "bytes": 933,
+            "sha256": "296ba4fd23e143e879b1dce153a81a515d084424b7cd4e4e5ab6074cd9c0e3be",
+            "ts": [
+              1,
+              2
+            ],
+            "data_sectors": [
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                6
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 23.1",
+            "type": 0,
+            "bytes": 1290,
+            "sha256": "cc7e0c3b97495b7574aff8631b5547531e90d23f45c7d224215b80a3a7eafbea",
+            "ts": [
+              1,
+              7
+            ],
+            "data_sectors": [
+              [
+                1,
+                8
+              ],
+              [
+                1,
+                9
+              ],
+              [
+                1,
+                10
+              ],
+              [
+                1,
+                11
+              ],
+              [
+                1,
+                12
+              ],
+              [
+                1,
+                13
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 24.0",
+            "type": 0,
+            "bytes": 934,
+            "sha256": "aa141a67228fb16d57b7d0d0dd36c93a2097e6f508bbdd76aac97692d782f747",
+            "ts": [
+              1,
+              14
+            ],
+            "data_sectors": [
+              [
+                1,
+                15
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 24.1",
+            "type": 0,
+            "bytes": 1005,
+            "sha256": "a51bc3d127f87ff6438801bb64498a2b1b2090f3f9d1f469ee1f9224351cb3a0",
+            "ts": [
+              3,
+              0
+            ],
+            "data_sectors": [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 25.0",
+            "type": 0,
+            "bytes": 2114,
+            "sha256": "63fd59b1c2a2332915fea22176b3c3f52ed1ff12dcfed397523698fe711aa319",
+            "ts": [
+              3,
+              5
+            ],
+            "data_sectors": [
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                3,
+                12
+              ],
+              [
+                3,
+                13
+              ],
+              [
+                3,
+                14
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 26.0",
+            "type": 0,
+            "bytes": 1255,
+            "sha256": "0dc207a28ee47b69a5028a34fd986b93399e433dcecfdc422ffeeb65617d7d37",
+            "ts": [
+              3,
+              15
+            ],
+            "data_sectors": [
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 27.0",
+            "type": 0,
+            "bytes": 1859,
+            "sha256": "19e1f6b058ee8377783a487fa166b5d7a308396b7267247a19c2261c8e2efa3e",
+            "ts": [
+              4,
+              5
+            ],
+            "data_sectors": [
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                9
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                4,
+                11
+              ],
+              [
+                4,
+                12
+              ],
+              [
+                4,
+                13
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 28.0",
+            "type": 0,
+            "bytes": 993,
+            "sha256": "7e8d3271d4f084fbf2d7ac976c3dbe71cf83e9284b6a215b85546471e7eee472",
+            "ts": [
+              4,
+              14
+            ],
+            "data_sectors": [
+              [
+                4,
+                15
+              ],
+              [
+                5,
+                0
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 29.0",
+            "type": 0,
+            "bytes": 394,
+            "sha256": "de91880ca1ae6b7c247797faf03e1c8760ebd39d4ad0431547f247334b266109",
+            "ts": [
+              5,
+              3
+            ],
+            "data_sectors": [
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 30.0",
+            "type": 0,
+            "bytes": 621,
+            "sha256": "90fb4ed0c13a0b5b2fc66f5a1860e4545f71edf645d19a33c322c319cde9705a",
+            "ts": [
+              5,
+              6
+            ],
+            "data_sectors": [
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                9
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 30.1",
+            "type": 0,
+            "bytes": 620,
+            "sha256": "97ed1250b8b4dfba794e5ec2318f388be455422d70580ecc81fd4c22d5d69c64",
+            "ts": [
+              5,
+              10
+            ],
+            "data_sectors": [
+              [
+                5,
+                11
+              ],
+              [
+                5,
+                12
+              ],
+              [
+                5,
+                13
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 30.2",
+            "type": 0,
+            "bytes": 484,
+            "sha256": "fff3114285dffe49ff49af8ff3f0bd3669cc00ec66af77716c0aff0dd0c83597",
+            "ts": [
+              5,
+              14
+            ],
+            "data_sectors": [
+              [
+                5,
+                15
+              ],
+              [
+                6,
+                0
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 31.0",
+            "type": 0,
+            "bytes": 1610,
+            "sha256": "5ec8f2a37984ccf6f0d2f765aef81ba50f89885833d506b70ca2db7cb0239da6",
+            "ts": [
+              6,
+              1
+            ],
+            "data_sectors": [
+              [
+                6,
+                2
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                6,
+                4
+              ],
+              [
+                6,
+                5
+              ],
+              [
+                6,
+                6
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 31.1",
+            "type": 0,
+            "bytes": 1504,
+            "sha256": "de94ae0cdf6346ed38a0571c326b701ca9a0e9bd9847bd2187cccf005683a109",
+            "ts": [
+              6,
+              9
+            ],
+            "data_sectors": [
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                6,
+                12
+              ],
+              [
+                6,
+                13
+              ],
+              [
+                6,
+                14
+              ],
+              [
+                6,
+                15
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 32.0",
+            "type": 0,
+            "bytes": 671,
+            "sha256": "747c8cc7e169c3d104e55982a2951a49036f6bc319b6c6574751b931c1418299",
+            "ts": [
+              7,
+              0
+            ],
+            "data_sectors": [
+              [
+                7,
+                1
+              ],
+              [
+                7,
+                2
+              ],
+              [
+                7,
+                3
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 33.0",
+            "type": 0,
+            "bytes": 925,
+            "sha256": "70cdcd2cac16f90e0526d670dfdd44f3c44d96e67fc257bb4bdc7c3dbb2d262c",
+            "ts": [
+              7,
+              4
+            ],
+            "data_sectors": [
+              [
+                7,
+                5
+              ],
+              [
+                7,
+                6
+              ],
+              [
+                7,
+                7
+              ],
+              [
+                7,
+                8
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 34.0",
+            "type": 0,
+            "bytes": 2075,
+            "sha256": "554adeb3d8c196f18c8b25f4149c3b6b9894aa49b09f8d5c8703d2594bf17314",
+            "ts": [
+              7,
+              9
+            ],
+            "data_sectors": [
+              [
+                7,
+                10
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                7,
+                12
+              ],
+              [
+                7,
+                13
+              ],
+              [
+                7,
+                14
+              ],
+              [
+                7,
+                15
+              ],
+              [
+                8,
+                0
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                8,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 34.1",
+            "type": 0,
+            "bytes": 679,
+            "sha256": "5c7e8ba67b62581452ab3a746ee57f3a1947bb413dd0338ed34bacf193f3ca7f",
+            "ts": [
+              8,
+              3
+            ],
+            "data_sectors": [
+              [
+                8,
+                4
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                8,
+                6
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 34.2",
+            "type": 0,
+            "bytes": 576,
+            "sha256": "d0ee7860c53155ff901fc7921d8b36e2491356ca50edcaa599be9f9bbac8a9a8",
+            "ts": [
+              8,
+              7
+            ],
+            "data_sectors": [
+              [
+                8,
+                8
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                10
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 35.0",
+            "type": 0,
+            "bytes": 1408,
+            "sha256": "9a560967c3628fc84b71c78224acc5f6028d9a3dc0ccfddf2dc1b15c6d7a855a",
+            "ts": [
+              8,
+              11
+            ],
+            "data_sectors": [
+              [
+                8,
+                12
+              ],
+              [
+                8,
+                13
+              ],
+              [
+                8,
+                14
+              ],
+              [
+                8,
+                15
+              ],
+              [
+                9,
+                0
+              ],
+              [
+                9,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 36.0",
+            "type": 0,
+            "bytes": 1091,
+            "sha256": "b53844462419765b2fa5e926cdfd50bdf154f32efc886dec24edf165a1f11851",
+            "ts": [
+              9,
+              2
+            ],
+            "data_sectors": [
+              [
+                9,
+                3
+              ],
+              [
+                9,
+                4
+              ],
+              [
+                9,
+                5
+              ],
+              [
+                9,
+                6
+              ],
+              [
+                9,
+                7
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 37.0",
+            "type": 0,
+            "bytes": 2039,
+            "sha256": "98ccad5db28e8db2ffd5e00c3bb549a80ac1a4a7c57ed6856e6b5cc5c59e1a21",
+            "ts": [
+              9,
+              8
+            ],
+            "data_sectors": [
+              [
+                9,
+                9
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                9,
+                12
+              ],
+              [
+                9,
+                13
+              ],
+              [
+                9,
+                14
+              ],
+              [
+                9,
+                15
+              ],
+              [
+                10,
+                0
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 38.0",
+            "type": 0,
+            "bytes": 625,
+            "sha256": "1895a60a8d4593013df3bc7f28fa9f4771745ae9bae77b284d583cd242b4e8db",
+            "ts": [
+              10,
+              1
+            ],
+            "data_sectors": [
+              [
+                10,
+                2
+              ],
+              [
+                10,
+                3
+              ],
+              [
+                10,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 39.0",
+            "type": 0,
+            "bytes": 1514,
+            "sha256": "8d6b2b483e8860c3fb3ab6f9af8d203ccf1af3ab44e8c5332eb1c622f72fd534",
+            "ts": [
+              10,
+              5
+            ],
+            "data_sectors": [
+              [
+                10,
+                6
+              ],
+              [
+                10,
+                7
+              ],
+              [
+                10,
+                8
+              ],
+              [
+                10,
+                9
+              ],
+              [
+                10,
+                10
+              ],
+              [
+                10,
+                11
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 40.0",
+            "type": 0,
+            "bytes": 748,
+            "sha256": "c55e9f319eeb85c11fa19c7234979df818bee3c25bf615bc9dd03a8580b8d557",
+            "ts": [
+              10,
+              12
+            ],
+            "data_sectors": [
+              [
+                10,
+                13
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                10,
+                15
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 41.3",
+            "type": 0,
+            "bytes": 2055,
+            "sha256": "94ee52aa09e4166ff3cdc34d3f68b8017a87260ef25661a1e5a55ba7cfc8b180",
+            "ts": [
+              11,
+              0
+            ],
+            "data_sectors": [
+              [
+                11,
+                1
+              ],
+              [
+                11,
+                2
+              ],
+              [
+                11,
+                3
+              ],
+              [
+                11,
+                4
+              ],
+              [
+                11,
+                5
+              ],
+              [
+                11,
+                6
+              ],
+              [
+                11,
+                7
+              ],
+              [
+                11,
+                8
+              ],
+              [
+                11,
+                9
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 41.0",
+            "type": 0,
+            "bytes": 604,
+            "sha256": "225cdf948668e8141977d7e159935f4aba43483ef0224ea1cc5ca6ae9436b087",
+            "ts": [
+              11,
+              10
+            ],
+            "data_sectors": [
+              [
+                11,
+                11
+              ],
+              [
+                11,
+                12
+              ],
+              [
+                11,
+                13
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 41.1",
+            "type": 0,
+            "bytes": 635,
+            "sha256": "5bc95ac8b0677ea56d5c50b92f85fa4816feb6e139354c0584fc426aa31d9a0b",
+            "ts": [
+              11,
+              14
+            ],
+            "data_sectors": [
+              [
+                11,
+                15
+              ],
+              [
+                12,
+                0
+              ],
+              [
+                12,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 41.2",
+            "type": 0,
+            "bytes": 2196,
+            "sha256": "73a65845b55f673af97db303ddde9ce4133bc10a22b6bfc57b41e47e06e39349",
+            "ts": [
+              12,
+              2
+            ],
+            "data_sectors": [
+              [
+                12,
+                3
+              ],
+              [
+                12,
+                4
+              ],
+              [
+                12,
+                5
+              ],
+              [
+                12,
+                6
+              ],
+              [
+                12,
+                7
+              ],
+              [
+                12,
+                8
+              ],
+              [
+                12,
+                9
+              ],
+              [
+                12,
+                10
+              ],
+              [
+                12,
+                11
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 40.1",
+            "type": 0,
+            "bytes": 1620,
+            "sha256": "a0924ed56256b83414a1ce064a2dfc4fbc514a4c6be7d29b462d2078c2854afa",
+            "ts": [
+              12,
+              12
+            ],
+            "data_sectors": [
+              [
+                12,
+                13
+              ],
+              [
+                12,
+                14
+              ],
+              [
+                12,
+                15
+              ],
+              [
+                13,
+                0
+              ],
+              [
+                13,
+                1
+              ],
+              [
+                13,
+                2
+              ],
+              [
+                13,
+                3
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 42.0",
+            "type": 0,
+            "bytes": 769,
+            "sha256": "d64f5071830257c982eb81b3b23a2d10232dc4aae9d743abf78f4b4611124129",
+            "ts": [
+              13,
+              4
+            ],
+            "data_sectors": [
+              [
+                13,
+                5
+              ],
+              [
+                13,
+                6
+              ],
+              [
+                13,
+                7
+              ],
+              [
+                13,
+                8
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 43.0",
+            "type": 0,
+            "bytes": 2151,
+            "sha256": "58502da3edd0596454f2ddaba2a9edb0fb1da7cf7d476af3c7ed75c9e252d06e",
+            "ts": [
+              13,
+              9
+            ],
+            "data_sectors": [
+              [
+                13,
+                10
+              ],
+              [
+                13,
+                11
+              ],
+              [
+                13,
+                12
+              ],
+              [
+                13,
+                13
+              ],
+              [
+                13,
+                14
+              ],
+              [
+                13,
+                15
+              ],
+              [
+                14,
+                0
+              ],
+              [
+                14,
+                1
+              ],
+              [
+                14,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 44.0",
+            "type": 0,
+            "bytes": 636,
+            "sha256": "7f4649f4e0633382f953dab279510ef010c146f2e11fc0ed0a3479cdebdccd35",
+            "ts": [
+              14,
+              3
+            ],
+            "data_sectors": [
+              [
+                14,
+                4
+              ],
+              [
+                14,
+                5
+              ],
+              [
+                14,
+                6
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 44.1",
+            "type": 0,
+            "bytes": 634,
+            "sha256": "b84646feef1807e7dd12449e495d676d3b1315ee1e5ffb86c1150528c50020a1",
+            "ts": [
+              14,
+              7
+            ],
+            "data_sectors": [
+              [
+                14,
+                8
+              ],
+              [
+                14,
+                9
+              ],
+              [
+                14,
+                10
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 44.2",
+            "type": 0,
+            "bytes": 634,
+            "sha256": "cc6dcfe9513edc075a997424efef38d5a710e2255dfcf38bc61c4dbedeffbab5",
+            "ts": [
+              14,
+              11
+            ],
+            "data_sectors": [
+              [
+                14,
+                12
+              ],
+              [
+                14,
+                13
+              ],
+              [
+                14,
+                14
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 44.3",
+            "type": 0,
+            "bytes": 493,
+            "sha256": "b023ec8b70e80ac9898b0f3ba91255f9447928f793cae7fdace7c2182be6df51",
+            "ts": [
+              14,
+              15
+            ],
+            "data_sectors": [
+              [
+                15,
+                0
+              ],
+              [
+                15,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 44.4",
+            "type": 0,
+            "bytes": 489,
+            "sha256": "3731a89926109b5efbb98cc1627aca92c5209118d6a5cdeeab39b7d0851382b7",
+            "ts": [
+              15,
+              2
+            ],
+            "data_sectors": [
+              [
+                15,
+                3
+              ],
+              [
+                15,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 44.5",
+            "type": 0,
+            "bytes": 635,
+            "sha256": "b4b5ff03214d402db2b3af735de99abce86afb112ea3d95cd461095747890198",
+            "ts": [
+              15,
+              5
+            ],
+            "data_sectors": [
+              [
+                15,
+                6
+              ],
+              [
+                15,
+                7
+              ],
+              [
+                15,
+                8
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 44.6",
+            "type": 0,
+            "bytes": 634,
+            "sha256": "41996e9d712d48f439c0fda52e73935990d124dcfa008ab1bf586769165b83e7",
+            "ts": [
+              15,
+              9
+            ],
+            "data_sectors": [
+              [
+                15,
+                10
+              ],
+              [
+                15,
+                11
+              ],
+              [
+                15,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 44.7",
+            "type": 0,
+            "bytes": 637,
+            "sha256": "988a35425db0003116c23800d8672ced03fcfb60f6a8be61bde81b73f6528c32",
+            "ts": [
+              15,
+              13
+            ],
+            "data_sectors": [
+              [
+                15,
+                14
+              ],
+              [
+                15,
+                15
+              ],
+              [
+                16,
+                0
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 44.8",
+            "type": 0,
+            "bytes": 638,
+            "sha256": "04e22416577078ee725ebe68f80c5a9d6842b66fa1ea7febfeffa5bb66da8449",
+            "ts": [
+              16,
+              1
+            ],
+            "data_sectors": [
+              [
+                16,
+                2
+              ],
+              [
+                16,
+                3
+              ],
+              [
+                16,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 44.9",
+            "type": 0,
+            "bytes": 624,
+            "sha256": "87f8fe6f783e00194a96b28621ed59b42fce104327ba8002c1ae3edde6c19a52",
+            "ts": [
+              16,
+              5
+            ],
+            "data_sectors": [
+              [
+                16,
+                6
+              ],
+              [
+                16,
+                7
+              ],
+              [
+                16,
+                8
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 45.0",
+            "type": 0,
+            "bytes": 668,
+            "sha256": "1ad6aff85da603d3352b5b708233fa1bcfb447b98cd7d1e5b60fd66adab10dab",
+            "ts": [
+              16,
+              9
+            ],
+            "data_sectors": [
+              [
+                16,
+                10
+              ],
+              [
+                16,
+                11
+              ],
+              [
+                16,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 46.0",
+            "type": 0,
+            "bytes": 1676,
+            "sha256": "99f1de51a88410272e5365553b48fbcd99e5a9a632d847a1ae34c9cf1cfb6887",
+            "ts": [
+              16,
+              13
+            ],
+            "data_sectors": [
+              [
+                16,
+                14
+              ],
+              [
+                16,
+                15
+              ],
+              [
+                18,
+                0
+              ],
+              [
+                18,
+                1
+              ],
+              [
+                18,
+                2
+              ],
+              [
+                18,
+                3
+              ],
+              [
+                18,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 47.0",
+            "type": 0,
+            "bytes": 728,
+            "sha256": "73ee512b8c7babbfeab2f3d415e1d74b76d97b1c3dce315fc097e415ff77047a",
+            "ts": [
+              18,
+              5
+            ],
+            "data_sectors": [
+              [
+                18,
+                6
+              ],
+              [
+                18,
+                7
+              ],
+              [
+                18,
+                8
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 49.0",
+            "type": 0,
+            "bytes": 1730,
+            "sha256": "0cb0a0348575b7604afb04d4743f458c46dfc7381ab44e65ad8e0e067a6c3d11",
+            "ts": [
+              18,
+              9
+            ],
+            "data_sectors": [
+              [
+                18,
+                10
+              ],
+              [
+                18,
+                11
+              ],
+              [
+                18,
+                12
+              ],
+              [
+                18,
+                13
+              ],
+              [
+                18,
+                14
+              ],
+              [
+                18,
+                15
+              ],
+              [
+                19,
+                0
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 49.1",
+            "type": 0,
+            "bytes": 1567,
+            "sha256": "b6741da094084a4435230a4fd18934975eaa8da095479d2865476079f4313b64",
+            "ts": [
+              19,
+              1
+            ],
+            "data_sectors": [
+              [
+                19,
+                2
+              ],
+              [
+                19,
+                3
+              ],
+              [
+                19,
+                4
+              ],
+              [
+                19,
+                5
+              ],
+              [
+                19,
+                6
+              ],
+              [
+                19,
+                7
+              ],
+              [
+                19,
+                8
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 49.2",
+            "type": 0,
+            "bytes": 1736,
+            "sha256": "46fdee57ca423b6e5cd30d3ef0e5f7cb1fdc0c98c3ad556394dfee3e0da9b7d5",
+            "ts": [
+              19,
+              9
+            ],
+            "data_sectors": [
+              [
+                19,
+                10
+              ],
+              [
+                19,
+                11
+              ],
+              [
+                19,
+                12
+              ],
+              [
+                19,
+                13
+              ],
+              [
+                19,
+                14
+              ],
+              [
+                19,
+                15
+              ],
+              [
+                20,
+                0
+              ]
+            ]
+          },
+          {
+            "name": "ROOM 50.0",
+            "type": 0,
+            "bytes": 1202,
+            "sha256": "c4cf61dec7adb13f32c0e69df59249c6ac65be8e3a04e0188bea30db29ee2d92",
+            "ts": [
+              20,
+              1
+            ],
+            "data_sectors": [
+              [
+                20,
+                2
+              ],
+              [
+                20,
+                3
+              ],
+              [
+                20,
+                4
+              ],
+              [
+                20,
+                5
+              ],
+              [
+                20,
+                6
+              ]
+            ]
+          },
+          {
+            "name": "TUNNEL",
+            "type": 0,
+            "bytes": 2052,
+            "sha256": "25ddb05a73a00bdf5a1dffb3b325c4e250838923b111bfb2a865b9c75c0fd828",
+            "ts": [
+              20,
+              7
+            ],
+            "data_sectors": [
+              [
+                20,
+                8
+              ],
+              [
+                20,
+                9
+              ],
+              [
+                20,
+                10
+              ],
+              [
+                20,
+                11
+              ],
+              [
+                20,
+                12
+              ],
+              [
+                20,
+                13
+              ],
+              [
+                20,
+                14
+              ],
+              [
+                20,
+                15
+              ],
+              [
+                21,
+                0
+              ]
+            ]
+          },
+          {
+            "name": "AMULET",
+            "type": 4,
+            "bytes": 1024,
+            "sha256": "f9831300453233b2d67de5cb883ef78e090daef3d9e3924912b4d67968dae937",
+            "ts": [
+              21,
+              1
+            ],
+            "data_sectors": [
+              [
+                21,
+                2
+              ],
+              [
+                21,
+                3
+              ],
+              [
+                21,
+                4
+              ],
+              [
+                21,
+                5
+              ]
+            ]
+          },
+          {
+            "name": "BANDITOS",
+            "type": 4,
+            "bytes": 1536,
+            "sha256": "5f21a92dc1ad0adcf640b935aaf4b229cd5d78c7b5b871c1c3529b913e078219",
+            "ts": [
+              21,
+              6
+            ],
+            "data_sectors": [
+              [
+                21,
+                7
+              ],
+              [
+                21,
+                8
+              ],
+              [
+                21,
+                9
+              ],
+              [
+                21,
+                10
+              ],
+              [
+                21,
+                11
+              ],
+              [
+                21,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "FALL PILS",
+            "type": 4,
+            "bytes": 4352,
+            "sha256": "ed5161746201741c99b59b4e526f1abd5ee33d34f6a4773dd9e90e2296588733",
+            "ts": [
+              21,
+              13
+            ],
+            "data_sectors": [
+              [
+                21,
+                14
+              ],
+              [
+                21,
+                15
+              ],
+              [
+                22,
+                0
+              ],
+              [
+                22,
+                1
+              ],
+              [
+                22,
+                2
+              ],
+              [
+                22,
+                3
+              ],
+              [
+                22,
+                4
+              ],
+              [
+                22,
+                5
+              ],
+              [
+                22,
+                6
+              ],
+              [
+                22,
+                7
+              ],
+              [
+                22,
+                8
+              ],
+              [
+                22,
+                9
+              ],
+              [
+                22,
+                10
+              ],
+              [
+                22,
+                11
+              ],
+              [
+                22,
+                12
+              ],
+              [
+                22,
+                13
+              ],
+              [
+                22,
+                14
+              ]
+            ]
+          },
+          {
+            "name": "GEO+STRS",
+            "type": 4,
+            "bytes": 2560,
+            "sha256": "eab06f17becc2a7e742d9e14a48d0b155f12f73ff85782c9ee8a3f931947bda6",
+            "ts": [
+              22,
+              15
+            ],
+            "data_sectors": [
+              [
+                23,
+                0
+              ],
+              [
+                23,
+                1
+              ],
+              [
+                23,
+                2
+              ],
+              [
+                23,
+                3
+              ],
+              [
+                23,
+                4
+              ],
+              [
+                23,
+                5
+              ],
+              [
+                23,
+                6
+              ],
+              [
+                23,
+                7
+              ],
+              [
+                23,
+                8
+              ],
+              [
+                23,
+                9
+              ]
+            ]
+          },
+          {
+            "name": "GOLD BOWL",
+            "type": 4,
+            "bytes": 512,
+            "sha256": "58aef842c9ecba9642cff20c87197f3a3123d6cc107b00ecc9f3699c173d4349",
+            "ts": [
+              23,
+              10
+            ],
+            "data_sectors": [
+              [
+                23,
+                11
+              ],
+              [
+                23,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "HISS-SUNS",
+            "type": 4,
+            "bytes": 1792,
+            "sha256": "fc8b779da39936bd2bda430b11d86cedd1311d8c250283e193df8da1b38dcfea",
+            "ts": [
+              23,
+              13
+            ],
+            "data_sectors": [
+              [
+                23,
+                14
+              ],
+              [
+                23,
+                15
+              ],
+              [
+                24,
+                0
+              ],
+              [
+                24,
+                1
+              ],
+              [
+                24,
+                2
+              ],
+              [
+                24,
+                3
+              ],
+              [
+                24,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "INF PSGS",
+            "type": 4,
+            "bytes": 1792,
+            "sha256": "994d3bfc2aca93843b59c56cdefcc49ee5f37e47ebd96efefbd8e2305f48e313",
+            "ts": [
+              24,
+              5
+            ],
+            "data_sectors": [
+              [
+                24,
+                6
+              ],
+              [
+                24,
+                7
+              ],
+              [
+                24,
+                8
+              ],
+              [
+                24,
+                9
+              ],
+              [
+                24,
+                10
+              ],
+              [
+                24,
+                11
+              ],
+              [
+                24,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "JADE BOWL",
+            "type": 4,
+            "bytes": 512,
+            "sha256": "6aae5415002ea8db88ac3ae59ce87b1177d548cc3b2311a1b69576ac1e637f9c",
+            "ts": [
+              24,
+              13
+            ],
+            "data_sectors": [
+              [
+                24,
+                14
+              ],
+              [
+                24,
+                15
+              ]
+            ]
+          },
+          {
+            "name": "JAG ATACK",
+            "type": 4,
+            "bytes": 4864,
+            "sha256": "7ae12168d49a790d49dacb6f3a9024ebae250a728fcecafe493d8d870ca2cfbf",
+            "ts": [
+              25,
+              0
+            ],
+            "data_sectors": [
+              [
+                25,
+                1
+              ],
+              [
+                25,
+                2
+              ],
+              [
+                25,
+                3
+              ],
+              [
+                25,
+                4
+              ],
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                6
+              ],
+              [
+                25,
+                7
+              ],
+              [
+                25,
+                8
+              ],
+              [
+                25,
+                9
+              ],
+              [
+                25,
+                10
+              ],
+              [
+                25,
+                11
+              ],
+              [
+                25,
+                12
+              ],
+              [
+                25,
+                13
+              ],
+              [
+                25,
+                14
+              ],
+              [
+                25,
+                15
+              ],
+              [
+                26,
+                0
+              ],
+              [
+                26,
+                1
+              ],
+              [
+                26,
+                2
+              ],
+              [
+                26,
+                3
+              ]
+            ]
+          },
+          {
+            "name": "JEEP ALON",
+            "type": 4,
+            "bytes": 1280,
+            "sha256": "f67b1ba987639621fdbec369902355692abe92c179e1eead8563530c29493d1f",
+            "ts": [
+              26,
+              4
+            ],
+            "data_sectors": [
+              [
+                26,
+                5
+              ],
+              [
+                26,
+                6
+              ],
+              [
+                26,
+                7
+              ],
+              [
+                26,
+                8
+              ],
+              [
+                26,
+                9
+              ]
+            ]
+          },
+          {
+            "name": "MAIN PYR",
+            "type": 4,
+            "bytes": 2560,
+            "sha256": "4f4b570d73de79100f6ffa2595215e1b23e7b9eaa74d26b6a777440ff4b12f1f",
+            "ts": [
+              26,
+              10
+            ],
+            "data_sectors": [
+              [
+                26,
+                11
+              ],
+              [
+                26,
+                12
+              ],
+              [
+                26,
+                13
+              ],
+              [
+                26,
+                14
+              ],
+              [
+                26,
+                15
+              ],
+              [
+                27,
+                0
+              ],
+              [
+                27,
+                1
+              ],
+              [
+                27,
+                2
+              ],
+              [
+                27,
+                3
+              ],
+              [
+                27,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "MAP",
+            "type": 4,
+            "bytes": 768,
+            "sha256": "42228fbcb81d40baec4abbb87909b00a2faff9f7e7aa9c0acb3adca9b07ed4b3",
+            "ts": [
+              27,
+              5
+            ],
+            "data_sectors": [
+              [
+                27,
+                6
+              ],
+              [
+                27,
+                7
+              ],
+              [
+                27,
+                8
+              ]
+            ]
+          },
+          {
+            "name": "MASK",
+            "type": 4,
+            "bytes": 1024,
+            "sha256": "4c4d4399184015f0ffc0f00f07d72a8ffc88eeb5973d9a154fe49c95160ad513",
+            "ts": [
+              27,
+              9
+            ],
+            "data_sectors": [
+              [
+                27,
+                10
+              ],
+              [
+                27,
+                11
+              ],
+              [
+                27,
+                12
+              ],
+              [
+                27,
+                13
+              ]
+            ]
+          },
+          {
+            "name": "POOL RM",
+            "type": 4,
+            "bytes": 3584,
+            "sha256": "74e617c92be4033582229d565fa4281bd8c47c7ca55b5c2f13d98709cc97a4d6",
+            "ts": [
+              27,
+              14
+            ],
+            "data_sectors": [
+              [
+                27,
+                15
+              ],
+              [
+                28,
+                0
+              ],
+              [
+                28,
+                1
+              ],
+              [
+                28,
+                2
+              ],
+              [
+                28,
+                3
+              ],
+              [
+                28,
+                4
+              ],
+              [
+                28,
+                5
+              ],
+              [
+                28,
+                6
+              ],
+              [
+                28,
+                7
+              ],
+              [
+                28,
+                8
+              ],
+              [
+                28,
+                9
+              ],
+              [
+                28,
+                10
+              ],
+              [
+                28,
+                11
+              ],
+              [
+                28,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "PYR ENTRN",
+            "type": 4,
+            "bytes": 2048,
+            "sha256": "8ca411e50e6de26f97970132ccebf1ce3017db4c370ab23cd559fe5792ea4453",
+            "ts": [
+              28,
+              13
+            ],
+            "data_sectors": [
+              [
+                28,
+                14
+              ],
+              [
+                28,
+                15
+              ],
+              [
+                29,
+                0
+              ],
+              [
+                29,
+                1
+              ],
+              [
+                29,
+                2
+              ],
+              [
+                29,
+                3
+              ],
+              [
+                29,
+                4
+              ],
+              [
+                29,
+                5
+              ]
+            ]
+          },
+          {
+            "name": "PYR HOLE",
+            "type": 4,
+            "bytes": 2816,
+            "sha256": "c42d8ec994f6a6d5466c2ccc84441ad8e6f294928de6ccf62026052c00dbc124",
+            "ts": [
+              29,
+              6
+            ],
+            "data_sectors": [
+              [
+                29,
+                7
+              ],
+              [
+                29,
+                8
+              ],
+              [
+                29,
+                9
+              ],
+              [
+                29,
+                10
+              ],
+              [
+                29,
+                11
+              ],
+              [
+                29,
+                12
+              ],
+              [
+                29,
+                13
+              ],
+              [
+                29,
+                14
+              ],
+              [
+                29,
+                15
+              ],
+              [
+                30,
+                0
+              ],
+              [
+                30,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "ROBOFFS",
+            "type": 4,
+            "bytes": 2048,
+            "sha256": "d22a6ae82e700254882054eb3492f4eb44c3bad1b52724b64bb8753d82bd2dff",
+            "ts": [
+              30,
+              2
+            ],
+            "data_sectors": [
+              [
+                30,
+                3
+              ],
+              [
+                30,
+                4
+              ],
+              [
+                30,
+                5
+              ],
+              [
+                30,
+                6
+              ],
+              [
+                30,
+                7
+              ],
+              [
+                30,
+                8
+              ],
+              [
+                30,
+                9
+              ],
+              [
+                30,
+                10
+              ]
+            ]
+          },
+          {
+            "name": "SILVR BWL",
+            "type": 4,
+            "bytes": 512,
+            "sha256": "719b7b4cb63a8e7125230f442c05eaa3c27bb00061622b6176bed5c9bdf77430",
+            "ts": [
+              30,
+              11
+            ],
+            "data_sectors": [
+              [
+                30,
+                12
+              ],
+              [
+                30,
+                13
+              ]
+            ]
+          },
+          {
+            "name": "STAIRS",
+            "type": 4,
+            "bytes": 1536,
+            "sha256": "1f9986db1d6f3844d1e18293c7510975c248f95b0dc2368db17beb90eabfa96a",
+            "ts": [
+              30,
+              14
+            ],
+            "data_sectors": [
+              [
+                30,
+                15
+              ],
+              [
+                31,
+                0
+              ],
+              [
+                31,
+                1
+              ],
+              [
+                31,
+                2
+              ],
+              [
+                31,
+                3
+              ],
+              [
+                31,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "STEP STN",
+            "type": 4,
+            "bytes": 1792,
+            "sha256": "6378b01b56ff143ecb490e5b6cea22a5884cc1a88526a558622eace90ff08602",
+            "ts": [
+              31,
+              5
+            ],
+            "data_sectors": [
+              [
+                31,
+                6
+              ],
+              [
+                31,
+                7
+              ],
+              [
+                31,
+                8
+              ],
+              [
+                31,
+                9
+              ],
+              [
+                31,
+                10
+              ],
+              [
+                31,
+                11
+              ],
+              [
+                31,
+                12
+              ]
+            ]
+          },
+          {
+            "name": "SUN ALTAR",
+            "type": 4,
+            "bytes": 3072,
+            "sha256": "91b077e315d950d3b39e66d8bbe7b22c99f6ea536be4bd47aec70d6f7827e2fc",
+            "ts": [
+              31,
+              13
+            ],
+            "data_sectors": [
+              [
+                31,
+                14
+              ],
+              [
+                31,
+                15
+              ],
+              [
+                32,
+                0
+              ],
+              [
+                32,
+                1
+              ],
+              [
+                32,
+                2
+              ],
+              [
+                32,
+                3
+              ],
+              [
+                32,
+                4
+              ],
+              [
+                32,
+                5
+              ],
+              [
+                32,
+                6
+              ],
+              [
+                32,
+                7
+              ],
+              [
+                32,
+                8
+              ],
+              [
+                32,
+                9
+              ]
+            ]
+          },
+          {
+            "name": "SUN TEMPL",
+            "type": 4,
+            "bytes": 1536,
+            "sha256": "381442ad6b431944b6e7804bc4610817bb608f90e7edec314dfb8c3a647e2fcf",
+            "ts": [
+              32,
+              10
+            ],
+            "data_sectors": [
+              [
+                32,
+                11
+              ],
+              [
+                32,
+                12
+              ],
+              [
+                32,
+                13
+              ],
+              [
+                32,
+                14
+              ],
+              [
+                32,
+                15
+              ],
+              [
+                33,
+                0
+              ]
+            ]
+          },
+          {
+            "name": "TALK FACE",
+            "type": 4,
+            "bytes": 2048,
+            "sha256": "9ae1c577c30b2cc1374b843a6e0543a02ca6c05607f556aaa9245c5a5234bf98",
+            "ts": [
+              33,
+              1
+            ],
+            "data_sectors": [
+              [
+                33,
+                2
+              ],
+              [
+                33,
+                3
+              ],
+              [
+                33,
+                4
+              ],
+              [
+                33,
+                5
+              ],
+              [
+                33,
+                6
+              ],
+              [
+                33,
+                7
+              ],
+              [
+                33,
+                8
+              ],
+              [
+                33,
+                9
+              ]
+            ]
+          },
+          {
+            "name": "TUN TRVL",
+            "type": 4,
+            "bytes": 2304,
+            "sha256": "dc02fed551e66101b18de9821af153e9bc243c1ad7b03d994272616b151c24dd",
+            "ts": [
+              33,
+              10
+            ],
+            "data_sectors": [
+              [
+                33,
+                11
+              ],
+              [
+                33,
+                12
+              ],
+              [
+                33,
+                13
+              ],
+              [
+                33,
+                14
+              ],
+              [
+                33,
+                15
+              ],
+              [
+                34,
+                0
+              ],
+              [
+                34,
+                1
+              ],
+              [
+                34,
+                2
+              ],
+              [
+                34,
+                3
+              ]
+            ]
+          },
+          {
+            "name": "VICT ALTR",
+            "type": 4,
+            "bytes": 1280,
+            "sha256": "4a1d353434f62f127182790e1f8b44c45fce13b2c7cb7f2073e2c5b694e654bf",
+            "ts": [
+              34,
+              4
+            ],
+            "data_sectors": [
+              [
+                34,
+                5
+              ],
+              [
+                34,
+                6
+              ],
+              [
+                34,
+                7
+              ],
+              [
+                34,
+                8
+              ],
+              [
+                34,
+                9
+              ]
+            ]
+          }
+        ],
+        "free_sectors": 6,
+        "sha256": "a5ce944240bd15756f124ce8804b7f753462a49371a8802da10847c20d3f58bf"
+      },
+      "scope_limit": "Complete synthetic allocation; runtime/gameplay verification is separate. Native UI remains English. No approved translations."
+    },
+    "cases": [
+      {
+        "number": 1,
+        "side": "a",
+        "name": "DEATH",
+        "destination": 26624,
+        "script_bytes": 232,
+        "pool_bytes": 0,
+        "script_sha256": "681815e42504e33d1d1f71ab091d7368043b5241126a3e4fd768fbcfde32a660",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 2,
+        "side": "a",
+        "name": "INITIAL",
+        "destination": 26624,
+        "script_bytes": 1763,
+        "pool_bytes": 0,
+        "script_sha256": "0786712eb32407ff7cadfaa7f0c7400cb4c778451e8ea25306c1d7c593797fa9",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 3,
+        "side": "a",
+        "name": "LIBRARY",
+        "destination": 28672,
+        "script_bytes": 9125,
+        "pool_bytes": 0,
+        "script_sha256": "30bfad61a49be1a3304896432210b850c4715c8072213572973318b6ce51367c",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 4,
+        "side": "a",
+        "name": "ROOM 1.0",
+        "destination": 26624,
+        "script_bytes": 831,
+        "pool_bytes": 725,
+        "script_sha256": "1984389a7f654f99c59bfea322e56ebebe30bbde9d8b419b3b6cbc97b2b2af7a",
+        "pool_sha256": "82ea4cff6eae73c8ad4d809d20bfd4b05d5c19e8548b124c4433e56c0df11330",
+        "early_track_sectors": []
+      },
+      {
+        "number": 5,
+        "side": "a",
+        "name": "ROOM 10.0",
+        "destination": 26624,
+        "script_bytes": 725,
+        "pool_bytes": 894,
+        "script_sha256": "e068828f9ac48334e816b0f818d5756819211393d95d139153d88cb12954ef5a",
+        "pool_sha256": "0aab24e200703c3155bbb114374312612e95d0cd7c2ef79a7f5148031c3568b5",
+        "early_track_sectors": []
+      },
+      {
+        "number": 6,
+        "side": "a",
+        "name": "ROOM 11.0",
+        "destination": 26624,
+        "script_bytes": 672,
+        "pool_bytes": 387,
+        "script_sha256": "441329aa6d5f4c7c36f9420da54df8bd772e6852bef84b18d74d03412c36ba1d",
+        "pool_sha256": "4dd65ee17f3057bd0545400617cf79f278d190db6390676463ba2298670a4480",
+        "early_track_sectors": []
+      },
+      {
+        "number": 7,
+        "side": "a",
+        "name": "ROOM 12.0",
+        "destination": 26624,
+        "script_bytes": 209,
+        "pool_bytes": 127,
+        "script_sha256": "3ad5b194594308401678b4fa6263969d90a09d26930997d632a6dd9d00cb16af",
+        "pool_sha256": "589808421790d3a7f80e13f636dccee3f6d1ef6a86094195db623fbad0a0682b",
+        "early_track_sectors": []
+      },
+      {
+        "number": 8,
+        "side": "a",
+        "name": "ROOM 13.0",
+        "destination": 26624,
+        "script_bytes": 579,
+        "pool_bytes": 0,
+        "script_sha256": "e0029ae78a7e15e0309c3e0fa7cc9d6c1fc321c702994cb252ac13a4ac6c2327",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 9,
+        "side": "a",
+        "name": "ROOM 14.0",
+        "destination": 26624,
+        "script_bytes": 871,
+        "pool_bytes": 418,
+        "script_sha256": "e5da13dbd18c40fcc58f0c38befe5707b5c6c376dd43c23ed87b4fa577eff8b9",
+        "pool_sha256": "9c1e9fc5e7cfd6f0aade16155efba27a98115ca095cdf6ebd7224747ea840f00",
+        "early_track_sectors": []
+      },
+      {
+        "number": 10,
+        "side": "a",
+        "name": "ROOM 15.0",
+        "destination": 26624,
+        "script_bytes": 1155,
+        "pool_bytes": 867,
+        "script_sha256": "e121c1b48a88bb30530377776003ee37751992d05daa16870eeb8f4ad7d618fc",
+        "pool_sha256": "2977ab8e94540774948e294fc1218e5f2d14a620866913d544b97a9a87c696e3",
+        "early_track_sectors": []
+      },
+      {
+        "number": 11,
+        "side": "a",
+        "name": "ROOM 16.0",
+        "destination": 26624,
+        "script_bytes": 1381,
+        "pool_bytes": 845,
+        "script_sha256": "d455a0e309cddf72353019d334b3ebcaa32040e185fc32652c9123db564306bf",
+        "pool_sha256": "d519e15a034c0cfa4430ef06bcd99a563413095b3f93f994bf58820817fd1f06",
+        "early_track_sectors": []
+      },
+      {
+        "number": 12,
+        "side": "a",
+        "name": "ROOM 17.0",
+        "destination": 26624,
+        "script_bytes": 1289,
+        "pool_bytes": 740,
+        "script_sha256": "2be88bbf0df23d3a301c84249ea691998196330c5fd618cd72db37c42ccef681",
+        "pool_sha256": "36720c91d6d6a16780b5f4ac9053b867c86b2c021082a024929d188775b34877",
+        "early_track_sectors": []
+      },
+      {
+        "number": 13,
+        "side": "a",
+        "name": "ROOM 18.0",
+        "destination": 26624,
+        "script_bytes": 491,
+        "pool_bytes": 355,
+        "script_sha256": "c0741c588ac503bbc776e72899f54b30bb8c741499ad4f0e03939ea991688e73",
+        "pool_sha256": "51421af551c668a69a19da6a179620c164181e52a892c485f559a50a38aa5d05",
+        "early_track_sectors": []
+      },
+      {
+        "number": 14,
+        "side": "a",
+        "name": "ROOM 19.0",
+        "destination": 26624,
+        "script_bytes": 1346,
+        "pool_bytes": 811,
+        "script_sha256": "ab30742c48db0e854c93d790d17531e86bf4061dc163427bda65c04d62b7cfff",
+        "pool_sha256": "70985ea8169d97c4652d06312dab84cff11027e0b50cd6b54a24c240a105d993",
+        "early_track_sectors": []
+      },
+      {
+        "number": 15,
+        "side": "a",
+        "name": "ROOM 2.0",
+        "destination": 26624,
+        "script_bytes": 570,
+        "pool_bytes": 482,
+        "script_sha256": "cf6392b8fcc2fa9dd2a740a09d0453ba6b038100b1c6bc424aee39919bfca3de",
+        "pool_sha256": "38f860376b1fa6466b788d0a1fbcc97f495b4a8e49d580dec19305682817d539",
+        "early_track_sectors": []
+      },
+      {
+        "number": 16,
+        "side": "a",
+        "name": "ROOM 2.1",
+        "destination": 26624,
+        "script_bytes": 177,
+        "pool_bytes": 105,
+        "script_sha256": "06eb7618d84d97ee8741b99bff4e3027eb24a6ad9cf5aeeb77b0a765cccda281",
+        "pool_sha256": "4fa47c9495cc8ffc4ecb2bf6292791eb5db006508a73e7ce0c98dec82b463f7f",
+        "early_track_sectors": []
+      },
+      {
+        "number": 17,
+        "side": "a",
+        "name": "ROOM 20.0",
+        "destination": 26624,
+        "script_bytes": 360,
+        "pool_bytes": 90,
+        "script_sha256": "f32c4894bfc5fac44c44fbac111adf055c7b893fa4f2ea245bed4ca33c7cfb84",
+        "pool_sha256": "4370d2e4241bcf62844c9cf546f7641461176749aed51be54217c4e25e555fab",
+        "early_track_sectors": []
+      },
+      {
+        "number": 18,
+        "side": "a",
+        "name": "ROOM 21.0",
+        "destination": 26624,
+        "script_bytes": 950,
+        "pool_bytes": 704,
+        "script_sha256": "23aa4d24f3d65cdc1258cc7014690c2a179a65d5c4f3c50e5a26667e0a984cff",
+        "pool_sha256": "e890738bb1d7e2c698b75fadb2f23ee1169619ab5bdf27d8f5839c9da930b81c",
+        "early_track_sectors": []
+      },
+      {
+        "number": 19,
+        "side": "a",
+        "name": "ROOM 22.0",
+        "destination": 26624,
+        "script_bytes": 341,
+        "pool_bytes": 92,
+        "script_sha256": "2fcf08d58ff3d4bc6469974c94c26392048f70719fa26414f625814ad02d8348",
+        "pool_sha256": "27a5331a462caa170e9f3f5e3be2a7fa698c5124d532fd68bf79dc10f79c6a80",
+        "early_track_sectors": []
+      },
+      {
+        "number": 20,
+        "side": "a",
+        "name": "ROOM 3.0",
+        "destination": 26624,
+        "script_bytes": 341,
+        "pool_bytes": 92,
+        "script_sha256": "0146f0cc43fc90e9bffe0a292b67e12518fcf836f56598cd490cd5fc1a1678a4",
+        "pool_sha256": "71ec35f71f5324475b5aeb484bb53b6f801bac10b4fdd2fbb980bc5d91521844",
+        "early_track_sectors": []
+      },
+      {
+        "number": 21,
+        "side": "a",
+        "name": "ROOM 32.1",
+        "destination": 26624,
+        "script_bytes": 343,
+        "pool_bytes": 59,
+        "script_sha256": "16fe2ca8a7f6498650312a1a751bd027f69e56f46427a50b1e567baf31097297",
+        "pool_sha256": "bcc9a87b00047faec5c33c1422adc1f6f84be07cb5d9ce3274d5476745df6a5a",
+        "early_track_sectors": []
+      },
+      {
+        "number": 22,
+        "side": "a",
+        "name": "ROOM 4.0",
+        "destination": 26624,
+        "script_bytes": 301,
+        "pool_bytes": 187,
+        "script_sha256": "54a384a7beb44d708098920ec523d7dc738ea69037cfdcf66a9671a6ea5d4aa7",
+        "pool_sha256": "d12bfc97a34a48a0b0dbd6e451002505f2a1de8e81a37ec3b96f2ea177ed3ef5",
+        "early_track_sectors": []
+      },
+      {
+        "number": 23,
+        "side": "a",
+        "name": "ROOM 5.0",
+        "destination": 26624,
+        "script_bytes": 381,
+        "pool_bytes": 325,
+        "script_sha256": "06029d732c6f15beee830de696971ad363da6e3ec62fcd7600c32294b3a1a427",
+        "pool_sha256": "8e293ea513626dba4833de262501138ddce2134edd2f7f27440dc75ad8959f27",
+        "early_track_sectors": []
+      },
+      {
+        "number": 24,
+        "side": "a",
+        "name": "ROOM 5.1",
+        "destination": 26624,
+        "script_bytes": 396,
+        "pool_bytes": 276,
+        "script_sha256": "a9793d2f44cb2e1e2f338351d944aa81fbd2121a243f478761173515669b2250",
+        "pool_sha256": "d628ad3de7c78c49ff24b7a4510fc6b87abed9a8d7ac8480a90de7c35e724547",
+        "early_track_sectors": []
+      },
+      {
+        "number": 25,
+        "side": "a",
+        "name": "ROOM 6.0",
+        "destination": 26624,
+        "script_bytes": 1161,
+        "pool_bytes": 903,
+        "script_sha256": "40ebb56f51bb1bc3beb9d2ad8aab6d461d9959090e550aee1196d577f16e8be4",
+        "pool_sha256": "b120dd895c5313a7965821abf3b7e4ec92f0e16ae44eb638bda12c504d241349",
+        "early_track_sectors": []
+      },
+      {
+        "number": 26,
+        "side": "a",
+        "name": "ROOM 6.1",
+        "destination": 26624,
+        "script_bytes": 1384,
+        "pool_bytes": 78,
+        "script_sha256": "f74bed25ec7cab710ac793d763dd55d77a999efa5bd10eab0d1074476b0b97b6",
+        "pool_sha256": "73c54768410dd5d5db08b443992911d9a44da7313d6cba085cec01f4a11f38eb",
+        "early_track_sectors": []
+      },
+      {
+        "number": 27,
+        "side": "a",
+        "name": "ROOM 6.2",
+        "destination": 26624,
+        "script_bytes": 273,
+        "pool_bytes": 124,
+        "script_sha256": "99277338f951c1670446c774afa1b3822a237d1ae9105a11f6c58cdf6bb85eb2",
+        "pool_sha256": "03b3ef6a6cea99f17871c3b63988d3ec74ce9e5d1358efddce3e302583e7ac7f",
+        "early_track_sectors": []
+      },
+      {
+        "number": 28,
+        "side": "a",
+        "name": "ROOM 7.0",
+        "destination": 26624,
+        "script_bytes": 352,
+        "pool_bytes": 351,
+        "script_sha256": "03cefd75f6c6e26208a1dc35c84fe3a433251ed22f60243252c9aa68b616590e",
+        "pool_sha256": "b6229ed29811fe944f3008c63c538dc797ccfb2b63f85ed2696ce2aa749c15d4",
+        "early_track_sectors": []
+      },
+      {
+        "number": 29,
+        "side": "a",
+        "name": "ROOM 7.1",
+        "destination": 26624,
+        "script_bytes": 410,
+        "pool_bytes": 380,
+        "script_sha256": "45fc19be067385bf649f543aa914bcfaacf1494d08df1eedd5214a50493cce1e",
+        "pool_sha256": "93c7f77893ba6128e414c207433e2c475b0f194638a2a216fea6548e59e45383",
+        "early_track_sectors": []
+      },
+      {
+        "number": 30,
+        "side": "a",
+        "name": "ROOM 8.0",
+        "destination": 26624,
+        "script_bytes": 479,
+        "pool_bytes": 497,
+        "script_sha256": "9032eafe8ba544d6c767d5330e2dae617cefe60e9859b24b850cc6c77c37dfdd",
+        "pool_sha256": "d57d70ad8b05fd035307ede72259a8f5af9266fedffb7d276c6abd45e2d9814c",
+        "early_track_sectors": []
+      },
+      {
+        "number": 31,
+        "side": "a",
+        "name": "ROOM 9.0",
+        "destination": 26624,
+        "script_bytes": 1326,
+        "pool_bytes": 249,
+        "script_sha256": "388ae2db794d05d7a8cb0810859d4fbe22b93ad16acffa9c5e468235eb9b2cd0",
+        "pool_sha256": "dd61a57740d810a622ff01019ed57e05f75843698ef08623a32106044dfed519",
+        "early_track_sectors": []
+      },
+      {
+        "number": 32,
+        "side": "a",
+        "name": "ROOM 9.1",
+        "destination": 26624,
+        "script_bytes": 1109,
+        "pool_bytes": 487,
+        "script_sha256": "6ce9c3a18c85f672bab45f1634252362389ac3600a7a31911f3a8f41983ace1a",
+        "pool_sha256": "554a588f25719983aae3fce86cc1bd928cdf446fcb2a7e92d39ede0f19882dca",
+        "early_track_sectors": []
+      },
+      {
+        "number": 33,
+        "side": "a",
+        "name": "ROOM 9.2",
+        "destination": 26624,
+        "script_bytes": 864,
+        "pool_bytes": 661,
+        "script_sha256": "b334cc20e89744eb5ac79ab0f9c8b34fce4dc07b61579fb397aecdbee35a3432",
+        "pool_sha256": "458efa8a1ac1f4b62c17a7ca079d6910abb34ca2c7db51c4a6a121b3d3595a8f",
+        "early_track_sectors": []
+      },
+      {
+        "number": 34,
+        "side": "a",
+        "name": "TRAVEL",
+        "destination": 26624,
+        "script_bytes": 1581,
+        "pool_bytes": 138,
+        "script_sha256": "1529497914786963a43a88fe956a280e37323e29e29171e907187029ab810386",
+        "pool_sha256": "e013e7b83651fb63d2e542c600cef5ed85fc78c8f892d83e313ba6b7cd92383b",
+        "early_track_sectors": []
+      },
+      {
+        "number": 35,
+        "side": "a",
+        "name": "TUNNEL",
+        "destination": 26624,
+        "script_bytes": 1850,
+        "pool_bytes": 178,
+        "script_sha256": "1c91a423980476dc5323e022b4989bcf4d3d1c5eea1791d8546c91571e156f3b",
+        "pool_sha256": "bd8f8bb8323a1d72a94b1d0c03b241aa6acf8f6c6a092301db4005b083e58fb9",
+        "early_track_sectors": []
+      },
+      {
+        "number": 36,
+        "side": "b",
+        "name": "DEATH",
+        "destination": 26624,
+        "script_bytes": 232,
+        "pool_bytes": 0,
+        "script_sha256": "681815e42504e33d1d1f71ab091d7368043b5241126a3e4fd768fbcfde32a660",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "number": 37,
+        "side": "b",
+        "name": "ROOM 23.0",
+        "destination": 26624,
+        "script_bytes": 533,
+        "pool_bytes": 376,
+        "script_sha256": "080a1b061e658f65da12b0ab890cb3565ae2d0e3a07485ffe8dbb19088c136fd",
+        "pool_sha256": "d78f764ab567982db83988cc270c3af03697d9462f7e211020e901f4cbf8566e",
+        "early_track_sectors": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "number": 38,
+        "side": "b",
+        "name": "ROOM 23.1",
+        "destination": 26624,
+        "script_bytes": 896,
+        "pool_bytes": 370,
+        "script_sha256": "c1945311e185fd5c8b8c727e18c557ce72898c65ba7316cc0d6d6f860196271d",
+        "pool_sha256": "5ebe5385c2eb91d83dcccbfd206433da572d2889429d937b4175c4c39517cd59",
+        "early_track_sectors": [
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "number": 39,
+        "side": "b",
+        "name": "ROOM 24.0",
+        "destination": 26624,
+        "script_bytes": 510,
+        "pool_bytes": 400,
+        "script_sha256": "9a7b092a46fd752f396d476686d5061b570178b2ff18cd2d8c72c8812ef5fcf5",
+        "pool_sha256": "67f05a23c7752398129a96f41b2af41ccd09346e2977c39b621c2b5b85856e18",
+        "early_track_sectors": [
+          [
+            1,
+            15
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            14
+          ]
+        ]
+      },
+      {
+        "number": 40,
+        "side": "b",
+        "name": "ROOM 24.1",
+        "destination": 26624,
+        "script_bytes": 662,
+        "pool_bytes": 319,
+        "script_sha256": "49cc3a7df91a008894523113052fd07642f28cab15901103ed314f2d69dbe5de",
+        "pool_sha256": "e8c61d6563b83d9e2d98a956b3c669a1cca4c4f9ffd06cb874d5eb0ffdd49ac8",
+        "early_track_sectors": []
+      },
+      {
+        "number": 41,
+        "side": "b",
+        "name": "ROOM 25.0",
+        "destination": 26624,
+        "script_bytes": 1409,
+        "pool_bytes": 681,
+        "script_sha256": "4c5ffc620445cd91e205d111656a0a87379aad66281349c49be1eb120927751a",
+        "pool_sha256": "5f19a20804175bf91fdc23b2b2b81b1e8792c95ee9358852715a188dc766494a",
+        "early_track_sectors": []
+      },
+      {
+        "number": 42,
+        "side": "b",
+        "name": "ROOM 26.0",
+        "destination": 26624,
+        "script_bytes": 799,
+        "pool_bytes": 432,
+        "script_sha256": "fdd4ddae05c1e7dc00561698ed8b6b299668c1c593dba76654ba3ba51ab053bf",
+        "pool_sha256": "af5ed33f37c8d3aad6a66d7ee219f9459f2b043f81560122c8f75519dc9fa686",
+        "early_track_sectors": []
+      },
+      {
+        "number": 43,
+        "side": "b",
+        "name": "ROOM 27.0",
+        "destination": 26624,
+        "script_bytes": 1197,
+        "pool_bytes": 638,
+        "script_sha256": "74364fffcbf12ab9eddbb3f5bc399f8435c0c168b55746624f655ce5405b3be7",
+        "pool_sha256": "fecd2642b5602de8af1de83498609d43801c9c0aedf5b639609248398aec161a",
+        "early_track_sectors": []
+      },
+      {
+        "number": 44,
+        "side": "b",
+        "name": "ROOM 28.0",
+        "destination": 26624,
+        "script_bytes": 540,
+        "pool_bytes": 429,
+        "script_sha256": "7d4cb47daa2c2eef7d9c7c5fa59a1bf7e5da560995245b38da5230d621bdeff4",
+        "pool_sha256": "919bb68d70b5e7e5ade2be334ee1eef36dcaed1372a22c48eee88cdbbf72611d",
+        "early_track_sectors": []
+      },
+      {
+        "number": 45,
+        "side": "b",
+        "name": "ROOM 29.0",
+        "destination": 26624,
+        "script_bytes": 248,
+        "pool_bytes": 122,
+        "script_sha256": "9c67ee65773320187798104bba22e219fcea75591c19a2c6eef46491b980c0fc",
+        "pool_sha256": "5133cd23ff79becd0525e68adf069a3be949c43f4243d5ef2eba030a3557669c",
+        "early_track_sectors": []
+      },
+      {
+        "number": 46,
+        "side": "b",
+        "name": "ROOM 30.0",
+        "destination": 26624,
+        "script_bytes": 597,
+        "pool_bytes": 0,
+        "script_sha256": "0675ae78d6b42bcf336d7b473431826ffdb2b29bab673f28b4c200876caf9409",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 47,
+        "side": "b",
+        "name": "ROOM 30.1",
+        "destination": 26624,
+        "script_bytes": 596,
+        "pool_bytes": 0,
+        "script_sha256": "82e53ded3ce37b5c4ceade4aee32b4165177cfcda3bb5aa3dc0b9270a573db6b",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 48,
+        "side": "b",
+        "name": "ROOM 30.2",
+        "destination": 26624,
+        "script_bytes": 460,
+        "pool_bytes": 0,
+        "script_sha256": "ecc63b1305e54364038179921780b40a78b87d2fe52c3cc42b5e81131f142ca1",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 49,
+        "side": "b",
+        "name": "ROOM 31.0",
+        "destination": 26624,
+        "script_bytes": 1180,
+        "pool_bytes": 406,
+        "script_sha256": "80e7a38193a2474461c471f8996b5f71db754b05d0a4d59c8ba0f7027f9ff0dc",
+        "pool_sha256": "645184ec83bbffa7861a669ad78508620080ae1cc58dd8c955b4b61a97dcb7eb",
+        "early_track_sectors": []
+      },
+      {
+        "number": 50,
+        "side": "b",
+        "name": "ROOM 31.1",
+        "destination": 26624,
+        "script_bytes": 1094,
+        "pool_bytes": 386,
+        "script_sha256": "7ab77a2de06692e9cd368c4ebf57c0bcdd98182cd9c2d3a7fa82e7ba9ef085b5",
+        "pool_sha256": "eb425653bd26764c3eced57bc0e698f13265441e08cd5fc1955031012ae4d223",
+        "early_track_sectors": []
+      },
+      {
+        "number": 51,
+        "side": "b",
+        "name": "ROOM 32.0",
+        "destination": 26624,
+        "script_bytes": 285,
+        "pool_bytes": 362,
+        "script_sha256": "d73c98ef00fe79d750e0229d8160fdfcee52b1bce50add69184efd7f1f2a8b89",
+        "pool_sha256": "78e01a460a91517a3a8af87b5fe9a8c069965174610ffc9e21a956b86a0960b6",
+        "early_track_sectors": []
+      },
+      {
+        "number": 52,
+        "side": "b",
+        "name": "ROOM 33.0",
+        "destination": 26624,
+        "script_bytes": 514,
+        "pool_bytes": 387,
+        "script_sha256": "59a23bd12bdfe42293a535189ac4dd66f9980a4843ebd97f17c0991707d19548",
+        "pool_sha256": "94257eebb76aef10e02874d0ef78f089bcd710a1c8835b81c4af6412a2197260",
+        "early_track_sectors": []
+      },
+      {
+        "number": 53,
+        "side": "b",
+        "name": "ROOM 34.0",
+        "destination": 26624,
+        "script_bytes": 1091,
+        "pool_bytes": 960,
+        "script_sha256": "229b85e674db6d0278d386d1b417693862d45914ea565cea1ed112bb4a9a60db",
+        "pool_sha256": "f2746762e568f61143257e6e8fd6d9a0b71ea490328ffc11da4fb76fc9a12ccb",
+        "early_track_sectors": []
+      },
+      {
+        "number": 54,
+        "side": "b",
+        "name": "ROOM 34.1",
+        "destination": 26624,
+        "script_bytes": 295,
+        "pool_bytes": 360,
+        "script_sha256": "49c35691b3076d233c598552757561d5e1c4bda90a899394e5577edd0dec76f9",
+        "pool_sha256": "dce446aebad9dffb658d461445f99c69e19bf430bc96395cea3ad299137863b1",
+        "early_track_sectors": []
+      },
+      {
+        "number": 55,
+        "side": "b",
+        "name": "ROOM 34.2",
+        "destination": 26624,
+        "script_bytes": 378,
+        "pool_bytes": 174,
+        "script_sha256": "3948865b3607df102de2dfc3c67d9c88432553e78943e7f1ac71dc963e295052",
+        "pool_sha256": "f1e5d2d030d73cbda009d2f3c8c2b04a4f35d505533aa1010e5f5cc4d18f2a8f",
+        "early_track_sectors": []
+      },
+      {
+        "number": 56,
+        "side": "b",
+        "name": "ROOM 35.0",
+        "destination": 26624,
+        "script_bytes": 663,
+        "pool_bytes": 721,
+        "script_sha256": "013f39ed0ff6bf17bbb9219f8277e8108359ab04dab7f959a58b74886a2896eb",
+        "pool_sha256": "fa06eb6efb9a579f43bd99a5a48a116b9041cd81d86d68052ee33f59ddd9ae0a",
+        "early_track_sectors": []
+      },
+      {
+        "number": 57,
+        "side": "b",
+        "name": "ROOM 36.0",
+        "destination": 26624,
+        "script_bytes": 545,
+        "pool_bytes": 522,
+        "script_sha256": "74f1fbd497359f817cb621cc53f610ff297b6568d1b9806e0640e3bc63cbc92a",
+        "pool_sha256": "47935908b109228a58ada374dfb9eb7b8770391ec6032a13f56d3d41d5babcd8",
+        "early_track_sectors": []
+      },
+      {
+        "number": 58,
+        "side": "b",
+        "name": "ROOM 37.0",
+        "destination": 26624,
+        "script_bytes": 1240,
+        "pool_bytes": 775,
+        "script_sha256": "dd2520f78576ab823fbbb912ba24b888adf1769851b740eac5895ae6706079a5",
+        "pool_sha256": "e63ddde73510ef15248c1a9d71ddf0a050447363be021b9fd830f4f6d0c5e9d7",
+        "early_track_sectors": []
+      },
+      {
+        "number": 59,
+        "side": "b",
+        "name": "ROOM 38.0",
+        "destination": 26624,
+        "script_bytes": 370,
+        "pool_bytes": 231,
+        "script_sha256": "65817d6a36a80e92db3f74b65b67bcaaac6a3d046ddb06727645d9d407436593",
+        "pool_sha256": "ca7361d57a660c5ac14056a238e6f71f4db4d31d723e6a48a5b85a8f11384e3c",
+        "early_track_sectors": []
+      },
+      {
+        "number": 60,
+        "side": "b",
+        "name": "ROOM 39.0",
+        "destination": 26624,
+        "script_bytes": 953,
+        "pool_bytes": 537,
+        "script_sha256": "2b8aa0fb0149a3c59192ca7c07ef4e0af8a2cbaa2de1d4d702f64eaf04c6f709",
+        "pool_sha256": "b2a55484ddf7e71f6eb1a918f684be8ef74f9c6a3c457cdd21e49fde35a781f2",
+        "early_track_sectors": []
+      },
+      {
+        "number": 61,
+        "side": "b",
+        "name": "ROOM 40.0",
+        "destination": 26624,
+        "script_bytes": 399,
+        "pool_bytes": 325,
+        "script_sha256": "b12d95dda66d7b0b454d46eb0110adcd3664334d8c8eab8f02950742d4740108",
+        "pool_sha256": "823fd4030fe6b98d6d6455a9019b447c81dc9f4d30c32d7d2e3bcbf8a51beeb8",
+        "early_track_sectors": []
+      },
+      {
+        "number": 62,
+        "side": "b",
+        "name": "ROOM 40.1",
+        "destination": 26624,
+        "script_bytes": 1097,
+        "pool_bytes": 499,
+        "script_sha256": "23d1ca5577421012b7a07aa068dff8c6167458c3e5f0b6b5df267d305eb14774",
+        "pool_sha256": "9d35e4305704192f9c47da11f43c086f6525b754c4405c4bf4c51f87df909562",
+        "early_track_sectors": []
+      },
+      {
+        "number": 63,
+        "side": "b",
+        "name": "ROOM 41.0",
+        "destination": 26624,
+        "script_bytes": 373,
+        "pool_bytes": 207,
+        "script_sha256": "5db39e41a6ae8d7fd017e88a9c0444190ca61df6d25125116188e89d55bd4763",
+        "pool_sha256": "36c4081cfb8a8b9deb229b5958309ffe37e8c8ea2f931423d7dc7b71fbd390ef",
+        "early_track_sectors": []
+      },
+      {
+        "number": 64,
+        "side": "b",
+        "name": "ROOM 41.1",
+        "destination": 26624,
+        "script_bytes": 386,
+        "pool_bytes": 225,
+        "script_sha256": "93c982df14d57b88034943aa1b9cb50117eff432af36711ab4b8a534292ee1f5",
+        "pool_sha256": "29332c151fdd8119f10fadfcca2972b85c1a78aa37b29a734f7156c1eb8a9594",
+        "early_track_sectors": []
+      },
+      {
+        "number": 65,
+        "side": "b",
+        "name": "ROOM 41.2",
+        "destination": 26624,
+        "script_bytes": 1365,
+        "pool_bytes": 807,
+        "script_sha256": "2fa2f16e384cf07de8bd748724637748cf65799af06b08ebb018ae1acad0264c",
+        "pool_sha256": "8d8ec1c6c9c22f21bd1e3e1763cf5c8f2aa5e537066d3a64b7604adfa73f3c10",
+        "early_track_sectors": []
+      },
+      {
+        "number": 66,
+        "side": "b",
+        "name": "ROOM 41.3",
+        "destination": 26624,
+        "script_bytes": 1544,
+        "pool_bytes": 487,
+        "script_sha256": "aa39bec988606a0a80620b827f8b9c9271df89c858ff1368d3e25448e7cf9409",
+        "pool_sha256": "e235bb79c13c8e003b0acf87b450f368f0dce9e80643ec3d67083b18535106d0",
+        "early_track_sectors": []
+      },
+      {
+        "number": 67,
+        "side": "b",
+        "name": "ROOM 42.0",
+        "destination": 26624,
+        "script_bytes": 550,
+        "pool_bytes": 195,
+        "script_sha256": "d1d1fb11cb1ea2750a87178fd0402e36cc6554e7fd6c5607fedf82ce4972f938",
+        "pool_sha256": "c43683cc1d291842c76de81374d41ee37573e6b0d7bbc5d6749bb7ddb19267f5",
+        "early_track_sectors": []
+      },
+      {
+        "number": 68,
+        "side": "b",
+        "name": "ROOM 43.0",
+        "destination": 26624,
+        "script_bytes": 1114,
+        "pool_bytes": 1013,
+        "script_sha256": "6aead6ea265effbf77549ddb79a43100530c94e23ac10dd5e35d24b2edfd1856",
+        "pool_sha256": "7131ed972baad1bfa25d25293b4038dd3679f3a299be87dfb109efa0e697812d",
+        "early_track_sectors": []
+      },
+      {
+        "number": 69,
+        "side": "b",
+        "name": "ROOM 44.0",
+        "destination": 26624,
+        "script_bytes": 612,
+        "pool_bytes": 0,
+        "script_sha256": "b956c34627069ac5157b07d2b8a38bb5bae26bde2a9ea4b83241f2ccab4c6fab",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 70,
+        "side": "b",
+        "name": "ROOM 44.1",
+        "destination": 26624,
+        "script_bytes": 610,
+        "pool_bytes": 0,
+        "script_sha256": "f5bbef445873d753c1318bd65fa99e5ddbf1cc7b711660abc1c536ec0faad318",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 71,
+        "side": "b",
+        "name": "ROOM 44.2",
+        "destination": 26624,
+        "script_bytes": 610,
+        "pool_bytes": 0,
+        "script_sha256": "8e5ce1ac5970fdca29bfd76bbc503539c1c9c2bd0dc94b25ffed4f4592bfffe2",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 72,
+        "side": "b",
+        "name": "ROOM 44.3",
+        "destination": 26624,
+        "script_bytes": 469,
+        "pool_bytes": 0,
+        "script_sha256": "0bacbff8bdb3cec8cbff84a7237549a97f5b4e380c21ddc38768dd586c0c9bd1",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 73,
+        "side": "b",
+        "name": "ROOM 44.4",
+        "destination": 26624,
+        "script_bytes": 465,
+        "pool_bytes": 0,
+        "script_sha256": "0d10bde1794b4903383f25dcd14cbf9c5c692af4a81cb03f804acf09b019b002",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 74,
+        "side": "b",
+        "name": "ROOM 44.5",
+        "destination": 26624,
+        "script_bytes": 611,
+        "pool_bytes": 0,
+        "script_sha256": "5251c858ad50510df232022df0c627c30c1db7aa72c173861f42a591ad8e7bf1",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 75,
+        "side": "b",
+        "name": "ROOM 44.6",
+        "destination": 26624,
+        "script_bytes": 610,
+        "pool_bytes": 0,
+        "script_sha256": "816a4914c8a2b63c7fc6354fb9f5890bf201ca9452f94d4f7603c937cfb50dae",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 76,
+        "side": "b",
+        "name": "ROOM 44.7",
+        "destination": 26624,
+        "script_bytes": 613,
+        "pool_bytes": 0,
+        "script_sha256": "b72ac0deb61736e58c359673b46187684efb40f49882f5e32a3709a55d381a13",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 77,
+        "side": "b",
+        "name": "ROOM 44.8",
+        "destination": 26624,
+        "script_bytes": 614,
+        "pool_bytes": 0,
+        "script_sha256": "b4f96fe962bfc25ee126a91957a4e69179697ab70b4af7e2a5d3a663163ad255",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 78,
+        "side": "b",
+        "name": "ROOM 44.9",
+        "destination": 26624,
+        "script_bytes": 600,
+        "pool_bytes": 0,
+        "script_sha256": "335dbd2f24b32693fcc03f911823f4143185c49167f7dec715bfb632e903325b",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 79,
+        "side": "b",
+        "name": "ROOM 45.0",
+        "destination": 26624,
+        "script_bytes": 514,
+        "pool_bytes": 130,
+        "script_sha256": "07a9fc84840ad91d46657b90c2481c49d9fce2bb3104ff0a500c3348fd9f42fb",
+        "pool_sha256": "85bb42aef6e4cdbee80de52b47a03d2f0127dd0991e5e4224c55c84471069a04",
+        "early_track_sectors": []
+      },
+      {
+        "number": 80,
+        "side": "b",
+        "name": "ROOM 46.0",
+        "destination": 26624,
+        "script_bytes": 1071,
+        "pool_bytes": 581,
+        "script_sha256": "4fd9b3e53057a3d115c0454bca70b4541a00a0e0ada5a7f126f465f8aff50acd",
+        "pool_sha256": "e4f95939a3d26cf8c0adaf2473a90a4442407c115385135dee67547ddfb772a5",
+        "early_track_sectors": []
+      },
+      {
+        "number": 81,
+        "side": "b",
+        "name": "ROOM 47.0",
+        "destination": 26624,
+        "script_bytes": 704,
+        "pool_bytes": 0,
+        "script_sha256": "ad7dc2fe7f03ce256178e68d522482ef2337a7742692687247e28f678644d008",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "early_track_sectors": []
+      },
+      {
+        "number": 82,
+        "side": "b",
+        "name": "ROOM 49.0",
+        "destination": 26624,
+        "script_bytes": 844,
+        "pool_bytes": 862,
+        "script_sha256": "72b0a3f67f3167340d49430840d4692ace141549d7e29c993c1fd265748a077d",
+        "pool_sha256": "c4627488b687e5f6752af3241ae2ee4d1f767c26b9fe59a2701f3cfd457626f3",
+        "early_track_sectors": []
+      },
+      {
+        "number": 83,
+        "side": "b",
+        "name": "ROOM 49.1",
+        "destination": 26624,
+        "script_bytes": 1176,
+        "pool_bytes": 367,
+        "script_sha256": "29882b7c9133dbef5e5d1206b2b947402bb991fb960e4e9a1d06998596c24a2e",
+        "pool_sha256": "41eb66df333fa756c56c2f42657fcc76d1092073ee908153492f09c67ee48d22",
+        "early_track_sectors": []
+      },
+      {
+        "number": 84,
+        "side": "b",
+        "name": "ROOM 49.2",
+        "destination": 26624,
+        "script_bytes": 1314,
+        "pool_bytes": 398,
+        "script_sha256": "3dd396782830dc96b1e732cbf58f7e9b075094684838f0d30942f5ef550deba6",
+        "pool_sha256": "60154c3499980b3d35355863c51a8afae768bded51dd6681355658c5b4486b10",
+        "early_track_sectors": []
+      },
+      {
+        "number": 85,
+        "side": "b",
+        "name": "ROOM 50.0",
+        "destination": 26624,
+        "script_bytes": 571,
+        "pool_bytes": 607,
+        "script_sha256": "03ee38ce29b6ca7bbc2d2d3260b0b7ff35e4a918a671baadb67a688f5370a419",
+        "pool_sha256": "08d765e76b83aec424621c378cb9d521c1e8a55fece8a51980e5ddfc3e49dec2",
+        "early_track_sectors": []
+      },
+      {
+        "number": 86,
+        "side": "b",
+        "name": "TUNNEL",
+        "destination": 26624,
+        "script_bytes": 1850,
+        "pool_bytes": 178,
+        "script_sha256": "1c91a423980476dc5323e022b4989bcf4d3d1c5eea1791d8546c91571e156f3b",
+        "pool_sha256": "bd8f8bb8323a1d72a94b1d0c03b241aa6acf8f6c6a092301db4005b083e58fb9",
+        "early_track_sectors": []
+      }
+    ],
+    "retained_native_files": [
+      {
+        "side": "a",
+        "name": "CHAR GEN",
+        "sha256": "e46f017a45f82e5b03d75cc54ccb8deb3e81b8747a9fadd61c01a1d085da80fe"
+      },
+      {
+        "side": "a",
+        "name": "PARMS.OBJ",
+        "sha256": "430844728d164480732e9930ff0cfea1ed61f1d75b219fa44d2dbff2b1ee7ab3"
+      },
+      {
+        "side": "a",
+        "name": "AF1.0",
+        "sha256": "5d00b4bc83726621986f1da1c1d5b62bca97fc3db4fb23b66b3dda919c4f6af8"
+      },
+      {
+        "side": "a",
+        "name": "AMULET",
+        "sha256": "f9831300453233b2d67de5cb883ef78e090daef3d9e3924912b4d67968dae937"
+      },
+      {
+        "side": "a",
+        "name": "BACK JEEP",
+        "sha256": "22c284b65076dd6a4a1506ae1635a76ad63a7ce20baadd2ac218c5979da77c9a"
+      },
+      {
+        "side": "a",
+        "name": "CRYPT-TOT",
+        "sha256": "c094b3fd031ee0e22eca8721211287e673bbd16f4692ad7aa52d69b06a47d653"
+      },
+      {
+        "side": "a",
+        "name": "FLUTE",
+        "sha256": "3932529d84b7a81507908343899194ddf04a687010c1eff7ca25135ce6182f65"
+      },
+      {
+        "side": "a",
+        "name": "GOLD BOWL",
+        "sha256": "58aef842c9ecba9642cff20c87197f3a3123d6cc107b00ecc9f3699c173d4349"
+      },
+      {
+        "side": "a",
+        "name": "JADE BOWL",
+        "sha256": "6aae5415002ea8db88ac3ae59ce87b1177d548cc3b2311a1b69576ac1e637f9c"
+      },
+      {
+        "side": "a",
+        "name": "JEEP ALON",
+        "sha256": "f67b1ba987639621fdbec369902355692abe92c179e1eead8563530c29493d1f"
+      },
+      {
+        "side": "a",
+        "name": "LOGO",
+        "sha256": "6ef55c50acdbc320eb11cddc65c02813339fc7d748aabd928597c5ec9ef536ab"
+      },
+      {
+        "side": "a",
+        "name": "MAP",
+        "sha256": "42228fbcb81d40baec4abbb87909b00a2faff9f7e7aa9c0acb3adca9b07ed4b3"
+      },
+      {
+        "side": "a",
+        "name": "P1.1",
+        "sha256": "da392901df29c86612917a4adfb3c17e8bb95652ca15401d3cc86333eca6f843"
+      },
+      {
+        "side": "a",
+        "name": "P6.5",
+        "sha256": "0a6a6280f3da717268cb9e44259e99fcca3eb09d1505cd6dd6665cef44bfcc45"
+      },
+      {
+        "side": "a",
+        "name": "P7.0",
+        "sha256": "45d80d6606dee4f59e24d56ea82fc606713ebec038ef955d8d9948fe08da1170"
+      },
+      {
+        "side": "a",
+        "name": "PEDDLER1",
+        "sha256": "bfcf1f650e3a8ad4732c2f63f6cf699ac27906ca591c6474afa0656c3cac80b7"
+      },
+      {
+        "side": "a",
+        "name": "SILVR BWL",
+        "sha256": "719b7b4cb63a8e7125230f442c05eaa3c27bb00061622b6176bed5c9bdf77430"
+      },
+      {
+        "side": "a",
+        "name": "SKEL RM",
+        "sha256": "808d169513477ca0e47cdd619afdba4df62fd08b0810e314fbcd6d914842b16f"
+      },
+      {
+        "side": "a",
+        "name": "SNAKE-PIT",
+        "sha256": "afd2ae87c46e76a3b068eab560486fe21d65f31d9979f0d760a783c757759233"
+      },
+      {
+        "side": "a",
+        "name": "TEMPL EX",
+        "sha256": "2ca7952e3e806e096e26efd67e45881b72b79b565ab5ce8c37f3583dd6426d1d"
+      },
+      {
+        "side": "a",
+        "name": "TEMPLE1",
+        "sha256": "baa00db915f24f15b54e86481348d1fdc27e416b5b245620c329f4c3de434bf0"
+      },
+      {
+        "side": "a",
+        "name": "TRAVEL1",
+        "sha256": "7b82c709005a1cd291847249c26db82735f859972e991a09f1ba2b0992012891"
+      },
+      {
+        "side": "a",
+        "name": "TRAVEL2",
+        "sha256": "2d364ee0752be2890efad43c537af329e8be978547422ea4f870fdf6e45ea359"
+      },
+      {
+        "side": "a",
+        "name": "TUN TRVL",
+        "sha256": "dc02fed551e66101b18de9821af153e9bc243c1ad7b03d994272616b151c24dd"
+      },
+      {
+        "side": "a",
+        "name": "VIEWS",
+        "sha256": "f5454fe9c05f642827bfe12627d0ab3d5e9b5f420f998e27b1c90ae572fd7f4b"
+      },
+      {
+        "side": "b",
+        "name": "AMULET",
+        "sha256": "f9831300453233b2d67de5cb883ef78e090daef3d9e3924912b4d67968dae937"
+      },
+      {
+        "side": "b",
+        "name": "BANDITOS",
+        "sha256": "5f21a92dc1ad0adcf640b935aaf4b229cd5d78c7b5b871c1c3529b913e078219"
+      },
+      {
+        "side": "b",
+        "name": "FALL PILS",
+        "sha256": "ed5161746201741c99b59b4e526f1abd5ee33d34f6a4773dd9e90e2296588733"
+      },
+      {
+        "side": "b",
+        "name": "GEO+STRS",
+        "sha256": "eab06f17becc2a7e742d9e14a48d0b155f12f73ff85782c9ee8a3f931947bda6"
+      },
+      {
+        "side": "b",
+        "name": "GOLD BOWL",
+        "sha256": "58aef842c9ecba9642cff20c87197f3a3123d6cc107b00ecc9f3699c173d4349"
+      },
+      {
+        "side": "b",
+        "name": "HISS-SUNS",
+        "sha256": "fc8b779da39936bd2bda430b11d86cedd1311d8c250283e193df8da1b38dcfea"
+      },
+      {
+        "side": "b",
+        "name": "INF PSGS",
+        "sha256": "994d3bfc2aca93843b59c56cdefcc49ee5f37e47ebd96efefbd8e2305f48e313"
+      },
+      {
+        "side": "b",
+        "name": "JADE BOWL",
+        "sha256": "6aae5415002ea8db88ac3ae59ce87b1177d548cc3b2311a1b69576ac1e637f9c"
+      },
+      {
+        "side": "b",
+        "name": "JAG ATACK",
+        "sha256": "7ae12168d49a790d49dacb6f3a9024ebae250a728fcecafe493d8d870ca2cfbf"
+      },
+      {
+        "side": "b",
+        "name": "JEEP ALON",
+        "sha256": "f67b1ba987639621fdbec369902355692abe92c179e1eead8563530c29493d1f"
+      },
+      {
+        "side": "b",
+        "name": "MAIN PYR",
+        "sha256": "4f4b570d73de79100f6ffa2595215e1b23e7b9eaa74d26b6a777440ff4b12f1f"
+      },
+      {
+        "side": "b",
+        "name": "MAP",
+        "sha256": "42228fbcb81d40baec4abbb87909b00a2faff9f7e7aa9c0acb3adca9b07ed4b3"
+      },
+      {
+        "side": "b",
+        "name": "MASK",
+        "sha256": "4c4d4399184015f0ffc0f00f07d72a8ffc88eeb5973d9a154fe49c95160ad513"
+      },
+      {
+        "side": "b",
+        "name": "POOL RM",
+        "sha256": "74e617c92be4033582229d565fa4281bd8c47c7ca55b5c2f13d98709cc97a4d6"
+      },
+      {
+        "side": "b",
+        "name": "PYR ENTRN",
+        "sha256": "8ca411e50e6de26f97970132ccebf1ce3017db4c370ab23cd559fe5792ea4453"
+      },
+      {
+        "side": "b",
+        "name": "PYR HOLE",
+        "sha256": "c42d8ec994f6a6d5466c2ccc84441ad8e6f294928de6ccf62026052c00dbc124"
+      },
+      {
+        "side": "b",
+        "name": "ROBOFFS",
+        "sha256": "d22a6ae82e700254882054eb3492f4eb44c3bad1b52724b64bb8753d82bd2dff"
+      },
+      {
+        "side": "b",
+        "name": "SILVR BWL",
+        "sha256": "719b7b4cb63a8e7125230f442c05eaa3c27bb00061622b6176bed5c9bdf77430"
+      },
+      {
+        "side": "b",
+        "name": "STAIRS",
+        "sha256": "1f9986db1d6f3844d1e18293c7510975c248f95b0dc2368db17beb90eabfa96a"
+      },
+      {
+        "side": "b",
+        "name": "STEP STN",
+        "sha256": "6378b01b56ff143ecb490e5b6cea22a5884cc1a88526a558622eace90ff08602"
+      },
+      {
+        "side": "b",
+        "name": "SUN ALTAR",
+        "sha256": "91b077e315d950d3b39e66d8bbe7b22c99f6ea536be4bd47aec70d6f7827e2fc"
+      },
+      {
+        "side": "b",
+        "name": "SUN TEMPL",
+        "sha256": "381442ad6b431944b6e7804bc4610817bb608f90e7edec314dfb8c3a647e2fcf"
+      },
+      {
+        "side": "b",
+        "name": "TALK FACE",
+        "sha256": "9ae1c577c30b2cc1374b843a6e0543a02ca6c05607f556aaa9245c5a5234bf98"
+      },
+      {
+        "side": "b",
+        "name": "TUN TRVL",
+        "sha256": "dc02fed551e66101b18de9821af153e9bc243c1ad7b03d994272616b151c24dd"
+      },
+      {
+        "side": "b",
+        "name": "VICT ALTR",
+        "sha256": "4a1d353434f62f127182790e1f8b44c45fce13b2c7cb7f2073e2c5b694e654bf"
+      }
+    ],
+    "checkpoint": 20575,
+    "code_ranges": [
+      [
+        37888,
+        38040
+      ],
+      [
+        38052,
+        38653
+      ],
+      [
+        38681,
+        39320
+      ],
+      [
+        39382,
+        39706
+      ]
+    ],
+    "reader_symbols": {
+      "ko_room_size": 38653,
+      "ko_load_error": 39379,
+      "ko_media_id": 39344
+    },
+    "reader_sha256": "66e26a1552f228e3341e2eaa42101584f8b043a6ae0afcb83be3882c987b515b",
+    "synthetic_b_sha256": "a5ce944240bd15756f124ce8804b7f753462a49371a8802da10847c20d3f58bf",
+    "shape_source_catalog_sha256": "5709c9ac90ca127cb9c061f5af2315f960cb1006b786059a9128beabf0c5fe62",
+    "synthetic_pool_body_whitelist_verified": true
+  },
+  "session": {
+    "command": [
+      "/usr/games/mame",
+      "apple2p",
+      "-noreadconfig",
+      "-rompath",
+      "/home/iolo/workspace/retro/a2x/mame/roms",
+      "-ramsize",
+      "48K",
+      "-sl0",
+      "lang",
+      "-sl4",
+      "",
+      "-sl6",
+      "diskiing",
+      "-flop1",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/full-media-validation-02/session/side-a.dsk",
+      "-console",
+      "-pluginspath",
+      "/usr/share/games/mame/plugins",
+      "-skip_gameinfo",
+      "-natural",
+      "-window",
+      "-nomouse",
+      "-homepath",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/full-media-validation-02/session",
+      "-cfg_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/full-media-validation-02/session/cfg_directory",
+      "-nvram_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/full-media-validation-02/session/nvram_directory",
+      "-snapshot_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/full-media-validation-02/session/snapshot_directory",
+      "-state_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/full-media-validation-02/session/state_directory",
+      "-diff_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/full-media-validation-02/session/diff_directory",
+      "-video",
+      "none",
+      "-sound",
+      "none",
+      "-debug",
+      "-debugger",
+      "qt",
+      "-autoboot_script",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/korean/full_media_probe.lua",
+      "-autoboot_delay",
+      "0",
+      "-nothrottle"
+    ],
+    "media": {
+      "a": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/full-media-validation-02/fixture/media/synthetic-startup.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/full-media-validation-02/session/side-a.dsk",
+        "sha256": "47cf42dd4c8cedf6a5afe71c52d0e1dc0afb447bbe4a9a04108ed12b93fe4203"
+      },
+      "b": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/full-media-validation-02/fixture/media/synthetic-a.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/full-media-validation-02/session/side-b.dsk",
+        "sha256": "b78e156684fcd3497835279cf45295681d6738d8bdffde18189c7bd15608ce52"
+      }
+    },
+    "headless": true,
+    "debug": true,
+    "language_card": true
+  },
+  "scope": "Complete synthetic draft-shaped A/B media. All 86 resources read through real Disk II/RWTS, script/LC bytes and untouched regions compared, native retained files audited. Bootstrap is cold; reader harness and side flag are injected at a debugger instruction boundary. This is not game-route, B-side restore, translated UI or approval validation.",
+  "source_sha256": {
+    "tools/korean/verify_full_media.py": "1788d60b8e4c2c5ca3893b21db8714e25f3c93f2a9ab22659935596d90a317f8",
+    "tools/korean/synthetic.py": "9fb5de14b4aff0db9ed671ecb29e535e303ecbb2d8d0dcadc5064c64ebc2942a",
+    "tools/korean/startup_disk.py": "689831f9c8ec6738201b015fc69743ab45e6900b63b097dc30e2fb0049174235",
+    "tools/korean/build_full_media_probe.py": "56d0c41f85903961e13029777f6a4d8bd9e3ea78602c2c2ea0ce076403852196",
+    "tools/korean/full_media_probe.lua": "1ce0aef15268a6dbcb68aac57cdbaf48c9a8e7dfed317f1d6733b4aea4650408"
+  }
+}

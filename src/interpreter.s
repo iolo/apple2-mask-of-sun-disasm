@@ -4,6 +4,9 @@
 ; detailed intrinsic condition conventions are still being traced.
 ; See docs/engine.md for pointer ownership and current uncertainty limits.
         .setcpu "6502"
+        .ifdef KOREAN
+        .include "korean-bindings.inc"
+        .endif
         .segment "INTERPRETER_HEADER"
         .word $0800,$0500 ; DOS BLOAD header, not loaded into interpreter RAM
         .segment "INTERPRETER"
@@ -27,17 +30,33 @@ rom_cout           := $FDED
         sta     $F0
         lda     #$03
         sta     $F1
+        .ifdef KOREAN
+        lda     #<ko_print_script_string
+        .else
         lda     #$F3
+        .endif
         sta     $0344
+        .ifdef KOREAN
+        lda     #>ko_print_script_string
+        .else
         lda     #$0B
+        .endif
         sta     $0345
         lda     #$A8
         sta     $034A
         lda     #$08
         sta     $034B
+        .ifdef KOREAN
+        lda     #<ko_load_dispatch
+        .else
         lda     #$20
+        .endif
         sta     $034C
+        .ifdef KOREAN
+        lda     #>ko_load_dispatch
+        .else
         lda     #$0B
+        .endif
         sta     $034D
         lda     #$00
         sta     $C0
@@ -91,7 +110,11 @@ rom_cout           := $FDED
         sta     $C054
         sta     $C052
         sta     $C050
+        .ifdef KOREAN
+        jsr     ko_finish_startup
+        .else
         jsr     renderer_install
+        .endif
 ; Script PC $D2/$D3; active pattern/return frame $D0/$D1. A leading high-bit
 ; dot executes a directive through $0D00; other lines are matched command patterns.
 ; Script subroutines save two-byte pointers on the hardware stack.
@@ -450,7 +473,13 @@ pattern_matched:  lda     #$FF
 ; included). Returns $ED as the next destination page. Clobbers A/X/Y, $DF,
 ; $E0-$EB and mutable RWTS IOB. Does not use DOS BLOAD header addresses.
 ; Existing files have one TS list; additional-list behavior is not implemented.
-load_named_file:  sta     $EA
+        .ifdef KOREAN
+load_named_file = ko_load_dispatch
+native_load_named_file:
+        .else
+load_named_file:
+        .endif
+        sta     $EA
         stx     $EB
         ldy     #$00
 copy_ten_character_filename:  lda     ($EA),y
@@ -555,7 +584,12 @@ input_without_cr:  lda     #$70
 script_stack_overflow:  lda     #$80
         ldx     #$03
         bne     print_engine_error
-print_engine_error:  jsr     print_script_string
+print_engine_error:
+        .ifdef KOREAN
+        jsr     ko_print_script_string
+        .else
+        jsr     print_script_string
+        .endif
         jsr     rom_crout
         jsr     rom_crout
         rts

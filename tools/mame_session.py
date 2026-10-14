@@ -19,6 +19,8 @@ def main():
     p.add_argument('--disk-a', type=Path, default=ROOT / 'mask-of-sun-a.dsk')
     p.add_argument('--disk-b', type=Path, default=ROOT / 'mask-of-sun-b.dsk')
     p.add_argument('--headless', action='store_true')
+    p.add_argument('--language-card', action='store_true',
+                   help='Apple II+ 48K main RAM plus slot 0 16K Language Card')
     p.add_argument('--debug', action='store_true')
     p.add_argument('--script', type=Path, help='optional owned replay startup Lua script')
     p.add_argument('--fast', action='store_true', help='unthrottled; compare emulated time, not wall time')
@@ -51,7 +53,7 @@ def main():
         media['save'] = {'source': str(args.save_disk.resolve()), 'copy': str(destination),
                          'sha256': hashlib.sha256(destination.read_bytes()).hexdigest()}
     cmd = [mame, 'apple2p', '-noreadconfig', '-rompath', str(args.rompath.resolve()),
-           '-ramsize', '48K', '-sl0', '', '-sl4', '', '-sl6', 'diskiing',
+           '-ramsize', '48K', '-sl0', 'lang' if args.language_card else '', '-sl4', '', '-sl6', 'diskiing',
            '-flop1', media['a']['copy'], '-console', '-pluginspath', str(plugins),
            '-skip_gameinfo', '-natural', '-window', '-nomouse', '-homepath', str(out)]
     for option in ['cfg_directory', 'nvram_directory', 'snapshot_directory',
@@ -79,7 +81,8 @@ def main():
     if args.fast:
         cmd.append('-nothrottle')
     (out / 'session.json').write_text(json.dumps({'command': cmd, 'media': media,
-        'headless': args.headless, 'debug': args.debug}, indent=2) + '\n')
+        'headless': args.headless, 'debug': args.debug,
+        'language_card': args.language_card}, indent=2) + '\n')
     print('Session: ' + str(out), flush=True)
     print('Load helpers: dofile(' + repr(str(ROOT / 'tools/mame_control.lua')) + ')', flush=True)
     print('Lua: mask.capture("checkpoint"); mask.keys("LOOK\\r"); mask.swap("b")', flush=True)

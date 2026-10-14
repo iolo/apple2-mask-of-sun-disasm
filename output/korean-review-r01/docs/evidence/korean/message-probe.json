@@ -1,0 +1,398 @@
+{
+  "pass": true,
+  "checked_lc_bytes": 13312,
+  "checked_hgr_bytes": 16384,
+  "time": 1.2833333333274,
+  "pc": 30531,
+  "marker": 165,
+  "checks": [],
+  "case": 46,
+  "build": {
+    "kind": "synthetic LC message reader fixture",
+    "runtime": {
+      "kind": "candidate main-RAM Korean runtime; no game integration",
+      "load_address": 37888,
+      "bytes": 1818,
+      "remaining_in_2k": 230,
+      "sha256": "ad1c718a5a6ff71a8d10bcb6dd1b453dab57c60a2411ef974c7538488661f5ab",
+      "source_hashes": {
+        "src/korean/lc.s": "9c5d158c72ba7c415774455a1f36096cd20a3492568d103d0f4b49fbf6b800f7",
+        "src/korean/messages.s": "2f1f7e24161a57f4f895172bcea90a069f8b44e06085b09ae95b516c6725ddd9",
+        "src/korean/loader.s": "1c6760e8a9bbcbe8f04f74502d43ab75dee700f843ee3674f8d94c60337ffa15",
+        "src/korean/dispatch.s": "c46c67f174aaceaf89db78c85eed64a3fb3e7f5729121c0206df40fe1caccb9d",
+        "src/korean/save.s": "f083be0d56f14174c1830f0dba2efe60c6b05aa409023a8d72a1561fc92c4ee1"
+      },
+      "native_renderer_sha256": "e46f017a45f82e5b03d75cc54ccb8deb3e81b8747a9fadd61c01a1d085da80fe"
+    },
+    "cases": [
+      {
+        "number": 1,
+        "name": "room ID beyond count",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 2,
+        "name": "resident ID beyond count",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 3,
+        "name": "short room header",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 4,
+        "name": "oversized room",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 5,
+        "name": "oversized resident",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 6,
+        "name": "font exceeds common region",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 7,
+        "name": "offset points into header",
+        "expect_success": false,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 8,
+        "name": "offset beyond pool",
+        "expect_success": false,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 9,
+        "name": "oversized count",
+        "expect_success": false,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 10,
+        "name": "unrecognized control byte",
+        "expect_success": false,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 11,
+        "name": "unrecognized high opcode",
+        "expect_success": false,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 12,
+        "name": "glyph beyond font",
+        "expect_success": false,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 13,
+        "name": "truncated glyph at final pool byte",
+        "expect_success": false,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 14,
+        "name": "missing terminator at pool boundary",
+        "expect_success": false,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 15,
+        "name": "page0 ID8000",
+        "expect_success": true,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 16,
+        "name": "page0 ID0000",
+        "expect_success": true,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 17,
+        "name": "page0 ID8001",
+        "expect_success": true,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 18,
+        "name": "page0 ID0001",
+        "expect_success": true,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 19,
+        "name": "page0 wrapper '~8001;\\r'",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 20,
+        "name": "page0 wrapper '~0001\\r'",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 21,
+        "name": "page0 wrapper '12345;\\r'",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 22,
+        "name": "page0 wrapper 'OK>^\\r'",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 23,
+        "name": "page0 invalid wrapper '~000G\\r'",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 24,
+        "name": "page0 invalid wrapper '~0001X\\r'",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 25,
+        "name": "page0 invalid wrapper '~0001;X'",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 26,
+        "name": "page0 invalid wrapper '~800F\\r'",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 27,
+        "name": "page0 engine file_not_found, room cache empty",
+        "expect_success": null,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 28,
+        "name": "page0 engine disk_error, room cache empty",
+        "expect_success": null,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 29,
+        "name": "page0 engine input_without_cr, room cache empty",
+        "expect_success": null,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 30,
+        "name": "page0 engine script_stack_overflow, room cache empty",
+        "expect_success": null,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 31,
+        "name": "page1 ID8000",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 32,
+        "name": "page1 ID0000",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 33,
+        "name": "page1 ID8001",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 34,
+        "name": "page1 ID0001",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 35,
+        "name": "page1 wrapper '~8001;\\r'",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 36,
+        "name": "page1 wrapper '~0001\\r'",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 37,
+        "name": "page1 wrapper '12345;\\r'",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 38,
+        "name": "page1 wrapper 'OK>^\\r'",
+        "expect_success": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 39,
+        "name": "page1 invalid wrapper '~000G\\r'",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 40,
+        "name": "page1 invalid wrapper '~0001X\\r'",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 41,
+        "name": "page1 invalid wrapper '~0001;X'",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 42,
+        "name": "page1 invalid wrapper '~800F\\r'",
+        "expect_success": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 43,
+        "name": "page1 engine file_not_found, room cache empty",
+        "expect_success": null,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 44,
+        "name": "page1 engine disk_error, room cache empty",
+        "expect_success": null,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 45,
+        "name": "page1 engine input_without_cr, room cache empty",
+        "expect_success": null,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 46,
+        "name": "page1 engine script_stack_overflow, room cache empty",
+        "expect_success": null,
+        "interrupts_enabled": true
+      }
+    ],
+    "font_glyphs": 1024,
+    "font_bytes": 8192,
+    "resident_bytes": 4096,
+    "room_bytes": 1024,
+    "fixture_sha256": "b9568fe303f440519ae9ab2f5d7d464f770591123944526650f794329fa42a9a",
+    "expected_hgr_sha256": "c621408034b0f48dc907f7ce4238ebd5d044bd600fc6d393b44b19d80ef00fcf",
+    "interpreter_source_sha256": "b7995c055b523a4fd059aaef76c9f54af14c55962f8d39fb79e6fc2898d71b2a",
+    "interpreter_sha256": "c8d2fe12ce61b921ce88d8e8834ef78c87383633a6506c446e33e60d19531e80",
+    "native_error_addresses": {
+      "print_engine_error": 3049,
+      "file_not_found": 3025,
+      "disk_error": 3031,
+      "input_without_cr": 3037,
+      "script_stack_overflow": 3043
+    },
+    "texts": {
+      "resident": [
+        "한글 출력 시험 ABC 0123456789\n읽기 쓰기 저장 복원 디스크 교체 읽기 쓰기 저장 복원 디스크 교체 읽기 쓰기 저장 복원 디스크 교체 읽기 쓰기 저장 복원 디스크 교체 읽기 쓰기 저장 복원 디스크 교체 ",
+        "끝험"
+      ],
+      "room": [
+        "BANK 2: 가갊갍갻겍곿관귿험\n가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+        "끝관"
+      ]
+    }
+  },
+  "session": {
+    "command": [
+      "/usr/games/mame",
+      "apple2p",
+      "-noreadconfig",
+      "-rompath",
+      "/home/iolo/workspace/retro/a2x/mame/roms",
+      "-ramsize",
+      "48K",
+      "-sl0",
+      "lang",
+      "-sl4",
+      "",
+      "-sl6",
+      "diskiing",
+      "-flop1",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/message-validation-identity-01/session/side-a.dsk",
+      "-console",
+      "-pluginspath",
+      "/usr/share/games/mame/plugins",
+      "-skip_gameinfo",
+      "-natural",
+      "-window",
+      "-nomouse",
+      "-homepath",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/message-validation-identity-01/session",
+      "-cfg_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/message-validation-identity-01/session/cfg_directory",
+      "-nvram_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/message-validation-identity-01/session/nvram_directory",
+      "-snapshot_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/message-validation-identity-01/session/snapshot_directory",
+      "-state_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/message-validation-identity-01/session/state_directory",
+      "-diff_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/message-validation-identity-01/session/diff_directory",
+      "-video",
+      "none",
+      "-sound",
+      "none",
+      "-debug",
+      "-debugger",
+      "qt",
+      "-autoboot_script",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/korean/message_probe.lua",
+      "-autoboot_delay",
+      "0",
+      "-nothrottle"
+    ],
+    "media": {
+      "a": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/english-baseline/mask-of-sun-a.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/message-validation-identity-01/session/side-a.dsk",
+        "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+      },
+      "b": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/english-baseline/mask-of-sun-b.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/message-validation-identity-01/session/side-b.dsk",
+        "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+      }
+    },
+    "headless": true,
+    "debug": true,
+    "language_card": true
+  },
+  "scope": "Synthetic runtime at $9400 and conditional Korean interpreter: message pool access, bounds checks, mixed text rendering, native error entry points with invalid room cache, ROM/I-flag restoration. Not disk loading, game timing, save/restore or approved translation integration.",
+  "screenshot_sha256": "b0911f6d5e785448d9f9ae4ab916d4c3ffc0fb83d13406805acb6c0f4b5a9b57"
+}

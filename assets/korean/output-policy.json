@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "scope": "Pinned application-source output review; changing any assembly/source notice requires re-audit.",
+  "source_sha256": {
+    "src/boot-a.s": "0c35dde35dc60004cb4f7a002752cd553beca00a60d43447561f77dc6f37b4ca",
+    "src/boot-b.s": "23e32b725f14b2e0a9392e1defa51273b2d81b86f936a525841398f996fb80c8",
+    "src/boot-stage2-a.s": "3126c3860640e6ab2e2378cec9475f2f8b280fdb080ccf77f816933925ef120f",
+    "src/boot-stage2-b.s": "bf34ba9cf8623064168682ae1d351e5094cc8cc843933f06758165f0edc387cd",
+    "src/boot-stage2.inc": "9df48e9e42b8a4c64b68e119e5542da8bfc21b18552738f4cc68c81e5eaced52",
+    "src/chargen.s": "919272f8058b09ee01cd4614f7a8c2e17a6e2135dc2c4436bfae6b60b0dffc14",
+    "src/dos-low-b.s": "80e4cc7cc9b20699b3a976501baf203202990cafdf4ceae20bf1cf630c3990bc",
+    "src/dos-low.s": "d65d67a9492bee76e22b8bd6c300124504f14d5050cf5e34a482ec551731d6e5",
+    "src/interpreter.s": "b7995c055b523a4fd059aaef76c9f54af14c55962f8d39fb79e6fc2898d71b2a",
+    "src/intrinsics.s": "f9bf8783afbc69cb628367852e1ee10f9d713e7b7d286a8f07eecdabb64e8ba2",
+    "src/korean/bootstrap.s": "46e3fff41be6127c4c7c93e993913628b487ce78e455351d63a63c8284a4facc",
+    "src/korean/dispatch.s": "05cc40d132c2065b60be6a23a47ffa949d0685bf2a50d41db3098c696690c0e7",
+    "src/korean/lc.s": "9c5d158c72ba7c415774455a1f36096cd20a3492568d103d0f4b49fbf6b800f7",
+    "src/korean/loader.s": "1c6760e8a9bbcbe8f04f74502d43ab75dee700f843ee3674f8d94c60337ffa15",
+    "src/korean/messages.s": "2f1f7e24161a57f4f895172bcea90a069f8b44e06085b09ae95b516c6725ddd9",
+    "src/korean/restore-guard.inc": "df0108a474de8990a627fdbce21be9dfefab74d0d16e424801bd888f4aa67fd6",
+    "src/korean/save.s": "8f0bcc11d91c57e6bf15a843c91ce8ea74c3c3ab70e97200b7c682843a3156aa",
+    "src/renderer.s": "a65a2246de7d6c5b24adad654222dc592a1b90ac657a5c87d974c4921378476d",
+    "src/rwts-a.s": "6021641099b675350efcb00bf5b8209d31337d14981affbc9089475a7121cc0d",
+    "src/rwts-b.s": "d01ac09a3d6f689e90d817146afe071b760f3f7e72743d173d7aa435724ec5f6",
+    "src/rwts.inc": "72f5746dfcb2d451369ba8f27a7c5eb3eda81a81a85f537e0437aed6452c2843",
+    "tools/korean/startup_disk.py": "5c450fcd61670e2ce5daebc4bc011f452fb22f621c923e1d6f07674ab43d7702",
+    "tools/korean/title_caption.py": "8b188b6f6910ef4d56a667800ad36822801dce473e1f9a51ea5f704683cdc229"
+  },
+  "sites": {
+    "src/boot-a.s:resident_diagnostic:jsr:$fded:1": "boot_diagnostic",
+    "src/boot-a.s:resident_diagnostic:jsr:$fdda:1": "boot_diagnostic",
+    "src/boot-a.s:resident_diagnostic:jsr:$fded:2": "boot_diagnostic",
+    "src/boot-a.s:resident_diagnostic:jsr:$fdda:2": "boot_diagnostic",
+    "src/boot-b.s:wrong_side_halt:jsr:$fdf0:1": "boot_wrong_side",
+    "src/chargen.s:legacy_editor_video_action:jsr:$1f00:1": "legacy_editor",
+    "src/dos-low.s:dos_dsplyall:jsr:dos_godsply:1": "dos_shell",
+    "src/dos-low.s:dos_godsply:jmp:(rom_output_vector):1": "dos_shell",
+    "src/dos-low.s:dos_crviados:jmp:dos_godsply:1": "dos_shell",
+    "src/dos-low.s:dos_morermsg:jsr:dos_godsply:1": "dos_shell",
+    "src/dos-low.s:dos_prdskvol:jsr:rom_cout:1": "dos_shell",
+    "src/dos-low.s:dos_prlocode:jsr:rom_cout:1": "dos_shell",
+    "src/dos-low.s:dos_prtftype:jsr:rom_cout:1": "dos_shell",
+    "src/dos-low.s:dos_prtftype:jsr:rom_cout:2": "dos_shell",
+    "src/dos-low.s:dos_prtftype:jsr:rom_cout:3": "dos_shell",
+    "src/dos-low.s:dos_prtfname:jsr:rom_cout:1": "dos_shell",
+    "src/dos-low.s:dos_crcatlog:jsr:rom_cout:1": "dos_shell",
+    "src/dos-low.s:dos_tonegasc:jsr:rom_cout:1": "dos_shell",
+    "src/interpreter.s:print_prompt_character:jsr:rom_cout:1": "input_ascii",
+    "src/interpreter.s:print_engine_error:jsr:ko_print_script_string:1": "engine_errors",
+    "src/interpreter.s:print_engine_error:jsr:print_script_string:1": "engine_errors",
+    "src/interpreter.s:emit_string_character:jsr:rom_cout:1": "message_bridge",
+    "src/interpreter.s:handle_input_backspace:jsr:rom_cout:1": "input_ascii",
+    "src/interpreter.s:store_and_echo_character:jsr:rom_cout:1": "input_ascii",
+    "src/interpreter.s:draw_cursor_space:jmp:(draw_character_vector):1": "input_ascii",
+    "src/interpreter.s:clear_input_cell:jsr:rom_cout:1": "input_ascii",
+    "src/intrinsics.s:echo_command_byte:jsr:rom_cout:1": "input_ascii",
+    "src/intrinsics.s:print_ask_prompt:jsr:rom_cout:1": "input_ascii",
+    "src/intrinsics.s:print_quoted_string:jmp:(string_printer_vector):1": "script_literals",
+    "src/intrinsics.s:decimal_next_digit:jmp:(string_printer_vector):1": "decimal_output",
+    "src/intrinsics.s:snapshot_error:jsr:call_string_printer:1": "save_error",
+    "src/intrinsics.s:picture_load_overflow:jsr:call_string_printer:1": "picture_error",
+    "src/intrinsics.s:call_string_printer:jmp:(string_printer_vector):1": "message_bridge",
+    "src/intrinsics.s:print_game_disk_prompt:jsr:call_string_printer:1": "native_media_prompt",
+    "src/intrinsics.s:print_game_disk_prompt:jsr:call_string_printer:2": "native_media_prompt",
+    "src/intrinsics.s:print_game_disk_prompt_at_181c_at_1820:jsr:call_string_printer:1": "native_media_prompt",
+    "src/intrinsics.s:print_game_disk_prompt_at_181c_at_1820:jsr:call_string_printer:2": "native_media_prompt",
+    "src/intrinsics.s:print_game_disk_prompt_at_181c_at_1820:jsr:call_string_printer:3": "native_media_prompt",
+    "src/korean/bootstrap.s:boot_error_text_loop:jsr:$fded:1": "startup_error",
+    "src/korean/bootstrap.s:boot_no_lc_text:jsr:$fded:1": "no_lc",
+    "src/korean/dispatch.s:ko_resource_retry:jsr:ko_native_print_script_string:1": "runtime_media",
+    "src/korean/messages.s:ko_print_script_string:jsr:ko_native_print_script_string:1": "message_bridge",
+    "src/korean/messages.s:ko_reference_ready:jsr:ko_print_message:1": "message_bridge",
+    "src/korean/messages.s:ko_reference_ready:jsr:$fded:1": "message_bridge",
+    "src/korean/messages.s:ko_ascii:jsr:$fded:1": "message_bridge",
+    "src/korean/messages.s:ko_message_newline:jsr:$fded:1": "message_bridge",
+    "src/korean/restore-guard.inc:ko_restore_failed:jsr:$0bf3:1": "restore_recovery",
+    "src/korean/save.s:ko_prompt_media:jsr:ko_native_print_script_string:1": "runtime_media",
+    "src/korean/dispatch.s:ko_resource_retry:jsr:ko_print_script_string:1": "runtime_media",
+    "src/korean/save.s:ko_prompt_media:jsr:ko_print_script_string:1": "runtime_media",
+    "src/korean/dispatch.s:ko_clear_message_cell:jsr:$fded:1": "message_row_clear"
+  },
+  "categories": {
+    "boot_diagnostic": {
+      "treatment": "exclude",
+      "reason": "Uncalled retained diagnostic; literal B and hyphen plus ROM hex 01/00.",
+      "catalog_ids": [
+        "boot:resident_diagnostic"
+      ]
+    },
+    "boot_wrong_side": {
+      "treatment": "exclude",
+      "reason": "Before Korean initialization; boot the correct medium.",
+      "catalog_ids": [
+        "boot:wrong_side"
+      ]
+    },
+    "legacy_editor": {
+      "treatment": "exclude",
+      "reason": "Retained editor fragment below renderer entry; not called by game.",
+      "catalog_ids": [
+        "legacy:vtoc",
+        "legacy:video"
+      ]
+    },
+    "dos_shell": {
+      "treatment": "exclude",
+      "reason": "Pre-game DOS error/catalog and user command echo. Preserve ASCII filenames, type/count symbols and shell text.",
+      "catalog_ids": [
+        "dos:dos_err01",
+        "dos:dos_err03",
+        "dos:dos_err04",
+        "dos:dos_err05",
+        "dos:dos_err06",
+        "dos:dos_err07",
+        "dos:dos_err08",
+        "dos:dos_err09",
+        "dos:dos_err10",
+        "dos:dos_err11",
+        "dos:dos_err12",
+        "dos:dos_err13",
+        "dos:dos_err14",
+        "dos:dos_err15",
+        "dos:catalog_volume"
+      ]
+    },
+    "input_ascii": {
+      "treatment": "preserve",
+      "reason": "Keyboard echo/backspace/cursor and OK> prompt use existing English command input.",
+      "catalog_ids": [
+        "parms:prompt"
+      ]
+    },
+    "message_bridge": {
+      "treatment": "translate via catalog",
+      "reason": "Dispatch catalogued literals, decimal buffers and runtime messages; formatter emits only payload characters/control bytes.",
+      "catalog_ids": []
+    },
+    "engine_errors": {
+      "treatment": "translate",
+      "reason": "Four fixed PARMS error strings route through the Korean wrapper.",
+      "catalog_ids": [
+        "parms:error-0",
+        "parms:error-1",
+        "parms:error-2",
+        "parms:error-3"
+      ]
+    },
+    "script_literals": {
+      "treatment": "translate",
+      "reason": "All quoted P literals are indexed with original offsets/conditions; numeric P is classified separately.",
+      "catalog_ids": []
+    },
+    "decimal_output": {
+      "treatment": "preserve digits",
+      "reason": "Two P TV(8) sites generate ASCII digits; surrounding catalog strings supply Korean units.",
+      "catalog_ids": []
+    },
+    "save_error": {
+      "treatment": "translate",
+      "reason": "Native snapshot error string, with independent partial-restore recovery below.",
+      "catalog_ids": [
+        "intrinsic:disk_error_text"
+      ]
+    },
+    "picture_error": {
+      "treatment": "translate",
+      "reason": "Native picture bounds error.",
+      "catalog_ids": [
+        "intrinsic:picture_load_overflow_text"
+      ]
+    },
+    "native_media_prompt": {
+      "treatment": "translate except identifiers",
+      "reason": "Five-part disk prompt; A/B and OK remain ASCII.",
+      "catalog_ids": [
+        "intrinsic:disk_action_error_text",
+        "intrinsic:game_disk_prompt_text",
+        "intrinsic:disk_side_a_text",
+        "intrinsic:disk_side_b_text",
+        "intrinsic:drive_prompt_text",
+        "intrinsic:disk_prompt_ok_text"
+      ]
+    },
+    "startup_error": {
+      "treatment": "exclude",
+      "reason": "LC/font/runtime not yet initialized; essential startup retry in English.",
+      "catalog_ids": [
+        "runtime:boot_error_text"
+      ]
+    },
+    "no_lc": {
+      "treatment": "exclude",
+      "reason": "Korean font unavailable without Language Card.",
+      "catalog_ids": [
+        "runtime:boot_no_lc_message"
+      ]
+    },
+    "runtime_media": {
+      "treatment": "translate",
+      "reason": "Resident game-media/save instructions, callable while room cache is invalid. KOREAN_NATIVE_UI selects the message-reference wrapper; default fixtures retain native ASCII.",
+      "catalog_ids": [
+        "runtime:ko_media_text",
+        "runtime:ko_save_prompt"
+      ]
+    },
+    "restore_recovery": {
+      "treatment": "exclude",
+      "reason": "Independent ASCII output outside snapshot survives partially restored extension code.",
+      "catalog_ids": [
+        "runtime:ko_restore_error_text"
+      ]
+    },
+    "generated_start": {
+      "treatment": "exclude",
+      "reason": "Game A START executes a pre-renderer BASIC PRINT telling the player to boot the extra disk.",
+      "catalog_ids": [
+        "generated:a_boot_notice"
+      ]
+    },
+    "picture_caption": {
+      "treatment": "translate as caption",
+      "reason": "One catalogued title in two original vector-logo records. Generated INITIAL row-1 resident reference adds its caption; both logo records and geometric puzzle marks are preserved.",
+      "catalog_ids": [
+        "picture:title"
+      ]
+    },
+    "message_row_clear": {
+      "treatment": "layout only",
+      "reason": "Clear 160 space glyphs on message rows 12-15 of the selected HGR page before a variable-width media prompt; no localizable text.",
+      "catalog_ids": []
+    }
+  },
+  "system_scope_exclusions": [
+    {
+      "scope": "Apple II ROM / Applesoft / monitor UI",
+      "reason": "Machine-provided startup, input echo, BASIC/monitor prompts and errors are outside game-owned text; Korean LC initialization has not run. Preserve firmware and English diagnostics."
+    },
+    {
+      "scope": "DOS command interpreter / CATALOG",
+      "reason": "Not in-game dialogue. Owned fixed text is catalogued as excluded; filenames, file types, counts and user command echoes remain ASCII."
+    },
+    {
+      "scope": "Legacy editor / dormant boot diagnostic",
+      "reason": "Explicit excluded catalog entries preserve historical unused bytes, without claiming those routines were executed."
+    },
+    {
+      "scope": "HGR glyph and picture primitives",
+      "reason": "Renderer/LC helpers draw catalog-selected glyphs or original vector art; title inventory supplies the only translated picture caption. Pixel primitives do not introduce new text literals."
+    }
+  ],
+  "generated_outputs": {
+    "tools/korean/title_caption.py:add_caption": "picture_caption"
+  }
+}

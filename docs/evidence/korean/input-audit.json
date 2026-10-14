@@ -1,0 +1,5383 @@
+{
+  "kind": "English input inventory for reviewers; contains puzzle solutions",
+  "catalog_sha256": "ae3c41e213589e66897bd6e1efd65f8b53cb0ce590bbf694d5c47820a6993c15",
+  "tool_sha256": "2415bd2d283b5254f3d23387e83875b8b618ee2a04678ce5c31a6474b80d1735",
+  "parser_source_sha256": "b7995c055b523a4fd059aaef76c9f54af14c55962f8d39fb79e6fc2898d71b2a",
+  "intrinsic_source_sha256": "bde00b4f71ef79975ce5a75c286f74d9eb2cc4eabc96e6b34c5656f530516357",
+  "script_files": 86,
+  "pattern_sites": 337,
+  "patterns": [
+    {
+      "side": "a",
+      "file": "DEATH",
+      "path": "assets/raw/a/files/death.bin",
+      "line": 8,
+      "pattern": "START"
+    },
+    {
+      "side": "a",
+      "file": "DEATH",
+      "path": "assets/raw/a/files/death.bin",
+      "line": 14,
+      "pattern": "RESTOGAME "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 644,
+      "pattern": "SAVE GAME "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 662,
+      "pattern": "RESTOGAME "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 690,
+      "pattern": "SOUNDON   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 694,
+      "pattern": "SOUNDOFF  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 698,
+      "pattern": "IT   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 701,
+      "pattern": "XOTZI"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 706,
+      "pattern": "EAT  ALL  PILLS"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 707,
+      "pattern": "TAKE ALL  PILLS"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 713,
+      "pattern": "TAKE PILLS"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 719,
+      "pattern": "TAKE PILL "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 720,
+      "pattern": "EAT  PILL "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 729,
+      "pattern": "BLOW OUT  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 732,
+      "pattern": "YES  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 733,
+      "pattern": "NO   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 782,
+      "pattern": "RAOUL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 785,
+      "pattern": "SHOVE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 788,
+      "pattern": "LAMP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 789,
+      "pattern": "LANTE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 792,
+      "pattern": "MATCH"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 795,
+      "pattern": "KNIFE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 798,
+      "pattern": "FOOD "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 801,
+      "pattern": "BOTTL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 802,
+      "pattern": "PILLS"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 805,
+      "pattern": "JAGUA"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 808,
+      "pattern": "HEAD "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 811,
+      "pattern": "SNAKE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 814,
+      "pattern": "MAP  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 817,
+      "pattern": "AMULE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 820,
+      "pattern": "GUN  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 821,
+      "pattern": "REVOL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 824,
+      "pattern": "ROPE "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 827,
+      "pattern": "JADE BOWL "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 830,
+      "pattern": "SILVEBOWL "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 833,
+      "pattern": "GOLD BOWL "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 836,
+      "pattern": "GOLD KEY  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 837,
+      "pattern": "GOLDEKEY  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 840,
+      "pattern": "BLACKKEY  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 843,
+      "pattern": "SILVEKEY  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 846,
+      "pattern": "FLUTE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 849,
+      "pattern": "MASK "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 852,
+      "pattern": "JEEP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 893,
+      "pattern": "INVEN"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 894,
+      "pattern": "EQUIP"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 896,
+      "pattern": "SUPPL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 898,
+      "pattern": "RUIN "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 899,
+      "pattern": "RUINS"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 900,
+      "pattern": "TEMPL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 901,
+      "pattern": "PYRAM"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 903,
+      "pattern": "DOOR "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 904,
+      "pattern": "DOORW"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 905,
+      "pattern": "ENTRA"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 907,
+      "pattern": "ROAD "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 909,
+      "pattern": "PATH "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 910,
+      "pattern": "PATHW"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 912,
+      "pattern": "TUNNE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 913,
+      "pattern": "PASSA"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 915,
+      "pattern": "STAIR"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 916,
+      "pattern": "STEPS"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 918,
+      "pattern": "PLANE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 919,
+      "pattern": "AIRPL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 920,
+      "pattern": "AIRCR"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 922,
+      "pattern": "PEOPL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 923,
+      "pattern": "FIGUR"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 925,
+      "pattern": "SIGN "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 926,
+      "pattern": "WALL "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 928,
+      "pattern": "MAZE "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 929,
+      "pattern": "FLOOR"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 930,
+      "pattern": "GROUN"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 932,
+      "pattern": "ALTAR"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 933,
+      "pattern": "DIAS "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 934,
+      "pattern": "SLAB "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 935,
+      "pattern": "SLABS"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 936,
+      "pattern": "STONE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 937,
+      "pattern": "CRYPT"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 938,
+      "pattern": "COFFI"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 939,
+      "pattern": "SARCO"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 940,
+      "pattern": "PLATF"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 942,
+      "pattern": "FACE "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 943,
+      "pattern": "FACES"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 944,
+      "pattern": "IDOL "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 945,
+      "pattern": "STATU"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 947,
+      "pattern": "PIT  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 948,
+      "pattern": "HOLE "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 949,
+      "pattern": "OPENI"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 951,
+      "pattern": "HUT  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 952,
+      "pattern": "HOUSE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 953,
+      "pattern": "SHACK"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 955,
+      "pattern": "BOWL "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 957,
+      "pattern": "CRACK"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 959,
+      "pattern": "UNDEA"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 960,
+      "pattern": "MONST"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 961,
+      "pattern": "SKELE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 963,
+      "pattern": "URN  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 964,
+      "pattern": "POT  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 966,
+      "pattern": "POOL "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 967,
+      "pattern": "WATER"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 968,
+      "pattern": "REFLE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 970,
+      "pattern": "LOCKS"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 971,
+      "pattern": "LOCK "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 973,
+      "pattern": "KEY  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 975,
+      "pattern": "IN   JEEP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 976,
+      "pattern": "INTO JEEP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 977,
+      "pattern": "INSIDJEEP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 978,
+      "pattern": "ENTERJEEP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 980,
+      "pattern": "OUT  JEEP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 981,
+      "pattern": "FROM JEEP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 982,
+      "pattern": "EXIT JEEP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 983,
+      "pattern": "LEAVEJEEP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 985,
+      "pattern": "ALL  BUT  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 987,
+      "pattern": "ALL  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 989,
+      "pattern": "ON   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 991,
+      "pattern": "OFF  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 998,
+      "pattern": "GET  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 999,
+      "pattern": "GRAB "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1000,
+      "pattern": "TAKE "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1001,
+      "pattern": "PICK UP   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1002,
+      "pattern": "CARRY"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1003,
+      "pattern": "KEEP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1004,
+      "pattern": "STEAL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1006,
+      "pattern": "DROP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1007,
+      "pattern": "SET  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1008,
+      "pattern": "PUT  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1009,
+      "pattern": "PLACE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1010,
+      "pattern": "DUMP "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1012,
+      "pattern": "GIVE "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1013,
+      "pattern": "OFFER"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1015,
+      "pattern": "SAY  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1016,
+      "pattern": "SPEAK"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1017,
+      "pattern": "SHOUT"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1018,
+      "pattern": "YELL "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1020,
+      "pattern": "LOOK "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1021,
+      "pattern": "EXAMI"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1022,
+      "pattern": "CHECK"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1024,
+      "pattern": "READ "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1026,
+      "pattern": "SEARC"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1028,
+      "pattern": "OPEN "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1029,
+      "pattern": "UNLOC"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1031,
+      "pattern": "CLOSE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1033,
+      "pattern": "UP   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1034,
+      "pattern": "ASCEN"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1035,
+      "pattern": "TOP  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1036,
+      "pattern": "U    "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1038,
+      "pattern": "DOWN "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1039,
+      "pattern": "DESCE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1040,
+      "pattern": "BOTTO"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1041,
+      "pattern": "BASE "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1042,
+      "pattern": "D    "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1044,
+      "pattern": "INSER"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1046,
+      "pattern": "PUSH "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1047,
+      "pattern": "PRESS"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1049,
+      "pattern": "MOVE "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1050,
+      "pattern": "LIFT "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1052,
+      "pattern": "WEAR "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1053,
+      "pattern": "USE  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1055,
+      "pattern": "IN   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1056,
+      "pattern": "INTO "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1057,
+      "pattern": "INSID"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1058,
+      "pattern": "ENTER"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1060,
+      "pattern": "OUT  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1061,
+      "pattern": "OUTSI"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1062,
+      "pattern": "EXIT "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1063,
+      "pattern": "LEAVE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1065,
+      "pattern": "FORWA"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1066,
+      "pattern": "F    "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1068,
+      "pattern": "BACK "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1069,
+      "pattern": "B    "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1071,
+      "pattern": "NORTH"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1072,
+      "pattern": "N    "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1074,
+      "pattern": "SOUTH"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1075,
+      "pattern": "S    "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1077,
+      "pattern": "EAST "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1078,
+      "pattern": "E    "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1080,
+      "pattern": "WEST "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1081,
+      "pattern": "W    "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1083,
+      "pattern": "NW   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1085,
+      "pattern": "SW   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1087,
+      "pattern": "NE   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1089,
+      "pattern": "SE   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1091,
+      "pattern": "LEFT "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1092,
+      "pattern": "L    "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1094,
+      "pattern": "RIGHT"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1095,
+      "pattern": "R    "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1097,
+      "pattern": "CLIMB"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1099,
+      "pattern": "AROUN"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1100,
+      "pattern": "CIRCL"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1102,
+      "pattern": "LIGHT"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1104,
+      "pattern": "GO   "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1105,
+      "pattern": "GOTO "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1106,
+      "pattern": "APPRO"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1107,
+      "pattern": "FOLLO"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1108,
+      "pattern": "DRIVE"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1111,
+      "pattern": "KICK "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1113,
+      "pattern": "ATTAC"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1114,
+      "pattern": "HIT  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1115,
+      "pattern": "KILL "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1116,
+      "pattern": "FIGHT"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1117,
+      "pattern": "BREAK"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1118,
+      "pattern": "DESTR"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1120,
+      "pattern": "SHOOT"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1122,
+      "pattern": "EAT  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1124,
+      "pattern": "WAVE "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1125,
+      "pattern": "GESTU"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1127,
+      "pattern": "PLAY "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1129,
+      "pattern": "REMOV"
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1131,
+      "pattern": "DIG  "
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 1133,
+      "pattern": "ASK  "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 1.0",
+      "path": "assets/raw/a/files/room-1-0.bin",
+      "line": 82,
+      "pattern": "LOOK OUT  "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 1.0",
+      "path": "assets/raw/a/files/room-1-0.bin",
+      "line": 83,
+      "pattern": "LOOK OUTSI"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 1.0",
+      "path": "assets/raw/a/files/room-1-0.bin",
+      "line": 98,
+      "pattern": "JEEP "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 2.0",
+      "path": "assets/raw/a/files/room-2-0.bin",
+      "line": 23,
+      "pattern": "ASK  "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 6.0",
+      "path": "assets/raw/a/files/room-6-0.bin",
+      "line": 106,
+      "pattern": "REPLAHEAD "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 6.2",
+      "path": "assets/raw/a/files/room-6-2.bin",
+      "line": 19,
+      "pattern": "IDOL "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 6.2",
+      "path": "assets/raw/a/files/room-6-2.bin",
+      "line": 20,
+      "pattern": "STATU"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 6.2",
+      "path": "assets/raw/a/files/room-6-2.bin",
+      "line": 21,
+      "pattern": "HEAD "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 6.2",
+      "path": "assets/raw/a/files/room-6-2.bin",
+      "line": 22,
+      "pattern": "JAGUA"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 7.0",
+      "path": "assets/raw/a/files/room-7-0.bin",
+      "line": 16,
+      "pattern": "GO   JEEP "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 7.1",
+      "path": "assets/raw/a/files/room-7-1.bin",
+      "line": 22,
+      "pattern": "JEEP "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 9.1",
+      "path": "assets/raw/a/files/room-9-1.bin",
+      "line": 41,
+      "pattern": "DOOR "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 9.2",
+      "path": "assets/raw/a/files/room-9-2.bin",
+      "line": 25,
+      "pattern": "LOOK SYMBO"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 9.2",
+      "path": "assets/raw/a/files/room-9-2.bin",
+      "line": 26,
+      "pattern": "READ SYMBO"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 10.0",
+      "path": "assets/raw/a/files/room-10-0.bin",
+      "line": 39,
+      "pattern": "LAMP "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 10.0",
+      "path": "assets/raw/a/files/room-10-0.bin",
+      "line": 40,
+      "pattern": "LANTE"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 10.0",
+      "path": "assets/raw/a/files/room-10-0.bin",
+      "line": 45,
+      "pattern": "CLIMBROPE "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 10.0",
+      "path": "assets/raw/a/files/room-10-0.bin",
+      "line": 46,
+      "pattern": "CLIMBOUT  "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 10.0",
+      "path": "assets/raw/a/files/room-10-0.bin",
+      "line": 47,
+      "pattern": "UP   ROPE "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 10.0",
+      "path": "assets/raw/a/files/room-10-0.bin",
+      "line": 54,
+      "pattern": "ROPE "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 10.0",
+      "path": "assets/raw/a/files/room-10-0.bin",
+      "line": 59,
+      "pattern": "RAOULDOWN "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 10.0",
+      "path": "assets/raw/a/files/room-10-0.bin",
+      "line": 63,
+      "pattern": "SEARCWALL "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 10.0",
+      "path": "assets/raw/a/files/room-10-0.bin",
+      "line": 64,
+      "pattern": "SEARCPIT  "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 11.0",
+      "path": "assets/raw/a/files/room-11-0.bin",
+      "line": 19,
+      "pattern": "LOOK BOWL "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 11.0",
+      "path": "assets/raw/a/files/room-11-0.bin",
+      "line": 20,
+      "pattern": "EXAMIBOWL "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 11.0",
+      "path": "assets/raw/a/files/room-11-0.bin",
+      "line": 21,
+      "pattern": "CHECKBOWL "
+    },
+    {
+      "side": "a",
+      "file": "ROOM 11.0",
+      "path": "assets/raw/a/files/room-11-0.bin",
+      "line": 26,
+      "pattern": "LOOK CARVI"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 14.0",
+      "path": "assets/raw/a/files/room-14-0.bin",
+      "line": 62,
+      "pattern": "LOOK BOULD"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 14.0",
+      "path": "assets/raw/a/files/room-14-0.bin",
+      "line": 63,
+      "pattern": "EXAMIBOULD"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 14.0",
+      "path": "assets/raw/a/files/room-14-0.bin",
+      "line": 64,
+      "pattern": "SEARCBOULD"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 14.0",
+      "path": "assets/raw/a/files/room-14-0.bin",
+      "line": 92,
+      "pattern": "BOULD"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 15.0",
+      "path": "assets/raw/a/files/room-15-0.bin",
+      "line": 21,
+      "pattern": "LOOK APPAR"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 15.0",
+      "path": "assets/raw/a/files/room-15-0.bin",
+      "line": 29,
+      "pattern": "SEARC"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 15.0",
+      "path": "assets/raw/a/files/room-15-0.bin",
+      "line": 68,
+      "pattern": "ASK  SPIRI"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 15.0",
+      "path": "assets/raw/a/files/room-15-0.bin",
+      "line": 69,
+      "pattern": "ASK  APPAR"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 15.0",
+      "path": "assets/raw/a/files/room-15-0.bin",
+      "line": 70,
+      "pattern": "ASK  GHOST"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 42,
+      "pattern": "DROP URN  LEFT PEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 43,
+      "pattern": "SET  URN  LEFT PEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 44,
+      "pattern": "PUT  URN  LEFT PEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 45,
+      "pattern": "PLACEURN  LEFT PEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 54,
+      "pattern": "DROP URN  RIGHTPEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 55,
+      "pattern": "SET  URN  RIGHTPEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 56,
+      "pattern": "PUT  URN  RIGHTPEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 57,
+      "pattern": "PLACEURN  RIGHTPEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 74,
+      "pattern": "DROP URN  PEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 75,
+      "pattern": "SET  URN  PEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 76,
+      "pattern": "PUT  URN  PEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 77,
+      "pattern": "PLACEURN  PEDES"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 81,
+      "pattern": "PEDIS"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 84,
+      "pattern": "INVEN"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 16.0",
+      "path": "assets/raw/a/files/room-16-0.bin",
+      "line": 85,
+      "pattern": "EQUIP"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 19.0",
+      "path": "assets/raw/a/files/room-19-0.bin",
+      "line": 19,
+      "pattern": "LOOK WOMAN"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 19.0",
+      "path": "assets/raw/a/files/room-19-0.bin",
+      "line": 90,
+      "pattern": "SHOOT"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 19.0",
+      "path": "assets/raw/a/files/room-19-0.bin",
+      "line": 104,
+      "pattern": "ASK  WOMAN"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 21.0",
+      "path": "assets/raw/a/files/room-21-0.bin",
+      "line": 41,
+      "pattern": "LOOK PEDDL"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 21.0",
+      "path": "assets/raw/a/files/room-21-0.bin",
+      "line": 42,
+      "pattern": "EXAMIPEDDL"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 21.0",
+      "path": "assets/raw/a/files/room-21-0.bin",
+      "line": 45,
+      "pattern": "LOOK POTIO"
+    },
+    {
+      "side": "a",
+      "file": "ROOM 21.0",
+      "path": "assets/raw/a/files/room-21-0.bin",
+      "line": 46,
+      "pattern": "LOOK CURE "
+    },
+    {
+      "side": "b",
+      "file": "DEATH",
+      "path": "assets/raw/b/files/death.bin",
+      "line": 8,
+      "pattern": "START"
+    },
+    {
+      "side": "b",
+      "file": "DEATH",
+      "path": "assets/raw/b/files/death.bin",
+      "line": 14,
+      "pattern": "RESTOGAME "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 24.0",
+      "path": "assets/raw/b/files/room-24-0.bin",
+      "line": 29,
+      "pattern": "SEARCFLOOR"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 24.0",
+      "path": "assets/raw/b/files/room-24-0.bin",
+      "line": 32,
+      "pattern": "SEARC"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 24.1",
+      "path": "assets/raw/b/files/room-24-1.bin",
+      "line": 70,
+      "pattern": "SEARCFLOOR"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 25.0",
+      "path": "assets/raw/b/files/room-25-0.bin",
+      "line": 10,
+      "pattern": "LOOK WEBS "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 25.0",
+      "path": "assets/raw/b/files/room-25-0.bin",
+      "line": 21,
+      "pattern": "SEARCFLOOR"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 25.0",
+      "path": "assets/raw/b/files/room-25-0.bin",
+      "line": 31,
+      "pattern": "SEARC"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 25.0",
+      "path": "assets/raw/b/files/room-25-0.bin",
+      "line": 100,
+      "pattern": "CUT  WEB  "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 25.0",
+      "path": "assets/raw/b/files/room-25-0.bin",
+      "line": 101,
+      "pattern": "REMOVWEB  "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 25.0",
+      "path": "assets/raw/b/files/room-25-0.bin",
+      "line": 102,
+      "pattern": "CLEARWEB  "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 25.0",
+      "path": "assets/raw/b/files/room-25-0.bin",
+      "line": 103,
+      "pattern": "CUT  WEBS "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 25.0",
+      "path": "assets/raw/b/files/room-25-0.bin",
+      "line": 104,
+      "pattern": "REMOVWEBS "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 25.0",
+      "path": "assets/raw/b/files/room-25-0.bin",
+      "line": 105,
+      "pattern": "CLEARWEBS "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 26.0",
+      "path": "assets/raw/b/files/room-26-0.bin",
+      "line": 40,
+      "pattern": "LOOK STAR "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 26.0",
+      "path": "assets/raw/b/files/room-26-0.bin",
+      "line": 44,
+      "pattern": "SEARCDOOR "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 26.0",
+      "path": "assets/raw/b/files/room-26-0.bin",
+      "line": 45,
+      "pattern": "SEARCDOORW"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 26.0",
+      "path": "assets/raw/b/files/room-26-0.bin",
+      "line": 53,
+      "pattern": "SEARC"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 27.0",
+      "path": "assets/raw/b/files/room-27-0.bin",
+      "line": 25,
+      "pattern": "LOOK BLOCK"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 27.0",
+      "path": "assets/raw/b/files/room-27-0.bin",
+      "line": 26,
+      "pattern": "LOOK STONE"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 27.0",
+      "path": "assets/raw/b/files/room-27-0.bin",
+      "line": 30,
+      "pattern": "LIFT STONE"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 27.0",
+      "path": "assets/raw/b/files/room-27-0.bin",
+      "line": 31,
+      "pattern": "LIFT BLOCK"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 27.0",
+      "path": "assets/raw/b/files/room-27-0.bin",
+      "line": 32,
+      "pattern": "MOVE STONE"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 27.0",
+      "path": "assets/raw/b/files/room-27-0.bin",
+      "line": 33,
+      "pattern": "MOVE BLOCK"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 27.0",
+      "path": "assets/raw/b/files/room-27-0.bin",
+      "line": 34,
+      "pattern": "SEARCSTONE"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 27.0",
+      "path": "assets/raw/b/files/room-27-0.bin",
+      "line": 35,
+      "pattern": "SEARCBLOCK"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 27.0",
+      "path": "assets/raw/b/files/room-27-0.bin",
+      "line": 43,
+      "pattern": "SEARC"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 28.0",
+      "path": "assets/raw/b/files/room-28-0.bin",
+      "line": 26,
+      "pattern": "SEARC"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 29.0",
+      "path": "assets/raw/b/files/room-29-0.bin",
+      "line": 16,
+      "pattern": "SEARC"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.0",
+      "path": "assets/raw/b/files/room-31-0.bin",
+      "line": 31,
+      "pattern": "LOOK WATER"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.0",
+      "path": "assets/raw/b/files/room-31-0.bin",
+      "line": 32,
+      "pattern": "LOOK POOL "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.0",
+      "path": "assets/raw/b/files/room-31-0.bin",
+      "line": 33,
+      "pattern": "LOOK REFLE"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.0",
+      "path": "assets/raw/b/files/room-31-0.bin",
+      "line": 34,
+      "pattern": "EXAMIWATER"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.0",
+      "path": "assets/raw/b/files/room-31-0.bin",
+      "line": 35,
+      "pattern": "EXAMIPOOL "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.0",
+      "path": "assets/raw/b/files/room-31-0.bin",
+      "line": 36,
+      "pattern": "EXAMIREFLE"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.0",
+      "path": "assets/raw/b/files/room-31-0.bin",
+      "line": 37,
+      "pattern": "FORWA"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 34.0",
+      "path": "assets/raw/b/files/room-34-0.bin",
+      "line": 71,
+      "pattern": "TIE  ROPE TREE "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 34.0",
+      "path": "assets/raw/b/files/room-34-0.bin",
+      "line": 72,
+      "pattern": "TIE  ROPE BUSH "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 34.2",
+      "path": "assets/raw/b/files/room-34-2.bin",
+      "line": 32,
+      "pattern": "CLIMBROPE "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 34.2",
+      "path": "assets/raw/b/files/room-34-2.bin",
+      "line": 39,
+      "pattern": "ROPE "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 37.0",
+      "path": "assets/raw/b/files/room-37-0.bin",
+      "line": 93,
+      "pattern": "XOTZI"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 10,
+      "pattern": "LOOK "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 11,
+      "pattern": "EXAMI"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 12,
+      "pattern": "CHECK"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 13,
+      "pattern": "READ "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 14,
+      "pattern": "GET  "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 15,
+      "pattern": "GRAB "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 16,
+      "pattern": "TAKE "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 17,
+      "pattern": "PICK UP   "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 18,
+      "pattern": "PICKU"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 19,
+      "pattern": "CARRY"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 20,
+      "pattern": "KEEP "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 38.0",
+      "path": "assets/raw/b/files/room-38-0.bin",
+      "line": 21,
+      "pattern": "STEAL"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 41.0",
+      "path": "assets/raw/b/files/room-41-0.bin",
+      "line": 33,
+      "pattern": "LOOK CARVI"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 41.0",
+      "path": "assets/raw/b/files/room-41-0.bin",
+      "line": 34,
+      "pattern": "EXAMICARVI"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 41.2",
+      "path": "assets/raw/b/files/room-41-2.bin",
+      "line": 63,
+      "pattern": "SEARCALTAR"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 41.2",
+      "path": "assets/raw/b/files/room-41-2.bin",
+      "line": 64,
+      "pattern": "SEARCOPENI"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 41.2",
+      "path": "assets/raw/b/files/room-41-2.bin",
+      "line": 65,
+      "pattern": "SEARCHOLE "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 41.2",
+      "path": "assets/raw/b/files/room-41-2.bin",
+      "line": 108,
+      "pattern": "SEARC"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 41.2",
+      "path": "assets/raw/b/files/room-41-2.bin",
+      "line": 121,
+      "pattern": "REMOVMASK "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.0",
+      "path": "assets/raw/b/files/room-49-0.bin",
+      "line": 44,
+      "pattern": "GIVE MASK "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.0",
+      "path": "assets/raw/b/files/room-49-0.bin",
+      "line": 45,
+      "pattern": "OFFERMASK "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.0",
+      "path": "assets/raw/b/files/room-49-0.bin",
+      "line": 46,
+      "pattern": "HAND MASK "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.0",
+      "path": "assets/raw/b/files/room-49-0.bin",
+      "line": 74,
+      "pattern": "SHOOT"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.0",
+      "path": "assets/raw/b/files/room-49-0.bin",
+      "line": 75,
+      "pattern": "GUN  "
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.0",
+      "path": "assets/raw/b/files/room-49-0.bin",
+      "line": 76,
+      "pattern": "REVOL"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "path": "assets/raw/b/files/room-49-2.bin",
+      "line": 11,
+      "pattern": "PLAY FLUTE"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "path": "assets/raw/b/files/room-49-2.bin",
+      "line": 12,
+      "pattern": "USE  FLUTE"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "path": "assets/raw/b/files/room-49-2.bin",
+      "line": 13,
+      "pattern": "PLAY MUSIC"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "path": "assets/raw/b/files/room-49-2.bin",
+      "line": 23,
+      "pattern": "SHOOT"
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "path": "assets/raw/b/files/room-49-2.bin",
+      "line": 34,
+      "pattern": "JAGUA"
+    }
+  ],
+  "asks": [
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 648,
+      "conditions": [],
+      "comparisons": [
+        {
+          "line": 650,
+          "conditions": [],
+          "prefix": "Y"
+        }
+      ],
+      "preceding_messages": [
+        "a:LIBRARY:1c39",
+        "a:LIBRARY:1c54"
+      ]
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 666,
+      "conditions": [],
+      "comparisons": [
+        {
+          "line": 668,
+          "conditions": [],
+          "prefix": "Y"
+        }
+      ],
+      "preceding_messages": [
+        "a:LIBRARY:1cd6",
+        "a:LIBRARY:1d1d",
+        "a:LIBRARY:1d37"
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 43.0",
+      "path": "assets/raw/b/files/room-43-0.bin",
+      "line": 51,
+      "conditions": [],
+      "comparisons": [
+        {
+          "line": 52,
+          "conditions": [],
+          "prefix": "A COFFIN"
+        },
+        {
+          "line": 53,
+          "conditions": [
+            "E"
+          ],
+          "prefix": "COFFIN"
+        },
+        {
+          "line": 54,
+          "conditions": [
+            "E"
+          ],
+          "prefix": "A GRAVE"
+        },
+        {
+          "line": 55,
+          "conditions": [
+            "E"
+          ],
+          "prefix": "GRAVE"
+        }
+      ],
+      "preceding_messages": [
+        "b:ROOM 43.0:0298",
+        "b:ROOM 43.0:02be",
+        "b:ROOM 43.0:02eb",
+        "b:ROOM 43.0:0313",
+        "b:ROOM 43.0:0344",
+        "b:ROOM 43.0:036a",
+        "b:ROOM 43.0:038e",
+        "b:ROOM 43.0:03c1"
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 43.0",
+      "path": "assets/raw/b/files/room-43-0.bin",
+      "line": 70,
+      "conditions": [],
+      "comparisons": [
+        {
+          "line": 71,
+          "conditions": [],
+          "prefix": "A FIRE"
+        },
+        {
+          "line": 72,
+          "conditions": [
+            "E"
+          ],
+          "prefix": "FIRE"
+        }
+      ],
+      "preceding_messages": [
+        "b:ROOM 43.0:043f",
+        "b:ROOM 43.0:0482",
+        "b:ROOM 43.0:04aa",
+        "b:ROOM 43.0:04dc",
+        "b:ROOM 43.0:04fc"
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 43.0",
+      "path": "assets/raw/b/files/room-43-0.bin",
+      "line": 87,
+      "conditions": [],
+      "comparisons": [
+        {
+          "line": 88,
+          "conditions": [],
+          "prefix": "A MAN"
+        },
+        {
+          "line": 89,
+          "conditions": [
+            "E"
+          ],
+          "prefix": "MAN"
+        }
+      ],
+      "preceding_messages": [
+        "b:ROOM 43.0:0562",
+        "b:ROOM 43.0:05a3",
+        "b:ROOM 43.0:05ca",
+        "b:ROOM 43.0:05f6",
+        "b:ROOM 43.0:0637"
+      ]
+    }
+  ],
+  "raw_key_polls": [
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 77,
+      "conditions": []
+    },
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "path": "assets/raw/a/files/library.bin",
+      "line": 85,
+      "conditions": []
+    },
+    {
+      "side": "a",
+      "file": "ROOM 14.0",
+      "path": "assets/raw/a/files/room-14-0.bin",
+      "line": 43,
+      "conditions": []
+    },
+    {
+      "side": "a",
+      "file": "ROOM 15.0",
+      "path": "assets/raw/a/files/room-15-0.bin",
+      "line": 96,
+      "conditions": []
+    },
+    {
+      "side": "a",
+      "file": "ROOM 17.0",
+      "path": "assets/raw/a/files/room-17-0.bin",
+      "line": 110,
+      "conditions": []
+    },
+    {
+      "side": "a",
+      "file": "TUNNEL",
+      "path": "assets/raw/a/files/tunnel.bin",
+      "line": 187,
+      "conditions": [
+        "T"
+      ]
+    },
+    {
+      "side": "a",
+      "file": "TUNNEL",
+      "path": "assets/raw/a/files/tunnel.bin",
+      "line": 190,
+      "conditions": [
+        "T"
+      ]
+    },
+    {
+      "side": "a",
+      "file": "TUNNEL",
+      "path": "assets/raw/a/files/tunnel.bin",
+      "line": 191,
+      "conditions": [
+        "T"
+      ]
+    },
+    {
+      "side": "a",
+      "file": "TUNNEL",
+      "path": "assets/raw/a/files/tunnel.bin",
+      "line": 211,
+      "conditions": [
+        "T"
+      ]
+    },
+    {
+      "side": "a",
+      "file": "TUNNEL",
+      "path": "assets/raw/a/files/tunnel.bin",
+      "line": 214,
+      "conditions": [
+        "T"
+      ]
+    },
+    {
+      "side": "a",
+      "file": "TUNNEL",
+      "path": "assets/raw/a/files/tunnel.bin",
+      "line": 215,
+      "conditions": [
+        "T"
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.0",
+      "path": "assets/raw/b/files/room-31-0.bin",
+      "line": 107,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.0",
+      "path": "assets/raw/b/files/room-31-0.bin",
+      "line": 120,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.1",
+      "path": "assets/raw/b/files/room-31-1.bin",
+      "line": 117,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 36.0",
+      "path": "assets/raw/b/files/room-36-0.bin",
+      "line": 54,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 37.0",
+      "path": "assets/raw/b/files/room-37-0.bin",
+      "line": 152,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 39.0",
+      "path": "assets/raw/b/files/room-39-0.bin",
+      "line": 90,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 39.0",
+      "path": "assets/raw/b/files/room-39-0.bin",
+      "line": 95,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 45.0",
+      "path": "assets/raw/b/files/room-45-0.bin",
+      "line": 38,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 45.0",
+      "path": "assets/raw/b/files/room-45-0.bin",
+      "line": 39,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 45.0",
+      "path": "assets/raw/b/files/room-45-0.bin",
+      "line": 47,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 45.0",
+      "path": "assets/raw/b/files/room-45-0.bin",
+      "line": 48,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.0",
+      "path": "assets/raw/b/files/room-49-0.bin",
+      "line": 85,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.1",
+      "path": "assets/raw/b/files/room-49-1.bin",
+      "line": 39,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.1",
+      "path": "assets/raw/b/files/room-49-1.bin",
+      "line": 40,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.1",
+      "path": "assets/raw/b/files/room-49-1.bin",
+      "line": 41,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.1",
+      "path": "assets/raw/b/files/room-49-1.bin",
+      "line": 45,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.1",
+      "path": "assets/raw/b/files/room-49-1.bin",
+      "line": 46,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.1",
+      "path": "assets/raw/b/files/room-49-1.bin",
+      "line": 47,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.1",
+      "path": "assets/raw/b/files/room-49-1.bin",
+      "line": 48,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.1",
+      "path": "assets/raw/b/files/room-49-1.bin",
+      "line": 49,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "path": "assets/raw/b/files/room-49-2.bin",
+      "line": 25,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "path": "assets/raw/b/files/room-49-2.bin",
+      "line": 26,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "path": "assets/raw/b/files/room-49-2.bin",
+      "line": 29,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "path": "assets/raw/b/files/room-49-2.bin",
+      "line": 30,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "path": "assets/raw/b/files/room-49-2.bin",
+      "line": 41,
+      "conditions": []
+    },
+    {
+      "side": "b",
+      "file": "TUNNEL",
+      "path": "assets/raw/b/files/tunnel.bin",
+      "line": 187,
+      "conditions": [
+        "T"
+      ]
+    },
+    {
+      "side": "b",
+      "file": "TUNNEL",
+      "path": "assets/raw/b/files/tunnel.bin",
+      "line": 190,
+      "conditions": [
+        "T"
+      ]
+    },
+    {
+      "side": "b",
+      "file": "TUNNEL",
+      "path": "assets/raw/b/files/tunnel.bin",
+      "line": 191,
+      "conditions": [
+        "T"
+      ]
+    },
+    {
+      "side": "b",
+      "file": "TUNNEL",
+      "path": "assets/raw/b/files/tunnel.bin",
+      "line": 211,
+      "conditions": [
+        "T"
+      ]
+    },
+    {
+      "side": "b",
+      "file": "TUNNEL",
+      "path": "assets/raw/b/files/tunnel.bin",
+      "line": 214,
+      "conditions": [
+        "T"
+      ]
+    },
+    {
+      "side": "b",
+      "file": "TUNNEL",
+      "path": "assets/raw/b/files/tunnel.bin",
+      "line": 215,
+      "conditions": [
+        "T"
+      ]
+    }
+  ],
+  "displayed_input_spellings": [
+    {
+      "id": "a:LIBRARY:0046",
+      "token": "JEEP",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 852,
+          "pattern": "JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 975,
+          "pattern": "IN   JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 976,
+          "pattern": "INTO JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 977,
+          "pattern": "INSIDJEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 978,
+          "pattern": "ENTERJEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 980,
+          "pattern": "OUT  JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 981,
+          "pattern": "FROM JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 982,
+          "pattern": "EXIT JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 983,
+          "pattern": "LEAVEJEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 1.0",
+          "path": "assets/raw/a/files/room-1-0.bin",
+          "line": 98,
+          "pattern": "JEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 7.0",
+          "path": "assets/raw/a/files/room-7-0.bin",
+          "line": 16,
+          "pattern": "GO   JEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 7.1",
+          "path": "assets/raw/a/files/room-7-1.bin",
+          "line": 22,
+          "pattern": "JEEP "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:07e9",
+      "token": "RAOUL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 782,
+          "pattern": "RAOUL"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 59,
+          "pattern": "RAOULDOWN "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:07fa",
+      "token": "JEEP",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 852,
+          "pattern": "JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 975,
+          "pattern": "IN   JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 976,
+          "pattern": "INTO JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 977,
+          "pattern": "INSIDJEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 978,
+          "pattern": "ENTERJEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 980,
+          "pattern": "OUT  JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 981,
+          "pattern": "FROM JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 982,
+          "pattern": "EXIT JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 983,
+          "pattern": "LEAVEJEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 1.0",
+          "path": "assets/raw/a/files/room-1-0.bin",
+          "line": 98,
+          "pattern": "JEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 7.0",
+          "path": "assets/raw/a/files/room-7-0.bin",
+          "line": 16,
+          "pattern": "GO   JEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 7.1",
+          "path": "assets/raw/a/files/room-7-1.bin",
+          "line": 22,
+          "pattern": "JEEP "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:080e",
+      "token": "SHOVEL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 785,
+          "pattern": "SHOVE"
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:0822",
+      "token": "LANTERN",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 789,
+          "pattern": "LANTE"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 40,
+          "pattern": "LANTE"
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:0837",
+      "token": "MATCHES",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 792,
+          "pattern": "MATCH"
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:0853",
+      "token": "KNIFE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 795,
+          "pattern": "KNIFE"
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:0866",
+      "token": "FOOD",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 798,
+          "pattern": "FOOD "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:087c",
+      "token": "BOTTLE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 801,
+          "pattern": "BOTTL"
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:0899",
+      "token": "JAGUAR",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 805,
+          "pattern": "JAGUA"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 6.2",
+          "path": "assets/raw/a/files/room-6-2.bin",
+          "line": 22,
+          "pattern": "JAGUA"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.2",
+          "path": "assets/raw/b/files/room-49-2.bin",
+          "line": 34,
+          "pattern": "JAGUA"
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:08ad",
+      "token": "HEAD",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 808,
+          "pattern": "HEAD "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 6.0",
+          "path": "assets/raw/a/files/room-6-0.bin",
+          "line": 106,
+          "pattern": "REPLAHEAD "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 6.2",
+          "path": "assets/raw/a/files/room-6-2.bin",
+          "line": 21,
+          "pattern": "HEAD "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:08cc",
+      "token": "SNAKE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 811,
+          "pattern": "SNAKE"
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:08df",
+      "token": "MAP",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 814,
+          "pattern": "MAP  "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:08f8",
+      "token": "AMULET",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 817,
+          "pattern": "AMULE"
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:0915",
+      "token": "GUN",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 820,
+          "pattern": "GUN  "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 75,
+          "pattern": "GUN  "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:0932",
+      "token": "ROPE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 824,
+          "pattern": "ROPE "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 45,
+          "pattern": "CLIMBROPE "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 47,
+          "pattern": "UP   ROPE "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 54,
+          "pattern": "ROPE "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 34.0",
+          "path": "assets/raw/b/files/room-34-0.bin",
+          "line": 71,
+          "pattern": "TIE  ROPE TREE "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 34.0",
+          "path": "assets/raw/b/files/room-34-0.bin",
+          "line": 72,
+          "pattern": "TIE  ROPE BUSH "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 34.2",
+          "path": "assets/raw/b/files/room-34-2.bin",
+          "line": 32,
+          "pattern": "CLIMBROPE "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 34.2",
+          "path": "assets/raw/b/files/room-34-2.bin",
+          "line": 39,
+          "pattern": "ROPE "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:094e",
+      "token": "JADE BOWL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 827,
+          "pattern": "JADE BOWL "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:096c",
+      "token": "SILVER BOWL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 830,
+          "pattern": "SILVEBOWL "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:0985",
+      "token": "GOLD BOWL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 833,
+          "pattern": "GOLD BOWL "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:09a5",
+      "token": "GOLD KEY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 836,
+          "pattern": "GOLD KEY  "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:09bd",
+      "token": "BLACK KEY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 840,
+          "pattern": "BLACKKEY  "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:09d4",
+      "token": "SILVER KEY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 843,
+          "pattern": "SILVEKEY  "
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:09ec",
+      "token": "FLUTE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 846,
+          "pattern": "FLUTE"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.2",
+          "path": "assets/raw/b/files/room-49-2.bin",
+          "line": 11,
+          "pattern": "PLAY FLUTE"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.2",
+          "path": "assets/raw/b/files/room-49-2.bin",
+          "line": 12,
+          "pattern": "USE  FLUTE"
+        }
+      ]
+    },
+    {
+      "id": "a:LIBRARY:09ff",
+      "token": "MASK",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 849,
+          "pattern": "MASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 41.2",
+          "path": "assets/raw/b/files/room-41-2.bin",
+          "line": 121,
+          "pattern": "REMOVMASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 44,
+          "pattern": "GIVE MASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 45,
+          "pattern": "OFFERMASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 46,
+          "pattern": "HAND MASK "
+        }
+      ]
+    },
+    {
+      "id": "a:ROOM 6.0:0765",
+      "token": "JEEP",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 852,
+          "pattern": "JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 975,
+          "pattern": "IN   JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 976,
+          "pattern": "INTO JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 977,
+          "pattern": "INSIDJEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 978,
+          "pattern": "ENTERJEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 980,
+          "pattern": "OUT  JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 981,
+          "pattern": "FROM JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 982,
+          "pattern": "EXIT JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 983,
+          "pattern": "LEAVEJEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 1.0",
+          "path": "assets/raw/a/files/room-1-0.bin",
+          "line": 98,
+          "pattern": "JEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 7.0",
+          "path": "assets/raw/a/files/room-7-0.bin",
+          "line": 16,
+          "pattern": "GO   JEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 7.1",
+          "path": "assets/raw/a/files/room-7-1.bin",
+          "line": 22,
+          "pattern": "JEEP "
+        }
+      ]
+    },
+    {
+      "id": "a:ROOM 11.0:00a4",
+      "token": "JADE BOWL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 827,
+          "pattern": "JADE BOWL "
+        }
+      ]
+    },
+    {
+      "id": "a:ROOM 15.0:03e2",
+      "token": "GHOST",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "ROOM 15.0",
+          "path": "assets/raw/a/files/room-15-0.bin",
+          "line": 70,
+          "pattern": "ASK  GHOST"
+        }
+      ]
+    },
+    {
+      "id": "a:ROOM 16.0:00b1",
+      "token": "PEDESTAL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 42,
+          "pattern": "DROP URN  LEFT PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 43,
+          "pattern": "SET  URN  LEFT PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 44,
+          "pattern": "PUT  URN  LEFT PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 45,
+          "pattern": "PLACEURN  LEFT PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 54,
+          "pattern": "DROP URN  RIGHTPEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 55,
+          "pattern": "SET  URN  RIGHTPEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 56,
+          "pattern": "PUT  URN  RIGHTPEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 57,
+          "pattern": "PLACEURN  RIGHTPEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 74,
+          "pattern": "DROP URN  PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 75,
+          "pattern": "SET  URN  PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 76,
+          "pattern": "PUT  URN  PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 77,
+          "pattern": "PLACEURN  PEDES"
+        }
+      ]
+    },
+    {
+      "id": "a:ROOM 16.0:0126",
+      "token": "URN",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 963,
+          "pattern": "URN  "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 42,
+          "pattern": "DROP URN  LEFT PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 43,
+          "pattern": "SET  URN  LEFT PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 44,
+          "pattern": "PUT  URN  LEFT PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 45,
+          "pattern": "PLACEURN  LEFT PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 54,
+          "pattern": "DROP URN  RIGHTPEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 55,
+          "pattern": "SET  URN  RIGHTPEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 56,
+          "pattern": "PUT  URN  RIGHTPEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 57,
+          "pattern": "PLACEURN  RIGHTPEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 74,
+          "pattern": "DROP URN  PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 75,
+          "pattern": "SET  URN  PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 76,
+          "pattern": "PUT  URN  PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 77,
+          "pattern": "PLACEURN  PEDES"
+        }
+      ]
+    },
+    {
+      "id": "a:ROOM 17.0:0031",
+      "token": "SILVER BOWL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 830,
+          "pattern": "SILVEBOWL "
+        }
+      ]
+    },
+    {
+      "id": "a:ROOM 18.0:0091",
+      "token": "HUT",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 951,
+          "pattern": "HUT  "
+        }
+      ]
+    },
+    {
+      "id": "a:ROOM 19.0:0045",
+      "token": "WOMAN",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "ROOM 19.0",
+          "path": "assets/raw/a/files/room-19-0.bin",
+          "line": 19,
+          "pattern": "LOOK WOMAN"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 19.0",
+          "path": "assets/raw/a/files/room-19-0.bin",
+          "line": 104,
+          "pattern": "ASK  WOMAN"
+        }
+      ]
+    },
+    {
+      "id": "a:ROOM 21.0:00eb",
+      "token": "POTION",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "ROOM 21.0",
+          "path": "assets/raw/a/files/room-21-0.bin",
+          "line": 45,
+          "pattern": "LOOK POTIO"
+        }
+      ]
+    },
+    {
+      "id": "a:ROOM 21.0:01f7",
+      "token": "PEDDLER",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "ROOM 21.0",
+          "path": "assets/raw/a/files/room-21-0.bin",
+          "line": 41,
+          "pattern": "LOOK PEDDL"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 21.0",
+          "path": "assets/raw/a/files/room-21-0.bin",
+          "line": 42,
+          "pattern": "EXAMIPEDDL"
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 23.0:0146",
+      "token": "NE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1087,
+          "pattern": "NE   "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 23.1:00fe",
+      "token": "NE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1087,
+          "pattern": "NE   "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 23.1:0383",
+      "token": "NE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1087,
+          "pattern": "NE   "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 25.0:0068",
+      "token": "WEBS",
+      "native_matches": [
+        {
+          "side": "b",
+          "file": "ROOM 25.0",
+          "path": "assets/raw/b/files/room-25-0.bin",
+          "line": 10,
+          "pattern": "LOOK WEBS "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 25.0",
+          "path": "assets/raw/b/files/room-25-0.bin",
+          "line": 103,
+          "pattern": "CUT  WEBS "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 25.0",
+          "path": "assets/raw/b/files/room-25-0.bin",
+          "line": 104,
+          "pattern": "REMOVWEBS "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 25.0",
+          "path": "assets/raw/b/files/room-25-0.bin",
+          "line": 105,
+          "pattern": "CLEARWEBS "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 25.0:01ce",
+      "token": "SILVER KEY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 843,
+          "pattern": "SILVEKEY  "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 26.0:00f9",
+      "token": "STAR",
+      "native_matches": [
+        {
+          "side": "b",
+          "file": "ROOM 26.0",
+          "path": "assets/raw/b/files/room-26-0.bin",
+          "line": 40,
+          "pattern": "LOOK STAR "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 26.0:0260",
+      "token": "GOLD KEY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 836,
+          "pattern": "GOLD KEY  "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 27.0:0081",
+      "token": "BLOCK",
+      "native_matches": [
+        {
+          "side": "b",
+          "file": "ROOM 27.0",
+          "path": "assets/raw/b/files/room-27-0.bin",
+          "line": 25,
+          "pattern": "LOOK BLOCK"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 27.0",
+          "path": "assets/raw/b/files/room-27-0.bin",
+          "line": 31,
+          "pattern": "LIFT BLOCK"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 27.0",
+          "path": "assets/raw/b/files/room-27-0.bin",
+          "line": 33,
+          "pattern": "MOVE BLOCK"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 27.0",
+          "path": "assets/raw/b/files/room-27-0.bin",
+          "line": 35,
+          "pattern": "SEARCBLOCK"
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 27.0:024e",
+      "token": "BLACK KEY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 840,
+          "pattern": "BLACKKEY  "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 33.0:0252",
+      "token": "JEEP",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 852,
+          "pattern": "JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 975,
+          "pattern": "IN   JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 976,
+          "pattern": "INTO JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 977,
+          "pattern": "INSIDJEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 978,
+          "pattern": "ENTERJEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 980,
+          "pattern": "OUT  JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 981,
+          "pattern": "FROM JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 982,
+          "pattern": "EXIT JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 983,
+          "pattern": "LEAVEJEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 1.0",
+          "path": "assets/raw/a/files/room-1-0.bin",
+          "line": 98,
+          "pattern": "JEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 7.0",
+          "path": "assets/raw/a/files/room-7-0.bin",
+          "line": 16,
+          "pattern": "GO   JEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 7.1",
+          "path": "assets/raw/a/files/room-7-1.bin",
+          "line": 22,
+          "pattern": "JEEP "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 34.0:0091",
+      "token": "TREE",
+      "native_matches": [
+        {
+          "side": "b",
+          "file": "ROOM 34.0",
+          "path": "assets/raw/b/files/room-34-0.bin",
+          "line": 71,
+          "pattern": "TIE  ROPE TREE "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 37.0:005a",
+      "token": "FACE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 942,
+          "pattern": "FACE "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 40.0:00ef",
+      "token": "ALTAR",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 932,
+          "pattern": "ALTAR"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 41.2",
+          "path": "assets/raw/b/files/room-41-2.bin",
+          "line": 63,
+          "pattern": "SEARCALTAR"
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 41.3:07bb",
+      "token": "MASK",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 849,
+          "pattern": "MASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 41.2",
+          "path": "assets/raw/b/files/room-41-2.bin",
+          "line": 121,
+          "pattern": "REMOVMASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 44,
+          "pattern": "GIVE MASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 45,
+          "pattern": "OFFERMASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 46,
+          "pattern": "HAND MASK "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 41.2:0149",
+      "token": "MASK",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 849,
+          "pattern": "MASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 41.2",
+          "path": "assets/raw/b/files/room-41-2.bin",
+          "line": 121,
+          "pattern": "REMOVMASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 44,
+          "pattern": "GIVE MASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 45,
+          "pattern": "OFFERMASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 46,
+          "pattern": "HAND MASK "
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 40.1:02d4",
+      "token": "ALTAR",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 932,
+          "pattern": "ALTAR"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 41.2",
+          "path": "assets/raw/b/files/room-41-2.bin",
+          "line": 63,
+          "pattern": "SEARCALTAR"
+        }
+      ]
+    },
+    {
+      "id": "b:ROOM 40.1:060e",
+      "token": "MASK",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 849,
+          "pattern": "MASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 41.2",
+          "path": "assets/raw/b/files/room-41-2.bin",
+          "line": 121,
+          "pattern": "REMOVMASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 44,
+          "pattern": "GIVE MASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 45,
+          "pattern": "OFFERMASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 46,
+          "pattern": "HAND MASK "
+        }
+      ]
+    }
+  ],
+  "glossary_inputs": [
+    {
+      "input": "MASK",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 849,
+          "pattern": "MASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 41.2",
+          "path": "assets/raw/b/files/room-41-2.bin",
+          "line": 121,
+          "pattern": "REMOVMASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 44,
+          "pattern": "GIVE MASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 45,
+          "pattern": "OFFERMASK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 46,
+          "pattern": "HAND MASK "
+        }
+      ]
+    },
+    {
+      "input": "RAOUL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 782,
+          "pattern": "RAOUL"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 59,
+          "pattern": "RAOULDOWN "
+        }
+      ]
+    },
+    {
+      "input": "JEEP",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 852,
+          "pattern": "JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 975,
+          "pattern": "IN   JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 976,
+          "pattern": "INTO JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 977,
+          "pattern": "INSIDJEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 978,
+          "pattern": "ENTERJEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 980,
+          "pattern": "OUT  JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 981,
+          "pattern": "FROM JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 982,
+          "pattern": "EXIT JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 983,
+          "pattern": "LEAVEJEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 1.0",
+          "path": "assets/raw/a/files/room-1-0.bin",
+          "line": 98,
+          "pattern": "JEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 7.0",
+          "path": "assets/raw/a/files/room-7-0.bin",
+          "line": 16,
+          "pattern": "GO   JEEP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 7.1",
+          "path": "assets/raw/a/files/room-7-1.bin",
+          "line": 22,
+          "pattern": "JEEP "
+        }
+      ]
+    },
+    {
+      "input": "SHOVEL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 785,
+          "pattern": "SHOVE"
+        }
+      ]
+    },
+    {
+      "input": "LANTERN",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 789,
+          "pattern": "LANTE"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 40,
+          "pattern": "LANTE"
+        }
+      ]
+    },
+    {
+      "input": "MATCHES",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 792,
+          "pattern": "MATCH"
+        }
+      ]
+    },
+    {
+      "input": "KNIFE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 795,
+          "pattern": "KNIFE"
+        }
+      ]
+    },
+    {
+      "input": "FOOD",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 798,
+          "pattern": "FOOD "
+        }
+      ]
+    },
+    {
+      "input": "BOTTLE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 801,
+          "pattern": "BOTTL"
+        }
+      ]
+    },
+    {
+      "input": "JAGUAR",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 805,
+          "pattern": "JAGUA"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 6.2",
+          "path": "assets/raw/a/files/room-6-2.bin",
+          "line": 22,
+          "pattern": "JAGUA"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.2",
+          "path": "assets/raw/b/files/room-49-2.bin",
+          "line": 34,
+          "pattern": "JAGUA"
+        }
+      ]
+    },
+    {
+      "input": "HEAD",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 808,
+          "pattern": "HEAD "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 6.0",
+          "path": "assets/raw/a/files/room-6-0.bin",
+          "line": 106,
+          "pattern": "REPLAHEAD "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 6.2",
+          "path": "assets/raw/a/files/room-6-2.bin",
+          "line": 21,
+          "pattern": "HEAD "
+        }
+      ]
+    },
+    {
+      "input": "SNAKE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 811,
+          "pattern": "SNAKE"
+        }
+      ]
+    },
+    {
+      "input": "MAP",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 814,
+          "pattern": "MAP  "
+        }
+      ]
+    },
+    {
+      "input": "AMULET",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 817,
+          "pattern": "AMULE"
+        }
+      ]
+    },
+    {
+      "input": "GUN",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 820,
+          "pattern": "GUN  "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 75,
+          "pattern": "GUN  "
+        }
+      ]
+    },
+    {
+      "input": "ROPE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 824,
+          "pattern": "ROPE "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 45,
+          "pattern": "CLIMBROPE "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 47,
+          "pattern": "UP   ROPE "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 54,
+          "pattern": "ROPE "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 34.0",
+          "path": "assets/raw/b/files/room-34-0.bin",
+          "line": 71,
+          "pattern": "TIE  ROPE TREE "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 34.0",
+          "path": "assets/raw/b/files/room-34-0.bin",
+          "line": 72,
+          "pattern": "TIE  ROPE BUSH "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 34.2",
+          "path": "assets/raw/b/files/room-34-2.bin",
+          "line": 32,
+          "pattern": "CLIMBROPE "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 34.2",
+          "path": "assets/raw/b/files/room-34-2.bin",
+          "line": 39,
+          "pattern": "ROPE "
+        }
+      ]
+    },
+    {
+      "input": "JADE BOWL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 827,
+          "pattern": "JADE BOWL "
+        }
+      ]
+    },
+    {
+      "input": "SILVER BOWL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 830,
+          "pattern": "SILVEBOWL "
+        }
+      ]
+    },
+    {
+      "input": "GOLD BOWL",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 833,
+          "pattern": "GOLD BOWL "
+        }
+      ]
+    },
+    {
+      "input": "GOLD KEY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 836,
+          "pattern": "GOLD KEY  "
+        }
+      ]
+    },
+    {
+      "input": "BLACK KEY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 840,
+          "pattern": "BLACKKEY  "
+        }
+      ]
+    },
+    {
+      "input": "SILVER KEY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 843,
+          "pattern": "SILVEKEY  "
+        }
+      ]
+    },
+    {
+      "input": "FLUTE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 846,
+          "pattern": "FLUTE"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.2",
+          "path": "assets/raw/b/files/room-49-2.bin",
+          "line": 11,
+          "pattern": "PLAY FLUTE"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.2",
+          "path": "assets/raw/b/files/room-49-2.bin",
+          "line": 12,
+          "pattern": "USE  FLUTE"
+        }
+      ]
+    }
+  ],
+  "opening_examples": [
+    "LOOK",
+    "INVENTORY",
+    "N",
+    "S",
+    "E",
+    "W"
+  ],
+  "guide_examples": [
+    "LOOK",
+    "INVENTORY",
+    "N",
+    "S",
+    "E",
+    "W",
+    "EXAMINE",
+    "GET",
+    "DROP",
+    "EXIT",
+    "ENTER",
+    "NE",
+    "NW",
+    "SE",
+    "SW",
+    "LEFT",
+    "RIGHT",
+    "FORWARD",
+    "BACK",
+    "UP",
+    "DOWN",
+    "SAVE GAME",
+    "RESTORE GAME",
+    "SOUND ON",
+    "SOUND OFF"
+  ],
+  "glossary_actions": [
+    {
+      "input": "LOOK",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1020,
+          "pattern": "LOOK "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 1.0",
+          "path": "assets/raw/a/files/room-1-0.bin",
+          "line": 82,
+          "pattern": "LOOK OUT  "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 1.0",
+          "path": "assets/raw/a/files/room-1-0.bin",
+          "line": 83,
+          "pattern": "LOOK OUTSI"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 9.2",
+          "path": "assets/raw/a/files/room-9-2.bin",
+          "line": 25,
+          "pattern": "LOOK SYMBO"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 11.0",
+          "path": "assets/raw/a/files/room-11-0.bin",
+          "line": 19,
+          "pattern": "LOOK BOWL "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 11.0",
+          "path": "assets/raw/a/files/room-11-0.bin",
+          "line": 26,
+          "pattern": "LOOK CARVI"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 14.0",
+          "path": "assets/raw/a/files/room-14-0.bin",
+          "line": 62,
+          "pattern": "LOOK BOULD"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 15.0",
+          "path": "assets/raw/a/files/room-15-0.bin",
+          "line": 21,
+          "pattern": "LOOK APPAR"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 19.0",
+          "path": "assets/raw/a/files/room-19-0.bin",
+          "line": 19,
+          "pattern": "LOOK WOMAN"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 21.0",
+          "path": "assets/raw/a/files/room-21-0.bin",
+          "line": 41,
+          "pattern": "LOOK PEDDL"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 21.0",
+          "path": "assets/raw/a/files/room-21-0.bin",
+          "line": 45,
+          "pattern": "LOOK POTIO"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 21.0",
+          "path": "assets/raw/a/files/room-21-0.bin",
+          "line": 46,
+          "pattern": "LOOK CURE "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 25.0",
+          "path": "assets/raw/b/files/room-25-0.bin",
+          "line": 10,
+          "pattern": "LOOK WEBS "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 26.0",
+          "path": "assets/raw/b/files/room-26-0.bin",
+          "line": 40,
+          "pattern": "LOOK STAR "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 27.0",
+          "path": "assets/raw/b/files/room-27-0.bin",
+          "line": 25,
+          "pattern": "LOOK BLOCK"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 27.0",
+          "path": "assets/raw/b/files/room-27-0.bin",
+          "line": 26,
+          "pattern": "LOOK STONE"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 31.0",
+          "path": "assets/raw/b/files/room-31-0.bin",
+          "line": 31,
+          "pattern": "LOOK WATER"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 31.0",
+          "path": "assets/raw/b/files/room-31-0.bin",
+          "line": 32,
+          "pattern": "LOOK POOL "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 31.0",
+          "path": "assets/raw/b/files/room-31-0.bin",
+          "line": 33,
+          "pattern": "LOOK REFLE"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 38.0",
+          "path": "assets/raw/b/files/room-38-0.bin",
+          "line": 10,
+          "pattern": "LOOK "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 41.0",
+          "path": "assets/raw/b/files/room-41-0.bin",
+          "line": 33,
+          "pattern": "LOOK CARVI"
+        }
+      ]
+    },
+    {
+      "input": "INVENTORY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 893,
+          "pattern": "INVEN"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 84,
+          "pattern": "INVEN"
+        }
+      ]
+    },
+    {
+      "input": "EXAMINE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1021,
+          "pattern": "EXAMI"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 11.0",
+          "path": "assets/raw/a/files/room-11-0.bin",
+          "line": 20,
+          "pattern": "EXAMIBOWL "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 14.0",
+          "path": "assets/raw/a/files/room-14-0.bin",
+          "line": 63,
+          "pattern": "EXAMIBOULD"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 21.0",
+          "path": "assets/raw/a/files/room-21-0.bin",
+          "line": 42,
+          "pattern": "EXAMIPEDDL"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 31.0",
+          "path": "assets/raw/b/files/room-31-0.bin",
+          "line": 34,
+          "pattern": "EXAMIWATER"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 31.0",
+          "path": "assets/raw/b/files/room-31-0.bin",
+          "line": 35,
+          "pattern": "EXAMIPOOL "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 31.0",
+          "path": "assets/raw/b/files/room-31-0.bin",
+          "line": 36,
+          "pattern": "EXAMIREFLE"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 38.0",
+          "path": "assets/raw/b/files/room-38-0.bin",
+          "line": 11,
+          "pattern": "EXAMI"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 41.0",
+          "path": "assets/raw/b/files/room-41-0.bin",
+          "line": 34,
+          "pattern": "EXAMICARVI"
+        }
+      ]
+    },
+    {
+      "input": "GET",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 998,
+          "pattern": "GET  "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 38.0",
+          "path": "assets/raw/b/files/room-38-0.bin",
+          "line": 14,
+          "pattern": "GET  "
+        }
+      ]
+    },
+    {
+      "input": "DROP",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1006,
+          "pattern": "DROP "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 42,
+          "pattern": "DROP URN  LEFT PEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 54,
+          "pattern": "DROP URN  RIGHTPEDES"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 16.0",
+          "path": "assets/raw/a/files/room-16-0.bin",
+          "line": 74,
+          "pattern": "DROP URN  PEDES"
+        }
+      ]
+    },
+    {
+      "input": "ENTER",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 978,
+          "pattern": "ENTERJEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1058,
+          "pattern": "ENTER"
+        }
+      ]
+    },
+    {
+      "input": "EXIT",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 982,
+          "pattern": "EXIT JEEP "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1062,
+          "pattern": "EXIT "
+        }
+      ]
+    },
+    {
+      "input": "CLIMB",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1097,
+          "pattern": "CLIMB"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 45,
+          "pattern": "CLIMBROPE "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 10.0",
+          "path": "assets/raw/a/files/room-10-0.bin",
+          "line": 46,
+          "pattern": "CLIMBOUT  "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 34.2",
+          "path": "assets/raw/b/files/room-34-2.bin",
+          "line": 32,
+          "pattern": "CLIMBROPE "
+        }
+      ]
+    },
+    {
+      "input": "OPEN",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1028,
+          "pattern": "OPEN "
+        }
+      ]
+    },
+    {
+      "input": "CLOSE",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1031,
+          "pattern": "CLOSE"
+        }
+      ]
+    },
+    {
+      "input": "READ",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1024,
+          "pattern": "READ "
+        },
+        {
+          "side": "a",
+          "file": "ROOM 9.2",
+          "path": "assets/raw/a/files/room-9-2.bin",
+          "line": 26,
+          "pattern": "READ SYMBO"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 38.0",
+          "path": "assets/raw/b/files/room-38-0.bin",
+          "line": 13,
+          "pattern": "READ "
+        }
+      ]
+    },
+    {
+      "input": "DIG",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1131,
+          "pattern": "DIG  "
+        }
+      ]
+    },
+    {
+      "input": "SHOOT",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1120,
+          "pattern": "SHOOT"
+        },
+        {
+          "side": "a",
+          "file": "ROOM 19.0",
+          "path": "assets/raw/a/files/room-19-0.bin",
+          "line": 90,
+          "pattern": "SHOOT"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.0",
+          "path": "assets/raw/b/files/room-49-0.bin",
+          "line": 74,
+          "pattern": "SHOOT"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.2",
+          "path": "assets/raw/b/files/room-49-2.bin",
+          "line": 23,
+          "pattern": "SHOOT"
+        }
+      ]
+    },
+    {
+      "input": "PLAY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1127,
+          "pattern": "PLAY "
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.2",
+          "path": "assets/raw/b/files/room-49-2.bin",
+          "line": 11,
+          "pattern": "PLAY FLUTE"
+        },
+        {
+          "side": "b",
+          "file": "ROOM 49.2",
+          "path": "assets/raw/b/files/room-49-2.bin",
+          "line": 13,
+          "pattern": "PLAY MUSIC"
+        }
+      ]
+    },
+    {
+      "input": "EAT",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 706,
+          "pattern": "EAT  ALL  PILLS"
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 720,
+          "pattern": "EAT  PILL "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1122,
+          "pattern": "EAT  "
+        }
+      ]
+    },
+    {
+      "input": "SAY",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 1015,
+          "pattern": "SAY  "
+        }
+      ]
+    },
+    {
+      "input": "SAVE GAME",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 644,
+          "pattern": "SAVE GAME "
+        }
+      ]
+    },
+    {
+      "input": "RESTORE GAME",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "DEATH",
+          "path": "assets/raw/a/files/death.bin",
+          "line": 14,
+          "pattern": "RESTOGAME "
+        },
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 662,
+          "pattern": "RESTOGAME "
+        },
+        {
+          "side": "b",
+          "file": "DEATH",
+          "path": "assets/raw/b/files/death.bin",
+          "line": 14,
+          "pattern": "RESTOGAME "
+        }
+      ]
+    },
+    {
+      "input": "SOUND ON",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 690,
+          "pattern": "SOUNDON   "
+        }
+      ]
+    },
+    {
+      "input": "SOUND OFF",
+      "native_matches": [
+        {
+          "side": "a",
+          "file": "LIBRARY",
+          "path": "assets/raw/a/files/library.bin",
+          "line": 694,
+          "pattern": "SOUNDOFF  "
+        }
+      ]
+    }
+  ],
+  "glossary_sha256": "fe7098ceef1caed8f96a9261430528b6ccb2311fe3f1d9eade00c704aa03e5e8",
+  "protected_token_messages": 69,
+  "all_displayed_spellings_known": true,
+  "all_input_guidance_complete": false,
+  "limits": [
+    "Vocabulary existence is not proof of reachable command handling in every room.",
+    "Question comparisons accept prefixes and keep the original fifteen-byte answer buffer.",
+    "Raw timed-key scenes require separate runtime tests; only their .W sites are inventoried here.",
+    "Scenery nouns without an English gloss and whole-game Korean-only playability remain to be reviewed."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "KOR2 media identity and transient bootstrap integration",
+  "pass": true,
+  "package_header_bytes": 24,
+  "runtime_bytes": 1818,
+  "runtime_remaining_bytes": 230,
+  "bootstrap_address": 20480,
+  "bootstrap_bytes": 1152,
+  "bootstrap_world_bytes_preserved": 2048,
+  "loader_cases": 26,
+  "message_cases": 46,
+  "host_tests": 34,
+  "startup_repeated_files": {
+    "synthetic-startup.dsk": "c52eee005e61aea06f0218307acf57bbf97773537a015e838fabdf0c52e8ca61",
+    "synthetic-a.dsk": "8a327fac6d646494c3b2eed1fa48c2d6b0d91c6eaa7d379641b5642456e5565e",
+    "bootstrap.bin": "65b3394d320f366d222b63b9a8c0bfaf16c1ed2c288bc484a7259d74c288dbc2",
+    "interpreter.bin": "c8d2fe12ce61b921ce88d8e8834ef78c87383633a6506c446e33e60d19531e80",
+    "intrinsics.bin": "728422b67443f9ebabe16eea4e9b5d84f001ffde2cb7b932a35baa2bcd6bb15d",
+    "runtime-asset.bin": "c47262a828f96ebd1481f8d5b65e973eb201795fda1ec8162b721e3183f680af",
+    "font-asset.bin": "b7fc7000ecd4f48f7d3f3eea33a3010883554c5056909c3a5fc287784f820bd3",
+    "resident-asset.bin": "088e9e5d23da1455a875a8a75d397bdc3d9d42febee7917e4aa83791e22bfbc0"
+  },
+  "evidence_sha256": {
+    "loader-probe.json": "450019fcd7b90bcb4fad07cce56380b8a00dd7c7e078ced5d66356aadcad72af",
+    "message-probe.json": "87f06d957a0540aed6e09e30572b063aea9829e373dac8513522bfa84f4a91db",
+    "startup-probe.json": "8060418efd6f753dad2ea29b4a1bb0f9e8a7855db91bdc6c3c066427656a2d29",
+    "save-probe.json": "edae0efea2397bf4e12c1ffdac8672122b41fa5652e717a677070bc16b064d3b",
+    "timing-probe.json": "2c6d36c66396b30d1524629f4b693aee2b0b8e78c5ec87d58d4da8e30a4198bf",
+    "full-media-capacity.json": "c9c4bc80827b2086434cd6f70e04c7e6f8ba4f68e706165b97a320be557bf141",
+    "draft-encoding-validation.json": "bfe1d0b92a9e8abc8d60c14c1be82db49f08de93eb472ada08ec9bf81d868200"
+  },
+  "source_sha256": {
+    "src/korean/loader.s": "1c6760e8a9bbcbe8f04f74502d43ab75dee700f843ee3674f8d94c60337ffa15",
+    "src/korean/bootstrap.s": "46e3fff41be6127c4c7c93e993913628b487ce78e455351d63a63c8284a4facc",
+    "tools/korean/packages.py": "bffd4c3e8f8c7b7fded8875cd45aeda85d091c1df529b0e6b4c49b4b00b5284b",
+    "tools/korean/encoding.py": "37bcc0c289c5b680769cd0ffe08179be23c414ab29d61e34f0d1e829d7437f3d",
+    "tools/korean/startup_disk.py": "689831f9c8ec6738201b015fc69743ab45e6900b63b097dc30e2fb0049174235",
+    "tools/korean/build_messages.py": "10abafda9304fe5b9981e743020c6a289b2276f230761f40504e18fe3ad185a9",
+    "tools/korean/build_loader_probe.py": "a824b4806366ca11f040fb916795dc16773a066b76e42fa20c53e5f289573a22",
+    "tools/korean/loader_probe.lua": "9b66dd3623fcbc8b2ed9cb3a8d368af0fb3bdb28bfbb95d2117f1e713a3fb771",
+    "tools/korean/startup_probe.lua": "44e0ab879e4282c2e2c0a069d26ecfa3e7289c731787785e6ed7257d1fddb263",
+    "tools/korean/build_timing_probe.py": "73daa62553108179e8197dca7133ea66c12387b9d1085a0ae6477c548d14a1e2",
+    "tools/korean/test_packages.py": "c99c203f4eb3a1055a710959cfe12a5fc30514a0359a694538f503a961d5125e"
+  },
+  "scope": "Synthetic KOR2 identity rejection and transient bootstrap regression. Default startup bytes still match after adding the full-synthetic builder. All-resource and B-side game restoration are recorded separately in full-media-validation.json. Approved translations and ending remain incomplete.",
+  "followup_full_media_evidence": "full-media-validation.json"
+}

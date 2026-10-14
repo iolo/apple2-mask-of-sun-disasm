@@ -1,0 +1,66 @@
+{
+  "kind": "synthetic title-caption integration and pre-approval status",
+  "pass_validation": true,
+  "catalog_sha256": "ae3c41e213589e66897bd6e1efd65f8b53cb0ce590bbf694d5c47820a6993c15",
+  "review_r01_catalog_unchanged": true,
+  "approved_translations": 0,
+  "approval_gate_rejection": "missing or stale human approval: a:DEATH:0029",
+  "unmasked_title_cli_rejected": true,
+  "host_tests": 43,
+  "inserted_script_bytes": 21,
+  "initial_script_bytes": 1784,
+  "runtime_bytes": 1841,
+  "free_sectors": {
+    "extra": 344,
+    "game_a": 2,
+    "game_b": 6
+  },
+  "source_inventory_complete": true,
+  "assembly_output_calls": 51,
+  "source_files": 23,
+  "generated_title_output_sites": 1,
+  "identical_build_files": {
+    "synthetic-startup.dsk": "65c4cc18cbf09268ebe9bb20584040cc4f7974ec63c5f31977c59e610e074a90",
+    "synthetic-a.dsk": "dc6ff1b6424e1449b137342fc1aeba0430be583a4dcda5fe71d642f73ef52f05",
+    "synthetic-b.dsk": "8921a106ffe6dc255a30742ae6b87358357b51587ddf549a1c7bfca83f38d162",
+    "runtime-asset.bin": "49335a595e221e8c3d13770e087d21faf0ed39553306a9810f9219a67d3b3785",
+    "font-asset.bin": "78a389461c7c38be25b1ee08c27d3c661bacd8fdbd9a7f6eb215362826064209",
+    "resident-asset.bin": "3ab3ef10dd58e20b0b15b4eca26144a296adf2db95bccf30ae087f09adf58838",
+    "bootstrap.bin": "2f6f6ae8329b639d55e68be77a52365b8bb222a7e3eea4dc15e557bbbf2fe8e6",
+    "interpreter.bin": "f6ffe7a157104892e56afedffcb1dfe3ca94b3ad71d271d3f2d21f16314c261b",
+    "intrinsics.bin": "ad75d7d1e6c76c283bdad47e4f7f1afb8785b401dc3528b139ac4dbca68fda04",
+    "parms.bin": "fd4331ca4c21c9921b4065b69862251bb99fd9f3cf6aee99c8ed455c928d60a4"
+  },
+  "game_runs": [
+    {
+      "profile": "same-session",
+      "pass": true,
+      "commands": 66,
+      "room_pool_checks": 67,
+      "glyph_count": 3869,
+      "asset_checks": 70,
+      "time": 939.59999999567
+    },
+    {
+      "profile": "fresh-boot",
+      "pass": true,
+      "commands": 4,
+      "room_pool_checks": 5,
+      "glyph_count": 401,
+      "asset_checks": 7,
+      "time": 92.799999999573
+    }
+  ],
+  "evidence_sha256": {
+    "title-validation.json": "32def732a3a1b37b0077975d47ef693619c0ea17b09c6f910b8328398ddf6309",
+    "title-game-probe.json": "d8ec461935e94c00315b44a4594ab7609213f05754ffd4634b05b3b24889c31a",
+    "title-native-audit.json": "89e627ebcc308dcb030d9f69fb245985999a807842517208049b63a9d974b3c0",
+    "title-caption.png": "763e5f9d275a0618693eb6de311a9a4630dce150ffa9e0cba8b2a5611756c5b4",
+    "output-audit.json": "7f185b2cdab8eab51f96cab6148fb5cffc157a68654127b51944418033be8bbe"
+  },
+  "limits": [
+    "No human approval or production translation application.",
+    "Title natural-boot and A-to-B/B-restore route passed; ending and remaining timers not claimed.",
+    "Approved build integration, actual Korean UI/layout/input playthrough, full-game regression and final delivery remain after PRD Step3."
+  ]
+}

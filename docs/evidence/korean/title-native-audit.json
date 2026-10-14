@@ -1,0 +1,352 @@
+{
+  "kind": "masked synthetic native-UI packing audit",
+  "pass_audit": true,
+  "catalog_sha256": "ae3c41e213589e66897bd6e1efd65f8b53cb0ce590bbf694d5c47820a6993c15",
+  "native_ui_records": [
+    {
+      "id": "runtime:ko_media_text",
+      "offset": 1636,
+      "slot_bytes": 39,
+      "message_id": 32918,
+      "reference_hex": "feb8b0b9b68d",
+      "original_sha256": "e49177c451dd5ef1623d4ba43254748bf8f66c445f004e4e3f5566c66300bced",
+      "address": 39524
+    },
+    {
+      "id": "runtime:ko_save_prompt",
+      "offset": 1809,
+      "slot_bytes": 32,
+      "message_id": 32919,
+      "reference_hex": "feb8b0b9b78d",
+      "original_sha256": "78a0826a23a549450750ee86603a74c9ee1f5c4e19972ce3c6c29bbe7679acef",
+      "address": 39697
+    },
+    {
+      "id": "intrinsic:disk_error_text",
+      "offset": 1306,
+      "slot_bytes": 14,
+      "message_id": 32911,
+      "reference_hex": "feb8b0b8c68d",
+      "original_sha256": "de69dcf9ab329876e476ceb7c2fa417e9fdb7f59532b6d383c0547b96f51c007",
+      "address": 4630
+    },
+    {
+      "id": "intrinsic:picture_load_overflow_text",
+      "offset": 2758,
+      "slot_bytes": 17,
+      "message_id": 32912,
+      "reference_hex": "feb8b0b9b08d",
+      "original_sha256": "ad23ada2e8a5403d86b0b2050e9ff528d4a908aca58e5878a3c14f5e60a08a5d",
+      "address": 6082
+    },
+    {
+      "id": "intrinsic:disk_action_error_text",
+      "offset": 4590,
+      "slot_bytes": 40,
+      "message_id": 32910,
+      "reference_hex": "feb8b0b8c58d",
+      "original_sha256": "bd510119dce4fdf6b5793da859880f70deef8328ef2cfd3a9a4296c2f047abff",
+      "address": 7914
+    },
+    {
+      "id": "intrinsic:game_disk_prompt_text",
+      "offset": 4631,
+      "slot_bytes": 39,
+      "message_id": 32880,
+      "reference_hex": "feb8b0b7b0bb8d",
+      "original_sha256": "68ea0ec5e4f28b6184af6ae3c3833b14419868001bad4307531c5341bf9c5152",
+      "address": 7955
+    },
+    {
+      "id": "intrinsic:drive_prompt_text",
+      "offset": 4677,
+      "slot_bytes": 40,
+      "message_id": 32883,
+      "reference_hex": "feb8b0b7b38d",
+      "original_sha256": "2fbb98ea29ed0c9e68071069e42ac943777658492f472b4068873ec8ae80acac",
+      "address": 8001
+    },
+    {
+      "id": "parms:error-0",
+      "offset": 84,
+      "slot_bytes": 16,
+      "message_id": 32913,
+      "reference_hex": "feb8b0b9b18d",
+      "original_sha256": "2be1364f8af0c5360421c0e6d0b7187f7a92d408e3afce2a762f277fa56197ad"
+    },
+    {
+      "id": "parms:error-1",
+      "offset": 100,
+      "slot_bytes": 16,
+      "message_id": 32914,
+      "reference_hex": "feb8b0b9b28d",
+      "original_sha256": "4fe43e8d75299379a311b2d8a390bf8b8e8a264fa97dd17b19d18abf4595f03c"
+    },
+    {
+      "id": "parms:error-2",
+      "offset": 116,
+      "slot_bytes": 16,
+      "message_id": 32915,
+      "reference_hex": "feb8b0b9b38d",
+      "original_sha256": "51141b44d91c2c88689530d14d11cb9774ce63e7dff3353e6a8fb523c3c03c63"
+    },
+    {
+      "id": "parms:error-3",
+      "offset": 132,
+      "slot_bytes": 16,
+      "message_id": 32916,
+      "reference_hex": "feb8b0b9b48d",
+      "original_sha256": "2486e26e5ea3b033c1ce4ff68b61d0e6f4df7651feadcd4f71a7aeecea0643ea"
+    }
+  ],
+  "preserved_modules": {
+    "runtime": {
+      "bytes": 1841,
+      "patched_slot_bytes": 71,
+      "preserved_bytes": 1770,
+      "sha256": "9ad7bb490143ef3cf76e70f62faff95caa0c1b221958b6f64fc649ccba128f71"
+    },
+    "intrinsic": {
+      "bytes": 5120,
+      "patched_slot_bytes": 150,
+      "preserved_bytes": 4970,
+      "sha256": "ad75d7d1e6c76c283bdad47e4f7f1afb8785b401dc3528b139ac4dbca68fda04"
+    },
+    "parms": {
+      "bytes": 256,
+      "patched_slot_bytes": 64,
+      "preserved_bytes": 192,
+      "sha256": "fd4331ca4c21c9921b4065b69862251bb99fd9f3cf6aee99c8ed455c928d60a4"
+    }
+  },
+  "preserved_native_files": [
+    {
+      "side": "a",
+      "name": "CHAR GEN"
+    },
+    {
+      "side": "a",
+      "name": "AF1.0"
+    },
+    {
+      "side": "a",
+      "name": "AMULET"
+    },
+    {
+      "side": "a",
+      "name": "BACK JEEP"
+    },
+    {
+      "side": "a",
+      "name": "CRYPT-TOT"
+    },
+    {
+      "side": "a",
+      "name": "FLUTE"
+    },
+    {
+      "side": "a",
+      "name": "GOLD BOWL"
+    },
+    {
+      "side": "a",
+      "name": "JADE BOWL"
+    },
+    {
+      "side": "a",
+      "name": "JEEP ALON"
+    },
+    {
+      "side": "a",
+      "name": "LOGO"
+    },
+    {
+      "side": "a",
+      "name": "MAP"
+    },
+    {
+      "side": "a",
+      "name": "P1.1"
+    },
+    {
+      "side": "a",
+      "name": "P6.5"
+    },
+    {
+      "side": "a",
+      "name": "P7.0"
+    },
+    {
+      "side": "a",
+      "name": "PEDDLER1"
+    },
+    {
+      "side": "a",
+      "name": "SILVR BWL"
+    },
+    {
+      "side": "a",
+      "name": "SKEL RM"
+    },
+    {
+      "side": "a",
+      "name": "SNAKE-PIT"
+    },
+    {
+      "side": "a",
+      "name": "TEMPL EX"
+    },
+    {
+      "side": "a",
+      "name": "TEMPLE1"
+    },
+    {
+      "side": "a",
+      "name": "TRAVEL1"
+    },
+    {
+      "side": "a",
+      "name": "TRAVEL2"
+    },
+    {
+      "side": "a",
+      "name": "TUN TRVL"
+    },
+    {
+      "side": "a",
+      "name": "VIEWS"
+    },
+    {
+      "side": "b",
+      "name": "AMULET"
+    },
+    {
+      "side": "b",
+      "name": "BANDITOS"
+    },
+    {
+      "side": "b",
+      "name": "FALL PILS"
+    },
+    {
+      "side": "b",
+      "name": "GEO+STRS"
+    },
+    {
+      "side": "b",
+      "name": "GOLD BOWL"
+    },
+    {
+      "side": "b",
+      "name": "HISS-SUNS"
+    },
+    {
+      "side": "b",
+      "name": "INF PSGS"
+    },
+    {
+      "side": "b",
+      "name": "JADE BOWL"
+    },
+    {
+      "side": "b",
+      "name": "JAG ATACK"
+    },
+    {
+      "side": "b",
+      "name": "JEEP ALON"
+    },
+    {
+      "side": "b",
+      "name": "MAIN PYR"
+    },
+    {
+      "side": "b",
+      "name": "MAP"
+    },
+    {
+      "side": "b",
+      "name": "MASK"
+    },
+    {
+      "side": "b",
+      "name": "POOL RM"
+    },
+    {
+      "side": "b",
+      "name": "PYR ENTRN"
+    },
+    {
+      "side": "b",
+      "name": "PYR HOLE"
+    },
+    {
+      "side": "b",
+      "name": "ROBOFFS"
+    },
+    {
+      "side": "b",
+      "name": "SILVR BWL"
+    },
+    {
+      "side": "b",
+      "name": "STAIRS"
+    },
+    {
+      "side": "b",
+      "name": "STEP STN"
+    },
+    {
+      "side": "b",
+      "name": "SUN ALTAR"
+    },
+    {
+      "side": "b",
+      "name": "SUN TEMPL"
+    },
+    {
+      "side": "b",
+      "name": "TALK FACE"
+    },
+    {
+      "side": "b",
+      "name": "TUN TRVL"
+    },
+    {
+      "side": "b",
+      "name": "VICT ALTR"
+    }
+  ],
+  "disk_files": {
+    "startup": 12,
+    "a": 63,
+    "b": 76
+  },
+  "free_sectors": {
+    "extra": 344,
+    "game_a": 2,
+    "game_b": 6
+  },
+  "runtime_bytes": 1841,
+  "masked_pools_checked": 87,
+  "media_id": "f975a340790a9f060a429196",
+  "save_id": "4b4f5331bc8a337c41cef49deb0baabc",
+  "synthetic_disk_sha256": {
+    "extra": "65c4cc18cbf09268ebe9bb20584040cc4f7974ec63c5f31977c59e610e074a90",
+    "game_a": "dc6ff1b6424e1449b137342fc1aeba0430be583a4dcda5fe71d642f73ef52f05",
+    "game_b": "8921a106ffe6dc255a30742ae6b87358357b51587ddf549a1c7bfca83f38d162"
+  },
+  "source_sha256": {
+    "tools/korean/verify_native_ui.py": "c94eb9eb4570c88ae648f978a149d43d1bfe483b91f3169b88ac52eb8e835d0d",
+    "tools/korean/native_ui.py": "8486d4c59d86244f00688c2e48e745ac0f55c0c87ca6dfacd37069e9ac69dde6",
+    "tools/korean/startup_disk.py": "0ddf2a9fc4b818b5992d2f73f185722265b3c543dc374b64f587ca02d2650151",
+    "tools/korean/build_messages.py": "64ba834f187326448845cff275e39198a332a9c59c0409870210b78b7bc4fdcc",
+    "src/korean/dispatch.s": "05cc40d132c2065b60be6a23a47ffa949d0685bf2a50d41db3098c696690c0e7",
+    "src/korean/save.s": "8f0bcc11d91c57e6bf15a843c91ce8ea74c3c3ab70e97200b7c682843a3156aa"
+  },
+  "limits": [
+    "Host packing proof, not execution of every native error branch.",
+    "Only references to masked synthetic bodies; no approved translation applied.",
+    "Excluded recovery/boot notices, ASCII side letters and OK prompts are preserved."
+  ]
+}

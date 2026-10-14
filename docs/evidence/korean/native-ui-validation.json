@@ -1,0 +1,58 @@
+{
+  "kind": "synthetic fixed-slot native UI integration and stale-screen regression",
+  "pass_validation": true,
+  "catalog_sha256": "ae3c41e213589e66897bd6e1efd65f8b53cb0ce590bbf694d5c47820a6993c15",
+  "native_messages": 11,
+  "host_tests": 40,
+  "screen_cases": 26,
+  "hgr_bytes_compared_per_case": 16384,
+  "lc_bytes_compared_per_case": 13312,
+  "runtime_bytes": 1841,
+  "runtime_free_bytes": 207,
+  "free_sectors": {
+    "extra": 345,
+    "game_a": 3,
+    "game_b": 6
+  },
+  "game_runs": [
+    {
+      "profile": "same-session",
+      "pass": true,
+      "commands": 66,
+      "room_pool_checks": 67,
+      "glyph_count": 3864,
+      "asset_checks": 70,
+      "time": 938.19999999568
+    },
+    {
+      "profile": "fresh-boot",
+      "pass": true,
+      "commands": 4,
+      "room_pool_checks": 5,
+      "glyph_count": 396,
+      "asset_checks": 7,
+      "time": 92.999999999572
+    }
+  ],
+  "unmasked_native_ui_cli_rejected": true,
+  "approved_translations": 0,
+  "english_disk_sha256": {
+    "a": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab",
+    "b": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+  },
+  "evidence_sha256": {
+    "native-ui-audit.json": "87709a1fd0613d173844cef2bab665fcf5c4b6e73d2dbeac4eec6c217dc9add3",
+    "native-ui-game-probe.json": "1ccc8442ef1d4d15e3520df5f01faaefa869dc4ea1fa67ed53b2e6f86e57af7e",
+    "output-audit.json": "773e14babb16b878eaac5e4129317ed2fe6aaa8409882d6592075105f45fab33"
+  },
+  "screenshots": {
+    "native-ui-page0.png": "4cfafb20a3702d468ba6ef2e6e2e18516962b0f738cf6cf8b4d7c6dadae2db38",
+    "native-ui-page1.png": "26c420a398921880ae91ebecaaef035cb015a5f41580758501bf966622fdeedb"
+  },
+  "limits": [
+    "Masked synthetic bodies only; r01 translation review remains pending and unchanged.",
+    "Screen harness injects code/assets at instruction boundary; game-route probe uses natural keys and disk swaps.",
+    "Screen comparison preserves the A5-filled picture area, opposite page and interline scanlines; only message glyph cells are cleared.",
+    "No proof of every native error trigger, ending, all timed scenes, approved layout or physical hardware."
+  ]
+}

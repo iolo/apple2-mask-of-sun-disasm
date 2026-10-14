@@ -1,0 +1,937 @@
+{
+  "kind": "masked synthetic native-UI packing audit",
+  "pass_audit": true,
+  "catalog_sha256": "ae3c41e213589e66897bd6e1efd65f8b53cb0ce590bbf694d5c47820a6993c15",
+  "native_ui_records": [
+    {
+      "id": "runtime:ko_media_text",
+      "offset": 1636,
+      "slot_bytes": 39,
+      "message_id": 32918,
+      "reference_hex": "feb8b0b9b68d",
+      "original_sha256": "e49177c451dd5ef1623d4ba43254748bf8f66c445f004e4e3f5566c66300bced",
+      "address": 39524
+    },
+    {
+      "id": "runtime:ko_save_prompt",
+      "offset": 1809,
+      "slot_bytes": 32,
+      "message_id": 32919,
+      "reference_hex": "feb8b0b9b78d",
+      "original_sha256": "78a0826a23a549450750ee86603a74c9ee1f5c4e19972ce3c6c29bbe7679acef",
+      "address": 39697
+    },
+    {
+      "id": "intrinsic:disk_error_text",
+      "offset": 1306,
+      "slot_bytes": 14,
+      "message_id": 32911,
+      "reference_hex": "feb8b0b8c68d",
+      "original_sha256": "de69dcf9ab329876e476ceb7c2fa417e9fdb7f59532b6d383c0547b96f51c007",
+      "address": 4630
+    },
+    {
+      "id": "intrinsic:picture_load_overflow_text",
+      "offset": 2758,
+      "slot_bytes": 17,
+      "message_id": 32912,
+      "reference_hex": "feb8b0b9b08d",
+      "original_sha256": "ad23ada2e8a5403d86b0b2050e9ff528d4a908aca58e5878a3c14f5e60a08a5d",
+      "address": 6082
+    },
+    {
+      "id": "intrinsic:disk_action_error_text",
+      "offset": 4590,
+      "slot_bytes": 40,
+      "message_id": 32910,
+      "reference_hex": "feb8b0b8c58d",
+      "original_sha256": "bd510119dce4fdf6b5793da859880f70deef8328ef2cfd3a9a4296c2f047abff",
+      "address": 7914
+    },
+    {
+      "id": "intrinsic:game_disk_prompt_text",
+      "offset": 4631,
+      "slot_bytes": 39,
+      "message_id": 32880,
+      "reference_hex": "feb8b0b7b0bb8d",
+      "original_sha256": "68ea0ec5e4f28b6184af6ae3c3833b14419868001bad4307531c5341bf9c5152",
+      "address": 7955
+    },
+    {
+      "id": "intrinsic:drive_prompt_text",
+      "offset": 4677,
+      "slot_bytes": 40,
+      "message_id": 32883,
+      "reference_hex": "feb8b0b7b38d",
+      "original_sha256": "2fbb98ea29ed0c9e68071069e42ac943777658492f472b4068873ec8ae80acac",
+      "address": 8001
+    },
+    {
+      "id": "parms:error-0",
+      "offset": 84,
+      "slot_bytes": 16,
+      "message_id": 32913,
+      "reference_hex": "feb8b0b9b18d",
+      "original_sha256": "2be1364f8af0c5360421c0e6d0b7187f7a92d408e3afce2a762f277fa56197ad"
+    },
+    {
+      "id": "parms:error-1",
+      "offset": 100,
+      "slot_bytes": 16,
+      "message_id": 32914,
+      "reference_hex": "feb8b0b9b28d",
+      "original_sha256": "4fe43e8d75299379a311b2d8a390bf8b8e8a264fa97dd17b19d18abf4595f03c"
+    },
+    {
+      "id": "parms:error-2",
+      "offset": 116,
+      "slot_bytes": 16,
+      "message_id": 32915,
+      "reference_hex": "feb8b0b9b38d",
+      "original_sha256": "51141b44d91c2c88689530d14d11cb9774ce63e7dff3353e6a8fb523c3c03c63"
+    },
+    {
+      "id": "parms:error-3",
+      "offset": 132,
+      "slot_bytes": 16,
+      "message_id": 32916,
+      "reference_hex": "feb8b0b9b48d",
+      "original_sha256": "2486e26e5ea3b033c1ce4ff68b61d0e6f4df7651feadcd4f71a7aeecea0643ea"
+    }
+  ],
+  "preserved_modules": {
+    "runtime": {
+      "bytes": 1841,
+      "patched_slot_bytes": 71,
+      "preserved_bytes": 1770,
+      "sha256": "70c4ff37633cd555a55bf0b289152fde2c98986b17ad40049eee3c08a92ad182"
+    },
+    "intrinsic": {
+      "bytes": 5120,
+      "patched_slot_bytes": 150,
+      "preserved_bytes": 4970,
+      "sha256": "6dbfa241ef3e29e94173a16452a6423a2b8aa84add0572d839c3514420eea941"
+    },
+    "parms": {
+      "bytes": 256,
+      "patched_slot_bytes": 64,
+      "preserved_bytes": 192,
+      "sha256": "fd4331ca4c21c9921b4065b69862251bb99fd9f3cf6aee99c8ed455c928d60a4"
+    }
+  },
+  "preserved_native_files": [
+    {
+      "side": "a",
+      "name": "CHAR GEN"
+    },
+    {
+      "side": "a",
+      "name": "AF1.0"
+    },
+    {
+      "side": "a",
+      "name": "AMULET"
+    },
+    {
+      "side": "a",
+      "name": "BACK JEEP"
+    },
+    {
+      "side": "a",
+      "name": "CRYPT-TOT"
+    },
+    {
+      "side": "a",
+      "name": "FLUTE"
+    },
+    {
+      "side": "a",
+      "name": "GOLD BOWL"
+    },
+    {
+      "side": "a",
+      "name": "JADE BOWL"
+    },
+    {
+      "side": "a",
+      "name": "JEEP ALON"
+    },
+    {
+      "side": "a",
+      "name": "LOGO"
+    },
+    {
+      "side": "a",
+      "name": "MAP"
+    },
+    {
+      "side": "a",
+      "name": "P1.1"
+    },
+    {
+      "side": "a",
+      "name": "P6.5"
+    },
+    {
+      "side": "a",
+      "name": "P7.0"
+    },
+    {
+      "side": "a",
+      "name": "PEDDLER1"
+    },
+    {
+      "side": "a",
+      "name": "SILVR BWL"
+    },
+    {
+      "side": "a",
+      "name": "SKEL RM"
+    },
+    {
+      "side": "a",
+      "name": "SNAKE-PIT"
+    },
+    {
+      "side": "a",
+      "name": "TEMPL EX"
+    },
+    {
+      "side": "a",
+      "name": "TEMPLE1"
+    },
+    {
+      "side": "a",
+      "name": "TRAVEL1"
+    },
+    {
+      "side": "a",
+      "name": "TRAVEL2"
+    },
+    {
+      "side": "a",
+      "name": "TUN TRVL"
+    },
+    {
+      "side": "a",
+      "name": "VIEWS"
+    },
+    {
+      "side": "b",
+      "name": "AMULET"
+    },
+    {
+      "side": "b",
+      "name": "BANDITOS"
+    },
+    {
+      "side": "b",
+      "name": "FALL PILS"
+    },
+    {
+      "side": "b",
+      "name": "GEO+STRS"
+    },
+    {
+      "side": "b",
+      "name": "GOLD BOWL"
+    },
+    {
+      "side": "b",
+      "name": "HISS-SUNS"
+    },
+    {
+      "side": "b",
+      "name": "INF PSGS"
+    },
+    {
+      "side": "b",
+      "name": "JADE BOWL"
+    },
+    {
+      "side": "b",
+      "name": "JAG ATACK"
+    },
+    {
+      "side": "b",
+      "name": "JEEP ALON"
+    },
+    {
+      "side": "b",
+      "name": "MAIN PYR"
+    },
+    {
+      "side": "b",
+      "name": "MAP"
+    },
+    {
+      "side": "b",
+      "name": "MASK"
+    },
+    {
+      "side": "b",
+      "name": "POOL RM"
+    },
+    {
+      "side": "b",
+      "name": "PYR ENTRN"
+    },
+    {
+      "side": "b",
+      "name": "PYR HOLE"
+    },
+    {
+      "side": "b",
+      "name": "ROBOFFS"
+    },
+    {
+      "side": "b",
+      "name": "SILVR BWL"
+    },
+    {
+      "side": "b",
+      "name": "STAIRS"
+    },
+    {
+      "side": "b",
+      "name": "STEP STN"
+    },
+    {
+      "side": "b",
+      "name": "SUN ALTAR"
+    },
+    {
+      "side": "b",
+      "name": "SUN TEMPL"
+    },
+    {
+      "side": "b",
+      "name": "TALK FACE"
+    },
+    {
+      "side": "b",
+      "name": "TUN TRVL"
+    },
+    {
+      "side": "b",
+      "name": "VICT ALTR"
+    }
+  ],
+  "disk_files": {
+    "startup": 12,
+    "a": 63,
+    "b": 76
+  },
+  "free_sectors": {
+    "extra": 345,
+    "game_a": 3,
+    "game_b": 6
+  },
+  "runtime_bytes": 1841,
+  "masked_pools_checked": 87,
+  "media_id": "d79f49d9717cf7d3ff757962",
+  "save_id": "4b4f53317eea06648172ae579a2ba4f9",
+  "synthetic_disk_sha256": {
+    "extra": "49c18ff4f7fc021d22ad77c78ce873f7afeedb41d8afa5706ce6494c933f33dd",
+    "game_a": "5608358d1c78f10483e91e031908f1ad5a2fcf9a40b3551e56c217396308e9aa",
+    "game_b": "9990697ee20bcea0d3c344f8355d9ec77e984951a957129f6fb2cb92c9e4b9a8"
+  },
+  "source_sha256": {
+    "tools/korean/verify_native_ui.py": "c94eb9eb4570c88ae648f978a149d43d1bfe483b91f3169b88ac52eb8e835d0d",
+    "tools/korean/native_ui.py": "8486d4c59d86244f00688c2e48e745ac0f55c0c87ca6dfacd37069e9ac69dde6",
+    "tools/korean/startup_disk.py": "5aa29d267bf7d35ba2798d42b251aae8294a23babf6ee994d8b2dda84a9a2427",
+    "tools/korean/build_messages.py": "64ba834f187326448845cff275e39198a332a9c59c0409870210b78b7bc4fdcc",
+    "src/korean/dispatch.s": "05cc40d132c2065b60be6a23a47ffa949d0685bf2a50d41db3098c696690c0e7",
+    "src/korean/save.s": "8f0bcc11d91c57e6bf15a843c91ce8ea74c3c3ab70e97200b7c682843a3156aa",
+    "tools/korean/build_native_ui_probe.py": "bd8c91efdf428196f5351db070da73a6381f3d39e89dfd6bb4780c62fcf7b3b5",
+    "tools/korean/native_ui_probe.lua": "a19194857efed58d8596b46e4f832413b576198f6437337de41d4eb5dc0babad"
+  },
+  "limits": [
+    "Host packing proof, not execution of every native error branch.",
+    "Only references to masked synthetic bodies; no approved translation applied.",
+    "Excluded recovery/boot notices, ASCII side letters and OK prompts are preserved."
+  ],
+  "screen_probe": {
+    "case_count": 26,
+    "pass": true,
+    "pc": 27888,
+    "time": 7.9857594441141,
+    "reason": "all native UI cases",
+    "cases": [
+      {
+        "id": "runtime:ko_media_text",
+        "page": 0,
+        "number": 1,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "runtime:ko_save_prompt",
+        "page": 0,
+        "number": 2,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "intrinsic:disk_error_text",
+        "page": 0,
+        "number": 3,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "intrinsic:picture_load_overflow_text",
+        "page": 0,
+        "number": 4,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "intrinsic:disk_action_error_text",
+        "page": 0,
+        "number": 5,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "intrinsic:game_disk_prompt_text",
+        "page": 0,
+        "number": 6,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "intrinsic:drive_prompt_text",
+        "page": 0,
+        "number": 7,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "parms:error-0",
+        "page": 0,
+        "number": 8,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "parms:error-1",
+        "page": 0,
+        "number": 9,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "parms:error-2",
+        "page": 0,
+        "number": 10,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "parms:error-3",
+        "page": 0,
+        "number": 11,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "native-media-a",
+        "page": 0,
+        "number": 12,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "native-media-b",
+        "page": 0,
+        "number": 13,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "runtime:ko_media_text",
+        "page": 1,
+        "number": 14,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "runtime:ko_save_prompt",
+        "page": 1,
+        "number": 15,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "intrinsic:disk_error_text",
+        "page": 1,
+        "number": 16,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "intrinsic:picture_load_overflow_text",
+        "page": 1,
+        "number": 17,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "intrinsic:disk_action_error_text",
+        "page": 1,
+        "number": 18,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "intrinsic:game_disk_prompt_text",
+        "page": 1,
+        "number": 19,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "intrinsic:drive_prompt_text",
+        "page": 1,
+        "number": 20,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "parms:error-0",
+        "page": 1,
+        "number": 21,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "parms:error-1",
+        "page": 1,
+        "number": 22,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "parms:error-2",
+        "page": 1,
+        "number": 23,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "parms:error-3",
+        "page": 1,
+        "number": 24,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "native-media-a",
+        "page": 1,
+        "number": 25,
+        "differences": [],
+        "pass": true
+      },
+      {
+        "id": "native-media-b",
+        "page": 1,
+        "number": 26,
+        "differences": [],
+        "pass": true
+      }
+    ]
+  },
+  "screen_fixture": {
+    "media": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/native-ui-synthetic-02",
+    "cases": [
+      {
+        "page": 0,
+        "id": "runtime:ko_media_text",
+        "address": 39524,
+        "entry": 38052,
+        "clear": true,
+        "extra_cr": 0,
+        "number": 1,
+        "end_row": 14,
+        "end_column": 0,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "runtime:ko_save_prompt",
+        "address": 39697,
+        "entry": 38052,
+        "clear": true,
+        "extra_cr": 0,
+        "number": 2,
+        "end_row": 14,
+        "end_column": 0,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "intrinsic:disk_error_text",
+        "address": 4630,
+        "entry": 38052,
+        "clear": false,
+        "extra_cr": 0,
+        "number": 3,
+        "end_row": 1,
+        "end_column": 0,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "intrinsic:picture_load_overflow_text",
+        "address": 6082,
+        "entry": 38052,
+        "clear": false,
+        "extra_cr": 0,
+        "number": 4,
+        "end_row": 1,
+        "end_column": 0,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "intrinsic:disk_action_error_text",
+        "address": 7914,
+        "entry": 38052,
+        "clear": false,
+        "extra_cr": 0,
+        "number": 5,
+        "end_row": 1,
+        "end_column": 0,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "intrinsic:game_disk_prompt_text",
+        "address": 7955,
+        "entry": 38052,
+        "clear": false,
+        "extra_cr": 0,
+        "number": 6,
+        "end_row": 0,
+        "end_column": 17,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "intrinsic:drive_prompt_text",
+        "address": 8001,
+        "entry": 38052,
+        "clear": false,
+        "extra_cr": 0,
+        "number": 7,
+        "end_row": 1,
+        "end_column": 0,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "parms:error-0",
+        "address": 848,
+        "entry": 3025,
+        "clear": false,
+        "extra_cr": 2,
+        "number": 8,
+        "end_row": 3,
+        "end_column": 0,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "parms:error-1",
+        "address": 864,
+        "entry": 3031,
+        "clear": false,
+        "extra_cr": 2,
+        "number": 9,
+        "end_row": 3,
+        "end_column": 0,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "parms:error-2",
+        "address": 880,
+        "entry": 3037,
+        "clear": false,
+        "extra_cr": 2,
+        "number": 10,
+        "end_row": 3,
+        "end_column": 0,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "parms:error-3",
+        "address": 896,
+        "entry": 3043,
+        "clear": false,
+        "extra_cr": 2,
+        "number": 11,
+        "end_row": 3,
+        "end_column": 0,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "native-media-a",
+        "entry": 6141,
+        "address": 0,
+        "clear": true,
+        "side": "a",
+        "extra_cr": 0,
+        "number": 12,
+        "end_row": 15,
+        "end_column": 3,
+        "inverse": 0
+      },
+      {
+        "page": 0,
+        "id": "native-media-b",
+        "entry": 6141,
+        "address": 0,
+        "clear": true,
+        "side": "b",
+        "extra_cr": 0,
+        "number": 13,
+        "end_row": 15,
+        "end_column": 3,
+        "inverse": 0
+      },
+      {
+        "page": 1,
+        "id": "runtime:ko_media_text",
+        "address": 39524,
+        "entry": 38052,
+        "clear": true,
+        "extra_cr": 0,
+        "number": 14,
+        "end_row": 14,
+        "end_column": 0,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "runtime:ko_save_prompt",
+        "address": 39697,
+        "entry": 38052,
+        "clear": true,
+        "extra_cr": 0,
+        "number": 15,
+        "end_row": 14,
+        "end_column": 0,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "intrinsic:disk_error_text",
+        "address": 4630,
+        "entry": 38052,
+        "clear": false,
+        "extra_cr": 0,
+        "number": 16,
+        "end_row": 1,
+        "end_column": 0,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "intrinsic:picture_load_overflow_text",
+        "address": 6082,
+        "entry": 38052,
+        "clear": false,
+        "extra_cr": 0,
+        "number": 17,
+        "end_row": 1,
+        "end_column": 0,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "intrinsic:disk_action_error_text",
+        "address": 7914,
+        "entry": 38052,
+        "clear": false,
+        "extra_cr": 0,
+        "number": 18,
+        "end_row": 1,
+        "end_column": 0,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "intrinsic:game_disk_prompt_text",
+        "address": 7955,
+        "entry": 38052,
+        "clear": false,
+        "extra_cr": 0,
+        "number": 19,
+        "end_row": 0,
+        "end_column": 17,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "intrinsic:drive_prompt_text",
+        "address": 8001,
+        "entry": 38052,
+        "clear": false,
+        "extra_cr": 0,
+        "number": 20,
+        "end_row": 1,
+        "end_column": 0,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "parms:error-0",
+        "address": 848,
+        "entry": 3025,
+        "clear": false,
+        "extra_cr": 2,
+        "number": 21,
+        "end_row": 3,
+        "end_column": 0,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "parms:error-1",
+        "address": 864,
+        "entry": 3031,
+        "clear": false,
+        "extra_cr": 2,
+        "number": 22,
+        "end_row": 3,
+        "end_column": 0,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "parms:error-2",
+        "address": 880,
+        "entry": 3037,
+        "clear": false,
+        "extra_cr": 2,
+        "number": 23,
+        "end_row": 3,
+        "end_column": 0,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "parms:error-3",
+        "address": 896,
+        "entry": 3043,
+        "clear": false,
+        "extra_cr": 2,
+        "number": 24,
+        "end_row": 3,
+        "end_column": 0,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "native-media-a",
+        "entry": 6141,
+        "address": 0,
+        "clear": true,
+        "side": "a",
+        "extra_cr": 0,
+        "number": 25,
+        "end_row": 15,
+        "end_column": 3,
+        "inverse": 255
+      },
+      {
+        "page": 1,
+        "id": "native-media-b",
+        "entry": 6141,
+        "address": 0,
+        "clear": true,
+        "side": "b",
+        "extra_cr": 0,
+        "number": 26,
+        "end_row": 15,
+        "end_column": 3,
+        "inverse": 255
+      }
+    ],
+    "checkpoint": 27888,
+    "ko_room_size": 38653,
+    "runtime_bytes": 1841,
+    "harness_sha256": "91ff57bad7dc0416f4dee75928ef7ef37ae197829428237b4cc27b2fe430d170",
+    "source_sha256": "bd8c91efdf428196f5351db070da73a6381f3d39e89dfd6bb4780c62fcf7b3b5"
+  },
+  "screen_session": {
+    "command": [
+      "/usr/games/mame",
+      "apple2p",
+      "-noreadconfig",
+      "-rompath",
+      "/home/iolo/workspace/retro/a2x/mame/roms",
+      "-ramsize",
+      "48K",
+      "-sl0",
+      "lang",
+      "-sl4",
+      "",
+      "-sl6",
+      "diskiing",
+      "-flop1",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/native-ui-validation-04/screen-session/side-a.dsk",
+      "-console",
+      "-pluginspath",
+      "/usr/share/games/mame/plugins",
+      "-skip_gameinfo",
+      "-natural",
+      "-window",
+      "-nomouse",
+      "-homepath",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/native-ui-validation-04/screen-session",
+      "-cfg_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/native-ui-validation-04/screen-session/cfg_directory",
+      "-nvram_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/native-ui-validation-04/screen-session/nvram_directory",
+      "-snapshot_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/native-ui-validation-04/screen-session/snapshot_directory",
+      "-state_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/native-ui-validation-04/screen-session/state_directory",
+      "-diff_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/native-ui-validation-04/screen-session/diff_directory",
+      "-video",
+      "none",
+      "-sound",
+      "none",
+      "-debug",
+      "-debugger",
+      "qt",
+      "-autoboot_script",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/korean/native_ui_probe.lua",
+      "-autoboot_delay",
+      "0",
+      "-nothrottle"
+    ],
+    "media": {
+      "a": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/english-baseline/mask-of-sun-a.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/native-ui-validation-04/screen-session/side-a.dsk",
+        "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+      },
+      "b": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/mask-of-sun-b.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/native-ui-validation-04/screen-session/side-b.dsk",
+        "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+      }
+    },
+    "headless": true,
+    "debug": true,
+    "language_card": true
+  },
+  "screen_scope": "Instruction-boundary harness: 11 packed messages and native A/B prompt composition on both dirty HGR pages; page 1 inverse; room cache invalid. Compare all 16KB HGR and 13KB LC after each of 26 calls. This does not trigger every native error condition."
+}

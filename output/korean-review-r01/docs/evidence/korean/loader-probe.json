@@ -1,0 +1,1406 @@
+{
+  "phase": "finish",
+  "case": 26,
+  "pc": 22482,
+  "cases": [
+    {
+      "print_success": 0,
+      "name": "reject unaligned destination",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 1,
+      "rwts_status_raw": 0,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 10.622235271085,
+      "error": 4
+    },
+    {
+      "print_success": 0,
+      "name": "reject non-resource destination",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 2,
+      "rwts_status_raw": 0,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 10.622407516142,
+      "error": 4
+    },
+    {
+      "print_success": 0,
+      "name": "bad magic",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 3,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 11.509300254447,
+      "error": 3
+    },
+    {
+      "print_success": 0,
+      "name": "oversized room",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 4,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 12.561048150316,
+      "error": 4
+    },
+    {
+      "print_success": 0,
+      "name": "oversized library",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 5,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 13.385802505376,
+      "error": 4
+    },
+    {
+      "print_success": 0,
+      "name": "oversized room pool",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 6,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 14.385821100012,
+      "error": 4
+    },
+    {
+      "print_success": 0,
+      "name": "missing script EOF",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 7,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 15.307376198857,
+      "error": 3
+    },
+    {
+      "print_success": 0,
+      "name": "truncated stream after partial script",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 8,
+      "rwts_status_raw": 160,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 16.689469563507,
+      "error": 5
+    },
+    {
+      "print_success": 0,
+      "name": "truncated stream after partial LC pool",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 9,
+      "rwts_status_raw": 204,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 18.031613818742,
+      "error": 5
+    },
+    {
+      "print_success": 0,
+      "name": "second TS list rejected",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 10,
+      "rwts_status_raw": 0,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 18.745048933245,
+      "error": 3
+    },
+    {
+      "print_success": 0,
+      "name": "invalid TS track rejected",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 11,
+      "rwts_status_raw": 0,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 19.34514582109,
+      "error": 3
+    },
+    {
+      "print_success": 0,
+      "name": "empty TS list",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 12,
+      "rwts_status_raw": 0,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 20.159442160882,
+      "error": 5
+    },
+    {
+      "print_success": 0,
+      "name": "missing filename",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 13,
+      "rwts_status_raw": 0,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 21.120485417879,
+      "error": 2
+    },
+    {
+      "print_success": 0,
+      "name": "real RWTS volume mismatch",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 14,
+      "rwts_status_raw": 32,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 21.12389117243,
+      "error": 1
+    },
+    {
+      "print_success": 0,
+      "name": "wrong build rejected before script write",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 15,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 21.896981796818,
+      "error": 6
+    },
+    {
+      "print_success": 0,
+      "name": "wrong side rejected before script write",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 16,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 22.561027598344,
+      "error": 6
+    },
+    {
+      "print_success": 0,
+      "name": "old KOR1 rejected",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 17,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 23.309300254441,
+      "error": 3
+    },
+    {
+      "print_success": 0,
+      "name": "B side resource accepted",
+      "carry": 1,
+      "checks": [],
+      "room_size": 0,
+      "number": 18,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 24.445513799165,
+      "error": 0
+    },
+    {
+      "print_success": 0,
+      "name": "shared resource accepted on B",
+      "carry": 1,
+      "checks": [],
+      "room_size": 0,
+      "number": 19,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 25.307401644144,
+      "error": 0
+    },
+    {
+      "print_success": 0,
+      "name": "restore pool rejects wrong build",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 20,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 26.29697886082,
+      "error": 6
+    },
+    {
+      "print_success": 0,
+      "name": "restore pool rejects wrong side",
+      "carry": 0,
+      "checks": [],
+      "room_size": 0,
+      "number": 21,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 26.961027598342,
+      "error": 6
+    },
+    {
+      "print_success": 1,
+      "name": "unaligned script/pool split across eight sectors",
+      "carry": 1,
+      "checks": [],
+      "room_size": 1000,
+      "number": 22,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 29.698029947137,
+      "error": 0
+    },
+    {
+      "print_success": 1,
+      "name": "second room replaces cache",
+      "carry": 1,
+      "checks": [],
+      "room_size": 42,
+      "number": 23,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 30.925766294758,
+      "error": 0
+    },
+    {
+      "print_success": 0,
+      "name": "maximum library stops exactly before code",
+      "carry": 1,
+      "checks": [],
+      "room_size": 0,
+      "number": 24,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 39.224316891739,
+      "error": 0
+    },
+    {
+      "print_success": 0,
+      "name": "resident-only room has no local pool",
+      "carry": 1,
+      "checks": [],
+      "room_size": 0,
+      "number": 25,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 0,
+      "pass": true,
+      "time": 40.008374437247,
+      "error": 0
+    },
+    {
+      "print_success": 1,
+      "name": "reload after empty pool",
+      "carry": 1,
+      "checks": [],
+      "room_size": 1000,
+      "number": 26,
+      "rwts_status_raw": 206,
+      "stack": 509,
+      "irq_mask": 4,
+      "pass": true,
+      "time": 42.69802994713,
+      "error": 0
+    }
+  ],
+  "pass": true,
+  "reason": "completed",
+  "time": 42.699999999803,
+  "build": {
+    "kind": "synthetic packages on a copied DOS disk; no translated game",
+    "runtime": {
+      "kind": "candidate main-RAM Korean runtime; no game integration",
+      "load_address": 37888,
+      "bytes": 1818,
+      "remaining_in_2k": 230,
+      "sha256": "d136aef005c4b941b2a35c16257879c14d41d40fca4cb9b8cd78efc48560215a",
+      "source_hashes": {
+        "src/korean/lc.s": "9c5d158c72ba7c415774455a1f36096cd20a3492568d103d0f4b49fbf6b800f7",
+        "src/korean/messages.s": "2f1f7e24161a57f4f895172bcea90a069f8b44e06085b09ae95b516c6725ddd9",
+        "src/korean/loader.s": "1c6760e8a9bbcbe8f04f74502d43ab75dee700f843ee3674f8d94c60337ffa15",
+        "src/korean/dispatch.s": "c46c67f174aaceaf89db78c85eed64a3fb3e7f5729121c0206df40fe1caccb9d",
+        "src/korean/save.s": "f083be0d56f14174c1830f0dba2efe60c6b05aa409023a8d72a1561fc92c4ee1"
+      },
+      "native_renderer_sha256": "e46f017a45f82e5b03d75cc54ccb8deb3e81b8747a9fadd61c01a1d085da80fe",
+      "media_id": "0123456789abcdef01234567"
+    },
+    "cases": [
+      {
+        "number": 1,
+        "name": "reject unaligned destination",
+        "file": "ROOM 6.0",
+        "error": 4,
+        "destination": 26625,
+        "volume": 0,
+        "script_bytes": 0,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 2,
+        "name": "reject non-resource destination",
+        "file": "ROOM 6.0",
+        "error": 4,
+        "destination": 8192,
+        "volume": 0,
+        "script_bytes": 0,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 3,
+        "name": "bad magic",
+        "file": "ROOM 1.0",
+        "error": 3,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": true,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 4,
+        "name": "oversized room",
+        "file": "ROOM 2.0",
+        "error": 4,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": false,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 5,
+        "name": "oversized library",
+        "file": "ROOM 2.1",
+        "error": 4,
+        "destination": 28672,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": true,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 6,
+        "name": "oversized room pool",
+        "file": "ROOM 3.0",
+        "error": 4,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": false,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 7,
+        "name": "missing script EOF",
+        "file": "ROOM 4.0",
+        "error": 3,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": true,
+        "script_sha256": "fe3fe955610b720e4f7606234c28494b3a86beaa0ae8dd3eecc3136cda6fc021",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 8,
+        "name": "truncated stream after partial script",
+        "file": "ROOM 5.0",
+        "error": 5,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 600,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": false,
+        "script_sha256": "6194e9b53127a7606cb47c026ed85099eeb45fd5e2657c211cf0e56223b3a39a",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "partial_script_bytes": 232
+      },
+      {
+        "number": 9,
+        "name": "truncated stream after partial LC pool",
+        "file": "ROOM 9.0",
+        "error": 5,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 271,
+        "pool_bytes": 1000,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": true,
+        "script_sha256": "e6e6ecb26e6ee7c38daadf23deb6852cf888f614e5b14a2327aedbfa21186412",
+        "pool_sha256": "4950d96ed56869578346543261894e93129eddac186e580d219c234f9901e1ce",
+        "partial_script_bytes": 271,
+        "partial_pool_bytes": 473
+      },
+      {
+        "number": 10,
+        "name": "second TS list rejected",
+        "file": "ROOM 5.1",
+        "error": 3,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": false,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 11,
+        "name": "invalid TS track rejected",
+        "file": "ROOM 6.1",
+        "error": 3,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": true,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 12,
+        "name": "empty TS list",
+        "file": "ROOM 6.2",
+        "error": 5,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": false,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 13,
+        "name": "missing filename",
+        "file": "KO ABSENT",
+        "error": 2,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 0,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 14,
+        "name": "real RWTS volume mismatch",
+        "file": "ROOM 6.0",
+        "error": 1,
+        "destination": 26624,
+        "volume": 1,
+        "script_bytes": 0,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": false,
+        "expected_rwts_error": 32
+      },
+      {
+        "number": 15,
+        "name": "wrong build rejected before script write",
+        "file": "ROOM 8.0",
+        "error": 6,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": true,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 16,
+        "name": "wrong side rejected before script write",
+        "file": "ROOM 10.0",
+        "error": 6,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": false,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 17,
+        "name": "old KOR1 rejected",
+        "file": "ROOM 11.0",
+        "error": 3,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": true,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 18,
+        "name": "B side resource accepted",
+        "file": "ROOM 9.1",
+        "error": 0,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 2,
+        "pool_only": false,
+        "interrupts_enabled": false,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 19,
+        "name": "shared resource accepted on B",
+        "file": "ROOM 9.2",
+        "error": 0,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 2,
+        "pool_only": false,
+        "interrupts_enabled": true,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 20,
+        "name": "restore pool rejects wrong build",
+        "file": "ROOM 8.0",
+        "error": 6,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 0,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": true,
+        "interrupts_enabled": false
+      },
+      {
+        "number": 21,
+        "name": "restore pool rejects wrong side",
+        "file": "ROOM 10.0",
+        "error": 6,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 0,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": true,
+        "interrupts_enabled": true
+      },
+      {
+        "number": 22,
+        "name": "unaligned script/pool split across eight sectors",
+        "file": "ROOM 6.0",
+        "error": 0,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 1023,
+        "pool_bytes": 1000,
+        "print_text": "LOADED FROM DISK\nLC BANK 2 0123456789",
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": false,
+        "script_sha256": "989fdc51960cceac48beb0084b8d3702747a0f3da9dbba56ac0d0330f4be4667",
+        "pool_sha256": "4950d96ed56869578346543261894e93129eddac186e580d219c234f9901e1ce"
+      },
+      {
+        "number": 23,
+        "name": "second room replaces cache",
+        "file": "ROOM 7.0",
+        "error": 0,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 271,
+        "pool_bytes": 42,
+        "print_text": "LOADED FROM DISK\nLC BANK 2 0123456789",
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": true,
+        "script_sha256": "e6e6ecb26e6ee7c38daadf23deb6852cf888f614e5b14a2327aedbfa21186412",
+        "pool_sha256": "ab452c6129c1adc5656f0320bdaa1181980bd280da099322bd8d10c9760738e5"
+      },
+      {
+        "number": 24,
+        "name": "maximum library stops exactly before code",
+        "file": "LIBRARY",
+        "error": 0,
+        "destination": 28672,
+        "volume": 0,
+        "script_bytes": 9216,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": false,
+        "script_sha256": "f898a64c6c50a34f173683ee97b42b96db423b7d45afbd7f7e9d2a934ccdda5e",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 25,
+        "name": "resident-only room has no local pool",
+        "file": "ROOM 7.1",
+        "error": 0,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 80,
+        "pool_bytes": 0,
+        "print_text": null,
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": true,
+        "script_sha256": "56d104734c97137fa80192bc10e72248d76278412956bd814258771c0aee5f98",
+        "pool_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "number": 26,
+        "name": "reload after empty pool",
+        "file": "ROOM 6.0",
+        "error": 0,
+        "destination": 26624,
+        "volume": 0,
+        "script_bytes": 1023,
+        "pool_bytes": 1000,
+        "print_text": "LOADED FROM DISK\nLC BANK 2 0123456789",
+        "side": 1,
+        "pool_only": false,
+        "interrupts_enabled": false,
+        "script_sha256": "989fdc51960cceac48beb0084b8d3702747a0f3da9dbba56ac0d0330f4be4667",
+        "pool_sha256": "4950d96ed56869578346543261894e93129eddac186e580d219c234f9901e1ce"
+      }
+    ],
+    "checkpoint": 22485,
+    "reader_symbols": {
+      "ko_room_size": 38653,
+      "ko_load_error": 39379
+    },
+    "code_ranges": [
+      [
+        37888,
+        38040
+      ],
+      [
+        38052,
+        38653
+      ],
+      [
+        38689,
+        39320
+      ]
+    ],
+    "disk_sha256": "3a228074a74259248a1ed3d6037641e0cdd118c06b3adcd27cd3de2581e98b9d",
+    "source_disk_sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab",
+    "changed_sectors": [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        5,
+        15
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        14
+      ],
+      [
+        6,
+        15
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        8,
+        15
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        9,
+        15
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        11,
+        15
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        12,
+        15
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        13,
+        15
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        14,
+        13
+      ],
+      [
+        14,
+        14
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        9
+      ],
+      [
+        15,
+        10
+      ],
+      [
+        15,
+        11
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        16,
+        9
+      ],
+      [
+        16,
+        10
+      ],
+      [
+        16,
+        11
+      ],
+      [
+        16,
+        12
+      ],
+      [
+        16,
+        13
+      ],
+      [
+        16,
+        14
+      ],
+      [
+        16,
+        15
+      ],
+      [
+        18,
+        0
+      ],
+      [
+        18,
+        6
+      ],
+      [
+        18,
+        13
+      ],
+      [
+        18,
+        14
+      ],
+      [
+        18,
+        15
+      ],
+      [
+        19,
+        0
+      ],
+      [
+        19,
+        1
+      ],
+      [
+        19,
+        2
+      ],
+      [
+        19,
+        7
+      ],
+      [
+        19,
+        8
+      ],
+      [
+        19,
+        9
+      ],
+      [
+        21,
+        0
+      ],
+      [
+        21,
+        1
+      ],
+      [
+        21,
+        2
+      ],
+      [
+        21,
+        8
+      ],
+      [
+        23,
+        3
+      ],
+      [
+        23,
+        4
+      ],
+      [
+        23,
+        5
+      ],
+      [
+        23,
+        8
+      ],
+      [
+        23,
+        9
+      ],
+      [
+        23,
+        10
+      ],
+      [
+        23,
+        11
+      ],
+      [
+        23,
+        12
+      ],
+      [
+        23,
+        13
+      ],
+      [
+        24,
+        14
+      ],
+      [
+        24,
+        15
+      ],
+      [
+        25,
+        2
+      ],
+      [
+        25,
+        3
+      ],
+      [
+        25,
+        5
+      ],
+      [
+        25,
+        6
+      ],
+      [
+        27,
+        0
+      ],
+      [
+        27,
+        2
+      ],
+      [
+        27,
+        4
+      ],
+      [
+        27,
+        5
+      ],
+      [
+        29,
+        7
+      ],
+      [
+        29,
+        8
+      ],
+      [
+        29,
+        10
+      ],
+      [
+        30,
+        1
+      ],
+      [
+        30,
+        5
+      ],
+      [
+        30,
+        6
+      ],
+      [
+        30,
+        8
+      ],
+      [
+        30,
+        12
+      ],
+      [
+        31,
+        13
+      ],
+      [
+        31,
+        14
+      ],
+      [
+        32,
+        1
+      ],
+      [
+        32,
+        4
+      ],
+      [
+        33,
+        0
+      ],
+      [
+        33,
+        1
+      ],
+      [
+        33,
+        2
+      ],
+      [
+        33,
+        4
+      ],
+      [
+        33,
+        5
+      ],
+      [
+        33,
+        6
+      ],
+      [
+        33,
+        7
+      ],
+      [
+        33,
+        8
+      ],
+      [
+        33,
+        9
+      ],
+      [
+        34,
+        0
+      ],
+      [
+        34,
+        12
+      ],
+      [
+        34,
+        13
+      ],
+      [
+        34,
+        14
+      ],
+      [
+        34,
+        15
+      ]
+    ],
+    "fixture_sha256": "66d711cbcfa04416c56e4cc326e152e8fa593be8666dd8d2271803fda8a26245"
+  },
+  "session": {
+    "command": [
+      "/usr/games/mame",
+      "apple2p",
+      "-noreadconfig",
+      "-rompath",
+      "/home/iolo/workspace/retro/a2x/mame/roms",
+      "-ramsize",
+      "48K",
+      "-sl0",
+      "lang",
+      "-sl4",
+      "",
+      "-sl6",
+      "diskiing",
+      "-flop1",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/loader-validation-identity-02/session/side-a.dsk",
+      "-console",
+      "-pluginspath",
+      "/usr/share/games/mame/plugins",
+      "-skip_gameinfo",
+      "-natural",
+      "-window",
+      "-nomouse",
+      "-homepath",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/loader-validation-identity-02/session",
+      "-cfg_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/loader-validation-identity-02/session/cfg_directory",
+      "-nvram_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/loader-validation-identity-02/session/nvram_directory",
+      "-snapshot_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/loader-validation-identity-02/session/snapshot_directory",
+      "-state_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/loader-validation-identity-02/session/state_directory",
+      "-diff_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/loader-validation-identity-02/session/diff_directory",
+      "-video",
+      "none",
+      "-sound",
+      "none",
+      "-debug",
+      "-debugger",
+      "qt",
+      "-autoboot_script",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/korean/loader_probe.lua",
+      "-autoboot_delay",
+      "0",
+      "-nothrottle"
+    ],
+    "media": {
+      "a": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/loader-validation-identity-02/fixture/synthetic-a.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/loader-validation-identity-02/session/side-a.dsk",
+        "sha256": "3a228074a74259248a1ed3d6037641e0cdd118c06b3adcd27cd3de2581e98b9d"
+      },
+      "b": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/english-baseline/mask-of-sun-b.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/loader-validation-identity-02/session/side-b.dsk",
+        "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+      }
+    },
+    "headless": true,
+    "debug": true,
+    "language_card": true
+  },
+  "scope": "Synthetic KOR2 reads after original DOS boot: real Disk II/RWTS, build/side rejection before payload writes, split main/LC loading, bounds, truncation, media error, cache validity and ASCII display. Not startup asset-disk integration, save/restore, gameplay timing or approved translations.",
+  "screenshot_sha256": "2e469309e23bf2ec8d844f861a3a5fa64b4a6890dcff6e733342c5afd2820a41"
+}

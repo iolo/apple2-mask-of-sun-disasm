@@ -1,6 +1,9 @@
 ; ULTRA intrinsic script engine, vector renderer and speaker synthesis.
 ; Native INTRIN.OBJ payload at $0D00-$1FFF; see docs/intrinsics.md.
 .setcpu "6502"
+.ifdef KOREAN
+.include "korean-bindings.inc"
+.endif
 string_printer_vector := $0344
 script_dispatch_vector := $034A
 file_loader_vector := $034C
@@ -972,11 +975,19 @@ test_save:
 
 ; -: native before-save stub, RWTS command2, raw snapshot transfer, after-save stub.
 save_game:
+        .ifdef KOREAN
+        jsr     ko_save_prepare
+        .else
         jsr     native_before_save_stub
+        .endif
         lda     #$02
         sta     $0BB7
         jsr     transfer_game_snapshot
+        .ifdef KOREAN
+        jsr     ko_save_finish
+        .else
         jsr     native_after_save_stub
+        .endif
         rts
 
 ; 144 pages: $AF00 downward to $2000, T31/S15 downward to T23/S0.
@@ -996,14 +1007,23 @@ transfer_game_snapshot:
         rts
 
 position_disk_message:
+        .ifdef KOREAN_NATIVE_UI
+        jmp     ko_clear_message_rows
+        .res    6,$ea
+        .else
         lda     #$0C
         sta     $25
         lda     #$00
         sta     $24
         rts
+        .endif
 
 snapshot_error:
+        .ifdef KOREAN
+        jsr     ko_snapshot_error_guard
+        .else
         jsr     position_disk_message
+        .endif
         lda     #$16
         ldx     #$12
         jsr     call_string_printer
@@ -1042,11 +1062,19 @@ test_restore:
 
 ; +: same transfer with command1; restores RAM $2000..$AFFF from scratch media.
 restore_game:
+        .ifdef KOREAN
+        jsr     ko_restore_guard
+        .else
         jsr     native_before_save_stub
+        .endif
         lda     #$01
         sta     $0BB7
         jsr     transfer_game_snapshot
+        .ifdef KOREAN
+        jsr     ko_restore_finish
+        .else
         jsr     native_after_save_stub
+        .endif
         rts
 
 test_restart:
@@ -3027,6 +3055,9 @@ disk_prompt_ok_text:
 ; Residual signature/control bytes followed by zero padding; no code targets.
 ; Whole-sector loader also reads allocated file tail after this nominal payload.
 legacy_signature_data:
+        .ifdef KOREAN
+        .include "korean/restore-guard.inc"
+        .else
         .byte $55,$4D,$45,$53,$45,$00,$00,$90
         .byte $6F,$00,$02,$48,$9F,$00,$00,$00
         .byte $00,$00,$00,$00,$00,$00,$00,$00
@@ -3046,6 +3077,7 @@ legacy_signature_data:
         .byte $00,$00,$00,$00,$00,$00,$00,$00
         .byte $00,$00,$00,$00,$00,$00,$00,$00
         .byte $00,$00
+        .endif
 .assert dispatch_intrinsic = $0D00, error, "intrinsic entry moved"
 .assert variable_table = $13CC, error, "variable table moved"
 .assert save_game = $122C, error, "save entry moved"

@@ -1,0 +1,21 @@
+{
+  "kind": "English rebuild after conditional Korean error-printer change",
+  "files": [
+    {
+      "name": "interpreter.bin",
+      "sha256": "430adedbd71b25af28fd904bafa25985b657d26a11d48ea16f9d96c4530498ff",
+      "identical_to_baseline": true
+    },
+    {
+      "name": "mask-of-sun-a.dsk",
+      "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab",
+      "identical_to_baseline": true
+    },
+    {
+      "name": "mask-of-sun-b.dsk",
+      "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46",
+      "identical_to_baseline": true
+    }
+  ],
+  "source_sha256": "b7995c055b523a4fd059aaef76c9f54af14c55962f8d39fb79e6fc2898d71b2a"
+}

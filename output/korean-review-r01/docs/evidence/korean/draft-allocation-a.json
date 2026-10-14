@@ -1,0 +1,1202 @@
+{
+  "fits": true,
+  "scope": "Host T/S allocation only; no disk written or runtime loader verified",
+  "allocations": [
+    {
+      "source": "assets/raw/a/files/death.bin",
+      "ts_list": [
+        23,
+        15
+      ],
+      "data_sectors": [
+        [
+          3,
+          6
+        ]
+      ],
+      "catalog_sector_count": 2
+    },
+    {
+      "source": "assets/raw/a/files/initial.bin",
+      "ts_list": [
+        29,
+        11
+      ],
+      "data_sectors": [
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "catalog_sector_count": 8
+    },
+    {
+      "source": "assets/raw/a/files/library.bin",
+      "ts_list": [
+        19,
+        10
+      ],
+      "data_sectors": [
+        [
+          3,
+          14
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          9,
+          14
+        ],
+        [
+          9,
+          15
+        ]
+      ],
+      "catalog_sector_count": 37
+    },
+    {
+      "source": "assets/raw/a/files/room-1-0.bin",
+      "ts_list": [
+        33,
+        10
+      ],
+      "data_sectors": [
+        [
+          10,
+          13
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          10,
+          15
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "catalog_sector_count": 8
+    },
+    {
+      "source": "assets/raw/a/files/room-10-0.bin",
+      "ts_list": [
+        18,
+        1
+      ],
+      "data_sectors": [
+        [
+          11,
+          13
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          12,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "catalog_sector_count": 8
+    },
+    {
+      "source": "assets/raw/a/files/room-11-0.bin",
+      "ts_list": [
+        6,
+        10
+      ],
+      "data_sectors": [
+        [
+          12,
+          15
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          9
+        ]
+      ],
+      "catalog_sector_count": 6
+    },
+    {
+      "source": "assets/raw/a/files/room-12-0.bin",
+      "ts_list": [
+        28,
+        12
+      ],
+      "data_sectors": [
+        [
+          14,
+          10
+        ],
+        [
+          14,
+          11
+        ]
+      ],
+      "catalog_sector_count": 3
+    },
+    {
+      "source": "assets/raw/a/files/room-13-0.bin",
+      "ts_list": [
+        32,
+        10
+      ],
+      "data_sectors": [
+        [
+          14,
+          12
+        ],
+        [
+          14,
+          13
+        ],
+        [
+          14,
+          14
+        ]
+      ],
+      "catalog_sector_count": 4
+    },
+    {
+      "source": "assets/raw/a/files/room-14-0.bin",
+      "ts_list": [
+        25,
+        4
+      ],
+      "data_sectors": [
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          15,
+          9
+        ],
+        [
+          15,
+          10
+        ],
+        [
+          15,
+          11
+        ],
+        [
+          15,
+          12
+        ]
+      ],
+      "catalog_sector_count": 7
+    },
+    {
+      "source": "assets/raw/a/files/room-15-0.bin",
+      "ts_list": [
+        15,
+        14
+      ],
+      "data_sectors": [
+        [
+          15,
+          13
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          16,
+          9
+        ],
+        [
+          16,
+          10
+        ],
+        [
+          16,
+          11
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          16,
+          13
+        ],
+        [
+          16,
+          14
+        ]
+      ],
+      "catalog_sector_count": 9
+    },
+    {
+      "source": "assets/raw/a/files/room-16-0.bin",
+      "ts_list": [
+        21,
+        7
+      ],
+      "data_sectors": [
+        [
+          16,
+          15
+        ],
+        [
+          18,
+          0
+        ],
+        [
+          18,
+          3
+        ],
+        [
+          18,
+          4
+        ],
+        [
+          18,
+          6
+        ],
+        [
+          18,
+          11
+        ],
+        [
+          18,
+          12
+        ],
+        [
+          18,
+          13
+        ],
+        [
+          18,
+          14
+        ]
+      ],
+      "catalog_sector_count": 10
+    },
+    {
+      "source": "assets/raw/a/files/room-17-0.bin",
+      "ts_list": [
+        18,
+        5
+      ],
+      "data_sectors": [
+        [
+          18,
+          15
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          19,
+          2
+        ],
+        [
+          19,
+          7
+        ],
+        [
+          19,
+          8
+        ],
+        [
+          19,
+          9
+        ],
+        [
+          19,
+          11
+        ],
+        [
+          19,
+          12
+        ]
+      ],
+      "catalog_sector_count": 10
+    },
+    {
+      "source": "assets/raw/a/files/room-18-0.bin",
+      "ts_list": [
+        29,
+        13
+      ],
+      "data_sectors": [
+        [
+          19,
+          13
+        ],
+        [
+          19,
+          14
+        ],
+        [
+          19,
+          15
+        ],
+        [
+          21,
+          0
+        ]
+      ],
+      "catalog_sector_count": 5
+    },
+    {
+      "source": "assets/raw/a/files/room-19-0.bin",
+      "ts_list": [
+        25,
+        15
+      ],
+      "data_sectors": [
+        [
+          21,
+          1
+        ],
+        [
+          21,
+          2
+        ],
+        [
+          21,
+          3
+        ],
+        [
+          21,
+          4
+        ],
+        [
+          21,
+          5
+        ],
+        [
+          21,
+          6
+        ],
+        [
+          21,
+          8
+        ],
+        [
+          22,
+          14
+        ],
+        [
+          23,
+          0
+        ]
+      ],
+      "catalog_sector_count": 10
+    },
+    {
+      "source": "assets/raw/a/files/room-2-0.bin",
+      "ts_list": [
+        27,
+        1
+      ],
+      "data_sectors": [
+        [
+          23,
+          1
+        ],
+        [
+          23,
+          2
+        ],
+        [
+          23,
+          3
+        ],
+        [
+          23,
+          4
+        ],
+        [
+          23,
+          5
+        ]
+      ],
+      "catalog_sector_count": 6
+    },
+    {
+      "source": "assets/raw/a/files/room-2-1.bin",
+      "ts_list": [
+        3,
+        15
+      ],
+      "data_sectors": [
+        [
+          23,
+          7
+        ],
+        [
+          23,
+          8
+        ]
+      ],
+      "catalog_sector_count": 3
+    },
+    {
+      "source": "assets/raw/a/files/room-20-0.bin",
+      "ts_list": [
+        26,
+        0
+      ],
+      "data_sectors": [
+        [
+          23,
+          9
+        ],
+        [
+          23,
+          10
+        ]
+      ],
+      "catalog_sector_count": 3
+    },
+    {
+      "source": "assets/raw/a/files/room-21-0.bin",
+      "ts_list": [
+        23,
+        6
+      ],
+      "data_sectors": [
+        [
+          23,
+          11
+        ],
+        [
+          23,
+          12
+        ],
+        [
+          23,
+          13
+        ],
+        [
+          23,
+          14
+        ],
+        [
+          24,
+          14
+        ],
+        [
+          24,
+          15
+        ],
+        [
+          25,
+          0
+        ]
+      ],
+      "catalog_sector_count": 8
+    },
+    {
+      "source": "assets/raw/a/files/room-22-0.bin",
+      "ts_list": [
+        28,
+        15
+      ],
+      "data_sectors": [
+        [
+          25,
+          1
+        ],
+        [
+          25,
+          2
+        ]
+      ],
+      "catalog_sector_count": 3
+    },
+    {
+      "source": "assets/raw/a/files/room-3-0.bin",
+      "ts_list": [
+        31,
+        15
+      ],
+      "data_sectors": [
+        [
+          25,
+          3
+        ],
+        [
+          25,
+          5
+        ]
+      ],
+      "catalog_sector_count": 3
+    },
+    {
+      "source": "assets/raw/a/files/room-32-1.bin",
+      "ts_list": [
+        30,
+        15
+      ],
+      "data_sectors": [
+        [
+          25,
+          6
+        ],
+        [
+          25,
+          7
+        ]
+      ],
+      "catalog_sector_count": 3
+    },
+    {
+      "source": "assets/raw/a/files/room-4-0.bin",
+      "ts_list": [
+        33,
+        3
+      ],
+      "data_sectors": [
+        [
+          25,
+          8
+        ],
+        [
+          25,
+          9
+        ]
+      ],
+      "catalog_sector_count": 3
+    },
+    {
+      "source": "assets/raw/a/files/room-5-0.bin",
+      "ts_list": [
+        34,
+        0
+      ],
+      "data_sectors": [
+        [
+          25,
+          10
+        ],
+        [
+          25,
+          11
+        ],
+        [
+          25,
+          12
+        ]
+      ],
+      "catalog_sector_count": 4
+    },
+    {
+      "source": "assets/raw/a/files/room-5-1.bin",
+      "ts_list": [
+        13,
+        15
+      ],
+      "data_sectors": [
+        [
+          25,
+          13
+        ],
+        [
+          25,
+          14
+        ],
+        [
+          27,
+          0
+        ]
+      ],
+      "catalog_sector_count": 4
+    },
+    {
+      "source": "assets/raw/a/files/room-6-0.bin",
+      "ts_list": [
+        4,
+        12
+      ],
+      "data_sectors": [
+        [
+          27,
+          2
+        ],
+        [
+          27,
+          4
+        ],
+        [
+          27,
+          5
+        ],
+        [
+          27,
+          6
+        ],
+        [
+          27,
+          7
+        ],
+        [
+          27,
+          8
+        ],
+        [
+          27,
+          10
+        ],
+        [
+          27,
+          11
+        ],
+        [
+          27,
+          12
+        ]
+      ],
+      "catalog_sector_count": 10
+    },
+    {
+      "source": "assets/raw/a/files/room-6-1.bin",
+      "ts_list": [
+        11,
+        15
+      ],
+      "data_sectors": [
+        [
+          27,
+          13
+        ],
+        [
+          27,
+          14
+        ],
+        [
+          27,
+          15
+        ],
+        [
+          28,
+          13
+        ],
+        [
+          28,
+          14
+        ],
+        [
+          29,
+          0
+        ]
+      ],
+      "catalog_sector_count": 7
+    },
+    {
+      "source": "assets/raw/a/files/room-6-2.bin",
+      "ts_list": [
+        33,
+        0
+      ],
+      "data_sectors": [
+        [
+          29,
+          3
+        ],
+        [
+          29,
+          4
+        ]
+      ],
+      "catalog_sector_count": 3
+    },
+    {
+      "source": "assets/raw/a/files/room-7-0.bin",
+      "ts_list": [
+        14,
+        7
+      ],
+      "data_sectors": [
+        [
+          29,
+          5
+        ],
+        [
+          29,
+          6
+        ],
+        [
+          29,
+          7
+        ]
+      ],
+      "catalog_sector_count": 4
+    },
+    {
+      "source": "assets/raw/a/files/room-7-1.bin",
+      "ts_list": [
+        18,
+        7
+      ],
+      "data_sectors": [
+        [
+          29,
+          8
+        ],
+        [
+          29,
+          9
+        ],
+        [
+          29,
+          10
+        ],
+        [
+          29,
+          12
+        ]
+      ],
+      "catalog_sector_count": 5
+    },
+    {
+      "source": "assets/raw/a/files/room-8-0.bin",
+      "ts_list": [
+        9,
+        12
+      ],
+      "data_sectors": [
+        [
+          29,
+          14
+        ],
+        [
+          29,
+          15
+        ],
+        [
+          30,
+          0
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "catalog_sector_count": 5
+    },
+    {
+      "source": "assets/raw/a/files/room-9-0.bin",
+      "ts_list": [
+        4,
+        9
+      ],
+      "data_sectors": [
+        [
+          30,
+          4
+        ],
+        [
+          30,
+          5
+        ],
+        [
+          30,
+          6
+        ],
+        [
+          30,
+          7
+        ],
+        [
+          30,
+          8
+        ],
+        [
+          30,
+          9
+        ],
+        [
+          30,
+          10
+        ]
+      ],
+      "catalog_sector_count": 8
+    },
+    {
+      "source": "assets/raw/a/files/room-9-1.bin",
+      "ts_list": [
+        27,
+        3
+      ],
+      "data_sectors": [
+        [
+          30,
+          11
+        ],
+        [
+          30,
+          12
+        ],
+        [
+          30,
+          13
+        ],
+        [
+          30,
+          14
+        ],
+        [
+          31,
+          7
+        ],
+        [
+          31,
+          8
+        ],
+        [
+          31,
+          9
+        ]
+      ],
+      "catalog_sector_count": 8
+    },
+    {
+      "source": "assets/raw/a/files/room-9-2.bin",
+      "ts_list": [
+        18,
+        2
+      ],
+      "data_sectors": [
+        [
+          31,
+          10
+        ],
+        [
+          31,
+          11
+        ],
+        [
+          31,
+          12
+        ],
+        [
+          31,
+          13
+        ],
+        [
+          31,
+          14
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          32,
+          2
+        ]
+      ],
+      "catalog_sector_count": 8
+    },
+    {
+      "source": "assets/raw/a/files/travel.bin",
+      "ts_list": [
+        32,
+        0
+      ],
+      "data_sectors": [
+        [
+          32,
+          3
+        ],
+        [
+          32,
+          4
+        ],
+        [
+          32,
+          5
+        ],
+        [
+          32,
+          6
+        ],
+        [
+          32,
+          7
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          32,
+          9
+        ]
+      ],
+      "catalog_sector_count": 8
+    },
+    {
+      "source": "assets/raw/a/files/tunnel.bin",
+      "ts_list": [
+        27,
+        9
+      ],
+      "data_sectors": [
+        [
+          33,
+          1
+        ],
+        [
+          33,
+          2
+        ],
+        [
+          33,
+          4
+        ],
+        [
+          33,
+          5
+        ],
+        [
+          33,
+          6
+        ],
+        [
+          33,
+          7
+        ],
+        [
+          33,
+          8
+        ],
+        [
+          33,
+          9
+        ],
+        [
+          34,
+          12
+        ]
+      ],
+      "catalog_sector_count": 10
+    }
+  ],
+  "remaining_free_sectors": [
+    [
+      34,
+      13
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      34,
+      15
+    ]
+  ]
+}

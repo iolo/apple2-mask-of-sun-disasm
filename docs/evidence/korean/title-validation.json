@@ -1,0 +1,136 @@
+{
+  "pass_validation": true,
+  "kind": "natural cold-boot title-caption integration with exact before/after HGR comparison",
+  "catalog_sha256": "ae3c41e213589e66897bd6e1efd65f8b53cb0ce590bbf694d5c47820a6993c15",
+  "caption": {
+    "row": 1,
+    "column": 17,
+    "cells": 6,
+    "message_id": 32917,
+    "insertion_offset": 103,
+    "inserted_bytes": 21,
+    "reference_offset": 118,
+    "insertion_hex": "aed6a0b18daec8a0b1b78daed0a0a2feb8b0b9b58d",
+    "original_script_sha256": "0786712eb32407ff7cadfaa7f0c7400cb4c778451e8ea25306c1d7c593797fa9",
+    "id": "picture:title",
+    "package": "a/initial.bin",
+    "generated_only_reference": true
+  },
+  "synthetic_text": "가가가 가가",
+  "compared_script_resources": 86,
+  "all_pools_and_font_unchanged": true,
+  "checked_hgr_bytes": 16384,
+  "caption_cell_bytes": 56,
+  "preserved_hgr_bytes": 16328,
+  "before_hgr_sha256": "3bfa5acc48528f1927cfb8e7f1be8e60d1dd3a496a27686c19727480116625b1",
+  "after_hgr_sha256": "53a6c58af9dcbbf9f8f4839048c9bd66ec2280d700f424d55d6e2ad762a16f30",
+  "screenshot_sha256": "763e5f9d275a0618693eb6de311a9a4630dce150ffa9e0cba8b2a5611756c5b4",
+  "run": {
+    "after": {
+      "column": 0,
+      "background": 0,
+      "row": 2,
+      "world_preserved": true,
+      "render_seconds": 0.0096858485026345,
+      "page": 0
+    },
+    "pass": true,
+    "before": {
+      "column": 17,
+      "row": 1,
+      "background": 0,
+      "page": 0
+    },
+    "time": 46.116666666454,
+    "reason": "caption followed by normal A-media request",
+    "rwts_during_caption": 0
+  },
+  "session": {
+    "command": [
+      "/usr/games/mame",
+      "apple2p",
+      "-noreadconfig",
+      "-rompath",
+      "/home/iolo/workspace/retro/a2x/mame/roms",
+      "-ramsize",
+      "48K",
+      "-sl0",
+      "lang",
+      "-sl4",
+      "",
+      "-sl6",
+      "diskiing",
+      "-flop1",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-validation-01/session/side-a.dsk",
+      "-console",
+      "-pluginspath",
+      "/usr/share/games/mame/plugins",
+      "-skip_gameinfo",
+      "-natural",
+      "-window",
+      "-nomouse",
+      "-homepath",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-validation-01/session",
+      "-cfg_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-validation-01/session/cfg_directory",
+      "-nvram_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-validation-01/session/nvram_directory",
+      "-snapshot_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-validation-01/session/snapshot_directory",
+      "-state_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-validation-01/session/state_directory",
+      "-diff_directory",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-validation-01/session/diff_directory",
+      "-video",
+      "none",
+      "-sound",
+      "none",
+      "-autoboot_script",
+      "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/tools/korean/title_probe.lua",
+      "-autoboot_delay",
+      "0",
+      "-nothrottle"
+    ],
+    "media": {
+      "a": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-synthetic-02/synthetic-startup.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-validation-01/session/side-a.dsk",
+        "sha256": "65c4cc18cbf09268ebe9bb20584040cc4f7974ec63c5f31977c59e610e074a90"
+      },
+      "b": {
+        "source": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-synthetic-02/synthetic-a.dsk",
+        "copy": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-validation-01/session/side-b.dsk",
+        "sha256": "dc6ff1b6424e1449b137342fc1aeba0430be583a4dcda5fe71d642f73ef52f05"
+      }
+    },
+    "headless": true,
+    "debug": false,
+    "language_card": true
+  },
+  "runtime_bytes": 1841,
+  "free_sectors": {
+    "extra": 344,
+    "game_a": 2,
+    "game_b": 6
+  },
+  "script_bytes": 1784,
+  "media": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/title-synthetic-02",
+  "reference_media": "/home/iolo/workspace/retro/apple2-mask-of-sun-disasm/build/korean/native-ui-synthetic-02",
+  "disk_sha256": {
+    "extra": "65c4cc18cbf09268ebe9bb20584040cc4f7974ec63c5f31977c59e610e074a90",
+    "game_a": "dc6ff1b6424e1449b137342fc1aeba0430be583a4dcda5fe71d642f73ef52f05",
+    "game_b": "8921a106ffe6dc255a30742ae6b87358357b51587ddf549a1c7bfca83f38d162"
+  },
+  "source_sha256": {
+    "tools/korean/verify_title.py": "d4518fffb58c722c4dde71f16915b623d8884d713b1d74b55273778d298c9f79",
+    "tools/korean/title_probe.lua": "b7c90452b2c6d5df980e6d776ce2baf6c8eeb6297d88020642f09496fcf78306",
+    "tools/korean/title_caption.py": "8b188b6f6910ef4d56a667800ad36822801dce473e1f9a51ea5f704683cdc229",
+    "tools/korean/startup_disk.py": "0ddf2a9fc4b818b5992d2f73f185722265b3c543dc374b64f587ca02d2650151",
+    "tools/korean/encoding.py": "841fac458aa12e8956ddd93a28e669f593cf8eb3172837206506beb0ca9f1548"
+  },
+  "limits": [
+    "Masked synthetic caption only; no human-approved translation applied.",
+    "Natural boot stops at first A-media request. Full route/save/timing regression is separate.",
+    "No native logo asset, control branch, input wait or world initialization statement changed."
+  ]
+}

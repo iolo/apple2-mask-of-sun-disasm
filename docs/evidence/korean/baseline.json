@@ -1,0 +1,189 @@
+{
+  "scope": "English source build and original-input preservation baseline",
+  "tools": {
+    "tools": {
+      "python3": {
+        "path": "/usr/bin/python3",
+        "version": "Python 3.14.4",
+        "exit_code": 0
+      },
+      "a2kit": {
+        "path": "/home/iolo/.cargo/bin/a2kit",
+        "version": "a2kit 4.4.2",
+        "exit_code": 0
+      },
+      "ca65": {
+        "path": "/home/iolo/.local/bin/ca65",
+        "version": "ca65 V2.19 - Git e47ac5060",
+        "exit_code": 0
+      },
+      "ld65": {
+        "path": "/home/iolo/.local/bin/ld65",
+        "version": "ld65 V2.19 - Git e47ac5060",
+        "exit_code": 0
+      },
+      "cl65": {
+        "path": "/home/iolo/.local/bin/cl65",
+        "version": "cl65 V2.19 - Git e47ac5060",
+        "exit_code": 0
+      },
+      "da65": {
+        "path": "/home/iolo/.local/bin/da65",
+        "version": "da65 V2.19 - Git e47ac5060",
+        "exit_code": 0
+      },
+      "mame": {
+        "path": "/usr/games/mame",
+        "version": "0.285 (unknown)",
+        "exit_code": 0
+      },
+      "pdftotext": {
+        "path": "/usr/bin/pdftotext",
+        "version": "pdftotext version 26.01.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+        "exit_code": 0
+      },
+      "pdftoppm": {
+        "path": "/usr/bin/pdftoppm",
+        "version": "pdftoppm version 26.01.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+        "exit_code": 0
+      }
+    },
+    "missing": [],
+    "pillow_version": "12.1.1",
+    "rom_audit": {
+      "driver": "apple2p",
+      "exit_code": 0,
+      "output": "romset apple2p [apple2] is good\n1 romsets found, 1 were OK.\n"
+    }
+  },
+  "disk_images": [
+    {
+      "path": "build/korean/english-baseline/mask-of-sun-a.dsk",
+      "size": 143360,
+      "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+    },
+    {
+      "path": "build/korean/english-baseline/mask-of-sun-b.dsk",
+      "size": 143360,
+      "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+    }
+  ],
+  "source_inputs": [
+    {
+      "path": "src/boot-a.cfg",
+      "sha256": "0bab5659c4b2ace15db328fce045056ea4b725ea3095360a5404a27a2100aa69"
+    },
+    {
+      "path": "src/boot-a.s",
+      "sha256": "0c35dde35dc60004cb4f7a002752cd553beca00a60d43447561f77dc6f37b4ca"
+    },
+    {
+      "path": "src/boot-b.cfg",
+      "sha256": "0bab5659c4b2ace15db328fce045056ea4b725ea3095360a5404a27a2100aa69"
+    },
+    {
+      "path": "src/boot-b.s",
+      "sha256": "23e32b725f14b2e0a9392e1defa51273b2d81b86f936a525841398f996fb80c8"
+    },
+    {
+      "path": "src/boot-stage2-a.cfg",
+      "sha256": "748664af10abba75cd02e9a6e794da94735823b0ad7f524be1f2c17cd40c1613"
+    },
+    {
+      "path": "src/boot-stage2-a.s",
+      "sha256": "3126c3860640e6ab2e2378cec9475f2f8b280fdb080ccf77f816933925ef120f"
+    },
+    {
+      "path": "src/boot-stage2-b.cfg",
+      "sha256": "748664af10abba75cd02e9a6e794da94735823b0ad7f524be1f2c17cd40c1613"
+    },
+    {
+      "path": "src/boot-stage2-b.s",
+      "sha256": "bf34ba9cf8623064168682ae1d351e5094cc8cc843933f06758165f0edc387cd"
+    },
+    {
+      "path": "src/boot-stage2.inc",
+      "sha256": "9df48e9e42b8a4c64b68e119e5542da8bfc21b18552738f4cc68c81e5eaced52"
+    },
+    {
+      "path": "src/chargen.cfg",
+      "sha256": "501d13bbf21fde66f3f29f2f88a8388ea390de3a489bd4e1ccb091b40d93264c"
+    },
+    {
+      "path": "src/chargen.s",
+      "sha256": "919272f8058b09ee01cd4614f7a8c2e17a6e2135dc2c4436bfae6b60b0dffc14"
+    },
+    {
+      "path": "src/dos-low-b.cfg",
+      "sha256": "fefba1b8c330df4481e7baf7f3bfb25ef54e382ade1f3d88bf0aa2d5b7c2149e"
+    },
+    {
+      "path": "src/dos-low-b.s",
+      "sha256": "80e4cc7cc9b20699b3a976501baf203202990cafdf4ceae20bf1cf630c3990bc"
+    },
+    {
+      "path": "src/dos-low.cfg",
+      "sha256": "fefba1b8c330df4481e7baf7f3bfb25ef54e382ade1f3d88bf0aa2d5b7c2149e"
+    },
+    {
+      "path": "src/dos-low.s",
+      "sha256": "d65d67a9492bee76e22b8bd6c300124504f14d5050cf5e34a482ec551731d6e5"
+    },
+    {
+      "path": "src/interpreter.cfg",
+      "sha256": "ec751c1406f1b7b61bc007aebe79ecd22e0cf104726f988248eec1e269109572"
+    },
+    {
+      "path": "src/interpreter.s",
+      "sha256": "87922cb10c4ad581cd528ce1e22559b7b2ac21f474670251fa9874bb8e36ab42"
+    },
+    {
+      "path": "src/intrinsics.cfg",
+      "sha256": "7be2818c75a4b30b2cab8e16129ad0a1dcf2451cf9795ec18d5e1f15da89aad1"
+    },
+    {
+      "path": "src/intrinsics.s",
+      "sha256": "5bc32934b3f31a4cb4c0d1805aea470d0c4f99067ac8e566dd3d9675d387e7a2"
+    },
+    {
+      "path": "src/renderer.cfg",
+      "sha256": "e68086739e975be574595f718e534cbf3bb5366c310546233ea9dd49d2764eb0"
+    },
+    {
+      "path": "src/renderer.s",
+      "sha256": "a65a2246de7d6c5b24adad654222dc592a1b90ac657a5c87d974c4921378476d"
+    },
+    {
+      "path": "src/rwts-a.cfg",
+      "sha256": "eb0edcf75eb00c3089edaae84c3016f811af30e59634570b6bd91785f0274559"
+    },
+    {
+      "path": "src/rwts-a.s",
+      "sha256": "6021641099b675350efcb00bf5b8209d31337d14981affbc9089475a7121cc0d"
+    },
+    {
+      "path": "src/rwts-b.cfg",
+      "sha256": "eb0edcf75eb00c3089edaae84c3016f811af30e59634570b6bd91785f0274559"
+    },
+    {
+      "path": "src/rwts-b.s",
+      "sha256": "d01ac09a3d6f689e90d817146afe071b760f3f7e72743d173d7aa435724ec5f6"
+    },
+    {
+      "path": "src/rwts.inc",
+      "sha256": "72f5746dfcb2d451369ba8f27a7c5eb3eda81a81a85f537e0437aed6452c2843"
+    }
+  ],
+  "original_inputs": [
+    {
+      "path": "mask-of-sun-a.dsk",
+      "sha256": "b07ab9b1e49305fea13a29f3d99150da13c2352cef492bc3be6c793ce1b64fab"
+    },
+    {
+      "path": "mask-of-sun-b.dsk",
+      "sha256": "8ebd5af61c070ee7c3736acb77414c5dafce11a17d8fe15f187f37a76a3c2b46"
+    }
+  ],
+  "prior_full_route": "docs/evidence/full-core-rebuilt.json",
+  "prior_side_b_restore": "docs/evidence/save-side-b-rebuilt.json"
+}

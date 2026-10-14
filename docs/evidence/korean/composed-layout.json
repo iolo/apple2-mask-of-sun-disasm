@@ -1,0 +1,4897 @@
+{
+  "kind": "Host inventory pagination and composed media UI audit",
+  "catalog_sha256": "ae3c41e213589e66897bd6e1efd65f8b53cb0ce590bbf694d5c47820a6993c15",
+  "tool_sha256": "4793fedd0517236384398d5b51fbc40483910c8010064e441bef023d0400d4df",
+  "renderer_model_sha256": "008a8b12ff83af30871f36b628284bf7e28d00b10cf755a1773fad5d166ac2df",
+  "source_guards": [
+    {
+      "path": "assets/raw/a/files/library.bin",
+      "first_line": 68,
+      "last_line": 96,
+      "sha256": "51e7348d2ff2beb1cb8fe413e5fe048e1540b5c8b007f8b29c022c625366586f"
+    },
+    {
+      "path": "assets/raw/a/files/library.bin",
+      "first_line": 245,
+      "last_line": 316,
+      "sha256": "96f12a05f889119c8226e6a93fd254ee88959220c80161ae76db378c8bb458bd"
+    }
+  ],
+  "inventory_cases": [
+    {
+      "kind": "inventory",
+      "item_count": 1,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 2,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 3,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 4,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 5,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 6,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 7,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 8,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 9,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 10,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 11,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 12,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 13,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08f8"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 14,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            1
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 15,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            1,
+            2
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915",
+            "a:LIBRARY:0932"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 16,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 17,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 18,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c",
+            "a:LIBRARY:0985"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 19,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c",
+            "a:LIBRARY:0985",
+            "a:LIBRARY:09a5"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 20,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c",
+            "a:LIBRARY:0985",
+            "a:LIBRARY:09a5",
+            "a:LIBRARY:09bd"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 21,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c",
+            "a:LIBRARY:0985",
+            "a:LIBRARY:09a5",
+            "a:LIBRARY:09bd",
+            "a:LIBRARY:09d4"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 22,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c",
+            "a:LIBRARY:0985",
+            "a:LIBRARY:09a5",
+            "a:LIBRARY:09bd",
+            "a:LIBRARY:09d4",
+            "a:LIBRARY:09ec"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "inventory",
+      "item_count": 23,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "뱀(SNAKE)                                ",
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:0c42"
+          ],
+          "image": "inventory-1.png"
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "                                        ",
+              "                                        ",
+              "                                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c",
+            "a:LIBRARY:0985",
+            "a:LIBRARY:09a5",
+            "a:LIBRARY:09bd",
+            "a:LIBRARY:09d4",
+            "a:LIBRARY:09ec",
+            "a:LIBRARY:09ff"
+          ],
+          "image": "inventory-2.png"
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 1,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:0bdf"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 2,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 3,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "                                        ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12
+          ],
+          "message_ids": [
+            "a:LIBRARY:080e"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 4,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 5,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 6,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "                                        ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12
+          ],
+          "message_ids": [
+            "a:LIBRARY:0853"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 7,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 8,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 9,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "                                        ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12
+          ],
+          "message_ids": [
+            "a:LIBRARY:0899"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 10,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 11,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 12,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "                                        ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12
+          ],
+          "message_ids": [
+            "a:LIBRARY:08df"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 13,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "고대의 부적(AMULET)                          ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:08df",
+            "a:LIBRARY:08f8"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 14,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "고대의 부적(AMULET)                          ",
+              "장전된 권총(GUN)                             ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:08df",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 15,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "고대의 부적(AMULET)                          ",
+              "장전된 권총(GUN)                             ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915"
+          ]
+        },
+        {
+          "number": 6,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "밧줄(ROPE)                                ",
+              "                                        ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12
+          ],
+          "message_ids": [
+            "a:LIBRARY:0932"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 16,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "고대의 부적(AMULET)                          ",
+              "장전된 권총(GUN)                             ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915"
+          ]
+        },
+        {
+          "number": 6,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "밧줄(ROPE)                                ",
+              "조각된 옥그릇(JADE BOWL)                      ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 17,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "고대의 부적(AMULET)                          ",
+              "장전된 권총(GUN)                             ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915"
+          ]
+        },
+        {
+          "number": 6,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "밧줄(ROPE)                                ",
+              "조각된 옥그릇(JADE BOWL)                      ",
+              "은그릇(SILVER BOWL)                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 18,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "고대의 부적(AMULET)                          ",
+              "장전된 권총(GUN)                             ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915"
+          ]
+        },
+        {
+          "number": 6,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "밧줄(ROPE)                                ",
+              "조각된 옥그릇(JADE BOWL)                      ",
+              "은그릇(SILVER BOWL)                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c"
+          ]
+        },
+        {
+          "number": 7,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "귀한 금그릇(GOLD BOWL)                       ",
+              "                                        ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12
+          ],
+          "message_ids": [
+            "a:LIBRARY:0985"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 19,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "고대의 부적(AMULET)                          ",
+              "장전된 권총(GUN)                             ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915"
+          ]
+        },
+        {
+          "number": 6,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "밧줄(ROPE)                                ",
+              "조각된 옥그릇(JADE BOWL)                      ",
+              "은그릇(SILVER BOWL)                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c"
+          ]
+        },
+        {
+          "number": 7,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "귀한 금그릇(GOLD BOWL)                       ",
+              "금 열쇠(GOLD KEY)                          ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:0985",
+            "a:LIBRARY:09a5"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 20,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "고대의 부적(AMULET)                          ",
+              "장전된 권총(GUN)                             ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915"
+          ]
+        },
+        {
+          "number": 6,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "밧줄(ROPE)                                ",
+              "조각된 옥그릇(JADE BOWL)                      ",
+              "은그릇(SILVER BOWL)                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c"
+          ]
+        },
+        {
+          "number": 7,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "귀한 금그릇(GOLD BOWL)                       ",
+              "금 열쇠(GOLD KEY)                          ",
+              "검은 열쇠(BLACK KEY)                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:0985",
+            "a:LIBRARY:09a5",
+            "a:LIBRARY:09bd"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 21,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "고대의 부적(AMULET)                          ",
+              "장전된 권총(GUN)                             ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915"
+          ]
+        },
+        {
+          "number": 6,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "밧줄(ROPE)                                ",
+              "조각된 옥그릇(JADE BOWL)                      ",
+              "은그릇(SILVER BOWL)                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c"
+          ]
+        },
+        {
+          "number": 7,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "귀한 금그릇(GOLD BOWL)                       ",
+              "금 열쇠(GOLD KEY)                          ",
+              "검은 열쇠(BLACK KEY)                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0985",
+            "a:LIBRARY:09a5",
+            "a:LIBRARY:09bd"
+          ]
+        },
+        {
+          "number": 8,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "은 열쇠(SILVER KEY)                        ",
+              "                                        ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12
+          ],
+          "message_ids": [
+            "a:LIBRARY:09d4"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 22,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ]
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ]
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ]
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ]
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "고대의 부적(AMULET)                          ",
+              "장전된 권총(GUN)                             ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915"
+          ]
+        },
+        {
+          "number": 6,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "밧줄(ROPE)                                ",
+              "조각된 옥그릇(JADE BOWL)                      ",
+              "은그릇(SILVER BOWL)                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c"
+          ]
+        },
+        {
+          "number": 7,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "귀한 금그릇(GOLD BOWL)                       ",
+              "금 열쇠(GOLD KEY)                          ",
+              "검은 열쇠(BLACK KEY)                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0985",
+            "a:LIBRARY:09a5",
+            "a:LIBRARY:09bd"
+          ]
+        },
+        {
+          "number": 8,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "은 열쇠(SILVER KEY)                        ",
+              "피리(FLUTE)                               ",
+              "                                        ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13
+          ],
+          "message_ids": [
+            "a:LIBRARY:09d4",
+            "a:LIBRARY:09ec"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "nearby",
+      "item_count": 23,
+      "pages": [
+        {
+          "number": 1,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "주변에 보이는 것:                              ",
+              "라울(RAOUL)                               ",
+              "지프(JEEP)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:07e9",
+            "a:LIBRARY:07fa",
+            "a:LIBRARY:0bdf"
+          ],
+          "image": "nearby-1.png"
+        },
+        {
+          "number": 2,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "삽(SHOVEL)                               ",
+              "랜턴(LANTERN)                             ",
+              "성냥갑(MATCHES)                            ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:080e",
+            "a:LIBRARY:0822",
+            "a:LIBRARY:0837"
+          ],
+          "image": "nearby-2.png"
+        },
+        {
+          "number": 3,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "칼(KNIFE)                                ",
+              "맛있는 음식(FOOD)                            ",
+              "약병(BOTTLE)                              ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0853",
+            "a:LIBRARY:0866",
+            "a:LIBRARY:087c"
+          ],
+          "image": "nearby-3.png"
+        },
+        {
+          "number": 4,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "재규어(JAGUAR)                             ",
+              "조각된 돌 머리(HEAD)                          ",
+              "뱀(SNAKE)                                ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0899",
+            "a:LIBRARY:08ad",
+            "a:LIBRARY:08cc"
+          ],
+          "image": "nearby-4.png"
+        },
+        {
+          "number": 5,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "수수께끼 같은 지도(MAP)                         ",
+              "고대의 부적(AMULET)                          ",
+              "장전된 권총(GUN)                             ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:08df",
+            "a:LIBRARY:08f8",
+            "a:LIBRARY:0915"
+          ],
+          "image": "nearby-5.png"
+        },
+        {
+          "number": 6,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "밧줄(ROPE)                                ",
+              "조각된 옥그릇(JADE BOWL)                      ",
+              "은그릇(SILVER BOWL)                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0932",
+            "a:LIBRARY:094e",
+            "a:LIBRARY:096c"
+          ],
+          "image": "nearby-6.png"
+        },
+        {
+          "number": 7,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 0,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "귀한 금그릇(GOLD BOWL)                       ",
+              "금 열쇠(GOLD KEY)                          ",
+              "검은 열쇠(BLACK KEY)                        ",
+              "[ 아무 키나 누르세요 ]                          "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:02bf",
+            "a:LIBRARY:0985",
+            "a:LIBRARY:09a5",
+            "a:LIBRARY:09bd"
+          ],
+          "image": "nearby-7.png"
+        },
+        {
+          "number": 8,
+          "pass_layout": true,
+          "layout": {
+            "end_row": 15,
+            "end_column": 3,
+            "overwrites": [],
+            "prompt_row_used": true,
+            "body_on_prompt_row": false,
+            "outside": [],
+            "rows": [
+              "은 열쇠(SILVER KEY)                        ",
+              "피리(FLUTE)                               ",
+              "태양의 가면(MASK)                            ",
+              "OK>                                     "
+            ]
+          },
+          "body_rows": [
+            12,
+            13,
+            14
+          ],
+          "message_ids": [
+            "a:LIBRARY:09d4",
+            "a:LIBRARY:09ec",
+            "a:LIBRARY:09ff"
+          ],
+          "image": "nearby-8.png"
+        }
+      ]
+    }
+  ],
+  "media_cases": [
+    {
+      "name": "native-media-a",
+      "start_row": 12,
+      "message_ids": [
+        "intrinsic:disk_action_error_text",
+        "intrinsic:game_disk_prompt_text",
+        "intrinsic:disk_side_a_text",
+        "intrinsic:drive_prompt_text",
+        "intrinsic:disk_prompt_ok_text"
+      ],
+      "pass_layout": true,
+      "layout": {
+        "end_row": 15,
+        "end_column": 3,
+        "overwrites": [],
+        "prompt_row_used": true,
+        "body_on_prompt_row": false,
+        "outside": [],
+        "rows": [
+          "디스크 작업 중 오류가 발생했습니다!!                   ",
+          "태양의 가면 게임 디스크 면: A                      ",
+          "1번 드라이브에 넣고 RETURN을 누르세요.               ",
+          "OK>                                     "
+        ]
+      },
+      "image": "native-media-a.png"
+    },
+    {
+      "name": "script-media-a",
+      "start_row": 13,
+      "message_ids": [
+        "a:LIBRARY:1df9",
+        "a:LIBRARY:1e32",
+        "a:LIBRARY:1e40",
+        "a:LIBRARY:02bf"
+      ],
+      "pass_layout": true,
+      "layout": {
+        "end_row": 15,
+        "end_column": 0,
+        "overwrites": [],
+        "prompt_row_used": true,
+        "body_on_prompt_row": false,
+        "outside": [],
+        "rows": [
+          "                                        ",
+          "태양의 가면 게임 디스크 면: A                      ",
+          "1번 드라이브에 넣고 RETURN을 누르세요.               ",
+          "[ 아무 키나 누르세요 ]                          "
+        ]
+      },
+      "image": "script-media-a.png"
+    },
+    {
+      "name": "native-media-b",
+      "start_row": 12,
+      "message_ids": [
+        "intrinsic:disk_action_error_text",
+        "intrinsic:game_disk_prompt_text",
+        "intrinsic:disk_side_b_text",
+        "intrinsic:drive_prompt_text",
+        "intrinsic:disk_prompt_ok_text"
+      ],
+      "pass_layout": true,
+      "layout": {
+        "end_row": 15,
+        "end_column": 3,
+        "overwrites": [],
+        "prompt_row_used": true,
+        "body_on_prompt_row": false,
+        "outside": [],
+        "rows": [
+          "디스크 작업 중 오류가 발생했습니다!!                   ",
+          "태양의 가면 게임 디스크 면: B                      ",
+          "1번 드라이브에 넣고 RETURN을 누르세요.               ",
+          "OK>                                     "
+        ]
+      },
+      "image": "native-media-b.png"
+    },
+    {
+      "name": "script-media-b",
+      "start_row": 13,
+      "message_ids": [
+        "a:LIBRARY:1df9",
+        "a:LIBRARY:1e3a",
+        "a:LIBRARY:1e40",
+        "a:LIBRARY:02bf"
+      ],
+      "pass_layout": true,
+      "layout": {
+        "end_row": 15,
+        "end_column": 0,
+        "overwrites": [],
+        "prompt_row_used": true,
+        "body_on_prompt_row": false,
+        "outside": [],
+        "rows": [
+          "                                        ",
+          "태양의 가면 게임 디스크 면: B                      ",
+          "1번 드라이브에 넣고 RETURN을 누르세요.               ",
+          "[ 아무 키나 누르세요 ]                          "
+        ]
+      },
+      "image": "script-media-b.png"
+    },
+    {
+      "name": "ko_media_text",
+      "start_row": 12,
+      "message_ids": [
+        "runtime:ko_media_text"
+      ],
+      "pass_layout": true,
+      "layout": {
+        "end_row": 14,
+        "end_column": 0,
+        "overwrites": [],
+        "prompt_row_used": false,
+        "body_on_prompt_row": false,
+        "outside": [],
+        "rows": [
+          "게임 디스크 A/B를 넣고                          ",
+          "RETURN을 누르세요.                           ",
+          "                                        ",
+          "                                        "
+        ]
+      },
+      "image": "ko_media_text.png"
+    },
+    {
+      "name": "ko_save_prompt",
+      "start_row": 12,
+      "message_ids": [
+        "runtime:ko_save_prompt"
+      ],
+      "pass_layout": true,
+      "layout": {
+        "end_row": 14,
+        "end_column": 0,
+        "overwrites": [],
+        "prompt_row_used": false,
+        "body_on_prompt_row": false,
+        "outside": [],
+        "rows": [
+          "저장 디스크를 넣고                              ",
+          "RETURN을 누르세요.                           ",
+          "                                        ",
+          "                                        "
+        ]
+      },
+      "image": "ko_save_prompt.png"
+    }
+  ],
+  "native_source_hashes": {
+    "src/intrinsics.s": "bde00b4f71ef79975ce5a75c286f74d9eb2cc4eabc96e6b34c5656f530516357",
+    "src/korean/dispatch.s": "c46c67f174aaceaf89db78c85eed64a3fb3e7f5729121c0206df40fe1caccb9d",
+    "src/korean/save.s": "f083be0d56f14174c1830f0dba2efe60c6b05aa409023a8d72a1561fc92c4ee1"
+  },
+  "one_row_item_invariant": {
+    "items": 23,
+    "max_cells": 18,
+    "all_fit": true,
+    "consequence": "Each selected item consumes exactly one row; selection identity cannot increase page height."
+  },
+  "pass_layout": true,
+  "complete_game_layout_validation": false,
+  "limits": [
+    "No execution, HGR page-switch or picture-preservation proof; host monochrome previews only.",
+    "The 23-item inventories are upper-bound fixtures, not a claim that all combinations are reachable.",
+    "Empty inventory output and arbitrary callers/cursor state are not established by this audit.",
+    "Other cross-block output, timed scenes and full-game layout remain to be validated."
+  ]
+}

@@ -1,0 +1,604 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "style": [
+    "서술은 합니다체. 대사는 인물에 맞는 자연스러운 존댓말을 기본으로 한다.",
+    "입력은 영문. 인벤토리 표시명에 실제 입력 키워드를 병기한다.",
+    "동적 아이템 결합은 획득:, 소지품: 등의 표현으로 조사를 피한다.",
+    "퍼즐의 정답은 원문이 밝히는 시점에만 제시한다.",
+    "원래 CR 단위 실행 구조는 유지하되 메시지 안의 화면 줄바꿈은 별도 지정한다.",
+    "신·문지기의 위압적인 대사는 원문의 태도에 맞춰 하라체로 쓴다. 영문 대문자 강조를 그대로 음차하지 않는다.",
+    "고유명은 이 용어집의 표기를 사용하되 원작의 지리·문화 설정을 임의로 교정하지 않는다.",
+    "여러 .P에 걸친 문장은 앞뒤 문맥 전체로 검수한다. 한국어 어순에 따라 정보가 이웃 항목으로 옮겨갈 수 있다.",
+    "방향은 북/남/동/서 및 북동/북서/남동/남서를 쓴다. 상대 방향 왼쪽/오른쪽/앞/뒤와 혼동하지 않는다.",
+    "행동 용어는 문장에 맞게 활용한다. 아래 영문 명령의 존재가 모든 방에서 실행 가능함을 뜻하지는 않는다."
+  ],
+  "terms": [
+    {
+      "en": "Mask of the Sun",
+      "ko": "태양의 가면",
+      "input": "MASK",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 849,
+        "pattern": "MASK"
+      }
+    },
+    {
+      "en": "Raoul",
+      "ko": "라울",
+      "input": "RAOUL",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 782,
+        "pattern": "RAOUL"
+      }
+    },
+    {
+      "en": "Professor de Perez",
+      "ko": "데 페레스 교수",
+      "input": null,
+      "input_verification": "not applicable"
+    },
+    {
+      "en": "jeep",
+      "ko": "지프",
+      "input": "JEEP",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 852,
+        "pattern": "JEEP"
+      }
+    },
+    {
+      "en": "shovel",
+      "ko": "삽",
+      "input": "SHOVEL",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 785,
+        "pattern": "SHOVE"
+      }
+    },
+    {
+      "en": "lantern",
+      "ko": "랜턴",
+      "input": "LANTERN",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 789,
+        "pattern": "LANTE"
+      }
+    },
+    {
+      "en": "matches",
+      "ko": "성냥",
+      "input": "MATCHES",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 792,
+        "pattern": "MATCH"
+      }
+    },
+    {
+      "en": "knife",
+      "ko": "칼",
+      "input": "KNIFE",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 795,
+        "pattern": "KNIFE"
+      }
+    },
+    {
+      "en": "food",
+      "ko": "음식",
+      "input": "FOOD",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 798,
+        "pattern": "FOOD"
+      }
+    },
+    {
+      "en": "bottle of pills",
+      "ko": "약병",
+      "input": "BOTTLE",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 801,
+        "pattern": "BOTTL"
+      }
+    },
+    {
+      "en": "jaguar",
+      "ko": "재규어",
+      "input": "JAGUAR",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 805,
+        "pattern": "JAGUA"
+      }
+    },
+    {
+      "en": "stone head",
+      "ko": "돌 머리",
+      "input": "HEAD",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 808,
+        "pattern": "HEAD"
+      }
+    },
+    {
+      "en": "snake",
+      "ko": "뱀",
+      "input": "SNAKE",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 811,
+        "pattern": "SNAKE"
+      }
+    },
+    {
+      "en": "map",
+      "ko": "지도",
+      "input": "MAP",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 814,
+        "pattern": "MAP"
+      }
+    },
+    {
+      "en": "amulet",
+      "ko": "부적",
+      "input": "AMULET",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 817,
+        "pattern": "AMULE"
+      }
+    },
+    {
+      "en": "revolver",
+      "ko": "권총",
+      "input": "GUN",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 820,
+        "pattern": "GUN"
+      }
+    },
+    {
+      "en": "rope",
+      "ko": "밧줄",
+      "input": "ROPE",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 824,
+        "pattern": "ROPE"
+      }
+    },
+    {
+      "en": "jade bowl",
+      "ko": "옥그릇",
+      "input": "JADE BOWL",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 827,
+        "pattern": "JADE BOWL"
+      }
+    },
+    {
+      "en": "silver bowl",
+      "ko": "은그릇",
+      "input": "SILVER BOWL",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 830,
+        "pattern": "SILVEBOWL"
+      }
+    },
+    {
+      "en": "gold bowl",
+      "ko": "금그릇",
+      "input": "GOLD BOWL",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 833,
+        "pattern": "GOLD BOWL"
+      }
+    },
+    {
+      "en": "gold key",
+      "ko": "금 열쇠",
+      "input": "GOLD KEY",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 836,
+        "pattern": "GOLD KEY"
+      }
+    },
+    {
+      "en": "black key",
+      "ko": "검은 열쇠",
+      "input": "BLACK KEY",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 840,
+        "pattern": "BLACKKEY"
+      }
+    },
+    {
+      "en": "silver key",
+      "ko": "은 열쇠",
+      "input": "SILVER KEY",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 843,
+        "pattern": "SILVEKEY"
+      }
+    },
+    {
+      "en": "flute",
+      "ko": "피리",
+      "input": "FLUTE",
+      "input_verification": {
+        "method": "native five-character word normalization matches library pattern",
+        "path": "assets/decoded/scripts/a/library.txt",
+        "line": 846,
+        "pattern": "FLUTE"
+      }
+    },
+    {
+      "en": "Francisco Roboff",
+      "ko": "프란시스코 로보프",
+      "kind": "person",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "b:ROOM 32.0:00e7",
+        "b:ROOM 49.0:00ed"
+      ]
+    },
+    {
+      "en": "Mac Steele",
+      "ko": "맥 스틸",
+      "kind": "person",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "b:ROOM 50.0:0440"
+      ]
+    },
+    {
+      "en": "Tezcatlipoca",
+      "ko": "테스카틀리포카",
+      "kind": "deity",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "a:ROOM 6.0:008c"
+      ]
+    },
+    {
+      "en": "Sun God",
+      "ko": "태양신",
+      "kind": "deity",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "b:ROOM 40.0:0118",
+        "b:ROOM 41.0:012b",
+        "b:ROOM 40.1:02d4",
+        "b:ROOM 49.1:00c6",
+        "b:ROOM 50.0:016a"
+      ]
+    },
+    {
+      "en": "Mexico",
+      "ko": "멕시코",
+      "kind": "place",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "a:LIBRARY:0fd7",
+        "a:ROOM 1.0:007d",
+        "a:ROOM 1.0:00c7",
+        "a:ROOM 1.0:03df"
+      ]
+    },
+    {
+      "en": "Mexico City",
+      "ko": "멕시코시티",
+      "kind": "place",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "a:ROOM 1.0:00c7",
+        "a:ROOM 1.0:03df"
+      ]
+    },
+    {
+      "en": "Tikal",
+      "ko": "티칼",
+      "kind": "place",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "b:ROOM 23.0:00a9"
+      ]
+    },
+    {
+      "en": "Tibet",
+      "ko": "티베트",
+      "kind": "place",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "b:ROOM 50.0:0467"
+      ]
+    },
+    {
+      "en": "Temple of the Sun",
+      "ko": "태양의 신전",
+      "kind": "place",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "b:ROOM 37.0:015f"
+      ]
+    },
+    {
+      "en": "Aztec",
+      "ko": "아즈텍",
+      "kind": "culture",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "a:LIBRARY:0fd7",
+        "a:ROOM 1.0:00a8",
+        "a:ROOM 6.0:008c",
+        "a:ROOM 6.0:0233",
+        "a:ROOM 8.0:0336",
+        "a:ROOM 15.0:0084"
+      ]
+    },
+    {
+      "en": "Ultrasoft",
+      "ko": "울트라소프트",
+      "kind": "publisher",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "a:INITIAL:00a7",
+        "b:ROOM 50.0:0414"
+      ]
+    },
+    {
+      "en": "airfield",
+      "ko": "비행장",
+      "kind": "place",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "a:LIBRARY:1025",
+        "a:ROOM 1.0:00f2",
+        "a:ROOM 2.0:0062",
+        "a:ROOM 2.1:0055"
+      ]
+    },
+    {
+      "en": "jungle",
+      "ko": "정글",
+      "kind": "place",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "a:ROOM 2.0:0062",
+        "a:ROOM 2.0:01e8",
+        "a:ROOM 2.1:00b4",
+        "a:ROOM 4.0:0055",
+        "a:ROOM 6.1:0109",
+        "a:ROOM 7.0:0221",
+        "a:ROOM 7.1:026c"
+      ]
+    },
+    {
+      "en": "ruins",
+      "ko": "유적",
+      "kind": "place",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "a:LIBRARY:0fd7",
+        "a:ROOM 1.0:011a",
+        "a:ROOM 2.0:042d",
+        "a:ROOM 4.0:00d6",
+        "b:ROOM 33.0:012b"
+      ]
+    },
+    {
+      "en": "temple",
+      "ko": "신전",
+      "kind": "place",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "a:ROOM 5.0:00d1",
+        "a:ROOM 5.0:01fd",
+        "a:ROOM 5.1:00de",
+        "a:ROOM 7.0:004a",
+        "a:ROOM 7.0:00a5",
+        "a:ROOM 7.1:00ad",
+        "a:ROOM 7.1:00fe",
+        "a:ROOM 8.0:007e",
+        "a:ROOM 8.0:0134",
+        "a:ROOM 8.0:0252",
+        "b:ROOM 37.0:015f",
+        "b:ROOM 40.0:0075",
+        "b:ROOM 41.3:00f9",
+        "b:ROOM 40.1:0236",
+        "b:ROOM 50.0:0316"
+      ]
+    },
+    {
+      "en": "pyramid",
+      "ko": "피라미드",
+      "kind": "place",
+      "input": null,
+      "input_verification": "Naming term only; not a command spelling.",
+      "source_messages": [
+        "b:ROOM 23.0:007b",
+        "b:ROOM 23.0:00a9",
+        "b:ROOM 23.0:0146",
+        "b:ROOM 23.1:00fe",
+        "b:ROOM 24.1:0294",
+        "b:ROOM 33.0:00ac",
+        "b:ROOM 33.0:01f4",
+        "b:ROOM 34.0:0120",
+        "b:ROOM 34.1:00db"
+      ]
+    }
+  ],
+  "directions": {
+    "N": "북",
+    "S": "남",
+    "E": "동",
+    "W": "서",
+    "NE": "북동",
+    "NW": "북서",
+    "SE": "남동",
+    "SW": "남서"
+  },
+  "actions": [
+    {
+      "en": "look around",
+      "ko": "주변 보기",
+      "input": "LOOK"
+    },
+    {
+      "en": "inventory",
+      "ko": "소지품 확인",
+      "input": "INVENTORY"
+    },
+    {
+      "en": "examine",
+      "ko": "살펴보기",
+      "input": "EXAMINE"
+    },
+    {
+      "en": "get",
+      "ko": "집기",
+      "input": "GET"
+    },
+    {
+      "en": "drop",
+      "ko": "내려놓기",
+      "input": "DROP"
+    },
+    {
+      "en": "enter",
+      "ko": "들어가기",
+      "input": "ENTER"
+    },
+    {
+      "en": "exit",
+      "ko": "나가기",
+      "input": "EXIT"
+    },
+    {
+      "en": "climb",
+      "ko": "오르기",
+      "input": "CLIMB"
+    },
+    {
+      "en": "open",
+      "ko": "열기",
+      "input": "OPEN"
+    },
+    {
+      "en": "close",
+      "ko": "닫기",
+      "input": "CLOSE"
+    },
+    {
+      "en": "read",
+      "ko": "읽기",
+      "input": "READ"
+    },
+    {
+      "en": "dig",
+      "ko": "파기",
+      "input": "DIG"
+    },
+    {
+      "en": "shoot",
+      "ko": "쏘기",
+      "input": "SHOOT"
+    },
+    {
+      "en": "play",
+      "ko": "연주하기",
+      "input": "PLAY"
+    },
+    {
+      "en": "eat",
+      "ko": "먹기",
+      "input": "EAT"
+    },
+    {
+      "en": "say",
+      "ko": "말하기",
+      "input": "SAY"
+    },
+    {
+      "en": "save game",
+      "ko": "게임 저장",
+      "input": "SAVE GAME"
+    },
+    {
+      "en": "restore game",
+      "ko": "게임 복원",
+      "input": "RESTORE GAME"
+    },
+    {
+      "en": "sound on",
+      "ko": "소리 켜기",
+      "input": "SOUND ON"
+    },
+    {
+      "en": "sound off",
+      "ko": "소리 끄기",
+      "input": "SOUND OFF"
+    }
+  ],
+  "review_notes": [
+    "미승인 초안. 번역의 용어 일관성과 인물 말투는 사람 검수 대상이다.",
+    "명사 입력 23개는 기존 inventory 입력 대응이다. 위치·인명 추가 항목은 명령어 목록이 아니다.",
+    "source_messages는 원문 용어의 출처다. 이어 쓰는 문장에서는 대응 한국어가 인접 항목에 있을 수 있다."
+  ]
+}

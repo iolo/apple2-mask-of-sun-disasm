@@ -1,0 +1,31 @@
+{
+  "kind": "host-only complete-draft encoding validation",
+  "scope": "No game disk, runtime integration, dynamic page layout, save/restore or timing validation.",
+  "encoding_report_sha256": "85f76a1e4104289ad933a4dbda432df02cf1bd86c9ae622e3b069aff0dbddaa5",
+  "catalog_entries": 1388,
+  "draft_translations": 1327,
+  "excluded": 61,
+  "approved": 0,
+  "unit_test_command": "python3 -m unittest discover -s tools/korean -p 'test_*.py'",
+  "unit_tests_passed": 37,
+  "identical_outputs_across_two_runs": 94,
+  "script_ram_limit_checks_passed": 86,
+  "explicit_translation_line_max_cells": 35,
+  "host_allocation_fits": {
+    "a": true,
+    "b": true
+  },
+  "remaining_sectors_before_code_growth": {
+    "a": 3,
+    "b": 6
+  },
+  "notes": [
+    "Explicit line width does not prove dynamic page layout.",
+    "No translation approval was created.",
+    "Original disks and source scripts were not modified."
+  ],
+  "catalog_sha256": "ae3c41e213589e66897bd6e1efd65f8b53cb0ce590bbf694d5c47820a6993c15",
+  "package_format": "KOR2",
+  "package_header_bytes": 24,
+  "media_id": "ac90cff2c2074b1a62d0c78b"
+}

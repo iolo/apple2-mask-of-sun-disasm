@@ -1,0 +1,47 @@
+{
+  "kind": "complete synthetic media build and execution evidence",
+  "pass": true,
+  "host_tests": 34,
+  "resource_reads": 86,
+  "retained_native_files": 50,
+  "reproducible_files": {
+    "synthetic-startup.dsk": "47cf42dd4c8cedf6a5afe71c52d0e1dc0afb447bbe4a9a04108ed12b93fe4203",
+    "synthetic-a.dsk": "b78e156684fcd3497835279cf45295681d6738d8bdffde18189c7bd15608ce52",
+    "synthetic-b.dsk": "a5ce944240bd15756f124ce8804b7f753462a49371a8802da10847c20d3f58bf",
+    "runtime-asset.bin": "4295d08cd3867b8ad3c4c02182600fe05dd45902ee0ab8f97c08ef432c9c2842",
+    "font-asset.bin": "78a389461c7c38be25b1ee08c27d3c661bacd8fdbd9a7f6eb215362826064209",
+    "resident-asset.bin": "3ab3ef10dd58e20b0b15b4eca26144a296adf2db95bccf30ae087f09adf58838",
+    "bootstrap.bin": "1663ccb450c052836e7de7f508597c3c7e9fb2b71d1474ee8a11295573e0023d",
+    "interpreter.bin": "c8d2fe12ce61b921ce88d8e8834ef78c87383633a6506c446e33e60d19531e80",
+    "intrinsics.bin": "0b4912e62ab740e12a3f76f8e7308ef27eabc0432d494e9ddbdfd9a3cd2c6cfb"
+  },
+  "evidence_sha256": {
+    "full-media-probe.json": "907fd5c4ea3f65dfa0d06e9294ecf6be89e9ff1740f11f0f94a0fd51dc796eff",
+    "full-game-probe.json": "7fee630d2a2c3557f5b111777b8b65a03c50b5cc050ba06d302d59b91df323e9",
+    "full-media-capacity.json": "c9c4bc80827b2086434cd6f70e04c7e6f8ba4f68e706165b97a320be557bf141"
+  },
+  "screenshots": {
+    "full-synthetic-b-save.png": "bd4bd9d699f7823236bef54a1c7a6e8a2cf60f61001e4bdf3ff360c8f4f2851a",
+    "full-synthetic-b-restored.png": "f9e89b5e233539d6d5aef3d1e4fc8004e08e23f859b6db644a629bf89bc5cd6c"
+  },
+  "room_pool_checks": {
+    "same-session": 67,
+    "fresh-boot": 5
+  },
+  "source_sha256": {
+    "tools/korean/startup_disk.py": "689831f9c8ec6738201b015fc69743ab45e6900b63b097dc30e2fb0049174235",
+    "tools/korean/synthetic.py": "9fb5de14b4aff0db9ed671ecb29e535e303ecbb2d8d0dcadc5064c64ebc2942a",
+    "tools/korean/packages.py": "bffd4c3e8f8c7b7fded8875cd45aeda85d091c1df529b0e6b4c49b4b00b5284b",
+    "tools/korean/test_synthetic.py": "1c2ecc39839390e104cbe59833f5ade36bd7a7450f9f8fdeabdb5b722cb24ccc",
+    "tools/korean/build_full_media_probe.py": "56d0c41f85903961e13029777f6a4d8bd9e3ea78602c2c2ea0ce076403852196",
+    "tools/korean/full_media_probe.lua": "1ce0aef15268a6dbcb68aac57cdbaf48c9a8e7dfed317f1d6733b4aea4650408",
+    "tools/korean/verify_full_media.py": "1788d60b8e4c2c5ca3893b21db8714e25f3c93f2a9ab22659935596d90a317f8",
+    "tools/korean/full_game_probe.lua": "8210e781b990e0b919066e093fe765c7f1ec60210c80f31e900007093727ab14",
+    "tools/korean/verify_full_game.py": "0365a06be5077b8b4b50872ba03c171207c8689acd9f6dc27db33dedae3f12b0"
+  },
+  "limits": [
+    "Synthetic bodies only; no translation approval or application.",
+    "All-resource reader uses debugger harness; game-route and fresh-boot runs use no CPU/world injection.",
+    "Only route through B room34, not ending/all timed scenes/all layout/physical hardware."
+  ]
+}

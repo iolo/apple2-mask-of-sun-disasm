@@ -1,0 +1,905 @@
+{
+  "kind": "Native source polling/delay inventory; manual loop interpretation still required",
+  "script_files_examined": 86,
+  "text_streams_in_catalog": 87,
+  "files": [
+    {
+      "side": "a",
+      "file": "LIBRARY",
+      "source": "assets/raw/a/files/library.bin",
+      "sha256": "26320699a11fa46b9734de4e246263d7981345ce0d19685ebe50eb5c8f3ab421",
+      "events": [
+        {
+          "line": 77,
+          "offset": 653,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 85,
+          "offset": 715,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 86,
+          "offset": 719,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q<128"
+        },
+        {
+          "line": 88,
+          "offset": 736,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        },
+        {
+          "line": 152,
+          "offset": 1434,
+          "kinds": [
+            "timer_label"
+          ],
+          "text": "!TIME"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "ROOM 9.0",
+      "source": "assets/raw/a/files/room-9-0.bin",
+      "sha256": "b8ff0a257869e960c66cadc28eb17fa352af215ed32be204352fdffef978c104",
+      "events": [
+        {
+          "line": 99,
+          "offset": 906,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        },
+        {
+          "line": 101,
+          "offset": 920,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".T I Q:211"
+        },
+        {
+          "line": 105,
+          "offset": 951,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        },
+        {
+          "line": 107,
+          "offset": 965,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".T I Q:200"
+        },
+        {
+          "line": 111,
+          "offset": 997,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        },
+        {
+          "line": 113,
+          "offset": 1011,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".T I Q:207"
+        },
+        {
+          "line": 117,
+          "offset": 1043,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        },
+        {
+          "line": 119,
+          "offset": 1057,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".T I Q:207"
+        },
+        {
+          "line": 123,
+          "offset": 1089,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        },
+        {
+          "line": 125,
+          "offset": 1103,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".T I Q:212"
+        },
+        {
+          "line": 130,
+          "offset": 1141,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        },
+        {
+          "line": 141,
+          "offset": 1286,
+          "kinds": [
+            "timer_label"
+          ],
+          "text": "!TIME"
+        },
+        {
+          "line": 143,
+          "offset": 1299,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "ROOM 9.1",
+      "source": "assets/raw/a/files/room-9-1.bin",
+      "sha256": "03f3217e8698a22c150284658d353753e6c2c8afcc0e045001bdd1434352ec2e",
+      "events": [
+        {
+          "line": 45,
+          "offset": 601,
+          "kinds": [
+            "timer_label"
+          ],
+          "text": "!TIME"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "ROOM 14.0",
+      "source": "assets/raw/a/files/room-14-0.bin",
+      "sha256": "57e2a5bab7dcdf4925d2a86c450dc0e724f7a8f6d5515650a66335c82fead4d7",
+      "events": [
+        {
+          "line": 43,
+          "offset": 502,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 44,
+          "offset": 506,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "ROOM 15.0",
+      "source": "assets/raw/a/files/room-15-0.bin",
+      "sha256": "35721dbc132b596abe803a4ec4c421f3e5d55c7a868e7157b791e67b83ef4ccf",
+      "events": [
+        {
+          "line": 89,
+          "offset": 1501,
+          "kinds": [
+            "timer_label"
+          ],
+          "text": "!TIME"
+        },
+        {
+          "line": 90,
+          "offset": 1507,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        },
+        {
+          "line": 96,
+          "offset": 1568,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 99,
+          "offset": 1594,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q<128"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "ROOM 17.0",
+      "source": "assets/raw/a/files/room-17-0.bin",
+      "sha256": "d223370d5bd674f527aeb7002e450cf156bc6606309421100ea31c86e04edcc3",
+      "events": [
+        {
+          "line": 93,
+          "offset": 1480,
+          "kinds": [
+            "timer_label"
+          ],
+          "text": "!TIME"
+        },
+        {
+          "line": 110,
+          "offset": 1651,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 115,
+          "offset": 1693,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q<128"
+        }
+      ]
+    },
+    {
+      "side": "a",
+      "file": "TUNNEL",
+      "source": "assets/raw/a/files/tunnel.bin",
+      "sha256": "6d2979fb9af5a94f2889654c37cfe2f7c11814f8795a144bc905015dc7738ba7",
+      "events": [
+        {
+          "line": 187,
+          "offset": 1709,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        },
+        {
+          "line": 190,
+          "offset": 1734,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        },
+        {
+          "line": 191,
+          "offset": 1740,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        },
+        {
+          "line": 211,
+          "offset": 1909,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        },
+        {
+          "line": 214,
+          "offset": 1934,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        },
+        {
+          "line": 215,
+          "offset": 1940,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.0",
+      "source": "assets/raw/b/files/room-31-0.bin",
+      "sha256": "c50afef4283da80ddfffc68b20c8744e024027b8902ea0c172adc512aa152927",
+      "events": [
+        {
+          "line": 107,
+          "offset": 1360,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 108,
+          "offset": 1364,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        },
+        {
+          "line": 120,
+          "offset": 1458,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 121,
+          "offset": 1462,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        },
+        {
+          "line": 124,
+          "offset": 1486,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 31.1",
+      "source": "assets/raw/b/files/room-31-1.bin",
+      "sha256": "274d6134fbd98a56244e9d57989f33a788dff84584df001481be5fd682876054",
+      "events": [
+        {
+          "line": 108,
+          "offset": 1517,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        },
+        {
+          "line": 117,
+          "offset": 1590,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 118,
+          "offset": 1594,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        },
+        {
+          "line": 120,
+          "offset": 1611,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 36.0",
+      "source": "assets/raw/b/files/room-36-0.bin",
+      "sha256": "ea1eb21a10ef147304a74c1ee6dfa5bfb6123465acb73b035f686ca750d48283",
+      "events": [
+        {
+          "line": 50,
+          "offset": 808,
+          "kinds": [
+            "timer_label"
+          ],
+          "text": "!TIME"
+        },
+        {
+          "line": 54,
+          "offset": 838,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 55,
+          "offset": 842,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 37.0",
+      "source": "assets/raw/b/files/room-37-0.bin",
+      "sha256": "7e917c251a2d80241f6f3b1e5771ee717fcb3f8d4abebfe2773b9c5b9fcaa097",
+      "events": [
+        {
+          "line": 152,
+          "offset": 1930,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 153,
+          "offset": 1934,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q<128"
+        },
+        {
+          "line": 155,
+          "offset": 1951,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 39.0",
+      "source": "assets/raw/b/files/room-39-0.bin",
+      "sha256": "0fe1436e73d60a2be4cd6bc26816cbdce7e48e811c0c67923aa7520717959eb2",
+      "events": [
+        {
+          "line": 82,
+          "offset": 1136,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        },
+        {
+          "line": 90,
+          "offset": 1202,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 95,
+          "offset": 1234,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 96,
+          "offset": 1238,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        },
+        {
+          "line": 100,
+          "offset": 1271,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        },
+        {
+          "line": 109,
+          "offset": 1337,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q#141"
+        },
+        {
+          "line": 110,
+          "offset": 1346,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 42.0",
+      "source": "assets/raw/b/files/room-42-0.bin",
+      "sha256": "5f0452a16771506887b1bcd12ba02fb3c16c192124f0a351c2168ed4cca79739",
+      "events": [
+        {
+          "line": 40,
+          "offset": 594,
+          "kinds": [
+            "timer_label"
+          ],
+          "text": "!TIME"
+        },
+        {
+          "line": 43,
+          "offset": 615,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        },
+        {
+          "line": 54,
+          "offset": 703,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        },
+        {
+          "line": 61,
+          "offset": 759,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 45.0",
+      "source": "assets/raw/b/files/room-45-0.bin",
+      "sha256": "a64354c02503f9f8d542812106350b45ef5c57e53b581f39946162b3dc199f10",
+      "events": [
+        {
+          "line": 38,
+          "offset": 474,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 39,
+          "offset": 478,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 47,
+          "offset": 541,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 48,
+          "offset": 545,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 46.0",
+      "source": "assets/raw/b/files/room-46-0.bin",
+      "sha256": "87cd8fc04a209424c8710a4cb2bfc2ce9f5f1b92b1297149e640b7e8e6d5cdca",
+      "events": [
+        {
+          "line": 26,
+          "offset": 294,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q<128"
+        },
+        {
+          "line": 28,
+          "offset": 312,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".S R=0"
+        },
+        {
+          "line": 119,
+          "offset": 1342,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q<128"
+        },
+        {
+          "line": 120,
+          "offset": 1351,
+          "kinds": [
+            "keyboard_clear"
+          ],
+          "text": ".T S R=0"
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.0",
+      "source": "assets/raw/b/files/room-49-0.bin",
+      "sha256": "0ecdefc9ea855956837fafed1b9e7e8fc257eac952610c27fa805be6c892261c",
+      "events": [
+        {
+          "line": 81,
+          "offset": 1361,
+          "kinds": [
+            "timer_label"
+          ],
+          "text": "!TIME"
+        },
+        {
+          "line": 85,
+          "offset": 1391,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 86,
+          "offset": 1395,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.1",
+      "source": "assets/raw/b/files/room-49-1.bin",
+      "sha256": "db134dc82a5f30abe3c62ee910de7e657b91566133700502851f09450e4e1b49",
+      "events": [
+        {
+          "line": 39,
+          "offset": 576,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 40,
+          "offset": 580,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 41,
+          "offset": 584,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 45,
+          "offset": 609,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 46,
+          "offset": 613,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 47,
+          "offset": 617,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 48,
+          "offset": 621,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 49,
+          "offset": 625,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "ROOM 49.2",
+      "source": "assets/raw/b/files/room-49-2.bin",
+      "sha256": "b37606a137dec0d6c2fde358282bd33f29807af1de32745f865641f5dfc2966c",
+      "events": [
+        {
+          "line": 25,
+          "offset": 398,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 26,
+          "offset": 402,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 29,
+          "offset": 444,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 30,
+          "offset": 448,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 37,
+          "offset": 530,
+          "kinds": [
+            "timer_label"
+          ],
+          "text": "!TIME"
+        },
+        {
+          "line": 41,
+          "offset": 560,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".W "
+        },
+        {
+          "line": 42,
+          "offset": 564,
+          "kinds": [
+            "keyboard_test"
+          ],
+          "text": ".I Q>127"
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "file": "TUNNEL",
+      "source": "assets/raw/b/files/tunnel.bin",
+      "sha256": "5f388e4dc577555053f107eb68d108ddcc58b3a1b0f5b9e1c32ea5f13724207e",
+      "events": [
+        {
+          "line": 187,
+          "offset": 1709,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        },
+        {
+          "line": 190,
+          "offset": 1734,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        },
+        {
+          "line": 191,
+          "offset": 1740,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        },
+        {
+          "line": 211,
+          "offset": 1909,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        },
+        {
+          "line": 214,
+          "offset": 1934,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        },
+        {
+          "line": 215,
+          "offset": 1940,
+          "kinds": [
+            "short_delay"
+          ],
+          "text": ".T W "
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "keyboard_test": 25,
+    "short_delay": 42,
+    "keyboard_clear": 16,
+    "timer_label": 9
+  },
+  "limitations": [
+    "Static sites do not prove branch reachability, input opportunity, or hardware timing.",
+    "Polling through shared native routines and calculated script calls also requires execution tracing."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "Current source-inventory catalog produces byte-identical previously validated synthetic media",
+  "pass_equivalence": true,
+  "catalog_sha256": "ae3c41e213589e66897bd6e1efd65f8b53cb0ce590bbf694d5c47820a6993c15",
+  "reference_build": "build/korean/full-media-validation-02/fixture/media",
+  "current_build": "build/korean/full-synthetic-output-audit-01",
+  "identical_artifacts": {
+    "synthetic-startup.dsk": {
+      "bytes": 143360,
+      "sha256": "47cf42dd4c8cedf6a5afe71c52d0e1dc0afb447bbe4a9a04108ed12b93fe4203"
+    },
+    "synthetic-a.dsk": {
+      "bytes": 143360,
+      "sha256": "b78e156684fcd3497835279cf45295681d6738d8bdffde18189c7bd15608ce52"
+    },
+    "synthetic-b.dsk": {
+      "bytes": 143360,
+      "sha256": "a5ce944240bd15756f124ce8804b7f753462a49371a8802da10847c20d3f58bf"
+    },
+    "runtime-asset.bin": {
+      "bytes": 1834,
+      "sha256": "4295d08cd3867b8ad3c4c02182600fe05dd45902ee0ab8f97c08ef432c9c2842"
+    },
+    "font-asset.bin": {
+      "bytes": 5216,
+      "sha256": "78a389461c7c38be25b1ee08c27d3c661bacd8fdbd9a7f6eb215362826064209"
+    },
+    "resident-asset.bin": {
+      "bytes": 4112,
+      "sha256": "3ab3ef10dd58e20b0b15b4eca26144a296adf2db95bccf30ae087f09adf58838"
+    },
+    "bootstrap.bin": {
+      "bytes": 1152,
+      "sha256": "1663ccb450c052836e7de7f508597c3c7e9fb2b71d1474ee8a11295573e0023d"
+    },
+    "interpreter.bin": {
+      "bytes": 1536,
+      "sha256": "c8d2fe12ce61b921ce88d8e8834ef78c87383633a6506c446e33e60d19531e80"
+    },
+    "intrinsics.bin": {
+      "bytes": 5120,
+      "sha256": "0b4912e62ab740e12a3f76f8e7308ef27eabc0432d494e9ddbdfd9a3cd2c6cfb"
+    }
+  },
+  "encoding_repeat_outputs": 94,
+  "host_tests_passed": 37,
+  "output_audit_sha256": "88850e466bd58a78e3c42688d380d3582b917117769bfa784af0d5191daff2bf",
+  "capacity_report": "docs/evidence/korean/output-audit-capacity.json",
+  "capacity_report_sha256": "0a8c53c9c5c9558bd17db1be876c0615f866e9ee7e896ab5a82f8a06d40c8528",
+  "prior_execution_reports": {
+    "full-media-validation.json": "aa9b4bcc114d296d0eecaa54e8cf2599a6a04704a178e7277485afff1ce19bb3",
+    "full-media-probe.json": "907fd5c4ea3f65dfa0d06e9294ecf6be89e9ff1740f11f0f94a0fd51dc796eff",
+    "full-game-probe.json": "7fee630d2a2c3557f5b111777b8b65a03c50b5cc050ba06d302d59b91df323e9"
+  },
+  "current_startup_tool_sha256": "5b70fd1f62aa9347a85136c1264fa1c7b5df0f75b3c6198b3179abdbc3c2475b",
+  "scope": "Five excluded catalog entries and one literal-constant refactor; active translations and synthetic disk bytes unchanged. Prior execution reports retain their original provenance. No new emulator run, approval or production translation application."
+}
