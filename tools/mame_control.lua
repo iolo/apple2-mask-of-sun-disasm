@@ -83,9 +83,9 @@ function mask.keys(text)
     print('MASK keys ' .. json.stringify({time=machine().time:as_double(), text=text}))
 end
 function mask.swap(side)
-    assert(side == 'a' or side == 'b' or side == 'save', 'side must be a, b or save')
+    assert(side == 'a' or side == 'b' or side == 'save' or side == 'extra', 'side must be a, b, save or extra')
     local drive = assert(machine().images[':sl6:diskiing:0:525'])
-    local filename = side == 'save' and 'save.dsk' or 'side-' .. side .. '.dsk'
+    local filename = (side == 'save' or side == 'extra') and side .. '.dsk' or 'side-' .. side .. '.dsk'
     local result = drive:load(filename)
     assert(drive.filename:sub(-#filename) == filename, 'requested copied media did not mount')
     print('MASK mount ' .. json.stringify({side=side, result=result, filename=drive.filename}))

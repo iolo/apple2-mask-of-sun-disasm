@@ -18,6 +18,8 @@ def main():
     p.add_argument('--output', type=Path, required=True, help='new session directory')
     p.add_argument('--disk-a', type=Path, default=ROOT / 'mask-of-sun-a.dsk')
     p.add_argument('--disk-b', type=Path, default=ROOT / 'mask-of-sun-b.dsk')
+    p.add_argument('--disk-extra', type=Path, help='additional boot/save disk image')
+    p.add_argument('--boot-extra', action='store_true', help='boot the extra disk instead of side A')
     p.add_argument('--headless', action='store_true')
     p.add_argument('--language-card', action='store_true',
                    help='Apple II+ 48K main RAM plus slot 0 16K Language Card')
@@ -29,6 +31,8 @@ def main():
     p.add_argument('--trace-keyboard', action='store_true', help='observe late-game keyboard bus reads without additional I/O reads')
     p.add_argument('--save-disk', type=Path, help='copy an initialized scratch disk for save/restore tests')
     args = p.parse_args()
+    if args.boot_extra and not args.disk_extra:
+        p.error('--boot-extra requires --disk-extra')
     if not args.rompath or not args.rompath.is_dir():
         p.error('supply --rompath or MAME_ROMPATH with locally supplied ROMs')
     mame = shutil.which('mame')
@@ -47,14 +51,23 @@ def main():
         shutil.copyfile(source, destination)
         media[side] = {'source': str(source.resolve()), 'copy': str(destination),
                        'sha256': hashlib.sha256(destination.read_bytes()).hexdigest()}
+    if args.disk_extra:
+        destination = out / 'extra.dsk'
+        shutil.copyfile(args.disk_extra, destination)
+        media['extra'] = {'source': str(args.disk_extra.resolve()), 'copy': str(destination),
+                          'sha256': hashlib.sha256(destination.read_bytes()).hexdigest()}
     if args.save_disk:
         destination = out / 'save.dsk'
         shutil.copyfile(args.save_disk, destination)
         media['save'] = {'source': str(args.save_disk.resolve()), 'copy': str(destination),
                          'sha256': hashlib.sha256(destination.read_bytes()).hexdigest()}
-    cmd = [mame, 'apple2p', '-noreadconfig', '-rompath', str(args.rompath.resolve()),
+    #cmd = [mame, 'apple2p', '-noreadconfig', '-rompath', str(args.rompath.resolve()),
+    #       '-ramsize', '48K', '-sl0', 'lang' if args.language_card else '', '-sl4', '', '-sl6', 'diskiing',
+    #       '-flop1', media['extra' if args.boot_extra else 'a']['copy'], '-console', '-pluginspath', str(plugins),
+    #       '-skip_gameinfo', '-natural', '-window', '-nomouse', '-homepath', str(out)]
+    cmd = [mame, 'apple2p', '-rompath', str(args.rompath.resolve()),
            '-ramsize', '48K', '-sl0', 'lang' if args.language_card else '', '-sl4', '', '-sl6', 'diskiing',
-           '-flop1', media['a']['copy'], '-console', '-pluginspath', str(plugins),
+           '-flop1', media['extra' if args.boot_extra else 'a']['copy'], '-console', '-pluginspath', str(plugins),
            '-skip_gameinfo', '-natural', '-window', '-nomouse', '-homepath', str(out)]
     for option in ['cfg_directory', 'nvram_directory', 'snapshot_directory',
                    'state_directory', 'diff_directory']:
@@ -72,6 +85,8 @@ def main():
         cmd.extend(['-video', 'none'])
         if not args.record_audio:
             cmd.extend(['-sound', 'none'])
+    else:
+        cmd.extend(['-video', 'bgfx', '-bgfx_screen_chains', 'crt-geom-deluxe,pillarbox_left_horizontal,pillarbox_right_horizontal'])
     if args.record_audio:
         cmd.extend(['-wavwrite', str(out / 'audio.wav'), '-samplerate', '22050'])
     if args.debug:
@@ -82,7 +97,7 @@ def main():
         cmd.append('-nothrottle')
     (out / 'session.json').write_text(json.dumps({'command': cmd, 'media': media,
         'headless': args.headless, 'debug': args.debug,
-        'language_card': args.language_card}, indent=2) + '\n')
+        'language_card': args.language_card, 'boot_extra': args.boot_extra}, indent=2) + '\n')
     print('Session: ' + str(out), flush=True)
     print('Load helpers: dofile(' + repr(str(ROOT / 'tools/mame_control.lua')) + ')', flush=True)
     print('Lua: mask.capture("checkpoint"); mask.keys("LOOK\\r"); mask.swap("b")', flush=True)

@@ -10,17 +10,25 @@ local commands = {
     'GET HEAD', 'PLACE HEAD ON STATUE', 'ENTER JEEP'
 }
 local route_path = os.getenv('MASK_ROUTE')
+-- An optional route may be passed directly when another startup script loads us.
+local selected_route = ...
+if type(selected_route) ~= 'table' then selected_route = nil end
 local timeout = 600
 local ending_text
 local media_events = {}
 local media_index = 1
-if route_path then
-    local f = assert(io.open(route_path, 'r'))
-    local route = json.parse(f:read('a')); f:close()
+if selected_route or route_path then
+    local route = selected_route
+    if not route then
+        local f = assert(io.open(route_path, 'r'))
+        route = json.parse(f:read('a')); f:close()
+    end
+    assert(type(route.commands) == 'table' and #route.commands > 0, 'replay route needs commands')
     commands = route.commands
     timeout = route.timeout or 1200
     ending_text = route.ending_text
     media_events = route.media_events or {}
+    print('MASK replay route loaded: ' .. #commands .. ' commands')
 end
 local index, serial, frames = 1, 0, 0
 local last_action, last_screen, stable_since = 0, '', 0
@@ -60,7 +68,11 @@ local function send(text, reason, now, physical_key)
     if physical_key then mask.press(physical_key, 0.08) else mask.keys(text) end
     last_action = now
 end
-local function finish()
+local function finish(outcome)
+    local result = assert(io.open('replay-result.json', 'w'))
+    result:write(json.stringify({outcome=outcome, command_index=index,
+        command_count=#commands, time=manager.machine.time:as_double(), side=mounted_side}) .. '\n')
+    result:close()
     log:close(); text_log:close(); output_tap:remove()
     if keyboard_tap then keyboard_tap:remove(); keyboard_log:close() end
     mask.exit()
@@ -105,10 +117,10 @@ emu.register_frame_done(function()
     end
     if screen ~= last_screen then last_screen = screen; stable_since = now end
     if ending_text and index > #commands and screen:find(ending_text, 1, true) and now - stable_since >= 0.5 then
-        mask.capture('ending'); print('MASK FULL_REPLAY_COMPLETE'); finish(); return
+        mask.capture('ending'); print('MASK FULL_REPLAY_COMPLETE'); finish('complete'); return
     end
     if now > timeout then
-        mask.capture('timeout'); finish(); return
+        mask.capture('timeout'); print('MASK FULL_REPLAY_TIMEOUT'); finish('timeout'); return
     end
     if manager.machine.natkeyboard.is_posting or not manager.machine.natkeyboard.empty then return end
     local bottom = rows[16]
@@ -124,7 +136,7 @@ emu.register_frame_done(function()
         if type(candidate) == 'table' and candidate.wait_for and not wait_seen[index] then return end
         mask.capture(stamp('prompt'))
         if index > #commands then
-            print('MASK OPENING_REPLAY_COMPLETE'); finish(); return
+            print('MASK OPENING_REPLAY_COMPLETE'); finish('commands-exhausted'); return
         end
         local command = type(candidate) == 'table' and candidate.command or candidate
         local suffix = type(candidate) == 'table' and candidate.no_return and '' or '\r'
